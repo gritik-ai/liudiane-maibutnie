@@ -1,32 +1,16 @@
 [
   {
-    "id": "rss-2026-11-19-adc7c86f54ce",
-    "date": "2026-11-19",
-    "autoPublished": true,
-    "sourceType": "rss",
-    "category": "Освіта",
-    "title": "SLED: Sensor SLicing from Edge to Datacenter",
-    "summary": "arXiv:2611.21937v1 Announce Type: new Abstract: Modern sensing systems generate large volumes of heterogeneous data streams from multiple sensor modalities, increasing reliance on datacenters for computation, artificial intelligence/superintelligence (AI/SI) inference, and AI/SI training. Each sensor stream may have different…",
-    "body": "Цей матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та короткий опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.21937v1 Announce Type: new Abstract: Modern sensing systems generate large volumes of heterogeneous data streams from multiple sensor modalities, increasing reliance on datacenters for computation, artificial intelligence/superintelligence (AI/SI) inference, and AI/SI training. Each sensor stream may have different network and compute requirements depending on its type and data volume. However, current wireless systems typically allocate resources at the device level, leading to contention among co-located sensor streams, where bulk data transfers may starve latency-critical telemetry. To this end, this paper introduces Sensor Slicing (SL). SL provides deterministic, medium access control (MAC)-level isolation for individual sensors within a single user equipment (UE) in open radio access networks (O-RAN). Using agentic coding techniques, SL is implemented in two O-RAN-compliant packages, reducing development time by 400 times (2 h 40 min [OCUDU] vs. 6.5 weeks [OAI]), 228-fold fewer human prompts (4 vs. 913), and less than half the tokens (0.64B vs. 1.43B). An associated end-to-end framework, SLED, is implemented to establish per-sensor radio and network isolation across edge, campus, and remote high-performance computing (HPC) tiers. Over-the-air wireless experiments demonstrate that while conventional network slicing causes critical delays to increase more than 2,3\n\nЧому матеріал у цій добірці: його тема стосується штучного інтелекту та одного з напрямів, важливих для якості життя людей. Це тематичний відбір, а не незалежна експертна оцінка результатів. Перед висновками прочитайте оригінальну публікацію.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте розділ про публікацію та рецензування в оригіналі.\n\nРедакційне застереження: автоматична система перевіряє формат стрічки, дату, домен посилання та тематичні слова. Вона не підтверджує методологію дослідження, не перевіряє незалежно всі твердження та не замінює людську редакційну перевірку.",
-    "sourceDate": "2026-11-19",
-    "sources": [
-      {
-        "title": "SLED: Sensor SLicing from Edge to Datacenter",
-        "publisher": "arXiv",
-        "url": "https://arxiv.org/abs/2611.21937",
-        "publishedDate": "2026-11-19"
-      }
-    ]
-  },
-  {
     "id": "rss-2026-11-19-57b8a5effa02",
     "date": "2026-11-19",
     "autoPublished": true,
     "sourceType": "rss",
-    "category": "Освіта",
+    "feedName": "arXiv — Штучний інтелект",
+    "filterVersion": "2.0",
+    "selectionReason": "напрям: Державне управління; прикладні сигнали: accessib",
+    "category": "Державне управління",
     "title": "Honest Brokers in AI Regulation: How Public Comments Introduce Evidence to Regulators",
     "summary": "arXiv:2611.21948v1 Announce Type: new Abstract: The regulation of Artificial Intelligence is susceptible to various forms of capture by industry actors that hold undue influence over the policymaking process, due in part to their information advantage in developing these technologies. In the following paper, we investigate the…",
-    "body": "Цей матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та короткий опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.21948v1 Announce Type: new Abstract: The regulation of Artificial Intelligence is susceptible to various forms of capture by industry actors that hold undue influence over the policymaking process, due in part to their information advantage in developing these technologies. In the following paper, we investigate the roles of public commenters in providing evidence to potential regulation in the USA. We build a corpus of 40 potential regulations, and 2,664 public comments submitted by a variety of stakeholders. We computationally process these texts to extract evidence meant to inform regulators, in the form of formal citations and informal references. We find significant differences in the type and amount of evidence supplied: Holding comment length constant, business commenters introduce altogether less evidence, and government, university, and civil society commenters provide significantly more research and legal sources. The publication status of cited research is nearly evenly split, with preprints and peer-reviewed articles being introduced by commenters of all types. We further explore patterns of self-citation and find that while it is prevalent amongst all groups, a small cluster of organizations account for over half of all self-citations in our corpus. Our findings complicate a narrative that public comments alone are means to information capture. We interp\n\nЧому матеріал у цій добірці: його тема стосується штучного інтелекту та одного з напрямів, важливих для якості життя людей. Це тематичний відбір, а не незалежна експертна оцінка результатів. Перед висновками прочитайте оригінальну публікацію.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте розділ про публікацію та рецензування в оригіналі.\n\nРедакційне застереження: автоматична система перевіряє формат стрічки, дату, домен посилання та тематичні слова. Вона не підтверджує методологію дослідження, не перевіряє незалежно всі твердження та не замінює людську редакційну перевірку.",
+    "body": "Цей матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та короткий опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.21948v1 Announce Type: new Abstract: The regulation of Artificial Intelligence is susceptible to various forms of capture by industry actors that hold undue influence over the policymaking process, due in part to their information advantage in developing these technologies. In the following paper, we investigate the roles of public commenters in providing evidence to potential regulation in the USA. We build a corpus of 40 potential regulations, and 2,664 public comments submitted by a variety of stakeholders. We computationally process these texts to extract evidence meant to inform regulators, in the form of formal citations and informal references. We find significant differences in the type and amount of evidence supplied: Holding comment length constant, business commenters introduce altogether less evidence, and government, university, and civil society commenters provide significantly more research and legal sources. The publication status of cited research is nearly evenly split, with preprints and peer-reviewed articles being introduced by commenters of all types. We further explore patterns of self-citation and find that while it is prevalent amongst all groups, a small cluster of organizations account for over half of all self-citations in our corpus. Our findings complicate a narrative that public comments alone are means to information capture. We interp\n\nЧому матеріал потрапив до добірки: напрям: Державне управління; прикладні сигнали: accessib. Це автоматичний тематичний відбір за ключовими словами, а не підтвердження ефективності чи незалежна експертна оцінка. Перед висновками прочитайте оригінальну публікацію.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте розділ про публікацію та рецензування в оригіналі.\n\nРедакційне застереження: автоматична система перевіряє формат стрічки, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження, не перевіряє незалежно всі твердження та не замінює людську редакційну перевірку.",
     "sourceDate": "2026-11-19",
     "sources": [
       {
@@ -38,52 +22,17 @@
     ]
   },
   {
-    "id": "rss-2026-11-19-798a2217c376",
-    "date": "2026-11-19",
-    "autoPublished": true,
-    "sourceType": "rss",
-    "category": "Економіка та добробут",
-    "title": "DiscoveryAgent: A Framework for Scientist-centric Agentic AI",
-    "summary": "arXiv:2611.21950v1 Announce Type: new Abstract: AI agents can assist scientific research, but balancing autonomous investigation with scientists' ability to inspect and redirect ongoing work remains a central design challenge. We present DiscoveryAgent, a domain-agnostic, scientist-centric system that combines autonomous…",
-    "body": "Цей матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та короткий опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.21950v1 Announce Type: new Abstract: AI agents can assist scientific research, but balancing autonomous investigation with scientists' ability to inspect and redirect ongoing work remains a central design challenge. We present DiscoveryAgent, a domain-agnostic, scientist-centric system that combines autonomous investigation with scientist-directed hypothesis steering. Scientists select, refine, or replace hypotheses between research rounds, while audit agents interrogate checkpointed records to trace claims, reproduce analyses, and inform subsequent decisions. Across two predictive modeling tasks, DiscoveryAgent produced the best variable-star classifier among evaluated baselines and, with scientist steering, a protein variant-effect predictor surpassed by only one of 106 ProteinGym baselines. We develop a rigorous checkpointing system that enables highly capable audit agents, a scalable form of oversight for agentic research. Audit agents autonomously identify errors at higher rates than previous AI scientist agents, and scientists collaborating with audit agents identify 14x more valid errors versus scientists performing manual review. In three case studies led by domain experts across physical science, social science, and life science, we developed a multimodal photometric-redshift estimator that resolves complementary failures of images and photometry, achieving \n\nЧому матеріал у цій добірці: його тема стосується штучного інтелекту та одного з напрямів, важливих для якості життя людей. Це тематичний відбір, а не незалежна експертна оцінка результатів. Перед висновками прочитайте оригінальну публікацію.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте розділ про публікацію та рецензування в оригіналі.\n\nРедакційне застереження: автоматична система перевіряє формат стрічки, дату, домен посилання та тематичні слова. Вона не підтверджує методологію дослідження, не перевіряє незалежно всі твердження та не замінює людську редакційну перевірку.",
-    "sourceDate": "2026-11-19",
-    "sources": [
-      {
-        "title": "DiscoveryAgent: A Framework for Scientist-centric Agentic AI",
-        "publisher": "arXiv",
-        "url": "https://arxiv.org/abs/2611.21950",
-        "publishedDate": "2026-11-19"
-      }
-    ]
-  },
-  {
-    "id": "rss-2026-11-19-6f06e74483d4",
-    "date": "2026-11-19",
-    "autoPublished": true,
-    "sourceType": "rss",
-    "category": "Екологія",
-    "title": "WebAgents: Unbundling Agent Creation, Hosting, and Execution for an Agent-Native Web",
-    "summary": "arXiv:2611.21978v1 Announce Type: new Abstract: Large language models are moving from isolated assistants toward autonomous agents that can plan, use tools, and coordinate with others, motivating an emerging Agentic Web of independently developed agents and services. Realizing this vision requires agent behavior to move across…",
-    "body": "Цей матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та короткий опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.21978v1 Announce Type: new Abstract: Large language models are moving from isolated assistants toward autonomous agents that can plan, use tools, and coordinate with others, motivating an emerging Agentic Web of independently developed agents and services. Realizing this vision requires agent behavior to move across creators, hosts, and runtimes without coupling publication to a particular execution environment or transferring authority over user resources. We introduce WebAgents, which unbundles these roles through a signed agent.pkg that carries portable workflows, skills, schemas, and resource requirements. An OpenClaw-based agent-native browser/runtime verifies the package, obtains authorization, and binds it at run time to user-controlled models, tools, permissions, and budgets, while hosts distribute the public program and may retain private services server-side. We demonstrate this contract with three unrelated workflows executed unchanged under local and API-backed models, including literature review with live services and a website-published travel agent using semantic tools and user-selected personal resources. In a controlled suite, WebAgents explicitly blocks all 716 injected contract violations while accepting all 295 matched benign controls, with median automated pre-execution processing below 0.5 s for all three packages. We conclude by outlining a pat\n\nЧому матеріал у цій добірці: його тема стосується штучного інтелекту та одного з напрямів, важливих для якості життя людей. Це тематичний відбір, а не незалежна експертна оцінка результатів. Перед висновками прочитайте оригінальну публікацію.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте розділ про публікацію та рецензування в оригіналі.\n\nРедакційне застереження: автоматична система перевіряє формат стрічки, дату, домен посилання та тематичні слова. Вона не підтверджує методологію дослідження, не перевіряє незалежно всі твердження та не замінює людську редакційну перевірку.",
-    "sourceDate": "2026-11-19",
-    "sources": [
-      {
-        "title": "WebAgents: Unbundling Agent Creation, Hosting, and Execution for an Agent-Native Web",
-        "publisher": "arXiv",
-        "url": "https://arxiv.org/abs/2611.21978",
-        "publishedDate": "2026-11-19"
-      }
-    ]
-  },
-  {
     "id": "rss-2026-11-19-ec1360fdca7b",
     "date": "2026-11-19",
     "autoPublished": true,
     "sourceType": "rss",
+    "feedName": "arXiv — Штучний інтелект",
+    "filterVersion": "2.0",
+    "selectionReason": "напрям: Освіта; прикладні сигнали: support, evaluate",
     "category": "Освіта",
     "title": "What Does an Agent Need? Bundle-Aware Agent Resource Composition",
     "summary": "arXiv:2611.22030v1 Announce Type: new Abstract: An agent resource's value depends on its backbone and companion resources and is known only after execution. Token-based generators remain tied to their training catalog, while independent resource scoring misses complementarities and reused bundles target other tasks. We…",
-    "body": "Цей матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та короткий опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.22030v1 Announce Type: new Abstract: An agent resource's value depends on its backbone and companion resources and is known only after execution. Token-based generators remain tied to their training catalog, while independent resource scoring misses complementarities and reused bundles target other tasks. We formulate Task-Conditioned Agent Resource Composition (AgentComposition): jointly selecting a backbone model and a tool-skill bundle to maximize end-to-end execution utility. Our Retrieval-Grounded Bundle-Aware Agent Generation retrieves candidate resources and past configurations of similar tasks. A fine-tuned generator reads resource descriptions and recombines candidates through constrained beam search, allowing new resources without retraining. A bundle-aware critic ranks complete configurations using a large language model (LLM) teacher and historically successful configurations as execution proxies, and adapts to execution feedback when available. We evaluate reference recovery, offline execution with judged and native rewards, and online recommendation with real execution, building AgentSelect-Exec with 5,060 executed configurations. Our method recovers the complete reference configuration within ten candidates for 67.73% of AgentSelect queries, nearly twice the strongest baseline, and leads all baselines on SkillsBench. The proxy-trained critic raises the\n\nЧому матеріал у цій добірці: його тема стосується штучного інтелекту та одного з напрямів, важливих для якості життя людей. Це тематичний відбір, а не незалежна експертна оцінка результатів. Перед висновками прочитайте оригінальну публікацію.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте розділ про публікацію та рецензування в оригіналі.\n\nРедакційне застереження: автоматична система перевіряє формат стрічки, дату, домен посилання та тематичні слова. Вона не підтверджує методологію дослідження, не перевіряє незалежно всі твердження та не замінює людську редакційну перевірку.",
+    "body": "Цей матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та короткий опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.22030v1 Announce Type: new Abstract: An agent resource's value depends on its backbone and companion resources and is known only after execution. Token-based generators remain tied to their training catalog, while independent resource scoring misses complementarities and reused bundles target other tasks. We formulate Task-Conditioned Agent Resource Composition (AgentComposition): jointly selecting a backbone model and a tool-skill bundle to maximize end-to-end execution utility. Our Retrieval-Grounded Bundle-Aware Agent Generation retrieves candidate resources and past configurations of similar tasks. A fine-tuned generator reads resource descriptions and recombines candidates through constrained beam search, allowing new resources without retraining. A bundle-aware critic ranks complete configurations using a large language model (LLM) teacher and historically successful configurations as execution proxies, and adapts to execution feedback when available. We evaluate reference recovery, offline execution with judged and native rewards, and online recommendation with real execution, building AgentSelect-Exec with 5,060 executed configurations. Our method recovers the complete reference configuration within ten candidates for 67.73% of AgentSelect queries, nearly twice the strongest baseline, and leads all baselines on SkillsBench. The proxy-trained critic raises the\n\nЧому матеріал потрапив до добірки: напрям: Освіта; прикладні сигнали: support, evaluate. Це автоматичний тематичний відбір за ключовими словами, а не підтвердження ефективності чи незалежна експертна оцінка. Перед висновками прочитайте оригінальну публікацію.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте розділ про публікацію та рецензування в оригіналі.\n\nРедакційне застереження: автоматична система перевіряє формат стрічки, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження, не перевіряє незалежно всі твердження та не замінює людську редакційну перевірку.",
     "sourceDate": "2026-11-19",
     "sources": [
       {
@@ -95,96 +44,177 @@
     ]
   },
   {
-    "id": "rss-2026-11-19-db6d264cb8de",
+    "id": "rss-2026-11-19-12c75603e9b3",
     "date": "2026-11-19",
     "autoPublished": true,
     "sourceType": "rss",
-    "category": "Мир і безпека",
-    "title": "NEBench R1: a Reasoning Benchmark for Evaluating Nuclear Domain Competence in Large Language Models",
-    "summary": "arXiv:2611.21682v1 Announce Type: new Abstract: Large language models (LLMs) are increasingly being explored for knowledge-intensive and safety-critical applications in nuclear engineering. However, existing nuclear-domain benchmarks provide limited content coverage or focus primarily on answer accuracy without systematically…",
-    "body": "Цей матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та короткий опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.21682v1 Announce Type: new Abstract: Large language models (LLMs) are increasingly being explored for knowledge-intensive and safety-critical applications in nuclear engineering. However, existing nuclear-domain benchmarks provide limited content coverage or focus primarily on answer accuracy without systematically evaluating the quality of the underlying reasoning. This study introduces NEBench R1, a reasoning-oriented benchmark comprising 7,546 unique multiple-choice questions extracted from U.S. Nuclear Regulatory Commission (NRC) reactor operator licensing examinations covering 18 nuclear facilities. Each question is classified according to the NRC Knowledge and Abilities catalogs and accompanied by an official explanation serving as a reference for reasoning evaluation. Six LLMs were evaluated, with overall accuracy ranging from 34.0% to 73.9% across three distinct performance tiers. To assess reasoning quality, an LLM-based judge evaluated correctly answered responses using a multidimensional rubric. Although responses generally demonstrated strong problem comprehension, they scored lower in factual and procedural accuracy and distractor analysis, indicating that correct answers were not necessarily supported by technically sound justifications. Response clarity was also weakly indicative of technical quality. Furthermore, longer reasoning traces were associate\n\nЧому матеріал у цій добірці: його тема стосується штучного інтелекту та одного з напрямів, важливих для якості життя людей. Це тематичний відбір, а не незалежна експертна оцінка результатів. Перед висновками прочитайте оригінальну публікацію.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте розділ про публікацію та рецензування в оригіналі.\n\nРедакційне застереження: автоматична система перевіряє формат стрічки, дату, домен посилання та тематичні слова. Вона не підтверджує методологію дослідження, не перевіряє незалежно всі твердження та не замінює людську редакційну перевірку.",
-    "sourceDate": "2026-11-19",
-    "sources": [
-      {
-        "title": "NEBench R1: a Reasoning Benchmark for Evaluating Nuclear Domain Competence in Large Language Models",
-        "publisher": "arXiv",
-        "url": "https://arxiv.org/abs/2611.21682",
-        "publishedDate": "2026-11-19"
-      }
-    ]
-  },
-  {
-    "id": "rss-2026-11-19-b86f222d774a",
-    "date": "2026-11-19",
-    "autoPublished": true,
-    "sourceType": "rss",
-    "category": "Освіта",
-    "title": "Chain-of-Thought Controllability Can Reduce Chain-of-Thought Monitorability",
-    "summary": "arXiv:2611.21799v1 Announce Type: new Abstract: Chain-of-thought (CoT) monitoring is a promising tool for detecting hidden goals, off-task behavior, and other failures in AI agents. One risk is that models could deliberately shape their reasoning to make it opaque to monitors. We stress-test this risk through persona-control…",
-    "body": "Цей матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та короткий опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.21799v1 Announce Type: new Abstract: Chain-of-thought (CoT) monitoring is a promising tool for detecting hidden goals, off-task behavior, and other failures in AI agents. One risk is that models could deliberately shape their reasoning to make it opaque to monitors. We stress-test this risk through persona-control training: supervised fine-tuning on mathematical reasoning traces rewritten in the voices of diverse personas. This induces a broader ability to control CoT, even though training contains no monitor-evasion examples. In covert side-task evaluations, traces in which a gpt-oss-20b model organism completes the hidden side task contain less monitorable evidence than the base model's. Averaged across evaluations and CoT lengths, weighted by side-task-success counts, the CoT monitorability metric g-mean$^2$ falls from 0.94 for the base model to 0.68 for the model organism without a hiding instruction, and to 0.22 when explicitly instructed to hide. In intervention evaluations, explicit hiding often drives monitorability near zero. The effect extends to a Kimi-K2.6 model organism in agentic environments, though hidden objectives requiring extended reasoning or longer trajectories remain more monitorable than simple single-step side tasks. We further discover that targeted transparency prompts can substantially recover monitorability, sometimes surpassing the base \n\nЧому матеріал у цій добірці: його тема стосується штучного інтелекту та одного з напрямів, важливих для якості життя людей. Це тематичний відбір, а не незалежна експертна оцінка результатів. Перед висновками прочитайте оригінальну публікацію.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте розділ про публікацію та рецензування в оригіналі.\n\nРедакційне застереження: автоматична система перевіряє формат стрічки, дату, домен посилання та тематичні слова. Вона не підтверджує методологію дослідження, не перевіряє незалежно всі твердження та не замінює людську редакційну перевірку.",
-    "sourceDate": "2026-11-19",
-    "sources": [
-      {
-        "title": "Chain-of-Thought Controllability Can Reduce Chain-of-Thought Monitorability",
-        "publisher": "arXiv",
-        "url": "https://arxiv.org/abs/2611.21799",
-        "publishedDate": "2026-11-19"
-      }
-    ]
-  },
-  {
-    "id": "rss-2026-11-19-0be8d4aa156a",
-    "date": "2026-11-19",
-    "autoPublished": true,
-    "sourceType": "rss",
-    "category": "Освіта",
-    "title": "How Much of SAR Vehicle Recognition Is the Vehicle? Background Shortcuts, Angle Gaps and Partial Libraries on MSTAR and ATRNet-STAR",
-    "summary": "arXiv:2611.21827v1 Announce Type: new Abstract: Deep networks score near 99% on the MSTAR vehicle benchmark, and the newer ATRNet-STAR benchmark was built to be harder. We ask how much of these scores comes from the vehicle itself. With a modern network (ConvNeXt-Small, 3 seeds) we first reproduce the known MSTAR result: with…",
-    "body": "Цей матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та короткий опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.21827v1 Announce Type: new Abstract: Deep networks score near 99% on the MSTAR vehicle benchmark, and the newer ATRNet-STAR benchmark was built to be harder. We ask how much of these scores comes from the vehicle itself. With a modern network (ConvNeXt-Small, 3 seeds) we first reproduce the known MSTAR result: with the central 96x96 pixels zeroed out, accuracy is still 73.3% (chance 10%). The same shortcut is present in ATRNet-STAR, which was collected across several scenes: with the vehicle removed, accuracy is 63.3% on the 40-class SOC split (chance 2.5%). Under the official scene-change split, the background stops helping and starts hurting. Accuracy is 22.8% on full chips and 30.8% when only the vehicle is shown. A SAR foundation model, SARATR-X, leans on the background more than ConvNeXt does (+4 to +6 points with the vehicle removed, in every seed) and does not solve the scene change. We then hold the amount of training data fixed and vary the depression angles used for training. Accuracy is set mainly by the gap to the nearest training angle: 57% at 15 degrees, 39% at 30 degrees and 26% at 45 degrees. Adding more training angles does not help. Finally, when most classes have training images at the test angle and a few do not, the missing classes do worse than when no class has them: 9.0% instead of 22.4% at a 45-degree gap. Most of their images are assigned to\n\nЧому матеріал у цій добірці: його тема стосується штучного інтелекту та одного з напрямів, важливих для якості життя людей. Це тематичний відбір, а не незалежна експертна оцінка результатів. Перед висновками прочитайте оригінальну публікацію.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте розділ про публікацію та рецензування в оригіналі.\n\nРедакційне застереження: автоматична система перевіряє формат стрічки, дату, домен посилання та тематичні слова. Вона не підтверджує методологію дослідження, не перевіряє незалежно всі твердження та не замінює людську редакційну перевірку.",
-    "sourceDate": "2026-11-19",
-    "sources": [
-      {
-        "title": "How Much of SAR Vehicle Recognition Is the Vehicle? Background Shortcuts, Angle Gaps and Partial Libraries on MSTAR and ATRNet-STAR",
-        "publisher": "arXiv",
-        "url": "https://arxiv.org/abs/2611.21827",
-        "publishedDate": "2026-11-19"
-      }
-    ]
-  },
-  {
-    "id": "rss-2026-11-19-c60bbdbf2963",
-    "date": "2026-11-19",
-    "autoPublished": true,
-    "sourceType": "rss",
-    "category": "Мир і безпека",
-    "title": "Auditors Struggle to Catch Sabotage In End-to-End Transcripts of AI Safety Research",
-    "summary": "arXiv:2611.21832v1 Announce Type: new Abstract: As AI systems are increasingly used to automate AI R&D, misaligned systems could sabotage research intended to improve model safety and alignment. To stress-test defenses against such sabotage, we use a human expert as a proxy saboteur on AI safety research. We conduct a…",
-    "body": "Цей матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та короткий опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.21832v1 Announce Type: new Abstract: As AI systems are increasingly used to automate AI R&D, misaligned systems could sabotage research intended to improve model safety and alignment. To stress-test defenses against such sabotage, we use a human expert as a proxy saboteur on AI safety research. We conduct a red-team/blue-team game where a human researcher runs AI safety experiments from scratch and auditors try to tell which were sabotaged and how. Given access to the full research transcript and the ability to run experiments, human auditors mostly fail to distinguish sabotaged from benign research: they achieve an AUROC of 0.59, not significantly better than chance, and fully identify the specific sabotage in only 17% of cases. Despite not being allowed to run experiments, the best frontier models outperform human auditors (Fable 5.1: AUROC 0.73, 32% full identification) within noise and weaker models perform comparably. When the saboteur chooses which experiments are attacked, rather than being required to sabotage every question given, sabotage identification drops further. Our results suggest that research sabotage by expert-level agents is difficult to detect with current auditing methods and provide a new setting for studying research sabotage.\n\nЧому матеріал у цій добірці: його тема стосується штучного інтелекту та одного з напрямів, важливих для якості життя людей. Це тематичний відбір, а не незалежна експертна оцінка результатів. Перед висновками прочитайте оригінальну публікацію.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте розділ про публікацію та рецензування в оригіналі.\n\nРедакційне застереження: автоматична система перевіряє формат стрічки, дату, домен посилання та тематичні слова. Вона не підтверджує методологію дослідження, не перевіряє незалежно всі твердження та не замінює людську редакційну перевірку.",
-    "sourceDate": "2026-11-19",
-    "sources": [
-      {
-        "title": "Auditors Struggle to Catch Sabotage In End-to-End Transcripts of AI Safety Research",
-        "publisher": "arXiv",
-        "url": "https://arxiv.org/abs/2611.21832",
-        "publishedDate": "2026-11-19"
-      }
-    ]
-  },
-  {
-    "id": "rss-2026-11-19-03b179946dd0",
-    "date": "2026-11-19",
-    "autoPublished": true,
-    "sourceType": "rss",
+    "feedName": "arXiv — Штучний інтелект",
+    "filterVersion": "2.0",
+    "selectionReason": "напрям: Медицина; прикладні сигнали: improv, benefit, detect",
     "category": "Медицина",
-    "title": "Language Models Can Rewrite Their Own Weights",
-    "summary": "arXiv:2611.21885v2 Announce Type: new Abstract: A language model is trained once and frozen. Making it better takes another training run, or a prompt, a harness or extra computation at inference that is gone once the task ends. We show a third way: to our knowledge for the first time, a language model rewrites its own weights…",
-    "body": "Цей матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та короткий опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.21885v2 Announce Type: new Abstract: A language model is trained once and frozen. Making it better takes another training run, or a prompt, a harness or extra computation at inference that is gone once the task ends. We show a third way: to our knowledge for the first time, a language model rewrites its own weights by its own reasoning and becomes better, with no gradients and no training. We call this self-rewriting: the model is its own optimizer. In earlier work, a frontier model edited a much smaller one; here an open 27B model, given its weights, its graded answers and the ability to run itself, diagnoses its own failure and rewrites the weights behind it. It surpasses itself: its own edit makes it 6.6 points more accurate on problems it never saw. It keeps getting better: it tests its edits on practice problems and submits only what works, each edit improving on the last, and over eight consecutive sessions its accuracy only rises. It repairs a damaged copy of itself, like a broken robot that fixes itself without being rebuilt: the copy solves almost nothing, yet with no retraining and without ever reading the original weights, the model brings it back to over 80% of the original accuracy on image tasks it never saw. And the ability emerges with scale: in one model family, the smaller models make no edit or break themselves, and only the largest improves and re\n\nЧому матеріал у цій добірці: його тема стосується штучного інтелекту та одного з напрямів, важливих для якості життя людей. Це тематичний відбір, а не незалежна експертна оцінка результатів. Перед висновками прочитайте оригінальну публікацію.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте розділ про публікацію та рецензування в оригіналі.\n\nРедакційне застереження: автоматична система перевіряє формат стрічки, дату, домен посилання та тематичні слова. Вона не підтверджує методологію дослідження, не перевіряє незалежно всі твердження та не замінює людську редакційну перевірку.",
+    "title": "MedGuardBench: A Patient-Oriented Benchmark for Personalized Guardrail Development",
+    "summary": "arXiv:2611.22069v1 Announce Type: new Abstract: Safety is personal: the same action can be safe for one person but unsafe for another. Yet current guardrails judge content without considering who is affected. Using medication safety, we introduce \\textit{patient-conditioned medication guarding}, which predicts a safety verdict…",
+    "body": "Цей матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та короткий опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.22069v1 Announce Type: new Abstract: Safety is personal: the same action can be safe for one person but unsafe for another. Yet current guardrails judge content without considering who is affected. Using medication safety, we introduce \\textit{patient-conditioned medication guarding}, which predicts a safety verdict and 17 risk categories from a patient profile and prescription. We release \\textbf{MedGuardBench}, a drug-disjoint benchmark of 5{,}001 scenarios across 87 medications. We find that standard guardrails rely on surface cues, such as wording and profile presence, rather than patient facts. To address this, we develop \\textit{personalized reasoning guardrails} with three components. \\textbf{Personalized Reasoning Distillation} links risks to relevant patient fields. \\textbf{Context Unrolling (CU)} makes models check each field themselves, reducing false alarms on most backbones; controls show that providing the check does not yield the same benefit. A \\textbf{rule-based reward (guided GRPO)} improves unsafe recall and complex-risk detection, including allergies and adverse reactions, on some backbones, but increases false alarms on others. Our models outperform base models and matched no-profile controls in accuracy, while reducing false alarms relative to no-profile controls. Profile removal and swapping confirm that gains come from patient information, not\n\nЧому матеріал потрапив до добірки: напрям: Медицина; прикладні сигнали: improv, benefit, detect. Це автоматичний тематичний відбір за ключовими словами, а не підтвердження ефективності чи незалежна експертна оцінка. Перед висновками прочитайте оригінальну публікацію.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте розділ про публікацію та рецензування в оригіналі.\n\nРедакційне застереження: автоматична система перевіряє формат стрічки, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження, не перевіряє незалежно всі твердження та не замінює людську редакційну перевірку.",
     "sourceDate": "2026-11-19",
     "sources": [
       {
-        "title": "Language Models Can Rewrite Their Own Weights",
+        "title": "MedGuardBench: A Patient-Oriented Benchmark for Personalized Guardrail Development",
         "publisher": "arXiv",
-        "url": "https://arxiv.org/abs/2611.21885",
+        "url": "https://arxiv.org/abs/2611.22069",
+        "publishedDate": "2026-11-19"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-19-2de6e26125bd",
+    "date": "2026-11-19",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "arXiv — Штучний інтелект",
+    "filterVersion": "2.0",
+    "selectionReason": "напрям: Екологія; прикладні сигнали: evaluate",
+    "category": "Екологія",
+    "title": "ATLAS-Finance: Benchmarking AI Agents in Realistic Banking Environments",
+    "summary": "arXiv:2611.22085v1 Announce Type: new Abstract: Professional work involves under-specified assignments, where relevant information is spread across workplace applications and may conflict or change over time. To evaluate how well frontier agents can perform economically valuable work in such settings, we introduce…",
+    "body": "Цей матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та короткий опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.22085v1 Announce Type: new Abstract: Professional work involves under-specified assignments, where relevant information is spread across workplace applications and may conflict or change over time. To evaluate how well frontier agents can perform economically valuable work in such settings, we introduce ATLAS-Finance, a benchmark of 100 end-to-end investment-banking tasks across 13 simulated firms. As in real banking workflows, agents must search email, chat, calendars, notes, and files to identify requirements, gather information, reconcile conflicts/updates, and then build complex financial models. Tasks were developed by experienced bankers based on their real deal work and take them 15-30 hours to complete. Agent deliverables are evaluated with expert-authored rubrics (median: 124.5 criteria) covering financial rationale and results, spreadsheet construction, completeness, and formatting. Despite completing substantial portions of the requested work, current agents rarely produce correct deliverables. Across today's frontier models, the best ones (Claude Opus and Fable) pass fewer than 11% of tasks.\n\nЧому матеріал потрапив до добірки: напрям: Екологія; прикладні сигнали: evaluate. Це автоматичний тематичний відбір за ключовими словами, а не підтвердження ефективності чи незалежна експертна оцінка. Перед висновками прочитайте оригінальну публікацію.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте розділ про публікацію та рецензування в оригіналі.\n\nРедакційне застереження: автоматична система перевіряє формат стрічки, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження, не перевіряє незалежно всі твердження та не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-19",
+    "sources": [
+      {
+        "title": "ATLAS-Finance: Benchmarking AI Agents in Realistic Banking Environments",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2611.22085",
+        "publishedDate": "2026-11-19"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-19-7e648ae5ea5c",
+    "date": "2026-11-19",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "arXiv — Штучний інтелект",
+    "filterVersion": "2.0",
+    "selectionReason": "напрям: Державне управління; прикладні сигнали: reduce, personaliz",
+    "category": "Державне управління",
+    "title": "RegimeCouncil: Paired-Evidence Routing For Memory Conflict Governance In LLM Agents",
+    "summary": "arXiv:2611.22113v1 Announce Type: new Abstract: Language agents rely on long-term memory to personalize responses across extended interactions, yet stored facts quietly go stale as the world changes, and an agent often learns that using memory hurt only through delayed feedback after acting on an outdated record. Before the…",
+    "body": "Цей матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та короткий опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.22113v1 Announce Type: new Abstract: Language agents rely on long-term memory to personalize responses across extended interactions, yet stored facts quietly go stale as the world changes, and an agent often learns that using memory hurt only through delayed feedback after acting on an outdated record. Before the memory store is updated, how far should that negative feedback propagate: should it suppress memory use only on future queries for that same fact (a local policy), or also across other stored facts (a global policy)? Existing memory systems implicitly fix one of these two sharing scopes at design time. We formulate this online scope choice under hidden validity and delayed feedback as memory conflict governance, and prove that neither fixed policy is sufficient on its own. We then propose RegimeCouncil, a lightweight paired-evidence router that retains both scopes as advisors and arbitrates between them online without retraining the LLM. Using revealed comparisons between answering with memory and answering without memory (the no-memory anchor), a Local Advisor tracks the latest outcome on the queried fact alone, while a Global Advisor pools recent outcomes across all stored facts. A Meta Governor follows the Local Advisor by default to avoid cross-fact interference and switches to the Global Advisor only when global pooling accumulates a strictly positive r\n\nЧому матеріал потрапив до добірки: напрям: Державне управління; прикладні сигнали: reduce, personaliz. Це автоматичний тематичний відбір за ключовими словами, а не підтвердження ефективності чи незалежна експертна оцінка. Перед висновками прочитайте оригінальну публікацію.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте розділ про публікацію та рецензування в оригіналі.\n\nРедакційне застереження: автоматична система перевіряє формат стрічки, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження, не перевіряє незалежно всі твердження та не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-19",
+    "sources": [
+      {
+        "title": "RegimeCouncil: Paired-Evidence Routing For Memory Conflict Governance In LLM Agents",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2611.22113",
+        "publishedDate": "2026-11-19"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-19-461e9bc34e48",
+    "date": "2026-11-19",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "arXiv — Штучний інтелект",
+    "filterVersion": "2.0",
+    "selectionReason": "напрям: Медицина; прикладні сигнали: screen",
+    "category": "Медицина",
+    "title": "Not All Evidence Is Admissible: Evidence Governance for Tool-Augmented Medical Agents",
+    "summary": "arXiv:2611.22169v1 Announce Type: new Abstract: Tool-augmented medical agents treat whatever their tools return as evidence. We show that this default is costly: medical tools fail silently, and a frozen reasoner cannot ignore what enters its context, so many cases it would have answered correctly are flipped to wrong once…",
+    "body": "Цей матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та короткий опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.22169v1 Announce Type: new Abstract: Tool-augmented medical agents treat whatever their tools return as evidence. We show that this default is costly: medical tools fail silently, and a frozen reasoner cannot ignore what enters its context, so many cases it would have answered correctly are flipped to wrong once tool outputs are added. We call this evidence hijacking. $\\mathcal{V}$-information explains the phenomenon: the reasoner has lost the option to ignore, so a tool output can carry negative usable information, and moving the decision of what to keep outside the reasoner restores that option. The theory further shows that part of any filtering gain comes merely from letting the reasoner see less, and only selection by content lets it see better. Building on this, we recast tool-augmented reasoning as evidence governance, which separates deciding what counts as evidence from the reasoner that answers, and propose context-independent evidence governance (CIEG), the first medical agent framework that rules, after acquisition, on whether each individual tool output may enter as evidence. Every tool output is written as a card that can be checked against the raw input; an independent checker that sees only the input and the cards decides which cards become evidence; and the reasoner answers from the admitted cards alone, with no training anywhere. On medical question\n\nЧому матеріал потрапив до добірки: напрям: Медицина; прикладні сигнали: screen. Це автоматичний тематичний відбір за ключовими словами, а не підтвердження ефективності чи незалежна експертна оцінка. Перед висновками прочитайте оригінальну публікацію.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте розділ про публікацію та рецензування в оригіналі.\n\nРедакційне застереження: автоматична система перевіряє формат стрічки, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження, не перевіряє незалежно всі твердження та не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-19",
+    "sources": [
+      {
+        "title": "Not All Evidence Is Admissible: Evidence Governance for Tool-Augmented Medical Agents",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2611.22169",
+        "publishedDate": "2026-11-19"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-19-8b9d70b5944a",
+    "date": "2026-11-19",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "arXiv — Штучний інтелект",
+    "filterVersion": "2.0",
+    "selectionReason": "напрям: Освіта; прикладні сигнали: support, efficient",
+    "category": "Освіта",
+    "title": "Reconfiguring Procedural Knowledge for Compositional Robot Skill Adaptation",
+    "summary": "arXiv:2611.22174v1 Announce Type: new Abstract: General-purpose behavior models increasingly internalize broad procedural knowledge during training, making their adaptation to new goals and skill interfaces less a problem of learning entirely new behaviors than of reconfiguring existing competence. We study this capability as…",
+    "body": "Цей матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та короткий опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.22174v1 Announce Type: new Abstract: General-purpose behavior models increasingly internalize broad procedural knowledge during training, making their adaptation to new goals and skill interfaces less a problem of learning entirely new behaviors than of reconfiguring existing competence. We study this capability as reconfigurability, the ability to realize new behaviors by cost-efficiently restructuring existing components and relations under sparse governing information, where task specifications provide high-level goals and procedure specifications expose a limited set of reusable factors, leaving the concrete bindings and compositions required for execution underdetermined. We propose RecPo, a framework that represents skills task-agnostically through multiple procedure views and materializes executable skill sequences by composing stored transitions to realize task-specific changes. RecPo maintains a procedure knowledge base of skill-induced transitions, with each view exposing a reusable factor and preserving local skill connectivity. At deployment, it interprets task specifications through the same views and resolves the resulting compositional queries over the stored relations to bind skills for execution. On long-horizon tasks in an extended Franka Kitchen benchmark, RecPo achieves 91.9% ordered completion with 1.0 ms of task inference per episode across vary\n\nЧому матеріал потрапив до добірки: напрям: Освіта; прикладні сигнали: support, efficient. Це автоматичний тематичний відбір за ключовими словами, а не підтвердження ефективності чи незалежна експертна оцінка. Перед висновками прочитайте оригінальну публікацію.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте розділ про публікацію та рецензування в оригіналі.\n\nРедакційне застереження: автоматична система перевіряє формат стрічки, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження, не перевіряє незалежно всі твердження та не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-19",
+    "sources": [
+      {
+        "title": "Reconfiguring Procedural Knowledge for Compositional Robot Skill Adaptation",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2611.22174",
+        "publishedDate": "2026-11-19"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-19-9b2edc7c7cf7",
+    "date": "2026-11-19",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "arXiv — Штучний інтелект",
+    "filterVersion": "2.0",
+    "selectionReason": "напрям: Медицина; прикладні сигнали: improv, evaluate, evaluation",
+    "category": "Медицина",
+    "title": "Fine-Grained Japanese Clinical Named Entity Recognition: A Controlled Comparison of BERT and Open-Weight Large Language Models",
+    "summary": "arXiv:2611.22219v1 Announce Type: new Abstract: Background: Generative large language models (LLMs) offer an alternative to encoder-based clinical named entity recognition (NER), but their performance on fine-grained Japanese extraction tasks and sensitivity to generation settings remain uncertain. Methods: We compared two…",
+    "body": "Цей матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та короткий опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.22219v1 Announce Type: new Abstract: Background: Generative large language models (LLMs) offer an alternative to encoder-based clinical named entity recognition (NER), but their performance on fine-grained Japanese extraction tasks and sensitivity to generation settings remain uncertain. Methods: We compared two fine-tuned BERT-CRF baselines with nine open-weight LLMs on iCorpus, which defines 113 entity categories. The evaluation used 433 sentences from 36 test documents; 1,672 sentences were used for training. LLMs were evaluated using zero-shot prompting with and without JSON Schema constraints and three-seed QLoRA fine-tuning. Fine-tuned models were assessed under different output-token limits, including 900 and larger model-specific limits of 2,600 or 4,096 tokens. Performance was measured using sentence-level label-surface matching with relaxed and exact-surface F1. Results: The highest zero-shot relaxed F1 was 0.337, compared with 0.836-0.841 for the BERT baselines. At the larger output limits, all eight fine-tuned LLMs with at least 13B total parameters exceeded both BERT baselines (relaxed F1, 0.882-0.914; exact-surface F1, 0.840-0.880). Across three-seed means, increasing the output limit improved relaxed F1 by 0.052-0.085, alongside higher recall and fewer length-limited outputs. JSON Schema constraints changed relaxed F1 by -0.014 to +0.008 among seven mo\n\nЧому матеріал потрапив до добірки: напрям: Медицина; прикладні сигнали: improv, evaluate, evaluation. Це автоматичний тематичний відбір за ключовими словами, а не підтвердження ефективності чи незалежна експертна оцінка. Перед висновками прочитайте оригінальну публікацію.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте розділ про публікацію та рецензування в оригіналі.\n\nРедакційне застереження: автоматична система перевіряє формат стрічки, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження, не перевіряє незалежно всі твердження та не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-19",
+    "sources": [
+      {
+        "title": "Fine-Grained Japanese Clinical Named Entity Recognition: A Controlled Comparison of BERT and Open-Weight Large Language Models",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2611.22219",
+        "publishedDate": "2026-11-19"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-19-0b00acc2ef47",
+    "date": "2026-11-19",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "arXiv — Штучний інтелект",
+    "filterVersion": "2.0",
+    "selectionReason": "напрям: Медицина; прикладні сигнали: improv, support, reduce",
+    "category": "Медицина",
+    "title": "A Visual Information Extraction System Using Multimodal Large Language Models for Scanned Cognitive and Behavioral Assessments",
+    "summary": "arXiv:2611.22252v1 Announce Type: new Abstract: Objective. Paper-based assessments are common in patient care, but handwriting and scanning artifacts make these forms difficult to process at scale. This study proposes a modular, multimodal LLM-based system with human oversight for extracting fields and scores. We conducted a…",
+    "body": "Цей матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та короткий опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.22252v1 Announce Type: new Abstract: Objective. Paper-based assessments are common in patient care, but handwriting and scanning artifacts make these forms difficult to process at scale. This study proposes a modular, multimodal LLM-based system with human oversight for extracting fields and scores. We conducted a qualitative analysis of the use of LLMs for hand-drawing analysis. Materials and Methods. The system processes cognitive assessments (i.e., MMSE, MoCA, Mini-Cog) and the NICHQ Vanderbilt Assessment using two modules: 1) a form classifier that assigns a scanned page to a form type, followed by a corresponding 2) score extractor that extracts fields and scores into a schema. A human-in-the-loop design utilizing dual-model validation engages human annotators when two LLMs disagree, limiting manual review to challenging pages only. Results. End-to-end accuracy for cognitive assessments was 88%, with most form types exceeding 90%. For the NICHQ Vanderbilt, overall accuracy reached 97.5%, with all form types above 96%. The human-in-the-loop design further improved cognitive assessment accuracy to 97.5% while reducing manual work by 63.8%. In the Mini-Cog Clock Drawing task, qualitative analysis showed that 62.3% of all extraction errors stemmed from ambiguous drawing, in which cases the LLM provided reasonable readings. Discussion. Compared to current manual data\n\nЧому матеріал потрапив до добірки: напрям: Медицина; прикладні сигнали: improv, support, reduce. Це автоматичний тематичний відбір за ключовими словами, а не підтвердження ефективності чи незалежна експертна оцінка. Перед висновками прочитайте оригінальну публікацію.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте розділ про публікацію та рецензування в оригіналі.\n\nРедакційне застереження: автоматична система перевіряє формат стрічки, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження, не перевіряє незалежно всі твердження та не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-19",
+    "sources": [
+      {
+        "title": "A Visual Information Extraction System Using Multimodal Large Language Models for Scanned Cognitive and Behavioral Assessments",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2611.22252",
+        "publishedDate": "2026-11-19"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-19-24414a09953b",
+    "date": "2026-11-19",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "arXiv — Штучний інтелект",
+    "filterVersion": "2.0",
+    "selectionReason": "напрям: Надійність ШІ; прикладні сигнали: improv",
+    "category": "Надійність ШІ",
+    "title": "DACE: Diversity-Driven Adversarial Co-Evolution for Robust LLM Safety Alignment",
+    "summary": "arXiv:2611.22278v1 Announce Type: new Abstract: Ensuring robust safety alignment of large language models (LLMs) is increasingly difficult as adversarial attacks evolve and outpace alignment pipelines built on pre-collected data. Existing co-evolutionary frameworks let the defender chase a moving attacker, yet their training…",
+    "body": "Цей матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та короткий опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.22278v1 Announce Type: new Abstract: Ensuring robust safety alignment of large language models (LLMs) is increasingly difficult as adversarial attacks evolve and outpace alignment pipelines built on pre-collected data. Existing co-evolutionary frameworks let the defender chase a moving attacker, yet their training dynamics expose two compounding pathologies: \\emph{attack strategy collapse}, where the attacker overfits to a narrow set of high-reward rewrites, and \\emph{defense adversarial forgetting}, where the defender loses competence against earlier attacks as the attack distribution drifts. Existing remedies are partial: attacker-side diversity rewards score textual novelty rather than strategy novelty, and defender-side replay relies on discrete judge scores that ignore estimation uncertainty, response stochasticity, and defender non-stationarity. We introduce \\textbf{\\method}, a diversity-driven adversarial co-evolution framework that targets both pathologies jointly. On the attacker side, \\method couples an explicit two-dimensional strategy space (risk category $\\times$ attack style) with a \\emph{normalized marginal coverage gain} reward, providing a bounded, non-vanishing exploration signal at the strategy layer. On the defender side, \\method maintains a unified \\emph{Bayesian adversarial replay pool} whose Beta--Bernoulli threat posteriors are refreshed by ti\n\nЧому матеріал потрапив до добірки: напрям: Надійність ШІ; прикладні сигнали: improv. Це автоматичний тематичний відбір за ключовими словами, а не підтвердження ефективності чи незалежна експертна оцінка. Перед висновками прочитайте оригінальну публікацію.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте розділ про публікацію та рецензування в оригіналі.\n\nРедакційне застереження: автоматична система перевіряє формат стрічки, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження, не перевіряє незалежно всі твердження та не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-19",
+    "sources": [
+      {
+        "title": "DACE: Diversity-Driven Adversarial Co-Evolution for Robust LLM Safety Alignment",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2611.22278",
         "publishedDate": "2026-11-19"
       }
     ]

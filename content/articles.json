@@ -1,5 +1,100 @@
 [
   {
+    "id": "rss-2026-11-19-adc7c86f54ce",
+    "date": "2026-11-19",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "category": "Освіта",
+    "title": "SLED: Sensor SLicing from Edge to Datacenter",
+    "summary": "arXiv:2611.21937v1 Announce Type: new Abstract: Modern sensing systems generate large volumes of heterogeneous data streams from multiple sensor modalities, increasing reliance on datacenters for computation, artificial intelligence/superintelligence (AI/SI) inference, and AI/SI training. Each sensor stream may have different…",
+    "body": "Цей матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та короткий опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.21937v1 Announce Type: new Abstract: Modern sensing systems generate large volumes of heterogeneous data streams from multiple sensor modalities, increasing reliance on datacenters for computation, artificial intelligence/superintelligence (AI/SI) inference, and AI/SI training. Each sensor stream may have different network and compute requirements depending on its type and data volume. However, current wireless systems typically allocate resources at the device level, leading to contention among co-located sensor streams, where bulk data transfers may starve latency-critical telemetry. To this end, this paper introduces Sensor Slicing (SL). SL provides deterministic, medium access control (MAC)-level isolation for individual sensors within a single user equipment (UE) in open radio access networks (O-RAN). Using agentic coding techniques, SL is implemented in two O-RAN-compliant packages, reducing development time by 400 times (2 h 40 min [OCUDU] vs. 6.5 weeks [OAI]), 228-fold fewer human prompts (4 vs. 913), and less than half the tokens (0.64B vs. 1.43B). An associated end-to-end framework, SLED, is implemented to establish per-sensor radio and network isolation across edge, campus, and remote high-performance computing (HPC) tiers. Over-the-air wireless experiments demonstrate that while conventional network slicing causes critical delays to increase more than 2,3\n\nЧому матеріал у цій добірці: його тема стосується штучного інтелекту та одного з напрямів, важливих для якості життя людей. Це тематичний відбір, а не незалежна експертна оцінка результатів. Перед висновками прочитайте оригінальну публікацію.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте розділ про публікацію та рецензування в оригіналі.\n\nРедакційне застереження: автоматична система перевіряє формат стрічки, дату, домен посилання та тематичні слова. Вона не підтверджує методологію дослідження, не перевіряє незалежно всі твердження та не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-19",
+    "sources": [
+      {
+        "title": "SLED: Sensor SLicing from Edge to Datacenter",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2611.21937",
+        "publishedDate": "2026-11-19"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-19-57b8a5effa02",
+    "date": "2026-11-19",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "category": "Освіта",
+    "title": "Honest Brokers in AI Regulation: How Public Comments Introduce Evidence to Regulators",
+    "summary": "arXiv:2611.21948v1 Announce Type: new Abstract: The regulation of Artificial Intelligence is susceptible to various forms of capture by industry actors that hold undue influence over the policymaking process, due in part to their information advantage in developing these technologies. In the following paper, we investigate the…",
+    "body": "Цей матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та короткий опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.21948v1 Announce Type: new Abstract: The regulation of Artificial Intelligence is susceptible to various forms of capture by industry actors that hold undue influence over the policymaking process, due in part to their information advantage in developing these technologies. In the following paper, we investigate the roles of public commenters in providing evidence to potential regulation in the USA. We build a corpus of 40 potential regulations, and 2,664 public comments submitted by a variety of stakeholders. We computationally process these texts to extract evidence meant to inform regulators, in the form of formal citations and informal references. We find significant differences in the type and amount of evidence supplied: Holding comment length constant, business commenters introduce altogether less evidence, and government, university, and civil society commenters provide significantly more research and legal sources. The publication status of cited research is nearly evenly split, with preprints and peer-reviewed articles being introduced by commenters of all types. We further explore patterns of self-citation and find that while it is prevalent amongst all groups, a small cluster of organizations account for over half of all self-citations in our corpus. Our findings complicate a narrative that public comments alone are means to information capture. We interp\n\nЧому матеріал у цій добірці: його тема стосується штучного інтелекту та одного з напрямів, важливих для якості життя людей. Це тематичний відбір, а не незалежна експертна оцінка результатів. Перед висновками прочитайте оригінальну публікацію.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте розділ про публікацію та рецензування в оригіналі.\n\nРедакційне застереження: автоматична система перевіряє формат стрічки, дату, домен посилання та тематичні слова. Вона не підтверджує методологію дослідження, не перевіряє незалежно всі твердження та не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-19",
+    "sources": [
+      {
+        "title": "Honest Brokers in AI Regulation: How Public Comments Introduce Evidence to Regulators",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2611.21948",
+        "publishedDate": "2026-11-19"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-19-798a2217c376",
+    "date": "2026-11-19",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "category": "Економіка та добробут",
+    "title": "DiscoveryAgent: A Framework for Scientist-centric Agentic AI",
+    "summary": "arXiv:2611.21950v1 Announce Type: new Abstract: AI agents can assist scientific research, but balancing autonomous investigation with scientists' ability to inspect and redirect ongoing work remains a central design challenge. We present DiscoveryAgent, a domain-agnostic, scientist-centric system that combines autonomous…",
+    "body": "Цей матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та короткий опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.21950v1 Announce Type: new Abstract: AI agents can assist scientific research, but balancing autonomous investigation with scientists' ability to inspect and redirect ongoing work remains a central design challenge. We present DiscoveryAgent, a domain-agnostic, scientist-centric system that combines autonomous investigation with scientist-directed hypothesis steering. Scientists select, refine, or replace hypotheses between research rounds, while audit agents interrogate checkpointed records to trace claims, reproduce analyses, and inform subsequent decisions. Across two predictive modeling tasks, DiscoveryAgent produced the best variable-star classifier among evaluated baselines and, with scientist steering, a protein variant-effect predictor surpassed by only one of 106 ProteinGym baselines. We develop a rigorous checkpointing system that enables highly capable audit agents, a scalable form of oversight for agentic research. Audit agents autonomously identify errors at higher rates than previous AI scientist agents, and scientists collaborating with audit agents identify 14x more valid errors versus scientists performing manual review. In three case studies led by domain experts across physical science, social science, and life science, we developed a multimodal photometric-redshift estimator that resolves complementary failures of images and photometry, achieving \n\nЧому матеріал у цій добірці: його тема стосується штучного інтелекту та одного з напрямів, важливих для якості життя людей. Це тематичний відбір, а не незалежна експертна оцінка результатів. Перед висновками прочитайте оригінальну публікацію.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте розділ про публікацію та рецензування в оригіналі.\n\nРедакційне застереження: автоматична система перевіряє формат стрічки, дату, домен посилання та тематичні слова. Вона не підтверджує методологію дослідження, не перевіряє незалежно всі твердження та не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-19",
+    "sources": [
+      {
+        "title": "DiscoveryAgent: A Framework for Scientist-centric Agentic AI",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2611.21950",
+        "publishedDate": "2026-11-19"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-19-6f06e74483d4",
+    "date": "2026-11-19",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "category": "Екологія",
+    "title": "WebAgents: Unbundling Agent Creation, Hosting, and Execution for an Agent-Native Web",
+    "summary": "arXiv:2611.21978v1 Announce Type: new Abstract: Large language models are moving from isolated assistants toward autonomous agents that can plan, use tools, and coordinate with others, motivating an emerging Agentic Web of independently developed agents and services. Realizing this vision requires agent behavior to move across…",
+    "body": "Цей матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та короткий опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.21978v1 Announce Type: new Abstract: Large language models are moving from isolated assistants toward autonomous agents that can plan, use tools, and coordinate with others, motivating an emerging Agentic Web of independently developed agents and services. Realizing this vision requires agent behavior to move across creators, hosts, and runtimes without coupling publication to a particular execution environment or transferring authority over user resources. We introduce WebAgents, which unbundles these roles through a signed agent.pkg that carries portable workflows, skills, schemas, and resource requirements. An OpenClaw-based agent-native browser/runtime verifies the package, obtains authorization, and binds it at run time to user-controlled models, tools, permissions, and budgets, while hosts distribute the public program and may retain private services server-side. We demonstrate this contract with three unrelated workflows executed unchanged under local and API-backed models, including literature review with live services and a website-published travel agent using semantic tools and user-selected personal resources. In a controlled suite, WebAgents explicitly blocks all 716 injected contract violations while accepting all 295 matched benign controls, with median automated pre-execution processing below 0.5 s for all three packages. We conclude by outlining a pat\n\nЧому матеріал у цій добірці: його тема стосується штучного інтелекту та одного з напрямів, важливих для якості життя людей. Це тематичний відбір, а не незалежна експертна оцінка результатів. Перед висновками прочитайте оригінальну публікацію.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте розділ про публікацію та рецензування в оригіналі.\n\nРедакційне застереження: автоматична система перевіряє формат стрічки, дату, домен посилання та тематичні слова. Вона не підтверджує методологію дослідження, не перевіряє незалежно всі твердження та не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-19",
+    "sources": [
+      {
+        "title": "WebAgents: Unbundling Agent Creation, Hosting, and Execution for an Agent-Native Web",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2611.21978",
+        "publishedDate": "2026-11-19"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-19-ec1360fdca7b",
+    "date": "2026-11-19",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "category": "Освіта",
+    "title": "What Does an Agent Need? Bundle-Aware Agent Resource Composition",
+    "summary": "arXiv:2611.22030v1 Announce Type: new Abstract: An agent resource's value depends on its backbone and companion resources and is known only after execution. Token-based generators remain tied to their training catalog, while independent resource scoring misses complementarities and reused bundles target other tasks. We…",
+    "body": "Цей матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та короткий опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.22030v1 Announce Type: new Abstract: An agent resource's value depends on its backbone and companion resources and is known only after execution. Token-based generators remain tied to their training catalog, while independent resource scoring misses complementarities and reused bundles target other tasks. We formulate Task-Conditioned Agent Resource Composition (AgentComposition): jointly selecting a backbone model and a tool-skill bundle to maximize end-to-end execution utility. Our Retrieval-Grounded Bundle-Aware Agent Generation retrieves candidate resources and past configurations of similar tasks. A fine-tuned generator reads resource descriptions and recombines candidates through constrained beam search, allowing new resources without retraining. A bundle-aware critic ranks complete configurations using a large language model (LLM) teacher and historically successful configurations as execution proxies, and adapts to execution feedback when available. We evaluate reference recovery, offline execution with judged and native rewards, and online recommendation with real execution, building AgentSelect-Exec with 5,060 executed configurations. Our method recovers the complete reference configuration within ten candidates for 67.73% of AgentSelect queries, nearly twice the strongest baseline, and leads all baselines on SkillsBench. The proxy-trained critic raises the\n\nЧому матеріал у цій добірці: його тема стосується штучного інтелекту та одного з напрямів, важливих для якості життя людей. Це тематичний відбір, а не незалежна експертна оцінка результатів. Перед висновками прочитайте оригінальну публікацію.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте розділ про публікацію та рецензування в оригіналі.\n\nРедакційне застереження: автоматична система перевіряє формат стрічки, дату, домен посилання та тематичні слова. Вона не підтверджує методологію дослідження, не перевіряє незалежно всі твердження та не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-19",
+    "sources": [
+      {
+        "title": "What Does an Agent Need? Bundle-Aware Agent Resource Composition",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2611.22030",
+        "publishedDate": "2026-11-19"
+      }
+    ]
+  },
+  {
     "id": "rss-2026-11-19-db6d264cb8de",
     "date": "2026-11-19",
     "autoPublished": true,

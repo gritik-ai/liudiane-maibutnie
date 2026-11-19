@@ -1,0 +1,10 @@
+{
+  "name": "liudiane-maibutnie",
+  "version": "1.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Human-centred AI, peace and quality of life project website",
+  "scripts": {
+    "check": "node --check api/daily-publish.js"
+  }
+}

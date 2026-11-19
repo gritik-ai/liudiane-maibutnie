@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0d2925">
+  <meta name="description" content="Людяне майбутнє — ідеї та приклади відповідального використання штучного інтелекту як радника для держави й суспільства. Людина, гідність і якість життя — у центрі.">
+  <title>Людяне майбутнє — ШІ для добробуту кожного</title>
+  <style>
+    :root{--bg:#f3f6f2;--paper:#fff;--ink:#172923;--muted:#66756e;--green:#174d40;--green2:#246b58;--mint:#dcefe5;--lime:#d6ef9b;--gold:#d8b56d;--line:#e2e9e3;--shadow:0 18px 55px rgba(18,48,38,.10);--radius:22px}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+    a{color:inherit} button,input,textarea,select{font:inherit} button{cursor:pointer}
+    .wrap{width:min(1160px,calc(100% - 40px));margin:auto}
+    .topline{background:#0d2925;color:#cfe2d6;font-size:13px}.topline .wrap{display:flex;justify-content:space-between;gap:16px;padding:9px 0}
+    header{position:sticky;top:0;z-index:10;background:rgba(13,41,37,.96);backdrop-filter:blur(12px);color:#fff;border-bottom:1px solid rgba(255,255,255,.1)}
+    .nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:750;letter-spacing:-.02em}.brandmark{width:39px;height:39px;border-radius:13px;background:linear-gradient(145deg,#d9f0a3,#79bd91);display:grid;place-items:center;color:#12372d;font-size:22px}.brand small{display:block;color:#afc7bb;font-size:11px;font-weight:500;letter-spacing:.08em;text-transform:uppercase}.navlinks{display:flex;gap:25px;align-items:center}.navlinks a{font-size:14px;text-decoration:none;color:#dce8e1}.navlinks a:hover{color:var(--lime)}.navactions{display:flex;gap:10px;align-items:center}
+    .btn{border:0;border-radius:999px;padding:11px 18px;font-weight:700;font-size:14px;transition:.2s}.btn-primary{background:var(--lime);color:#17382e}.btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 20px #071c1940}.btn-outline{background:transparent;border:1px solid #78958a;color:#fff}.btn-outline:hover{background:#ffffff12}.menu-btn{display:none;background:none;color:white;border:1px solid #668278;border-radius:12px;padding:8px 11px}
+    .hero{background:radial-gradient(circle at 82% 30%,#2c7460 0,transparent 30%),linear-gradient(120deg,#102f29,#174d40 65%,#1d5a49);color:white;overflow:hidden;position:relative}.hero:after{content:"";position:absolute;width:520px;height:520px;border:1px solid #ffffff20;border-radius:50%;right:-120px;top:-170px;box-shadow:0 0 0 45px #ffffff08,0 0 0 95px #ffffff05}.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center;padding:86px 0 92px}.eyebrow{display:inline-flex;gap:9px;align-items:center;color:#d8efb4;text-transform:uppercase;letter-spacing:.13em;font-size:12px;font-weight:800}.dot{width:7px;height:7px;border-radius:50%;background:#d8ef9b;box-shadow:0 0 0 5px #d8ef9b22}.hero h1{font-size:clamp(42px,6vw,70px);line-height:1.04;letter-spacing:-.055em;margin:22px 0}.hero h1 em{font-style:normal;color:var(--lime)}.hero p{font-size:18px;color:#d2e2da;max-width:620px;margin:0 0 29px}.hero-cta{display:flex;flex-wrap:wrap;gap:12px}.hero-note{font-size:13px;color:#b9d0c5;margin-top:20px}
+    .globe-wrap{min-height:350px;display:grid;place-items:center;position:relative}.globe{width:min(330px,75vw);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 35% 28%,#c7e8af 0 3%,#66a98b 14%,#286e5c 42%,#123d37 72%);box-shadow:inset -24px -28px 50px #071e1b80,0 30px 80px #041b1870;position:relative;border:1px solid #d1f3ce70}.globe:before{content:"";position:absolute;inset:12% 18%;border:1px solid #d5f2cb55;border-radius:50%;transform:rotate(28deg) scaleX(.55)}.globe:after{content:"";position:absolute;inset:22% 5%;border-top:1px solid #d5f2cb55;border-bottom:1px solid #d5f2cb55;border-radius:50%;transform:rotate(-19deg)}.orbit{position:absolute;width:410px;height:150px;border:1px solid #d5f2cb55;border-radius:50%;transform:rotate(-23deg)}.orbit:after{content:"✦";position:absolute;right:25px;top:10px;color:#d9f0a3;font-size:23px}.globe-label{position:absolute;bottom:0;right:0;background:#f4f8ed;color:#183c31;padding:15px 19px;border-radius:16px;box-shadow:var(--shadow);font-weight:800;font-size:14px;max-width:205px;line-height:1.4}.globe-label span{display:block;color:#6c7d72;font-size:11px;font-weight:600;margin-top:4px}
+    .stats{margin-top:-27px;position:relative;z-index:2}.stat-row{display:grid;grid-template-columns:repeat(3,1fr);background:white;border-radius:19px;box-shadow:var(--shadow);padding:22px 28px}.stat{padding:0 24px;border-right:1px solid var(--line)}.stat:last-child{border:0}.stat strong{display:block;color:var(--green);font-size:18px;letter-spacing:-.02em}.stat span{font-size:13px;color:var(--muted)}
+    section{padding:82px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:25px;margin-bottom:30px}.kicker{color:var(--green2);font-weight:800;font-size:12px;letter-spacing:.14em;text-transform:uppercase}.section-head h2{margin:8px 0 0;font-size:clamp(30px,4vw,43px);line-height:1.12;letter-spacing:-.04em}.section-head p{margin:0;max-width:440px;color:var(--muted)}
+    .principles{background:#eaf1e9}.principle-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.principle{background:#fff;border:1px solid #e3ebe2;border-radius:18px;padding:23px;min-height:202px}.principle .icon{width:43px;height:43px;border-radius:14px;background:var(--mint);display:grid;place-items:center;font-size:21px;margin-bottom:17px}.principle h3{font-size:17px;margin:0 0 7px}.principle p{margin:0;color:var(--muted);font-size:14px}
+    .areas-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.area{border-radius:20px;background:white;padding:24px;border:1px solid var(--line);transition:.2s}.area:hover{transform:translateY(-4px);box-shadow:var(--shadow)}.area-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}.area-icon{width:48px;height:48px;border-radius:15px;background:#e8f2ea;display:grid;place-items:center;font-size:23px}.tag{font-size:11px;color:#376b58;background:#e9f4eb;padding:5px 9px;border-radius:999px;font-weight:700}.area h3{margin:0 0 8px;font-size:19px}.area p{margin:0;color:var(--muted);font-size:14px}
+    .feed-section{background:#f8faf7}.feed-status{display:flex;align-items:center;gap:9px;color:#426553;background:#eaf4eb;border:1px solid #d5e8d7;border-radius:13px;padding:10px 14px;font-size:13px;font-weight:700}.pulse-dot{width:8px;height:8px;border-radius:50%;background:#3b9563;box-shadow:0 0 0 4px #3b95631b}.auto-indicator{color:#d7ecbf;font-size:12px;font-weight:700;border:1px solid #78958a;border-radius:999px;padding:7px 11px;white-space:nowrap}.source-links{margin-top:22px;padding-top:18px;border-top:1px solid var(--line)}.source-links h3{font-size:15px;margin:0 0 10px}.source-links ul{margin:0;padding-left:18px}.source-links li{margin:7px 0;color:var(--muted);font-size:13px}.source-links a{color:#23664f;font-weight:700;text-decoration:none}.source-links a:hover{text-decoration:underline}.article-auto{font-size:10px;color:#376b58;background:#edf5ed;padding:4px 8px;border-radius:30px;font-weight:750}.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:22px}.search{flex:1;min-width:210px;position:relative}.search input{width:100%;padding:12px 15px 12px 43px;border:1px solid #d9e3da;border-radius:13px;background:white;outline:none}.search input:focus{border-color:#4e8d72;box-shadow:0 0 0 3px #4e8d7218}.search:before{content:"⌕";position:absolute;left:15px;top:4px;font-size:25px;color:#7b8c82}.filter{border:1px solid #d9e3da;background:white;border-radius:13px;padding:11px 13px;color:#43564c}.article-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.article{background:white;border:1px solid var(--line);border-radius:19px;overflow:hidden;display:flex;flex-direction:column;min-height:300px;transition:.2s}.article:hover{transform:translateY(-3px);box-shadow:var(--shadow)}.article-band{height:8px;background:linear-gradient(90deg,#1c5949,#8dbd86,#d9e9a7)}.article-body{padding:21px;display:flex;flex-direction:column;flex:1}.meta{display:flex;gap:9px;align-items:center;flex-wrap:wrap;color:#78877f;font-size:11px;margin-bottom:11px}.meta b{color:#39735c;background:#edf5ed;padding:4px 8px;border-radius:30px;font-weight:750}.article h3{font-size:19px;line-height:1.28;letter-spacing:-.02em;margin:0 0 10px}.article p{font-size:14px;color:var(--muted);margin:0 0 20px}.read{margin-top:auto;border:0;background:none;color:#23664f;font-weight:800;text-align:left;padding:0;font-size:14px}.read:hover{text-decoration:underline}.empty{grid-column:1/-1;background:white;padding:35px;border:1px dashed #c8d6ca;border-radius:16px;text-align:center;color:var(--muted)}
+    .manifesto{background:#12392f;color:white;position:relative;overflow:hidden}.manifesto:before{content:"";position:absolute;width:550px;height:550px;border:1px solid #ffffff15;border-radius:50%;left:-270px;bottom:-370px;box-shadow:0 0 0 55px #ffffff08,0 0 0 110px #ffffff05}.manifesto .wrap{position:relative}.manifesto-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:65px;align-items:center}.manifesto h2{font-size:clamp(32px,4vw,48px);line-height:1.12;letter-spacing:-.045em;margin:12px 0}.manifesto p{color:#c5d9ce}.quote{font-size:23px;line-height:1.45;color:#f1f7ef;border-left:3px solid var(--lime);padding-left:24px;margin:0 0 24px}.manifesto small{color:#a9c4b6}.pledges{display:grid;grid-template-columns:1fr 1fr;gap:13px}.pledge{display:flex;gap:12px;align-items:flex-start;background:#ffffff0d;border:1px solid #ffffff18;padding:15px;border-radius:14px;color:#e0eee5;font-size:14px}.check{color:var(--lime);font-weight:900}
+    .sources{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.source{padding:19px;background:white;border:1px solid var(--line);border-radius:16px}.source strong{display:block;font-size:15px;margin-bottom:7px}.source p{font-size:13px;color:var(--muted);margin:0 0 12px}.source a{color:#24664e;font-size:13px;font-weight:750;text-decoration:none}.source a:hover{text-decoration:underline}
+    footer{background:#0d2925;color:#c6d8ce;padding:36px 0}.footer-row{display:flex;justify-content:space-between;gap:25px;align-items:center}.footer-brand{font-weight:800;color:white}.footer-note{font-size:12px;color:#9db6a9;max-width:480px}
+    dialog{border:0;border-radius:22px;padding:0;width:min(680px,calc(100% - 28px));max-height:88vh;box-shadow:0 25px 100px #061e1b55}dialog::backdrop{background:#071f1bcc;backdrop-filter:blur(4px)}.modal-inner{padding:29px;overflow:auto;max-height:88vh}.modal-top{display:flex;justify-content:space-between;gap:15px;align-items:start}.close{border:0;background:#edf3ed;border-radius:50%;width:36px;height:36px;font-size:20px;color:#355347}.modal-inner h2{font-size:29px;line-height:1.2;letter-spacing:-.03em;margin:12px 0}.modal-inner .content{color:#44564d;white-space:pre-wrap}.modal-inner label{display:block;font-size:13px;font-weight:750;margin:13px 0 5px}.modal-inner input,.modal-inner textarea,.modal-inner select{width:100%;padding:11px 12px;border:1px solid #d5dfd7;border-radius:11px;background:#fbfdfb}.modal-inner textarea{min-height:125px;resize:vertical}.form-hint{font-size:12px;color:#78877f;margin-top:10px}.form-actions{display:flex;justify-content:flex-end;gap:10px;margin-top:18px}.btn-dark{background:#174d40;color:white}.toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%);background:#12392f;color:white;padding:12px 18px;border-radius:99px;box-shadow:var(--shadow);z-index:30;font-size:14px;display:none}.toast.show{display:block}
+    @media(max-width:900px){.hero-grid{gap:25px}.principle-grid{grid-template-columns:repeat(2,1fr)}.areas-grid,.article-grid,.sources{grid-template-columns:repeat(2,1fr)}.manifesto-grid{gap:35px}}
+    @media(max-width:680px){.wrap{width:min(100% - 28px,1160px)}.topline .wrap{justify-content:center;text-align:center}.topline span:last-child{display:none}.nav{min-height:65px}.navlinks{display:none;position:absolute;top:65px;left:0;right:0;background:#10352d;padding:18px 22px 22px;flex-direction:column;align-items:flex-start;border-top:1px solid #ffffff16}.navlinks.open{display:flex}.navactions .btn-outline{display:none}.menu-btn{display:block}.hero-grid{grid-template-columns:1fr;padding:60px 0 70px}.hero h1{font-size:47px}.hero p{font-size:16px}.globe-wrap{min-height:285px}.globe{width:245px}.orbit{width:300px;height:115px}.globe-label{right:0;bottom:0}.stats{margin-top:-18px}.stat-row{grid-template-columns:1fr;padding:12px 20px}.stat{border-right:0;border-bottom:1px solid var(--line);padding:12px 3px}.stat:last-child{border:0}.section-head{display:block}.section-head p{margin-top:12px}section{padding:62px 0}.principle-grid,.areas-grid,.article-grid,.sources{grid-template-columns:1fr}.principle{min-height:unset}.manifesto-grid{grid-template-columns:1fr}.pledges{grid-template-columns:1fr}.footer-row{display:block}.footer-note{margin-top:12px}.filter{flex:1}.modal-inner{padding:22px}}
+  </style>
+</head>
+<body>
+  <div class="topline"><div class="wrap"><span>ІДЕЇ ДЛЯ ЛЮДЯНОГО МАЙБУТНЬОГО</span><span>Технології мають служити людям — кожній людині</span></div></div>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#top" aria-label="Людяне майбутнє — на головну"><span class="brandmark">✧</span><span>Людяне майбутнє<small>ШІ для добробуту кожного</small></span></a>
+      <nav class="navlinks" id="navlinks"><a href="#principles">Принципи</a><a href="#opportunities">Можливості</a><a href="#ideas">Бібліотека ідей</a><a href="#manifesto">Маніфест</a><a href="#sources">Джерела</a></nav>
+      <div class="navactions"><span class="auto-indicator">✦ Автоматична RSS-добірка</span><button class="menu-btn" id="menuBtn" aria-label="Відкрити меню">☰</button></div>
+    </div>
+  </header>
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow"><span class="dot"></span> Майбутнє, у якому людина — головна цінність</div>
+          <h1>ШІ як радник.<br><em>Людина — у центрі.</em></h1>
+          <p>Уявімо суспільство, де штучний інтелект допомагає державам ухвалювати обґрунтовані рішення, запобігати кризам і спрямовувати ресурси на найважливіше — гідне життя кожної людини.</p>
+          <div class="hero-cta"><a class="btn btn-primary" href="#ideas">Дослідити можливості ↓</a><a class="btn btn-outline" href="#principles">Наші принципи</a></div>
+          <div class="hero-note">Не ШІ замість людей, а ШІ на допомогу людям — під прозорим суспільним контролем.</div>
+        </div>
+        <div class="globe-wrap" aria-label="Символ єдиної планети та спільного майбутнього"><div class="orbit"></div><div class="globe"></div><div class="globe-label">Одна планета. Спільне майбутнє.<span>Різноманіття культур — рівна гідність людей</span></div></div>
+      </div>
+    </section>
+    <div class="wrap stats"><div class="stat-row"><div class="stat"><strong>Людська гідність</strong><span>Відправна точка кожного рішення</span></div><div class="stat"><strong>Мир і добробут</strong><span>Мета, а не побічний результат прогресу</span></div><div class="stat"><strong>Підзвітний ШІ</strong><span>Пояснюваність, аудит і право на оскарження</span></div></div></div>
+
+    <section class="principles" id="principles"><div class="wrap">
+      <div class="section-head"><div><div class="kicker">Основа довіри</div><h2>Принципи людяного ШІ</h2></div><p>Штучний інтелект має посилювати спроможність суспільства, а не забирати в людей право визначати власне майбутнє.</p></div>
+      <div class="principle-grid">
+        <article class="principle"><div class="icon">♡</div><h3>Людина — найвища цінність</h3><p>Якість життя, гідність, права та свободи кожної людини — критерій успіху.</p></article>
+        <article class="principle"><div class="icon">⌕</div><h3>Прозорість рішень</h3><p>Люди мають знати, де застосовано ШІ, на яких даних ґрунтується порада і як її перевірити.</p></article>
+        <article class="principle"><div class="icon">⚖</div><h3>Людська відповідальність</h3><p>ШІ аналізує та радить. Відповідальні посадовці й демократичні інституції ухвалюють рішення.</p></article>
+        <article class="principle"><div class="icon">♧</div><h3>Справедливість для всіх</h3><p>Технології повинні враховувати потреби різних людей і не посилювати нерівність.</p></article>
+      </div>
+    </div></section>
+
+    <section id="opportunities"><div class="wrap">
+      <div class="section-head"><div><div class="kicker">Де ШІ може допомогти</div><h2>Можливості для кращого життя</h2></div><p>Практичні напрями, у яких аналітика та автоматизація можуть підтримати фахівців і державні інституції.</p></div>
+      <div class="areas-grid">
+        <article class="area"><div class="area-top"><div class="area-icon">✚</div><span class="tag">Здоров'я</span></div><h3>Медицина для кожного</h3><p>Допомога лікарям в аналізі даних, ранньому виявленні ризиків, плануванні ресурсів і доступності медичних послуг.</p></article>
+        <article class="area"><div class="area-top"><div class="area-icon">▤</div><span class="tag">Освіта</span></div><h3>Навчання впродовж життя</h3><p>Персоналізовані навчальні маршрути, підтримка вчителів і доступ до якісних освітніх матеріалів незалежно від місця проживання.</p></article>
+        <article class="area"><div class="area-top"><div class="area-icon">⌂</div><span class="tag">Послуги</span></div><h3>Зручна та доступна держава</h3><p>Зрозумілі відповіді на звернення, менше бюрократії, швидша обробка заяв і доступніші публічні послуги.</p></article>
+        <article class="area"><div class="area-top"><div class="area-icon">☼</div><span class="tag">Довкілля</span></div><h3>Здорова планета</h3><p>Моніторинг довкілля, прогнозування природних ризиків, ефективніше використання енергії та води.</p></article>
+        <article class="area"><div class="area-top"><div class="area-icon">⇄</div><span class="tag">Інфраструктура</span></div><h3>Міста, зручні для людей</h3><p>Планування транспорту, ремонтів і комунальних мереж на основі реальних потреб мешканців.</p></article>
+        <article class="area"><div class="area-top"><div class="area-icon">◎</div><span class="tag">Управління</span></div><h3>Рішення на основі доказів</h3><p>Моделювання наслідків політик, аналіз суспільних потреб і раннє виявлення ризиків — із незалежною перевіркою.</p></article>
+      </div>
+    </div></section>
+
+    <section class="feed-section" id="ideas"><div class="wrap">
+      <div class="section-head"><div><div class="kicker">Постійне поповнення</div><h2>Бібліотека позитивних ідей</h2></div><p>Матеріали про те, як відповідальний ШІ може допомагати будувати мирне, здорове та справедливе суспільство.</p></div>
+      <div class="toolbar"><div class="search"><input id="searchInput" type="search" placeholder="Знайти тему або матеріал…" aria-label="Пошук матеріалів"></div><select class="filter" id="categoryFilter" aria-label="Фільтр за темою"><option value="Усі теми">Усі теми</option><option>Державне управління</option><option>Медицина</option><option>Освіта</option><option>Мир і безпека</option><option>Екологія</option><option>Економіка та добробут</option><option>Права людини</option><option>Наука і технології</option></select></div><div class="feed-status" style="margin:-6px 0 22px"><span class="pulse-dot"></span><span id="feedStatus">Автоматичні публікації активуються після розгортання сайту</span></div>
+      <div class="article-grid" id="articleGrid" aria-live="polite"></div>
+    </div></section>
+
+    <section class="manifesto" id="manifesto"><div class="wrap manifesto-grid">
+      <div><div class="eyebrow"><span class="dot"></span> Маніфест</div><h2>Технології мають служити життю.</h2><p>Ми бачимо майбутнє, у якому прогрес вимірюється не лише ВВП, швидкістю обчислень чи кількістю винаходів, а тим, наскільки гідно, вільно й безпечно живе кожна людина.</p></div>
+      <div><blockquote class="quote">«Справжній успіх цивілізації — це коли кожна людина має можливість жити гідно, розвиватися, любити, творити й дивитися в майбутнє без страху».</blockquote><div class="pledges"><div class="pledge"><span class="check">✓</span><span>Мирне співіснування народів і повага до міжнародного права.</span></div><div class="pledge"><span class="check">✓</span><span>Рівна гідність і можливості незалежно від походження.</span></div><div class="pledge"><span class="check">✓</span><span>Свобода думки, приватність і демократична підзвітність.</span></div><div class="pledge"><span class="check">✓</span><span>ШІ як радник, а не безконтрольний володар.</span></div></div><p><small>Цей маніфест — запрошення до дискусії, а не готова політична програма.</small></p></div>
+    </div></section>
+
+    <section id="sources"><div class="wrap"><div class="section-head"><div><div class="kicker">Факти та орієнтири</div><h2>На чому ґрунтується підхід</h2></div><p>Позитивне бачення має спиратися на реальні приклади, перевірені дані та запобіжники для прав людини.</p></div>
+      <div class="sources">
+        <article class="source"><strong>OECD: ШІ в державному управлінні</strong><p>Огляд практичних сценаріїв застосування ШІ в урядах: від державних послуг до прогнозування та підтримки рішень.</p><a href="https://www.oecd.org/en/about/news/press-releases/2025/09/oecd-encourages-responsible-use-of-ai-by-governments-to-strengthen-efficiency-effectiveness-and-trust.html" target="_blank" rel="noopener">Дослідити матеріали OECD ↗</a></article>
+        <article class="source"><strong>UNESCO: етика штучного інтелекту</strong><p>Глобальні принципи людської гідності, прав людини, прозорості, справедливості та людського нагляду.</p><a href="https://www.unesco.org/ethics-ai/en/recommendation" target="_blank" rel="noopener">Читати рекомендацію UNESCO ↗</a></article>
+        <article class="source"><strong>WHO: ШІ для здоров'я</strong><p>Підхід до безпечного, етичного та рівного використання ШІ в системах охорони здоров'я.</p><a href="https://www.who.int/publications/m/item/artificial-intelligence-for-health" target="_blank" rel="noopener">Читати матеріал WHO ↗</a></article>
+      </div>
+    </div></section>
+  </main>
+  <footer><div class="wrap footer-row"><div><div class="footer-brand">✧ Людяне майбутнє</div><div class="footer-note">Ініціатива про відповідальний ШІ, добробут людей, мир і стале майбутнє планети.</div></div><div class="footer-note">Матеріали сайту мають інформаційний характер. ШІ може помилятися; важливі рішення потребують перевірки, участі людей і відповідальних інституцій.</div></div></footer>
+
+  <dialog id="articleDialog"><div class="modal-inner"><div class="modal-top"><div class="meta" id="modalMeta"></div><button class="close" id="closeArticle" aria-label="Закрити">×</button></div><h2 id="modalTitle"></h2><div class="content" id="modalContent"></div><div class="source-links" id="modalSources" hidden><h3>Джерела та перевірка</h3><ul id="modalSourceList"></ul></div></div></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>
+  const seedArticles = [
+    {id:'a1',category:'Державне управління',date:'2026-11-19',title:'ШІ як радник: державна політика на основі доказів',summary:'Алгоритми можуть допомагати аналізувати наслідки рішень, порівнювати сценарії та знаходити невраховані потреби громадян.',body:'Уявімо, що перед ухваленням нової державної програми фахівці можуть швидко зіставити статистику, оцінки витрат, регіональні відмінності та можливі наслідки для різних груп населення. ШІ здатний підготувати кілька сценаріїв, показати припущення й окреслити невизначеність.\n\nЦе не означає, що алгоритм має ухвалювати політичне рішення. Його роль — допомогти людям побачити більше фактів і наслідків. Остаточне рішення повинні приймати відповідальні інституції, а громадяни мають мати можливість перевірити його обґрунтування.'},
+    {id:'a2',category:'Медицина',date:'2026-11-19',title:'Більше часу для пацієнта: ШІ як помічник медиків',summary:'Підтримка аналізу медичних зображень, документації та планування допомоги може звільнити фахівцям час для спілкування з людьми.',body:'ШІ може допомагати медичним командам упорядковувати інформацію, знаходити закономірності в зображеннях і документах, нагадувати про клінічні протоколи та прогнозувати потребу в ресурсах. Такі інструменти мають проходити перевірку, захищати конфіденційність і залишати клінічні рішення за кваліфікованими медичними працівниками.\n\nОрієнтиром є підхід Всесвітньої організації охорони здоров’я: користь для здоров’я має поєднуватися з безпекою, етичністю, рівним доступом і відповідальністю.'},
+    {id:'a3',category:'Освіта',date:'2026-11-19',title:'Освіта, що враховує темп і здібності кожної людини',summary:'Персональні навчальні помічники можуть пояснювати складні теми різними способами та підтримувати вчителів.',body:'Навчальний ШІ може підлаштовувати пояснення під рівень знань, пропонувати вправи, допомагати з мовами та робити навчальні матеріали доступнішими для людей з різними потребами. Учитель при цьому залишається наставником, який розуміє контекст, підтримує мотивацію та формує критичне мислення.\n\nВажливо забезпечити доступність інструментів для всіх шкіл, захист дитячих даних і навчати дітей перевіряти відповіді ШІ, а не сприймати їх як безпомилкову істину.'},
+    {id:'a4',category:'Мир і безпека',date:'2026-11-19',title:'Раннє попередження про кризи та природні катастрофи',summary:'Аналітичні системи можуть допомагати завчасно помічати ризики й координувати цивільний захист.',body:'Моделі прогнозування можуть аналізувати погодні дані, стан інфраструктури, повідомлення служб і супутникові спостереження. Це може допомогти швидше помічати загрози повеней, пожеж, перебоїв у постачанні чи перевантаження лікарень.\n\nПрогнози мають містити рівень невизначеності, проходити перевірку фахівців і не замінювати відповідальні служби. Мета — краще підготуватися, захистити життя та зменшити шкоду.'},
+    {id:'a5',category:'Екологія',date:'2026-11-19',title:'Розумне використання енергії заради чистішої планети',summary:'ШІ може прогнозувати попит на електроенергію, допомагати зменшувати втрати та ефективніше інтегрувати відновлювані джерела.',body:'Енергосистеми мають балансувати виробництво та споживання. Прогнози погоди й попиту можуть допомагати операторам планувати навантаження, вчасно виявляти несправності та зменшувати втрати. Подібні підходи можуть бути корисними й для опалення будівель, водопостачання та міського транспорту.\n\nЕфективність слід оцінювати за реальними показниками: надійністю, доступністю послуг, витратами та впливом на довкілля.'},
+    {id:'a6',category:'Права людини',date:'2026-11-19',title:'Прозорий алгоритм — право людини на пояснення',summary:'Коли ШІ впливає на державну послугу чи рішення щодо людини, мають існувати пояснення, перевірка та можливість оскарження.',body:'Справедлива цифрова держава не повинна перетворювати алгоритм на невидимого суддю. Людина має знати, коли ШІ вплинув на рішення, які дані використано та куди звернутися для виправлення помилки.\n\nПотрібні незалежний аудит, перевірка на дискримінацію, захист персональних даних і доступний людський перегляд. Такий підхід відповідає міжнародним етичним орієнтирам UNESCO.'},
+    {id:'a7',category:'Економіка та добробут',date:'2026-11-19',title:'Вимірювати успіх держави якістю життя людей',summary:'Економічні показники важливі, але вони мають доповнюватися доступом до медицини, освіти, житла, безпеки й чистого довкілля.',body:'ШІ може допомагати аналізувати не лише макроекономічні показники, а й те, як люди реально відчувають зміни: чи доступні медичні послуги, скільки часу займає дорога до роботи, чи є безбар’єрний простір, наскільки чисте повітря, чи мають діти рівний доступ до освіти.\n\nТакі дані не повинні зводити людське щастя до одного числа. Вони мають допомагати суспільству бачити нерівність, визначати пріоритети й перевіряти, чи поліпшується життя різних громад.'}
+  ];
+  let remoteArticles=[];
+  const allArticles=()=>[...remoteArticles,...seedArticles].sort((a,b)=>(b.date||'').localeCompare(a.date||''));
+  const grid=document.getElementById('articleGrid');
+  function escapeHTML(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+  function formatDate(d){try{return new Intl.DateTimeFormat('uk-UA',{day:'numeric',month:'long',year:'numeric'}).format(new Date(d+'T12:00:00'));}catch(e){return d||''}}
+  function renderArticles(){
+    const q=document.getElementById('searchInput').value.trim().toLocaleLowerCase('uk');
+    const cat=document.getElementById('categoryFilter').value;
+    const items=allArticles().filter(a=>(cat==='Усі теми'||a.category===cat)&&(!q||(a.title+' '+a.summary+' '+a.category).toLocaleLowerCase('uk').includes(q)));
+    grid.innerHTML=items.length?items.map(a=>`<article class="article"><div class="article-band"></div><div class="article-body"><div class="meta"><b>${escapeHTML(a.category)}</b><span>${formatDate(a.date)}</span>${a.autoPublished?'<span class="article-auto">Автоматична RSS-добірка</span>':''}</div><h3>${escapeHTML(a.title)}</h3><p>${escapeHTML(a.summary)}</p><button class="read" data-open="${escapeHTML(a.id)}">Читати матеріал →</button></div></article>`).join(''):'<div class="empty">За цим запитом матеріалів не знайдено. Спробуйте іншу тему або пошукове слово.</div>';
+    grid.querySelectorAll('[data-open]').forEach(b=>b.addEventListener('click',()=>openArticle(b.dataset.open)));
+  }
+  function openArticle(id){
+    const a=allArticles().find(x=>x.id===id);if(!a)return;
+    document.getElementById('modalMeta').innerHTML=`<b>${escapeHTML(a.category)}</b><span>${formatDate(a.date)}</span>${a.autoPublished?'<span class="article-auto">Автоматична RSS-добірка</span>':''}`;
+    document.getElementById('modalTitle').textContent=a.title;
+    document.getElementById('modalContent').textContent=a.body;
+    const box=document.getElementById('modalSources'), list=document.getElementById('modalSourceList');
+    list.replaceChildren();
+    const sources=Array.isArray(a.sources)?a.sources:[];
+    for(const source of sources){
+      try{
+        const u=new URL(source.url);if(u.protocol!=='https:')continue;
+        const li=document.createElement('li');const link=document.createElement('a');link.href=u.href;link.target='_blank';link.rel='noopener noreferrer';link.textContent=source.title||source.publisher||u.hostname;li.appendChild(link);
+        if(source.publishedDate){const span=document.createElement('span');span.textContent=' · '+source.publishedDate;li.appendChild(span)}
+        list.appendChild(li);
+      }catch(e){}
+    }
+    box.hidden=list.children.length===0;
+    document.getElementById('articleDialog').showModal();
+  }
+  document.getElementById('closeArticle').addEventListener('click',()=>document.getElementById('articleDialog').close());
+  document.getElementById('searchInput').addEventListener('input',renderArticles);
+  document.getElementById('categoryFilter').addEventListener('change',renderArticles);
+  document.getElementById('menuBtn').addEventListener('click',()=>document.getElementById('navlinks').classList.toggle('open'));
+  document.querySelectorAll('.navlinks a').forEach(a=>a.addEventListener('click',()=>document.getElementById('navlinks').classList.remove('open')));
+  async function loadPublishedArticles(){
+    const status=document.getElementById('feedStatus');
+    try{
+      const response=await fetch('/content/articles.json?ts='+Date.now(),{cache:'no-store'});
+      if(!response.ok)throw new Error('Не вдалося завантажити бібліотеку');
+      const data=await response.json();
+      if(!Array.isArray(data))throw new Error('Невірний формат бібліотеки');
+      remoteArticles=data.filter(a=>a&&typeof a.title==='string'&&typeof a.body==='string');
+      const latest=remoteArticles.slice().sort((a,b)=>(b.date||'').localeCompare(a.date||''))[0];
+      status.textContent=latest?`Автоматична RSS-добірка · остання публікація: ${formatDate(latest.date)} · матеріалів: ${remoteArticles.length}`:'Автоматичне оновлення RSS-джерел щодня; нові матеріали з’являються після тематичного відбору.';
+    }catch(error){
+      status.textContent='RSS-бібліотека буде оновлюватися після підключення репозиторію та GitHub Actions.';
+    }
+    renderArticles();
+  }
+  renderArticles();
+  loadPublishedArticles();
+</script>
+</body>
+</html>

@@ -1,0 +1,2 @@
+# No third-party Python packages are required.
+# The RSS updater uses Python standard library only.

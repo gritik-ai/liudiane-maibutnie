@@ -1,1 +1,97 @@
-[]
+[
+  {
+    "id": "rss-2026-11-19-db6d264cb8de",
+    "date": "2026-11-19",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "category": "Мир і безпека",
+    "title": "NEBench R1: a Reasoning Benchmark for Evaluating Nuclear Domain Competence in Large Language Models",
+    "summary": "arXiv:2611.21682v1 Announce Type: new Abstract: Large language models (LLMs) are increasingly being explored for knowledge-intensive and safety-critical applications in nuclear engineering. However, existing nuclear-domain benchmarks provide limited content coverage or focus primarily on answer accuracy without systematically…",
+    "body": "Цей матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та короткий опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.21682v1 Announce Type: new Abstract: Large language models (LLMs) are increasingly being explored for knowledge-intensive and safety-critical applications in nuclear engineering. However, existing nuclear-domain benchmarks provide limited content coverage or focus primarily on answer accuracy without systematically evaluating the quality of the underlying reasoning. This study introduces NEBench R1, a reasoning-oriented benchmark comprising 7,546 unique multiple-choice questions extracted from U.S. Nuclear Regulatory Commission (NRC) reactor operator licensing examinations covering 18 nuclear facilities. Each question is classified according to the NRC Knowledge and Abilities catalogs and accompanied by an official explanation serving as a reference for reasoning evaluation. Six LLMs were evaluated, with overall accuracy ranging from 34.0% to 73.9% across three distinct performance tiers. To assess reasoning quality, an LLM-based judge evaluated correctly answered responses using a multidimensional rubric. Although responses generally demonstrated strong problem comprehension, they scored lower in factual and procedural accuracy and distractor analysis, indicating that correct answers were not necessarily supported by technically sound justifications. Response clarity was also weakly indicative of technical quality. Furthermore, longer reasoning traces were associate\n\nЧому матеріал у цій добірці: його тема стосується штучного інтелекту та одного з напрямів, важливих для якості життя людей. Це тематичний відбір, а не незалежна експертна оцінка результатів. Перед висновками прочитайте оригінальну публікацію.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте розділ про публікацію та рецензування в оригіналі.\n\nРедакційне застереження: автоматична система перевіряє формат стрічки, дату, домен посилання та тематичні слова. Вона не підтверджує методологію дослідження, не перевіряє незалежно всі твердження та не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-19",
+    "sources": [
+      {
+        "title": "NEBench R1: a Reasoning Benchmark for Evaluating Nuclear Domain Competence in Large Language Models",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2611.21682",
+        "publishedDate": "2026-11-19"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-19-b86f222d774a",
+    "date": "2026-11-19",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "category": "Освіта",
+    "title": "Chain-of-Thought Controllability Can Reduce Chain-of-Thought Monitorability",
+    "summary": "arXiv:2611.21799v1 Announce Type: new Abstract: Chain-of-thought (CoT) monitoring is a promising tool for detecting hidden goals, off-task behavior, and other failures in AI agents. One risk is that models could deliberately shape their reasoning to make it opaque to monitors. We stress-test this risk through persona-control…",
+    "body": "Цей матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та короткий опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.21799v1 Announce Type: new Abstract: Chain-of-thought (CoT) monitoring is a promising tool for detecting hidden goals, off-task behavior, and other failures in AI agents. One risk is that models could deliberately shape their reasoning to make it opaque to monitors. We stress-test this risk through persona-control training: supervised fine-tuning on mathematical reasoning traces rewritten in the voices of diverse personas. This induces a broader ability to control CoT, even though training contains no monitor-evasion examples. In covert side-task evaluations, traces in which a gpt-oss-20b model organism completes the hidden side task contain less monitorable evidence than the base model's. Averaged across evaluations and CoT lengths, weighted by side-task-success counts, the CoT monitorability metric g-mean$^2$ falls from 0.94 for the base model to 0.68 for the model organism without a hiding instruction, and to 0.22 when explicitly instructed to hide. In intervention evaluations, explicit hiding often drives monitorability near zero. The effect extends to a Kimi-K2.6 model organism in agentic environments, though hidden objectives requiring extended reasoning or longer trajectories remain more monitorable than simple single-step side tasks. We further discover that targeted transparency prompts can substantially recover monitorability, sometimes surpassing the base \n\nЧому матеріал у цій добірці: його тема стосується штучного інтелекту та одного з напрямів, важливих для якості життя людей. Це тематичний відбір, а не незалежна експертна оцінка результатів. Перед висновками прочитайте оригінальну публікацію.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте розділ про публікацію та рецензування в оригіналі.\n\nРедакційне застереження: автоматична система перевіряє формат стрічки, дату, домен посилання та тематичні слова. Вона не підтверджує методологію дослідження, не перевіряє незалежно всі твердження та не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-19",
+    "sources": [
+      {
+        "title": "Chain-of-Thought Controllability Can Reduce Chain-of-Thought Monitorability",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2611.21799",
+        "publishedDate": "2026-11-19"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-19-0be8d4aa156a",
+    "date": "2026-11-19",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "category": "Освіта",
+    "title": "How Much of SAR Vehicle Recognition Is the Vehicle? Background Shortcuts, Angle Gaps and Partial Libraries on MSTAR and ATRNet-STAR",
+    "summary": "arXiv:2611.21827v1 Announce Type: new Abstract: Deep networks score near 99% on the MSTAR vehicle benchmark, and the newer ATRNet-STAR benchmark was built to be harder. We ask how much of these scores comes from the vehicle itself. With a modern network (ConvNeXt-Small, 3 seeds) we first reproduce the known MSTAR result: with…",
+    "body": "Цей матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та короткий опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.21827v1 Announce Type: new Abstract: Deep networks score near 99% on the MSTAR vehicle benchmark, and the newer ATRNet-STAR benchmark was built to be harder. We ask how much of these scores comes from the vehicle itself. With a modern network (ConvNeXt-Small, 3 seeds) we first reproduce the known MSTAR result: with the central 96x96 pixels zeroed out, accuracy is still 73.3% (chance 10%). The same shortcut is present in ATRNet-STAR, which was collected across several scenes: with the vehicle removed, accuracy is 63.3% on the 40-class SOC split (chance 2.5%). Under the official scene-change split, the background stops helping and starts hurting. Accuracy is 22.8% on full chips and 30.8% when only the vehicle is shown. A SAR foundation model, SARATR-X, leans on the background more than ConvNeXt does (+4 to +6 points with the vehicle removed, in every seed) and does not solve the scene change. We then hold the amount of training data fixed and vary the depression angles used for training. Accuracy is set mainly by the gap to the nearest training angle: 57% at 15 degrees, 39% at 30 degrees and 26% at 45 degrees. Adding more training angles does not help. Finally, when most classes have training images at the test angle and a few do not, the missing classes do worse than when no class has them: 9.0% instead of 22.4% at a 45-degree gap. Most of their images are assigned to\n\nЧому матеріал у цій добірці: його тема стосується штучного інтелекту та одного з напрямів, важливих для якості життя людей. Це тематичний відбір, а не незалежна експертна оцінка результатів. Перед висновками прочитайте оригінальну публікацію.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте розділ про публікацію та рецензування в оригіналі.\n\nРедакційне застереження: автоматична система перевіряє формат стрічки, дату, домен посилання та тематичні слова. Вона не підтверджує методологію дослідження, не перевіряє незалежно всі твердження та не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-19",
+    "sources": [
+      {
+        "title": "How Much of SAR Vehicle Recognition Is the Vehicle? Background Shortcuts, Angle Gaps and Partial Libraries on MSTAR and ATRNet-STAR",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2611.21827",
+        "publishedDate": "2026-11-19"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-19-c60bbdbf2963",
+    "date": "2026-11-19",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "category": "Мир і безпека",
+    "title": "Auditors Struggle to Catch Sabotage In End-to-End Transcripts of AI Safety Research",
+    "summary": "arXiv:2611.21832v1 Announce Type: new Abstract: As AI systems are increasingly used to automate AI R&D, misaligned systems could sabotage research intended to improve model safety and alignment. To stress-test defenses against such sabotage, we use a human expert as a proxy saboteur on AI safety research. We conduct a…",
+    "body": "Цей матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та короткий опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.21832v1 Announce Type: new Abstract: As AI systems are increasingly used to automate AI R&D, misaligned systems could sabotage research intended to improve model safety and alignment. To stress-test defenses against such sabotage, we use a human expert as a proxy saboteur on AI safety research. We conduct a red-team/blue-team game where a human researcher runs AI safety experiments from scratch and auditors try to tell which were sabotaged and how. Given access to the full research transcript and the ability to run experiments, human auditors mostly fail to distinguish sabotaged from benign research: they achieve an AUROC of 0.59, not significantly better than chance, and fully identify the specific sabotage in only 17% of cases. Despite not being allowed to run experiments, the best frontier models outperform human auditors (Fable 5.1: AUROC 0.73, 32% full identification) within noise and weaker models perform comparably. When the saboteur chooses which experiments are attacked, rather than being required to sabotage every question given, sabotage identification drops further. Our results suggest that research sabotage by expert-level agents is difficult to detect with current auditing methods and provide a new setting for studying research sabotage.\n\nЧому матеріал у цій добірці: його тема стосується штучного інтелекту та одного з напрямів, важливих для якості життя людей. Це тематичний відбір, а не незалежна експертна оцінка результатів. Перед висновками прочитайте оригінальну публікацію.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте розділ про публікацію та рецензування в оригіналі.\n\nРедакційне застереження: автоматична система перевіряє формат стрічки, дату, домен посилання та тематичні слова. Вона не підтверджує методологію дослідження, не перевіряє незалежно всі твердження та не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-19",
+    "sources": [
+      {
+        "title": "Auditors Struggle to Catch Sabotage In End-to-End Transcripts of AI Safety Research",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2611.21832",
+        "publishedDate": "2026-11-19"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-19-03b179946dd0",
+    "date": "2026-11-19",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "category": "Медицина",
+    "title": "Language Models Can Rewrite Their Own Weights",
+    "summary": "arXiv:2611.21885v2 Announce Type: new Abstract: A language model is trained once and frozen. Making it better takes another training run, or a prompt, a harness or extra computation at inference that is gone once the task ends. We show a third way: to our knowledge for the first time, a language model rewrites its own weights…",
+    "body": "Цей матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та короткий опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.21885v2 Announce Type: new Abstract: A language model is trained once and frozen. Making it better takes another training run, or a prompt, a harness or extra computation at inference that is gone once the task ends. We show a third way: to our knowledge for the first time, a language model rewrites its own weights by its own reasoning and becomes better, with no gradients and no training. We call this self-rewriting: the model is its own optimizer. In earlier work, a frontier model edited a much smaller one; here an open 27B model, given its weights, its graded answers and the ability to run itself, diagnoses its own failure and rewrites the weights behind it. It surpasses itself: its own edit makes it 6.6 points more accurate on problems it never saw. It keeps getting better: it tests its edits on practice problems and submits only what works, each edit improving on the last, and over eight consecutive sessions its accuracy only rises. It repairs a damaged copy of itself, like a broken robot that fixes itself without being rebuilt: the copy solves almost nothing, yet with no retraining and without ever reading the original weights, the model brings it back to over 80% of the original accuracy on image tasks it never saw. And the ability emerges with scale: in one model family, the smaller models make no edit or break themselves, and only the largest improves and re\n\nЧому матеріал у цій добірці: його тема стосується штучного інтелекту та одного з напрямів, важливих для якості життя людей. Це тематичний відбір, а не незалежна експертна оцінка результатів. Перед висновками прочитайте оригінальну публікацію.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте розділ про публікацію та рецензування в оригіналі.\n\nРедакційне застереження: автоматична система перевіряє формат стрічки, дату, домен посилання та тематичні слова. Вона не підтверджує методологію дослідження, не перевіряє незалежно всі твердження та не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-19",
+    "sources": [
+      {
+        "title": "Language Models Can Rewrite Their Own Weights",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2611.21885",
+        "publishedDate": "2026-11-19"
+      }
+    ]
+  }
+]

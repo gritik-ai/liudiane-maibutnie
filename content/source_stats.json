@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "filterVersion": null,
+  "generatedAt": null,
+  "totals": {},
+  "feedRuns": [],
+  "libraryByDomain": [],
+  "libraryDomainCount": 0,
+  "library": {
+    "totalRecords": null,
+    "publicRecords": null,
+    "needsReview": null,
+    "manualRecords": null
+  },
+  "methodology": "Файл очікує першого запуску RSS-фільтра 2.5. Після запуску тут з'являться фактичні дані про джерела та схвалену бібліотеку."
+}

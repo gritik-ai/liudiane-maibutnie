@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Curate a free RSS digest about AI and its potential benefits to people.
+"""Curate a diverse, free RSS digest about science and its benefits to people.
 
 Rule-based only: no paid API, LLM, database, or credentials required.
 The filter labels editorial relevance; it does not certify research claims.
@@ -26,20 +26,26 @@ ROOT = Path(__file__).resolve().parents[1]
 ARTICLES_FILE = ROOT / "content" / "articles.json"
 MAX_AGE_DAYS = 60
 MAX_NEW_ITEMS_PER_RUN = 10
+MAX_ITEMS_PER_DOMAIN_PER_RUN = 3
 MAX_TOTAL_ITEMS = 200
 MIN_DESCRIPTION_LENGTH = 40
-FILTER_VERSION = "2.4"
+FILTER_VERSION = "2.5"
+SOURCE_STATS_FILE = ROOT / "content" / "source_stats.json"
 
 FEEDS: list[dict[str, object]] = [
-    {"name": "MIT News — Штучний інтелект", "url": "https://news.mit.edu/rss/topic/artificial-intelligence2", "publisher": "MIT News", "host": "news.mit.edu", "kind": "ai_topic", "preprint": False},
-    {"name": "MIT News — Здоров'я і медицина", "url": "https://news.mit.edu/rss/topic/health-sciences-and-technology", "publisher": "MIT News", "host": "news.mit.edu", "kind": "domain_topic", "preprint": False},
-    {"name": "MIT News — Клімат і сталість", "url": "https://news.mit.edu/rss/topic/climate-change-and-sustainability", "publisher": "MIT News", "host": "news.mit.edu", "kind": "domain_topic", "preprint": False},
-    {"name": "MIT News — Продовольство і водні ресурси", "url": "https://news.mit.edu/rss/topic/food-and-water-security", "publisher": "MIT News", "host": "news.mit.edu", "kind": "domain_topic", "preprint": False},
-    {"name": "MIT News — Освіта і навчання", "url": "https://news.mit.edu/rss/topic/education", "publisher": "MIT News", "host": "news.mit.edu", "kind": "domain_topic", "preprint": False},
-    {"name": "arXiv — Штучний інтелект", "url": "https://export.arxiv.org/rss/cs.AI", "publisher": "arXiv", "host": "arxiv.org", "kind": "ai_topic", "preprint": True},
-    {"name": "arXiv — Машинне навчання", "url": "https://export.arxiv.org/rss/cs.LG", "publisher": "arXiv", "host": "arxiv.org", "kind": "ai_topic", "preprint": True},
-    {"name": "UNESCO-UNEVOC — Освіта і професійне навчання", "url": "https://connect.unevoc.unesco.org/unevoc_news.xml", "publisher": "UNESCO-UNEVOC", "host": "connect.unevoc.unesco.org", "kind": "institutional", "preprint": False},
-    {"name": "WHO — Новини про здоров'я", "url": "https://www.who.int/rss-feeds/news-english.xml", "publisher": "World Health Organization (WHO)", "host": "www.who.int", "kind": "institutional", "preprint": False},
+    {"id": "mit-ai", "name": "MIT News — Штучний інтелект", "url": "https://news.mit.edu/rss/topic/artificial-intelligence2", "publisher": "MIT News", "host": "mit.edu", "domain": "mit.edu", "kind": "ai_topic", "requires_ai": True, "preprint": False},
+    {"id": "mit-health", "name": "MIT News — Здоров'я і медицина", "url": "https://news.mit.edu/rss/topic/health-sciences-and-technology", "publisher": "MIT News", "host": "mit.edu", "domain": "mit.edu", "kind": "domain_topic", "requires_ai": False, "preprint": False},
+    {"id": "mit-climate", "name": "MIT News — Клімат і сталість", "url": "https://news.mit.edu/rss/topic/climate-change-and-sustainability", "publisher": "MIT News", "host": "mit.edu", "domain": "mit.edu", "kind": "domain_topic", "requires_ai": False, "preprint": False},
+    {"id": "mit-food-water", "name": "MIT News — Продовольство і водні ресурси", "url": "https://news.mit.edu/rss/topic/food-and-water-security", "publisher": "MIT News", "host": "mit.edu", "domain": "mit.edu", "kind": "domain_topic", "requires_ai": False, "preprint": False},
+    {"id": "mit-education", "name": "MIT News — Освіта і навчання", "url": "https://news.mit.edu/rss/topic/education", "publisher": "MIT News", "host": "mit.edu", "domain": "mit.edu", "kind": "domain_topic", "requires_ai": False, "preprint": False},
+    {"id": "arxiv-ai", "name": "arXiv — Штучний інтелект", "url": "https://export.arxiv.org/rss/cs.AI", "publisher": "arXiv", "host": "arxiv.org", "domain": "arxiv.org", "kind": "ai_topic", "requires_ai": True, "preprint": True},
+    {"id": "arxiv-ml", "name": "arXiv — Машинне навчання", "url": "https://export.arxiv.org/rss/cs.LG", "publisher": "arXiv", "host": "arxiv.org", "domain": "arxiv.org", "kind": "ai_topic", "requires_ai": True, "preprint": True},
+    {"id": "unevoc-news", "name": "UNESCO-UNEVOC — Освіта і професійне навчання", "url": "https://connect.unevoc.unesco.org/unevoc_news.xml", "publisher": "UNESCO-UNEVOC", "host": "unesco.org", "domain": "unesco.org", "kind": "institutional", "requires_ai": False, "preprint": False},
+    {"id": "who-news", "name": "WHO — Новини про здоров'я", "url": "https://www.who.int/rss-feeds/news-english.xml", "publisher": "World Health Organization (WHO)", "host": "who.int", "domain": "who.int", "kind": "institutional", "requires_ai": False, "preprint": False},
+    {"id": "nasa-news", "name": "NASA — Наука і технології", "url": "https://www.nasa.gov/feed/", "publisher": "NASA", "host": "nasa.gov", "domain": "nasa.gov", "kind": "institutional", "requires_ai": False, "preprint": False},
+    {"id": "nasa-jpl", "name": "NASA JPL — Наукові новини", "url": "https://www.jpl.nasa.gov/feeds/news/", "publisher": "NASA Jet Propulsion Laboratory", "host": "nasa.gov", "domain": "nasa.gov", "kind": "institutional", "requires_ai": False, "preprint": False},
+    {"id": "noaa-main", "name": "NOAA — Клімат, океани і довкілля", "url": "https://www.noaa.gov/rss.xml", "publisher": "NOAA", "host": "noaa.gov", "domain": "noaa.gov", "kind": "institutional", "requires_ai": False, "preprint": False},
+    {"id": "noaa-ocean", "name": "NOAA National Ocean Service — Новини океану", "url": "https://oceanservice.noaa.gov/rss/nosnews.xml", "publisher": "NOAA National Ocean Service", "host": "noaa.gov", "domain": "noaa.gov", "kind": "institutional", "requires_ai": False, "preprint": False},
 ]
 
 # Strong, human-domain signals. Intentionally avoid ambiguous standalone words
@@ -93,6 +99,15 @@ CATEGORY_TERMS: dict[str, list[str]] = {
         "poverty", "wellbeing", "well-being", "quality of life", "social protection", "housing",
         "income security", "market concentration", "supply chain", "financial inclusion", "financial access", "living standards", "економ", "праців", "зайнят", "добробут", "якість життя", "соціальн захист",
     ],
+    "Наука і технології": [
+        "space science", "space technology", "spacecraft", "space weather", "space exploration",
+        "earth observation", "satellite observation", "satellite data", "remote sensing",
+        "aeronautics", "aviation technology", "robotics", "robotic system", "scientific instrument",
+        "technology demonstration", "materials science", "navigation system", "solar storm",
+        "planetary science", "earth science", "ocean observation", "ocean mapping",
+        "наукові прилади", "космічні технології", "дистанційне зондування", "супутникові дані",
+        "робототехнік", "аеронавтик", "навігаційн", "дослідження землі",
+    ],
     "Надійність ШІ": [
         "ai safety", "safety alignment", "interpretability", "explainability",
         "explainable", "transparency", "auditability", "human oversight", "model reliability",
@@ -114,6 +129,11 @@ AI_TERMS = [
 # must also be established; a generic word such as "improve" is not enough alone.
 UTILITY_TERMS = [
     "clinical validation", "clinical trial", "diagnostic accuracy", "decision support",
+    "forecasting", "forecast", "monitoring", "monitor", "observation", "measurements",
+    "early warning", "warning system", "navigation", "mapping", "remote sensing",
+    "technology demonstration", "field campaign", "data products", "earth observation",
+    "public health guidance", "health guidance", "vaccination", "immunization",
+    "prevention", "treatment", "health services", "training programme", "skills development",
     "controlled comparison", "comparison", "medical explanations", "clinical explanations", "information extraction",
     "early detection", "screening", "benchmark", "benchmarks", "evaluation", "evaluate",
     "evaluating", "validated", "validation", "assessment items", "curriculum-aligned",
@@ -163,6 +183,14 @@ EDUCATION_CONTEXT_TERMS = [
     "adult education", "higher education", "literacy program", "curriculum-aligned assessment",
     "curriculum aligned assessment", "school curriculum", "освіт", "школ", "учн", "студент",
     "вчител", "педагог",
+]
+
+SCIENCE_TECH_STRONG_TERMS = [
+    "space science", "space technology", "spacecraft", "space weather", "space exploration",
+    "earth observation", "satellite data", "remote sensing", "aeronautics", "robotics",
+    "scientific instrument", "technology demonstration", "materials science", "navigation system",
+    "solar storm", "planetary science", "earth science", "ocean observation", "ocean mapping",
+    "космічні технології", "супутникові дані", "дистанційне зондування", "робототехнік",
 ]
 
 RELIABILITY_STRONG_TERMS = [
@@ -277,14 +305,37 @@ def normalized_url(raw_url: str, expected_host: str | None = None) -> str:
         host = (parsed.hostname or "").lower()
         if parsed.scheme not in ("http", "https") or not host:
             return ""
-        if expected_host and host != expected_host.lower():
-            return ""
+        if expected_host:
+            expected = expected_host.lower().strip(".")
+            if host != expected and not host.endswith("." + expected):
+                return ""
         # Tracking query parameters and fragments do not identify a different article.
         kept_query = "&".join(part for part in parsed.query.split("&") if part and not part.lower().startswith(("utm_", "fbclid=", "gclid=")))
         path = re.sub(r"/+", "/", parsed.path).rstrip("/") or "/"
         return urlunparse(("https", host, path, "", kept_query, ""))
     except Exception:
         return ""
+
+
+def canonical_domain(raw_url: str) -> str:
+    """Return a stable publisher domain for source-diversity statistics."""
+    try:
+        host = (urlparse(raw_url).hostname or "").lower().strip(".")
+    except Exception:
+        return ""
+    if not host:
+        return ""
+    if host.endswith(".arxiv.org") or host == "arxiv.org":
+        return "arxiv.org"
+    for root in ("mit.edu", "unesco.org", "who.int", "nasa.gov", "noaa.gov"):
+        if host == root or host.endswith("." + root):
+            return root
+    if host.startswith("www."):
+        host = host[4:]
+    labels = host.split(".")
+    if len(labels) >= 3 and labels[-2] in {"co", "org", "gov", "ac", "com"} and len(labels[-1]) == 2:
+        return ".".join(labels[-3:])
+    return ".".join(labels[-2:]) if len(labels) >= 2 else host
 
 
 def title_key(title: str) -> str:
@@ -341,6 +392,9 @@ def category_matches(title: str, description: str) -> list[tuple[int, str, list[
         elif category == "Екологія":
             if not matching_terms(combined, ECOLOGY_STRONG_TERMS):
                 continue
+        elif category == "Наука і технології":
+            if not matching_terms(combined, SCIENCE_TECH_STRONG_TERMS):
+                continue
         title_hits = matching_terms(title_folded, terms)
         score = len(set(all_hits)) + 3 * len(set(title_hits))
         results.append((score, category, all_hits))
@@ -356,8 +410,11 @@ def assess_relevance(item: dict[str, str], feed: dict[str, object]) -> dict[str,
     if exclusion:
         return {"accepted": False, "reason": f"відсів: {exclusion}", "category": "", "evidenceLevel": ""}
 
-    if feed.get("kind") != "ai_topic" and not matching_terms(combined, AI_TERMS):
-        return {"accepted": False, "reason": "немає чіткого зв'язку зі штучним інтелектом", "category": "", "evidenceLevel": ""}
+    # AI is required only for AI-specialist feeds. Institutional/domain feeds may
+    # publish valuable non-AI work in health, education, environment and science.
+    requires_ai = bool(feed.get("requires_ai", False))
+    if requires_ai and not matching_terms(combined, AI_TERMS):
+        return {"accepted": False, "reason": "немає чіткого зв'язку зі штучним інтелектом для спеціалізованої AI-стрічки", "category": "", "evidenceLevel": ""}
 
     matches = category_matches(title, description)
     if not matches:
@@ -390,6 +447,8 @@ def assess_relevance(item: dict[str, str], feed: dict[str, object]) -> dict[str,
     concrete = [
         "clinical validation", "clinical trial", "diagnostic accuracy", "real-world",
         "deployment", "deployed", "field study", "validated", "early detection",
+        "forecast", "forecasting", "monitoring", "observation", "navigation system",
+        "technology demonstration", "field campaign", "earth observation", "remote sensing",
         "decision support", "curriculum-aligned", "public service", "human oversight",
         "auditable", "accessibility", "assistive technology", "renewable energy",
         "water quality", "crop yield", "disaster response", "poverty reduction",
@@ -421,7 +480,7 @@ def is_relevant(item: dict[str, str], feed: dict[str, object]) -> bool:
 def fetch_feed(feed: dict[str, object]) -> list[dict[str, str]]:
     request = urllib.request.Request(
         str(feed["url"]),
-        headers={"User-Agent": "LiudianeMaibutnie-RSSBot/2.4 (+https://github.com/)",
+        headers={"User-Agent": "LiudianeMaibutnie-RSSBot/2.5 (+https://github.com/)",
                  "Accept": "application/rss+xml, application/atom+xml, application/xml, text/xml"},
     )
     with urllib.request.urlopen(request, timeout=25) as response:
@@ -458,6 +517,8 @@ def article_from(item: dict[str, str], feed: dict[str, object], published: datet
         "autoPublished": True,
         "sourceType": "rss",
         "feedName": str(feed["name"]),
+        "feedId": str(feed.get("id", "")),
+        "sourceDomain": str(feed.get("domain", canonical_domain(item["link"]))),
         "filterVersion": FILTER_VERSION,
         "editorialStatus": "approved",
         "editorialDecisionSource": "automatic",
@@ -557,6 +618,8 @@ def prune_existing(
                     article["sourceDescription"] = refreshed
                 article["feedKind"] = str(recovered_feed.get("kind", article.get("feedKind", "ai_topic")))
                 article["feedName"] = str(recovered_feed.get("name", article.get("feedName", "")))
+                article["feedId"] = str(recovered_feed.get("id", article.get("feedId", "")))
+                article["sourceDomain"] = str(recovered_feed.get("domain", canonical_domain(source_url(article))))
             article["filterVersion"] = FILTER_VERSION
             status = str(article.get("editorialStatus"))
             print(f"[HUMAN-DECISION-KEPT] {title or 'Без назви'} — {status}; рішення редактора не змінено")
@@ -584,6 +647,8 @@ def prune_existing(
                 description = stored_description
             article["feedKind"] = str(recovered_feed.get("kind", article.get("feedKind", "ai_topic")))
             article["feedName"] = str(recovered_feed.get("name", article.get("feedName", "")))
+            article["feedId"] = str(recovered_feed.get("id", article.get("feedId", "")))
+            article["sourceDomain"] = str(recovered_feed.get("domain", canonical_domain(source_url(article))))
 
         if len(description) < MIN_DESCRIPTION_LENGTH:
             status = "needs_review"
@@ -669,6 +734,115 @@ def dedupe_existing(existing: list[dict[str, object]]) -> tuple[list[dict[str, o
     _ = manual_ids
     return manual + kept_auto, duplicate_count, seen_urls, seen_titles, seen_dois
 
+def select_diverse_candidates(
+    candidates: list[dict[str, object]],
+    max_total: int = MAX_NEW_ITEMS_PER_RUN,
+    max_per_domain: int = MAX_ITEMS_PER_DOMAIN_PER_RUN,
+) -> tuple[list[dict[str, object]], int]:
+    """Select recent items by round-robin publisher domain to avoid one-source dominance."""
+    grouped: dict[str, list[dict[str, object]]] = {}
+    for candidate in candidates:
+        domain = str(candidate.get("sourceDomain") or "unknown")
+        grouped.setdefault(domain, []).append(candidate)
+    for rows in grouped.values():
+        rows.sort(key=lambda row: str(row.get("date", "")), reverse=True)
+    domain_order = sorted(
+        grouped,
+        key=lambda domain: (
+            str(grouped[domain][0].get("date", "")) if grouped[domain] else "",
+            domain,
+        ),
+        reverse=True,
+    )
+    selected: list[dict[str, object]] = []
+    per_domain = Counter()
+    offsets = {domain: 0 for domain in domain_order}
+    while len(selected) < max_total:
+        progressed = False
+        for domain in domain_order:
+            if len(selected) >= max_total:
+                break
+            if per_domain[domain] >= max_per_domain:
+                continue
+            offset = offsets[domain]
+            if offset >= len(grouped[domain]):
+                continue
+            selected.append(grouped[domain][offset])
+            offsets[domain] += 1
+            per_domain[domain] += 1
+            progressed = True
+        if not progressed:
+            break
+    return selected, max(0, len(candidates) - len(selected))
+
+
+def build_source_stats(
+    combined: list[dict[str, object]],
+    feed_runs: list[dict[str, object]],
+    totals: dict[str, int],
+) -> dict[str, object]:
+    """Create public, factual source statistics for the analytics dashboard."""
+    by_domain: dict[str, dict[str, object]] = {}
+    for article in combined:
+        if not isinstance(article, dict):
+            continue
+        if article.get("autoPublished") and article.get("editorialStatus") != "approved":
+            continue
+        domain = str(article.get("sourceDomain") or canonical_domain(source_url(article)))
+        if not domain:
+            continue
+        row = by_domain.setdefault(domain, {"domain": domain, "count": 0, "publishers": set()})
+        row["count"] = int(row["count"]) + 1
+        sources = article.get("sources", [])
+        if isinstance(sources, list):
+            for source in sources:
+                if isinstance(source, dict) and source.get("publisher"):
+                    row["publishers"].add(str(source["publisher"]))
+    library_domains = []
+    for domain, row in sorted(by_domain.items(), key=lambda item: (-int(item[1]["count"]), item[0])):
+        publishers = sorted(row["publishers"])
+        library_domains.append({
+            "domain": domain,
+            "count": int(row["count"]),
+            "publishers": publishers,
+        })
+    return {
+        "schemaVersion": 1,
+        "filterVersion": FILTER_VERSION,
+        "generatedAt": datetime.now(timezone.utc).isoformat(),
+        "totals": totals,
+        "feedRuns": feed_runs,
+        "libraryByDomain": library_domains,
+        "libraryDomainCount": len(library_domains),
+        "library": {
+            "totalRecords": len(combined),
+            "publicRecords": sum(
+                1 for article in combined
+                if isinstance(article, dict)
+                and isinstance(article.get("title"), str)
+                and isinstance(article.get("body"), str)
+                and (not article.get("autoPublished") or article.get("editorialStatus") == "approved")
+            ),
+            "needsReview": sum(
+                1 for article in combined
+                if isinstance(article, dict) and article.get("editorialStatus") == "needs_review"
+            ),
+            "manualRecords": sum(1 for article in combined if isinstance(article, dict) and not is_auto_rss(article)),
+        },
+        "methodology": (
+            "Кількість доменів обчислюється за першоджерелами схвалених матеріалів. "
+            "Статистика RSS показує результати останнього запуску, а не доведений суспільний ефект."
+        ),
+    }
+
+
+def write_json_atomic(path: Path, data: object) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    temporary = path.with_suffix(path.suffix + ".tmp")
+    temporary.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    temporary.replace(path)
+
+
 def main() -> int:
     now = datetime.now(timezone.utc)
     cutoff = now - timedelta(days=MAX_AGE_DAYS)
@@ -678,16 +852,43 @@ def main() -> int:
     rss_count = initial_count - manual_count
 
     fetched: list[tuple[dict[str, object], dict[str, str]]] = []
+    feed_runs: list[dict[str, object]] = []
+    feed_run_by_id: dict[str, dict[str, object]] = {}
     success_count = fetched_count = 0
     for feed in FEEDS:
+        feed_id = str(feed.get("id", feed["name"]))
+        run = {
+            "id": feed_id,
+            "name": str(feed["name"]),
+            "publisher": str(feed["publisher"]),
+            "domain": str(feed.get("domain") or canonical_domain(str(feed["url"]))),
+            "url": str(feed["url"]),
+            "status": "error",
+            "itemsFetched": 0,
+            "acceptedCandidates": 0,
+            "added": 0,
+            "rejected": 0,
+            "duplicates": 0,
+            "tooOld": 0,
+            "shortDescriptions": 0,
+            "deferredByDiversityCap": 0,
+            "rejectionReasons": {},
+            "error": "",
+        }
+        feed_runs.append(run)
+        feed_run_by_id[feed_id] = run
         try:
             rows = fetch_feed(feed)
             success_count += 1
             fetched_count += len(rows)
+            run["status"] = "ok"
+            run["itemsFetched"] = len(rows)
             fetched.extend((feed, row) for row in rows)
         except (urllib.error.URLError, TimeoutError, ET.ParseError, OSError, ValueError) as exc:
+            run["error"] = str(exc)[:240]
             print(f"[WARN] {feed['name']}: {exc}", file=sys.stderr)
         except Exception as exc:
+            run["error"] = str(exc)[:240]
             print(f"[WARN] {feed['name']}: unexpected error: {exc}", file=sys.stderr)
 
     if success_count == 0:
@@ -698,10 +899,18 @@ def main() -> int:
     existing, removed_existing, restored_existing, metadata_updated, review_existing = prune_existing(existing_original, fetched_index)
     existing, duplicate_existing, seen_urls, seen_titles, seen_dois = dedupe_existing(existing)
 
-    additions: list[dict[str, object]] = []
+    candidates: list[dict[str, object]] = []
     rejected_count = duplicate_count = too_old_count = short_count = 0
     rejection_reasons: Counter[str] = Counter()
+    # Candidate identities are reserved while scanning all feeds to prevent the same
+    # article being counted twice even when it appears in more than one RSS channel.
+    candidate_seen_urls = set(seen_urls)
+    candidate_seen_titles = set(seen_titles)
+    candidate_seen_dois = set(seen_dois)
+
     for feed, row_original in fetched:
+        feed_id = str(feed.get("id", feed["name"]))
+        feed_stats = feed_run_by_id[feed_id]
         row = dict(row_original)
         link = normalized_url(row.get("link", ""), str(feed["host"]))
         if not link:
@@ -711,39 +920,68 @@ def main() -> int:
         title = row.get("title", "")
         title_fingerprint = title_key(title)
         doi = doi_key({"title": title, "summary": row.get("description", ""), "sources": [{"url": link}]})
-        # Existing records (including held/review records) reserve their identity for
-        # this run. This prevents the same old item being pruned and re-added.
-        if link in seen_urls or (doi and doi in seen_dois) or (title_fingerprint and title_fingerprint in seen_titles):
+        if link in candidate_seen_urls or (doi and doi in candidate_seen_dois) or (title_fingerprint and title_fingerprint in candidate_seen_titles):
             duplicate_count += 1
+            feed_stats["duplicates"] = int(feed_stats["duplicates"]) + 1
             continue
         published = parse_date(row.get("published", ""))
         if not published or published < cutoff or published > now + timedelta(days=1):
             too_old_count += 1
+            feed_stats["tooOld"] = int(feed_stats["tooOld"]) + 1
             continue
         if len(row["description"]) < MIN_DESCRIPTION_LENGTH:
             short_count += 1
-            rejection_reasons["короткий або відсутній опис"] += 1
+            feed_stats["shortDescriptions"] = int(feed_stats["shortDescriptions"]) + 1
+            reason = "короткий або відсутній опис"
+            rejection_reasons[reason] += 1
+            feed_reasons = feed_stats["rejectionReasons"]
+            feed_reasons[reason] = int(feed_reasons.get(reason, 0)) + 1
             continue
+
         decision = assess_relevance(row, feed)
+        # This feed row has now been assessed; reserve its identity regardless of result.
+        candidate_seen_urls.add(link)
+        if doi:
+            candidate_seen_dois.add(doi)
+        if title_fingerprint:
+            candidate_seen_titles.add(title_fingerprint)
         if not decision["accepted"]:
             rejected_count += 1
-            rejection_reasons[str(decision["reason"])] += 1
+            reason = str(decision["reason"])
+            rejection_reasons[reason] += 1
+            feed_stats["rejected"] = int(feed_stats["rejected"]) + 1
+            feed_reasons = feed_stats["rejectionReasons"]
+            feed_reasons[reason] = int(feed_reasons.get(reason, 0)) + 1
             continue
-        additions.append(article_from(row, feed, published, decision))
-        seen_urls.add(link)
-        if doi:
-            seen_dois.add(doi)
-        if title_fingerprint:
-            seen_titles.add(title_fingerprint)
 
-    additions.sort(key=lambda article: str(article["date"]), reverse=True)
-    additions = additions[:MAX_NEW_ITEMS_PER_RUN]
+        article = article_from(row, feed, published, decision)
+        article["sourceDomain"] = str(feed.get("domain") or canonical_domain(link))
+        article["feedId"] = feed_id
+        candidates.append(article)
+        feed_stats["acceptedCandidates"] = int(feed_stats["acceptedCandidates"]) + 1
+
+    selected, deferred_count = select_diverse_candidates(candidates)
+    selected_ids = {str(article.get("id", "")) for article in selected}
+    for article in candidates:
+        if str(article.get("id", "")) not in selected_ids:
+            feed_stats = feed_run_by_id[str(article.get("feedId", ""))]
+            feed_stats["deferredByDiversityCap"] = int(feed_stats["deferredByDiversityCap"]) + 1
+    for article in selected:
+        feed_stats = feed_run_by_id[str(article.get("feedId", ""))]
+        feed_stats["added"] = int(feed_stats["added"]) + 1
+
+    additions = sorted(selected, key=lambda article: str(article["date"]), reverse=True)
     capacity = max(0, MAX_TOTAL_ITEMS - len(existing))
     if len(additions) > capacity:
         print(f"[LIMIT] Додатків скорочено з {len(additions)} до {capacity}: досягнуто ліміту бібліотеки.")
+        dropped = additions[capacity:]
+        deferred_count += len(dropped)
+        for article in dropped:
+            feed_stats = feed_run_by_id[str(article.get("feedId", ""))]
+            feed_stats["added"] = max(0, int(feed_stats["added"]) - 1)
+            feed_stats["deferredByDiversityCap"] = int(feed_stats["deferredByDiversityCap"]) + 1
         additions = additions[:capacity]
 
-    # Preserve all existing records. No silent truncation at MAX_TOTAL_ITEMS.
     combined = additions + existing
     expected_count = initial_count + len(additions)
     if len(combined) != expected_count:
@@ -761,6 +999,21 @@ def main() -> int:
         print("[ERROR] Контроль ручних матеріалів не пройдено. Бібліотеку не змінено.", file=sys.stderr)
         return 3
 
+    # Build source-by-source counters from this run and the approved library.
+    totals = {
+        "successfulFeeds": success_count,
+        "totalFeeds": len(FEEDS),
+        "itemsFetched": fetched_count,
+        "acceptedCandidates": len(candidates),
+        "added": len(additions),
+        "rejected": rejected_count,
+        "duplicates": duplicate_count,
+        "tooOld": too_old_count,
+        "shortDescriptions": short_count,
+        "deferredByDiversityCap": max(0, deferred_count),
+    }
+    source_stats = build_source_stats(combined, feed_runs, totals)
+
     print(f"Версія редакційного фільтра: {FILTER_VERSION}.")
     print(f"Перевірено RSS-стрічок: {success_count}/{len(FEEDS)}; записів у стрічках: {fetched_count}.")
     print(f"Початковий склад бібліотеки: {initial_count} (ручних: {manual_count}; автоматичних RSS: {rss_count}).")
@@ -775,20 +1028,36 @@ def main() -> int:
     print(f"Відхилено нових кандидатів за редакційними правилами: {rejected_count}.")
     print(f"Пропущено дублікатів у стрічках/бібліотеці: {duplicate_count}; позначено дублікатів у бібліотеці: {duplicate_existing}.")
     print(f"Пропущено за датою: {too_old_count}; без достатнього опису: {short_count}.")
+    print(f"Відкладено через ліміт різноманітності: {max(0, deferred_count)}; максимум {MAX_ITEMS_PER_DOMAIN_PER_RUN} матеріалів на домен за запуск.")
     for reason, count in rejection_reasons.most_common(8):
         print(f" - Відхилено {count}: {reason}")
 
-    changed = combined != existing_original
-    if not changed:
-        print(f"Бібліотека без змін: {len(combined)} запис(ів).")
-        print(f"[INTEGRITY] Було {initial_count}; додано 0; залишилося {len(combined)}. Ручні матеріали збережено: {manual_count}.")
-        return 0
+    for run in feed_runs:
+        status = "OK" if run["status"] == "ok" else "ERROR"
+        print(
+            f"[FEED] {run['name']} | {status} | отримано: {run['itemsFetched']} | "
+            f"схвалено кандидатів: {run['acceptedCandidates']} | додано: {run['added']} | "
+            f"відхилено: {run['rejected']} | дублікати: {run['duplicates']}"
+        )
+        if run.get("error"):
+            print(f"[FEED-ERROR] {run['name']}: {run['error']}")
 
-    ARTICLES_FILE.parent.mkdir(parents=True, exist_ok=True)
-    ARTICLES_FILE.write_text(json.dumps(combined, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(f"[SOURCES] У бібліотеці схвалених матеріалів: {source_stats['libraryDomainCount']} унікальних доменів першоджерел.")
+    for domain_row in source_stats["libraryByDomain"]:
+        pubs = ", ".join(domain_row["publishers"]) or domain_row["domain"]
+        print(f"[SOURCE-DOMAIN] {domain_row['domain']} | {domain_row['count']} матеріал(ів) | {pubs}")
+
+    articles_changed = combined != existing_original
+    write_json_atomic(SOURCE_STATS_FILE, source_stats)
+    if articles_changed:
+        write_json_atomic(ARTICLES_FILE, combined)
+    else:
+        print(f"Бібліотека без змін: {len(combined)} запис(ів).")
+
     print(f"Додано {len(additions)} нових матеріал(ів). У бібліотеці тепер {len(combined)} запис(ів).")
     print(f"[INTEGRITY] Було {initial_count}; додано {len(additions)}; вилучено 0; стало {len(combined)}.")
     print(f"[INTEGRITY] Ручних матеріалів збережено: {manual_count}; жоден існуючий запис автоматично не видалено.")
+    print(f"[SOURCE-STATS] Оновлено {SOURCE_STATS_FILE.relative_to(ROOT)}.")
     for article in additions:
         print(f" - {article['date']} | [{article['category']}] {article['title']}")
     return 0

@@ -1,5 +1,285 @@
 [
   {
+    "id": "rss-2026-11-20-2d9b626ea19e",
+    "date": "2026-11-20",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "arXiv — Машинне навчання",
+    "filterVersion": "2.4",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Позитивний вплив",
+    "feedKind": "ai_topic",
+    "sourceDescription": "arXiv:2509.14167v2 Announce Type: replace Abstract: We propose the mechanistically hierarchical inverse problem (MHIP) paradigm for biological transport systems, where a macroscopic observation emerges from the multiplicative entanglement of intrinsic micro-scale physics and latent macro-scale geometry. Without in vivo ground truth, solving MHIPs from clinical data is severely underdetermined. Standard statistical sampling degenerates along non-identifiable manifolds, while monolithic machine learning baselines collapse to an uninterpretable conditional mean. We propose a two-stage physics-guided decomposition that turns a globally non-identifiable inverse mapping into conditionally identifiable sub-problems. The first stage is a constrained inverse surrogate that isolates the intrinsic parameter under a fixed reference geometry. The second stage performs empirical structural calibration against population-level clinical data. We also introduce Physics-Calibrated Data Scaling (PCDS), a multi-fidelity strategy that builds large training sets from few high-fidelity simulations without patient-specific 3D modeling. In a glaucoma case study, the framework deconstructs a single intraocular pressure (IOP) measurement to estimate trabecular permeability ($\\hat{K}_{TM}$) and conventional outflow facility ($\\hat{C}_{trab}$). In retrospective validation against published in vivo data, the non-invasive $\\hat{C}_{trab}$ estimates showed low bias against measured outflow facility. In an ablation over 27 clinical cohorts, naive monolithic baselines reach 37.0% diagnostic accuracy. Adding the isolated $\\hat{K}_{TM}$ estimate raises this to 85.2%. The full two-stage framework reaches 88.9%. The framework also returns a probabilistic profile of the latent hydrodynamic state, offering a general computational blueprint for MHIPs.",
+    "selectionReason": "напрям: Медицина; ознаки користі: diagnostic accuracy, validation, measure",
+    "evidenceLevel": "практичне застосування або конкретний приклад",
+    "category": "Медицина",
+    "title": "Deconstructing Intraocular Pressure: A Non-Invasive Multi-Stage Probabilistic Inverse Framework",
+    "summary": "arXiv:2509.14167v2 Announce Type: replace Abstract: We propose the mechanistically hierarchical inverse problem (MHIP) paradigm for biological transport systems, where a macroscopic observation emerges from the multiplicative entanglement of intrinsic micro-scale physics and latent macro-scale geometry. Without in vivo ground truth, solving MHIPs from…",
+    "body": "Матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2509.14167v2 Announce Type: replace Abstract: We propose the mechanistically hierarchical inverse problem (MHIP) paradigm for biological transport systems, where a macroscopic observation emerges from the multiplicative entanglement of intrinsic micro-scale physics and latent macro-scale geometry. Without in vivo ground truth, solving MHIPs from clinical data is severely underdetermined. Standard statistical sampling degenerates along non-identifiable manifolds, while monolithic machine learning baselines collapse to an uninterpretable conditional mean. We propose a two-stage physics-guided decomposition that turns a globally non-identifiable inverse mapping into conditionally identifiable sub-problems. The first stage is a constrained inverse surrogate that isolates the intrinsic parameter under a fixed reference geometry. The second stage performs empirical structural calibration against population-level clinical data. We also introduce Physics-Calibrated Data Scaling (PCDS), a multi-fidelity strategy that builds large training sets from few high-fidelity simulations without patient-specific 3D modeling. In a glaucoma case study, the framework deconstructs a single intraocular pressure (IOP) measurement to estimate trabecular permeability ($\\hat{K}_{TM}$) and conventional outflow facility ($\\hat{C}_{trab}$). In retrospective validation against published in vivo data, the non-invasive $\\hat{C}_{trab}$ estimates showed low bias against measured outflow facility. In an ablation over 27 clinical cohorts, naive monolithic baselines reach 37.0% diagnostic accuracy. Adding the isolated $\\hat{K}_{TM}$ estimate raises this to 85.2%. The full two-stage framework reaches 88.9%. The framework also returns a probabilistic profile of the latent hydrodynamic state, offering a general computational blueprint for MHIPs.\n\nРедакційна класифікація: напрям: Медицина; ознаки користі: diagnostic accuracy, validation, measure. Рівень свідчень: практичне застосування або конкретний приклад. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте статус публікації в першоджерелі.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-20",
+    "sources": [
+      {
+        "title": "Deconstructing Intraocular Pressure: A Non-Invasive Multi-Stage Probabilistic Inverse Framework",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2509.14167",
+        "publishedDate": "2026-11-20"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-20-319c839eb40e",
+    "date": "2026-11-20",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "arXiv — Машинне навчання",
+    "filterVersion": "2.4",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Перспективний розвиток",
+    "feedKind": "ai_topic",
+    "sourceDescription": "arXiv:2511.22031v3 Announce Type: replace Abstract: The electric power sector is a leading source of air pollutant emissions, impacting the public health of nearly every community. Although regulatory measures have reduced air pollutants, fossil fuels remain a significant component of the energy supply, highlighting the need for more advanced demand-side approaches to reduce the public health impacts. To enable health-informed demand-side management, we introduce HealthPredictor, a domain-specific AI model that provides an end-to-end pipeline linking electricity use to public health outcomes. The model comprises three components: a fuel mix predictor that estimates the contribution of different generation sources, an air quality converter that models pollutant emissions and atmospheric dispersion, and a health impact assessor that translates resulting pollutant changes into monetized health damages. Across multiple regions in the United States, our health-driven optimization framework yields substantially lower prediction errors in terms of public health impacts than fuel mix-driven baselines. A case study on electric vehicle charging schedules illustrates the public health gains enabled by our method and the actionable guidance it can offer for health-informed energy management. Overall, this work shows how AI models can be explicitly designed to enable health-informed energy management for advancing public health and broader societal well-being. Our datasets and code are released at: https://github.com/Ren-Research/Health-Impact-Predictor.",
+    "selectionReason": "напрям: Медицина; ознаки користі: dataset, reduce, predict",
+    "evidenceLevel": "дослідження або оцінювання потенційного застосування",
+    "category": "Медицина",
+    "title": "Predicting Public Health Impacts of Electricity Usage",
+    "summary": "arXiv:2511.22031v3 Announce Type: replace Abstract: The electric power sector is a leading source of air pollutant emissions, impacting the public health of nearly every community. Although regulatory measures have reduced air pollutants, fossil fuels remain a significant component of the energy supply, highlighting the need for more advanced demand-side…",
+    "body": "Матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2511.22031v3 Announce Type: replace Abstract: The electric power sector is a leading source of air pollutant emissions, impacting the public health of nearly every community. Although regulatory measures have reduced air pollutants, fossil fuels remain a significant component of the energy supply, highlighting the need for more advanced demand-side approaches to reduce the public health impacts. To enable health-informed demand-side management, we introduce HealthPredictor, a domain-specific AI model that provides an end-to-end pipeline linking electricity use to public health outcomes. The model comprises three components: a fuel mix predictor that estimates the contribution of different generation sources, an air quality converter that models pollutant emissions and atmospheric dispersion, and a health impact assessor that translates resulting pollutant changes into monetized health damages. Across multiple regions in the United States, our health-driven optimization framework yields substantially lower prediction errors in terms of public health impacts than fuel mix-driven baselines. A case study on electric vehicle charging schedules illustrates the public health gains enabled by our method and the actionable guidance it can offer for health-informed energy management. Overall, this work shows how AI models can be explicitly designed to enable health-informed energy management for advancing public health and broader societal well-being. Our datasets and code are released at: https://github.com/Ren-Research/Health-Impact-Predictor.\n\nРедакційна класифікація: напрям: Медицина; ознаки користі: dataset, reduce, predict. Рівень свідчень: дослідження або оцінювання потенційного застосування. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте статус публікації в першоджерелі.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-20",
+    "sources": [
+      {
+        "title": "Predicting Public Health Impacts of Electricity Usage",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2511.22031",
+        "publishedDate": "2026-11-20"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-20-00c4774b58cd",
+    "date": "2026-11-20",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "arXiv — Машинне навчання",
+    "filterVersion": "2.4",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Перспективний розвиток",
+    "feedKind": "ai_topic",
+    "sourceDescription": "arXiv:2605.20643v2 Announce Type: replace Abstract: Self-distillation enables language models to learn on-policy from their own trajectories by using the same model as both student and teacher, with the teacher being conditioned on privileged information unavailable to the student. Such information can come in different types or views, such as solutions, demonstrations, feedback, or final answers. This setup provides dense token-level feedback without relying on a separate external model, but creates a fundamental asymmetry: the teacher may rely on view-specific information that the student cannot access at inference time. Moreover, the best type of privileged information is often task-dependent, making it difficult to choose a single teacher view. In this work, we address both these challenges jointly by introducing AVSD (Adaptive-View Self-Distillation), a novel method of self-distillation with multiple privileged-information views, which reconstructs token-level supervision by separating stable cross-view consensus from view-specific residual signals. AVSD identifies the consensus signal shared across views, which provides a reliable update direction, and then selectively adds the view-specific residual signal to adjust the update magnitude when it both aligns with the consensus direction and remains proportionate to the consensus signal. Experiments on math competition benchmarks (AIME24, AIME25, and HMMT25) show that AVSD consistently outperforms both single-view self-distillation baselines and GRPO, achieving average Avg@8 gains of 3.1% and 2.2% over the strongest baselines on Qwen3-8B and Qwen3-4B, respectively. Moreover, on code-generation benchmarks (Codeforces, LiveCodeBench v6) using Qwen3-8B, AVSD outperforms the single-view self-distillation baseline by 2.4% on average.",
+    "selectionReason": "напрям: Освіта; ознаки користі: benchmark, benchmarks, reliable",
+    "evidenceLevel": "дослідження або оцінювання потенційного застосування",
+    "category": "Освіта",
+    "title": "AVSD: Adaptive-View Self-Distillation by Balancing Consensus and Teacher-Specific Privileged Signals",
+    "summary": "arXiv:2605.20643v2 Announce Type: replace Abstract: Self-distillation enables language models to learn on-policy from their own trajectories by using the same model as both student and teacher, with the teacher being conditioned on privileged information unavailable to the student. Such information can come in different types or views, such as solutions,…",
+    "body": "Матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2605.20643v2 Announce Type: replace Abstract: Self-distillation enables language models to learn on-policy from their own trajectories by using the same model as both student and teacher, with the teacher being conditioned on privileged information unavailable to the student. Such information can come in different types or views, such as solutions, demonstrations, feedback, or final answers. This setup provides dense token-level feedback without relying on a separate external model, but creates a fundamental asymmetry: the teacher may rely on view-specific information that the student cannot access at inference time. Moreover, the best type of privileged information is often task-dependent, making it difficult to choose a single teacher view. In this work, we address both these challenges jointly by introducing AVSD (Adaptive-View Self-Distillation), a novel method of self-distillation with multiple privileged-information views, which reconstructs token-level supervision by separating stable cross-view consensus from view-specific residual signals. AVSD identifies the consensus signal shared across views, which provides a reliable update direction, and then selectively adds the view-specific residual signal to adjust the update magnitude when it both aligns with the consensus direction and remains proportionate to the consensus signal. Experiments on math competition benchmarks (AIME24, AIME25, and HMMT25) show that AVSD consistently outperforms both single-view self-distillation baselines and GRPO, achieving average Avg@8 gains of 3.1% and 2.2% over the strongest baselines on Qwen3-8B and Qwen3-4B, respectively. Moreover, on code-generation benchmarks (Codeforces, LiveCodeBench v6) using Qwen3-8B, AVSD outperforms the single-view self-distillation baseline by 2.4% on average.\n\nРедакційна класифікація: напрям: Освіта; ознаки користі: benchmark, benchmarks, reliable. Рівень свідчень: дослідження або оцінювання потенційного застосування. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте статус публікації в першоджерелі.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-20",
+    "sources": [
+      {
+        "title": "AVSD: Adaptive-View Self-Distillation by Balancing Consensus and Teacher-Specific Privileged Signals",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2605.20643",
+        "publishedDate": "2026-11-20"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-20-803c8d7ac2c3",
+    "date": "2026-11-20",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "arXiv — Машинне навчання",
+    "filterVersion": "2.4",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Перспективний розвиток",
+    "feedKind": "ai_topic",
+    "sourceDescription": "arXiv:2609.27964v3 Announce Type: replace Abstract: Does the organization of a fixed number of transitions into independent trajectories affect a fixed stationary prediction task? We study a Gaussian-sketched linear recurrent teacher--student model, where independently initialized training trajectories create transients that can excite weak spectral directions. For full-batch gradient descent with stable deterministic learning rates, we establish matching stationary approximation, bias, variance, and total-risk scaling laws from dependent trajectory data. When initialization decays at least as fast spectrally as the innovations, trajectory count and length enter the leading variance rate through their product. With a heavier initialization tail, transient excitation can improve the trajectory-length-dependent finite-time bias and, at fixed transition count, variance, while the stationary oracle shift remains controlled by representation approximation. Under token and compute caps, constant-length trajectories attain the optimal risk scaling order within the theorem-controlled range. Synthetic experiments provide finite-scale evidence in this stylized model.",
+    "selectionReason": "напрям: Освіта; ознаки користі: improve, predict, prediction",
+    "evidenceLevel": "перспективне дослідження; практичний ефект ще потрібно перевірити",
+    "category": "Освіта",
+    "title": "Learning from Transients: Linear RNN Scaling Laws in Stationary Prediction",
+    "summary": "arXiv:2609.27964v3 Announce Type: replace Abstract: Does the organization of a fixed number of transitions into independent trajectories affect a fixed stationary prediction task? We study a Gaussian-sketched linear recurrent teacher--student model, where independently initialized training trajectories create transients that can excite weak spectral…",
+    "body": "Матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2609.27964v3 Announce Type: replace Abstract: Does the organization of a fixed number of transitions into independent trajectories affect a fixed stationary prediction task? We study a Gaussian-sketched linear recurrent teacher--student model, where independently initialized training trajectories create transients that can excite weak spectral directions. For full-batch gradient descent with stable deterministic learning rates, we establish matching stationary approximation, bias, variance, and total-risk scaling laws from dependent trajectory data. When initialization decays at least as fast spectrally as the innovations, trajectory count and length enter the leading variance rate through their product. With a heavier initialization tail, transient excitation can improve the trajectory-length-dependent finite-time bias and, at fixed transition count, variance, while the stationary oracle shift remains controlled by representation approximation. Under token and compute caps, constant-length trajectories attain the optimal risk scaling order within the theorem-controlled range. Synthetic experiments provide finite-scale evidence in this stylized model.\n\nРедакційна класифікація: напрям: Освіта; ознаки користі: improve, predict, prediction. Рівень свідчень: перспективне дослідження; практичний ефект ще потрібно перевірити. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте статус публікації в першоджерелі.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-20",
+    "sources": [
+      {
+        "title": "Learning from Transients: Linear RNN Scaling Laws in Stationary Prediction",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2609.27964",
+        "publishedDate": "2026-11-20"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-20-b5981f14b13a",
+    "date": "2026-11-20",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "arXiv — Машинне навчання",
+    "filterVersion": "2.4",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Перспективний розвиток",
+    "feedKind": "ai_topic",
+    "sourceDescription": "arXiv:2609.37745v2 Announce Type: replace Abstract: Neural scaling, in which loss falls as a power law with training, is central to large language models, and one recent proposal is that a $1/3$ exponent emerges from learning peaked distributions. That account describes SGD, but models in practice are trained with adaptive optimizers. Here we separate two exponents the $1/3$ account does not distinguish: how fast the loss falls with training steps along a single run, and how fast the optimally tuned loss falls with dataset size $D$. We show that the first, a dynamic exponent, is optimizer-specific while the second, an optimal data exponent, converges to $1/3$ across optimizers. In an online teacher-student model we decompose the loss into norm growth (radial) and alignment toward the teacher direction (tangential), each decaying as a power law with dynamic exponents $\\alpha_{r}$ and $\\alpha_{t}$. Under SGD, both are close to $1/3$, so the data exponent is also $1/3$ across different learning rates. Under Adam the two separate: $\\alpha_{r} \\simeq 0.48$ but $\\alpha_{t} \\simeq 0.08$. Since the total loss is minimized when these two parts are balanced, the optimal learning rate is optimizer-dependent: $D$-independent for SGD but falls with $D$ for Adam. Yet tuned to that optimum, the loss returns to $D^{-1/3}$ for both. A stochastic-dynamics analysis explains why: the optimizers can trade decay speed between the two channels, but they all fall on a single dynamic exponent relation, $2\\alpha_{r}+ \\alpha_{t} = 1$, which fixes the optimal data exponent at $1/3$. Across seven optimizers, including Muon, the measured exponents are consistent with this relation, and the optimal-loss envelopes agree with $D^{-1/3}$ across them. The optimizer sets how fast a model learns per step; tuned optimally, it changes the prefactor but not the rate at which loss falls per sample.",
+    "selectionReason": "напрям: Освіта; ознаки користі: dataset, measure",
+    "evidenceLevel": "дослідження або оцінювання потенційного застосування",
+    "category": "Освіта",
+    "title": "Optimizer-dependent training dynamics converge to the same one-third optimal data scaling",
+    "summary": "arXiv:2609.37745v2 Announce Type: replace Abstract: Neural scaling, in which loss falls as a power law with training, is central to large language models, and one recent proposal is that a $1/3$ exponent emerges from learning peaked distributions. That account describes SGD, but models in practice are trained with adaptive optimizers. Here we separate two…",
+    "body": "Матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2609.37745v2 Announce Type: replace Abstract: Neural scaling, in which loss falls as a power law with training, is central to large language models, and one recent proposal is that a $1/3$ exponent emerges from learning peaked distributions. That account describes SGD, but models in practice are trained with adaptive optimizers. Here we separate two exponents the $1/3$ account does not distinguish: how fast the loss falls with training steps along a single run, and how fast the optimally tuned loss falls with dataset size $D$. We show that the first, a dynamic exponent, is optimizer-specific while the second, an optimal data exponent, converges to $1/3$ across optimizers. In an online teacher-student model we decompose the loss into norm growth (radial) and alignment toward the teacher direction (tangential), each decaying as a power law with dynamic exponents $\\alpha_{r}$ and $\\alpha_{t}$. Under SGD, both are close to $1/3$, so the data exponent is also $1/3$ across different learning rates. Under Adam the two separate: $\\alpha_{r} \\simeq 0.48$ but $\\alpha_{t} \\simeq 0.08$. Since the total loss is minimized when these two parts are balanced, the optimal learning rate is optimizer-dependent: $D$-independent for SGD but falls with $D$ for Adam. Yet tuned to that optimum, the loss returns to $D^{-1/3}$ for both. A stochastic-dynamics analysis explains why: the optimizers can trade decay speed between the two channels, but they all fall on a single dynamic exponent relation, $2\\alpha_{r}+ \\alpha_{t} = 1$, which fixes the optimal data exponent at $1/3$. Across seven optimizers, including Muon, the measured exponents are consistent with this relation, and the optimal-loss envelopes agree with $D^{-1/3}$ across them. The optimizer sets how fast a model learns per step; tuned optimally, it changes the prefactor but not the rate at which loss falls per sample.\n\nРедакційна класифікація: напрям: Освіта; ознаки користі: dataset, measure. Рівень свідчень: дослідження або оцінювання потенційного застосування. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте статус публікації в першоджерелі.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-20",
+    "sources": [
+      {
+        "title": "Optimizer-dependent training dynamics converge to the same one-third optimal data scaling",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2609.37745",
+        "publishedDate": "2026-11-20"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-20-4cfc62875eeb",
+    "date": "2026-11-20",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "arXiv — Машинне навчання",
+    "filterVersion": "2.4",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Перспективний розвиток",
+    "feedKind": "ai_topic",
+    "sourceDescription": "arXiv:2610.23862v2 Announce Type: replace Abstract: We introduce a predictive world model for electronic health records (EHR) that represents patient histories as action conditioned latent trajectories. Rather than modeling clinical events solely through autoregressive token prediction, our framework explicitly separates patient states from observed clinical actions and learns their evolution through a state and action conditioned transition operator. At its core is a state dependent linearization predictor that propagates local changes in latent patient state, enabling time resolved prediction, multi step rollout, and action conditioned simulation. Empirically, we show that generated latent trajectories preserve downstream predictive signal, temporal structure, and subgroup level statistical relationships present in encoder derived representations. We further decode free running rollouts into the original clinical feature space and evaluate future clinical measurements against observed values using task matched forecasting baselines, demonstrating that the learned dynamics retain predictive information beyond latent space agreement. Across binary classification and time to event tasks, EHR WM achieves competitive, though task dependent, performance relative to substantially larger EHR foundation models while using a 30x smaller parameter footprint. Finally, perturbing observed action sequences produces corresponding changes in generated trajectories, demonstrating the action sensitivity of the learned dynamics. Together, these results support world modeling as a complementary framework for learning explicit, time indexed representations of patient evolution from longitudinal EHR.",
+    "selectionReason": "напрям: Медицина; ознаки користі: evaluate, support, forecast",
+    "evidenceLevel": "дослідження або оцінювання потенційного застосування",
+    "category": "Медицина",
+    "title": "Forecasting Patient Trajectories from the Electronic Health Records with Action-Conditioned World Models",
+    "summary": "arXiv:2610.23862v2 Announce Type: replace Abstract: We introduce a predictive world model for electronic health records (EHR) that represents patient histories as action conditioned latent trajectories. Rather than modeling clinical events solely through autoregressive token prediction, our framework explicitly separates patient states from observed…",
+    "body": "Матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2610.23862v2 Announce Type: replace Abstract: We introduce a predictive world model for electronic health records (EHR) that represents patient histories as action conditioned latent trajectories. Rather than modeling clinical events solely through autoregressive token prediction, our framework explicitly separates patient states from observed clinical actions and learns their evolution through a state and action conditioned transition operator. At its core is a state dependent linearization predictor that propagates local changes in latent patient state, enabling time resolved prediction, multi step rollout, and action conditioned simulation. Empirically, we show that generated latent trajectories preserve downstream predictive signal, temporal structure, and subgroup level statistical relationships present in encoder derived representations. We further decode free running rollouts into the original clinical feature space and evaluate future clinical measurements against observed values using task matched forecasting baselines, demonstrating that the learned dynamics retain predictive information beyond latent space agreement. Across binary classification and time to event tasks, EHR WM achieves competitive, though task dependent, performance relative to substantially larger EHR foundation models while using a 30x smaller parameter footprint. Finally, perturbing observed action sequences produces corresponding changes in generated trajectories, demonstrating the action sensitivity of the learned dynamics. Together, these results support world modeling as a complementary framework for learning explicit, time indexed representations of patient evolution from longitudinal EHR.\n\nРедакційна класифікація: напрям: Медицина; ознаки користі: evaluate, support, forecast. Рівень свідчень: дослідження або оцінювання потенційного застосування. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте статус публікації в першоджерелі.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-20",
+    "sources": [
+      {
+        "title": "Forecasting Patient Trajectories from the Electronic Health Records with Action-Conditioned World Models",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2610.23862",
+        "publishedDate": "2026-11-20"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-20-b12af709cd81",
+    "date": "2026-11-20",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "arXiv — Машинне навчання",
+    "filterVersion": "2.4",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Перспективний розвиток",
+    "feedKind": "ai_topic",
+    "sourceDescription": "arXiv:2610.42126v2 Announce Type: replace Abstract: Objective: To examine how changes in clinical measurement practices affect the transportability of predictive information from physiological trajectories and observation patterns in longitudinal ICU records. Methods: In-hospital mortality was predicted using measurements from the first 48 hours of ICU admission in MIMIC-III, MIMIC-IV, and eICU. Nested representations captured the latest physiological state (R1), trajectory summaries (R2), and observation timing and frequency (R3). Models trained on 7,762 MetaVision patients were evaluated on 21,682 MIMIC-IV and 43,878 eICU patients from 204 hospitals. Restriction experiments tested measurement timing at matched counts and reduced availability. Results: Physiological trajectories improved prediction beyond latest values across settings, including transfer to eICU (R2-R1 log-loss difference -0.01446, 95% CI -0.01701 to -0.01202). Observation patterns improved prediction following transfer to MIMIC-IV (R3-R2 -0.00564) and in locally developed eICU models (-0.00402, 95% CI -0.00517 to -0.00283), but not clearly following transfer from MetaVision to eICU (+0.00106, 95% CI -0.00087 to +0.00355). At matched observation counts, retaining measurements spread throughout the 48-hour window reduced log loss relative to random retention, more for R3 than R2 (0.04324 versus 0.00721). R3 was also more sensitive to the loss of recent measurements. Retraining under reduced availability restored its advantage over R2. Conclusions: Physiological trajectories transferred consistently, while observation patterns offered less reliable benefits and greater sensitivity to measurement timing and availability. Their transferability may depend on diversity of measurement practices during training. Clinical prediction models should be evaluated across measurement conditions as well as patient populations.",
+    "selectionReason": "напрям: Медицина; ознаки користі: evaluate, improve, reduce",
+    "evidenceLevel": "дослідження або оцінювання потенційного застосування",
+    "category": "Медицина",
+    "title": "Physiological Trajectories and Observation Patterns in ICU Mortality Prediction: Transportability Under Changing Measurement Conditions",
+    "summary": "arXiv:2610.42126v2 Announce Type: replace Abstract: Objective: To examine how changes in clinical measurement practices affect the transportability of predictive information from physiological trajectories and observation patterns in longitudinal ICU records. Methods: In-hospital mortality was predicted using measurements from the first 48 hours of ICU…",
+    "body": "Матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2610.42126v2 Announce Type: replace Abstract: Objective: To examine how changes in clinical measurement practices affect the transportability of predictive information from physiological trajectories and observation patterns in longitudinal ICU records. Methods: In-hospital mortality was predicted using measurements from the first 48 hours of ICU admission in MIMIC-III, MIMIC-IV, and eICU. Nested representations captured the latest physiological state (R1), trajectory summaries (R2), and observation timing and frequency (R3). Models trained on 7,762 MetaVision patients were evaluated on 21,682 MIMIC-IV and 43,878 eICU patients from 204 hospitals. Restriction experiments tested measurement timing at matched counts and reduced availability. Results: Physiological trajectories improved prediction beyond latest values across settings, including transfer to eICU (R2-R1 log-loss difference -0.01446, 95% CI -0.01701 to -0.01202). Observation patterns improved prediction following transfer to MIMIC-IV (R3-R2 -0.00564) and in locally developed eICU models (-0.00402, 95% CI -0.00517 to -0.00283), but not clearly following transfer from MetaVision to eICU (+0.00106, 95% CI -0.00087 to +0.00355). At matched observation counts, retaining measurements spread throughout the 48-hour window reduced log loss relative to random retention, more for R3 than R2 (0.04324 versus 0.00721). R3 was also more sensitive to the loss of recent measurements. Retraining under reduced availability restored its advantage over R2. Conclusions: Physiological trajectories transferred consistently, while observation patterns offered less reliable benefits and greater sensitivity to measurement timing and availability. Their transferability may depend on diversity of measurement practices during training. Clinical prediction models should be evaluated across measurement conditions as well as patient populations.\n\nРедакційна класифікація: напрям: Медицина; ознаки користі: evaluate, improve, reduce. Рівень свідчень: дослідження або оцінювання потенційного застосування. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте статус публікації в першоджерелі.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-20",
+    "sources": [
+      {
+        "title": "Physiological Trajectories and Observation Patterns in ICU Mortality Prediction: Transportability Under Changing Measurement Conditions",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2610.42126",
+        "publishedDate": "2026-11-20"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-20-6754f673fe21",
+    "date": "2026-11-20",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "arXiv — Машинне навчання",
+    "filterVersion": "2.4",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Позитивний вплив",
+    "feedKind": "ai_topic",
+    "sourceDescription": "arXiv:2603.24427v2 Announce Type: replace-cross Abstract: Understanding how biomarker distributions evolve over time is a central challenge in digital health and chronic disease monitoring. For example, in diabetes, changes in the distribution of glucose measurements can reveal patterns of disease progression and treatment response that conventional summary measures miss. Motivated by a 13-week clinical trial comparing the closed-loop insulin delivery system t:slim X2 with standard therapy in children with type 1 diabetes, we propose a probabilistic framework to model the continuous-time evolution of time-indexed distributions using continuous glucose monitoring (CGM) data collected every five minutes. We represent the glucose distribution as a Gaussian mixture, with time-varying mixture weights governed by a neural ODE. We estimate the model parameters using a distribution-matching criterion based on the maximum mean discrepancy. The resulting framework is interpretable, computationally efficient, and sensitive to subtle temporal distributional changes. In the CGM trial data analyzed here, the method detects treatment-related improvements in glucose dynamics that are difficult to capture with traditional analytical approaches.",
+    "selectionReason": "напрям: Медицина; ознаки користі: clinical trial, improve, improvement",
+    "evidenceLevel": "практичне застосування або конкретний приклад",
+    "category": "Медицина",
+    "title": "Continuous-time learning of probability distributions: a case study in a digital trial of young children with type 1 diabetes",
+    "summary": "arXiv:2603.24427v2 Announce Type: replace-cross Abstract: Understanding how biomarker distributions evolve over time is a central challenge in digital health and chronic disease monitoring. For example, in diabetes, changes in the distribution of glucose measurements can reveal patterns of disease progression and treatment response that conventional…",
+    "body": "Матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2603.24427v2 Announce Type: replace-cross Abstract: Understanding how biomarker distributions evolve over time is a central challenge in digital health and chronic disease monitoring. For example, in diabetes, changes in the distribution of glucose measurements can reveal patterns of disease progression and treatment response that conventional summary measures miss. Motivated by a 13-week clinical trial comparing the closed-loop insulin delivery system t:slim X2 with standard therapy in children with type 1 diabetes, we propose a probabilistic framework to model the continuous-time evolution of time-indexed distributions using continuous glucose monitoring (CGM) data collected every five minutes. We represent the glucose distribution as a Gaussian mixture, with time-varying mixture weights governed by a neural ODE. We estimate the model parameters using a distribution-matching criterion based on the maximum mean discrepancy. The resulting framework is interpretable, computationally efficient, and sensitive to subtle temporal distributional changes. In the CGM trial data analyzed here, the method detects treatment-related improvements in glucose dynamics that are difficult to capture with traditional analytical approaches.\n\nРедакційна класифікація: напрям: Медицина; ознаки користі: clinical trial, improve, improvement. Рівень свідчень: практичне застосування або конкретний приклад. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте статус публікації в першоджерелі.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-20",
+    "sources": [
+      {
+        "title": "Continuous-time learning of probability distributions: a case study in a digital trial of young children with type 1 diabetes",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2603.24427",
+        "publishedDate": "2026-11-20"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-20-a475ea97c69f",
+    "date": "2026-11-20",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "arXiv — Машинне навчання",
+    "filterVersion": "2.4",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Перспективний розвиток",
+    "feedKind": "ai_topic",
+    "sourceDescription": "arXiv:2604.12075v2 Announce Type: replace-cross Abstract: The tumor microenvironment (TME) plays a central role in cancer progression, treatment response, and patient outcomes, yet large-scale, consistent, and quantitative TME characterization from routine hematoxylin and eosin (H&E)-stained histopathology remains scarce. We introduce OpenTME, an open-access dataset of pre-computed TME profiles derived from 5,268 H&E-stained whole-slide images across ten cancer types (bladder, breast, colorectal, head and neck, liver, lung, ovarian, pancreatic, prostate, and stomach cancer) from The Cancer Genome Atlas (TCGA). All outputs were generated using HETA (H&E Tissue Analysis), an AI-powered application built on the Atlas family of pathology foundation models, which performs tissue quality control, tissue segmentation, cell detection and classification, tumor zone and tertiary lymphoid structure (TLS) detection, and spatial neighborhood analysis, yielding over 20,000 quantitative readouts per slide at cell-level resolution, including curated features such as tumor-infiltrating lymphocytes, tumor mitotic index, or mature TLS counts. OpenTME is available for non-commercial academic research on Hugging Face. We will continue to expand OpenTME over time and anticipate it will serve as a resource for biomarker discovery, spatial biology research, and the development of computational methods for TME analysis.",
+    "selectionReason": "напрям: Медицина; ознаки користі: dataset, detect, detection",
+    "evidenceLevel": "дослідження або оцінювання потенційного застосування",
+    "category": "Медицина",
+    "title": "OpenTME: An Open Dataset of AI-powered H&E Tumor Microenvironment Profiles from TCGA",
+    "summary": "arXiv:2604.12075v2 Announce Type: replace-cross Abstract: The tumor microenvironment (TME) plays a central role in cancer progression, treatment response, and patient outcomes, yet large-scale, consistent, and quantitative TME characterization from routine hematoxylin and eosin (H&E)-stained histopathology remains scarce. We introduce OpenTME, an…",
+    "body": "Матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2604.12075v2 Announce Type: replace-cross Abstract: The tumor microenvironment (TME) plays a central role in cancer progression, treatment response, and patient outcomes, yet large-scale, consistent, and quantitative TME characterization from routine hematoxylin and eosin (H&E)-stained histopathology remains scarce. We introduce OpenTME, an open-access dataset of pre-computed TME profiles derived from 5,268 H&E-stained whole-slide images across ten cancer types (bladder, breast, colorectal, head and neck, liver, lung, ovarian, pancreatic, prostate, and stomach cancer) from The Cancer Genome Atlas (TCGA). All outputs were generated using HETA (H&E Tissue Analysis), an AI-powered application built on the Atlas family of pathology foundation models, which performs tissue quality control, tissue segmentation, cell detection and classification, tumor zone and tertiary lymphoid structure (TLS) detection, and spatial neighborhood analysis, yielding over 20,000 quantitative readouts per slide at cell-level resolution, including curated features such as tumor-infiltrating lymphocytes, tumor mitotic index, or mature TLS counts. OpenTME is available for non-commercial academic research on Hugging Face. We will continue to expand OpenTME over time and anticipate it will serve as a resource for biomarker discovery, spatial biology research, and the development of computational methods for TME analysis.\n\nРедакційна класифікація: напрям: Медицина; ознаки користі: dataset, detect, detection. Рівень свідчень: дослідження або оцінювання потенційного застосування. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте статус публікації в першоджерелі.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-20",
+    "sources": [
+      {
+        "title": "OpenTME: An Open Dataset of AI-powered H&E Tumor Microenvironment Profiles from TCGA",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2604.12075",
+        "publishedDate": "2026-11-20"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-20-2797b14b852c",
+    "date": "2026-11-20",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "arXiv — Машинне навчання",
+    "filterVersion": "2.4",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Перспективний розвиток",
+    "feedKind": "ai_topic",
+    "sourceDescription": "arXiv:2605.07274v2 Announce Type: replace-cross Abstract: Reinforcement learning from verifiable rewards (RLVR), especially with Group Relative Policy Optimization (GRPO), has shown strong potential for improving the reasoning capabilities of large vision-language models (LVLMs). However, in multimodal reasoning, final-answer rewards are typically assigned at the sequence level and do not distinguish the functional roles of different tokens, making it difficult to determine whether a correct answer is supported by task-relevant visual evidence. In this paper, we revisit multimodal RLVR from the perspective of role-aware token-level credit assignment, where structured responses are decomposed into perception tokens for extracting visual evidence and reasoning tokens for deriving answers from that evidence. Based on this perspective, we propose Structured Role-aware Policy Optimization (SRPO), which refines the sequence-level GRPO advantage into role-aware token-level advantages without changing the reward function. Specifically, SRPO assigns role-specific credit by using self-distilled on-policy contrasts: perception tokens are emphasized according to their visual dependency under original versus corrupted visual inputs, while reasoning tokens are emphasized according to their consistency with the generated perception. These role-specific signals are further unified through a shared trajectory-level baseline, yielding positive token weights that adjust relative update magnitudes while preserving the original GRPO reward and advantage signs, without requiring external reward models or separate teachers. Experiments across diverse multimodal reasoning benchmarks show that SRPO improves evidence-grounded reasoning, highlighting the importance of moving beyond uniform sequence-level credit toward role-aware optimization for reliable multimodal reasoning.",
+    "selectionReason": "напрям: Освіта; ознаки користі: benchmark, benchmarks, support",
+    "evidenceLevel": "дослідження або оцінювання потенційного застосування",
+    "category": "Освіта",
+    "title": "Structured Role-Aware Policy Optimization for Multimodal Reasoning",
+    "summary": "arXiv:2605.07274v2 Announce Type: replace-cross Abstract: Reinforcement learning from verifiable rewards (RLVR), especially with Group Relative Policy Optimization (GRPO), has shown strong potential for improving the reasoning capabilities of large vision-language models (LVLMs). However, in multimodal reasoning, final-answer rewards are typically assigned…",
+    "body": "Матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2605.07274v2 Announce Type: replace-cross Abstract: Reinforcement learning from verifiable rewards (RLVR), especially with Group Relative Policy Optimization (GRPO), has shown strong potential for improving the reasoning capabilities of large vision-language models (LVLMs). However, in multimodal reasoning, final-answer rewards are typically assigned at the sequence level and do not distinguish the functional roles of different tokens, making it difficult to determine whether a correct answer is supported by task-relevant visual evidence. In this paper, we revisit multimodal RLVR from the perspective of role-aware token-level credit assignment, where structured responses are decomposed into perception tokens for extracting visual evidence and reasoning tokens for deriving answers from that evidence. Based on this perspective, we propose Structured Role-aware Policy Optimization (SRPO), which refines the sequence-level GRPO advantage into role-aware token-level advantages without changing the reward function. Specifically, SRPO assigns role-specific credit by using self-distilled on-policy contrasts: perception tokens are emphasized according to their visual dependency under original versus corrupted visual inputs, while reasoning tokens are emphasized according to their consistency with the generated perception. These role-specific signals are further unified through a shared trajectory-level baseline, yielding positive token weights that adjust relative update magnitudes while preserving the original GRPO reward and advantage signs, without requiring external reward models or separate teachers. Experiments across diverse multimodal reasoning benchmarks show that SRPO improves evidence-grounded reasoning, highlighting the importance of moving beyond uniform sequence-level credit toward role-aware optimization for reliable multimodal reasoning.\n\nРедакційна класифікація: напрям: Освіта; ознаки користі: benchmark, benchmarks, support. Рівень свідчень: дослідження або оцінювання потенційного застосування. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте статус публікації в першоджерелі.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-20",
+    "sources": [
+      {
+        "title": "Structured Role-Aware Policy Optimization for Multimodal Reasoning",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2605.07274",
+        "publishedDate": "2026-11-20"
+      }
+    ]
+  },
+  {
     "id": "rss-2026-11-20-729c3ce8b8f3",
     "date": "2026-11-20",
     "autoPublished": true,
@@ -643,7 +923,6 @@
       }
     ],
     "editorialStatus": "approved",
-    "editorialReviewReason": "",
     "editorialDecisionSource": "human",
     "editorialReviewedAt": "2026-11-20T11:39:40.644Z",
     "editorialReviewedBy": "Редактор сайту",

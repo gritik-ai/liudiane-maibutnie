@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0d2925">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; connect-src https://api.github.com; img-src 'self' data:; object-src 'none'; base-uri 'none'; form-action 'none'">
+<title>Редакційний кабінет — Людяне майбутнє</title>
+<style>
+:root{--bg:#f3f6f2;--paper:#fff;--ink:#172923;--muted:#66756e;--green:#174d40;--green2:#246b58;--mint:#dcefe5;--line:#e2e9e3;--gold:#d8b56d;--red:#9d3939;--blue:#275b8b;--shadow:0 12px 35px rgba(18,48,38,.09)}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 system-ui,-apple-system,"Segoe UI",Arial,sans-serif}button,input,select,textarea{font:inherit}button{cursor:pointer}.wrap{width:min(1120px,calc(100% - 32px));margin:auto}.top{background:#0d2925;color:#e7f0ea;padding:17px 0}.top .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px}.brand{font-weight:800;font-size:19px}.brand small{display:block;color:#b9cec2;font-size:11px;font-weight:500;letter-spacing:.1em;text-transform:uppercase}.top a{color:#d8efb4;text-decoration:none;font-size:13px}.hero{padding:35px 0 22px}.hero h1{font-size:clamp(28px,4vw,42px);letter-spacing:-.04em;line-height:1.1;margin:0 0 9px}.hero p{margin:0;color:var(--muted);max-width:800px}.card{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:20px;box-shadow:var(--shadow);margin:0 0 18px}.connect-grid{display:grid;grid-template-columns:1fr 1fr 1.4fr;gap:12px}.field label{display:block;font-size:12px;font-weight:800;color:#52645a;margin:0 0 6px}.field input,.field select,.field textarea{width:100%;border:1px solid #d4ded5;border-radius:10px;padding:10px 12px;background:#fcfefc;color:var(--ink)}.field input:focus,.field select:focus,.field textarea:focus{outline:3px solid #246b5825;border-color:#246b58}.btn{border:0;border-radius:10px;padding:10px 15px;font-weight:750}.btn-primary{background:var(--green);color:white}.btn-primary:hover{background:var(--green2)}.btn-secondary{background:#eaf2eb;color:#234f3f}.btn-danger{background:#faeaea;color:#8b3030}.btn-quiet{background:#f2f5f2;color:#42534a;border:1px solid var(--line)}.btn:disabled{opacity:.45;cursor:not-allowed}.row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.connect-actions{margin-top:13px;display:flex;gap:9px;flex-wrap:wrap;align-items:center}.help{color:var(--muted);font-size:12px;margin:12px 0 0}.security{margin-top:13px;border-left:3px solid var(--gold);background:#fff9ec;padding:11px 13px;border-radius:8px;font-size:12px;color:#66532d}.security b{color:#483918}.stats{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin:18px 0}.stat{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px}.stat strong{font-size:26px;color:var(--green);display:block;line-height:1.1}.stat span{font-size:11px;color:var(--muted)}.toolbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:14px}.toolbar input{flex:1;min-width:220px;border:1px solid #d4ded5;border-radius:10px;padding:10px 12px;background:#fff}.tabs{display:flex;gap:7px;flex-wrap:wrap}.tab{border:1px solid var(--line);background:#fff;border-radius:999px;padding:8px 13px;color:#52645a;font-size:13px;font-weight:750}.tab.active{background:var(--green);border-color:var(--green);color:#fff}.notice{padding:12px 14px;border-radius:12px;background:#eef5ef;color:#315743;font-size:13px;margin-bottom:16px}.notice.error{background:#fff0ef;color:#8e3732}.notice.warn{background:#fff8e9;color:#70551e}.article{background:#fff;border:1px solid var(--line);border-radius:16px;margin:13px 0;overflow:hidden}.article-head{padding:16px 18px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:14px;align-items:flex-start}.article h2{font-size:18px;line-height:1.3;margin:7px 0}.meta{color:var(--muted);font-size:11px;display:flex;gap:8px;flex-wrap:wrap}.badge{display:inline-flex;align-items:center;border-radius:999px;padding:4px 9px;font-size:11px;font-weight:800;background:#edf3ef;color:#3b5848}.badge.approved{background:#e4f3e8;color:#23623d}.badge.pending{background:#fff3d8;color:#765719}.badge.rejected,.badge.duplicate{background:#fbe9e8;color:#8a3732}.article-body{padding:16px 18px}.reason{font-size:13px;color:#5d6d63;margin:4px 0 12px}.desc{white-space:pre-wrap;color:#34453b;font-size:13px;background:#f7faf7;border:1px solid #edf1ec;border-radius:10px;padding:12px;margin:10px 0;max-height:210px;overflow:auto}.source a{color:#21634e;font-weight:750;overflow-wrap:anywhere}.source{font-size:12px;margin:7px 0}.editor-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:13px 0}.review-box{background:#f8faf8;border:1px solid #e7eee7;border-radius:12px;padding:13px;margin-top:12px}.check{display:flex;gap:8px;align-items:flex-start;font-size:12px;color:#405348;margin:10px 0}.check input{margin-top:3px}.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.empty{padding:28px;text-align:center;background:#fff;border:1px dashed #cad7cc;border-radius:14px;color:var(--muted)}.statusline{font-size:12px;color:var(--muted);margin-left:auto}.footer{padding:30px 0 50px;color:#718078;font-size:12px}.small{font-size:11px;color:var(--muted)}code{background:#edf2ed;padding:2px 5px;border-radius:5px;overflow-wrap:anywhere}
+@media(max-width:760px){.connect-grid{grid-template-columns:1fr 1fr}.connect-grid .wide{grid-column:1/-1}.stats{grid-template-columns:repeat(2,1fr)}.stat:last-child{grid-column:1/-1}.editor-grid{grid-template-columns:1fr}.article-head{display:block}.statusline{margin-left:0;width:100%}}
+</style>
+</head>
+<body>
+<div class="top"><div class="wrap"><div class="brand">✧ Людяне майбутнє<small>Редакційний кабінет</small></div><a href="/">← Повернутися на сайт</a></div></div>
+<main class="wrap">
+<section class="hero"><h1>Редакційний кабінет</h1><p>Перевіряйте першоджерела, ухвалюйте рішення щодо автоматичних матеріалів і ведіть історію редакційних змін. Система не видаляє статті: відхилені матеріали залишаються в бібліотеці, але не показуються на головній сторінці.</p></section>
+<section class="card">
+  <h2 style="margin:0 0 13px;font-size:19px">Підключення бібліотеки GitHub</h2>
+  <div class="connect-grid">
+    <div class="field"><label for="owner">Власник GitHub (username)</label><input id="owner" placeholder="ваш_username" autocomplete="off"></div>
+    <div class="field"><label for="repo">Репозиторій</label><input id="repo" value="liudiane-maibutnie" autocomplete="off"></div>
+    <div class="field"><label for="branch">Гілка</label><input id="branch" value="main" autocomplete="off"></div>
+    <div class="field"><label for="reviewer">Ім'я редактора для журналу</label><input id="reviewer" value="Редактор сайту" autocomplete="off"></div>
+    <div class="field wide" style="grid-column:1/-1"><label for="token">Fine-grained GitHub token (потрібен лише для збереження)</label><input id="token" type="password" placeholder="Не вставляйте токен у чат" autocomplete="off" spellcheck="false"></div>
+  </div>
+  <div class="connect-actions">
+    <button class="btn btn-primary" id="loadBtn">Завантажити бібліотеку з GitHub</button>
+    <label class="btn btn-quiet" for="fileInput">Відкрити локальний articles.json</label><input id="fileInput" type="file" accept="application/json,.json" hidden>
+    <button class="btn btn-quiet" id="downloadBtn" disabled>Завантажити копію JSON</button>
+    <button class="btn btn-primary" id="saveBtn" disabled>Зберегти зміни в GitHub</button>
+  </div>
+  <p class="help">Для публічного репозиторію читання доступне без токена. Для запису потрібен fine-grained token із доступом лише до цього репозиторію та правом <b>Contents: Read and write</b>. Токен не зберігається в браузері й використовується лише для прямого звернення до GitHub API.</p>
+  <div class="security"><b>Безпека токена.</b> Створіть fine-grained token, оберіть лише репозиторій <code>liudiane-maibutnie</code>, дозвольте тільки <code>Contents: Read and write</code> та встановіть короткий строк дії. Не використовуйте classic token із повним доступом. Код редактора не підключає сторонніх бібліотек і надсилає токен лише на <code>api.github.com</code>. Після збереження поле токена очищується.</div>
+</section>
+<div id="notice" class="notice">Завантажте бібліотеку з GitHub або відкрийте локальний файл <code>content/articles.json</code>.</div>
+<section id="workspace" hidden>
+  <div class="stats" id="stats"></div>
+  <div class="toolbar"><input id="search" type="search" placeholder="Пошук за назвою, категорією або причиною…"><div class="statusline" id="dirtyState">Зміни ще не збережені</div></div>
+  <div class="tabs" id="tabs">
+    <button class="tab active" data-status="needs_review">На перевірці</button>
+    <button class="tab" data-status="approved">Схвалені</button>
+    <button class="tab" data-status="rejected">Відхилені</button>
+    <button class="tab" data-status="duplicate">Дублікати</button>
+    <button class="tab" data-status="manual">Ручні матеріали</button>
+    <button class="tab" data-status="all">Усі записи</button>
+  </div>
+  <div id="list" style="margin-top:14px"></div>
+</section>
+<div class="footer">Редакційна система «Людяне майбутнє». Автоматична класифікація допомагає сортувати матеріали, але остаточні редакційні рішення для спірних випадків ухвалює людина. Схвалення означає редакційну релевантність, а не незалежне підтвердження наукової істинності.</div>
+</main>
+<script>
+(() => {
+  'use strict';
+  const $ = (id) => document.getElementById(id);
+  const CATEGORIES = ['Медицина','Освіта','Мир і безпека','Екологія','Права людини','Державне управління','Економіка та добробут','Надійність ШІ','Наука і технології'];
+  const LABELS = ['Позитивний вплив','Перспективний розвиток','Безпека та виклики'];
+  let articles = null, fileSha = null, loadedFromGitHub = false, dirty = false, currentTab = 'needs_review';
+  const nowIso = () => new Date().toISOString();
+  const isAuto = a => a && a.autoPublished === true && a.sourceType === 'rss';
+  const statusOf = a => a.editorialStatus || (isAuto(a) ? 'needs_review' : 'manual');
+  const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const safeSource = a => {
+    const src = Array.isArray(a.sources) ? a.sources.find(x => x && typeof x.url === 'string') : null;
+    if (!src) return null;
+    try { const u = new URL(src.url); return u.protocol === 'https:' ? {url:u.href,title:src.title||a.title,publisher:src.publisher||a.feedName||u.hostname} : null; } catch { return null; }
+  };
+  function setNotice(message, type='ok') { const el=$('notice'); el.textContent=message; el.className='notice'+(type==='error'?' error':type==='warn'?' warn':''); }
+  function markDirty() { dirty=true; $('dirtyState').textContent='Є незбережені редакційні зміни'; $('saveBtn').disabled=(!loadedFromGitHub || !dirty); $('downloadBtn').disabled=false; }
+  function decodeBase64Utf8(value) { const bin=atob(value.replace(/\s/g,'')); const bytes=Uint8Array.from(bin, c=>c.charCodeAt(0)); return new TextDecoder('utf-8',{fatal:true}).decode(bytes); }
+  function encodeBase64Utf8(value) { const bytes=new TextEncoder().encode(value); let bin=''; for(let i=0;i<bytes.length;i+=0x8000) bin+=String.fromCharCode(...bytes.subarray(i,i+0x8000)); return btoa(bin); }
+  function downloadText(name, content, mime='application/json;charset=utf-8') { const blob=new Blob([content],{type:mime}); const url=URL.createObjectURL(blob); const a=document.createElement('a'); a.href=url; a.download=name; document.body.appendChild(a); a.click(); a.remove(); setTimeout(()=>URL.revokeObjectURL(url),1500); }
+  function todayStamp() { return new Date().toISOString().replace(/[:.]/g,'-'); }
+  function counts() {
+    const rss=articles.filter(isAuto); const c={total:articles.length,approved:0,needs_review:0,rejected:0,duplicate:0,manual:articles.length-rss.length};
+    rss.forEach(a=>{const s=statusOf(a); if(Object.prototype.hasOwnProperty.call(c,s))c[s]++;}); return c;
+  }
+  function renderStats() { const c=counts(); $('stats').replaceChildren(); [['Усього записів',c.total],['Опубліковано',c.approved],['На перевірці',c.needs_review],['Відхилено',c.rejected],['Дублікати',c.duplicate]].forEach(([label,value])=>{const d=document.createElement('div');d.className='stat';const b=document.createElement('strong');b.textContent=value;const s=document.createElement('span');s.textContent=label;d.append(b,s);$('stats').append(d);}); }
+  function labelFor(status) { return ({approved:'Опубліковано',needs_review:'На перевірці',rejected:'Відхилено',duplicate:'Дублікат',manual:'Ручний матеріал'})[status]||status; }
+  function addHistory(article, action, previousStatus, nextStatus, reviewer, note) {
+    const history=Array.isArray(article.editorialHistory)?article.editorialHistory.slice():[];
+    history.push({at:nowIso(),actor:reviewer,action,from:previousStatus,to:nextStatus,category:article.category||'',label:article.editorialLabel||'',note:note||''});
+    article.editorialHistory=history.slice(-100);
+  }
+  function setHumanDecision(article, nextStatus, reviewer, note, label, category) {
+    const before=statusOf(article); article.editorialStatus=nextStatus; article.editorialDecisionSource='human';
+    article.editorialReviewedAt=nowIso(); article.editorialReviewedBy=reviewer;
+    article.editorialNote=note.trim(); article.editorialReviewReason=nextStatus==='needs_review'?note.trim():nextStatus==='rejected'?note.trim():'';
+    if(category) article.category=category; if(label) article.editorialLabel=label;
+    if(nextStatus==='approved' && before==='duplicate') article.editorialDuplicateOverride=true;
+    if(nextStatus!=='approved') delete article.editorialDuplicateOverride;
+    addHistory(article,nextStatus==='approved'?'approve':nextStatus==='rejected'?'reject':'hold',before,nextStatus,reviewer,note.trim());
+    markDirty(); render();
+  }
+  function render() {
+    if(!Array.isArray(articles)) return;
+    renderStats();
+    document.querySelectorAll('.tab').forEach(b=>b.classList.toggle('active',b.dataset.status===currentTab));
+    const q=$('search').value.trim().toLocaleLowerCase('uk');
+    let rows=articles.map((a,i)=>({a,i}));
+    rows=rows.filter(({a})=>{
+      const s=statusOf(a); const tabOk=currentTab==='all'||(currentTab==='manual'?!isAuto(a):isAuto(a)&&s===currentTab);
+      const hay=[a.title,a.summary,a.category,a.editorialReviewReason,a.editorialNote,a.selectionReason,a.sourceDescription].join(' ').toLocaleLowerCase('uk');
+      return tabOk&&(!q||hay.includes(q));
+    }).sort((x,y)=>String(y.a.date||'').localeCompare(String(x.a.date||'')));
+    const list=$('list'); list.replaceChildren();
+    if(!rows.length){const empty=document.createElement('div');empty.className='empty';empty.textContent='У цій черзі матеріалів немає.';list.append(empty);return;}
+    rows.forEach(({a,i})=>list.append(renderCard(a,i)));
+  }
+  function renderCard(article,index) {
+    const card=document.createElement('article');card.className='article';
+    const head=document.createElement('div');head.className='article-head';
+    const titleBox=document.createElement('div');
+    const meta=document.createElement('div');meta.className='meta';
+    const badge=document.createElement('span');badge.className='badge '+statusOf(article);badge.textContent=labelFor(statusOf(article));
+    const date=document.createElement('span');date.textContent=article.date||'Дата невідома';
+    const feed=document.createElement('span');feed.textContent=article.feedName||'Джерело не зазначено';meta.append(badge,date,feed);
+    const h=document.createElement('h2');h.textContent=article.title||'Без назви';titleBox.append(meta,h);head.append(titleBox);
+    const body=document.createElement('div');body.className='article-body';
+    const source=safeSource(article);const sourceLine=document.createElement('div');sourceLine.className='source';
+    if(source){const a=document.createElement('a');a.href=source.url;a.target='_blank';a.rel='noopener noreferrer';a.textContent='Відкрити першоджерело: '+source.publisher;sourceLine.append(a);}else{sourceLine.textContent='Першоджерело: коректне HTTPS-посилання не знайдено.';}
+    const reason=document.createElement('p');reason.className='reason';reason.textContent='Автоматична причина: '+(article.editorialReviewReason||article.selectionReason||'не вказана');
+    const desc=document.createElement('details');const sum=document.createElement('summary');sum.textContent='Повний опис першоджерела';const p=document.createElement('div');p.className='desc';p.textContent=article.sourceDescription||article.summary||'Опис першоджерела відсутній.';desc.append(sum,p);
+    body.append(sourceLine,reason,desc);
+    if(isAuto(article)) {
+      const box=document.createElement('div');box.className='review-box';
+      const grid=document.createElement('div');grid.className='editor-grid';
+      const catField=document.createElement('div');catField.className='field';const catLabel=document.createElement('label');catLabel.textContent='Редакційна категорія';const cat=document.createElement('select');CATEGORIES.forEach(v=>{const o=document.createElement('option');o.value=v;o.textContent=v;cat.append(o);});cat.value=CATEGORIES.includes(article.category)?article.category:CATEGORIES[0];catField.append(catLabel,cat);
+      const labField=document.createElement('div');labField.className='field';const labLabel=document.createElement('label');labLabel.textContent='Редакційна позначка';const lab=document.createElement('select');LABELS.forEach(v=>{const o=document.createElement('option');o.value=v;o.textContent=v;lab.append(o);});lab.value=LABELS.includes(article.editorialLabel)?article.editorialLabel:'Перспективний розвиток';labField.append(labLabel,lab);grid.append(catField,labField);
+      const noteField=document.createElement('div');noteField.className='field';noteField.style.marginTop='10px';const noteLabel=document.createElement('label');noteLabel.textContent='Коментар редактора / причина рішення';const note=document.createElement('textarea');note.rows=2;note.placeholder='Наприклад: перевірено першоджерело; дослідження має потенційну користь для доступності медичної допомоги.';note.value=article.editorialNote||'';noteField.append(noteLabel,note);
+      const check=document.createElement('label');check.className='check';const verify=document.createElement('input');verify.type='checkbox';const checkText=document.createElement('span');checkText.textContent='Я відкрив(ла) першоджерело, перевірив(ла) контекст і переконався(лася), що заголовок та опис не перебільшують результати.';check.append(verify,checkText);
+      const actions=document.createElement('div');actions.className='actions';
+      const approve=document.createElement('button');approve.className='btn btn-primary';approve.textContent='Схвалити й опублікувати';approve.disabled=statusOf(article)==='approved';
+      const hold=document.createElement('button');hold.className='btn btn-secondary';hold.textContent='Залишити на перевірці';
+      const reject=document.createElement('button');reject.className='btn btn-danger';reject.textContent='Відхилити';reject.disabled=statusOf(article)==='rejected';
+      const reset=document.createElement('button');reset.className='btn btn-quiet';reset.textContent='Повернути до автоматичної перевірки';
+      const reviewerInput=$('reviewer');
+      approve.addEventListener('click',()=>{
+        const reviewer=(reviewerInput?.value||'Редактор сайту').trim()||'Редактор сайту';
+        if(!source){setNotice('Не можна схвалити матеріал без коректного HTTPS-першоджерела.','error');return;}
+        if(String(article.sourceDescription||'').trim().length<40){setNotice('Недостатньо повного опису першоджерела. Залиште матеріал на перевірці.','error');return;}
+        if(!verify.checked){setNotice('Підтвердьте, що відкрили й перевірили першоджерело.','warn');return;}
+        if(!confirm('Схвалити матеріал і зробити його видимим на головній сторінці?'))return;
+        setHumanDecision(article,'approved',reviewer,note.value,lab.value,cat.value);setNotice('Матеріал схвалено. Щоб рішення потрапило на сайт і збереглося після наступного RSS-запуску, натисніть «Зберегти зміни в GitHub».');
+      });
+      hold.addEventListener('click',()=>{
+        const reviewer=(reviewerInput?.value||'Редактор сайту').trim()||'Редактор сайту';
+        setHumanDecision(article,'needs_review',reviewer,note.value||'Потрібна додаткова редакційна перевірка.',lab.value,cat.value);setNotice('Матеріал залишено на перевірці.');
+      });
+      reject.addEventListener('click',()=>{
+        const reviewer=(reviewerInput?.value||'Редактор сайту').trim()||'Редактор сайту';
+        if(note.value.trim().length<10){setNotice('Для відхилення вкажіть обґрунтовану причину (не менше 10 символів).','warn');return;}
+        if(!confirm('Відхилити матеріал? Він залишиться в бібліотеці, але буде прихований від відвідувачів.'))return;
+        setHumanDecision(article,'rejected',reviewer,note.value,lab.value,cat.value);setNotice('Матеріал відхилено, але не видалено з бібліотеки.');
+      });
+      reset.addEventListener('click',()=>{
+        if(!confirm('Скасувати людське рішення та повернути матеріал до автоматичної перевірки?'))return;
+        const reviewer=(reviewerInput?.value||'Редактор сайту').trim()||'Редактор сайту';
+        const prev=statusOf(article);addHistory(article,'return_to_automatic',prev,'needs_review',reviewer,'Повернено до автоматичної перевірки.');
+        delete article.editorialDecisionSource;delete article.editorialReviewedAt;delete article.editorialReviewedBy;delete article.editorialNote;delete article.editorialDuplicateOverride;
+        article.editorialStatus='needs_review';article.editorialReviewReason='Повернено до автоматичної класифікації';markDirty();render();setNotice('Людське рішення скасовано; наступний RSS-запуск повторно перевірить матеріал.');
+      });
+      actions.append(approve,hold,reject,reset);box.append(grid,noteField,check,actions);
+      if(article.editorialReviewedAt){const audit=document.createElement('p');audit.className='small';audit.textContent='Останнє рішення: '+article.editorialReviewedBy+' · '+article.editorialReviewedAt;box.append(audit);}
+      body.append(box);
+    } else {
+      const p=document.createElement('p');p.className='small';p.textContent='Цей запис не є автоматичною RSS-статтею або вже має статус дубліката. Він не редагується цією панеллю.';body.append(p);
+    }
+    card.append(head,body);return card;
+  }
+  async function loadFromGitHub() {
+    if(dirty && !confirm('Є незбережені зміни. Перезавантажити бібліотеку з GitHub і відкинути локальні рішення?')) return;
+    const owner=$('owner').value.trim(), repo=$('repo').value.trim(), branch=$('branch').value.trim()||'main';
+    if(!owner||!repo){setNotice('Вкажіть власника GitHub та назву репозиторію.','warn');return;}
+    const url=`https://api.github.com/repos/${encodeURIComponent(owner)}/${encodeURIComponent(repo)}/contents/content/articles.json?ref=${encodeURIComponent(branch)}`;
+    $('loadBtn').disabled=true;$('loadBtn').textContent='Завантаження…';
+    try{
+      const headers={Accept:'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28'};
+      const token=$('token').value.trim();if(token)headers.Authorization='Bearer '+token;
+      const res=await fetch(url,{headers,cache:'no-store'});const payload=await res.json();
+      if(!res.ok)throw new Error(payload.message||`GitHub API: HTTP ${res.status}`);
+      if(payload.encoding!=='base64'||!payload.content)throw new Error('GitHub не повернув вміст JSON у форматі base64.');
+      const parsed=JSON.parse(decodeBase64Utf8(payload.content));if(!Array.isArray(parsed))throw new Error('articles.json має бути JSON-масивом.');
+      articles=parsed;fileSha=payload.sha;loadedFromGitHub=true;dirty=false;
+      $('saveBtn').disabled=true;$('downloadBtn').disabled=false;$('dirtyState').textContent='Завантажено з GitHub; незбережених змін немає';
+      $('workspace').hidden=false;render();setNotice(`Завантажено ${articles.length} записів із ${owner}/${repo}, гілка ${branch}. Перегляньте чергу «На перевірці».`);
+    }catch(err){setNotice('Не вдалося завантажити бібліотеку: '+err.message,'error');}
+    finally{$('loadBtn').disabled=false;$('loadBtn').textContent='Завантажити бібліотеку з GitHub';}
+  }
+  async function saveToGitHub() {
+    if(!loadedFromGitHub||!fileSha){setNotice('Спочатку завантажте актуальну бібліотеку безпосередньо з GitHub.','warn');return;}
+    const owner=$('owner').value.trim(),repo=$('repo').value.trim(),branch=$('branch').value.trim()||'main',token=$('token').value.trim();
+    if(!token){setNotice('Для запису в GitHub потрібен fine-grained token із Contents: Read and write.','warn');return;}
+    if(!confirm('Перед збереженням буде завантажено резервну копію articles.json. Продовжити запис редакційних змін у GitHub?'))return;
+    const json=JSON.stringify(articles,null,2)+'\n';
+    downloadText('articles-backup-before-editor-'+todayStamp()+'.json',json);
+    $('saveBtn').disabled=true;$('saveBtn').textContent='Збереження…';
+    try{
+      const url=`https://api.github.com/repos/${encodeURIComponent(owner)}/${encodeURIComponent(repo)}/contents/content/articles.json`;
+      const res=await fetch(url,{method:'PUT',headers:{Accept:'application/vnd.github+json','Content-Type':'application/json',Authorization:'Bearer '+token,'X-GitHub-Api-Version':'2022-11-28'},body:JSON.stringify({message:'editorial: review library articles',content:encodeBase64Utf8(json),sha:fileSha,branch})});
+      const payload=await res.json();
+      if(!res.ok){if(res.status===409||res.status===422)throw new Error('Файл у GitHub змінився після завантаження або виник конфлікт. Перезавантажте актуальну бібліотеку та повторіть рішення. Деталі: '+(payload.message||res.status));throw new Error(payload.message||`GitHub API: HTTP ${res.status}`);}
+      fileSha=payload.content?.sha||fileSha;dirty=false;$('dirtyState').textContent='Усі зміни збережені в GitHub';$('token').value='';$('saveBtn').disabled=true;$('saveBtn').textContent='Зберегти зміни в GitHub';setNotice('Редакційні рішення збережено в GitHub. Vercel автоматично розгорне оновлену бібліотеку після завершення deployment.');
+    }catch(err){$('saveBtn').disabled=false;$('saveBtn').textContent='Зберегти зміни в GitHub';setNotice('Не вдалося зберегти: '+err.message,'error');}
+  }
+  function downloadJson(){if(!articles)return;downloadText('articles-edited-'+todayStamp()+'.json',JSON.stringify(articles,null,2)+'\n');}
+  $('loadBtn').addEventListener('click',loadFromGitHub);$('saveBtn').addEventListener('click',saveToGitHub);$('downloadBtn').addEventListener('click',downloadJson);
+  $('fileInput').addEventListener('change',async e=>{const file=e.target.files?.[0];if(!file)return;try{const parsed=JSON.parse(await file.text());if(!Array.isArray(parsed))throw new Error('Очікується JSON-масив.');articles=parsed;fileSha=null;loadedFromGitHub=false;dirty=false;$('saveBtn').disabled=true;$('downloadBtn').disabled=false;$('workspace').hidden=false;render();setNotice(`Відкрито локальний файл: ${articles.length} записів. Локальні зміни можна завантажити, але для прямого збереження спочатку завантажте актуальну версію з GitHub.`,'warn');}catch(err){setNotice('Не вдалося прочитати файл: '+err.message,'error');}finally{e.target.value='';}});
+  $('search').addEventListener('input',render);$('tabs').addEventListener('click',e=>{const b=e.target.closest('[data-status]');if(!b)return;currentTab=b.dataset.status;render();});
+  window.addEventListener('beforeunload',e=>{if(dirty){e.preventDefault();e.returnValue='';}});
+})();
+</script>
+</body>
+</html>

@@ -95,7 +95,7 @@
       </div>
     </div></section>
   </main>
-  <footer><div class="wrap footer-row"><div><div class="footer-brand">✧ Людяне майбутнє</div><div class="footer-note">Ініціатива про відповідальний ШІ, добробут людей, мир і стале майбутнє планети.</div></div><div class="footer-note">Матеріали сайту мають інформаційний характер. ШІ може помилятися; важливі рішення потребують перевірки, участі людей і відповідальних інституцій.</div></div></footer>
+  <footer><div class="wrap footer-row"><div><div class="footer-brand">✧ Людяне майбутнє</div><div class="footer-note">Ініціатива про відповідальний ШІ, добробут людей, мир і стале майбутнє планети.</div><div class="footer-note"><a href="/editor.html">Редакційний кабінет</a></div></div><div class="footer-note">Матеріали сайту мають інформаційний характер. ШІ може помилятися; важливі рішення потребують перевірки, участі людей і відповідальних інституцій.</div></div></footer>
 
   <dialog id="articleDialog"><div class="modal-inner"><div class="modal-top"><div class="meta" id="modalMeta"></div><button class="close" id="closeArticle" aria-label="Закрити">×</button></div><h2 id="modalTitle"></h2><div class="content" id="modalContent"></div><div class="source-links" id="modalSources" hidden><h3>Джерела та перевірка</h3><ul id="modalSourceList"></ul></div></div></dialog>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
@@ -118,12 +118,12 @@
     const q=document.getElementById('searchInput').value.trim().toLocaleLowerCase('uk');
     const cat=document.getElementById('categoryFilter').value;
     const items=allArticles().filter(a=>(cat==='Усі теми'||a.category===cat)&&(!q||(a.title+' '+a.summary+' '+a.category).toLocaleLowerCase('uk').includes(q)));
-    grid.innerHTML=items.length?items.map(a=>`<article class="article"><div class="article-band"></div><div class="article-body"><div class="meta"><b>${escapeHTML(a.category)}</b><span>${formatDate(a.date)}</span>${a.autoPublished?'<span class="article-auto">Автоматична RSS-добірка</span>':''}</div><h3>${escapeHTML(a.title)}</h3><p>${escapeHTML(a.summary)}</p><button class="read" data-open="${escapeHTML(a.id)}">Читати матеріал →</button></div></article>`).join(''):'<div class="empty">За цим запитом матеріалів не знайдено. Спробуйте іншу тему або пошукове слово.</div>';
+    grid.innerHTML=items.length?items.map(a=>`<article class="article"><div class="article-band"></div><div class="article-body"><div class="meta"><b>${escapeHTML(a.category)}</b><span>${formatDate(a.date)}</span>${a.editorialLabel?`<span class="article-auto">${escapeHTML(a.editorialLabel)}</span>`:''}${a.autoPublished?'<span class="article-auto">Автоматична RSS-добірка</span>':''}</div><h3>${escapeHTML(a.title)}</h3><p>${escapeHTML(a.summary)}</p><button class="read" data-open="${escapeHTML(a.id)}">Читати матеріал →</button></div></article>`).join(''):'<div class="empty">За цим запитом матеріалів не знайдено. Спробуйте іншу тему або пошукове слово.</div>';
     grid.querySelectorAll('[data-open]').forEach(b=>b.addEventListener('click',()=>openArticle(b.dataset.open)));
   }
   function openArticle(id){
     const a=allArticles().find(x=>x.id===id);if(!a)return;
-    document.getElementById('modalMeta').innerHTML=`<b>${escapeHTML(a.category)}</b><span>${formatDate(a.date)}</span>${a.autoPublished?'<span class="article-auto">Автоматична RSS-добірка</span>':''}`;
+    document.getElementById('modalMeta').innerHTML=`<b>${escapeHTML(a.category)}</b><span>${formatDate(a.date)}</span>${a.editorialLabel?`<span class="article-auto">${escapeHTML(a.editorialLabel)}</span>`:''}${a.autoPublished?'<span class="article-auto">Автоматична RSS-добірка</span>':''}`;
     document.getElementById('modalTitle').textContent=a.title;
     document.getElementById('modalContent').textContent=a.body;
     const box=document.getElementById('modalSources'), list=document.getElementById('modalSourceList');
@@ -154,12 +154,14 @@
       if(!Array.isArray(data))throw new Error('Невірний формат бібліотеки');
       const allRemoteRecords=data.filter(a=>a&&typeof a.title==='string'&&typeof a.body==='string');
       // Automatic records marked needs_review or duplicate remain stored in GitHub,
-      // but are not shown publicly until approved. Manual editorial articles remain visible.
-      remoteArticles=allRemoteRecords.filter(a=>!a.autoPublished||!a.editorialStatus||a.editorialStatus==='approved');
+      // including missing status, are hidden until explicitly approved. Manual editorial articles remain visible.
+      remoteArticles=allRemoteRecords.filter(a=>!a.autoPublished||a.editorialStatus==='approved');
       const approvedAuto=remoteArticles.filter(a=>a.autoPublished===true);
-      const heldAuto=allRemoteRecords.filter(a=>a.autoPublished===true&&a.editorialStatus&&a.editorialStatus!=='approved').length;
+      const heldAuto=allRemoteRecords.filter(a=>a.autoPublished===true&&a.editorialStatus==='needs_review').length;
+      const rejectedAuto=allRemoteRecords.filter(a=>a.autoPublished===true&&a.editorialStatus==='rejected').length;
+      const duplicateAuto=allRemoteRecords.filter(a=>a.autoPublished===true&&a.editorialStatus==='duplicate').length;
       const latest=approvedAuto.slice().sort((a,b)=>(b.date||'').localeCompare(a.date||''))[0];
-      status.textContent=`Автоматична RSS-добірка · остання публікація: ${latest?formatDate(latest.date):'ще немає'} · опубліковано: ${approvedAuto.length} · на перевірці: ${heldAuto}`;
+      status.textContent=`Автоматична RSS-добірка · остання публікація: ${latest?formatDate(latest.date):'ще немає'} · опубліковано: ${approvedAuto.length} · на перевірці: ${heldAuto} · відхилено: ${rejectedAuto} · дублікатів: ${duplicateAuto}`;
     }catch(error){
       status.textContent='RSS-бібліотека буде оновлюватися після підключення репозиторію та GitHub Actions.';
     }

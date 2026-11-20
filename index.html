@@ -152,9 +152,14 @@
       if(!response.ok)throw new Error('Не вдалося завантажити бібліотеку');
       const data=await response.json();
       if(!Array.isArray(data))throw new Error('Невірний формат бібліотеки');
-      remoteArticles=data.filter(a=>a&&typeof a.title==='string'&&typeof a.body==='string');
-      const latest=remoteArticles.slice().sort((a,b)=>(b.date||'').localeCompare(a.date||''))[0];
-      status.textContent=latest?`Автоматична RSS-добірка · остання публікація: ${formatDate(latest.date)} · матеріалів: ${remoteArticles.length}`:'Автоматичне оновлення RSS-джерел щодня; нові матеріали з’являються після тематичного відбору.';
+      const allRemoteRecords=data.filter(a=>a&&typeof a.title==='string'&&typeof a.body==='string');
+      // Automatic records marked needs_review or duplicate remain stored in GitHub,
+      // but are not shown publicly until approved. Manual editorial articles remain visible.
+      remoteArticles=allRemoteRecords.filter(a=>!a.autoPublished||!a.editorialStatus||a.editorialStatus==='approved');
+      const approvedAuto=remoteArticles.filter(a=>a.autoPublished===true);
+      const heldAuto=allRemoteRecords.filter(a=>a.autoPublished===true&&a.editorialStatus&&a.editorialStatus!=='approved').length;
+      const latest=approvedAuto.slice().sort((a,b)=>(b.date||'').localeCompare(a.date||''))[0];
+      status.textContent=`Автоматична RSS-добірка · остання публікація: ${latest?formatDate(latest.date):'ще немає'} · опубліковано: ${approvedAuto.length} · на перевірці: ${heldAuto}`;
     }catch(error){
       status.textContent='RSS-бібліотека буде оновлюватися після підключення репозиторію та GitHub Actions.';
     }

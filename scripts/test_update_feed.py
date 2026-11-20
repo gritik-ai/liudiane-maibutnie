@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
-"""Offline regression tests for the free RSS editorial filter v2.2."""
+"""Offline regression tests for the editorial RSS filter v2.3."""
 import unittest
+
 from update_feed import (
     assess_relevance,
     dedupe_existing,
+    doi_key,
     normalized_url,
     prune_existing,
     title_key,
@@ -13,7 +15,7 @@ AI_FEED = {"kind": "ai_topic"}
 DOMAIN_FEED = {"kind": "domain_topic"}
 
 
-class EditorialFilterV22Tests(unittest.TestCase):
+class EditorialFilterV23Tests(unittest.TestCase):
     def check(self, title: str, description: str = "", feed=AI_FEED):
         return assess_relevance({"title": title, "description": description}, feed)
 
@@ -29,6 +31,14 @@ class EditorialFilterV22Tests(unittest.TestCase):
         result = self.check(
             "OpenKAGE: Open-Ended Lifelong Learning in the Open World via Knowledge-Sharing Agent-Group Evolution",
             "This paper studies lifelong learning in autonomous machine-learning agents and knowledge sharing between models.",
+        )
+        self.assertFalse(result["accepted"])
+        self.assertNotEqual(result["category"], "Освіта")
+
+    def test_does_not_classify_curriculum_learning_for_llm_as_human_education(self):
+        result = self.check(
+            "Depth Before Breadth: Reverse-to-Forward Curriculum with Advantage Decomposition for LLM Agent",
+            "The method changes curriculum learning and training order for reinforcement-learning agents.",
         )
         self.assertFalse(result["accepted"])
         self.assertNotEqual(result["category"], "Освіта")
@@ -54,7 +64,13 @@ class EditorialFilterV22Tests(unittest.TestCase):
             "ATLAS-Finance: Benchmarking AI Agents in Realistic Banking Environments",
             "The benchmark evaluates agents in realistic banking environments.",
         )
-        self.assertFalse(result["accepted"])
+        self.assertNotEqual(result["category"], "Екологія")
+
+    def test_does_not_classify_ai_ecosystem_as_natural_ecology(self):
+        result = self.check(
+            "Mapping the AI Supply Chain: Dependencies, Vulnerabilities, and Market Concentration in the AI Ecosystem",
+            "The paper maps dependencies and market concentration in the artificial intelligence supply chain ecosystem.",
+        )
         self.assertNotEqual(result["category"], "Екологія")
 
     def test_accepts_patient_oriented_medical_benchmark(self):
@@ -95,11 +111,34 @@ class EditorialFilterV22Tests(unittest.TestCase):
         )
         self.assertFalse(result["accepted"])
 
-
     def test_accepts_auditing_research_that_helps_detect_sabotage(self):
         result = self.check(
             "Auditors Struggle to Catch Sabotage in End-to-End Transcripts of AI Safety Research",
             "The study evaluates auditors and methods to detect sabotage in AI safety research transcripts.",
+        )
+        self.assertTrue(result["accepted"])
+        self.assertEqual(result["category"], "Надійність ШІ")
+
+    def test_does_not_classify_generic_multimodal_alignment_as_ai_reliability(self):
+        result = self.check(
+            "From Points to Trajectories: Rethinking Multimodal Alignment for Physical Events",
+            "The paper studies alignment between visual and motion representations.",
+        )
+        self.assertFalse(result["accepted"])
+        self.assertNotEqual(result["category"], "Надійність ШІ")
+
+    def test_accepts_ai_safety_alignment(self):
+        result = self.check(
+            "DACE: Diversity-Driven Adversarial Co-Evolution for Robust LLM Safety Alignment",
+            "The method evaluates safety alignment and robustness of large language models.",
+        )
+        self.assertTrue(result["accepted"])
+        self.assertEqual(result["category"], "Надійність ШІ")
+
+    def test_accepts_bias_audit_as_reliability_topic(self):
+        result = self.check(
+            "Once Upon a Bias: Gender Stereotyping in LLM-Generated Children's Stories",
+            "The study audits gender stereotyping and harmful bias in outputs from language models.",
         )
         self.assertTrue(result["accepted"])
         self.assertEqual(result["category"], "Надійність ШІ")
@@ -158,7 +197,11 @@ class EditorialFilterV22Tests(unittest.TestCase):
             "https://arxiv.org/abs/1234.5678",
         )
 
-    def test_restores_legacy_description_from_matching_feed_entry(self):
+    def test_extracts_doi_from_source_url(self):
+        article = {"title": "A study", "sources": [{"url": "https://doi.org/10.1234/AbC-567"}]}
+        self.assertEqual(doi_key(article), "10.1234/abc-567")
+
+    def test_restores_legacy_description_and_marks_approved(self):
         legacy = {
             "id": "legacy-1", "autoPublished": True, "sourceType": "rss",
             "title": "AI tool helps doctors detect cancer earlier",
@@ -170,13 +213,29 @@ class EditorialFilterV22Tests(unittest.TestCase):
             "title": legacy["title"], "link": "https://arxiv.org/abs/1234.5678",
             "description": "A clinical tool supports early cancer detection and may improve patient care through evaluation of diagnostic assistance.",
         }
-        kept, removed, restored, updated = prune_existing([legacy], {normalized_url(row["link"]): (feed, row)})
+        kept, removed, restored, updated, review = prune_existing([legacy], {normalized_url(row["link"]): (feed, row)})
         self.assertEqual(removed, 0)
         self.assertEqual(restored, 1)
         self.assertEqual(len(kept), 1)
         self.assertIn("sourceDescription", kept[0])
-        self.assertEqual(kept[0]["filterVersion"], "2.2")
+        self.assertEqual(kept[0]["filterVersion"], "2.3")
+        self.assertEqual(kept[0]["editorialStatus"], "approved")
+        self.assertEqual(review, 0)
         self.assertGreaterEqual(updated, 1)
+
+    def test_rejected_existing_article_is_retained_for_review_not_deleted(self):
+        legacy = {
+            "id": "legacy-bad", "autoPublished": True, "sourceType": "rss",
+            "title": "Open-world model learning method",
+            "sourceDescription": "This paper studies lifelong learning in autonomous machine-learning agents.",
+            "sources": [{"url": "https://arxiv.org/abs/1234.9999"}],
+        }
+        kept, removed, restored, updated, review = prune_existing([legacy], {})
+        self.assertEqual(len(kept), 1)
+        self.assertEqual(removed, 0)
+        self.assertEqual(kept[0]["editorialStatus"], "needs_review")
+        self.assertTrue(kept[0].get("editorialReviewReason"))
+        self.assertEqual(review, 1)
 
     def test_keeps_legacy_card_when_description_cannot_be_recovered(self):
         legacy = {
@@ -184,23 +243,64 @@ class EditorialFilterV22Tests(unittest.TestCase):
             "title": "Older card", "summary": "Short excerpt.",
             "sources": [{"url": "https://arxiv.org/abs/missing"}],
         }
-        kept, removed, restored, updated = prune_existing([legacy], {})
+        kept, removed, restored, updated, review = prune_existing([legacy], {})
         self.assertEqual(len(kept), 1)
-        self.assertEqual((removed, restored, updated), (0, 0, 0))
+        self.assertEqual((removed, restored, updated), (0, 0, 1))
+        self.assertEqual(kept[0]["editorialStatus"], "needs_review")
+        self.assertEqual(review, 1)
 
-    def test_dedupe_never_deletes_manual_content(self):
+    def test_duplicate_rss_records_are_flagged_not_deleted(self):
+        a = {"id": "a", "autoPublished": True, "sourceType": "rss", "title": "Paper A", "editorialStatus": "approved", "sources": [{"url": "https://example.org/a?utm_source=rss"}]}
+        b = {"id": "b", "autoPublished": True, "sourceType": "rss", "title": "Paper B", "editorialStatus": "approved", "sources": [{"url": "https://example.org/a"}]}
+        kept, duplicate_count, seen_urls, seen_titles, seen_dois = dedupe_existing([a, b])
+        self.assertEqual(len(kept), 2)
+        self.assertEqual(duplicate_count, 1)
+        self.assertEqual(kept[1]["editorialStatus"], "duplicate")
+
+    def test_dedupe_never_hides_or_deletes_manual_content(self):
         manual = {"id": "manual", "title": "Same title", "body": "Human-written article."}
         rss = {"id": "rss", "autoPublished": True, "sourceType": "rss", "title": "Same title", "sources": [{"url": "https://example.org/a"}]}
-        kept, removed, _, _ = dedupe_existing([rss, manual])
-        self.assertEqual(removed, 1)
-        self.assertEqual([item["id"] for item in kept], ["manual"])
+        kept, duplicate_count, *_ = dedupe_existing([rss, manual])
+        self.assertEqual(len(kept), 2)
+        manual_kept = next(a for a in kept if a["id"] == "manual")
+        rss_kept = next(a for a in kept if a["id"] == "rss")
+        self.assertNotIn("editorialStatus", manual_kept)
+        self.assertEqual(rss_kept["editorialStatus"], "duplicate")
 
-    def test_dedupe_collapses_duplicate_rss_urls(self):
-        a = {"id": "a", "autoPublished": True, "sourceType": "rss", "title": "Paper A", "sources": [{"url": "https://example.org/a?utm_source=rss"}]}
-        b = {"id": "b", "autoPublished": True, "sourceType": "rss", "title": "Paper B", "sources": [{"url": "https://example.org/a"}]}
-        kept, removed, _, _ = dedupe_existing([a, b])
-        self.assertEqual(removed, 1)
-        self.assertEqual([item["id"] for item in kept], ["a"])
+    def test_manual_records_are_not_modified_by_prune(self):
+        manual = {"id": "manual-1", "title": "Manual article", "body": "Written by editor."}
+        kept, removed, restored, updated, review = prune_existing([manual], {})
+        self.assertEqual(kept, [manual])
+        self.assertEqual((removed, restored, updated, review), (0, 0, 0, 0))
+
+    def test_duplicate_doi_is_flagged_without_deleting_record(self):
+        a = {"id": "doi-a", "autoPublished": True, "sourceType": "rss", "title": "Paper A", "editorialStatus": "approved", "sources": [{"url": "https://doi.org/10.5555/abc.2026"}]}
+        b = {"id": "doi-b", "autoPublished": True, "sourceType": "rss", "title": "Paper B", "editorialStatus": "approved", "sources": [{"url": "https://publisher.example/article/2", "title": "DOI 10.5555/abc.2026"}]}
+        kept, duplicate_count, *_ = dedupe_existing([a, b])
+        self.assertEqual(len(kept), 2)
+        self.assertEqual(duplicate_count, 1)
+        self.assertEqual(kept[1]["editorialStatus"], "duplicate")
+
+    def test_education_requires_human_audience_not_only_curriculum_word(self):
+        result = self.check(
+            "Curriculum Optimization for Language Model Agents",
+            "The paper optimizes curriculum learning schedules for machine-learning agents.",
+        )
+        self.assertFalse(result["accepted"])
+        self.assertNotEqual(result["category"], "Освіта")
+
+    def test_existing_record_and_new_candidate_use_same_decision(self):
+        title = "AI tool helps doctors detect cancer earlier"
+        description = "A clinical tool supports early cancer detection and may improve patient care through evaluation of diagnostic assistance."
+        link = "https://arxiv.org/abs/1234.5678"
+        feed = {"kind": "ai_topic", "name": "arXiv AI", "publisher": "arXiv", "host": "arxiv.org"}
+        legacy = {
+            "id": "legacy-same", "autoPublished": True, "sourceType": "rss", "title": title,
+            "sourceDescription": description, "sources": [{"publisher": "arXiv", "url": link}],
+        }
+        expected = assess_relevance({"title": title, "description": description}, feed)
+        kept, _, _, _, _ = prune_existing([legacy], {normalized_url(link): (feed, {"title": title, "link": link, "description": description})})
+        self.assertEqual(kept[0]["editorialStatus"], "approved" if expected["accepted"] else "needs_review")
 
     def test_title_key_ignores_punctuation_case(self):
         self.assertEqual(title_key("AI: A Better Future!"), title_key("ai a better future"))

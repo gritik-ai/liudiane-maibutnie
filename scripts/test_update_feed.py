@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Offline regression tests for the editorial RSS filter v2.4 and human editorial decisions."""
+"""Offline regression tests for the editorial RSS filter v2.5 and source diversity."""
 import unittest
 
 from update_feed import (
@@ -9,13 +9,17 @@ from update_feed import (
     normalized_url,
     prune_existing,
     title_key,
+    canonical_domain,
+    select_diverse_candidates,
+    build_source_stats,
+    FEEDS,
 )
 
 AI_FEED = {"kind": "ai_topic"}
-DOMAIN_FEED = {"kind": "domain_topic"}
+DOMAIN_FEED = {"kind": "domain_topic", "requires_ai": True}
 
 
-class EditorialFilterV24Tests(unittest.TestCase):
+class EditorialFilterV25Tests(unittest.TestCase):
     def check(self, title: str, description: str = "", feed=AI_FEED):
         return assess_relevance({"title": title, "description": description}, feed)
 
@@ -191,6 +195,56 @@ class EditorialFilterV24Tests(unittest.TestCase):
         )
         self.assertTrue(result["accepted"])
 
+    def test_institutional_health_feed_does_not_require_ai(self):
+        feed = {"kind": "institutional", "requires_ai": False}
+        result = self.check(
+            "Public health programme expands cancer screening",
+            "The programme supports early detection and improves access to screening for patients.",
+            feed,
+        )
+        self.assertTrue(result["accepted"])
+        self.assertEqual(result["category"], "Медицина")
+
+    def test_nasa_space_technology_without_ai_is_accepted(self):
+        feed = {"kind": "institutional", "requires_ai": False}
+        result = self.check(
+            "Space technology demonstration improves spacecraft navigation",
+            "A technology demonstration tests a navigation system and measures accuracy for future space missions.",
+            feed,
+        )
+        self.assertTrue(result["accepted"])
+        self.assertEqual(result["category"], "Наука і технології")
+
+    def test_noaa_climate_monitoring_without_ai_is_accepted(self):
+        feed = {"kind": "institutional", "requires_ai": False}
+        result = self.check(
+            "Climate change monitoring supports coastal adaptation",
+            "Environmental monitoring and forecasting measure long-term climate conditions and support adaptation planning for coastal communities.",
+            feed,
+        )
+        self.assertTrue(result["accepted"])
+        self.assertEqual(result["category"], "Екологія")
+
+    def test_nasa_lifelong_machine_learning_not_misclassified_as_education(self):
+        feed = {"kind": "institutional", "requires_ai": False}
+        result = self.check(
+            "Spacecraft navigation system improves orbital observation",
+            "The system measures spacecraft position and supports navigation during a technology demonstration.",
+            feed,
+        )
+        self.assertNotEqual(result.get("category"), "Освіта")
+
+    def test_expected_root_host_allows_official_subdomains(self):
+        self.assertEqual(
+            normalized_url("https://news.mit.edu/2026/ai-study", "mit.edu"),
+            "https://news.mit.edu/2026/ai-study",
+        )
+        self.assertEqual(
+            normalized_url("https://oceanservice.noaa.gov/rss/nosnews.xml", "noaa.gov"),
+            "https://oceanservice.noaa.gov/rss/nosnews.xml",
+        )
+        self.assertEqual(normalized_url("https://example.org/article", "noaa.gov"), "")
+
     def test_normalizes_tracking_parameters_and_fragment(self):
         self.assertEqual(
             normalized_url("https://arxiv.org/abs/1234.5678?utm_source=rss#abstract"),
@@ -218,7 +272,7 @@ class EditorialFilterV24Tests(unittest.TestCase):
         self.assertEqual(restored, 1)
         self.assertEqual(len(kept), 1)
         self.assertIn("sourceDescription", kept[0])
-        self.assertEqual(kept[0]["filterVersion"], "2.4")
+        self.assertEqual(kept[0]["filterVersion"], "2.5")
         self.assertEqual(kept[0]["editorialStatus"], "approved")
         self.assertEqual(review, 0)
         self.assertGreaterEqual(updated, 1)
@@ -382,6 +436,42 @@ class EditorialFilterV24Tests(unittest.TestCase):
     def test_title_key_ignores_punctuation_case(self):
         self.assertEqual(title_key("AI: A Better Future!"), title_key("ai a better future"))
 
+
+    def test_feed_registry_covers_multiple_independent_publishers(self):
+        domains = {str(feed.get("domain")) for feed in FEEDS}
+        self.assertEqual(len(FEEDS), 13)
+        self.assertTrue({"mit.edu", "arxiv.org", "unesco.org", "who.int", "nasa.gov", "noaa.gov"}.issubset(domains))
+
+    def test_canonical_domains_group_subdomains(self):
+        self.assertEqual(canonical_domain("https://export.arxiv.org/abs/1234.5678"), "arxiv.org")
+        self.assertEqual(canonical_domain("https://science.nasa.gov/earth/"), "nasa.gov")
+        self.assertEqual(canonical_domain("https://oceanservice.noaa.gov/rss/nosnews.xml"), "noaa.gov")
+        self.assertEqual(canonical_domain("https://connect.unevoc.unesco.org/unevoc_news.xml"), "unesco.org")
+
+    def test_diverse_selector_limits_each_publisher_domain(self):
+        candidates = []
+        for domain in ("arxiv.org", "mit.edu", "nasa.gov", "noaa.gov"):
+            for i in range(5):
+                candidates.append({"id": f"{domain}-{i}", "sourceDomain": domain, "date": f"2026-11-{20-i:02d}"})
+        selected, deferred = select_diverse_candidates(candidates, max_total=10, max_per_domain=3)
+        self.assertEqual(len(selected), 10)
+        counts = {}
+        for article in selected:
+            domain = article["sourceDomain"]
+            counts[domain] = counts.get(domain, 0) + 1
+        self.assertTrue(all(value <= 3 for value in counts.values()))
+        self.assertEqual(deferred, 10)
+
+    def test_source_stats_count_approved_library_by_canonical_domain(self):
+        library = [
+            {"title": "A", "body": "text", "autoPublished": True, "editorialStatus": "approved", "sourceDomain": "arxiv.org", "sources": [{"publisher": "arXiv", "url": "https://arxiv.org/abs/1"}]},
+            {"title": "B", "body": "text", "autoPublished": True, "editorialStatus": "approved", "sourceDomain": "nasa.gov", "sources": [{"publisher": "NASA", "url": "https://www.nasa.gov/a"}]},
+            {"title": "C", "body": "text", "autoPublished": True, "editorialStatus": "needs_review", "sourceDomain": "who.int", "sources": [{"publisher": "WHO", "url": "https://www.who.int/a"}]},
+        ]
+        stats = build_source_stats(library, [], {"added": 0})
+        self.assertEqual(stats["libraryDomainCount"], 2)
+        self.assertEqual(stats["library"]["publicRecords"], 2)
+        self.assertEqual({row["domain"] for row in stats["libraryByDomain"]}, {"arxiv.org", "nasa.gov"})
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)

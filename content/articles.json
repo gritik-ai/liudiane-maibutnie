@@ -642,8 +642,25 @@
         "publishedDate": "2026-11-20"
       }
     ],
-    "editorialStatus": "needs_review",
-    "editorialReviewReason": "не виявлено достатньо чіткого напряму користі для людей"
+    "editorialStatus": "approved",
+    "editorialReviewReason": "",
+    "editorialDecisionSource": "human",
+    "editorialReviewedAt": "2026-11-20T11:39:40.644Z",
+    "editorialReviewedBy": "Редактор сайту",
+    "editorialNote": "",
+    "editorialLabel": "Перспективний розвиток",
+    "editorialHistory": [
+      {
+        "at": "2026-11-20T11:39:40.644Z",
+        "actor": "Редактор сайту",
+        "action": "approve",
+        "from": "needs_review",
+        "to": "approved",
+        "category": "Надійність ШІ",
+        "label": "Перспективний розвиток",
+        "note": ""
+      }
+    ]
   },
   {
     "id": "rss-2026-11-20-d49baa3dded5",

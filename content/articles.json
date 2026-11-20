@@ -1,5 +1,245 @@
 [
   {
+    "id": "rss-2026-11-20-ab4b2185aff2",
+    "date": "2026-11-20",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "arXiv — Штучний інтелект",
+    "filterVersion": "2.1",
+    "feedKind": "ai_topic",
+    "sourceDescription": "arXiv:2611.23520v1 Announce Type: new Abstract: Time-series sensing increasingly relies on neural networks, yet deployment on resource-constrained microcontrollers remains challenging. Aggressive model compression can reduce accuracy, while restricting weights to multiplication-free representations introduces further losses. We present BeFit, an end-to-end framework that shifts model capacity from weights to learnable Bernstein polynomial activations. BeFit (i) finds compact Bernstein-activated convolutional neural networks (BeCNNs) through hardware-aware neural architecture search and trains them via knowledge distillation; (ii) projects their weights to multiplication-free codes, freezes the codes, and recovers the resulting accuracy loss through the learnable activations; and (iii) generates model-specific kernels that exploit the projected weights for multiplication-free convolutions. On human activity recognition, BeCNNs are 2.75 percentage points (pp) more accurate on average than ReLU CNNs of identical architecture. On a TI CC3220SF (Cortex-M4), weight projection speeds BeCNNs up by 2.2x on average while losing 0.8 pp, compared with 2.4 pp for ReLU CNNs. Against the MLPerf Tiny DS-CNN reference model running on TensorFlow Lite Micro with CMSIS-NN, the unprojected BeCNN achieves 1.0 pp higher accuracy, 2.2x lower latency, and 6.4x lower flash, while the projected model re",
+    "selectionReason": "напрям: Освіта; прикладні сигнали: reduce",
+    "category": "Освіта",
+    "title": "BeFit: Shifting Complexity from Weights to Bernstein Activations for Resource-Constrained Sensing",
+    "summary": "arXiv:2611.23520v1 Announce Type: new Abstract: Time-series sensing increasingly relies on neural networks, yet deployment on resource-constrained microcontrollers remains challenging. Aggressive model compression can reduce accuracy, while restricting weights to multiplication-free representations introduces further losses.…",
+    "body": "Цей матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та короткий опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.23520v1 Announce Type: new Abstract: Time-series sensing increasingly relies on neural networks, yet deployment on resource-constrained microcontrollers remains challenging. Aggressive model compression can reduce accuracy, while restricting weights to multiplication-free representations introduces further losses. We present BeFit, an end-to-end framework that shifts model capacity from weights to learnable Bernstein polynomial activations. BeFit (i) finds compact Bernstein-activated convolutional neural networks (BeCNNs) through hardware-aware neural architecture search and trains them via knowledge distillation; (ii) projects their weights to multiplication-free codes, freezes the codes, and recovers the resulting accuracy loss through the learnable activations; and (iii) generates model-specific kernels that exploit the projected weights for multiplication-free convolutions. On human activity recognition, BeCNNs are 2.75 percentage points (pp) more accurate on average than ReLU CNNs of identical architecture. On a TI CC3220SF (Cortex-M4), weight projection speeds BeCNNs up by 2.2x on average while losing 0.8 pp, compared with 2.4 pp for ReLU CNNs. Against the MLPerf Tiny DS-CNN reference model running on TensorFlow Lite Micro with CMSIS-NN, the unprojected BeCNN achieves 1.0 pp higher accuracy, 2.2x lower latency, and 6.4x lower flash, while the projected model re\n\nЧому матеріал потрапив до добірки: напрям: Освіта; прикладні сигнали: reduce. Це автоматичний тематичний відбір за ключовими словами, а не підтвердження ефективності чи незалежна експертна оцінка. Перед висновками прочитайте оригінальну публікацію.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте розділ про публікацію та рецензування в оригіналі.\n\nРедакційне застереження: автоматична система перевіряє формат стрічки, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження, не перевіряє незалежно всі твердження та не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-20",
+    "sources": [
+      {
+        "title": "BeFit: Shifting Complexity from Weights to Bernstein Activations for Resource-Constrained Sensing",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2611.23520",
+        "publishedDate": "2026-11-20"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-20-fcc9e32e6363",
+    "date": "2026-11-20",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "arXiv — Штучний інтелект",
+    "filterVersion": "2.1",
+    "feedKind": "ai_topic",
+    "sourceDescription": "arXiv:2611.23348v1 Announce Type: cross Abstract: Clinical interviews are central to depression assessment but time-consuming and rater-dependent. Automated severity estimation offers scalable screening, yet existing methods often retain interviewer speech (confounding participant cues), fuse modalities late (losing fine-grained cross-modal dynamics), or score symptoms independently (ignoring inter-symptom correlations). We present SIGMA, a speaker-aware, symptom-structured framework for depression-severity estimation from semi-clinical interviews. SIGMA uses speaker diarization to restrict input to participant speech, cross-attention so that text, audio and video condition one another during encoding, and a graded-response head that predicts the eight questionnaire items jointly through a shared latent severity trait with item-specific ordered thresholds. On the Extended Distress Analysis Interview Corpus, SIGMA achieves state-of-the-art performance (CCC 0.762, RMSE 4.13, MAE 3.30 over five seeds). Ablations confirm that isolating participant speech and joint, structured symptom prediction each substantially improve concordance and estimation accuracy.",
+    "selectionReason": "напрям: Медицина; прикладні сигнали: improv, screen, predict",
+    "category": "Медицина",
+    "title": "SIGMA: speaker-isolated, symptom-structured multimodal estimation of depression severity from clinical interviews",
+    "summary": "arXiv:2611.23348v1 Announce Type: cross Abstract: Clinical interviews are central to depression assessment but time-consuming and rater-dependent. Automated severity estimation offers scalable screening, yet existing methods often retain interviewer speech (confounding participant cues), fuse modalities late (losing…",
+    "body": "Цей матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та короткий опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.23348v1 Announce Type: cross Abstract: Clinical interviews are central to depression assessment but time-consuming and rater-dependent. Automated severity estimation offers scalable screening, yet existing methods often retain interviewer speech (confounding participant cues), fuse modalities late (losing fine-grained cross-modal dynamics), or score symptoms independently (ignoring inter-symptom correlations). We present SIGMA, a speaker-aware, symptom-structured framework for depression-severity estimation from semi-clinical interviews. SIGMA uses speaker diarization to restrict input to participant speech, cross-attention so that text, audio and video condition one another during encoding, and a graded-response head that predicts the eight questionnaire items jointly through a shared latent severity trait with item-specific ordered thresholds. On the Extended Distress Analysis Interview Corpus, SIGMA achieves state-of-the-art performance (CCC 0.762, RMSE 4.13, MAE 3.30 over five seeds). Ablations confirm that isolating participant speech and joint, structured symptom prediction each substantially improve concordance and estimation accuracy.\n\nЧому матеріал потрапив до добірки: напрям: Медицина; прикладні сигнали: improv, screen, predict. Це автоматичний тематичний відбір за ключовими словами, а не підтвердження ефективності чи незалежна експертна оцінка. Перед висновками прочитайте оригінальну публікацію.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте розділ про публікацію та рецензування в оригіналі.\n\nРедакційне застереження: автоматична система перевіряє формат стрічки, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження, не перевіряє незалежно всі твердження та не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-20",
+    "sources": [
+      {
+        "title": "SIGMA: speaker-isolated, symptom-structured multimodal estimation of depression severity from clinical interviews",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2611.23348",
+        "publishedDate": "2026-11-20"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-20-32052e342452",
+    "date": "2026-11-20",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "arXiv — Штучний інтелект",
+    "filterVersion": "2.1",
+    "feedKind": "ai_topic",
+    "sourceDescription": "arXiv:2611.23397v1 Announce Type: cross Abstract: On-policy distillation (OPD) trains a student language model to match a teacher model based on its own generations. When using OPD, one must choose whether to apply it at the sequence or token level and which divergence to minimize. However, despite the wide adoption of OPD in practice, the formal understanding of which OPD objective is appropriate for a given setting is limited. Toward addressing this gap, we theoretically analyze how the choice of OPD objective governs which tokens are prioritized, in what order, and how efficiently. Our analysis reveals that sequence-level OPD exhibits a future agreement bias, which myopic token-level objectives avoid. This bias induces a reverse learning order, in which sequence-level OPD first matches the teacher at later token positions, while at earlier positions it can favor tokens that are improbable under the teacher, and thus often undesirable. As for the choice of divergence, we prove that it strongly influences the amenability of OPD to gradient-based optimization. In particular, while the forward KL divergence enjoys a well-behaved objective landscape, other $f$-divergences, such as reverse KL, can suffer from vanishing gradients even when the student and teacher are far apart. Across language model post-training settings, we demonstrate the implications of these theoretical findin",
+    "selectionReason": "напрям: Освіта; прикладні сигнали: optimi, efficient",
+    "category": "Освіта",
+    "title": "Which Tokens, in What Order, and How Fast? A Theoretical Analysis of On-Policy Distillation Objectives",
+    "summary": "arXiv:2611.23397v1 Announce Type: cross Abstract: On-policy distillation (OPD) trains a student language model to match a teacher model based on its own generations. When using OPD, one must choose whether to apply it at the sequence or token level and which divergence to minimize. However, despite the wide adoption of OPD in…",
+    "body": "Цей матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та короткий опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.23397v1 Announce Type: cross Abstract: On-policy distillation (OPD) trains a student language model to match a teacher model based on its own generations. When using OPD, one must choose whether to apply it at the sequence or token level and which divergence to minimize. However, despite the wide adoption of OPD in practice, the formal understanding of which OPD objective is appropriate for a given setting is limited. Toward addressing this gap, we theoretically analyze how the choice of OPD objective governs which tokens are prioritized, in what order, and how efficiently. Our analysis reveals that sequence-level OPD exhibits a future agreement bias, which myopic token-level objectives avoid. This bias induces a reverse learning order, in which sequence-level OPD first matches the teacher at later token positions, while at earlier positions it can favor tokens that are improbable under the teacher, and thus often undesirable. As for the choice of divergence, we prove that it strongly influences the amenability of OPD to gradient-based optimization. In particular, while the forward KL divergence enjoys a well-behaved objective landscape, other $f$-divergences, such as reverse KL, can suffer from vanishing gradients even when the student and teacher are far apart. Across language model post-training settings, we demonstrate the implications of these theoretical findin\n\nЧому матеріал потрапив до добірки: напрям: Освіта; прикладні сигнали: optimi, efficient. Це автоматичний тематичний відбір за ключовими словами, а не підтвердження ефективності чи незалежна експертна оцінка. Перед висновками прочитайте оригінальну публікацію.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте розділ про публікацію та рецензування в оригіналі.\n\nРедакційне застереження: автоматична система перевіряє формат стрічки, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження, не перевіряє незалежно всі твердження та не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-20",
+    "sources": [
+      {
+        "title": "Which Tokens, in What Order, and How Fast? A Theoretical Analysis of On-Policy Distillation Objectives",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2611.23397",
+        "publishedDate": "2026-11-20"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-20-1376f178b58e",
+    "date": "2026-11-20",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "arXiv — Штучний інтелект",
+    "filterVersion": "2.1",
+    "feedKind": "ai_topic",
+    "sourceDescription": "arXiv:2611.23474v1 Announce Type: cross Abstract: Official development assistance fell by 23.1 per cent in 2025, and the decision of who is helped first when there is not enough for everyone is moving into software. A leading published machine-learning targeting system excluded 53 per cent of eligible households as deployed. If the rule of distribution ends up in code, it should carry the judgement of many cultures, and the machine should execute while a person judges. AllotNet is an interpretable mixture-of-experts conditional logit for the allocation judgements elicited by Allot, a pre-registered six-language instrument: eight linear taste experts over seven ethical criteria, weighted by a gate over participant context, with a damped residual, an encoder for household intake, an outcome head and a budget-constrained planner that builds a review queue and never rejects anyone. A model of human judgement has no answer key on real data, so we wrote one first: a planted synthetic population of 5.6 million sessions and 104 million responses (98 million usable choices), generated by the production code path from a ground truth hidden from the loss. All sixteen pre-specified checks passed: criterion ranking $\\rho = 1.000$, hidden segments recovered (ARI 0.671), outcome head at 99 per cent of the noise ceiling, planner at 99.4 per cent of oracle. The caveats are reported with them: t",
+    "selectionReason": "напрям: Мир і безпека; прикладні сигнали: help, assist",
+    "category": "Мир і безпека",
+    "title": "AllotNet: an Interpretable Mixture-of-Experts Choice Model for Moral Judgement in Humanitarian Aid Allocation, Validated against a Planted Synthetic Population",
+    "summary": "arXiv:2611.23474v1 Announce Type: cross Abstract: Official development assistance fell by 23.1 per cent in 2025, and the decision of who is helped first when there is not enough for everyone is moving into software. A leading published machine-learning targeting system excluded 53 per cent of eligible households as deployed.…",
+    "body": "Цей матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та короткий опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.23474v1 Announce Type: cross Abstract: Official development assistance fell by 23.1 per cent in 2025, and the decision of who is helped first when there is not enough for everyone is moving into software. A leading published machine-learning targeting system excluded 53 per cent of eligible households as deployed. If the rule of distribution ends up in code, it should carry the judgement of many cultures, and the machine should execute while a person judges. AllotNet is an interpretable mixture-of-experts conditional logit for the allocation judgements elicited by Allot, a pre-registered six-language instrument: eight linear taste experts over seven ethical criteria, weighted by a gate over participant context, with a damped residual, an encoder for household intake, an outcome head and a budget-constrained planner that builds a review queue and never rejects anyone. A model of human judgement has no answer key on real data, so we wrote one first: a planted synthetic population of 5.6 million sessions and 104 million responses (98 million usable choices), generated by the production code path from a ground truth hidden from the loss. All sixteen pre-specified checks passed: criterion ranking $\\rho = 1.000$, hidden segments recovered (ARI 0.671), outcome head at 99 per cent of the noise ceiling, planner at 99.4 per cent of oracle. The caveats are reported with them: t\n\nЧому матеріал потрапив до добірки: напрям: Мир і безпека; прикладні сигнали: help, assist. Це автоматичний тематичний відбір за ключовими словами, а не підтвердження ефективності чи незалежна експертна оцінка. Перед висновками прочитайте оригінальну публікацію.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте розділ про публікацію та рецензування в оригіналі.\n\nРедакційне застереження: автоматична система перевіряє формат стрічки, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження, не перевіряє незалежно всі твердження та не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-20",
+    "sources": [
+      {
+        "title": "AllotNet: an Interpretable Mixture-of-Experts Choice Model for Moral Judgement in Humanitarian Aid Allocation, Validated against a Planted Synthetic Population",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2611.23474",
+        "publishedDate": "2026-11-20"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-20-1257c9cf225f",
+    "date": "2026-11-20",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "arXiv — Штучний інтелект",
+    "filterVersion": "2.1",
+    "feedKind": "ai_topic",
+    "sourceDescription": "arXiv:2611.23581v1 Announce Type: cross Abstract: Semi-supervised multi-organ segmentation should learn more than a dozen organs from a handful of labeled scans, and the smallest organs occupy less than one percent of the foreground. We identify a failure mode of self-training that is specific to this regime. When a teacher misses a small organ in a scan, every voxel of that organ receives the confident pseudo-label background, and the student is trained toward the organ absence. Repeated over many scans, this loop extinguishes tail organs. In a pilot study, removing the gallbladder from the pseudo-labels reduced its Dice on AMOS from 36.5 to 1.0. We argue that a missing organ should be treated as unresolved rather than absent and propose Existence-aware Self-Training (ExiST). It builds pseudo-labels by leave-one-out consensus of independently trained networks, screens them with a quality gate on validation scans, and infers, per scan and per organ, whether the organ was found. For every unresolved organ, the background voxels of that scan receive the set-valued target, trained with a marginal cross-entropy that accepts either answer and a Dice term that skips uncertain voxels. We show that this loss never pushes a candidate organ toward absence and never favors one member of the set, which leaves the decision to labeled evidence. ExiST outperforms the current state-of-the-art ",
+    "selectionReason": "напрям: Освіта; прикладні сигнали: reduce, screen",
+    "category": "Освіта",
+    "title": "ExiST: Existence-Aware Self-Training for Semi-Supervised Multi-Organ Segmentation",
+    "summary": "arXiv:2611.23581v1 Announce Type: cross Abstract: Semi-supervised multi-organ segmentation should learn more than a dozen organs from a handful of labeled scans, and the smallest organs occupy less than one percent of the foreground. We identify a failure mode of self-training that is specific to this regime. When a teacher…",
+    "body": "Цей матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та короткий опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.23581v1 Announce Type: cross Abstract: Semi-supervised multi-organ segmentation should learn more than a dozen organs from a handful of labeled scans, and the smallest organs occupy less than one percent of the foreground. We identify a failure mode of self-training that is specific to this regime. When a teacher misses a small organ in a scan, every voxel of that organ receives the confident pseudo-label background, and the student is trained toward the organ absence. Repeated over many scans, this loop extinguishes tail organs. In a pilot study, removing the gallbladder from the pseudo-labels reduced its Dice on AMOS from 36.5 to 1.0. We argue that a missing organ should be treated as unresolved rather than absent and propose Existence-aware Self-Training (ExiST). It builds pseudo-labels by leave-one-out consensus of independently trained networks, screens them with a quality gate on validation scans, and infers, per scan and per organ, whether the organ was found. For every unresolved organ, the background voxels of that scan receive the set-valued target, trained with a marginal cross-entropy that accepts either answer and a Dice term that skips uncertain voxels. We show that this loss never pushes a candidate organ toward absence and never favors one member of the set, which leaves the decision to labeled evidence. ExiST outperforms the current state-of-the-art \n\nЧому матеріал потрапив до добірки: напрям: Освіта; прикладні сигнали: reduce, screen. Це автоматичний тематичний відбір за ключовими словами, а не підтвердження ефективності чи незалежна експертна оцінка. Перед висновками прочитайте оригінальну публікацію.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте розділ про публікацію та рецензування в оригіналі.\n\nРедакційне застереження: автоматична система перевіряє формат стрічки, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження, не перевіряє незалежно всі твердження та не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-20",
+    "sources": [
+      {
+        "title": "ExiST: Existence-Aware Self-Training for Semi-Supervised Multi-Organ Segmentation",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2611.23581",
+        "publishedDate": "2026-11-20"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-20-46bcd57ada02",
+    "date": "2026-11-20",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "arXiv — Штучний інтелект",
+    "filterVersion": "2.1",
+    "feedKind": "ai_topic",
+    "sourceDescription": "arXiv:2611.23673v1 Announce Type: cross Abstract: On-policy distillation (OPD) is a powerful paradigm for improving language-model agents on long-horizon tasks, yet its conventional formulation relies on teacher logits that text-only black- box models do not expose. To address this limitation, we introduce Communicative On-Policy Distillation (COPD), which uses natural-language communication as a medium for distilling a stronger model's capabilities into a smaller student. During task execution, the student au- tonomously decides when to consult a black-box teacher and formulates open-ended natural- language requests without predefined question templates or intervention schedules. Successful student-teacher interactions are retained as privileged references to supervise fresh adviser-free student rollouts through on-policy self-distillation, jointly with task-reward reinforcement learning. On CAMG-II, COPD achieves 2.46 times the gain of the strongest black-box OPD baseline. The capabilities it learns through communication generalize to Terminal-Bench 2.1 and SWE-Bench Pro V2, improving task success without adviser access.",
+    "selectionReason": "напрям: Освіта; прикладні сигнали: improv",
+    "category": "Освіта",
+    "title": "Communicative On-Policy Distillation: Distilling Black-Box Teacher Capabilities through Communication for Long-Horizon Tasks",
+    "summary": "arXiv:2611.23673v1 Announce Type: cross Abstract: On-policy distillation (OPD) is a powerful paradigm for improving language-model agents on long-horizon tasks, yet its conventional formulation relies on teacher logits that text-only black- box models do not expose. To address this limitation, we introduce Communicative…",
+    "body": "Цей матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та короткий опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.23673v1 Announce Type: cross Abstract: On-policy distillation (OPD) is a powerful paradigm for improving language-model agents on long-horizon tasks, yet its conventional formulation relies on teacher logits that text-only black- box models do not expose. To address this limitation, we introduce Communicative On-Policy Distillation (COPD), which uses natural-language communication as a medium for distilling a stronger model's capabilities into a smaller student. During task execution, the student au- tonomously decides when to consult a black-box teacher and formulates open-ended natural- language requests without predefined question templates or intervention schedules. Successful student-teacher interactions are retained as privileged references to supervise fresh adviser-free student rollouts through on-policy self-distillation, jointly with task-reward reinforcement learning. On CAMG-II, COPD achieves 2.46 times the gain of the strongest black-box OPD baseline. The capabilities it learns through communication generalize to Terminal-Bench 2.1 and SWE-Bench Pro V2, improving task success without adviser access.\n\nЧому матеріал потрапив до добірки: напрям: Освіта; прикладні сигнали: improv. Це автоматичний тематичний відбір за ключовими словами, а не підтвердження ефективності чи незалежна експертна оцінка. Перед висновками прочитайте оригінальну публікацію.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте розділ про публікацію та рецензування в оригіналі.\n\nРедакційне застереження: автоматична система перевіряє формат стрічки, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження, не перевіряє незалежно всі твердження та не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-20",
+    "sources": [
+      {
+        "title": "Communicative On-Policy Distillation: Distilling Black-Box Teacher Capabilities through Communication for Long-Horizon Tasks",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2611.23673",
+        "publishedDate": "2026-11-20"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-20-c04ff9c0a0fc",
+    "date": "2026-11-20",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "arXiv — Штучний інтелект",
+    "filterVersion": "2.1",
+    "feedKind": "ai_topic",
+    "sourceDescription": "arXiv:2611.23708v1 Announce Type: cross Abstract: Biomedical knowledge representation should make the passage from observations to conclusions transparent, rigorous, understandable, explainable, and reproducible (TRUER). We introduce Rational Ensemble Logic (QEL) for specifying temporal phenotypes in real-world electrophysiology data (RWED), with a meaning independent of the implementation software. QEL combines three parameterized modal operators (exact displacement, bounded existence, and bounded universality) over rational time with Boolean connectives and first-order quantification. Its Labeled Interval Ensemble (LINE) semantics represents annotated records as finite interval ensembles. We relate the operators to morphological operations and develop endpoint-array algorithms and finite rational evidence sets for model checking. We prove closure and semantic correctness of the interval operations, obtain finite evidence sets by quantifier elimination, and establish polynomial data complexity for fixed formulas. On 54 manually constructed records, a prototype agreed with the assigned outcomes for base and strict post-ictal generalized EEG suppression (PGES) queries. A separate feasibility experiment over 1,976 patients identified 37 qualifying patients and 45 annotation patterns in 16 seconds. The released prototype uses endpoint candidates and numerical tolerances. QEL suppo",
+    "selectionReason": "напрям: Медицина; прикладні сигнали: support, evaluation, explainab",
+    "category": "Медицина",
+    "title": "Rational Ensemble Logic for Cohort Discovery with Real-World Electrophysiology Data",
+    "summary": "arXiv:2611.23708v1 Announce Type: cross Abstract: Biomedical knowledge representation should make the passage from observations to conclusions transparent, rigorous, understandable, explainable, and reproducible (TRUER). We introduce Rational Ensemble Logic (QEL) for specifying temporal phenotypes in real-world…",
+    "body": "Цей матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та короткий опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.23708v1 Announce Type: cross Abstract: Biomedical knowledge representation should make the passage from observations to conclusions transparent, rigorous, understandable, explainable, and reproducible (TRUER). We introduce Rational Ensemble Logic (QEL) for specifying temporal phenotypes in real-world electrophysiology data (RWED), with a meaning independent of the implementation software. QEL combines three parameterized modal operators (exact displacement, bounded existence, and bounded universality) over rational time with Boolean connectives and first-order quantification. Its Labeled Interval Ensemble (LINE) semantics represents annotated records as finite interval ensembles. We relate the operators to morphological operations and develop endpoint-array algorithms and finite rational evidence sets for model checking. We prove closure and semantic correctness of the interval operations, obtain finite evidence sets by quantifier elimination, and establish polynomial data complexity for fixed formulas. On 54 manually constructed records, a prototype agreed with the assigned outcomes for base and strict post-ictal generalized EEG suppression (PGES) queries. A separate feasibility experiment over 1,976 patients identified 37 qualifying patients and 45 annotation patterns in 16 seconds. The released prototype uses endpoint candidates and numerical tolerances. QEL suppo\n\nЧому матеріал потрапив до добірки: напрям: Медицина; прикладні сигнали: support, evaluation, explainab. Це автоматичний тематичний відбір за ключовими словами, а не підтвердження ефективності чи незалежна експертна оцінка. Перед висновками прочитайте оригінальну публікацію.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте розділ про публікацію та рецензування в оригіналі.\n\nРедакційне застереження: автоматична система перевіряє формат стрічки, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження, не перевіряє незалежно всі твердження та не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-20",
+    "sources": [
+      {
+        "title": "Rational Ensemble Logic for Cohort Discovery with Real-World Electrophysiology Data",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2611.23708",
+        "publishedDate": "2026-11-20"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-20-5d54f45c8a52",
+    "date": "2026-11-20",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "arXiv — Штучний інтелект",
+    "filterVersion": "2.1",
+    "feedKind": "ai_topic",
+    "sourceDescription": "arXiv:2611.23750v1 Announce Type: cross Abstract: Diffusion language models (DLMs) offer a flexible alternative to autoregressive models, enabling any-order infilling. While most existing decoding methods treat decoded tokens as fixed, some recent models allow previously decoded tokens to be revised only by replacing them with alternative tokens, a paradigm we refer to as replacement-only editing (ROE). Although ROE can correct individual tokens, it is inefficient for sequence shifts caused by missing or extra tokens and struggles when errors occur across many positions. To address these limitations, we propose LED (Levenshtein Editing for Diffusion Language Models), a post-training framework that extends ROE with insertion and deletion, enabling Levenshtein-style refinement of generated sequences. It uses two training designs. First, it reconstructs edit supervision on the fly during supervised fine-tuning using longest-common-subsequence alignment, enabling insertion and deletion learning without manually annotated labels. Second, it adopts multi-stage training, where the state from one stage becomes the input to the next, exposing the model to its earlier errors and enabling it to correct them. When applied to the 16B-parameter LLaDA2.1-Mini Base, LED raises the average score across twelve benchmarks from 54.86 to 57.10 under confidence-guided decoding while increasing token",
+    "selectionReason": "напрям: Надійність ШІ; прикладні сигнали: improv, support, efficient",
+    "category": "Надійність ШІ",
+    "title": "Beyond Replacement: Levenshtein Editing for Diffusion Language Models",
+    "summary": "arXiv:2611.23750v1 Announce Type: cross Abstract: Diffusion language models (DLMs) offer a flexible alternative to autoregressive models, enabling any-order infilling. While most existing decoding methods treat decoded tokens as fixed, some recent models allow previously decoded tokens to be revised only by replacing them with…",
+    "body": "Цей матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та короткий опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.23750v1 Announce Type: cross Abstract: Diffusion language models (DLMs) offer a flexible alternative to autoregressive models, enabling any-order infilling. While most existing decoding methods treat decoded tokens as fixed, some recent models allow previously decoded tokens to be revised only by replacing them with alternative tokens, a paradigm we refer to as replacement-only editing (ROE). Although ROE can correct individual tokens, it is inefficient for sequence shifts caused by missing or extra tokens and struggles when errors occur across many positions. To address these limitations, we propose LED (Levenshtein Editing for Diffusion Language Models), a post-training framework that extends ROE with insertion and deletion, enabling Levenshtein-style refinement of generated sequences. It uses two training designs. First, it reconstructs edit supervision on the fly during supervised fine-tuning using longest-common-subsequence alignment, enabling insertion and deletion learning without manually annotated labels. Second, it adopts multi-stage training, where the state from one stage becomes the input to the next, exposing the model to its earlier errors and enabling it to correct them. When applied to the 16B-parameter LLaDA2.1-Mini Base, LED raises the average score across twelve benchmarks from 54.86 to 57.10 under confidence-guided decoding while increasing token\n\nЧому матеріал потрапив до добірки: напрям: Надійність ШІ; прикладні сигнали: improv, support, efficient. Це автоматичний тематичний відбір за ключовими словами, а не підтвердження ефективності чи незалежна експертна оцінка. Перед висновками прочитайте оригінальну публікацію.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте розділ про публікацію та рецензування в оригіналі.\n\nРедакційне застереження: автоматична система перевіряє формат стрічки, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження, не перевіряє незалежно всі твердження та не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-20",
+    "sources": [
+      {
+        "title": "Beyond Replacement: Levenshtein Editing for Diffusion Language Models",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2611.23750",
+        "publishedDate": "2026-11-20"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-20-34e8c57f8e84",
+    "date": "2026-11-20",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "arXiv — Штучний інтелект",
+    "filterVersion": "2.1",
+    "feedKind": "ai_topic",
+    "sourceDescription": "arXiv:2611.24000v1 Announce Type: cross Abstract: Large language models can infer and follow specific rules through in-context learning (ICL), yet may fail to remain faithful to provided evidence, giving rise to out-of-context (OOC) hallucination. Existing work has largely investigated the underlying mechanisms of ICL and OOC hallucination along separate lines. However, this separation obscures the mechanistic basis for these seemingly opposing outcomes. In this work, we study this contrast through the unified view of functional roles in dynamic context. The key observation is that role information can be internally represented without reliably constraining output. We derive a first-order decomposition to characterize the role effect, showing that its substantial influence depends on two necessary conditions, namely sufficient contribution magnitude and coherent signed aggregation. Causal analysis further shows that role span contributions affect key token choices involving response structure, content selection, and factual values. We further show that role-consistent choices depend on sufficient role span support at these key decisions, while failing choices can be reversed when this support overcomes the deficit. These findings support a common mechanistic view of ICL and OOC hallucination: each functional role defines the pattern of output decisions over which role span cont",
+    "selectionReason": "напрям: Надійність ШІ; прикладні сигнали: support, reliab",
+    "category": "Надійність ШІ",
+    "title": "A Mechanistic Analysis of In-Context Learning and Out-of-Context Hallucination",
+    "summary": "arXiv:2611.24000v1 Announce Type: cross Abstract: Large language models can infer and follow specific rules through in-context learning (ICL), yet may fail to remain faithful to provided evidence, giving rise to out-of-context (OOC) hallucination. Existing work has largely investigated the underlying mechanisms of ICL and OOC…",
+    "body": "Цей матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та короткий опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.24000v1 Announce Type: cross Abstract: Large language models can infer and follow specific rules through in-context learning (ICL), yet may fail to remain faithful to provided evidence, giving rise to out-of-context (OOC) hallucination. Existing work has largely investigated the underlying mechanisms of ICL and OOC hallucination along separate lines. However, this separation obscures the mechanistic basis for these seemingly opposing outcomes. In this work, we study this contrast through the unified view of functional roles in dynamic context. The key observation is that role information can be internally represented without reliably constraining output. We derive a first-order decomposition to characterize the role effect, showing that its substantial influence depends on two necessary conditions, namely sufficient contribution magnitude and coherent signed aggregation. Causal analysis further shows that role span contributions affect key token choices involving response structure, content selection, and factual values. We further show that role-consistent choices depend on sufficient role span support at these key decisions, while failing choices can be reversed when this support overcomes the deficit. These findings support a common mechanistic view of ICL and OOC hallucination: each functional role defines the pattern of output decisions over which role span cont\n\nЧому матеріал потрапив до добірки: напрям: Надійність ШІ; прикладні сигнали: support, reliab. Це автоматичний тематичний відбір за ключовими словами, а не підтвердження ефективності чи незалежна експертна оцінка. Перед висновками прочитайте оригінальну публікацію.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте розділ про публікацію та рецензування в оригіналі.\n\nРедакційне застереження: автоматична система перевіряє формат стрічки, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження, не перевіряє незалежно всі твердження та не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-20",
+    "sources": [
+      {
+        "title": "A Mechanistic Analysis of In-Context Learning and Out-of-Context Hallucination",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2611.24000",
+        "publishedDate": "2026-11-20"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-20-81dbaaa9ad06",
+    "date": "2026-11-20",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "arXiv — Штучний інтелект",
+    "filterVersion": "2.1",
+    "feedKind": "ai_topic",
+    "sourceDescription": "arXiv:2611.24002v1 Announce Type: cross Abstract: Radiology reports distinguish affirmed findings, explicit negations, and unmentioned concepts, but conventional global image--report contrastive learning often compresses these different evidence states into a single study-level target. We introduce \\model{}, which combines symmetric global image--report alignment with observation-masked finding supervision and a soft relation objective over affirmed report concepts. Text-derived finding prototypes are aligned with local visual tokens, while uncertain and unmentioned concepts are excluded from direct finding labels. We evaluate the framework on three CT benchmarks and five chest-radiograph benchmarks, together with component ablations, paired and clinical retrieval, localization, perturbation robustness, calibration, and per-finding analyses. \\model{} achieves macro-AUROC values of 73.6%, 66.5\\%, and 68.8% on CT-RATE, RAD-ChestCT, and INSPECT, and 80.2%, 91.4%, 78.5%, 86.5%, and 90.8% on ChestXray14, CheXpert, PadChest, RSNA, and SIIM-ACR, respectively. Relative to the matched global-only controls, the findings and relation objectives yield consistent gains across the evaluated datasets. These results demonstrate the practical value of treating observed and unobserved report concepts differently during medical image--text representation learning.",
+    "selectionReason": "напрям: Медицина; прикладні сигнали: evaluate",
+    "category": "Медицина",
+    "title": "ProtoBridge-CLIP: Observation-Masked Finding Prototypes for Medical Image--Report Representation Learning",
+    "summary": "arXiv:2611.24002v1 Announce Type: cross Abstract: Radiology reports distinguish affirmed findings, explicit negations, and unmentioned concepts, but conventional global image--report contrastive learning often compresses these different evidence states into a single study-level target. We introduce \\model{}, which combines…",
+    "body": "Цей матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та короткий опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.24002v1 Announce Type: cross Abstract: Radiology reports distinguish affirmed findings, explicit negations, and unmentioned concepts, but conventional global image--report contrastive learning often compresses these different evidence states into a single study-level target. We introduce \\model{}, which combines symmetric global image--report alignment with observation-masked finding supervision and a soft relation objective over affirmed report concepts. Text-derived finding prototypes are aligned with local visual tokens, while uncertain and unmentioned concepts are excluded from direct finding labels. We evaluate the framework on three CT benchmarks and five chest-radiograph benchmarks, together with component ablations, paired and clinical retrieval, localization, perturbation robustness, calibration, and per-finding analyses. \\model{} achieves macro-AUROC values of 73.6%, 66.5\\%, and 68.8% on CT-RATE, RAD-ChestCT, and INSPECT, and 80.2%, 91.4%, 78.5%, 86.5%, and 90.8% on ChestXray14, CheXpert, PadChest, RSNA, and SIIM-ACR, respectively. Relative to the matched global-only controls, the findings and relation objectives yield consistent gains across the evaluated datasets. These results demonstrate the practical value of treating observed and unobserved report concepts differently during medical image--text representation learning.\n\nЧому матеріал потрапив до добірки: напрям: Медицина; прикладні сигнали: evaluate. Це автоматичний тематичний відбір за ключовими словами, а не підтвердження ефективності чи незалежна експертна оцінка. Перед висновками прочитайте оригінальну публікацію.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте розділ про публікацію та рецензування в оригіналі.\n\nРедакційне застереження: автоматична система перевіряє формат стрічки, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження, не перевіряє незалежно всі твердження та не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-20",
+    "sources": [
+      {
+        "title": "ProtoBridge-CLIP: Observation-Masked Finding Prototypes for Medical Image--Report Representation Learning",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2611.24002",
+        "publishedDate": "2026-11-20"
+      }
+    ]
+  },
+  {
     "id": "rss-2026-11-20-c7c86e953df0",
     "date": "2026-11-20",
     "autoPublished": true,
@@ -67,30 +307,6 @@
         "title": "Diagnostic Accuracy and Navigation Behavior of Vision-Language Model Agents Reading Emergency CT and MRI Examinations",
         "publisher": "arXiv",
         "url": "https://arxiv.org/abs/2611.23480",
-        "publishedDate": "2026-11-20"
-      }
-    ]
-  },
-  {
-    "id": "rss-2026-11-20-ab4b2185aff2",
-    "date": "2026-11-20",
-    "autoPublished": true,
-    "sourceType": "rss",
-    "feedName": "arXiv — Штучний інтелект",
-    "filterVersion": "2.1",
-    "feedKind": "ai_topic",
-    "sourceDescription": "arXiv:2611.23520v1 Announce Type: new Abstract: Time-series sensing increasingly relies on neural networks, yet deployment on resource-constrained microcontrollers remains challenging. Aggressive model compression can reduce accuracy, while restricting weights to multiplication-free representations introduces further losses. We present BeFit, an end-to-end framework that shifts model capacity from weights to learnable Bernstein polynomial activations. BeFit (i) finds compact Bernstein-activated convolutional neural networks (BeCNNs) through hardware-aware neural architecture search and trains them via knowledge distillation; (ii) projects their weights to multiplication-free codes, freezes the codes, and recovers the resulting accuracy loss through the learnable activations; and (iii) generates model-specific kernels that exploit the projected weights for multiplication-free convolutions. On human activity recognition, BeCNNs are 2.75 percentage points (pp) more accurate on average than ReLU CNNs of identical architecture. On a TI CC3220SF (Cortex-M4), weight projection speeds BeCNNs up by 2.2x on average while losing 0.8 pp, compared with 2.4 pp for ReLU CNNs. Against the MLPerf Tiny DS-CNN reference model running on TensorFlow Lite Micro with CMSIS-NN, the unprojected BeCNN achieves 1.0 pp higher accuracy, 2.2x lower latency, and 6.4x lower flash, while the projected model re",
-    "selectionReason": "напрям: Освіта; прикладні сигнали: reduce",
-    "category": "Освіта",
-    "title": "BeFit: Shifting Complexity from Weights to Bernstein Activations for Resource-Constrained Sensing",
-    "summary": "arXiv:2611.23520v1 Announce Type: new Abstract: Time-series sensing increasingly relies on neural networks, yet deployment on resource-constrained microcontrollers remains challenging. Aggressive model compression can reduce accuracy, while restricting weights to multiplication-free representations introduces further losses.…",
-    "body": "Цей матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та короткий опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.23520v1 Announce Type: new Abstract: Time-series sensing increasingly relies on neural networks, yet deployment on resource-constrained microcontrollers remains challenging. Aggressive model compression can reduce accuracy, while restricting weights to multiplication-free representations introduces further losses. We present BeFit, an end-to-end framework that shifts model capacity from weights to learnable Bernstein polynomial activations. BeFit (i) finds compact Bernstein-activated convolutional neural networks (BeCNNs) through hardware-aware neural architecture search and trains them via knowledge distillation; (ii) projects their weights to multiplication-free codes, freezes the codes, and recovers the resulting accuracy loss through the learnable activations; and (iii) generates model-specific kernels that exploit the projected weights for multiplication-free convolutions. On human activity recognition, BeCNNs are 2.75 percentage points (pp) more accurate on average than ReLU CNNs of identical architecture. On a TI CC3220SF (Cortex-M4), weight projection speeds BeCNNs up by 2.2x on average while losing 0.8 pp, compared with 2.4 pp for ReLU CNNs. Against the MLPerf Tiny DS-CNN reference model running on TensorFlow Lite Micro with CMSIS-NN, the unprojected BeCNN achieves 1.0 pp higher accuracy, 2.2x lower latency, and 6.4x lower flash, while the projected model re\n\nЧому матеріал потрапив до добірки: напрям: Освіта; прикладні сигнали: reduce. Це автоматичний тематичний відбір за ключовими словами, а не підтвердження ефективності чи незалежна експертна оцінка. Перед висновками прочитайте оригінальну публікацію.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте розділ про публікацію та рецензування в оригіналі.\n\nРедакційне застереження: автоматична система перевіряє формат стрічки, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження, не перевіряє незалежно всі твердження та не замінює людську редакційну перевірку.",
-    "sourceDate": "2026-11-20",
-    "sources": [
-      {
-        "title": "BeFit: Shifting Complexity from Weights to Bernstein Activations for Resource-Constrained Sensing",
-        "publisher": "arXiv",
-        "url": "https://arxiv.org/abs/2611.23520",
         "publishedDate": "2026-11-20"
       }
     ]

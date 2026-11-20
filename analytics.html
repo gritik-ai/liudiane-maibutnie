@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0d2925">
+  <meta name="description" content="Публічна аналітика матеріалів про відповідальний штучний інтелект, науку та якість життя. Дані формуються з перевіреної публічної бібліотеки проєкту Людяне майбутнє.">
+  <title>Аналітика користі для людства — Людяне майбутнє</title>
+  <style>
+    :root{--bg:#f3f6f2;--paper:#fff;--ink:#172923;--muted:#66756e;--green:#174d40;--green2:#246b58;--mint:#dcefe5;--lime:#d6ef9b;--line:#e2e9e3;--shadow:0 14px 38px rgba(18,48,38,.08);--blue:#3186d9;--purple:#8754bd;--orange:#dc963c;--teal:#2b9a86;--red:#bd6862}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}a{color:inherit}button,select,input{font:inherit}.wrap{width:min(1240px,calc(100% - 36px));margin:auto}
+    header{background:#0d2925;color:#fff;position:sticky;top:0;z-index:20;border-bottom:1px solid #ffffff18}.nav{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:11px;text-decoration:none;font-weight:800;letter-spacing:-.02em}.brandmark{width:39px;height:39px;border-radius:13px;background:linear-gradient(145deg,#d9f0a3,#79bd91);display:grid;place-items:center;color:#12372d;font-size:22px}.brand small{display:block;color:#afc7bb;font-size:10px;font-weight:600;letter-spacing:.09em;text-transform:uppercase}.navlinks{display:flex;gap:23px;align-items:center}.navlinks a{font-size:13px;color:#dce8e1;text-decoration:none}.navlinks a:hover,.navlinks a[aria-current=page]{color:var(--lime)}.backlink{border:1px solid #78958a;border-radius:999px;padding:8px 13px;text-decoration:none;color:#eef7f0;font-size:12px;font-weight:700}
+    .hero{background:radial-gradient(circle at 88% 20%,#286a57 0,transparent 28%),linear-gradient(120deg,#102f29,#174d40 68%,#1d5a49);color:white;padding:45px 0 55px}.hero-grid{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:end}.kicker{color:#d8efb4;text-transform:uppercase;letter-spacing:.14em;font-size:11px;font-weight:850}.hero h1{font-size:clamp(30px,4.5vw,48px);line-height:1.08;letter-spacing:-.045em;margin:10px 0}.hero p{color:#d4e4dc;max-width:720px;margin:0}.hero-actions{display:flex;gap:9px;align-items:center;flex-wrap:wrap}.btn{border:0;border-radius:12px;padding:10px 15px;font-weight:800;font-size:13px}.btn-light{background:var(--lime);color:#17382e}.btn-ghost{background:transparent;border:1px solid #87a698;color:#fff}.stamp{font-size:11px;color:#c8dbd1;margin-top:12px}
+    .main{padding:26px 0 60px}.status{display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap;background:#eaf4eb;border:1px solid #d5e8d7;color:#426553;border-radius:13px;padding:10px 13px;font-size:12px;font-weight:700;margin-bottom:17px}.status-left{display:flex;gap:9px;align-items:center}.dot{width:8px;height:8px;border-radius:50%;background:#3b9563;box-shadow:0 0 0 4px #3b95631b}.status button{border:1px solid #b8d3bd;border-radius:9px;background:white;color:#315b43;padding:7px 10px;font-size:12px;font-weight:750}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:13px;margin:16px 0}.stat{background:var(--paper);border:1px solid var(--line);border-radius:17px;padding:17px;box-shadow:var(--shadow);min-height:108px}.stat-top{display:flex;align-items:center;justify-content:space-between;gap:10px}.stat-icon{width:38px;height:38px;border-radius:12px;background:#eaf3ec;color:var(--green);display:grid;place-items:center;font-size:19px}.stat strong{font-size:29px;letter-spacing:-.04em;display:block;color:var(--green);line-height:1.2}.stat span{font-size:12px;color:var(--muted)}.stat small{font-size:11px;color:#74837a}
+    .grid-two{display:grid;grid-template-columns:1.2fr .8fr;gap:15px;margin:15px 0}.grid-bottom{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin:15px 0}.panel{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:18px;box-shadow:var(--shadow);min-width:0}.panel-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:15px}.panel h2{font-size:17px;letter-spacing:-.02em;margin:0}.panel-sub{font-size:11px;color:var(--muted);margin-top:3px}.periods{display:flex;gap:4px;flex-wrap:wrap;background:#f1f5f1;padding:4px;border-radius:10px}.periods button{border:0;background:transparent;border-radius:8px;padding:6px 9px;color:#607067;font-size:11px;font-weight:800}.periods button.active{background:var(--green);color:white}.chart-wrap{min-height:220px}.bars{height:190px;display:flex;align-items:flex-end;gap:5px;padding:12px 4px 0;border-bottom:1px solid var(--line);position:relative}.bar-col{flex:1;min-width:0;display:flex;align-items:center;flex-direction:column;justify-content:flex-end;height:100%;gap:5px}.bar{width:min(100%,28px);min-height:2px;background:linear-gradient(180deg,#4e9d78,#1b6049);border-radius:6px 6px 2px 2px;position:relative}.bar:hover{filter:brightness(1.12)}.bar-value{font-size:9px;color:#6d7b72;min-height:12px}.bar-label{font-size:9px;color:#738078;white-space:nowrap;transform:translateY(2px)}.chart-legend{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:var(--muted);font-size:11px;margin-top:12px}.no-data{padding:45px 15px;text-align:center;color:var(--muted);font-size:13px;background:#f8faf8;border:1px dashed var(--line);border-radius:12px}
+    .distribution{display:grid;grid-template-columns:190px 1fr;align-items:center;gap:15px;min-height:215px}.donut{width:178px;height:178px;border-radius:50%;position:relative;margin:auto;background:conic-gradient(#dfe8e1 0deg 360deg)}.donut:after{content:"";position:absolute;inset:31%;background:white;border-radius:50%;box-shadow:inset 0 0 0 1px var(--line)}.donut-center{position:absolute;inset:0;display:grid;place-content:center;text-align:center;z-index:1;font-weight:850;font-size:25px;line-height:1.1}.donut-center small{font-size:10px;color:var(--muted);font-weight:650}.legend{display:grid;gap:8px}.legend-row{display:grid;grid-template-columns:9px 1fr auto;gap:8px;align-items:center;font-size:11px;color:#53635a}.legend-swatch{width:9px;height:9px;border-radius:50%}.legend-row strong{font-size:11px;color:var(--ink)}
+    .category-list{display:grid;gap:12px}.cat-row{display:grid;grid-template-columns:minmax(115px, .9fr) 1.4fr 32px;gap:10px;align-items:center;font-size:12px}.cat-name{color:#46594e}.track{height:9px;background:#edf2ed;border-radius:99px;overflow:hidden}.fill{height:100%;border-radius:99px;background:linear-gradient(90deg,#2f7258,#8fbd80)}.cat-count{text-align:right;font-weight:850;color:#315d49}.label-list{display:grid;gap:12px}.label-row{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:11px 12px;background:#f7faf7;border:1px solid #edf1ed;border-radius:12px;font-size:12px}.label-left{display:flex;gap:9px;align-items:center}.label-dot{width:10px;height:10px;border-radius:50%}.label-row strong{font-size:14px}
+    .recent{margin-top:15px}.recent-list{display:grid;grid-template-columns:1fr 1fr;gap:10px}.recent-item{border:1px solid var(--line);border-radius:13px;padding:13px;min-width:0}.recent-meta{display:flex;gap:8px;flex-wrap:wrap;color:var(--muted);font-size:10px;margin-bottom:6px}.pill{background:#edf5ed;color:#35664e;border-radius:99px;padding:3px 7px;font-weight:800}.recent-item a{font-size:13px;line-height:1.35;font-weight:800;text-decoration:none;color:#203e32}.recent-item a:hover{text-decoration:underline;color:var(--green2)}.recent-source{display:block;margin-top:7px;font-size:10px;color:#5d7767;text-decoration:underline;overflow-wrap:anywhere}
+    .method{background:#edf3ed;border:1px solid #dfe9df;border-radius:14px;padding:14px 16px;color:#506157;font-size:12px;margin-top:16px}.method strong{color:#284c3a}.method ul{margin:7px 0 0;padding-left:18px}.footer{background:#102f29;color:#c5d9ce;padding:25px 0;font-size:12px}.footer-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.footer a{color:#d8efb4}
+    @media(max-width:900px){.grid-two,.grid-bottom{grid-template-columns:1fr}.distribution{grid-template-columns:170px 1fr}.donut{width:158px;height:158px}}
+    @media(max-width:650px){.wrap{width:min(100% - 24px,1240px)}.nav{min-height:62px}.navlinks{gap:12px}.navlinks a{font-size:11px}.brand{font-size:13px}.brandmark{width:34px;height:34px}.backlink{display:none}.hero{padding:35px 0 38px}.hero-grid{grid-template-columns:1fr}.hero-actions{justify-content:flex-start}.stats{grid-template-columns:repeat(2,1fr);gap:9px}.stat{padding:13px;min-height:100px}.stat strong{font-size:24px}.panel{padding:14px}.panel-head{display:block}.periods{margin-top:10px;width:max-content}.distribution{grid-template-columns:1fr}.donut{width:170px;height:170px}.legend{grid-template-columns:1fr 1fr}.recent-list{grid-template-columns:1fr}.cat-row{grid-template-columns:110px 1fr 25px;font-size:11px}.bar-label{font-size:8px}.status{align-items:flex-start}.status button{margin-left:auto}}
+  </style>
+</head>
+<body>
+<header><div class="wrap nav">
+  <a class="brand" href="/" aria-label="Людяне майбутнє — на головну"><span class="brandmark">✧</span><span>Людяне майбутнє<small>ШІ для добробуту кожного</small></span></a>
+  <nav class="navlinks" aria-label="Головна навігація"><a href="/">Головна</a><a href="/#ideas">Бібліотека</a><a href="/analytics.html" aria-current="page">Аналітика</a></nav>
+  <a class="backlink" href="/#manifesto">Наші принципи</a>
+</div></header>
+<section class="hero"><div class="wrap hero-grid">
+  <div><div class="kicker">Відкриті дані · перевірені публікації</div><h1>Аналітика користі<br>для людства</h1><p>Показуємо, які теми досліджують автори й організації та як розподіляються схвалені матеріали про відповідальний ШІ, науку й суспільний добробут.</p><div class="stamp" id="updatedAt">Дані ще не завантажено</div></div>
+  <div class="hero-actions"><button class="btn btn-light" id="refreshBtn" type="button">↻ Оновити дані</button><a class="btn btn-ghost" href="/#ideas">Перейти до бібліотеки →</a></div>
+</div></section>
+<main class="wrap main">
+  <div class="status"><div class="status-left"><span class="dot"></span><span id="dataStatus" aria-live="polite">Завантажуємо публічну бібліотеку…</span></div><button id="retryBtn" type="button">Оновити</button></div>
+  <section class="stats" aria-label="Ключові показники">
+    <article class="stat"><div class="stat-top"><div class="stat-icon">▤</div><small>Публічна бібліотека</small></div><strong id="publishedCount">—</strong><span>Опублікованих матеріалів</span></article>
+    <article class="stat"><div class="stat-top"><div class="stat-icon">◷</div><small>За останні 30 днів</small></div><strong id="recentCount">—</strong><span>Нових публікацій</span></article>
+    <article class="stat"><div class="stat-top"><div class="stat-icon">◎</div><small>Тематичне охоплення</small></div><strong id="categoryCount">—</strong><span>Напрямів із публікаціями</span></article>
+    <article class="stat"><div class="stat-top"><div class="stat-icon">⌕</div><small>Редакційна черга</small></div><strong id="reviewCount">—</strong><span>Матеріалів очікують перевірки</span></article>
+  </section>
+  <div class="grid-two">
+    <section class="panel"><div class="panel-head"><div><h2>Динаміка публікацій</h2><div class="panel-sub">Кількість матеріалів за датою публікації</div></div><div class="periods" id="periods" aria-label="Період графіка"><button data-days="7">7 днів</button><button data-days="30" class="active">30 днів</button><button data-days="90">90 днів</button><button data-days="365">1 рік</button></div></div><div id="trendChart" class="chart-wrap"><div class="no-data">Очікуємо дані бібліотеки.</div></div><div class="chart-legend"><span>Джерело: публічна бібліотека сайту</span><span id="trendTotal"></span></div></section>
+    <section class="panel"><div class="panel-head"><div><h2>Розподіл за напрямами</h2><div class="panel-sub">Лише опубліковані матеріали; це не рейтинг впливу</div></div></div><div class="distribution"><div class="donut" id="categoryDonut"><div class="donut-center"><span id="donutTotal">—</span><small>матеріалів</small></div></div><div class="legend" id="categoryLegend"><div class="no-data">Дані з'являться після завантаження.</div></div></div></section>
+  </div>
+  <div class="grid-bottom">
+    <section class="panel"><div class="panel-head"><div><h2>Публікації за категоріями</h2><div class="panel-sub">Фактична кількість схвалених матеріалів</div></div></div><div class="category-list" id="categoryBars"><div class="no-data">Очікуємо дані бібліотеки.</div></div></section>
+    <section class="panel"><div class="panel-head"><div><h2>Редакційні позначки</h2><div class="panel-sub">Як редакція описала тип матеріалу</div></div></div><div class="label-list" id="labelBreakdown"><div class="no-data">Очікуємо дані бібліотеки.</div></div><div class="method"><strong>Як читати ці показники</strong><br>Позначка «Позитивний вплив» або «Перспективний розвиток» є редакційною характеристикою матеріалу, а не вимірюванням доведеного суспільного ефекту.</div></section>
+  </div>
+  <section class="panel recent"><div class="panel-head"><div><h2>Останні схвалені публікації</h2><div class="panel-sub">Відкриті матеріали з посиланнями на першоджерела</div></div><a href="/#ideas" style="font-size:12px;color:var(--green2);font-weight:800">Уся бібліотека →</a></div><div id="recentList" class="recent-list"><div class="no-data">Очікуємо дані бібліотеки.</div></div></section>
+  <div class="method"><strong>Методологія та обмеження</strong><ul><li>Панель читає <code>/content/articles.json</code> — ту саму публічну бібліотеку, яку використовує головна сторінка.</li><li>До статистики входять ручні публікації та автоматичні RSS-матеріали зі статусом <code>approved</code>. Матеріали на перевірці, відхилені та дублікати не включаються до публічних графіків.</li><li>Показники описують кількість і тематичний розподіл публікацій. Вони не доводять, що описані технології вже покращили життя людей або досягли заявлених результатів.</li><li>Дані оновлюються під час відкриття сторінки або після натискання «Оновити дані».</li></ul></div>
+</main>
+<footer class="footer"><div class="wrap footer-row"><div>✧ Людяне майбутнє · Технології для людей</div><div><a href="/">Головна</a> · <a href="/#ideas">Бібліотека</a></div><div>Публічна аналітика на основі перевіреної бібліотеки</div></div></footer>
+<script>
+(()=>{
+  'use strict';
+  const DATA_URL='/content/articles.json';
+  const COLORS=['#3186d9','#8754bd','#4e9b62','#df963e','#2b9a86','#ba7065','#607d9e','#b28b4f','#7d8d84'];
+  const LABEL_COLORS={'Позитивний вплив':'#2f9662','Перспективний розвиток':'#3987c9','Безпека та виклики':'#d28a37','Не визначено':'#88958d'};
+  let published=[];let raw=[];let selectedDays=30;
+  const $=id=>document.getElementById(id);
+  const safeText=value=>String(value??'');
+  function parseDate(value){
+    if(!value)return null;
+    const s=String(value).slice(0,10);const m=/^(\d{4})-(\d{2})-(\d{2})$/.exec(s);
+    if(m){const d=new Date(Number(m[1]),Number(m[2])-1,Number(m[3]));return Number.isNaN(d.getTime())?null:d;}
+    const d=new Date(value);return Number.isNaN(d.getTime())?null:d;
+  }
+  function dateKey(d){return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;}
+  function fmtDate(value){const d=parseDate(value);return d?new Intl.DateTimeFormat('uk-UA',{day:'numeric',month:'short',year:'numeric'}).format(d):'Дата невідома';}
+  function isPublic(a){return !!a && typeof a.title==='string' && typeof a.body==='string' && (!a.autoPublished || a.editorialStatus==='approved');}
+  function categoryOf(a){const c=safeText(a.category).trim();return c||'Без категорії';}
+  function sourcesOf(a){return Array.isArray(a.sources)?a.sources.filter(s=>s&&typeof s.url==='string'):[];}
+  function hostOf(url){try{const u=new URL(url);return u.protocol==='https:'?u.hostname.replace(/^www\./,''):'';}catch{return '';}}
+  function setCount(id,n){$(id).textContent=Number(n).toLocaleString('uk-UA');}
+  function countBy(items,keyFn){const map=new Map();for(const item of items){const key=keyFn(item);map.set(key,(map.get(key)||0)+1);}return map;}
+  function publicPendingCount(){return raw.filter(a=>a&&a.autoPublished===true&&(a.editorialStatus||'needs_review')==='needs_review').length;}
+  function renderStats(){
+    const today=new Date();const cutoff=new Date(today.getFullYear(),today.getMonth(),today.getDate()-29);
+    const recent=published.filter(a=>{const d=parseDate(a.date||a.sourceDate);return d&&d>=cutoff&&d<=new Date(today.getFullYear(),today.getMonth(),today.getDate()+1);}).length;
+    const cats=new Set(published.map(categoryOf));const publishers=new Set(published.flatMap(a=>sourcesOf(a).map(s=>hostOf(s.url)).filter(Boolean)));
+    setCount('publishedCount',published.length);setCount('recentCount',recent);setCount('categoryCount',cats.size);setCount('reviewCount',publicPendingCount());
+    $('updatedAt').textContent='Дані оновлено: '+new Intl.DateTimeFormat('uk-UA',{dateStyle:'medium',timeStyle:'short'}).format(new Date());
+    $('dataStatus').textContent=`Завантажено ${published.length.toLocaleString('uk-UA')} публічних матеріалів · ${publishers.size.toLocaleString('uk-UA')} доменів першоджерел · очікують перевірки: ${publicPendingCount().toLocaleString('uk-UA')}`;
+  }
+  function renderTrend(){
+    const root=$('trendChart');root.replaceChildren();const today=new Date();today.setHours(0,0,0,0);
+    let buckets=[];
+    if(selectedDays===365){
+      const start=new Date(today.getFullYear(),today.getMonth()-11,1);
+      for(let i=0;i<12;i++){const d=new Date(start.getFullYear(),start.getMonth()+i,1);buckets.push({key:`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}`,label:new Intl.DateTimeFormat('uk-UA',{month:'short'}).format(d),start:d,end:new Date(d.getFullYear(),d.getMonth()+1,1)});}
+    }else if(selectedDays===90){
+      for(let i=12;i>=0;i--){const end=new Date(today);end.setDate(end.getDate()-i*7+1);const start=new Date(end);start.setDate(start.getDate()-7);buckets.push({key:dateKey(start),label:dateKey(start).slice(5),start,end});}
+    }else{
+      const days=selectedDays;for(let i=days-1;i>=0;i--){const d=new Date(today);d.setDate(d.getDate()-i);buckets.push({key:dateKey(d),label:(i===0||i===days-1||selectedDays===7||i%5===0)?`${d.getDate()}.${String(d.getMonth()+1).padStart(2,'0')}`:'',start:d,end:new Date(d.getFullYear(),d.getMonth(),d.getDate()+1)});}
+    }
+    const values=buckets.map(b=>published.filter(a=>{const d=parseDate(a.date||a.sourceDate);return d&&d>=b.start&&d<b.end;}).length);const max=Math.max(1,...values);const total=values.reduce((x,y)=>x+y,0);
+    if(!total){root.innerHTML='<div class="no-data">За обраний період у бібліотеці немає публікацій.</div>';}
+    else{
+      const bars=document.createElement('div');bars.className='bars';
+      buckets.forEach((b,i)=>{const col=document.createElement('div');col.className='bar-col';const value=document.createElement('span');value.className='bar-value';value.textContent=values[i]||'';const bar=document.createElement('div');bar.className='bar';bar.style.height=`${Math.max(values[i]?4:1,(values[i]/max)*148)}px`;bar.title=`${b.label||b.key}: ${values[i]} матеріалів`;bar.setAttribute('aria-label',bar.title);const label=document.createElement('span');label.className='bar-label';label.textContent=b.label;col.append(value,bar,label);bars.append(col);});root.append(bars);
+    }
+    $('trendTotal').textContent=`За період: ${total} матеріалів`;
+  }
+  function renderCategories(){
+    const counts=countBy(published,categoryOf);const entries=[...counts.entries()].sort((a,b)=>b[1]-a[1]);const total=published.length;const legend=$('categoryLegend');legend.replaceChildren();const bars=$('categoryBars');bars.replaceChildren();$('donutTotal').textContent=total.toLocaleString('uk-UA');
+    if(!entries.length){$('categoryDonut').style.background='conic-gradient(#dfe8e1 0deg 360deg)';legend.innerHTML='<div class="no-data">Поки немає опублікованих матеріалів.</div>';bars.innerHTML='<div class="no-data">Поки немає опублікованих матеріалів.</div>';return;}
+    let cumulative=0;const segments=[];entries.forEach(([name,count],i)=>{const start=cumulative/total*360;cumulative+=count;const end=cumulative/total*360;segments.push(`${COLORS[i%COLORS.length]} ${start.toFixed(2)}deg ${end.toFixed(2)}deg`);const row=document.createElement('div');row.className='legend-row';const sw=document.createElement('span');sw.className='legend-swatch';sw.style.background=COLORS[i%COLORS.length];const label=document.createElement('span');label.textContent=name;const val=document.createElement('strong');val.textContent=`${count} · ${(count/total*100).toFixed(1).replace('.',',')}%`;row.append(sw,label,val);legend.append(row);
+      const barRow=document.createElement('div');barRow.className='cat-row';const cat=document.createElement('div');cat.className='cat-name';cat.textContent=name;const track=document.createElement('div');track.className='track';const fill=document.createElement('div');fill.className='fill';fill.style.width=`${count/Math.max(...entries.map(e=>e[1]))*100}%`;track.append(fill);const number=document.createElement('div');number.className='cat-count';number.textContent=count;barRow.append(cat,track,number);bars.append(barRow);
+    });$('categoryDonut').style.background=`conic-gradient(${segments.join(',')})`;
+  }
+  function renderLabels(){
+    const counts=countBy(published,a=>safeText(a.editorialLabel).trim()||'Не визначено');const entries=[...counts.entries()].sort((a,b)=>b[1]-a[1]);const root=$('labelBreakdown');root.replaceChildren();if(!entries.length){root.innerHTML='<div class="no-data">Поки немає редакційних позначок.</div>';return;}
+    entries.forEach(([label,count])=>{const row=document.createElement('div');row.className='label-row';const left=document.createElement('div');left.className='label-left';const dot=document.createElement('span');dot.className='label-dot';dot.style.background=LABEL_COLORS[label]||'#88958d';const text=document.createElement('span');text.textContent=label;left.append(dot,text);const value=document.createElement('strong');value.textContent=count.toLocaleString('uk-UA');row.append(left,value);root.append(row);});
+  }
+  function renderRecent(){
+    const root=$('recentList');root.replaceChildren();const rows=published.slice().sort((a,b)=>String(b.date||b.sourceDate||'').localeCompare(String(a.date||a.sourceDate||''))).slice(0,8);
+    if(!rows.length){root.innerHTML='<div class="no-data">Поки немає схвалених матеріалів.</div>';return;}
+    rows.forEach(a=>{const card=document.createElement('article');card.className='recent-item';const meta=document.createElement('div');meta.className='recent-meta';const cat=document.createElement('span');cat.className='pill';cat.textContent=categoryOf(a);const date=document.createElement('span');date.textContent=fmtDate(a.date||a.sourceDate);meta.append(cat,date);const title=document.createElement('div');const link=document.createElement('a');link.textContent=safeText(a.title);const source=sourcesOf(a)[0];const host=source?hostOf(source.url):'';if(host){link.href=source.url;link.target='_blank';link.rel='noopener noreferrer';const src=document.createElement('span');src.className='recent-source';src.textContent='Першоджерело: '+(source.publisher||host);title.append(link);card.append(meta,title,src);}else{link.href='/#ideas';link.setAttribute('aria-label','Знайти матеріал у бібліотеці: '+safeText(a.title));title.append(link);card.append(meta,title);}root.append(card);});
+  }
+  function render(){renderStats();renderTrend();renderCategories();renderLabels();renderRecent();}
+  async function loadData(){
+    const status=$('dataStatus');$('refreshBtn').disabled=true;$('retryBtn').disabled=true;status.textContent='Оновлюємо публічну бібліотеку…';
+    try{const response=await fetch(DATA_URL+'?ts='+Date.now(),{cache:'no-store'});if(!response.ok)throw new Error(`HTTP ${response.status}: не вдалося завантажити articles.json`);const data=await response.json();if(!Array.isArray(data))throw new Error('Бібліотека має неочікуваний формат.');raw=data.filter(x=>x&&typeof x==='object');published=raw.filter(isPublic);render();}
+    catch(error){status.textContent='Не вдалося завантажити статистику: '+error.message;$('updatedAt').textContent='Дані недоступні';['publishedCount','recentCount','categoryCount','reviewCount','donutTotal'].forEach(id=>$(id).textContent='—');$('trendChart').innerHTML='<div class="no-data">Перевірте, чи файл /content/articles.json доступний на сайті.</div>';}
+    finally{$('refreshBtn').disabled=false;$('retryBtn').disabled=false;}
+  }
+  $('refreshBtn').addEventListener('click',loadData);$('retryBtn').addEventListener('click',loadData);$('periods').addEventListener('click',e=>{const b=e.target.closest('button[data-days]');if(!b)return;selectedDays=Number(b.dataset.days);$('periods').querySelectorAll('button').forEach(x=>x.classList.toggle('active',x===b));renderTrend();});
+  loadData();
+})();
+</script>
+</body>
+</html>

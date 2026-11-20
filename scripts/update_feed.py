@@ -25,7 +25,7 @@ ARTICLES_FILE = ROOT / "content" / "articles.json"
 MAX_AGE_DAYS = 60
 MAX_NEW_ITEMS_PER_RUN = 10
 MAX_TOTAL_ITEMS = 200
-FILTER_VERSION = "2.0"
+FILTER_VERSION = "2.1"
 
 # Broad, reputable feeds are narrowed by the rules below. Domain-specific MIT
 # feeds increase the chance of finding practical health, education and climate
@@ -115,9 +115,15 @@ CATEGORY_KEYWORDS = {
         "пацієнт", "діагност", "лікуван", "реабілітац",
     ],
     "Освіта": [
-        "education", "learning", "student", "teacher", "teaching", "school",
-        "university", "tvet", "training", "tutor", "literacy", "освіт",
-        "навчан", "студент", "вчител", "школ", "університет",
+        # Do not use bare "learning" or "training": they occur in ordinary
+        # machine-learning papers and model-training descriptions.
+        "education", "educational", "student", "students", "teacher", "teachers",
+        "teaching", "school", "classroom", "curriculum", "university", "tvet",
+        "tutor", "literacy", "learning outcomes", "learning support",
+        "personalized learning", "adaptive learning", "distance learning",
+        "lifelong learning", "vocational training", "teacher training",
+        "professional training", "освіт", "студент", "вчител", "школ",
+        "університет", "навчальні програми", "професійне навчання",
     ],
     "Мир і безпека": [
         "peacebuilding", "humanitarian", "disaster response", "emergency response",
@@ -126,10 +132,14 @@ CATEGORY_KEYWORDS = {
         "раннє попередження", "повен", "пожеж", "стихійн",
     ],
     "Екологія": [
-        "climate", "environment", "sustainab", "biodiversity", "agriculture",
-        "crop", "food system", "food security", "water quality", "water resource",
-        "conservation", "pollution", "еколог", "клімат", "довкіл", "сільськ",
-        "аграр", "біорізноман", "продоволь", "водних ресурс", "забруднен",
+        # Bare "environment" is ambiguous (e.g. a software/testing environment).
+        # Use explicit environmental/ecosystem terms instead.
+        "climate", "environmental", "environmental impact", "environmental monitoring",
+        "ecosystem", "sustainab", "biodiversity", "agriculture", "crop",
+        "food system", "food security", "water quality", "water resource",
+        "conservation", "pollution", "renewable energy", "emissions",
+        "еколог", "клімат", "довкіл", "сільськ", "аграр", "біорізноман",
+        "продоволь", "водних ресурс", "забруднен", "відновлювана енергетика",
     ],
     "Права людини": [
         "accessibility", "accessible", "assistive", "disability", "inclusion",
@@ -137,9 +147,13 @@ CATEGORY_KEYWORDS = {
         "доступн", "інклюз", "права людини", "рівний доступ",
     ],
     "Державне управління": [
+        # Generic "governance" and "policy" also appear in technical AI papers.
+        # Require a public/regulatory context.
         "government", "public service", "public sector", "public administration",
-        "governance", "civic", "policy", "public services", "державн",
-        "уряд", "публічн послуг", "врядуван", "державних послуг",
+        "public governance", "public policy", "policy makers", "policymakers",
+        "public comments", "regulator", "regulators", "regulatory oversight",
+        "regulatory agency", "public services", "державн", "уряд",
+        "публічн послуг", "державних послуг", "органи влади", "регулятор",
     ],
     "Економіка та добробут": [
         "workforce", "worker wellbeing", "labor market", "employment", "poverty",
@@ -410,6 +424,10 @@ def article_from(
         "sourceType": "rss",
         "feedName": str(feed["name"]),
         "filterVersion": FILTER_VERSION,
+        "feedKind": str(feed.get("kind", "ai_topic")),
+        # Keep the full publisher-provided description so future runs can
+        # re-evaluate consistently instead of relying on the short display summary.
+        "sourceDescription": description,
         "selectionReason": str(assessment["reason"]),
         "category": category,
         "title": title,
@@ -436,11 +454,13 @@ def load_existing() -> list[dict[str, object]]:
 
 
 def prune_existing(existing: list[dict[str, object]]) -> tuple[list[dict[str, object]], int]:
-    """Remove only old auto-RSS cards that fail the current editorial filter.
+    """Re-check auto-RSS cards without repeatedly pruning on truncated summaries.
 
-    Manually authored seed content is never changed. arXiv is known to be an
-    AI-specific source in the previous version; other sources must still show
-    an explicit AI connection when re-evaluated.
+    Manually authored content is never changed. New cards store sourceDescription
+    and feedKind, allowing the exact same rules to be applied on later runs.
+    Older cards without a full source description are retained unless a clear
+    hard-exclusion is visible in the title/summary; missing metadata alone is not
+    sufficient evidence for deletion.
     """
     kept: list[dict[str, object]] = []
     removed = 0
@@ -448,22 +468,36 @@ def prune_existing(existing: list[dict[str, object]]) -> tuple[list[dict[str, ob
         if not (article.get("autoPublished") is True and article.get("sourceType") == "rss"):
             kept.append(article)
             continue
+
+        title = str(article.get("title", ""))
+        source_description = str(article.get("sourceDescription", "") or "")
+        summary = str(article.get("summary", "") or "")
+        description_for_review = source_description or summary
+        exclusion = find_exclusion(f"{title} {description_for_review}")
+        if exclusion:
+            removed += 1
+            print(f"[PRUNE] {title or 'Без назви'} — відсів: {exclusion}")
+            continue
+
+        if not source_description:
+            # Legacy cards only contain a short display excerpt. Do not make a
+            # destructive decision from incomplete text; retain until enough
+            # publisher metadata is available.
+            kept.append(article)
+            print(f"[KEEP] {title or 'Без назви'} — немає повного опису джерела для повторної оцінки")
+            continue
+
         sources = article.get("sources", [])
         source = sources[0] if isinstance(sources, list) and sources and isinstance(sources[0], dict) else {}
         publisher = str(source.get("publisher", ""))
-        old_feed_kind = "ai_topic" if publisher.casefold() == "arxiv" else "institutional"
-        item = {
-            "title": str(article.get("title", "")),
-            # Re-check only the publisher's short excerpt, not our own
-            # automatically generated explanatory paragraphs.
-            "description": str(article.get("summary", "")),
-        }
-        decision = assess_relevance(item, {"kind": old_feed_kind})
+        feed_kind = str(article.get("feedKind") or ("ai_topic" if publisher.casefold() == "arxiv" else "institutional"))
+        item = {"title": title, "description": source_description}
+        decision = assess_relevance(item, {"kind": feed_kind})
         if decision["accepted"]:
             kept.append(article)
         else:
             removed += 1
-            print(f"[PRUNE] {article.get('title', 'Без назви')} — {decision['reason']}")
+            print(f"[PRUNE] {title or 'Без назви'} — {decision['reason']}")
     return kept, removed
 
 

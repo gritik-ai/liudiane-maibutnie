@@ -28,7 +28,7 @@ MAX_AGE_DAYS = 60
 MAX_NEW_ITEMS_PER_RUN = 10
 MAX_TOTAL_ITEMS = 200
 MIN_DESCRIPTION_LENGTH = 40
-FILTER_VERSION = "2.3"
+FILTER_VERSION = "2.4"
 
 FEEDS: list[dict[str, object]] = [
     {"name": "MIT News — Штучний інтелект", "url": "https://news.mit.edu/rss/topic/artificial-intelligence2", "publisher": "MIT News", "host": "news.mit.edu", "kind": "ai_topic", "preprint": False},
@@ -421,7 +421,7 @@ def is_relevant(item: dict[str, str], feed: dict[str, object]) -> bool:
 def fetch_feed(feed: dict[str, object]) -> list[dict[str, str]]:
     request = urllib.request.Request(
         str(feed["url"]),
-        headers={"User-Agent": "LiudianeMaibutnie-RSSBot/2.3 (+https://github.com/)",
+        headers={"User-Agent": "LiudianeMaibutnie-RSSBot/2.4 (+https://github.com/)",
                  "Accept": "application/rss+xml, application/atom+xml, application/xml, text/xml"},
     )
     with urllib.request.urlopen(request, timeout=25) as response:
@@ -460,6 +460,12 @@ def article_from(item: dict[str, str], feed: dict[str, object], published: datet
         "feedName": str(feed["name"]),
         "filterVersion": FILTER_VERSION,
         "editorialStatus": "approved",
+        "editorialDecisionSource": "automatic",
+        "editorialLabel": (
+            "Безпека та виклики" if category == "Надійність ШІ"
+            else "Позитивний вплив" if assessment.get("evidenceLevel") == "практичне застосування або конкретний приклад"
+            else "Перспективний розвиток"
+        ),
         "feedKind": str(feed.get("kind", "ai_topic")),
         "sourceDescription": description,
         "selectionReason": str(assessment["reason"]),
@@ -533,6 +539,34 @@ def prune_existing(
         stored_description = str(article.get("sourceDescription", "") or "")
         link = normalized_url(source_url(article))
         recovered = fetched_index.get(link)
+
+        # A human editorial decision is authoritative until an editor explicitly
+        # returns the record to automatic review. Never silently overwrite it.
+        human_locked = (
+            article.get("editorialDecisionSource") == "human"
+            and bool(article.get("editorialReviewedAt"))
+            and article.get("editorialStatus") in {"approved", "rejected", "needs_review"}
+        )
+        if human_locked:
+            if recovered:
+                recovered_feed, row = recovered
+                refreshed = plain_text(row.get("description", ""))[:4000]
+                if len(refreshed) >= MIN_DESCRIPTION_LENGTH and refreshed != stored_description:
+                    article["sourceDescription"] = refreshed
+                    article["lastSourceRefreshAt"] = datetime.now(timezone.utc).isoformat()
+                    article["sourceDescription"] = refreshed
+                article["feedKind"] = str(recovered_feed.get("kind", article.get("feedKind", "ai_topic")))
+                article["feedName"] = str(recovered_feed.get("name", article.get("feedName", "")))
+            article["filterVersion"] = FILTER_VERSION
+            status = str(article.get("editorialStatus"))
+            print(f"[HUMAN-DECISION-KEPT] {title or 'Без назви'} — {status}; рішення редактора не змінено")
+            if status == "needs_review":
+                review_count += 1
+            kept.append(article)
+            after = json.dumps(article, ensure_ascii=False, sort_keys=True)
+            if after != before:
+                updated += 1
+            continue
         feed: dict[str, object] = {"kind": str(article.get("feedKind") or "ai_topic")}
         canonical_title = title
         description = stored_description
@@ -605,7 +639,14 @@ def dedupe_existing(existing: list[dict[str, object]]) -> tuple[list[dict[str, o
         article = dict(original)
         url, doi, title = article_keys(article)
         duplicate = bool((url and url in seen_urls) or (doi and doi in seen_dois) or (title and title in seen_titles))
-        if duplicate:
+        human_duplicate_override = (
+            article.get("editorialDuplicateOverride") is True
+            and article.get("editorialDecisionSource") == "human"
+            and article.get("editorialStatus") == "approved"
+        )
+        if duplicate and human_duplicate_override:
+            print(f"[DUPLICATE-OVERRIDE] {article.get('title', 'Без назви')} — редактор перевірив збіг і залишив матеріал схваленим")
+        elif duplicate:
             if article.get("editorialStatus") != "duplicate":
                 duplicate_count += 1
             article["editorialStatus"] = "duplicate"
@@ -725,6 +766,12 @@ def main() -> int:
     print(f"Початковий склад бібліотеки: {initial_count} (ручних: {manual_count}; автоматичних RSS: {rss_count}).")
     print(f"Оновлено редакційні метадані існуючих матеріалів: {metadata_updated}.")
     print(f"Матеріалів залишено на редакційній перевірці: {review_existing}.")
+    human_decisions = sum(1 for a in existing if a.get("editorialDecisionSource") == "human")
+    approved_count = sum(1 for a in existing if is_auto_rss(a) and a.get("editorialStatus") == "approved")
+    rejected_library_count = sum(1 for a in existing if is_auto_rss(a) and a.get("editorialStatus") == "rejected")
+    print(f"Людських редакційних рішень збережено: {human_decisions}.")
+    print(f"Автоматично схвалених RSS-матеріалів у бібліотеці: {approved_count}.")
+    print(f"Відхилених редактором RSS-матеріалів у бібліотеці: {rejected_library_count}.")
     print(f"Відхилено нових кандидатів за редакційними правилами: {rejected_count}.")
     print(f"Пропущено дублікатів у стрічках/бібліотеці: {duplicate_count}; позначено дублікатів у бібліотеці: {duplicate_existing}.")
     print(f"Пропущено за датою: {too_old_count}; без достатнього опису: {short_count}.")

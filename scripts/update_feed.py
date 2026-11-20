@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Build a free, rule-based RSS digest about socially beneficial AI applications.
+"""Curate a free RSS digest about AI and its potential benefits to people.
 
-No LLM, API key, database, or paid service is used. The script republishes only
-RSS metadata and short excerpts, with a link to the original publisher.
+Rule-based only: no paid API, LLM, database, or credentials required.
+The filter labels editorial relevance; it does not certify research claims.
 """
 from __future__ import annotations
 
@@ -11,161 +11,94 @@ import html
 import json
 import re
 import sys
+import unicodedata
 import urllib.error
 import urllib.request
 import xml.etree.ElementTree as ET
+from collections import Counter
 from datetime import datetime, timezone, timedelta
 from email.utils import parsedate_to_datetime
 from html.parser import HTMLParser
 from pathlib import Path
-from urllib.parse import urlparse
+from urllib.parse import urlparse, urlunparse
 
 ROOT = Path(__file__).resolve().parents[1]
 ARTICLES_FILE = ROOT / "content" / "articles.json"
 MAX_AGE_DAYS = 60
 MAX_NEW_ITEMS_PER_RUN = 10
 MAX_TOTAL_ITEMS = 200
-FILTER_VERSION = "2.1"
+MIN_DESCRIPTION_LENGTH = 40
+FILTER_VERSION = "2.2"
 
-# Broad, reputable feeds are narrowed by the rules below. Domain-specific MIT
-# feeds increase the chance of finding practical health, education and climate
-# applications instead of unrelated AI benchmarks.
-FEEDS = [
-    {
-        "name": "MIT News — Штучний інтелект",
-        "url": "https://news.mit.edu/rss/topic/artificial-intelligence2",
-        "publisher": "MIT News",
-        "host": "news.mit.edu",
-        "kind": "ai_topic",
-        "preprint": False,
-    },
-    {
-        "name": "MIT News — Здоров'я і медицина",
-        "url": "https://news.mit.edu/rss/topic/health-sciences-and-technology",
-        "publisher": "MIT News",
-        "host": "news.mit.edu",
-        "kind": "domain_topic",
-        "preprint": False,
-    },
-    {
-        "name": "MIT News — Клімат і сталість",
-        "url": "https://news.mit.edu/rss/topic/climate-change-and-sustainability",
-        "publisher": "MIT News",
-        "host": "news.mit.edu",
-        "kind": "domain_topic",
-        "preprint": False,
-    },
-    {
-        "name": "MIT News — Продовольство і водні ресурси",
-        "url": "https://news.mit.edu/rss/topic/food-and-water-security",
-        "publisher": "MIT News",
-        "host": "news.mit.edu",
-        "kind": "domain_topic",
-        "preprint": False,
-    },
-    {
-        "name": "MIT News — Освіта і навчання",
-        "url": "https://news.mit.edu/rss/topic/education",
-        "publisher": "MIT News",
-        "host": "news.mit.edu",
-        "kind": "domain_topic",
-        "preprint": False,
-    },
-    {
-        "name": "arXiv — Штучний інтелект",
-        "url": "https://export.arxiv.org/rss/cs.AI",
-        "publisher": "arXiv",
-        "host": "arxiv.org",
-        "kind": "ai_topic",
-        "preprint": True,
-    },
-    {
-        "name": "arXiv — Машинне навчання",
-        "url": "https://export.arxiv.org/rss/cs.LG",
-        "publisher": "arXiv",
-        "host": "arxiv.org",
-        "kind": "ai_topic",
-        "preprint": True,
-    },
-    {
-        "name": "UNESCO-UNEVOC — Освіта і професійне навчання",
-        "url": "https://connect.unevoc.unesco.org/unevoc_news.xml",
-        "publisher": "UNESCO-UNEVOC",
-        "host": "connect.unevoc.unesco.org",
-        "kind": "institutional",
-        "preprint": False,
-    },
-    {
-        "name": "WHO — Новини про здоров'я",
-        "url": "https://www.who.int/rss-feeds/news-english.xml",
-        "publisher": "World Health Organization (WHO)",
-        "host": "www.who.int",
-        "kind": "institutional",
-        "preprint": False,
-    },
+FEEDS: list[dict[str, object]] = [
+    {"name": "MIT News — Штучний інтелект", "url": "https://news.mit.edu/rss/topic/artificial-intelligence2", "publisher": "MIT News", "host": "news.mit.edu", "kind": "ai_topic", "preprint": False},
+    {"name": "MIT News — Здоров'я і медицина", "url": "https://news.mit.edu/rss/topic/health-sciences-and-technology", "publisher": "MIT News", "host": "news.mit.edu", "kind": "domain_topic", "preprint": False},
+    {"name": "MIT News — Клімат і сталість", "url": "https://news.mit.edu/rss/topic/climate-change-and-sustainability", "publisher": "MIT News", "host": "news.mit.edu", "kind": "domain_topic", "preprint": False},
+    {"name": "MIT News — Продовольство і водні ресурси", "url": "https://news.mit.edu/rss/topic/food-and-water-security", "publisher": "MIT News", "host": "news.mit.edu", "kind": "domain_topic", "preprint": False},
+    {"name": "MIT News — Освіта і навчання", "url": "https://news.mit.edu/rss/topic/education", "publisher": "MIT News", "host": "news.mit.edu", "kind": "domain_topic", "preprint": False},
+    {"name": "arXiv — Штучний інтелект", "url": "https://export.arxiv.org/rss/cs.AI", "publisher": "arXiv", "host": "arxiv.org", "kind": "ai_topic", "preprint": True},
+    {"name": "arXiv — Машинне навчання", "url": "https://export.arxiv.org/rss/cs.LG", "publisher": "arXiv", "host": "arxiv.org", "kind": "ai_topic", "preprint": True},
+    {"name": "UNESCO-UNEVOC — Освіта і професійне навчання", "url": "https://connect.unevoc.unesco.org/unevoc_news.xml", "publisher": "UNESCO-UNEVOC", "host": "connect.unevoc.unesco.org", "kind": "institutional", "preprint": False},
+    {"name": "WHO — Новини про здоров'я", "url": "https://www.who.int/rss-feeds/news-english.xml", "publisher": "World Health Organization (WHO)", "host": "www.who.int", "kind": "institutional", "preprint": False},
 ]
 
-# Categories already used by the website are retained. A new category for
-# trustworthy and accountable AI is added to support the project's mission.
-CATEGORY_KEYWORDS = {
+# Strong, human-domain signals. Intentionally avoid ambiguous standalone words
+# such as "learning", "environment", "governance", or "policy".
+CATEGORY_TERMS: dict[str, list[str]] = {
     "Медицина": [
-        "health", "medical", "medicine", "clinical", "patient", "cancer",
-        "diagnos", "hospital", "drug discovery", "healthcare", "public health",
-        "mental health", "rehabilitation", "терап", "медиц", "здоров",
-        "пацієнт", "діагност", "лікуван", "реабілітац",
+        "healthcare", "health care", "public health", "clinical", "patient", "medical",
+        "medicine", "diagnos", "screening", "cancer", "hospital", "disease", "therapy",
+        "clinical note", "medical imaging", "radiology", "rehabilitation", "drug discovery",
+        "sleep apnea", "sleep disorder", "cognitive assessment", "behavioral assessment",
+        "psychological assessment", "mental health assessment",
+        "медиц", "здоров", "клініч", "пацієнт", "діагност", "лікуван", "реабілітац",
     ],
     "Освіта": [
-        # Do not use bare "learning" or "training": they occur in ordinary
-        # machine-learning papers and model-training descriptions.
         "education", "educational", "student", "students", "teacher", "teachers",
-        "teaching", "school", "classroom", "curriculum", "university", "tvet",
-        "tutor", "literacy", "learning outcomes", "learning support",
-        "personalized learning", "adaptive learning", "distance learning",
-        "lifelong learning", "vocational training", "teacher training",
-        "professional training", "освіт", "студент", "вчител", "школ",
-        "університет", "навчальні програми", "професійне навчання",
+        "school", "schools", "classroom", "classrooms", "tutoring", "tutor", "pedagogy",
+        "literacy", "vocational education", "teacher training", "student learning",
+        "learning outcomes", "learning support", "personalized learning for students",
+        "adaptive learning for students", "curriculum-aligned", "curriculum aligned",
+        "curriculum development", "assessment items", "educational assessment",
+        "школ", "учн", "студент", "вчител", "освіт", "навчальн програм", "педагог",
     ],
     "Мир і безпека": [
         "peacebuilding", "humanitarian", "disaster response", "emergency response",
         "early warning", "wildfire", "flood forecast", "earthquake response",
-        "civil protection", "crisis response", "гуманітар", "цивільний захист",
-        "раннє попередження", "повен", "пожеж", "стихійн",
+        "civil protection", "crisis response", "humanitarian relief", "гуманітар",
+        "цивільний захист", "раннє попередження", "повен", "пожеж", "стихійн",
     ],
     "Екологія": [
-        # Bare "environment" is ambiguous (e.g. a software/testing environment).
-        # Use explicit environmental/ecosystem terms instead.
-        "climate", "environmental", "environmental impact", "environmental monitoring",
-        "ecosystem", "sustainab", "biodiversity", "agriculture", "crop",
-        "food system", "food security", "water quality", "water resource",
-        "conservation", "pollution", "renewable energy", "emissions",
-        "еколог", "клімат", "довкіл", "сільськ", "аграр", "біорізноман",
-        "продоволь", "водних ресурс", "забруднен", "відновлювана енергетика",
+        "climate", "environmental", "ecosystem", "sustainability", "sustainable development",
+        "biodiversity", "agriculture", "crop yield", "food system", "food security",
+        "water quality", "water resources", "water resource", "conservation", "pollution",
+        "renewable energy", "emissions", "deforestation", "drought", "еколог", "клімат",
+        "довкіл", "сільськ господар", "аграр", "біорізноман", "продоволь", "водних ресурс",
+        "забруднен", "відновлювана енергетика",
     ],
     "Права людини": [
-        "accessibility", "accessible", "assistive", "disability", "inclusion",
-        "fairness", "human rights", "equal access", "sign language", "безбар'єр",
+        "accessibility", "accessible", "assistive technology", "disability", "disabled people",
+        "inclusion", "human rights", "equal access", "sign language", "безбар'єр",
         "доступн", "інклюз", "права людини", "рівний доступ",
     ],
     "Державне управління": [
-        # Generic "governance" and "policy" also appear in technical AI papers.
-        # Require a public/regulatory context.
-        "government", "public service", "public sector", "public administration",
-        "public governance", "public policy", "policy makers", "policymakers",
-        "public comments", "regulator", "regulators", "regulatory oversight",
-        "regulatory agency", "public services", "державн", "уряд",
-        "публічн послуг", "державних послуг", "органи влади", "регулятор",
+        "government", "public service", "public services", "public sector", "public administration",
+        "public governance", "public policy", "policy makers", "policymakers", "public comments",
+        "regulator", "regulators", "regulatory oversight", "regulatory agency",
+        "ai regulation", "державн", "уряд", "публічн послуг", "державних послуг",
+        "органи влади", "регулятор",
     ],
     "Економіка та добробут": [
-        "workforce", "worker wellbeing", "labor market", "employment", "poverty",
-        "wellbeing", "well-being", "quality of life", "social protection", "housing",
-        "економ", "праців", "зайнят", "добробут", "якість життя", "соціальн захист",
+        "workforce", "worker wellbeing", "labor market", "labour market", "employment",
+        "poverty", "wellbeing", "well-being", "quality of life", "social protection", "housing",
+        "income security", "економ", "праців", "зайнят", "добробут", "якість життя", "соціальн захист",
     ],
     "Надійність ШІ": [
-        "ai safety", "alignment", "interpretability", "explainability", "explainable",
-        "transparency", "auditability", "human oversight", "model reliability",
-        "robustness", "hallucination", "trustworthy ai", "controllability",
-        "monitorability", "надійність ші", "пояснюваність", "прозорість",
-        "людський нагляд", "підзвітність алгоритмів",
+        "ai safety", "safety alignment", "alignment", "interpretability", "explainability",
+        "explainable", "transparency", "auditability", "human oversight", "model reliability",
+        "robustness", "hallucination", "trustworthy ai", "controllability", "monitorability",
+        "privacy-preserving", "надійність ші", "пояснюваність", "прозорість", "людський нагляд",
+        "підзвітність алгоритмів",
     ],
 }
 
@@ -173,34 +106,35 @@ AI_TERMS = [
     "artificial intelligence", "machine learning", "generative ai", "large language model",
     "large language models", "language model", "language models", "llm", "llms",
     "deep learning", "neural network", "neural networks", "штучний інтелект",
-    "машинне навчання", "генеративний ші",
+    "машинне навчання", "генеративний ші", "модель ші", "моделі ші",
 ]
 
-# A positive editorial direction does not mean that every paper must claim a
-# proven benefit. These signals identify practical application, evaluation,
-# access, protection or measurable improvement. The article itself remains the
-# source of evidence; this filter does not certify its conclusions.
-EDITORIAL_SIGNALS = [
-    "improv", "help", "support", "assist", "enable", "benefit", "reduce",
-    "prevent", "protect", "detect", "screen", "diagnos", "predict", "forecast",
-    "evaluate", "evaluation", "measure", "assess", "optimi", "accessib",
-    "personaliz", "inclus", "sustainab", "efficient", "reliab", "trustworth",
-    "explainab", "transparen", "fairness", "privacy-preserving", "human oversight",
-    "early warning", "early detection", "cost-effective", "resource-efficient",
-    "вдосконал", "допомага", "підтрим", "сприя", "забезпеч", "зменш",
-    "запобіг", "захищ", "виявля", "прогноз", "оціню", "вимірю", "доступн",
-    "персоналіз", "інклюз", "стал", "ефектив", "надійн", "пояснюван",
+# These are meaningful indicators of use, evaluation or safeguards. A category
+# must also be established; a generic word such as "improve" is not enough alone.
+UTILITY_TERMS = [
+    "clinical validation", "clinical trial", "diagnostic accuracy", "decision support",
+    "controlled comparison", "comparison", "medical explanations", "clinical explanations", "information extraction",
+    "early detection", "screening", "benchmark", "benchmarks", "evaluation", "evaluate",
+    "evaluating", "validated", "validation", "assessment items", "curriculum-aligned",
+    "field study", "real-world", "deployment", "deployed", "workflow", "dataset",
+    "information retrieval", "assist", "assists", "support", "supports", "improve",
+    "improves", "improvement", "reduce", "reduces", "prevent", "prevents", "protect",
+    "detect", "detection", "forecast", "forecasting", "predict", "prediction", "measure",
+    "measuring", "accessibility", "accessible", "human oversight", "audit", "auditable",
+    "robust", "reliable", "privacy-preserving", "transparency", "public comments", "public oversight", "regulatory oversight", "evidence to regulators", "evidence-based", "accountability", "auditor", "auditors", "покращ", "допомага",
+    "підтрим", "зменш", "запобіг", "захищ", "виявля", "прогноз", "оціню", "вимірю",
+    "доступн", "персоналіз", "інклюз", "стал", "ефектив", "надійн", "пояснюван",
     "прозор", "справедлив", "раннього виявлення", "раннього попередження",
 ]
 
-# Clear exclusions focus on harmful applications, not on all articles that
-# merely discuss risks. A separate risk-analysis section may be added later.
+# Strongly out-of-scope harmful uses. Risks/safety research are not excluded just
+# because they discuss risk; only clear harmful application signals are.
 EXCLUSION_RULES: list[tuple[str, re.Pattern[str]]] = [
     ("військове застосування або озброєння", re.compile(
         r"\b(military|warfare|weapon|weapons|combat|battlefield|missile|missiles|armed forces|lethal autonomous)\b|\btarget recognition\b|\bautonomous weapon", re.I)),
-    ("відомі військові набори розпізнавання цілей", re.compile(
-        r"\b(mstar|atrnet(?:-star)?|synthetic aperture radar)\b", re.I)),
-    ("саботаж", re.compile(r"\bsabotage\b|саботаж", re.I)),
+    ("відомі військові набори розпізнавання цілей", re.compile(r"\b(mstar|atrnet(?:-star)?|synthetic aperture radar)\b", re.I)),
+    ("сприяння здійсненню або приховуванню саботажу", re.compile(
+        r"\b(perform|execute|carry out|enable|facilitate|conceal|hide|evade detection of)\b.{0,70}\bsabotage\b", re.I)),
     ("розробка шкідливого програмного забезпечення або фішингу", re.compile(
         r"\b(build|create|generate|deploy|develop)\b.{0,50}\b(malware|ransomware|phishing kit)\b", re.I)),
     ("масове стеження або каральне розпізнавання облич", re.compile(
@@ -210,6 +144,21 @@ EXCLUSION_RULES: list[tuple[str, re.Pattern[str]]] = [
     ("зниження можливості контролювати ланцюжок міркувань ШІ", re.compile(
         r"reduce.{0,70}chain[- ]of[- ]thought monitorability|reduce.{0,70}monitorability", re.I)),
 ]
+
+# Explicit contextual checks prevent technical "curriculum learning" or generic
+# "learning" in ML papers from being mistaken for human education.
+EDUCATION_STRONG = [
+    "education", "educational", "student", "students", "teacher", "teachers", "school",
+    "schools", "classroom", "classrooms", "tutoring", "tutor", "pedagogy", "literacy",
+    "vocational education", "teacher training", "assessment items", "educational assessment",
+    "curriculum-aligned", "curriculum aligned", "curriculum development", "школ", "учн",
+    "студент", "вчител", "освіт", "педагог",
+]
+
+
+def matching_terms(text: str, terms: list[str]) -> list[str]:
+    lowered = text.casefold()
+    return [term for term in terms if term.casefold() in lowered]
 
 
 class TextOnly(HTMLParser):
@@ -230,8 +179,7 @@ def plain_text(value: str | None) -> str:
         text = " ".join(parser.parts)
     except Exception:
         text = re.sub(r"<[^>]+>", " ", value)
-    text = html.unescape(text)
-    return re.sub(r"\s+", " ", text).strip()
+    return re.sub(r"\s+", " ", html.unescape(text)).strip()
 
 
 def local_name(tag: str) -> str:
@@ -241,20 +189,25 @@ def local_name(tag: str) -> str:
 def child_text(element: ET.Element, names: tuple[str, ...]) -> str:
     for child in list(element):
         if local_name(child.tag) in names:
-            if child.text and child.text.strip():
-                return " ".join(t.strip() for t in child.itertext() if t.strip())
+            text = " ".join(part.strip() for part in child.itertext() if part.strip())
+            if text:
+                return text
     return ""
 
 
 def item_link(element: ET.Element) -> str:
-    for child in list(element):
-        if local_name(child.tag) == "link":
-            href = child.attrib.get("href")
-            rel = child.attrib.get("rel", "alternate")
-            if href and rel in ("alternate", "self"):
-                return href.strip()
-            if child.text and child.text.strip():
-                return child.text.strip()
+    links = [child for child in list(element) if local_name(child.tag) == "link"]
+    for child in links:
+        href = child.attrib.get("href")
+        rel = child.attrib.get("rel", "alternate")
+        if href and rel == "alternate":
+            return href.strip()
+    for child in links:
+        href = child.attrib.get("href")
+        if href:
+            return href.strip()
+        if child.text and child.text.strip():
+            return child.text.strip()
     return ""
 
 
@@ -276,9 +229,10 @@ def parse_date(value: str) -> datetime | None:
 
 def get_entries(xml_bytes: bytes) -> list[dict[str, str]]:
     root = ET.fromstring(xml_bytes)
-    elements = [e for e in root.iter() if local_name(e.tag) in ("item", "entry")]
     rows: list[dict[str, str]] = []
-    for element in elements:
+    for element in root.iter():
+        if local_name(element.tag) not in ("item", "entry"):
+            continue
         title = plain_text(child_text(element, ("title",)))
         link = item_link(element)
         description = plain_text(child_text(element, ("description", "summary", "content", "encoded")))
@@ -288,23 +242,25 @@ def get_entries(xml_bytes: bytes) -> list[dict[str, str]]:
     return rows
 
 
-def normalized_url(raw_url: str, expected_host: str) -> str:
+def normalized_url(raw_url: str, expected_host: str | None = None) -> str:
     try:
         parsed = urlparse(raw_url.strip())
         host = (parsed.hostname or "").lower()
-        if host != expected_host:
+        if parsed.scheme not in ("http", "https") or not host:
             return ""
-        if parsed.scheme not in ("http", "https"):
+        if expected_host and host != expected_host.lower():
             return ""
-        path = parsed.path.rstrip("/") or "/"
-        return f"https://{expected_host}{path}" + (f"?{parsed.query}" if parsed.query else "")
+        # Tracking query parameters and fragments do not identify a different article.
+        kept_query = "&".join(part for part in parsed.query.split("&") if part and not part.lower().startswith(("utm_", "fbclid=", "gclid=")))
+        path = re.sub(r"/+", "/", parsed.path).rstrip("/") or "/"
+        return urlunparse(("https", host, path, "", kept_query, ""))
     except Exception:
         return ""
 
 
-def matching_terms(text: str, terms: list[str]) -> list[str]:
-    lowered = text.casefold()
-    return [term for term in terms if term.casefold() in lowered]
+def title_key(title: str) -> str:
+    folded = unicodedata.normalize("NFKC", title).casefold()
+    return " ".join(re.findall(r"[\w]+", folded, flags=re.UNICODE))
 
 
 def find_exclusion(text: str) -> str | None:
@@ -314,108 +270,129 @@ def find_exclusion(text: str) -> str | None:
     return None
 
 
+def education_is_human_focused(title: str, combined: str) -> bool:
+    if matching_terms(combined, EDUCATION_STRONG):
+        return True
+    # "learning" is allowed only in explicit human-learning contexts.
+    human_context = re.search(r"\b(learners?|students?|teachers?|pupils?|schools?|education)\b.{0,70}\b(learning|learn|curriculum)\b|\b(learning|learn)\b.{0,70}\b(learners?|students?|teachers?|pupils?|schools?|education)\b", combined, re.I)
+    return bool(human_context)
+
+
+def category_matches(title: str, description: str) -> list[tuple[int, str, list[str]]]:
+    combined = f"{title} {description}".casefold()
+    title_folded = title.casefold()
+    results: list[tuple[int, str, list[str]]] = []
+    for category, terms in CATEGORY_TERMS.items():
+        if category == "Освіта" and not education_is_human_focused(title, combined):
+            continue
+        title_hits = matching_terms(title_folded, terms)
+        all_hits = matching_terms(combined, terms)
+        if not all_hits:
+            continue
+        # Category evidence in the title carries more weight than an incidental
+        # mention in a long abstract. Require a human-domain cue for education.
+        score = len(set(all_hits)) + 3 * len(set(title_hits))
+        results.append((score, category, all_hits))
+    results.sort(key=lambda row: row[0], reverse=True)
+    return results
+
+
 def assess_relevance(item: dict[str, str], feed: dict[str, object]) -> dict[str, object]:
-    """Return a transparent rule-based editorial decision for one RSS item."""
     title = item.get("title", "")
     description = item.get("description", "")
     combined = f"{title} {description}".casefold()
 
     exclusion = find_exclusion(combined)
     if exclusion:
-        return {"accepted": False, "reason": f"відсів: {exclusion}", "category": ""}
+        return {"accepted": False, "reason": f"відсів: {exclusion}", "category": "", "evidenceLevel": ""}
 
-    if feed.get("kind") != "ai_topic":
-        ai_hits = matching_terms(combined, AI_TERMS)
-        if not ai_hits:
-            return {"accepted": False, "reason": "немає чіткого зв'язку зі штучним інтелектом", "category": ""}
+    if feed.get("kind") != "ai_topic" and not matching_terms(combined, AI_TERMS):
+        return {"accepted": False, "reason": "немає чіткого зв'язку зі штучним інтелектом", "category": "", "evidenceLevel": ""}
 
-    category_scores: list[tuple[int, str, list[str]]] = []
-    title_folded = title.casefold()
-    for category, terms in CATEGORY_KEYWORDS.items():
-        title_hits = matching_terms(title_folded, terms)
-        all_hits = matching_terms(combined, terms)
-        if all_hits:
-            score = len(all_hits) + (2 * len(title_hits))
-            category_scores.append((score, category, all_hits))
-    if not category_scores:
-        return {"accepted": False, "reason": "не виявлено визначеного напряму користі для людей", "category": ""}
+    matches = category_matches(title, description)
+    if not matches:
+        return {"accepted": False, "reason": "не виявлено визначеного напряму користі для людей", "category": "", "evidenceLevel": ""}
 
-    category_scores.sort(key=lambda row: row[0], reverse=True)  # stable ties preserve mission-oriented category priority
-    _, category, category_hits = category_scores[0]
-    signal_hits = matching_terms(combined, EDITORIAL_SIGNALS)
-    if not signal_hits:
+    _, category, domain_hits = matches[0]
+    utility_hits = matching_terms(combined, UTILITY_TERMS)
+    if not utility_hits:
         return {
             "accepted": False,
-            "reason": f"тема «{category}» є, але немає ознак практичного застосування, оцінювання або суспільної користі",
+            "reason": f"визначено напрям «{category}», але немає ознак застосування, оцінювання або суспільної користі",
             "category": category,
+            "evidenceLevel": "",
         }
 
-    # Avoid weak accidental matches from a single generic word in a long
-    # abstract: require either a domain term in the title or two domain terms.
-    title_category_hits = matching_terms(title_folded, CATEGORY_KEYWORDS[category])
-    if not title_category_hits and len(category_hits) < 2:
+    title_domain_hits = matching_terms(title.casefold(), CATEGORY_TERMS[category])
+    # Avoid accepting long technical abstracts based on one incidental mention.
+    if not title_domain_hits and len(set(domain_hits)) < 2:
         return {
             "accepted": False,
             "reason": f"недостатньо чіткий зв'язок із напрямом «{category}»",
             "category": category,
+            "evidenceLevel": "",
         }
 
-    signals_for_reason = ", ".join(signal_hits[:3])
+    concrete = [
+        "clinical validation", "clinical trial", "diagnostic accuracy", "real-world",
+        "deployment", "deployed", "field study", "validated", "early detection",
+        "decision support", "assessment items", "curriculum-aligned", "public service",
+        "human oversight", "auditable", "accessibility",
+    ]
+    evaluated = ["benchmark", "benchmarks", "evaluation", "evaluating", "assessment", "dataset", "information retrieval", "measure", "measuring", "audit"]
+    if matching_terms(combined, concrete):
+        evidence_level = "практичне застосування або конкретний приклад"
+    elif matching_terms(combined, evaluated):
+        evidence_level = "дослідження або оцінювання потенційного застосування"
+    else:
+        evidence_level = "потенційне застосування; потрібне ознайомлення з першоджерелом"
+
+    reasons = ", ".join(utility_hits[:3])
     return {
         "accepted": True,
-        "reason": f"напрям: {category}; прикладні сигнали: {signals_for_reason}",
+        "reason": f"напрям: {category}; ознаки користі: {reasons}",
         "category": category,
+        "evidenceLevel": evidence_level,
     }
 
 
 def is_relevant(item: dict[str, str], feed: dict[str, object]) -> bool:
-    """Backward-compatible boolean helper used by tests and simple callers."""
     return bool(assess_relevance(item, feed)["accepted"])
 
 
 def fetch_feed(feed: dict[str, object]) -> list[dict[str, str]]:
     request = urllib.request.Request(
         str(feed["url"]),
-        headers={
-            "User-Agent": "LiudianeMaibutnie-RSSBot/2.0 (+https://github.com/)",
-            "Accept": "application/rss+xml, application/atom+xml, application/xml, text/xml",
-        },
+        headers={"User-Agent": "LiudianeMaibutnie-RSSBot/2.2 (+https://github.com/)",
+                 "Accept": "application/rss+xml, application/atom+xml, application/xml, text/xml"},
     )
     with urllib.request.urlopen(request, timeout=25) as response:
         content = response.read(2_500_000)
     return get_entries(content)
 
 
-def article_from(
-    item: dict[str, str], feed: dict[str, object], published: datetime,
-    assessment: dict[str, object],
-) -> dict[str, object]:
+def article_from(item: dict[str, str], feed: dict[str, object], published: datetime, assessment: dict[str, object]) -> dict[str, object]:
     title = item["title"][:180]
-    description = item["description"][:1400]
+    description = item["description"][:2000]
     category = str(assessment["category"])
-    short_summary = description[:330].rstrip()
-    if len(description) > 330:
+    short_summary = description[:360].rstrip()
+    if len(description) > 360:
         short_summary = short_summary.rsplit(" ", 1)[0] + "…"
     if not short_summary:
         short_summary = "Відкрийте першоджерело, щоб прочитати опис матеріалу та перевірити його контекст."
-
     body_parts = [
-        f"Цей матеріал автоматично відібрано зі стрічки {feed['publisher']}. Заголовок, дата та короткий опис отримані з RSS-каналу видавця.",
+        f"Матеріал автоматично відібрано зі стрічки {feed['publisher']}. Заголовок, дата та опис отримані з RSS-каналу видавця.",
     ]
     if description:
         body_parts.append("Короткий опис від першоджерела:\n" + description)
     body_parts.append(
-        f"Чому матеріал потрапив до добірки: {assessment['reason']}. Це автоматичний тематичний відбір за ключовими словами, а не підтвердження ефективності чи незалежна експертна оцінка. Перед висновками прочитайте оригінальну публікацію."
+        f"Редакційна класифікація: {assessment['reason']}. Рівень свідчень: {assessment['evidenceLevel']}. "
+        "Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками."
     )
-    if feed["preprint"]:
-        body_parts.append(
-            "Науковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте розділ про публікацію та рецензування в оригіналі."
-        )
-    body_parts.append(
-        "Редакційне застереження: автоматична система перевіряє формат стрічки, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження, не перевіряє незалежно всі твердження та не замінює людську редакційну перевірку."
-    )
-
-    digest = hashlib.sha256(item["link"].encode("utf-8")).hexdigest()[:12]
+    if feed.get("preprint"):
+        body_parts.append("Науковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте статус публікації в першоджерелі.")
+    body_parts.append("Редакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.")
+    digest = hashlib.sha256(normalized_url(item["link"]).encode("utf-8")).hexdigest()[:12]
     published_date = published.date().isoformat()
     return {
         "id": f"rss-{published_date}-{digest}",
@@ -425,21 +402,15 @@ def article_from(
         "feedName": str(feed["name"]),
         "filterVersion": FILTER_VERSION,
         "feedKind": str(feed.get("kind", "ai_topic")),
-        # Keep the full publisher-provided description so future runs can
-        # re-evaluate consistently instead of relying on the short display summary.
         "sourceDescription": description,
         "selectionReason": str(assessment["reason"]),
+        "evidenceLevel": str(assessment["evidenceLevel"]),
         "category": category,
         "title": title,
         "summary": short_summary,
         "body": "\n\n".join(body_parts),
         "sourceDate": published_date,
-        "sources": [{
-            "title": title,
-            "publisher": str(feed["publisher"]),
-            "url": item["link"],
-            "publishedDate": published_date,
-        }],
+        "sources": [{"title": title, "publisher": str(feed["publisher"]), "url": item["link"], "publishedDate": published_date}],
     }
 
 
@@ -448,130 +419,217 @@ def load_existing() -> list[dict[str, object]]:
         return []
     try:
         data = json.loads(ARTICLES_FILE.read_text(encoding="utf-8"))
-        return data if isinstance(data, list) else []
+        if not isinstance(data, list):
+            raise RuntimeError(f"Очікувався список статей у {ARTICLES_FILE}.")
+        return data
     except (json.JSONDecodeError, OSError) as exc:
         raise RuntimeError(f"Не вдалося прочитати {ARTICLES_FILE}: {exc}") from exc
 
 
-def prune_existing(existing: list[dict[str, object]]) -> tuple[list[dict[str, object]], int]:
-    """Re-check auto-RSS cards without repeatedly pruning on truncated summaries.
+def source_url(article: dict[str, object]) -> str:
+    sources = article.get("sources", [])
+    if isinstance(sources, list):
+        for source in sources:
+            if isinstance(source, dict) and source.get("url"):
+                return str(source["url"])
+    return ""
 
-    Manually authored content is never changed. New cards store sourceDescription
-    and feedKind, allowing the exact same rules to be applied on later runs.
-    Older cards without a full source description are retained unless a clear
-    hard-exclusion is visible in the title/summary; missing metadata alone is not
-    sufficient evidence for deletion.
+
+def index_fetched_entries(fetched: list[tuple[dict[str, object], dict[str, str]]]) -> dict[str, tuple[dict[str, object], dict[str, str]]]:
+    index: dict[str, tuple[dict[str, object], dict[str, str]]] = {}
+    for feed, row in fetched:
+        link = normalized_url(row.get("link", ""), str(feed["host"]))
+        if link and link not in index:
+            index[link] = (feed, row)
+    return index
+
+
+def prune_existing(
+    existing: list[dict[str, object]],
+    fetched_index: dict[str, tuple[dict[str, object], dict[str, str]]] | None = None,
+) -> tuple[list[dict[str, object]], int, int, int]:
+    """Re-check RSS cards; restore full descriptions for older cards when possible.
+
+    Manual content is never modified. A legacy RSS card without a full description
+    is first matched to current feed entries by normalized source URL. If no source
+    description is available, it is retained rather than destructively guessed.
     """
+    fetched_index = fetched_index or {}
     kept: list[dict[str, object]] = []
-    removed = 0
-    for article in existing:
+    removed = restored = updated = 0
+    for original in existing:
+        article = dict(original)
+        before = json.dumps(article, ensure_ascii=False, sort_keys=True)
         if not (article.get("autoPublished") is True and article.get("sourceType") == "rss"):
             kept.append(article)
             continue
-
         title = str(article.get("title", ""))
-        source_description = str(article.get("sourceDescription", "") or "")
-        summary = str(article.get("summary", "") or "")
-        description_for_review = source_description or summary
-        exclusion = find_exclusion(f"{title} {description_for_review}")
+        description = str(article.get("sourceDescription", "") or "")
+        if not description:
+            link = normalized_url(source_url(article))
+            recovered = fetched_index.get(link)
+            if recovered:
+                feed, row = recovered
+                description = row.get("description", "")[:2000]
+                if len(description) >= MIN_DESCRIPTION_LENGTH:
+                    article["sourceDescription"] = description
+                    article["feedKind"] = str(feed.get("kind", "ai_topic"))
+                    article["feedName"] = str(feed.get("name", article.get("feedName", "")))
+                    restored += 1
+                    print(f"[RESTORE] {title or 'Без назви'} — опис відновлено з {feed['publisher']}")
+        if not description or len(description) < MIN_DESCRIPTION_LENGTH:
+            kept.append(article)
+            print(f"[KEEP] {title or 'Без назви'} — повний опис не знайдено; запис залишено без повторної оцінки")
+            continue
+
+        exclusion = find_exclusion(f"{title} {description}")
         if exclusion:
             removed += 1
             print(f"[PRUNE] {title or 'Без назви'} — відсів: {exclusion}")
             continue
 
-        if not source_description:
-            # Legacy cards only contain a short display excerpt. Do not make a
-            # destructive decision from incomplete text; retain until enough
-            # publisher metadata is available.
-            kept.append(article)
-            print(f"[KEEP] {title or 'Без назви'} — немає повного опису джерела для повторної оцінки")
-            continue
-
         sources = article.get("sources", [])
-        source = sources[0] if isinstance(sources, list) and sources and isinstance(sources[0], dict) else {}
-        publisher = str(source.get("publisher", ""))
+        first_source = sources[0] if isinstance(sources, list) and sources and isinstance(sources[0], dict) else {}
+        publisher = str(first_source.get("publisher", ""))
         feed_kind = str(article.get("feedKind") or ("ai_topic" if publisher.casefold() == "arxiv" else "institutional"))
-        item = {"title": title, "description": source_description}
-        decision = assess_relevance(item, {"kind": feed_kind})
+        decision = assess_relevance({"title": title, "description": description}, {"kind": feed_kind})
         if decision["accepted"]:
+            article["filterVersion"] = FILTER_VERSION
+            article["selectionReason"] = str(decision["reason"])
+            article["evidenceLevel"] = str(decision["evidenceLevel"])
+            article["category"] = str(decision["category"])
             kept.append(article)
         else:
             removed += 1
             print(f"[PRUNE] {title or 'Без назви'} — {decision['reason']}")
-    return kept, removed
+            continue
+        after = json.dumps(article, ensure_ascii=False, sort_keys=True)
+        if after != before:
+            updated += 1
+    return kept, removed, restored, updated
+
+
+def dedupe_existing(existing: list[dict[str, object]]) -> tuple[list[dict[str, object]], int, set[str], set[str]]:
+    """Remove duplicate automatic RSS cards, never delete manually authored cards."""
+    manual_keys_urls: set[str] = set()
+    manual_keys_titles: set[str] = set()
+    for article in existing:
+        is_auto = article.get("autoPublished") is True and article.get("sourceType") == "rss"
+        if not is_auto:
+            link_key = normalized_url(source_url(article))
+            title = title_key(str(article.get("title", "")))
+            if link_key:
+                manual_keys_urls.add(link_key)
+            if title:
+                manual_keys_titles.add(title)
+
+    kept: list[dict[str, object]] = []
+    seen_urls = set(manual_keys_urls)
+    seen_titles = set(manual_keys_titles)
+    removed = 0
+    for article in existing:
+        is_auto = article.get("autoPublished") is True and article.get("sourceType") == "rss"
+        if not is_auto:
+            kept.append(article)
+            continue
+        link_key = normalized_url(source_url(article))
+        title = title_key(str(article.get("title", "")))
+        if (link_key and link_key in seen_urls) or (title and title in seen_titles):
+            removed += 1
+            print(f"[DUPLICATE] {article.get('title', 'Без назви')} — повторне посилання або заголовок")
+            continue
+        kept.append(article)
+        if link_key:
+            seen_urls.add(link_key)
+        if title:
+            seen_titles.add(title)
+    return kept, removed, seen_urls, seen_titles
 
 
 def main() -> int:
     now = datetime.now(timezone.utc)
     cutoff = now - timedelta(days=MAX_AGE_DAYS)
     existing_original = load_existing()
-    existing, removed_existing = prune_existing(existing_original)
-    seen = {
-        source.get("url", "")
-        for article in existing
-        for source in article.get("sources", [])
-        if isinstance(source, dict)
-    }
 
-    new_items: list[dict[str, object]] = []
-    success_count = 0
-    fetched_count = 0
-    rejected_count = 0
-    rejection_reasons: dict[str, int] = {}
-
+    fetched: list[tuple[dict[str, object], dict[str, str]]] = []
+    success_count = fetched_count = 0
     for feed in FEEDS:
         try:
             rows = fetch_feed(feed)
             success_count += 1
             fetched_count += len(rows)
-            for row in rows:
-                link = normalized_url(row["link"], str(feed["host"]))
-                if not link or link in seen:
-                    continue
-                published = parse_date(row["published"])
-                if not published or published < cutoff or published > now + timedelta(days=1):
-                    continue
-                row["link"] = link
-                if len(plain_text(row["description"])) < 40:
-                    rejected_count += 1
-                    reason = "короткий або відсутній опис"
-                    rejection_reasons[reason] = rejection_reasons.get(reason, 0) + 1
-                    continue
-
-                assessment = assess_relevance(row, feed)
-                if not assessment["accepted"]:
-                    rejected_count += 1
-                    reason = str(assessment["reason"])
-                    rejection_reasons[reason] = rejection_reasons.get(reason, 0) + 1
-                    continue
-
-                new_items.append(article_from(row, feed, published, assessment))
-                seen.add(link)
+            fetched.extend((feed, row) for row in rows)
         except (urllib.error.URLError, TimeoutError, ET.ParseError, OSError, ValueError) as exc:
             print(f"[WARN] {feed['name']}: {exc}", file=sys.stderr)
         except Exception as exc:
             print(f"[WARN] {feed['name']}: unexpected error: {exc}", file=sys.stderr)
 
     if success_count == 0:
-        print("[ERROR] Не вдалося отримати жодну RSS-стрічку.", file=sys.stderr)
+        print("[ERROR] Не вдалося отримати жодну RSS-стрічку. Бібліотеку не змінено.", file=sys.stderr)
         return 1
 
-    new_items.sort(key=lambda article: str(article["date"]), reverse=True)
-    additions = new_items[:MAX_NEW_ITEMS_PER_RUN]
+    fetched_index = index_fetched_entries(fetched)
+    existing, removed_existing, restored_existing, metadata_updated = prune_existing(existing_original, fetched_index)
+    existing, duplicate_existing, seen_urls, seen_titles = dedupe_existing(existing)
+
+    additions: list[dict[str, object]] = []
+    rejected_count = duplicate_count = too_old_count = short_count = 0
+    rejection_reasons: Counter[str] = Counter()
+    for feed, row_original in fetched:
+        row = dict(row_original)
+        link = normalized_url(row.get("link", ""), str(feed["host"]))
+        if not link:
+            continue
+        title = row.get("title", "")
+        link_key = link
+        title_fingerprint = title_key(title)
+        if link_key in seen_urls or (title_fingerprint and title_fingerprint in seen_titles):
+            duplicate_count += 1
+            continue
+        published = parse_date(row.get("published", ""))
+        if not published or published < cutoff or published > now + timedelta(days=1):
+            too_old_count += 1
+            continue
+        row["link"] = link
+        row["description"] = plain_text(row.get("description", ""))
+        if len(row["description"]) < MIN_DESCRIPTION_LENGTH:
+            short_count += 1
+            rejection_reasons["короткий або відсутній опис"] += 1
+            continue
+        decision = assess_relevance(row, feed)
+        if not decision["accepted"]:
+            rejected_count += 1
+            rejection_reasons[str(decision["reason"])] += 1
+            continue
+        additions.append(article_from(row, feed, published, decision))
+        seen_urls.add(link_key)
+        if title_fingerprint:
+            seen_titles.add(title_fingerprint)
+
+    additions.sort(key=lambda article: str(article["date"]), reverse=True)
+    additions = additions[:MAX_NEW_ITEMS_PER_RUN]
+    print(f"Версія редакційного фільтра: {FILTER_VERSION}.")
     print(f"Перевірено RSS-стрічок: {success_count}/{len(FEEDS)}; записів у стрічках: {fetched_count}.")
+    print(f"Відновлено описів старих матеріалів: {restored_existing}.")
+    print(f"Оновлено редакційні метадані існуючих матеріалів: {metadata_updated}.")
     print(f"Відхилено за редакційними правилами: {rejected_count}.")
-    for reason, count in sorted(rejection_reasons.items(), key=lambda pair: pair[1], reverse=True)[:8]:
+    print(f"Пропущено дублікатів у стрічках: {duplicate_count}; дублікатів у бібліотеці: {duplicate_existing}.")
+    print(f"Пропущено за датою: {too_old_count}; без достатнього опису: {short_count}.")
+    for reason, count in rejection_reasons.most_common(8):
         print(f" - Відхилено {count}: {reason}")
 
-    if not additions and removed_existing == 0:
-        print("Нових матеріалів, що відповідають редакційним правилам, немає. Файл не змінено.")
+    combined = (additions + existing)[:MAX_TOTAL_ITEMS]
+    changed = bool(additions or removed_existing or duplicate_existing or restored_existing or metadata_updated)
+    if not changed:
+        print(f"Нових матеріалів немає. У бібліотеці без змін: {len(combined)} запис(ів).")
         return 0
 
-    combined = (additions + existing)[:MAX_TOTAL_ITEMS]
     ARTICLES_FILE.parent.mkdir(parents=True, exist_ok=True)
     ARTICLES_FILE.write_text(json.dumps(combined, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     if removed_existing:
-        print(f"Вилучено {removed_existing} старих RSS-матеріал(ів), що не відповідають новим правилам.")
+        print(f"Вилучено невідповідних старих RSS-матеріал(ів): {removed_existing}.")
+    if duplicate_existing:
+        print(f"Прибрано повторів із бібліотеки: {duplicate_existing}.")
     print(f"Додано {len(additions)} нових матеріал(ів). У бібліотеці тепер {len(combined)} запис(ів).")
     for article in additions:
         print(f" - {article['date']} | [{article['category']}] {article['title']}")

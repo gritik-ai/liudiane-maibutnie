@@ -28,7 +28,7 @@ MAX_AGE_DAYS = 60
 MAX_NEW_ITEMS_PER_RUN = 10
 MAX_TOTAL_ITEMS = 200
 MIN_DESCRIPTION_LENGTH = 40
-FILTER_VERSION = "2.2"
+FILTER_VERSION = "2.3"
 
 FEEDS: list[dict[str, object]] = [
     {"name": "MIT News — Штучний інтелект", "url": "https://news.mit.edu/rss/topic/artificial-intelligence2", "publisher": "MIT News", "host": "news.mit.edu", "kind": "ai_topic", "preprint": False},
@@ -69,7 +69,7 @@ CATEGORY_TERMS: dict[str, list[str]] = {
         "цивільний захист", "раннє попередження", "повен", "пожеж", "стихійн",
     ],
     "Екологія": [
-        "climate", "environmental", "ecosystem", "sustainability", "sustainable development",
+        "climate", "environmental", "natural ecosystem", "ecosystem restoration", "ecosystem services", "sustainability", "sustainable development",
         "biodiversity", "agriculture", "crop yield", "food system", "food security",
         "water quality", "water resources", "water resource", "conservation", "pollution",
         "renewable energy", "emissions", "deforestation", "drought", "еколог", "клімат",
@@ -91,13 +91,14 @@ CATEGORY_TERMS: dict[str, list[str]] = {
     "Економіка та добробут": [
         "workforce", "worker wellbeing", "labor market", "labour market", "employment",
         "poverty", "wellbeing", "well-being", "quality of life", "social protection", "housing",
-        "income security", "економ", "праців", "зайнят", "добробут", "якість життя", "соціальн захист",
+        "income security", "market concentration", "supply chain", "financial inclusion", "financial access", "living standards", "економ", "праців", "зайнят", "добробут", "якість життя", "соціальн захист",
     ],
     "Надійність ШІ": [
-        "ai safety", "safety alignment", "alignment", "interpretability", "explainability",
+        "ai safety", "safety alignment", "interpretability", "explainability",
         "explainable", "transparency", "auditability", "human oversight", "model reliability",
-        "robustness", "hallucination", "trustworthy ai", "controllability", "monitorability",
-        "privacy-preserving", "надійність ші", "пояснюваність", "прозорість", "людський нагляд",
+        "robustness", "hallucination", "controllability", "monitorability",
+        "privacy-preserving", "algorithmic bias", "gender stereotyping", "bias detection",
+        "fairness evaluation", "надійність ші", "пояснюваність", "прозорість", "людський нагляд",
         "підзвітність алгоритмів",
     ],
 }
@@ -149,11 +150,39 @@ EXCLUSION_RULES: list[tuple[str, re.Pattern[str]]] = [
 # "learning" in ML papers from being mistaken for human education.
 EDUCATION_STRONG = [
     "education", "educational", "student", "students", "teacher", "teachers", "school",
-    "schools", "classroom", "classrooms", "tutoring", "tutor", "pedagogy", "literacy",
-    "vocational education", "teacher training", "assessment items", "educational assessment",
-    "curriculum-aligned", "curriculum aligned", "curriculum development", "школ", "учн",
-    "студент", "вчител", "освіт", "педагог",
+    "schools", "classroom", "classrooms", "pupil", "pupils", "pedagogy", "literacy program",
+    "vocational education", "teacher training", "adult education", "higher education",
+    "освіт", "школ", "учн", "студент", "вчител", "педагог",
 ]
+
+# A technical use of "learning", "curriculum", or "assessment" does not by itself
+# mean that a paper concerns education of people. These cues are deliberately human-focused.
+EDUCATION_CONTEXT_TERMS = [
+    "students", "student", "teachers", "teacher", "pupils", "pupil", "schools", "school",
+    "classroom", "classrooms", "education", "educational", "pedagogy", "vocational education",
+    "adult education", "higher education", "literacy program", "curriculum-aligned assessment",
+    "curriculum aligned assessment", "school curriculum", "освіт", "школ", "учн", "студент",
+    "вчител", "педагог",
+]
+
+RELIABILITY_STRONG_TERMS = [
+    "ai safety", "safety alignment", "model reliability", "interpretability",
+    "explainability", "explainable ai", "human oversight", "auditability", "hallucination",
+    "monitorability", "controllability", "privacy-preserving", "robustness evaluation",
+    "algorithmic accountability", "ai auditing", "algorithmic bias", "gender stereotyping",
+    "bias detection", "fairness evaluation", "надійність ші", "пояснюваність",
+    "людський нагляд", "підзвітність алгоритмів",
+]
+
+ECOLOGY_STRONG_TERMS = [
+    "climate", "climate change", "environmental impact", "environmental monitoring",
+    "biodiversity", "natural ecosystem", "ecosystem restoration", "ecosystem services",
+    "agriculture", "crop yield", "food security", "water quality", "water resources",
+    "pollution", "renewable energy", "emissions", "deforestation", "drought",
+    "еколог", "клімат", "довкіл", "сільськ господар", "аграр", "біорізноман",
+    "продоволь", "водних ресурс", "забруднен", "відновлювана енергетика",
+]
+
 
 
 def matching_terms(text: str, terms: list[str]) -> list[str]:
@@ -263,6 +292,25 @@ def title_key(title: str) -> str:
     return " ".join(re.findall(r"[\w]+", folded, flags=re.UNICODE))
 
 
+def doi_key(article: dict[str, object]) -> str:
+    """Extract a DOI identifier from source URL/title/text for robust deduplication."""
+    parts: list[str] = [str(article.get("title", "")), str(article.get("summary", "")), str(article.get("sourceDescription", ""))]
+    sources = article.get("sources", [])
+    if isinstance(sources, list):
+        for source in sources:
+            if isinstance(source, dict):
+                parts.extend([str(source.get("url", "")), str(source.get("title", ""))])
+    text = " ".join(parts)
+    match = re.search(r"10\.\d{4,9}/[-._;()/:A-Z0-9]+", text, re.I)
+    if not match:
+        return ""
+    return match.group(0).rstrip(".,;:)").casefold()
+
+
+def article_keys(article: dict[str, object]) -> tuple[str, str, str]:
+    return normalized_url(source_url(article)), doi_key(article), title_key(str(article.get("title", "")))
+
+
 def find_exclusion(text: str) -> str | None:
     for reason, pattern in EXCLUSION_RULES:
         if pattern.search(text):
@@ -271,11 +319,8 @@ def find_exclusion(text: str) -> str | None:
 
 
 def education_is_human_focused(title: str, combined: str) -> bool:
-    if matching_terms(combined, EDUCATION_STRONG):
-        return True
-    # "learning" is allowed only in explicit human-learning contexts.
-    human_context = re.search(r"\b(learners?|students?|teachers?|pupils?|schools?|education)\b.{0,70}\b(learning|learn|curriculum)\b|\b(learning|learn)\b.{0,70}\b(learners?|students?|teachers?|pupils?|schools?|education)\b", combined, re.I)
-    return bool(human_context)
+    """Return true only for an explicit human-education context."""
+    return bool(matching_terms(combined, EDUCATION_CONTEXT_TERMS))
 
 
 def category_matches(title: str, description: str) -> list[tuple[int, str, list[str]]]:
@@ -283,19 +328,24 @@ def category_matches(title: str, description: str) -> list[tuple[int, str, list[
     title_folded = title.casefold()
     results: list[tuple[int, str, list[str]]] = []
     for category, terms in CATEGORY_TERMS.items():
-        if category == "Освіта" and not education_is_human_focused(title, combined):
-            continue
-        title_hits = matching_terms(title_folded, terms)
         all_hits = matching_terms(combined, terms)
         if not all_hits:
             continue
-        # Category evidence in the title carries more weight than an incidental
-        # mention in a long abstract. Require a human-domain cue for education.
+        if category == "Освіта":
+            # Require an explicit human-education context; technical ML learning is not enough.
+            if not matching_terms(combined, EDUCATION_CONTEXT_TERMS):
+                continue
+        elif category == "Надійність ШІ":
+            if not matching_terms(combined, RELIABILITY_STRONG_TERMS):
+                continue
+        elif category == "Екологія":
+            if not matching_terms(combined, ECOLOGY_STRONG_TERMS):
+                continue
+        title_hits = matching_terms(title_folded, terms)
         score = len(set(all_hits)) + 3 * len(set(title_hits))
         results.append((score, category, all_hits))
     results.sort(key=lambda row: row[0], reverse=True)
     return results
-
 
 def assess_relevance(item: dict[str, str], feed: dict[str, object]) -> dict[str, object]:
     title = item.get("title", "")
@@ -311,20 +361,24 @@ def assess_relevance(item: dict[str, str], feed: dict[str, object]) -> dict[str,
 
     matches = category_matches(title, description)
     if not matches:
-        return {"accepted": False, "reason": "не виявлено визначеного напряму користі для людей", "category": "", "evidenceLevel": ""}
+        return {"accepted": False, "reason": "не виявлено достатньо чіткого напряму користі для людей", "category": "", "evidenceLevel": ""}
+
+    # When two domains have almost equal evidence, do not guess a category.
+    if len(matches) > 1 and matches[1][0] >= matches[0][0] - 1:
+        names = " / ".join((matches[0][1], matches[1][1]))
+        return {"accepted": False, "reason": f"неоднозначна тематика: {names}; потрібна редакційна перевірка", "category": "", "evidenceLevel": ""}
 
     _, category, domain_hits = matches[0]
     utility_hits = matching_terms(combined, UTILITY_TERMS)
     if not utility_hits:
         return {
             "accepted": False,
-            "reason": f"визначено напрям «{category}», але немає ознак застосування, оцінювання або суспільної користі",
+            "reason": f"визначено напрям «{category}», але немає достатніх ознак застосування, оцінювання або суспільної користі",
             "category": category,
             "evidenceLevel": "",
         }
 
     title_domain_hits = matching_terms(title.casefold(), CATEGORY_TERMS[category])
-    # Avoid accepting long technical abstracts based on one incidental mention.
     if not title_domain_hits and len(set(domain_hits)) < 2:
         return {
             "accepted": False,
@@ -336,16 +390,21 @@ def assess_relevance(item: dict[str, str], feed: dict[str, object]) -> dict[str,
     concrete = [
         "clinical validation", "clinical trial", "diagnostic accuracy", "real-world",
         "deployment", "deployed", "field study", "validated", "early detection",
-        "decision support", "assessment items", "curriculum-aligned", "public service",
-        "human oversight", "auditable", "accessibility",
+        "decision support", "curriculum-aligned", "public service", "human oversight",
+        "auditable", "accessibility", "assistive technology", "renewable energy",
+        "water quality", "crop yield", "disaster response", "poverty reduction",
     ]
-    evaluated = ["benchmark", "benchmarks", "evaluation", "evaluating", "assessment", "dataset", "information retrieval", "measure", "measuring", "audit"]
+    evaluated = [
+        "benchmark", "benchmarks", "evaluation", "evaluating", "assessment", "dataset",
+        "information retrieval", "measure", "measuring", "audit", "controlled comparison",
+        "forecast", "forecasting", "diagnostic", "clinical note",
+    ]
     if matching_terms(combined, concrete):
         evidence_level = "практичне застосування або конкретний приклад"
     elif matching_terms(combined, evaluated):
         evidence_level = "дослідження або оцінювання потенційного застосування"
     else:
-        evidence_level = "потенційне застосування; потрібне ознайомлення з першоджерелом"
+        evidence_level = "перспективне дослідження; практичний ефект ще потрібно перевірити"
 
     reasons = ", ".join(utility_hits[:3])
     return {
@@ -355,7 +414,6 @@ def assess_relevance(item: dict[str, str], feed: dict[str, object]) -> dict[str,
         "evidenceLevel": evidence_level,
     }
 
-
 def is_relevant(item: dict[str, str], feed: dict[str, object]) -> bool:
     return bool(assess_relevance(item, feed)["accepted"])
 
@@ -363,7 +421,7 @@ def is_relevant(item: dict[str, str], feed: dict[str, object]) -> bool:
 def fetch_feed(feed: dict[str, object]) -> list[dict[str, str]]:
     request = urllib.request.Request(
         str(feed["url"]),
-        headers={"User-Agent": "LiudianeMaibutnie-RSSBot/2.2 (+https://github.com/)",
+        headers={"User-Agent": "LiudianeMaibutnie-RSSBot/2.3 (+https://github.com/)",
                  "Accept": "application/rss+xml, application/atom+xml, application/xml, text/xml"},
     )
     with urllib.request.urlopen(request, timeout=25) as response:
@@ -373,7 +431,7 @@ def fetch_feed(feed: dict[str, object]) -> list[dict[str, str]]:
 
 def article_from(item: dict[str, str], feed: dict[str, object], published: datetime, assessment: dict[str, object]) -> dict[str, object]:
     title = item["title"][:180]
-    description = item["description"][:2000]
+    description = item["description"][:4000]
     category = str(assessment["category"])
     short_summary = description[:360].rstrip()
     if len(description) > 360:
@@ -401,6 +459,7 @@ def article_from(item: dict[str, str], feed: dict[str, object], published: datet
         "sourceType": "rss",
         "feedName": str(feed["name"]),
         "filterVersion": FILTER_VERSION,
+        "editorialStatus": "approved",
         "feedKind": str(feed.get("kind", "ai_topic")),
         "sourceDescription": description,
         "selectionReason": str(assessment["reason"]),
@@ -444,112 +503,138 @@ def index_fetched_entries(fetched: list[tuple[dict[str, object], dict[str, str]]
     return index
 
 
+def is_auto_rss(article: dict[str, object]) -> bool:
+    return article.get("autoPublished") is True and article.get("sourceType") == "rss"
+
+
 def prune_existing(
     existing: list[dict[str, object]],
     fetched_index: dict[str, tuple[dict[str, object], dict[str, str]]] | None = None,
-) -> tuple[list[dict[str, object]], int, int, int]:
-    """Re-check RSS cards; restore full descriptions for older cards when possible.
+) -> tuple[list[dict[str, object]], int, int, int, int]:
+    """Reassess legacy RSS cards without deleting them.
 
-    Manual content is never modified. A legacy RSS card without a full description
-    is first matched to current feed entries by normalized source URL. If no source
-    description is available, it is retained rather than destructively guessed.
+    Existing records are never removed by editorial filtering. Accepted cards are
+    marked approved; uncertain or rejected cards are retained with needs_review
+    and hidden from the public list by the site UI. A current feed entry is used
+    as the canonical description when available, so old and new candidates receive
+    the same decision during a run.
     """
     fetched_index = fetched_index or {}
     kept: list[dict[str, object]] = []
-    removed = restored = updated = 0
+    restored = updated = review_count = 0
     for original in existing:
         article = dict(original)
         before = json.dumps(article, ensure_ascii=False, sort_keys=True)
-        if not (article.get("autoPublished") is True and article.get("sourceType") == "rss"):
+        if not is_auto_rss(article):
             kept.append(article)
             continue
+
         title = str(article.get("title", ""))
-        description = str(article.get("sourceDescription", "") or "")
-        if not description:
-            link = normalized_url(source_url(article))
-            recovered = fetched_index.get(link)
-            if recovered:
-                feed, row = recovered
-                description = row.get("description", "")[:2000]
-                if len(description) >= MIN_DESCRIPTION_LENGTH:
-                    article["sourceDescription"] = description
-                    article["feedKind"] = str(feed.get("kind", "ai_topic"))
-                    article["feedName"] = str(feed.get("name", article.get("feedName", "")))
-                    restored += 1
-                    print(f"[RESTORE] {title or 'Без назви'} — опис відновлено з {feed['publisher']}")
-        if not description or len(description) < MIN_DESCRIPTION_LENGTH:
-            kept.append(article)
-            print(f"[KEEP] {title or 'Без назви'} — повний опис не знайдено; запис залишено без повторної оцінки")
-            continue
+        stored_description = str(article.get("sourceDescription", "") or "")
+        link = normalized_url(source_url(article))
+        recovered = fetched_index.get(link)
+        feed: dict[str, object] = {"kind": str(article.get("feedKind") or "ai_topic")}
+        canonical_title = title
+        description = stored_description
+        if recovered:
+            recovered_feed, row = recovered
+            feed = recovered_feed
+            canonical_title = row.get("title") or title
+            current_description = plain_text(row.get("description", ""))[:4000]
+            if len(current_description) >= MIN_DESCRIPTION_LENGTH:
+                if current_description != stored_description:
+                    article["sourceDescription"] = current_description
+                    restored += 1 if len(stored_description) < MIN_DESCRIPTION_LENGTH else 0
+                description = current_description
+            elif stored_description:
+                description = stored_description
+            article["feedKind"] = str(recovered_feed.get("kind", article.get("feedKind", "ai_topic")))
+            article["feedName"] = str(recovered_feed.get("name", article.get("feedName", "")))
 
-        exclusion = find_exclusion(f"{title} {description}")
-        if exclusion:
-            removed += 1
-            print(f"[PRUNE] {title or 'Без назви'} — відсів: {exclusion}")
-            continue
-
-        sources = article.get("sources", [])
-        first_source = sources[0] if isinstance(sources, list) and sources and isinstance(sources[0], dict) else {}
-        publisher = str(first_source.get("publisher", ""))
-        feed_kind = str(article.get("feedKind") or ("ai_topic" if publisher.casefold() == "arxiv" else "institutional"))
-        decision = assess_relevance({"title": title, "description": description}, {"kind": feed_kind})
-        if decision["accepted"]:
-            article["filterVersion"] = FILTER_VERSION
-            article["selectionReason"] = str(decision["reason"])
-            article["evidenceLevel"] = str(decision["evidenceLevel"])
-            article["category"] = str(decision["category"])
-            kept.append(article)
+        if len(description) < MIN_DESCRIPTION_LENGTH:
+            status = "needs_review"
+            reason = "немає достатнього опису першоджерела для надійної перевірки"
+            article["editorialStatus"] = status
+            article["editorialReviewReason"] = reason
+            review_count += 1
+            print(f"[REVIEW] {title or 'Без назви'} — {reason}; запис збережено")
         else:
-            removed += 1
-            print(f"[PRUNE] {title or 'Без назви'} — {decision['reason']}")
-            continue
+            decision = assess_relevance({"title": canonical_title, "description": description}, feed)
+            article["sourceDescription"] = description
+            article["filterVersion"] = FILTER_VERSION
+            if decision["accepted"]:
+                article["editorialStatus"] = "approved"
+                article.pop("editorialReviewReason", None)
+                article["selectionReason"] = str(decision["reason"])
+                article["evidenceLevel"] = str(decision["evidenceLevel"])
+                article["category"] = str(decision["category"])
+                print(f"[RECHECK-OK] {title or 'Без назви'} — {decision['category']}")
+            else:
+                article["editorialStatus"] = "needs_review"
+                article["editorialReviewReason"] = str(decision["reason"])
+                review_count += 1
+                print(f"[REVIEW] {title or 'Без назви'} — {decision['reason']}; запис збережено")
+
+        kept.append(article)
         after = json.dumps(article, ensure_ascii=False, sort_keys=True)
         if after != before:
             updated += 1
-    return kept, removed, restored, updated
+    return kept, 0, restored, updated, review_count
 
 
-def dedupe_existing(existing: list[dict[str, object]]) -> tuple[list[dict[str, object]], int, set[str], set[str]]:
-    """Remove duplicate automatic RSS cards, never delete manually authored cards."""
-    manual_keys_urls: set[str] = set()
-    manual_keys_titles: set[str] = set()
-    for article in existing:
-        is_auto = article.get("autoPublished") is True and article.get("sourceType") == "rss"
-        if not is_auto:
-            link_key = normalized_url(source_url(article))
-            title = title_key(str(article.get("title", "")))
-            if link_key:
-                manual_keys_urls.add(link_key)
-            if title:
-                manual_keys_titles.add(title)
-
-    kept: list[dict[str, object]] = []
-    seen_urls = set(manual_keys_urls)
-    seen_titles = set(manual_keys_titles)
-    removed = 0
-    for article in existing:
-        is_auto = article.get("autoPublished") is True and article.get("sourceType") == "rss"
-        if not is_auto:
-            kept.append(article)
-            continue
-        link_key = normalized_url(source_url(article))
-        title = title_key(str(article.get("title", "")))
-        if (link_key and link_key in seen_urls) or (title and title in seen_titles):
-            removed += 1
-            print(f"[DUPLICATE] {article.get('title', 'Без назви')} — повторне посилання або заголовок")
-            continue
-        kept.append(article)
-        if link_key:
-            seen_urls.add(link_key)
+def dedupe_existing(existing: list[dict[str, object]]) -> tuple[list[dict[str, object]], int, set[str], set[str], set[str]]:
+    """Flag duplicate RSS cards without deleting any library record."""
+    seen_urls: set[str] = set()
+    seen_dois: set[str] = set()
+    seen_titles: set[str] = set()
+    manual = [article for article in existing if not is_auto_rss(article)]
+    automatic = [article for article in existing if is_auto_rss(article)]
+    # Manual articles always have priority over automatic cards with matching identity.
+    for article in manual:
+        url, doi, title = article_keys(article)
+        if url:
+            seen_urls.add(url)
+        if doi:
+            seen_dois.add(doi)
         if title:
             seen_titles.add(title)
-    return kept, removed, seen_urls, seen_titles
 
+    kept_auto: list[dict[str, object]] = []
+    duplicate_count = 0
+    for original in automatic:
+        article = dict(original)
+        url, doi, title = article_keys(article)
+        duplicate = bool((url and url in seen_urls) or (doi and doi in seen_dois) or (title and title in seen_titles))
+        if duplicate:
+            if article.get("editorialStatus") != "duplicate":
+                duplicate_count += 1
+            article["editorialStatus"] = "duplicate"
+            article["editorialReviewReason"] = "дублікат іншого матеріалу в бібліотеці"
+            print(f"[DUPLICATE-HELD] {article.get('title', 'Без назви')} — запис збережено, приховано з публічної стрічки")
+        else:
+            article["editorialStatus"] = article.get("editorialStatus") or "needs_review"
+            if article["editorialStatus"] == "approved":
+                article.pop("editorialReviewReason", None)
+        kept_auto.append(article)
+        if url:
+            seen_urls.add(url)
+        if doi:
+            seen_dois.add(doi)
+        if title:
+            seen_titles.add(title)
+
+    # Preserve the original order as much as possible: manual items first, then RSS items.
+    manual_ids = {id(item) for item in manual}
+    _ = manual_ids
+    return manual + kept_auto, duplicate_count, seen_urls, seen_titles, seen_dois
 
 def main() -> int:
     now = datetime.now(timezone.utc)
     cutoff = now - timedelta(days=MAX_AGE_DAYS)
     existing_original = load_existing()
+    initial_count = len(existing_original)
+    manual_count = sum(1 for article in existing_original if not is_auto_rss(article))
+    rss_count = initial_count - manual_count
 
     fetched: list[tuple[dict[str, object], dict[str, str]]] = []
     success_count = fetched_count = 0
@@ -569,8 +654,8 @@ def main() -> int:
         return 1
 
     fetched_index = index_fetched_entries(fetched)
-    existing, removed_existing, restored_existing, metadata_updated = prune_existing(existing_original, fetched_index)
-    existing, duplicate_existing, seen_urls, seen_titles = dedupe_existing(existing)
+    existing, removed_existing, restored_existing, metadata_updated, review_existing = prune_existing(existing_original, fetched_index)
+    existing, duplicate_existing, seen_urls, seen_titles, seen_dois = dedupe_existing(existing)
 
     additions: list[dict[str, object]] = []
     rejected_count = duplicate_count = too_old_count = short_count = 0
@@ -580,18 +665,20 @@ def main() -> int:
         link = normalized_url(row.get("link", ""), str(feed["host"]))
         if not link:
             continue
+        row["link"] = link
+        row["description"] = plain_text(row.get("description", ""))
         title = row.get("title", "")
-        link_key = link
         title_fingerprint = title_key(title)
-        if link_key in seen_urls or (title_fingerprint and title_fingerprint in seen_titles):
+        doi = doi_key({"title": title, "summary": row.get("description", ""), "sources": [{"url": link}]})
+        # Existing records (including held/review records) reserve their identity for
+        # this run. This prevents the same old item being pruned and re-added.
+        if link in seen_urls or (doi and doi in seen_dois) or (title_fingerprint and title_fingerprint in seen_titles):
             duplicate_count += 1
             continue
         published = parse_date(row.get("published", ""))
         if not published or published < cutoff or published > now + timedelta(days=1):
             too_old_count += 1
             continue
-        row["link"] = link
-        row["description"] = plain_text(row.get("description", ""))
         if len(row["description"]) < MIN_DESCRIPTION_LENGTH:
             short_count += 1
             rejection_reasons["короткий або відсутній опис"] += 1
@@ -602,35 +689,59 @@ def main() -> int:
             rejection_reasons[str(decision["reason"])] += 1
             continue
         additions.append(article_from(row, feed, published, decision))
-        seen_urls.add(link_key)
+        seen_urls.add(link)
+        if doi:
+            seen_dois.add(doi)
         if title_fingerprint:
             seen_titles.add(title_fingerprint)
 
     additions.sort(key=lambda article: str(article["date"]), reverse=True)
     additions = additions[:MAX_NEW_ITEMS_PER_RUN]
+    capacity = max(0, MAX_TOTAL_ITEMS - len(existing))
+    if len(additions) > capacity:
+        print(f"[LIMIT] Додатків скорочено з {len(additions)} до {capacity}: досягнуто ліміту бібліотеки.")
+        additions = additions[:capacity]
+
+    # Preserve all existing records. No silent truncation at MAX_TOTAL_ITEMS.
+    combined = additions + existing
+    expected_count = initial_count + len(additions)
+    if len(combined) != expected_count:
+        print(
+            f"[ERROR] Контроль цілісності не пройдено: було {initial_count}, "
+            f"додано {len(additions)}, очікується {expected_count}, отримано {len(combined)}. "
+            "Бібліотеку не змінено.",
+            file=sys.stderr,
+        )
+        return 2
+
+    original_manual_ids = [str(a.get("id", "")) for a in existing_original if not is_auto_rss(a)]
+    final_manual_ids = [str(a.get("id", "")) for a in combined if not is_auto_rss(a)]
+    if sorted(original_manual_ids) != sorted(final_manual_ids):
+        print("[ERROR] Контроль ручних матеріалів не пройдено. Бібліотеку не змінено.", file=sys.stderr)
+        return 3
+
     print(f"Версія редакційного фільтра: {FILTER_VERSION}.")
     print(f"Перевірено RSS-стрічок: {success_count}/{len(FEEDS)}; записів у стрічках: {fetched_count}.")
-    print(f"Відновлено описів старих матеріалів: {restored_existing}.")
+    print(f"Початковий склад бібліотеки: {initial_count} (ручних: {manual_count}; автоматичних RSS: {rss_count}).")
     print(f"Оновлено редакційні метадані існуючих матеріалів: {metadata_updated}.")
-    print(f"Відхилено за редакційними правилами: {rejected_count}.")
-    print(f"Пропущено дублікатів у стрічках: {duplicate_count}; дублікатів у бібліотеці: {duplicate_existing}.")
+    print(f"Матеріалів залишено на редакційній перевірці: {review_existing}.")
+    print(f"Відхилено нових кандидатів за редакційними правилами: {rejected_count}.")
+    print(f"Пропущено дублікатів у стрічках/бібліотеці: {duplicate_count}; позначено дублікатів у бібліотеці: {duplicate_existing}.")
     print(f"Пропущено за датою: {too_old_count}; без достатнього опису: {short_count}.")
     for reason, count in rejection_reasons.most_common(8):
         print(f" - Відхилено {count}: {reason}")
 
-    combined = (additions + existing)[:MAX_TOTAL_ITEMS]
-    changed = bool(additions or removed_existing or duplicate_existing or restored_existing or metadata_updated)
+    changed = combined != existing_original
     if not changed:
-        print(f"Нових матеріалів немає. У бібліотеці без змін: {len(combined)} запис(ів).")
+        print(f"Бібліотека без змін: {len(combined)} запис(ів).")
+        print(f"[INTEGRITY] Було {initial_count}; додано 0; залишилося {len(combined)}. Ручні матеріали збережено: {manual_count}.")
         return 0
 
     ARTICLES_FILE.parent.mkdir(parents=True, exist_ok=True)
     ARTICLES_FILE.write_text(json.dumps(combined, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    if removed_existing:
-        print(f"Вилучено невідповідних старих RSS-матеріал(ів): {removed_existing}.")
-    if duplicate_existing:
-        print(f"Прибрано повторів із бібліотеки: {duplicate_existing}.")
     print(f"Додано {len(additions)} нових матеріал(ів). У бібліотеці тепер {len(combined)} запис(ів).")
+    print(f"[INTEGRITY] Було {initial_count}; додано {len(additions)}; вилучено 0; стало {len(combined)}.")
+    print(f"[INTEGRITY] Ручних матеріалів збережено: {manual_count}; жоден існуючий запис автоматично не видалено.")
     for article in additions:
         print(f" - {article['date']} | [{article['category']}] {article['title']}")
     return 0

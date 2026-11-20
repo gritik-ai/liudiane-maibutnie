@@ -16,7 +16,7 @@ concurrency:
 jobs:
   update-feed:
     runs-on: ubuntu-latest
-    timeout-minutes: 8
+    timeout-minutes: 10
     steps:
       - name: Отримати репозиторій
         uses: actions/checkout@v4
@@ -29,17 +29,17 @@ jobs:
       - name: Перевірити редакційний фільтр
         run: python -m unittest discover -s scripts -p 'test_*.py' -v
 
-      - name: Оновити добірку з RSS
+      - name: Оновити добірку та статистику джерел
         run: python scripts/update_feed.py
 
-      - name: Зберегти нові матеріали
+      - name: Зберегти бібліотеку та звіт джерел
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add content/articles.json
+          git add content/articles.json content/source_stats.json
           if git diff --cached --quiet; then
-            echo "Нових матеріалів немає. Коміт не потрібен."
+            echo "Бібліотека та статистика джерел без змін. Коміт не потрібен."
           else
-            git commit -m "content: update curated RSS feed"
+            git commit -m "content: update curated feed and source statistics"
             git push
           fi

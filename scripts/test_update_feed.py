@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Offline regression tests for the editorial RSS filter v2.3."""
+"""Offline regression tests for the editorial RSS filter v2.4 and human editorial decisions."""
 import unittest
 
 from update_feed import (
@@ -15,7 +15,7 @@ AI_FEED = {"kind": "ai_topic"}
 DOMAIN_FEED = {"kind": "domain_topic"}
 
 
-class EditorialFilterV23Tests(unittest.TestCase):
+class EditorialFilterV24Tests(unittest.TestCase):
     def check(self, title: str, description: str = "", feed=AI_FEED):
         return assess_relevance({"title": title, "description": description}, feed)
 
@@ -218,7 +218,7 @@ class EditorialFilterV23Tests(unittest.TestCase):
         self.assertEqual(restored, 1)
         self.assertEqual(len(kept), 1)
         self.assertIn("sourceDescription", kept[0])
-        self.assertEqual(kept[0]["filterVersion"], "2.3")
+        self.assertEqual(kept[0]["filterVersion"], "2.4")
         self.assertEqual(kept[0]["editorialStatus"], "approved")
         self.assertEqual(review, 0)
         self.assertGreaterEqual(updated, 1)
@@ -301,6 +301,83 @@ class EditorialFilterV23Tests(unittest.TestCase):
         expected = assess_relevance({"title": title, "description": description}, feed)
         kept, _, _, _, _ = prune_existing([legacy], {normalized_url(link): (feed, {"title": title, "link": link, "description": description})})
         self.assertEqual(kept[0]["editorialStatus"], "approved" if expected["accepted"] else "needs_review")
+
+
+    def test_human_approved_decision_is_not_overwritten_by_automatic_recheck(self):
+        article = {
+            "id": "human-approved", "autoPublished": True, "sourceType": "rss",
+            "title": "A title with limited category cues", "sourceDescription": "A full source description with enough content to review manually.",
+            "editorialStatus": "approved", "editorialDecisionSource": "human",
+            "editorialReviewedAt": "2026-11-20T08:00:00+00:00", "editorialReviewedBy": "Editor",
+            "editorialNote": "Checked original source and context.", "category": "Права людини",
+            "sources": [{"url": "https://arxiv.org/abs/9999.0001"}],
+        }
+        kept, *_ = prune_existing([article], {})
+        self.assertEqual(kept[0]["editorialStatus"], "approved")
+        self.assertEqual(kept[0]["category"], "Права людини")
+        self.assertEqual(kept[0]["editorialDecisionSource"], "human")
+        self.assertEqual(kept[0]["editorialNote"], "Checked original source and context.")
+
+    def test_human_rejected_decision_is_not_overwritten_by_automatic_recheck(self):
+        article = {
+            "id": "human-rejected", "autoPublished": True, "sourceType": "rss",
+            "title": "AI tool helps doctors detect cancer earlier",
+            "sourceDescription": "A clinical tool supports early cancer detection and may improve patient care through evaluation of diagnostic assistance.",
+            "editorialStatus": "rejected", "editorialDecisionSource": "human",
+            "editorialReviewedAt": "2026-11-20T08:00:00+00:00", "editorialReviewedBy": "Editor",
+            "editorialNote": "The source does not support the headline claim.",
+            "sources": [{"url": "https://arxiv.org/abs/9999.0002"}],
+        }
+        kept, *_ = prune_existing([article], {})
+        self.assertEqual(kept[0]["editorialStatus"], "rejected")
+        self.assertEqual(kept[0]["editorialNote"], "The source does not support the headline claim.")
+
+    def test_human_needs_review_decision_remains_pending(self):
+        article = {
+            "id": "human-pending", "autoPublished": True, "sourceType": "rss",
+            "title": "AI tool helps doctors detect cancer earlier",
+            "sourceDescription": "A clinical tool supports early cancer detection and may improve patient care through evaluation of diagnostic assistance.",
+            "editorialStatus": "needs_review", "editorialDecisionSource": "human",
+            "editorialReviewedAt": "2026-11-20T08:00:00+00:00", "editorialReviewedBy": "Editor",
+            "editorialNote": "Waiting for full paper.",
+            "sources": [{"url": "https://arxiv.org/abs/9999.0003"}],
+        }
+        kept, *_ = prune_existing([article], {})
+        self.assertEqual(kept[0]["editorialStatus"], "needs_review")
+        self.assertEqual(kept[0]["editorialNote"], "Waiting for full paper.")
+
+    def test_automatic_record_is_marked_as_automatic_decision(self):
+        feed = {"name": "arXiv AI", "publisher": "arXiv", "kind": "ai_topic", "preprint": True}
+        row = {
+            "title": "AI tool helps doctors detect cancer earlier",
+            "description": "A clinical tool supports early cancer detection and may improve patient care through evaluation of diagnostic assistance.",
+            "link": "https://arxiv.org/abs/9999.0004",
+        }
+        assessment = self.check(row["title"], row["description"])
+        self.assertTrue(assessment["accepted"])
+        from update_feed import article_from
+        article = article_from(row, feed, __import__("datetime").datetime(2026, 11, 20, tzinfo=__import__("datetime").timezone.utc), assessment)
+        self.assertEqual(article["editorialDecisionSource"], "automatic")
+        self.assertIn(article["editorialLabel"], {"Позитивний вплив", "Перспективний розвиток", "Безпека та виклики"})
+
+
+    def test_manually_approved_duplicate_override_survives_dedupe(self):
+        a = {
+            "id": "editorial-choice", "autoPublished": True, "sourceType": "rss",
+            "title": "Same Paper", "sources": [{"url": "https://example.org/paper"}],
+            "editorialStatus": "approved", "editorialDecisionSource": "human",
+            "editorialReviewedAt": "2026-11-20T08:00:00+00:00", "editorialDuplicateOverride": True,
+        }
+        b = {
+            "id": "duplicate-copy", "autoPublished": True, "sourceType": "rss",
+            "title": "Same Paper", "sources": [{"url": "https://example.org/paper?utm_source=rss"}],
+            "editorialStatus": "approved", "editorialDecisionSource": "automatic",
+        }
+        kept, duplicate_count, *_ = dedupe_existing([a, b])
+        self.assertEqual(len(kept), 2)
+        self.assertEqual(kept[0]["editorialStatus"], "approved")
+        self.assertEqual(kept[1]["editorialStatus"], "duplicate")
+        self.assertEqual(duplicate_count, 1)
 
     def test_title_key_ignores_punctuation_case(self):
         self.assertEqual(title_key("AI: A Better Future!"), title_key("ai a better future"))

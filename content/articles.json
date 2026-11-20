@@ -5,14 +5,15 @@
     "autoPublished": true,
     "sourceType": "rss",
     "feedName": "arXiv — Штучний інтелект",
-    "filterVersion": "2.1",
+    "filterVersion": "2.2",
     "feedKind": "ai_topic",
-    "sourceDescription": "arXiv:2611.23520v1 Announce Type: new Abstract: Time-series sensing increasingly relies on neural networks, yet deployment on resource-constrained microcontrollers remains challenging. Aggressive model compression can reduce accuracy, while restricting weights to multiplication-free representations introduces further losses. We present BeFit, an end-to-end framework that shifts model capacity from weights to learnable Bernstein polynomial activations. BeFit (i) finds compact Bernstein-activated convolutional neural networks (BeCNNs) through hardware-aware neural architecture search and trains them via knowledge distillation; (ii) projects their weights to multiplication-free codes, freezes the codes, and recovers the resulting accuracy loss through the learnable activations; and (iii) generates model-specific kernels that exploit the projected weights for multiplication-free convolutions. On human activity recognition, BeCNNs are 2.75 percentage points (pp) more accurate on average than ReLU CNNs of identical architecture. On a TI CC3220SF (Cortex-M4), weight projection speeds BeCNNs up by 2.2x on average while losing 0.8 pp, compared with 2.4 pp for ReLU CNNs. Against the MLPerf Tiny DS-CNN reference model running on TensorFlow Lite Micro with CMSIS-NN, the unprojected BeCNN achieves 1.0 pp higher accuracy, 2.2x lower latency, and 6.4x lower flash, while the projected model re",
-    "selectionReason": "напрям: Освіта; прикладні сигнали: reduce",
+    "sourceDescription": "arXiv:2611.23520v1 Announce Type: new Abstract: Time-series sensing increasingly relies on neural networks, yet deployment on resource-constrained microcontrollers remains challenging. Aggressive model compression can reduce accuracy, while restricting weights to multiplication-free representations introduces further losses. We present BeFit, an end-to-end framework that shifts model capacity from weights to learnable Bernstein polynomial activations. BeFit (i) finds compact Bernstein-activated convolutional neural networks (BeCNNs) through hardware-aware neural architecture search and trains them via knowledge distillation; (ii) projects their weights to multiplication-free codes, freezes the codes, and recovers the resulting accuracy loss through the learnable activations; and (iii) generates model-specific kernels that exploit the projected weights for multiplication-free convolutions. On human activity recognition, BeCNNs are 2.75 percentage points (pp) more accurate on average than ReLU CNNs of identical architecture. On a TI CC3220SF (Cortex-M4), weight projection speeds BeCNNs up by 2.2x on average while losing 0.8 pp, compared with 2.4 pp for ReLU CNNs. Against the MLPerf Tiny DS-CNN reference model running on TensorFlow Lite Micro with CMSIS-NN, the unprojected BeCNN achieves 1.0 pp higher accuracy, 2.2x lower latency, and 6.4x lower flash, while the projected model remains within 1.0 pp of the reference accuracy and runs 5.9x faster. In emulation on a RISC-V core without a hardware multiplier, the instruction-count reduction relative to the DS-CNN increases from 5.2x on the Cortex-M4 to 147x. BeFit also extends to transformers and MLPs, and across all tasks the final models stay within 1.56 pp of their float32 teachers on average.",
+    "selectionReason": "напрям: Освіта; ознаки користі: deployment, reduce",
+    "evidenceLevel": "практичне застосування або конкретний приклад",
     "category": "Освіта",
     "title": "BeFit: Shifting Complexity from Weights to Bernstein Activations for Resource-Constrained Sensing",
-    "summary": "arXiv:2611.23520v1 Announce Type: new Abstract: Time-series sensing increasingly relies on neural networks, yet deployment on resource-constrained microcontrollers remains challenging. Aggressive model compression can reduce accuracy, while restricting weights to multiplication-free representations introduces further losses.…",
-    "body": "Цей матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та короткий опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.23520v1 Announce Type: new Abstract: Time-series sensing increasingly relies on neural networks, yet deployment on resource-constrained microcontrollers remains challenging. Aggressive model compression can reduce accuracy, while restricting weights to multiplication-free representations introduces further losses. We present BeFit, an end-to-end framework that shifts model capacity from weights to learnable Bernstein polynomial activations. BeFit (i) finds compact Bernstein-activated convolutional neural networks (BeCNNs) through hardware-aware neural architecture search and trains them via knowledge distillation; (ii) projects their weights to multiplication-free codes, freezes the codes, and recovers the resulting accuracy loss through the learnable activations; and (iii) generates model-specific kernels that exploit the projected weights for multiplication-free convolutions. On human activity recognition, BeCNNs are 2.75 percentage points (pp) more accurate on average than ReLU CNNs of identical architecture. On a TI CC3220SF (Cortex-M4), weight projection speeds BeCNNs up by 2.2x on average while losing 0.8 pp, compared with 2.4 pp for ReLU CNNs. Against the MLPerf Tiny DS-CNN reference model running on TensorFlow Lite Micro with CMSIS-NN, the unprojected BeCNN achieves 1.0 pp higher accuracy, 2.2x lower latency, and 6.4x lower flash, while the projected model re\n\nЧому матеріал потрапив до добірки: напрям: Освіта; прикладні сигнали: reduce. Це автоматичний тематичний відбір за ключовими словами, а не підтвердження ефективності чи незалежна експертна оцінка. Перед висновками прочитайте оригінальну публікацію.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте розділ про публікацію та рецензування в оригіналі.\n\nРедакційне застереження: автоматична система перевіряє формат стрічки, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження, не перевіряє незалежно всі твердження та не замінює людську редакційну перевірку.",
+    "summary": "arXiv:2611.23520v1 Announce Type: new Abstract: Time-series sensing increasingly relies on neural networks, yet deployment on resource-constrained microcontrollers remains challenging. Aggressive model compression can reduce accuracy, while restricting weights to multiplication-free representations introduces further losses. We present BeFit, an end-to-end…",
+    "body": "Матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.23520v1 Announce Type: new Abstract: Time-series sensing increasingly relies on neural networks, yet deployment on resource-constrained microcontrollers remains challenging. Aggressive model compression can reduce accuracy, while restricting weights to multiplication-free representations introduces further losses. We present BeFit, an end-to-end framework that shifts model capacity from weights to learnable Bernstein polynomial activations. BeFit (i) finds compact Bernstein-activated convolutional neural networks (BeCNNs) through hardware-aware neural architecture search and trains them via knowledge distillation; (ii) projects their weights to multiplication-free codes, freezes the codes, and recovers the resulting accuracy loss through the learnable activations; and (iii) generates model-specific kernels that exploit the projected weights for multiplication-free convolutions. On human activity recognition, BeCNNs are 2.75 percentage points (pp) more accurate on average than ReLU CNNs of identical architecture. On a TI CC3220SF (Cortex-M4), weight projection speeds BeCNNs up by 2.2x on average while losing 0.8 pp, compared with 2.4 pp for ReLU CNNs. Against the MLPerf Tiny DS-CNN reference model running on TensorFlow Lite Micro with CMSIS-NN, the unprojected BeCNN achieves 1.0 pp higher accuracy, 2.2x lower latency, and 6.4x lower flash, while the projected model remains within 1.0 pp of the reference accuracy and runs 5.9x faster. In emulation on a RISC-V core without a hardware multiplier, the instruction-count reduction relative to the DS-CNN increases from 5.2x on the Cortex-M4 to 147x. BeFit also extends to transformers and MLPs, and across all tasks the final models stay within 1.56 pp of their float32 teachers on average.\n\nРедакційна класифікація: напрям: Освіта; ознаки користі: deployment, reduce. Рівень свідчень: практичне застосування або конкретний приклад. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте статус публікації в першоджерелі.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
     "sourceDate": "2026-11-20",
     "sources": [
       {
@@ -24,15 +25,240 @@
     ]
   },
   {
+    "id": "rss-2026-11-20-cef683fb81f6",
+    "date": "2026-11-20",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "arXiv — Штучний інтелект",
+    "filterVersion": "2.2",
+    "feedKind": "ai_topic",
+    "sourceDescription": "arXiv:2611.23832v1 Announce Type: new Abstract: A System 1 model answers a multiple-choice question in a single pass. A frozen language model turns the question and each option into vectors, two small, trained heads place them in a shared space, and the closest option wins. The design has been shown on agent decisions, but we are not aware of a study of how far it goes on exam questions that need medical knowledge, where the right option is often no more similar to the question than the wrong ones. We rebuilt the recipe from scratch for MedMCQA and trained only two projection heads and one temperature on top of frozen Qwen3.5-0.8B, Granite-4.2-3B and Qwen3-8B, using a contrastive loss with in-batch and hard negatives and a mask for repeated answers. With plain last-token vectors, both small encoders answer about one question in three correctly (33.1% and 33.0% on 3,842 held-out questions, where chance is 25.0%). Writing each text inside a one-word-summary prompt and lowering the learning rate of the heads raised this to 41.7% and 42.5% for the two small encoders and to 46.0% +-0.2 (three seeds) for Qwen3-8B. Shuffling the questions against the options returns accuracy to chance, so the heads do use the question. Flan-PaLM and Med-PaLM 2 report 57.6% and 72.3% on MedMCQA under a different protocol, so ours is a cheap, fast baseline and not a competitive system. We also say what our evidence cannot show: validation gains were about 1.7 to 2 times the test gains, and we could not separate the effect of reading several encoder layers from the other changes.",
+    "selectionReason": "напрям: Медицина; ознаки користі: validation",
+    "evidenceLevel": "потенційне застосування; потрібне ознайомлення з першоджерелом",
+    "category": "Медицина",
+    "title": "A System 1 Decision Model for Medical Multiple-Choice Questions Built on Frozen Language Models",
+    "summary": "arXiv:2611.23832v1 Announce Type: new Abstract: A System 1 model answers a multiple-choice question in a single pass. A frozen language model turns the question and each option into vectors, two small, trained heads place them in a shared space, and the closest option wins. The design has been shown on agent decisions, but we are not aware of a study of…",
+    "body": "Матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.23832v1 Announce Type: new Abstract: A System 1 model answers a multiple-choice question in a single pass. A frozen language model turns the question and each option into vectors, two small, trained heads place them in a shared space, and the closest option wins. The design has been shown on agent decisions, but we are not aware of a study of how far it goes on exam questions that need medical knowledge, where the right option is often no more similar to the question than the wrong ones. We rebuilt the recipe from scratch for MedMCQA and trained only two projection heads and one temperature on top of frozen Qwen3.5-0.8B, Granite-4.2-3B and Qwen3-8B, using a contrastive loss with in-batch and hard negatives and a mask for repeated answers. With plain last-token vectors, both small encoders answer about one question in three correctly (33.1% and 33.0% on 3,842 held-out questions, where chance is 25.0%). Writing each text inside a one-word-summary prompt and lowering the learning rate of the heads raised this to 41.7% and 42.5% for the two small encoders and to 46.0% +-0.2 (three seeds) for Qwen3-8B. Shuffling the questions against the options returns accuracy to chance, so the heads do use the question. Flan-PaLM and Med-PaLM 2 report 57.6% and 72.3% on MedMCQA under a different protocol, so ours is a cheap, fast baseline and not a competitive system. We also say what our evidence cannot show: validation gains were about 1.7 to 2 times the test gains, and we could not separate the effect of reading several encoder layers from the other changes.\n\nРедакційна класифікація: напрям: Медицина; ознаки користі: validation. Рівень свідчень: потенційне застосування; потрібне ознайомлення з першоджерелом. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте статус публікації в першоджерелі.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-20",
+    "sources": [
+      {
+        "title": "A System 1 Decision Model for Medical Multiple-Choice Questions Built on Frozen Language Models",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2611.23832",
+        "publishedDate": "2026-11-20"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-20-3f16726a250f",
+    "date": "2026-11-20",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "arXiv — Штучний інтелект",
+    "filterVersion": "2.2",
+    "feedKind": "ai_topic",
+    "sourceDescription": "arXiv:2611.24249v1 Announce Type: new Abstract: Advancing physical artificial intelligence (Physical AI) requires moving beyond static object recognition to ground how real-world mechanics (e.g., impact, friction, and force transfer) unfold over time. While multimodal aligners seek to capture these interactions by matching multi-sensor streams, prevailing architectures compress each temporal sequence into a single pooled embedding. We show that this paradigm fails on twin events: distinct physical executions recorded under identical task conditions. Collapsing the temporal dimension averages out transient cross-modal dynamics, effectively reducing physical event alignment to static scene recognition. Formally, we prove that as sequence length increases, any temporally pooled representation converges to the stationary recording condition. Consequently, as windows grow, no choice of loss function or embedding geometry can disambiguate twin events from pooled features alone. Instead, we show that physical events are uniquely identified by the event gap, namely the instantaneous, synchronous co-fluctuations across modalities that are erased by pooling and accumulate only along unpooled trajectories. To recover this signal, we introduce CounterPoint, a lightweight plug-in module that strips out each modality's temporal mean to score frame-level cross-modal agreement. Integrated across four state-of-the-art (SOTA) multimodal aligners, CounterPoint shifts representations from coarse condition matching to fine-grained physical event alignment, consistently outperforming existing temporal alignment methods.",
+    "selectionReason": "напрям: Надійність ШІ; ознаки користі: real-world",
+    "evidenceLevel": "практичне застосування або конкретний приклад",
+    "category": "Надійність ШІ",
+    "title": "From Points to Trajectories: Rethinking Multimodal Alignment for Physical Events",
+    "summary": "arXiv:2611.24249v1 Announce Type: new Abstract: Advancing physical artificial intelligence (Physical AI) requires moving beyond static object recognition to ground how real-world mechanics (e.g., impact, friction, and force transfer) unfold over time. While multimodal aligners seek to capture these interactions by matching multi-sensor streams, prevailing…",
+    "body": "Матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.24249v1 Announce Type: new Abstract: Advancing physical artificial intelligence (Physical AI) requires moving beyond static object recognition to ground how real-world mechanics (e.g., impact, friction, and force transfer) unfold over time. While multimodal aligners seek to capture these interactions by matching multi-sensor streams, prevailing architectures compress each temporal sequence into a single pooled embedding. We show that this paradigm fails on twin events: distinct physical executions recorded under identical task conditions. Collapsing the temporal dimension averages out transient cross-modal dynamics, effectively reducing physical event alignment to static scene recognition. Formally, we prove that as sequence length increases, any temporally pooled representation converges to the stationary recording condition. Consequently, as windows grow, no choice of loss function or embedding geometry can disambiguate twin events from pooled features alone. Instead, we show that physical events are uniquely identified by the event gap, namely the instantaneous, synchronous co-fluctuations across modalities that are erased by pooling and accumulate only along unpooled trajectories. To recover this signal, we introduce CounterPoint, a lightweight plug-in module that strips out each modality's temporal mean to score frame-level cross-modal agreement. Integrated across four state-of-the-art (SOTA) multimodal aligners, CounterPoint shifts representations from coarse condition matching to fine-grained physical event alignment, consistently outperforming existing temporal alignment methods.\n\nРедакційна класифікація: напрям: Надійність ШІ; ознаки користі: real-world. Рівень свідчень: практичне застосування або конкретний приклад. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте статус публікації в першоджерелі.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-20",
+    "sources": [
+      {
+        "title": "From Points to Trajectories: Rethinking Multimodal Alignment for Physical Events",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2611.24249",
+        "publishedDate": "2026-11-20"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-20-5d54f45c8a52",
+    "date": "2026-11-20",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "arXiv — Штучний інтелект",
+    "filterVersion": "2.2",
+    "feedKind": "ai_topic",
+    "sourceDescription": "arXiv:2611.23750v1 Announce Type: cross Abstract: Diffusion language models (DLMs) offer a flexible alternative to autoregressive models, enabling any-order infilling. While most existing decoding methods treat decoded tokens as fixed, some recent models allow previously decoded tokens to be revised only by replacing them with alternative tokens, a paradigm we refer to as replacement-only editing (ROE). Although ROE can correct individual tokens, it is inefficient for sequence shifts caused by missing or extra tokens and struggles when errors occur across many positions. To address these limitations, we propose LED (Levenshtein Editing for Diffusion Language Models), a post-training framework that extends ROE with insertion and deletion, enabling Levenshtein-style refinement of generated sequences. It uses two training designs. First, it reconstructs edit supervision on the fly during supervised fine-tuning using longest-common-subsequence alignment, enabling insertion and deletion learning without manually annotated labels. Second, it adopts multi-stage training, where the state from one stage becomes the input to the next, exposing the model to its earlier errors and enabling it to correct them. When applied to the 16B-parameter LLaDA2.1-Mini Base, LED raises the average score across twelve benchmarks from 54.86 to 57.10 under confidence-guided decoding while increasing tokens per forward from 6.14 to 7.05, whereas under confidence-free decoding it raises the average score from 27.52 to 47.19. We further show that LED achieves higher pass@k at large k than thresholded decoding without editing, demonstrating improved generation diversity and revealing the diversity potential of DLMs without confidence guidance. LED also improves robustness to large block sizes, raising the average score from 36.97 to 51.34 at block size 128. Together, these results suggest that LED supports more robust self-correction in DLMs.",
+    "selectionReason": "напрям: Надійність ШІ; ознаки користі: benchmark, benchmarks, support",
+    "evidenceLevel": "дослідження або оцінювання потенційного застосування",
+    "category": "Надійність ШІ",
+    "title": "Beyond Replacement: Levenshtein Editing for Diffusion Language Models",
+    "summary": "arXiv:2611.23750v1 Announce Type: cross Abstract: Diffusion language models (DLMs) offer a flexible alternative to autoregressive models, enabling any-order infilling. While most existing decoding methods treat decoded tokens as fixed, some recent models allow previously decoded tokens to be revised only by replacing them with alternative tokens, a…",
+    "body": "Матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.23750v1 Announce Type: cross Abstract: Diffusion language models (DLMs) offer a flexible alternative to autoregressive models, enabling any-order infilling. While most existing decoding methods treat decoded tokens as fixed, some recent models allow previously decoded tokens to be revised only by replacing them with alternative tokens, a paradigm we refer to as replacement-only editing (ROE). Although ROE can correct individual tokens, it is inefficient for sequence shifts caused by missing or extra tokens and struggles when errors occur across many positions. To address these limitations, we propose LED (Levenshtein Editing for Diffusion Language Models), a post-training framework that extends ROE with insertion and deletion, enabling Levenshtein-style refinement of generated sequences. It uses two training designs. First, it reconstructs edit supervision on the fly during supervised fine-tuning using longest-common-subsequence alignment, enabling insertion and deletion learning without manually annotated labels. Second, it adopts multi-stage training, where the state from one stage becomes the input to the next, exposing the model to its earlier errors and enabling it to correct them. When applied to the 16B-parameter LLaDA2.1-Mini Base, LED raises the average score across twelve benchmarks from 54.86 to 57.10 under confidence-guided decoding while increasing tokens per forward from 6.14 to 7.05, whereas under confidence-free decoding it raises the average score from 27.52 to 47.19. We further show that LED achieves higher pass@k at large k than thresholded decoding without editing, demonstrating improved generation diversity and revealing the diversity potential of DLMs without confidence guidance. LED also improves robustness to large block sizes, raising the average score from 36.97 to 51.34 at block size 128. Together, these results suggest that LED supports more robust self-correction in DLMs.\n\nРедакційна класифікація: напрям: Надійність ШІ; ознаки користі: benchmark, benchmarks, support. Рівень свідчень: дослідження або оцінювання потенційного застосування. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте статус публікації в першоджерелі.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-20",
+    "sources": [
+      {
+        "title": "Beyond Replacement: Levenshtein Editing for Diffusion Language Models",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2611.23750",
+        "publishedDate": "2026-11-20"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-20-d49baa3dded5",
+    "date": "2026-11-20",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "arXiv — Штучний інтелект",
+    "filterVersion": "2.2",
+    "feedKind": "ai_topic",
+    "sourceDescription": "arXiv:2611.23862v1 Announce Type: cross Abstract: Segmenting each reported finding in a radiology scan would allow findings to be measured and tracked over time and let AI systems generate reports that are verifiable, but so far AI models have performed poorly at this task. To advance this task, we organized the ReXGrounding Challenge at MICCAI 2026, the first challenge dedicated to it. Given a non-contrast chest CT scan and the set of findings from its report, participants trained models to produce the corresponding set of 3D segmentations. The challenge used 2,992 training and 200 validation scans from the ReXGroundingCT dataset, and evaluated methods on a held-out test set of 300 scans with 582 findings, exhaustively annotated by board-certified radiologists. In total, 48 teams from 15 countries made 760 submissions, and the best method reached a Dice of 0.375 and a hit rate of 0.77, matching agreement between two independent radiologist groups (Dice 0.32, hit rate 0.76, on a 50-scan subset). On the 100 scans of the pre-challenge benchmark, the winner reached a Dice of 0.390, against 0.285 for VoxTell, the best model before the challenge, which five of the six best teams fine-tuned. Non-focal findings remained far harder to segment than focal ones, instance F1 stayed below inter-reader agreement (0.34 vs. 0.47), and models sometimes segmented the right abnormality in the wrong location. Top methods thus match radiologist agreement in Dice, but non-focal findings, findings with multiple instances, and adherence to the anatomical location described in the text remain open problems.",
+    "selectionReason": "напрям: Медицина; ознаки користі: benchmark, evaluate, validation",
+    "evidenceLevel": "дослідження або оцінювання потенційного застосування",
+    "category": "Медицина",
+    "title": "Grounding Radiology Reports in 3D Chest CT: Results of the ReXGrounding Challenge",
+    "summary": "arXiv:2611.23862v1 Announce Type: cross Abstract: Segmenting each reported finding in a radiology scan would allow findings to be measured and tracked over time and let AI systems generate reports that are verifiable, but so far AI models have performed poorly at this task. To advance this task, we organized the ReXGrounding Challenge at MICCAI 2026, the…",
+    "body": "Матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.23862v1 Announce Type: cross Abstract: Segmenting each reported finding in a radiology scan would allow findings to be measured and tracked over time and let AI systems generate reports that are verifiable, but so far AI models have performed poorly at this task. To advance this task, we organized the ReXGrounding Challenge at MICCAI 2026, the first challenge dedicated to it. Given a non-contrast chest CT scan and the set of findings from its report, participants trained models to produce the corresponding set of 3D segmentations. The challenge used 2,992 training and 200 validation scans from the ReXGroundingCT dataset, and evaluated methods on a held-out test set of 300 scans with 582 findings, exhaustively annotated by board-certified radiologists. In total, 48 teams from 15 countries made 760 submissions, and the best method reached a Dice of 0.375 and a hit rate of 0.77, matching agreement between two independent radiologist groups (Dice 0.32, hit rate 0.76, on a 50-scan subset). On the 100 scans of the pre-challenge benchmark, the winner reached a Dice of 0.390, against 0.285 for VoxTell, the best model before the challenge, which five of the six best teams fine-tuned. Non-focal findings remained far harder to segment than focal ones, instance F1 stayed below inter-reader agreement (0.34 vs. 0.47), and models sometimes segmented the right abnormality in the wrong location. Top methods thus match radiologist agreement in Dice, but non-focal findings, findings with multiple instances, and adherence to the anatomical location described in the text remain open problems.\n\nРедакційна класифікація: напрям: Медицина; ознаки користі: benchmark, evaluate, validation. Рівень свідчень: дослідження або оцінювання потенційного застосування. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте статус публікації в першоджерелі.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-20",
+    "sources": [
+      {
+        "title": "Grounding Radiology Reports in 3D Chest CT: Results of the ReXGrounding Challenge",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2611.23862",
+        "publishedDate": "2026-11-20"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-20-834c7f6f1781",
+    "date": "2026-11-20",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "arXiv — Штучний інтелект",
+    "filterVersion": "2.2",
+    "feedKind": "ai_topic",
+    "sourceDescription": "arXiv:2611.24059v1 Announce Type: cross Abstract: Frontier post-training follows a common recipe: train one expert per domain with reinforcement learning (RL), then consolidate the experts into one model via multi-teacher on-policy distillation (MOPD). Such consolidation is expensive: the student samples in every environment again, an expert scores every sampled token, and the student inherits the drift of the final experts. Yet we argue that the experts' RL runs have already produced what consolidation needs: rollouts with their sampling probabilities and rewards, in the order the experts learned from them. We propose multi-expert replay policy distillation (MRPD), which replays these training logs through the student in the experts' order. At each step, the policy gradient is recomputed on these scored trajectories, and the final experts' distributions are distilled at the logged prefixes. Following the experts' own trajectory reduces the training-inference mismatch and keeps the student within the clip range, so the replay is off-policy in origin but quasi-on-policy throughout consolidation. MRPD samples nothing and calls no environment or reward model: the trainer is the sole process, and consolidating the experts costs only about a seventh of the compute used to train them. On three long-horizon agentic domains (reasoning, search and SQL), MRPD yields the best student model, substantially outperforming online RL baselines, and surpassing MOPD from the same experts at a fraction of MOPD's cost. Our analysis on the same logs shows that the replayed trajectories carry most of the gain, and that both the policy gradient and the distillation term add to it. Most interestingly, the order of the logs matters more than their amount or rewards, suggesting that expert training logs are a curriculum, not a data mixture.",
+    "selectionReason": "напрям: Освіта; ознаки користі: reduce, reduces",
+    "evidenceLevel": "потенційне застосування; потрібне ознайомлення з першоджерелом",
+    "category": "Освіта",
+    "title": "Replay, Don't Resample: Off-Policy Consolidation of Long-Horizon RL Experts",
+    "summary": "arXiv:2611.24059v1 Announce Type: cross Abstract: Frontier post-training follows a common recipe: train one expert per domain with reinforcement learning (RL), then consolidate the experts into one model via multi-teacher on-policy distillation (MOPD). Such consolidation is expensive: the student samples in every environment again, an expert scores every…",
+    "body": "Матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.24059v1 Announce Type: cross Abstract: Frontier post-training follows a common recipe: train one expert per domain with reinforcement learning (RL), then consolidate the experts into one model via multi-teacher on-policy distillation (MOPD). Such consolidation is expensive: the student samples in every environment again, an expert scores every sampled token, and the student inherits the drift of the final experts. Yet we argue that the experts' RL runs have already produced what consolidation needs: rollouts with their sampling probabilities and rewards, in the order the experts learned from them. We propose multi-expert replay policy distillation (MRPD), which replays these training logs through the student in the experts' order. At each step, the policy gradient is recomputed on these scored trajectories, and the final experts' distributions are distilled at the logged prefixes. Following the experts' own trajectory reduces the training-inference mismatch and keeps the student within the clip range, so the replay is off-policy in origin but quasi-on-policy throughout consolidation. MRPD samples nothing and calls no environment or reward model: the trainer is the sole process, and consolidating the experts costs only about a seventh of the compute used to train them. On three long-horizon agentic domains (reasoning, search and SQL), MRPD yields the best student model, substantially outperforming online RL baselines, and surpassing MOPD from the same experts at a fraction of MOPD's cost. Our analysis on the same logs shows that the replayed trajectories carry most of the gain, and that both the policy gradient and the distillation term add to it. Most interestingly, the order of the logs matters more than their amount or rewards, suggesting that expert training logs are a curriculum, not a data mixture.\n\nРедакційна класифікація: напрям: Освіта; ознаки користі: reduce, reduces. Рівень свідчень: потенційне застосування; потрібне ознайомлення з першоджерелом. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте статус публікації в першоджерелі.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-20",
+    "sources": [
+      {
+        "title": "Replay, Don't Resample: Off-Policy Consolidation of Long-Horizon RL Experts",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2611.24059",
+        "publishedDate": "2026-11-20"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-20-de635db4eaf1",
+    "date": "2026-11-20",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "arXiv — Штучний інтелект",
+    "filterVersion": "2.2",
+    "feedKind": "ai_topic",
+    "sourceDescription": "arXiv:2611.24156v1 Announce Type: cross Abstract: Large language models are increasingly used to create stories for children. Since bedtime stories can shape children's perceptions of social roles, this raises concerns about whether LLMs adapt narrative portrayals according to the intended recipient's gender. We conducted a large-scale study to examine gender stereotyping in LLM-generated bedtime stories. Using matched daughter/son prompts and a five-generation design, we analyze 62,873 retained stories from 16 LLMs across 35 country settings and 12 narrator roles. We introduce a multi-level evaluation framework combining context-adjusted lexical rate contrasts, relative stereotype alignment, narrator-recipient interaction analysis, human evaluation, and representation-level interventions to examine both the consistency and interpretability of these differences. Our results reveal systematic differences in narrative framing: son-directed stories emphasize higher agency and lower communion compared to daughter-directed stories. While narrator gender expresses limited moderation on these patterns, high sociability exhibits a more pronounced interaction. Human evaluations demonstrate consistent agreement, although correspondence with lexical measures varies across narrative dimensions. Additionally, hidden-state analyses reveal decodable recipient-gender information. These findings demonstrate persistent yet context-dependent representational disparities in LLM-generated children's stories and motivate narrative-specific bias evaluation beyond short-form benchmarks.",
+    "selectionReason": "напрям: Надійність ШІ; ознаки користі: benchmark, benchmarks, evaluation",
+    "evidenceLevel": "дослідження або оцінювання потенційного застосування",
+    "category": "Надійність ШІ",
+    "title": "Once Upon a Bias: Gender Stereotyping in LLM-Generated Children's Stories",
+    "summary": "arXiv:2611.24156v1 Announce Type: cross Abstract: Large language models are increasingly used to create stories for children. Since bedtime stories can shape children's perceptions of social roles, this raises concerns about whether LLMs adapt narrative portrayals according to the intended recipient's gender. We conducted a large-scale study to examine…",
+    "body": "Матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.24156v1 Announce Type: cross Abstract: Large language models are increasingly used to create stories for children. Since bedtime stories can shape children's perceptions of social roles, this raises concerns about whether LLMs adapt narrative portrayals according to the intended recipient's gender. We conducted a large-scale study to examine gender stereotyping in LLM-generated bedtime stories. Using matched daughter/son prompts and a five-generation design, we analyze 62,873 retained stories from 16 LLMs across 35 country settings and 12 narrator roles. We introduce a multi-level evaluation framework combining context-adjusted lexical rate contrasts, relative stereotype alignment, narrator-recipient interaction analysis, human evaluation, and representation-level interventions to examine both the consistency and interpretability of these differences. Our results reveal systematic differences in narrative framing: son-directed stories emphasize higher agency and lower communion compared to daughter-directed stories. While narrator gender expresses limited moderation on these patterns, high sociability exhibits a more pronounced interaction. Human evaluations demonstrate consistent agreement, although correspondence with lexical measures varies across narrative dimensions. Additionally, hidden-state analyses reveal decodable recipient-gender information. These findings demonstrate persistent yet context-dependent representational disparities in LLM-generated children's stories and motivate narrative-specific bias evaluation beyond short-form benchmarks.\n\nРедакційна класифікація: напрям: Надійність ШІ; ознаки користі: benchmark, benchmarks, evaluation. Рівень свідчень: дослідження або оцінювання потенційного застосування. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте статус публікації в першоджерелі.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-20",
+    "sources": [
+      {
+        "title": "Once Upon a Bias: Gender Stereotyping in LLM-Generated Children's Stories",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2611.24156",
+        "publishedDate": "2026-11-20"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-20-a165837d3c9a",
+    "date": "2026-11-20",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "arXiv — Штучний інтелект",
+    "filterVersion": "2.2",
+    "feedKind": "ai_topic",
+    "sourceDescription": "arXiv:2611.24200v1 Announce Type: cross Abstract: The proliferation of diffusion-based generative models has intensified the need for reliable methods to trace and verify the provenance of AI-generated images. Existing watermarking approaches for diffusion models typically rely on isotropic frequency patterns and handcrafted detection metrics, which are prone to directional vulnerability and threshold instability across diverse image transformations. We propose SpiderMark, a hybrid watermarking framework that combines algorithmic frequency-domain injection with learning-based probabilistic verification, requiring no modifications to pretrained diffusion model weights. SpiderMark embeds a structured spider-web pattern, comprising radial spokes and concentric polygonal rings, into the Fourier representation of the initial latent noise, and trains a lightweight ResNet-18 verifier augmented with auxiliary similarity cues (PSNR and L1) to produce a continuous watermark confidence score for watermark detection. Across nine evaluation conditions, SpiderMark achieves the highest fixed-threshold Accuracy in eight, while retaining strong detection on unseen COCO prompts without verifier retraining. CLIP similarity and FID measurements show that these detection gains are accompanied by small measured differences in prompt alignment and distributional image quality. SpiderMark establishes that structured watermark geometry and learned probabilistic verification can be unified into a single, practical framework, bridging the gap between imperceptibility, robustness, and real-world verifiability for generative AI content attribution.",
+    "selectionReason": "напрям: Надійність ШІ; ознаки користі: evaluation, real-world, detect",
+    "evidenceLevel": "практичне застосування або конкретний приклад",
+    "category": "Надійність ШІ",
+    "title": "SpiderMark: Hybrid Watermarking for Generative AI via Algorithmic Injection and Learning-Based Verification",
+    "summary": "arXiv:2611.24200v1 Announce Type: cross Abstract: The proliferation of diffusion-based generative models has intensified the need for reliable methods to trace and verify the provenance of AI-generated images. Existing watermarking approaches for diffusion models typically rely on isotropic frequency patterns and handcrafted detection metrics, which are…",
+    "body": "Матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.24200v1 Announce Type: cross Abstract: The proliferation of diffusion-based generative models has intensified the need for reliable methods to trace and verify the provenance of AI-generated images. Existing watermarking approaches for diffusion models typically rely on isotropic frequency patterns and handcrafted detection metrics, which are prone to directional vulnerability and threshold instability across diverse image transformations. We propose SpiderMark, a hybrid watermarking framework that combines algorithmic frequency-domain injection with learning-based probabilistic verification, requiring no modifications to pretrained diffusion model weights. SpiderMark embeds a structured spider-web pattern, comprising radial spokes and concentric polygonal rings, into the Fourier representation of the initial latent noise, and trains a lightweight ResNet-18 verifier augmented with auxiliary similarity cues (PSNR and L1) to produce a continuous watermark confidence score for watermark detection. Across nine evaluation conditions, SpiderMark achieves the highest fixed-threshold Accuracy in eight, while retaining strong detection on unseen COCO prompts without verifier retraining. CLIP similarity and FID measurements show that these detection gains are accompanied by small measured differences in prompt alignment and distributional image quality. SpiderMark establishes that structured watermark geometry and learned probabilistic verification can be unified into a single, practical framework, bridging the gap between imperceptibility, robustness, and real-world verifiability for generative AI content attribution.\n\nРедакційна класифікація: напрям: Надійність ШІ; ознаки користі: evaluation, real-world, detect. Рівень свідчень: практичне застосування або конкретний приклад. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте статус публікації в першоджерелі.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-20",
+    "sources": [
+      {
+        "title": "SpiderMark: Hybrid Watermarking for Generative AI via Algorithmic Injection and Learning-Based Verification",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2611.24200",
+        "publishedDate": "2026-11-20"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-20-d12c82b1c69d",
+    "date": "2026-11-20",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "arXiv — Штучний інтелект",
+    "filterVersion": "2.2",
+    "feedKind": "ai_topic",
+    "sourceDescription": "arXiv:2611.24877v1 Announce Type: cross Abstract: Large language models (LLMs) are used to explain clinical prediction models, on the promise that they can say what a model computes, find its faults and even reveal new knowledge in it. We tested the three promises where the answers could be checked. From the International Stroke Trial we trained four kinds of model (logistic regression, explainable boosting machine, gradient-boosted trees, neural network) for two outcomes on patients randomised earlier, planted one flaw in each of 24 copies (an under-predicted subgroup, a reversed risk factor or an implausible step) and mixed them with the 8 clean models. GPT-6 Astra audited each model three times, blind, through a tool that only returned the model's predictions; the judging rules were committed before any run and applied by program. Its surrogate models, with a median of 128 terms, reproduced the audited models' log-odds with a mean $R^2$ of 0.976 (0.959 for an additive surrogate of 42 terms fitted by an analyst). It found the planted flaw in 69 of 72 runs (96%; 95% CI 80% to 99%); a script written for the purpose found all 24. It also reported many more problems: 60% of 1,089 checkable reports failed the pre-specified check against the model's average behaviour; post hoc, most of these were real but small steps, and 15% of the checkable reports were not found in the model. Of 601 unexpected relationships it read out of the clean models, 11% held in patients randomised later (random pairs 6%; a regression scan's shorter list of its strongest candidates, 28%); after a check on the training data, 33% against 30%. With query access alone, an LLM can describe a black-box model faithfully and find nearly every planted flaw, as a purpose-written script also did; its reports of problems must be checked on the model and its discoveries on data.",
+    "selectionReason": "напрям: Медицина; ознаки користі: predict, prediction, audit",
+    "evidenceLevel": "дослідження або оцінювання потенційного застосування",
+    "category": "Медицина",
+    "title": "Auditing black-box clinical prediction models with a large language model through queries alone: a blinded test with planted flaws",
+    "summary": "arXiv:2611.24877v1 Announce Type: cross Abstract: Large language models (LLMs) are used to explain clinical prediction models, on the promise that they can say what a model computes, find its faults and even reveal new knowledge in it. We tested the three promises where the answers could be checked. From the International Stroke Trial we trained four kinds…",
+    "body": "Матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.24877v1 Announce Type: cross Abstract: Large language models (LLMs) are used to explain clinical prediction models, on the promise that they can say what a model computes, find its faults and even reveal new knowledge in it. We tested the three promises where the answers could be checked. From the International Stroke Trial we trained four kinds of model (logistic regression, explainable boosting machine, gradient-boosted trees, neural network) for two outcomes on patients randomised earlier, planted one flaw in each of 24 copies (an under-predicted subgroup, a reversed risk factor or an implausible step) and mixed them with the 8 clean models. GPT-6 Astra audited each model three times, blind, through a tool that only returned the model's predictions; the judging rules were committed before any run and applied by program. Its surrogate models, with a median of 128 terms, reproduced the audited models' log-odds with a mean $R^2$ of 0.976 (0.959 for an additive surrogate of 42 terms fitted by an analyst). It found the planted flaw in 69 of 72 runs (96%; 95% CI 80% to 99%); a script written for the purpose found all 24. It also reported many more problems: 60% of 1,089 checkable reports failed the pre-specified check against the model's average behaviour; post hoc, most of these were real but small steps, and 15% of the checkable reports were not found in the model. Of 601 unexpected relationships it read out of the clean models, 11% held in patients randomised later (random pairs 6%; a regression scan's shorter list of its strongest candidates, 28%); after a check on the training data, 33% against 30%. With query access alone, an LLM can describe a black-box model faithfully and find nearly every planted flaw, as a purpose-written script also did; its reports of problems must be checked on the model and its discoveries on data.\n\nРедакційна класифікація: напрям: Медицина; ознаки користі: predict, prediction, audit. Рівень свідчень: дослідження або оцінювання потенційного застосування. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте статус публікації в першоджерелі.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-20",
+    "sources": [
+      {
+        "title": "Auditing black-box clinical prediction models with a large language model through queries alone: a blinded test with planted flaws",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2611.24877",
+        "publishedDate": "2026-11-20"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-20-b8f912413537",
+    "date": "2026-11-20",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "arXiv — Штучний інтелект",
+    "filterVersion": "2.2",
+    "feedKind": "ai_topic",
+    "sourceDescription": "arXiv:2611.24927v1 Announce Type: cross Abstract: AI systems are built across many organizations that contribute models, data, compute, capital, talent, and other assets. While the layers of the AI stack are relatively well understood, the relationships between actors and components across layers remains sparsely documented. In this work, we focus on the organizations that make up the AI supply chain: the complex network of actors that contribute to the development and deployment of AI. We motivate the examination of the organizational AI supply chain---highlighting concerns about concentration, power, chokepoints, cascading failures, fragmented accountability, and risk---then describe our pipeline for mapping the AI supply chain. Our pipeline yields our main contribution: a multilayered, large-scale dataset of actors and relationships in the AI ecosystem, annotated with dates, descriptions, types, tags, and more. This work takes a step toward systematically mapping and measuring the AI supply chain and its properties, cataloging how models, data, chips, infrastructure, capital, and even talent flow between organizations. This data enable critical examinations of industry relationships and yield insights into the political economy of AI development and concentration. We provide several illustrative analyses, including studying the most central actors, analyzing network concentration, and identifying communities and chokepoints. While our dataset is fairly comprehensive, it is also necessarily incomplete: public documents omit private deals, and coverage is shaped by search design. Together, the approach, data, and findings aim to serve as a resource for studying the AI ecosystem. The dataset is publicly available at https://huggingface.co/datasets/sarahcen/ai-supply-chain and can be explored interactively at https://aisupplychains.org/.",
+    "selectionReason": "напрям: Екологія; ознаки користі: deployment, dataset, measuring",
+    "evidenceLevel": "практичне застосування або конкретний приклад",
+    "category": "Екологія",
+    "title": "Mapping the AI Supply Chain: Dependencies, Vulnerabilities, and Market Concentration in the AI Ecosystem",
+    "summary": "arXiv:2611.24927v1 Announce Type: cross Abstract: AI systems are built across many organizations that contribute models, data, compute, capital, talent, and other assets. While the layers of the AI stack are relatively well understood, the relationships between actors and components across layers remains sparsely documented. In this work, we focus on the…",
+    "body": "Матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.24927v1 Announce Type: cross Abstract: AI systems are built across many organizations that contribute models, data, compute, capital, talent, and other assets. While the layers of the AI stack are relatively well understood, the relationships between actors and components across layers remains sparsely documented. In this work, we focus on the organizations that make up the AI supply chain: the complex network of actors that contribute to the development and deployment of AI. We motivate the examination of the organizational AI supply chain---highlighting concerns about concentration, power, chokepoints, cascading failures, fragmented accountability, and risk---then describe our pipeline for mapping the AI supply chain. Our pipeline yields our main contribution: a multilayered, large-scale dataset of actors and relationships in the AI ecosystem, annotated with dates, descriptions, types, tags, and more. This work takes a step toward systematically mapping and measuring the AI supply chain and its properties, cataloging how models, data, chips, infrastructure, capital, and even talent flow between organizations. This data enable critical examinations of industry relationships and yield insights into the political economy of AI development and concentration. We provide several illustrative analyses, including studying the most central actors, analyzing network concentration, and identifying communities and chokepoints. While our dataset is fairly comprehensive, it is also necessarily incomplete: public documents omit private deals, and coverage is shaped by search design. Together, the approach, data, and findings aim to serve as a resource for studying the AI ecosystem. The dataset is publicly available at https://huggingface.co/datasets/sarahcen/ai-supply-chain and can be explored interactively at https://aisupplychains.org/.\n\nРедакційна класифікація: напрям: Екологія; ознаки користі: deployment, dataset, measuring. Рівень свідчень: практичне застосування або конкретний приклад. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте статус публікації в першоджерелі.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-20",
+    "sources": [
+      {
+        "title": "Mapping the AI Supply Chain: Dependencies, Vulnerabilities, and Market Concentration in the AI Ecosystem",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2611.24927",
+        "publishedDate": "2026-11-20"
+      }
+    ]
+  },
+  {
     "id": "rss-2026-11-20-fcc9e32e6363",
     "date": "2026-11-20",
     "autoPublished": true,
     "sourceType": "rss",
     "feedName": "arXiv — Штучний інтелект",
-    "filterVersion": "2.1",
+    "filterVersion": "2.2",
     "feedKind": "ai_topic",
     "sourceDescription": "arXiv:2611.23348v1 Announce Type: cross Abstract: Clinical interviews are central to depression assessment but time-consuming and rater-dependent. Automated severity estimation offers scalable screening, yet existing methods often retain interviewer speech (confounding participant cues), fuse modalities late (losing fine-grained cross-modal dynamics), or score symptoms independently (ignoring inter-symptom correlations). We present SIGMA, a speaker-aware, symptom-structured framework for depression-severity estimation from semi-clinical interviews. SIGMA uses speaker diarization to restrict input to participant speech, cross-attention so that text, audio and video condition one another during encoding, and a graded-response head that predicts the eight questionnaire items jointly through a shared latent severity trait with item-specific ordered thresholds. On the Extended Distress Analysis Interview Corpus, SIGMA achieves state-of-the-art performance (CCC 0.762, RMSE 4.13, MAE 3.30 over five seeds). Ablations confirm that isolating participant speech and joint, structured symptom prediction each substantially improve concordance and estimation accuracy.",
-    "selectionReason": "напрям: Медицина; прикладні сигнали: improv, screen, predict",
+    "selectionReason": "напрям: Медицина; ознаки користі: screening, improve, predict",
     "category": "Медицина",
     "title": "SIGMA: speaker-isolated, symptom-structured multimodal estimation of depression severity from clinical interviews",
     "summary": "arXiv:2611.23348v1 Announce Type: cross Abstract: Clinical interviews are central to depression assessment but time-consuming and rater-dependent. Automated severity estimation offers scalable screening, yet existing methods often retain interviewer speech (confounding participant cues), fuse modalities late (losing…",
@@ -45,31 +271,8 @@
         "url": "https://arxiv.org/abs/2611.23348",
         "publishedDate": "2026-11-20"
       }
-    ]
-  },
-  {
-    "id": "rss-2026-11-20-32052e342452",
-    "date": "2026-11-20",
-    "autoPublished": true,
-    "sourceType": "rss",
-    "feedName": "arXiv — Штучний інтелект",
-    "filterVersion": "2.1",
-    "feedKind": "ai_topic",
-    "sourceDescription": "arXiv:2611.23397v1 Announce Type: cross Abstract: On-policy distillation (OPD) trains a student language model to match a teacher model based on its own generations. When using OPD, one must choose whether to apply it at the sequence or token level and which divergence to minimize. However, despite the wide adoption of OPD in practice, the formal understanding of which OPD objective is appropriate for a given setting is limited. Toward addressing this gap, we theoretically analyze how the choice of OPD objective governs which tokens are prioritized, in what order, and how efficiently. Our analysis reveals that sequence-level OPD exhibits a future agreement bias, which myopic token-level objectives avoid. This bias induces a reverse learning order, in which sequence-level OPD first matches the teacher at later token positions, while at earlier positions it can favor tokens that are improbable under the teacher, and thus often undesirable. As for the choice of divergence, we prove that it strongly influences the amenability of OPD to gradient-based optimization. In particular, while the forward KL divergence enjoys a well-behaved objective landscape, other $f$-divergences, such as reverse KL, can suffer from vanishing gradients even when the student and teacher are far apart. Across language model post-training settings, we demonstrate the implications of these theoretical findin",
-    "selectionReason": "напрям: Освіта; прикладні сигнали: optimi, efficient",
-    "category": "Освіта",
-    "title": "Which Tokens, in What Order, and How Fast? A Theoretical Analysis of On-Policy Distillation Objectives",
-    "summary": "arXiv:2611.23397v1 Announce Type: cross Abstract: On-policy distillation (OPD) trains a student language model to match a teacher model based on its own generations. When using OPD, one must choose whether to apply it at the sequence or token level and which divergence to minimize. However, despite the wide adoption of OPD in…",
-    "body": "Цей матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та короткий опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.23397v1 Announce Type: cross Abstract: On-policy distillation (OPD) trains a student language model to match a teacher model based on its own generations. When using OPD, one must choose whether to apply it at the sequence or token level and which divergence to minimize. However, despite the wide adoption of OPD in practice, the formal understanding of which OPD objective is appropriate for a given setting is limited. Toward addressing this gap, we theoretically analyze how the choice of OPD objective governs which tokens are prioritized, in what order, and how efficiently. Our analysis reveals that sequence-level OPD exhibits a future agreement bias, which myopic token-level objectives avoid. This bias induces a reverse learning order, in which sequence-level OPD first matches the teacher at later token positions, while at earlier positions it can favor tokens that are improbable under the teacher, and thus often undesirable. As for the choice of divergence, we prove that it strongly influences the amenability of OPD to gradient-based optimization. In particular, while the forward KL divergence enjoys a well-behaved objective landscape, other $f$-divergences, such as reverse KL, can suffer from vanishing gradients even when the student and teacher are far apart. Across language model post-training settings, we demonstrate the implications of these theoretical findin\n\nЧому матеріал потрапив до добірки: напрям: Освіта; прикладні сигнали: optimi, efficient. Це автоматичний тематичний відбір за ключовими словами, а не підтвердження ефективності чи незалежна експертна оцінка. Перед висновками прочитайте оригінальну публікацію.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте розділ про публікацію та рецензування в оригіналі.\n\nРедакційне застереження: автоматична система перевіряє формат стрічки, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження, не перевіряє незалежно всі твердження та не замінює людську редакційну перевірку.",
-    "sourceDate": "2026-11-20",
-    "sources": [
-      {
-        "title": "Which Tokens, in What Order, and How Fast? A Theoretical Analysis of On-Policy Distillation Objectives",
-        "publisher": "arXiv",
-        "url": "https://arxiv.org/abs/2611.23397",
-        "publishedDate": "2026-11-20"
-      }
-    ]
+    ],
+    "evidenceLevel": "дослідження або оцінювання потенційного застосування"
   },
   {
     "id": "rss-2026-11-20-1376f178b58e",
@@ -77,10 +280,10 @@
     "autoPublished": true,
     "sourceType": "rss",
     "feedName": "arXiv — Штучний інтелект",
-    "filterVersion": "2.1",
+    "filterVersion": "2.2",
     "feedKind": "ai_topic",
     "sourceDescription": "arXiv:2611.23474v1 Announce Type: cross Abstract: Official development assistance fell by 23.1 per cent in 2025, and the decision of who is helped first when there is not enough for everyone is moving into software. A leading published machine-learning targeting system excluded 53 per cent of eligible households as deployed. If the rule of distribution ends up in code, it should carry the judgement of many cultures, and the machine should execute while a person judges. AllotNet is an interpretable mixture-of-experts conditional logit for the allocation judgements elicited by Allot, a pre-registered six-language instrument: eight linear taste experts over seven ethical criteria, weighted by a gate over participant context, with a damped residual, an encoder for household intake, an outcome head and a budget-constrained planner that builds a review queue and never rejects anyone. A model of human judgement has no answer key on real data, so we wrote one first: a planted synthetic population of 5.6 million sessions and 104 million responses (98 million usable choices), generated by the production code path from a ground truth hidden from the loss. All sixteen pre-specified checks passed: criterion ranking $\\rho = 1.000$, hidden segments recovered (ARI 0.671), outcome head at 99 per cent of the noise ceiling, planner at 99.4 per cent of oracle. The caveats are reported with them: t",
-    "selectionReason": "напрям: Мир і безпека; прикладні сигнали: help, assist",
+    "selectionReason": "напрям: Мир і безпека; ознаки користі: validated, deployed, assist",
     "category": "Мир і безпека",
     "title": "AllotNet: an Interpretable Mixture-of-Experts Choice Model for Moral Judgement in Humanitarian Aid Allocation, Validated against a Planted Synthetic Population",
     "summary": "arXiv:2611.23474v1 Announce Type: cross Abstract: Official development assistance fell by 23.1 per cent in 2025, and the decision of who is helped first when there is not enough for everyone is moving into software. A leading published machine-learning targeting system excluded 53 per cent of eligible households as deployed.…",
@@ -93,7 +296,8 @@
         "url": "https://arxiv.org/abs/2611.23474",
         "publishedDate": "2026-11-20"
       }
-    ]
+    ],
+    "evidenceLevel": "практичне застосування або конкретний приклад"
   },
   {
     "id": "rss-2026-11-20-1257c9cf225f",
@@ -101,10 +305,10 @@
     "autoPublished": true,
     "sourceType": "rss",
     "feedName": "arXiv — Штучний інтелект",
-    "filterVersion": "2.1",
+    "filterVersion": "2.2",
     "feedKind": "ai_topic",
     "sourceDescription": "arXiv:2611.23581v1 Announce Type: cross Abstract: Semi-supervised multi-organ segmentation should learn more than a dozen organs from a handful of labeled scans, and the smallest organs occupy less than one percent of the foreground. We identify a failure mode of self-training that is specific to this regime. When a teacher misses a small organ in a scan, every voxel of that organ receives the confident pseudo-label background, and the student is trained toward the organ absence. Repeated over many scans, this loop extinguishes tail organs. In a pilot study, removing the gallbladder from the pseudo-labels reduced its Dice on AMOS from 36.5 to 1.0. We argue that a missing organ should be treated as unresolved rather than absent and propose Existence-aware Self-Training (ExiST). It builds pseudo-labels by leave-one-out consensus of independently trained networks, screens them with a quality gate on validation scans, and infers, per scan and per organ, whether the organ was found. For every unresolved organ, the background voxels of that scan receive the set-valued target, trained with a marginal cross-entropy that accepts either answer and a Dice term that skips uncertain voxels. We show that this loss never pushes a candidate organ toward absence and never favors one member of the set, which leaves the decision to labeled evidence. ExiST outperforms the current state-of-the-art ",
-    "selectionReason": "напрям: Освіта; прикладні сигнали: reduce, screen",
+    "selectionReason": "напрям: Освіта; ознаки користі: validation, reduce",
     "category": "Освіта",
     "title": "ExiST: Existence-Aware Self-Training for Semi-Supervised Multi-Organ Segmentation",
     "summary": "arXiv:2611.23581v1 Announce Type: cross Abstract: Semi-supervised multi-organ segmentation should learn more than a dozen organs from a handful of labeled scans, and the smallest organs occupy less than one percent of the foreground. We identify a failure mode of self-training that is specific to this regime. When a teacher…",
@@ -117,31 +321,8 @@
         "url": "https://arxiv.org/abs/2611.23581",
         "publishedDate": "2026-11-20"
       }
-    ]
-  },
-  {
-    "id": "rss-2026-11-20-46bcd57ada02",
-    "date": "2026-11-20",
-    "autoPublished": true,
-    "sourceType": "rss",
-    "feedName": "arXiv — Штучний інтелект",
-    "filterVersion": "2.1",
-    "feedKind": "ai_topic",
-    "sourceDescription": "arXiv:2611.23673v1 Announce Type: cross Abstract: On-policy distillation (OPD) is a powerful paradigm for improving language-model agents on long-horizon tasks, yet its conventional formulation relies on teacher logits that text-only black- box models do not expose. To address this limitation, we introduce Communicative On-Policy Distillation (COPD), which uses natural-language communication as a medium for distilling a stronger model's capabilities into a smaller student. During task execution, the student au- tonomously decides when to consult a black-box teacher and formulates open-ended natural- language requests without predefined question templates or intervention schedules. Successful student-teacher interactions are retained as privileged references to supervise fresh adviser-free student rollouts through on-policy self-distillation, jointly with task-reward reinforcement learning. On CAMG-II, COPD achieves 2.46 times the gain of the strongest black-box OPD baseline. The capabilities it learns through communication generalize to Terminal-Bench 2.1 and SWE-Bench Pro V2, improving task success without adviser access.",
-    "selectionReason": "напрям: Освіта; прикладні сигнали: improv",
-    "category": "Освіта",
-    "title": "Communicative On-Policy Distillation: Distilling Black-Box Teacher Capabilities through Communication for Long-Horizon Tasks",
-    "summary": "arXiv:2611.23673v1 Announce Type: cross Abstract: On-policy distillation (OPD) is a powerful paradigm for improving language-model agents on long-horizon tasks, yet its conventional formulation relies on teacher logits that text-only black- box models do not expose. To address this limitation, we introduce Communicative…",
-    "body": "Цей матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та короткий опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.23673v1 Announce Type: cross Abstract: On-policy distillation (OPD) is a powerful paradigm for improving language-model agents on long-horizon tasks, yet its conventional formulation relies on teacher logits that text-only black- box models do not expose. To address this limitation, we introduce Communicative On-Policy Distillation (COPD), which uses natural-language communication as a medium for distilling a stronger model's capabilities into a smaller student. During task execution, the student au- tonomously decides when to consult a black-box teacher and formulates open-ended natural- language requests without predefined question templates or intervention schedules. Successful student-teacher interactions are retained as privileged references to supervise fresh adviser-free student rollouts through on-policy self-distillation, jointly with task-reward reinforcement learning. On CAMG-II, COPD achieves 2.46 times the gain of the strongest black-box OPD baseline. The capabilities it learns through communication generalize to Terminal-Bench 2.1 and SWE-Bench Pro V2, improving task success without adviser access.\n\nЧому матеріал потрапив до добірки: напрям: Освіта; прикладні сигнали: improv. Це автоматичний тематичний відбір за ключовими словами, а не підтвердження ефективності чи незалежна експертна оцінка. Перед висновками прочитайте оригінальну публікацію.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте розділ про публікацію та рецензування в оригіналі.\n\nРедакційне застереження: автоматична система перевіряє формат стрічки, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження, не перевіряє незалежно всі твердження та не замінює людську редакційну перевірку.",
-    "sourceDate": "2026-11-20",
-    "sources": [
-      {
-        "title": "Communicative On-Policy Distillation: Distilling Black-Box Teacher Capabilities through Communication for Long-Horizon Tasks",
-        "publisher": "arXiv",
-        "url": "https://arxiv.org/abs/2611.23673",
-        "publishedDate": "2026-11-20"
-      }
-    ]
+    ],
+    "evidenceLevel": "потенційне застосування; потрібне ознайомлення з першоджерелом"
   },
   {
     "id": "rss-2026-11-20-c04ff9c0a0fc",
@@ -149,10 +330,10 @@
     "autoPublished": true,
     "sourceType": "rss",
     "feedName": "arXiv — Штучний інтелект",
-    "filterVersion": "2.1",
+    "filterVersion": "2.2",
     "feedKind": "ai_topic",
     "sourceDescription": "arXiv:2611.23708v1 Announce Type: cross Abstract: Biomedical knowledge representation should make the passage from observations to conclusions transparent, rigorous, understandable, explainable, and reproducible (TRUER). We introduce Rational Ensemble Logic (QEL) for specifying temporal phenotypes in real-world electrophysiology data (RWED), with a meaning independent of the implementation software. QEL combines three parameterized modal operators (exact displacement, bounded existence, and bounded universality) over rational time with Boolean connectives and first-order quantification. Its Labeled Interval Ensemble (LINE) semantics represents annotated records as finite interval ensembles. We relate the operators to morphological operations and develop endpoint-array algorithms and finite rational evidence sets for model checking. We prove closure and semantic correctness of the interval operations, obtain finite evidence sets by quantifier elimination, and establish polynomial data complexity for fixed formulas. On 54 manually constructed records, a prototype agreed with the assigned outcomes for base and strict post-ictal generalized EEG suppression (PGES) queries. A separate feasibility experiment over 1,976 patients identified 37 qualifying patients and 45 annotation patterns in 16 seconds. The released prototype uses endpoint candidates and numerical tolerances. QEL suppo",
-    "selectionReason": "напрям: Медицина; прикладні сигнали: support, evaluation, explainab",
+    "selectionReason": "напрям: Медицина; ознаки користі: real-world",
     "category": "Медицина",
     "title": "Rational Ensemble Logic for Cohort Discovery with Real-World Electrophysiology Data",
     "summary": "arXiv:2611.23708v1 Announce Type: cross Abstract: Biomedical knowledge representation should make the passage from observations to conclusions transparent, rigorous, understandable, explainable, and reproducible (TRUER). We introduce Rational Ensemble Logic (QEL) for specifying temporal phenotypes in real-world…",
@@ -165,31 +346,8 @@
         "url": "https://arxiv.org/abs/2611.23708",
         "publishedDate": "2026-11-20"
       }
-    ]
-  },
-  {
-    "id": "rss-2026-11-20-5d54f45c8a52",
-    "date": "2026-11-20",
-    "autoPublished": true,
-    "sourceType": "rss",
-    "feedName": "arXiv — Штучний інтелект",
-    "filterVersion": "2.1",
-    "feedKind": "ai_topic",
-    "sourceDescription": "arXiv:2611.23750v1 Announce Type: cross Abstract: Diffusion language models (DLMs) offer a flexible alternative to autoregressive models, enabling any-order infilling. While most existing decoding methods treat decoded tokens as fixed, some recent models allow previously decoded tokens to be revised only by replacing them with alternative tokens, a paradigm we refer to as replacement-only editing (ROE). Although ROE can correct individual tokens, it is inefficient for sequence shifts caused by missing or extra tokens and struggles when errors occur across many positions. To address these limitations, we propose LED (Levenshtein Editing for Diffusion Language Models), a post-training framework that extends ROE with insertion and deletion, enabling Levenshtein-style refinement of generated sequences. It uses two training designs. First, it reconstructs edit supervision on the fly during supervised fine-tuning using longest-common-subsequence alignment, enabling insertion and deletion learning without manually annotated labels. Second, it adopts multi-stage training, where the state from one stage becomes the input to the next, exposing the model to its earlier errors and enabling it to correct them. When applied to the 16B-parameter LLaDA2.1-Mini Base, LED raises the average score across twelve benchmarks from 54.86 to 57.10 under confidence-guided decoding while increasing token",
-    "selectionReason": "напрям: Надійність ШІ; прикладні сигнали: improv, support, efficient",
-    "category": "Надійність ШІ",
-    "title": "Beyond Replacement: Levenshtein Editing for Diffusion Language Models",
-    "summary": "arXiv:2611.23750v1 Announce Type: cross Abstract: Diffusion language models (DLMs) offer a flexible alternative to autoregressive models, enabling any-order infilling. While most existing decoding methods treat decoded tokens as fixed, some recent models allow previously decoded tokens to be revised only by replacing them with…",
-    "body": "Цей матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та короткий опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.23750v1 Announce Type: cross Abstract: Diffusion language models (DLMs) offer a flexible alternative to autoregressive models, enabling any-order infilling. While most existing decoding methods treat decoded tokens as fixed, some recent models allow previously decoded tokens to be revised only by replacing them with alternative tokens, a paradigm we refer to as replacement-only editing (ROE). Although ROE can correct individual tokens, it is inefficient for sequence shifts caused by missing or extra tokens and struggles when errors occur across many positions. To address these limitations, we propose LED (Levenshtein Editing for Diffusion Language Models), a post-training framework that extends ROE with insertion and deletion, enabling Levenshtein-style refinement of generated sequences. It uses two training designs. First, it reconstructs edit supervision on the fly during supervised fine-tuning using longest-common-subsequence alignment, enabling insertion and deletion learning without manually annotated labels. Second, it adopts multi-stage training, where the state from one stage becomes the input to the next, exposing the model to its earlier errors and enabling it to correct them. When applied to the 16B-parameter LLaDA2.1-Mini Base, LED raises the average score across twelve benchmarks from 54.86 to 57.10 under confidence-guided decoding while increasing token\n\nЧому матеріал потрапив до добірки: напрям: Надійність ШІ; прикладні сигнали: improv, support, efficient. Це автоматичний тематичний відбір за ключовими словами, а не підтвердження ефективності чи незалежна експертна оцінка. Перед висновками прочитайте оригінальну публікацію.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте розділ про публікацію та рецензування в оригіналі.\n\nРедакційне застереження: автоматична система перевіряє формат стрічки, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження, не перевіряє незалежно всі твердження та не замінює людську редакційну перевірку.",
-    "sourceDate": "2026-11-20",
-    "sources": [
-      {
-        "title": "Beyond Replacement: Levenshtein Editing for Diffusion Language Models",
-        "publisher": "arXiv",
-        "url": "https://arxiv.org/abs/2611.23750",
-        "publishedDate": "2026-11-20"
-      }
-    ]
+    ],
+    "evidenceLevel": "практичне застосування або конкретний приклад"
   },
   {
     "id": "rss-2026-11-20-34e8c57f8e84",
@@ -197,10 +355,10 @@
     "autoPublished": true,
     "sourceType": "rss",
     "feedName": "arXiv — Штучний інтелект",
-    "filterVersion": "2.1",
+    "filterVersion": "2.2",
     "feedKind": "ai_topic",
     "sourceDescription": "arXiv:2611.24000v1 Announce Type: cross Abstract: Large language models can infer and follow specific rules through in-context learning (ICL), yet may fail to remain faithful to provided evidence, giving rise to out-of-context (OOC) hallucination. Existing work has largely investigated the underlying mechanisms of ICL and OOC hallucination along separate lines. However, this separation obscures the mechanistic basis for these seemingly opposing outcomes. In this work, we study this contrast through the unified view of functional roles in dynamic context. The key observation is that role information can be internally represented without reliably constraining output. We derive a first-order decomposition to characterize the role effect, showing that its substantial influence depends on two necessary conditions, namely sufficient contribution magnitude and coherent signed aggregation. Causal analysis further shows that role span contributions affect key token choices involving response structure, content selection, and factual values. We further show that role-consistent choices depend on sufficient role span support at these key decisions, while failing choices can be reversed when this support overcomes the deficit. These findings support a common mechanistic view of ICL and OOC hallucination: each functional role defines the pattern of output decisions over which role span cont",
-    "selectionReason": "напрям: Надійність ШІ; прикладні сигнали: support, reliab",
+    "selectionReason": "напрям: Надійність ШІ; ознаки користі: support",
     "category": "Надійність ШІ",
     "title": "A Mechanistic Analysis of In-Context Learning and Out-of-Context Hallucination",
     "summary": "arXiv:2611.24000v1 Announce Type: cross Abstract: Large language models can infer and follow specific rules through in-context learning (ICL), yet may fail to remain faithful to provided evidence, giving rise to out-of-context (OOC) hallucination. Existing work has largely investigated the underlying mechanisms of ICL and OOC…",
@@ -213,7 +371,8 @@
         "url": "https://arxiv.org/abs/2611.24000",
         "publishedDate": "2026-11-20"
       }
-    ]
+    ],
+    "evidenceLevel": "потенційне застосування; потрібне ознайомлення з першоджерелом"
   },
   {
     "id": "rss-2026-11-20-81dbaaa9ad06",
@@ -221,10 +380,10 @@
     "autoPublished": true,
     "sourceType": "rss",
     "feedName": "arXiv — Штучний інтелект",
-    "filterVersion": "2.1",
+    "filterVersion": "2.2",
     "feedKind": "ai_topic",
     "sourceDescription": "arXiv:2611.24002v1 Announce Type: cross Abstract: Radiology reports distinguish affirmed findings, explicit negations, and unmentioned concepts, but conventional global image--report contrastive learning often compresses these different evidence states into a single study-level target. We introduce \\model{}, which combines symmetric global image--report alignment with observation-masked finding supervision and a soft relation objective over affirmed report concepts. Text-derived finding prototypes are aligned with local visual tokens, while uncertain and unmentioned concepts are excluded from direct finding labels. We evaluate the framework on three CT benchmarks and five chest-radiograph benchmarks, together with component ablations, paired and clinical retrieval, localization, perturbation robustness, calibration, and per-finding analyses. \\model{} achieves macro-AUROC values of 73.6%, 66.5\\%, and 68.8% on CT-RATE, RAD-ChestCT, and INSPECT, and 80.2%, 91.4%, 78.5%, 86.5%, and 90.8% on ChestXray14, CheXpert, PadChest, RSNA, and SIIM-ACR, respectively. Relative to the matched global-only controls, the findings and relation objectives yield consistent gains across the evaluated datasets. These results demonstrate the practical value of treating observed and unobserved report concepts differently during medical image--text representation learning.",
-    "selectionReason": "напрям: Медицина; прикладні сигнали: evaluate",
+    "selectionReason": "напрям: Медицина; ознаки користі: benchmark, benchmarks, evaluate",
     "category": "Медицина",
     "title": "ProtoBridge-CLIP: Observation-Masked Finding Prototypes for Medical Image--Report Representation Learning",
     "summary": "arXiv:2611.24002v1 Announce Type: cross Abstract: Radiology reports distinguish affirmed findings, explicit negations, and unmentioned concepts, but conventional global image--report contrastive learning often compresses these different evidence states into a single study-level target. We introduce \\model{}, which combines…",
@@ -237,7 +396,8 @@
         "url": "https://arxiv.org/abs/2611.24002",
         "publishedDate": "2026-11-20"
       }
-    ]
+    ],
+    "evidenceLevel": "дослідження або оцінювання потенційного застосування"
   },
   {
     "id": "rss-2026-11-20-c7c86e953df0",
@@ -245,10 +405,10 @@
     "autoPublished": true,
     "sourceType": "rss",
     "feedName": "arXiv — Штучний інтелект",
-    "filterVersion": "2.1",
+    "filterVersion": "2.2",
     "feedKind": "ai_topic",
     "sourceDescription": "arXiv:2611.23454v1 Announce Type: new Abstract: Access to large-scale clinical text collections is crucial for advancing medical information retrieval research, including clinical note search, patient cohort identification, and domain-adapted retrieval models. However, real clinical notes are rarely available due to privacy regulations, which particularly limits progress for low-resource languages such as European Portuguese. We present LusoClin, a publicly released dataset of synthetic clinical notes in European Portuguese, created to support privacy-preserving research on clinical text retrieval. LusoClin was generated by pre-processing real clinical data, fine-tuning the open-source Llama 3.2 (3B) instruction-tuned model using Quantized Low-Rank Adaptation, and applying prompt-based clinical note generation. To facilitate semantic indexing and clinical search, the notes are automatically annotated with clinical entities using a BERT-based model. We evaluate LusoClin in terms of utility, fidelity, diversity, and privacy using automatic metrics and human evaluation. Results indicate that the dataset captures clinically relevant language patterns and can support downstream IR applications such as clinical document retrieval and domain-specific model adaptation, although annotators can often distinguish synthetic from real notes and some medical inconsistencies persist.",
-    "selectionReason": "напрям: Медицина; прикладні сигнали: support, evaluate, evaluation",
+    "selectionReason": "напрям: Медицина; ознаки користі: evaluation, evaluate, dataset",
     "category": "Медицина",
     "title": "LusoClin: A Synthetic Clinical Note Dataset for Medical Information Retrieval in European Portuguese",
     "summary": "arXiv:2611.23454v1 Announce Type: new Abstract: Access to large-scale clinical text collections is crucial for advancing medical information retrieval research, including clinical note search, patient cohort identification, and domain-adapted retrieval models. However, real clinical notes are rarely available due to privacy…",
@@ -261,7 +421,8 @@
         "url": "https://arxiv.org/abs/2611.23454",
         "publishedDate": "2026-11-20"
       }
-    ]
+    ],
+    "evidenceLevel": "дослідження або оцінювання потенційного застосування"
   },
   {
     "id": "rss-2026-11-20-f7a3b0193b2b",
@@ -269,10 +430,10 @@
     "autoPublished": true,
     "sourceType": "rss",
     "feedName": "arXiv — Штучний інтелект",
-    "filterVersion": "2.1",
+    "filterVersion": "2.2",
     "feedKind": "ai_topic",
     "sourceDescription": "arXiv:2611.23456v1 Announce Type: new Abstract: Automatic generation of mathematics assessment items is a growing area in educational artificial intelligence, yet classroom deployment remains challenging. Generated questions must satisfy multiple constraints: mathematical correctness, curriculum alignment, appropriate cognitive difficulty, and educator reviewability. While prior work has advanced text generation, reliable assessment authoring requires granular control over localized examination formats and expert educational judgment. To address this challenge, we present VeriMath, a generalized, human-in-the-loop framework for generating rigorous, curriculum-constrained mathematics assessment drafts. Using annotated reference items, the framework anchors generation to the requested examination section and cognitive reasoning level, then applies sequential automated verification and guided repair before submitting drafts for expert review. We evaluate VeriMath through a national curriculum case study using 4,555 mathematics items from the Vietnamese Grade 12 curriculum and 50 distinct generation requirements covering multiple-choice, true/false, and short-answer formats. Across two model backbones, the framework produces verifier-accepted drafts for 94% (47/50) of requirements per run. Blind expert evaluations confirm high mathematical accuracy and curriculum alignment, with st",
-    "selectionReason": "напрям: Освіта; прикладні сигнали: evaluate, evaluation, assess",
+    "selectionReason": "напрям: Освіта; ознаки користі: evaluation, evaluate, assessment items",
     "category": "Освіта",
     "title": "VeriMath: Human-in-the-Loop Generation and Verification of Curriculum-Aligned Mathematics Assessment Items",
     "summary": "arXiv:2611.23456v1 Announce Type: new Abstract: Automatic generation of mathematics assessment items is a growing area in educational artificial intelligence, yet classroom deployment remains challenging. Generated questions must satisfy multiple constraints: mathematical correctness, curriculum alignment, appropriate…",
@@ -285,7 +446,8 @@
         "url": "https://arxiv.org/abs/2611.23456",
         "publishedDate": "2026-11-20"
       }
-    ]
+    ],
+    "evidenceLevel": "практичне застосування або конкретний приклад"
   },
   {
     "id": "rss-2026-11-20-574f4671e61f",
@@ -293,10 +455,10 @@
     "autoPublished": true,
     "sourceType": "rss",
     "feedName": "arXiv — Штучний інтелект",
-    "filterVersion": "2.1",
+    "filterVersion": "2.2",
     "feedKind": "ai_topic",
     "sourceDescription": "arXiv:2611.23480v1 Announce Type: new Abstract: Purpose. To evaluate the diagnostic accuracy and image navigation behavior of vision-language model (VLM) agents under varying exploration strategies. Materials and Methods. In this retrospective study, six VLMs read 100 emergency CT and MRI examinations published in a public archive (March 2025-August 2026) under four conditions (free navigation, navigation from a key slice, and all slices or key slices in a single request), twice each (4800 runs). Nine radiologists read 30 of those cases. A large language model judge validated against two radiologists graded the answers. Conditions were compared with generalized estimating equations clustered by case. Results. Pooled accuracy was lowest under free navigation (32.6%; 391/1200), followed by navigation from a key slice (37.9%; 455/1200; P = .003), and highest with all slices (42.2%; 506/1200) or key slices (42.5%; 510/1200) in one request (both P < .001). On the 30 cases read by radiologists, freely navigating models were correct in 30.0% of runs (108/360) versus 77.0% for radiologists (208/270; P < .001). Models formed a first hypothesis after a median of 10.8% of the slices and kept it in 63.1% of runs (755/1196); final answers were correct in 12.4% of runs after a wrong first hypothesis (110/885) versus 90.4% after a right one (281/311; P < .001). Median stated confidence in the",
-    "selectionReason": "напрям: Медицина; прикладні сигнали: diagnos, evaluate",
+    "selectionReason": "напрям: Медицина; ознаки користі: diagnostic accuracy, evaluate, validated",
     "category": "Медицина",
     "title": "Diagnostic Accuracy and Navigation Behavior of Vision-Language Model Agents Reading Emergency CT and MRI Examinations",
     "summary": "arXiv:2611.23480v1 Announce Type: new Abstract: Purpose. To evaluate the diagnostic accuracy and image navigation behavior of vision-language model (VLM) agents under varying exploration strategies. Materials and Methods. In this retrospective study, six VLMs read 100 emergency CT and MRI examinations published in a public…",
@@ -309,7 +471,8 @@
         "url": "https://arxiv.org/abs/2611.23480",
         "publishedDate": "2026-11-20"
       }
-    ]
+    ],
+    "evidenceLevel": "практичне застосування або конкретний приклад"
   },
   {
     "id": "rss-2026-11-20-fd56d4b2e51d",
@@ -317,10 +480,10 @@
     "autoPublished": true,
     "sourceType": "rss",
     "feedName": "arXiv — Штучний інтелект",
-    "filterVersion": "2.1",
+    "filterVersion": "2.2",
     "feedKind": "ai_topic",
     "sourceDescription": "arXiv:2611.23700v1 Announce Type: new Abstract: Clinicians reviewing a diagnostic work-up will ask what was considered at each step and why the assessment changed. Agents powered by free text can reach physician-level diagnostic accuracy, but their written reasoning does not always reflect the factors that went into the decision. Here, we present Decision2Care, a decision agent that works up the acutely ill patient without producing any text. A decision model assigns a probability to each permitted EHR action, and fixed rules carry out the most probable one. We evaluated Decision2Care on the records of 546 emergency admissions across 12 diseases. Decision2Care reached a diagnostic accuracy of 86.5%, compared with 86.1% for the MIRA-v2 agent, and required a median of 2.2 s per work-up, compared with 92-100 s. Each work-up tracked which options Decision2Care was considering at each step. In 10 of the 12 diseases, the differential diagnosis changed most at the test on which the guideline bases the diagnosis. Where Decision2Care was most confident after a single work-up, all but four of its diagnoses were correct (98.5%). We traced each of these four errors back to a single imaging report. Three of them were corrected when that report was removed. The same kind of decision was used to select the treatments, and Decision2Care's drug orders were judged guideline-adherent more often t",
-    "selectionReason": "напрям: Медицина; прикладні сигнали: support, diagnos, predict",
+    "selectionReason": "напрям: Медицина; ознаки користі: diagnostic accuracy, evaluate, support",
     "category": "Медицина",
     "title": "Auditable Clinical Support with Decision Agents",
     "summary": "arXiv:2611.23700v1 Announce Type: new Abstract: Clinicians reviewing a diagnostic work-up will ask what was considered at each step and why the assessment changed. Agents powered by free text can reach physician-level diagnostic accuracy, but their written reasoning does not always reflect the factors that went into the…",
@@ -333,7 +496,8 @@
         "url": "https://arxiv.org/abs/2611.23700",
         "publishedDate": "2026-11-20"
       }
-    ]
+    ],
+    "evidenceLevel": "практичне застосування або конкретний приклад"
   },
   {
     "id": "rss-2026-11-20-192083ef8ccf",
@@ -341,10 +505,10 @@
     "autoPublished": true,
     "sourceType": "rss",
     "feedName": "arXiv — Штучний інтелект",
-    "filterVersion": "2.1",
+    "filterVersion": "2.2",
     "feedKind": "ai_topic",
     "sourceDescription": "arXiv:2611.24206v1 Announce Type: new Abstract: Neural decoding of visual experience from electroencephalography (EEG) has achieved strong performance in intra-subject settings, but current methods fail to generalize across individuals: on the standard 200-way benchmark THINGS-EEG-2, top-1 accuracy drops from above 80% within subjects to about 32% for an unseen subject. Adapting a pre-trained encoder to new subjects and sessions typically requires labeled data, a bottleneck whose collection time severely limits practical device deployment. In a practical Brain-Computer Interface (BCI), however, the possible outcomes are known in advance and form a gallery of candidates, and the unlabeled EEG of the user accumulates as soon as the device is used. We propose a new setting, incremental transductive calibration, in which the decoder is calibrated regularly on all the unlabeled EEG received so far and on the known gallery, without any labels. This setting is closer to the conditions of a deployed BCI than the zero-shot and batch evaluations in current use. We evaluate it with a protocol in which queries arrive one at a time, with unknown and possibly unequal frequencies, and each query is decoded before it is used for calibration. In this setting, we introduce GALA : GAllery-Level Alignment, a label-free calibration method which registers the unlabeled EEG embeddings onto the galler",
-    "selectionReason": "напрям: Надійність ШІ; прикладні сигнали: evaluate, evaluation",
+    "selectionReason": "напрям: Надійність ШІ; ознаки користі: benchmark, evaluation, evaluate",
     "category": "Надійність ШІ",
     "title": "GALA: Gallery-Level Alignment for Real-Life Vision Decoding from EEG",
     "summary": "arXiv:2611.24206v1 Announce Type: new Abstract: Neural decoding of visual experience from electroencephalography (EEG) has achieved strong performance in intra-subject settings, but current methods fail to generalize across individuals: on the standard 200-way benchmark THINGS-EEG-2, top-1 accuracy drops from above 80% within…",
@@ -357,31 +521,8 @@
         "url": "https://arxiv.org/abs/2611.24206",
         "publishedDate": "2026-11-20"
       }
-    ]
-  },
-  {
-    "id": "rss-2026-11-20-a89359620008",
-    "date": "2026-11-20",
-    "autoPublished": true,
-    "sourceType": "rss",
-    "feedName": "arXiv — Штучний інтелект",
-    "filterVersion": "2.1",
-    "feedKind": "ai_topic",
-    "sourceDescription": "arXiv:2611.24302v1 Announce Type: new Abstract: Building autonomous agents that continually explore open worlds and acquire new capabilities through experience is a long-standing aspiration in artificial intelligence. Existing research often pursues lifelong learning within predefined tasks, curricula, or objectives, with self-improvement largely confined to individual agents. We introduce OpenKAGE, an agent-group evolution framework for open-ended lifelong learning. Within this framework, agents autonomously explore open worlds and continually acquire new capabilities by accumulating and reusing knowledge from their own interactions and the experience of others. OpenKAGE builds on two key mechanisms: (1) a two-layer knowledge representation, with a memory layer for situated memories and an experience layer for transferable experience and skills that retains the applicability conditions needed for reuse; and (2) a knowledge-sharing mechanism that semantically consolidates textual experience into a continuously evolving shared knowledge graph, while executable skills are shared verbatim. In Minecraft, OpenKAGE supports open-ended lifelong learning, enabling agent groups to sustain exploration and reach advanced technological milestones. Furthermore, the accumulated knowledge can be transferred to a newly initialized agent group on a different backbone model, improving its surviv",
-    "selectionReason": "напрям: Освіта; прикладні сигнали: improv, support",
-    "category": "Освіта",
-    "title": "OpenKAGE: Open-Ended Lifelong Learning in the Open World via Knowledge-Sharing Agent-Group Evolution",
-    "summary": "arXiv:2611.24302v1 Announce Type: new Abstract: Building autonomous agents that continually explore open worlds and acquire new capabilities through experience is a long-standing aspiration in artificial intelligence. Existing research often pursues lifelong learning within predefined tasks, curricula, or objectives, with…",
-    "body": "Цей матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та короткий опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.24302v1 Announce Type: new Abstract: Building autonomous agents that continually explore open worlds and acquire new capabilities through experience is a long-standing aspiration in artificial intelligence. Existing research often pursues lifelong learning within predefined tasks, curricula, or objectives, with self-improvement largely confined to individual agents. We introduce OpenKAGE, an agent-group evolution framework for open-ended lifelong learning. Within this framework, agents autonomously explore open worlds and continually acquire new capabilities by accumulating and reusing knowledge from their own interactions and the experience of others. OpenKAGE builds on two key mechanisms: (1) a two-layer knowledge representation, with a memory layer for situated memories and an experience layer for transferable experience and skills that retains the applicability conditions needed for reuse; and (2) a knowledge-sharing mechanism that semantically consolidates textual experience into a continuously evolving shared knowledge graph, while executable skills are shared verbatim. In Minecraft, OpenKAGE supports open-ended lifelong learning, enabling agent groups to sustain exploration and reach advanced technological milestones. Furthermore, the accumulated knowledge can be transferred to a newly initialized agent group on a different backbone model, improving its surviv\n\nЧому матеріал потрапив до добірки: напрям: Освіта; прикладні сигнали: improv, support. Це автоматичний тематичний відбір за ключовими словами, а не підтвердження ефективності чи незалежна експертна оцінка. Перед висновками прочитайте оригінальну публікацію.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте розділ про публікацію та рецензування в оригіналі.\n\nРедакційне застереження: автоматична система перевіряє формат стрічки, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження, не перевіряє незалежно всі твердження та не замінює людську редакційну перевірку.",
-    "sourceDate": "2026-11-20",
-    "sources": [
-      {
-        "title": "OpenKAGE: Open-Ended Lifelong Learning in the Open World via Knowledge-Sharing Agent-Group Evolution",
-        "publisher": "arXiv",
-        "url": "https://arxiv.org/abs/2611.24302",
-        "publishedDate": "2026-11-20"
-      }
-    ]
+    ],
+    "evidenceLevel": "практичне застосування або конкретний приклад"
   },
   {
     "id": "rss-2026-11-20-6cdd4a0d0dbe",
@@ -389,10 +530,10 @@
     "autoPublished": true,
     "sourceType": "rss",
     "feedName": "arXiv — Штучний інтелект",
-    "filterVersion": "2.1",
+    "filterVersion": "2.2",
     "feedKind": "ai_topic",
     "sourceDescription": "arXiv:2611.24436v1 Announce Type: new Abstract: Synthetic polysomnography (PSG) data has great potential in healthcare applications, for example in substituting real data that is sensitive and challenging to collect. Previous research on synthetic PSG data has been largely focused on short segments of individual signals, overlooking the inter-signal dynamics related to sleep disorders. In this study, we developed a generative adversarial network (PSG-GAN) for co-synthesizing longer segments of multiple PSG signals with diverse and complex characteristics typical of obstructive sleep apnea (OSA). The synthetic signals appeared realistic, and the electroencephalography and electrooculography band powers were similarly distributed across sleep stages. Moreover, the PSG-GAN learned to mirror signal interactions such as changes in photoplethysmography-based heart rate during and after breathing obstructions. An automatic scoring model trained solely with automatically scored synthetic signals reached good performance on sleep staging (\\k{appa}=0.71 and 0.63) and respiratory event segmentation (\\k{appa}=0.57 and 0.60), on two test sets consisting of healthy volunteers and OSA patients, respectively. This demonstrates the potential of synthetic data in supporting algorithm development for sleep diagnostics. The source code is available at https://github.com/rikuhuttunen/psg-gan.",
-    "selectionReason": "напрям: Медицина; прикладні сигнали: support, diagnos",
+    "selectionReason": "напрям: Медицина; ознаки користі: support",
     "category": "Медицина",
     "title": "From real to synthetic: PSG-GAN learns sleep apnea signal dynamics for AI training",
     "summary": "arXiv:2611.24436v1 Announce Type: new Abstract: Synthetic polysomnography (PSG) data has great potential in healthcare applications, for example in substituting real data that is sensitive and challenging to collect. Previous research on synthetic PSG data has been largely focused on short segments of individual signals,…",
@@ -405,7 +546,8 @@
         "url": "https://arxiv.org/abs/2611.24436",
         "publishedDate": "2026-11-20"
       }
-    ]
+    ],
+    "evidenceLevel": "потенційне застосування; потрібне ознайомлення з першоджерелом"
   },
   {
     "id": "rss-2026-11-20-8235444c0a30",
@@ -413,10 +555,10 @@
     "autoPublished": true,
     "sourceType": "rss",
     "feedName": "arXiv — Штучний інтелект",
-    "filterVersion": "2.1",
+    "filterVersion": "2.2",
     "feedKind": "ai_topic",
     "sourceDescription": "arXiv:2611.24650v2 Announce Type: new Abstract: Small language models (SLMs) can run on commodity hardware and support privacy-preserving, on-premises clinical deployment, but their medical explanations are often short and poorly structured compared with large language models. Recent supervised approaches such as Meerkat transfer chain-of-thought reasoning into 7B-8B backbones, yet their training objective does not directly target the style or organization of the generated rationales. Building on the instruction-tuned Mistral-7B backbone, we investigate whether a lightweight reinforcement learning (RL) step can improve explanation structure without human preference labels. We apply Proximal Policy Optimization (PPO) with LoRA adaptation to 2000 Meerkat-derived medical prompts, guided by a simple self-supervised reward that favors longer, lexically diverse, and well-punctuated responses while penalizing very short ones. Training for about 170 PPO steps on a single NVIDIA A100 GPU yields a stable increase in the average reward. Quantitative and qualitative comparisons show that the RL-tuned model produces longer, more organized, multi-point explanations while preserving the underlying medical content. We discuss the promise and the limitations of self-rewarded RL for shaping the style of medical explanations.",
-    "selectionReason": "напрям: Медицина; прикладні сигнали: improv, support, optimi",
+    "selectionReason": "напрям: Медицина; ознаки користі: comparison, medical explanations, deployment",
     "category": "Медицина",
     "title": "Self-Rewarded Reinforcement Learning for Better-Structured Medical Explanations in Small Language Models",
     "summary": "arXiv:2611.24650v2 Announce Type: new Abstract: Small language models (SLMs) can run on commodity hardware and support privacy-preserving, on-premises clinical deployment, but their medical explanations are often short and poorly structured compared with large language models. Recent supervised approaches such as Meerkat…",
@@ -429,31 +571,8 @@
         "url": "https://arxiv.org/abs/2611.24650",
         "publishedDate": "2026-11-20"
       }
-    ]
-  },
-  {
-    "id": "rss-2026-11-20-e01a937b4eba",
-    "date": "2026-11-20",
-    "autoPublished": true,
-    "sourceType": "rss",
-    "feedName": "arXiv — Штучний інтелект",
-    "filterVersion": "2.1",
-    "feedKind": "ai_topic",
-    "sourceDescription": "arXiv:2611.24697v1 Announce Type: new Abstract: Reinforcement learning (RL) has become a common approach for training large language model (LLM) agents on long-horizon tasks. However, learning from sparse terminal rewards makes credit assignment and exploration difficult. We approach these challenges through a policy-induced capability region, the set of states from which the current policy can reliably complete a task. Near its boundary, an agent may need only a few actions to reach a more solvable state, even when the goal remains distant. This reduces long-horizon learning to two coupled subproblems of reaching that state and completing the task from there. We address them with paired advantages and a progressive reverse-to-forward curriculum. The advantages provide separate signals for reaching more solvable states and completing the task from them, while the curriculum expands the capability region backward along successful reference trajectories and then into off-reference states through on-policy exploration. On ALFWorld and WebShop, our method outperforms competitive agentic RL methods at both model scales, achieving success rates of 90.1%/96.1% and 80.2%/82.6% with Qwen2.5-1.5B/7B-Instruct, respectively.",
-    "selectionReason": "напрям: Освіта; прикладні сигнали: reduce, reliab",
-    "category": "Освіта",
-    "title": "Depth Before Breadth: Reverse-to-Forward Curriculum with Advantage Decomposition for LLM Agent",
-    "summary": "arXiv:2611.24697v1 Announce Type: new Abstract: Reinforcement learning (RL) has become a common approach for training large language model (LLM) agents on long-horizon tasks. However, learning from sparse terminal rewards makes credit assignment and exploration difficult. We approach these challenges through a policy-induced…",
-    "body": "Цей матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та короткий опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.24697v1 Announce Type: new Abstract: Reinforcement learning (RL) has become a common approach for training large language model (LLM) agents on long-horizon tasks. However, learning from sparse terminal rewards makes credit assignment and exploration difficult. We approach these challenges through a policy-induced capability region, the set of states from which the current policy can reliably complete a task. Near its boundary, an agent may need only a few actions to reach a more solvable state, even when the goal remains distant. This reduces long-horizon learning to two coupled subproblems of reaching that state and completing the task from there. We address them with paired advantages and a progressive reverse-to-forward curriculum. The advantages provide separate signals for reaching more solvable states and completing the task from them, while the curriculum expands the capability region backward along successful reference trajectories and then into off-reference states through on-policy exploration. On ALFWorld and WebShop, our method outperforms competitive agentic RL methods at both model scales, achieving success rates of 90.1%/96.1% and 80.2%/82.6% with Qwen2.5-1.5B/7B-Instruct, respectively.\n\nЧому матеріал потрапив до добірки: напрям: Освіта; прикладні сигнали: reduce, reliab. Це автоматичний тематичний відбір за ключовими словами, а не підтвердження ефективності чи незалежна експертна оцінка. Перед висновками прочитайте оригінальну публікацію.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте розділ про публікацію та рецензування в оригіналі.\n\nРедакційне застереження: автоматична система перевіряє формат стрічки, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження, не перевіряє незалежно всі твердження та не замінює людську редакційну перевірку.",
-    "sourceDate": "2026-11-20",
-    "sources": [
-      {
-        "title": "Depth Before Breadth: Reverse-to-Forward Curriculum with Advantage Decomposition for LLM Agent",
-        "publisher": "arXiv",
-        "url": "https://arxiv.org/abs/2611.24697",
-        "publishedDate": "2026-11-20"
-      }
-    ]
+    ],
+    "evidenceLevel": "практичне застосування або конкретний приклад"
   },
   {
     "id": "rss-2026-11-19-57b8a5effa02",

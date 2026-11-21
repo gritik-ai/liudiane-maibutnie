@@ -1,5 +1,95 @@
 [
   {
+    "id": "rss-2026-10-19-820876c7f3cb",
+    "date": "2026-10-19",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "MIT News — Здоров'я і медицина",
+    "feedId": "mit-health",
+    "sourceDomain": "mit.edu",
+    "filterVersion": "2.5",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Перспективний розвиток",
+    "feedKind": "domain_topic",
+    "sourceDescription": "A model developed by researchers at MIT and Boston Children's Hospital adjusts scans on the fly to track fetal movement, potentially sparing families repeat hospital visits.",
+    "selectionReason": "напрям: Медицина; ознаки користі: reliable",
+    "evidenceLevel": "перспективне дослідження; практичний ефект ще потрібно перевірити",
+    "category": "Медицина",
+    "title": "Why teaching AI about symmetry could make prenatal diagnosis more reliable",
+    "summary": "A model developed by researchers at MIT and Boston Children's Hospital adjusts scans on the fly to track fetal movement, potentially sparing families repeat hospital visits.",
+    "body": "Матеріал автоматично відібрано зі стрічки MIT News. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nA model developed by researchers at MIT and Boston Children's Hospital adjusts scans on the fly to track fetal movement, potentially sparing families repeat hospital visits.\n\nРедакційна класифікація: напрям: Медицина; ознаки користі: reliable. Рівень свідчень: перспективне дослідження; практичний ефект ще потрібно перевірити. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-10-19",
+    "sources": [
+      {
+        "title": "Why teaching AI about symmetry could make prenatal diagnosis more reliable",
+        "publisher": "MIT News",
+        "url": "https://news.mit.edu/2026/teaching-ai-about-symmetry-could-make-prenatal-diagnosis-more-reliable-1019",
+        "publishedDate": "2026-10-19"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-09-24-f9a71742cd94",
+    "date": "2026-09-24",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "MIT News — Здоров'я і медицина",
+    "feedId": "mit-health",
+    "sourceDomain": "mit.edu",
+    "filterVersion": "2.5",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Перспективний розвиток",
+    "feedKind": "domain_topic",
+    "sourceDescription": "They also found that obesity may put patients at higher risk for activation of the pathway. Drugs that block the pathway may help prevent metastasis.",
+    "selectionReason": "напрям: Медицина; ознаки користі: prevent",
+    "evidenceLevel": "перспективне дослідження; практичний ефект ще потрібно перевірити",
+    "category": "Медицина",
+    "title": "Biologists identify a cellular pathway that allows colorectal cancer to metastasize",
+    "summary": "They also found that obesity may put patients at higher risk for activation of the pathway. Drugs that block the pathway may help prevent metastasis.",
+    "body": "Матеріал автоматично відібрано зі стрічки MIT News. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nThey also found that obesity may put patients at higher risk for activation of the pathway. Drugs that block the pathway may help prevent metastasis.\n\nРедакційна класифікація: напрям: Медицина; ознаки користі: prevent. Рівень свідчень: перспективне дослідження; практичний ефект ще потрібно перевірити. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-09-24",
+    "sources": [
+      {
+        "title": "Biologists identify a cellular pathway that allows colorectal cancer to metastasize",
+        "publisher": "MIT News",
+        "url": "https://news.mit.edu/2026/biologists-identify-cellular-pathway-allows-colorectal-cancer-metastasize-0924",
+        "publishedDate": "2026-09-24"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-09-24-cf83d9bbc592",
+    "date": "2026-09-24",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "MIT News — Здоров'я і медицина",
+    "feedId": "mit-health",
+    "sourceDomain": "mit.edu",
+    "filterVersion": "2.5",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Перспективний розвиток",
+    "feedKind": "domain_topic",
+    "sourceDescription": "MIT researchers developed a handheld system that gently collects living cells from patient samples to aid cancer testing and development of personalized medicines.",
+    "selectionReason": "напрям: Медицина; ознаки користі: improve, detect, detection",
+    "evidenceLevel": "перспективне дослідження; практичний ефект ще потрібно перевірити",
+    "category": "Медицина",
+    "title": "New cell-collection device could improve early cancer detection",
+    "summary": "MIT researchers developed a handheld system that gently collects living cells from patient samples to aid cancer testing and development of personalized medicines.",
+    "body": "Матеріал автоматично відібрано зі стрічки MIT News. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nMIT researchers developed a handheld system that gently collects living cells from patient samples to aid cancer testing and development of personalized medicines.\n\nРедакційна класифікація: напрям: Медицина; ознаки користі: improve, detect, detection. Рівень свідчень: перспективне дослідження; практичний ефект ще потрібно перевірити. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-09-24",
+    "sources": [
+      {
+        "title": "New cell-collection device could improve early cancer detection",
+        "publisher": "MIT News",
+        "url": "https://news.mit.edu/2026/new-cell-collection-device-could-improve-early-cancer-detection-0924",
+        "publishedDate": "2026-09-24"
+      }
+    ]
+  },
+  {
     "id": "rss-2026-11-20-fe160aea5982",
     "date": "2026-11-20",
     "autoPublished": true,
@@ -133,7 +223,7 @@
     "editorialLabel": "Позитивний вплив",
     "feedKind": "institutional",
     "sourceDescription": "Today, as part of its commitment to strengthening health information systems and improving health[1], especially in the context of the COVID-19 pandemic, WHO announced a new approach to improving access to life-saving data: the SCORE for Health Data Technical Package. The COVID-19 pandemic has highlighted the urgent need for timely and reliable data to drive strategic health action. Too many countries still lack both the infrastructure to routinely gather health data and the analytical capacity to use these data for effective health actions and emergency response. “Countries must be able to measure progress to make progress,” said WHO Director-General Dr Tedros Adhanom Ghebreyesus. “Particularly during COVID-19, reliable data is the best way to coordinate response efforts and improve health in all areas.” Accurate health data are necessary to understand specific country needs in order to improve health and save lives. Data also helps direct scarce resources to where they are needed most. The SCORE (Survey, Count, Optimize, Review, Enable) Technical Package aims to improve the availability of timely, reliable, validated, and comparable health data. For the first time in a single, harmonized package, it represents all the key elements for optimized health information system performance. Simply put, SCORE will help governments around the globe set benchmarks and improve standards in healthcare. In response to the challenges of data availability highlighted in the WHO World Health Statistics 2020 report, SCORE includes more than 90 universally-accepted tools and standards for health information systems strengthening. “Using data to inform public health priorities and strategies has never been more important,” said Dr Kelly Henning, Director of Public Health Programs at Bloomberg Philanthropies[2]. “The SCORE Technical Package provides country governments around the world with high-quality, essential technical guidance so that countries can strengthen their own data systems.” WHO is proud to partner with the Bloomberg Philanthropies Data for Health Initiative to deliver this timely resource to countries. Below are some examples of how SCORE can improve individual lives and communities: The birth of a child is registered so they can access essential health services, attend school, and apply for a passport; A death is registered with cause-of-death accurately captured so that policy-makers have a better understanding of all-cause and COVID-specific mortality and associated risk factors and implement programs and policies to save lives; Health data are disaggregated by age, sex and cause of death to illustrate the root causes of health disparities and help direct resources to the most vulnerable groups such as those who do not speak the local language or face stigma and discrimination in their community; Health facilities have the capacity to regularly measure the quality of their services, workforce and patient data and can make a compelling case for increased funding to national and international stakeholders; Health data are integrated with other sectors so that social determinants of health such as pollution, sanitation and nutrition are addressed to reduce the overall burden of disease. The package's initial release includes two documents: SCORE Essential Interventions – including an overview of health information systems, underlying elements, and indicators to assess progress with sample actions; and SCORE Tools and Standards -- including resources to address critical health data gaps and strengthen country health data. “We must keep score to save lives. WHO is committed to working with countries and partners to rapidly scale up capacity for data collection and use in order to improve policy and performance,” added Dr Samira Asma, Assistant Director-General for Data, Analytics and Delivery for Impact at WHO. “We must act now to invest in statistical systems in countries, respond to this pandemic and meet the SDGs and the Triple ",
-    "selectionReason": "напрям: Медицина; ознаки користі: monitor, health services, benchmark",
+    "selectionReason": "напрям: Медицина; ознаки користі: health services, benchmark, benchmarks",
     "evidenceLevel": "практичне застосування або конкретний приклад",
     "category": "Медицина",
     "title": "New WHO technical package to help countries improve health data for COVID-19 response and beyond",
@@ -246,7 +336,7 @@
     "sourceType": "rss",
     "feedName": "arXiv — Машинне навчання",
     "filterVersion": "2.5",
-    "editorialStatus": "needs_review",
+    "editorialStatus": "approved",
     "editorialDecisionSource": "automatic",
     "editorialLabel": "Перспективний розвиток",
     "feedKind": "ai_topic",
@@ -267,8 +357,7 @@
       }
     ],
     "feedId": "arxiv-ml",
-    "sourceDomain": "arxiv.org",
-    "editorialReviewReason": "немає чіткого зв'язку зі штучним інтелектом для спеціалізованої AI-стрічки"
+    "sourceDomain": "arxiv.org"
   },
   {
     "id": "rss-2026-11-20-00c4774b58cd",
@@ -307,7 +396,7 @@
     "sourceType": "rss",
     "feedName": "arXiv — Машинне навчання",
     "filterVersion": "2.5",
-    "editorialStatus": "needs_review",
+    "editorialStatus": "approved",
     "editorialDecisionSource": "automatic",
     "editorialLabel": "Перспективний розвиток",
     "feedKind": "ai_topic",
@@ -328,8 +417,7 @@
       }
     ],
     "feedId": "arxiv-ml",
-    "sourceDomain": "arxiv.org",
-    "editorialReviewReason": "немає чіткого зв'язку зі штучним інтелектом для спеціалізованої AI-стрічки"
+    "sourceDomain": "arxiv.org"
   },
   {
     "id": "rss-2026-11-20-b5981f14b13a",
@@ -368,13 +456,13 @@
     "sourceType": "rss",
     "feedName": "arXiv — Машинне навчання",
     "filterVersion": "2.5",
-    "editorialStatus": "needs_review",
+    "editorialStatus": "approved",
     "editorialDecisionSource": "automatic",
     "editorialLabel": "Перспективний розвиток",
     "feedKind": "ai_topic",
     "sourceDescription": "arXiv:2610.23862v2 Announce Type: replace Abstract: We introduce a predictive world model for electronic health records (EHR) that represents patient histories as action conditioned latent trajectories. Rather than modeling clinical events solely through autoregressive token prediction, our framework explicitly separates patient states from observed clinical actions and learns their evolution through a state and action conditioned transition operator. At its core is a state dependent linearization predictor that propagates local changes in latent patient state, enabling time resolved prediction, multi step rollout, and action conditioned simulation. Empirically, we show that generated latent trajectories preserve downstream predictive signal, temporal structure, and subgroup level statistical relationships present in encoder derived representations. We further decode free running rollouts into the original clinical feature space and evaluate future clinical measurements against observed values using task matched forecasting baselines, demonstrating that the learned dynamics retain predictive information beyond latent space agreement. Across binary classification and time to event tasks, EHR WM achieves competitive, though task dependent, performance relative to substantially larger EHR foundation models while using a 30x smaller parameter footprint. Finally, perturbing observed action sequences produces corresponding changes in generated trajectories, demonstrating the action sensitivity of the learned dynamics. Together, these results support world modeling as a complementary framework for learning explicit, time indexed representations of patient evolution from longitudinal EHR.",
-    "selectionReason": "напрям: Медицина; ознаки користі: evaluate, support, forecast",
-    "evidenceLevel": "дослідження або оцінювання потенційного застосування",
+    "selectionReason": "напрям: Медицина; ознаки користі: forecasting, forecast, measurements",
+    "evidenceLevel": "практичне застосування або конкретний приклад",
     "category": "Медицина",
     "title": "Forecasting Patient Trajectories from the Electronic Health Records with Action-Conditioned World Models",
     "summary": "arXiv:2610.23862v2 Announce Type: replace Abstract: We introduce a predictive world model for electronic health records (EHR) that represents patient histories as action conditioned latent trajectories. Rather than modeling clinical events solely through autoregressive token prediction, our framework explicitly separates patient states from observed…",
@@ -389,8 +477,7 @@
       }
     ],
     "feedId": "arxiv-ml",
-    "sourceDomain": "arxiv.org",
-    "editorialReviewReason": "немає чіткого зв'язку зі штучним інтелектом для спеціалізованої AI-стрічки"
+    "sourceDomain": "arxiv.org"
   },
   {
     "id": "rss-2026-11-20-b12af709cd81",
@@ -399,13 +486,13 @@
     "sourceType": "rss",
     "feedName": "arXiv — Машинне навчання",
     "filterVersion": "2.5",
-    "editorialStatus": "needs_review",
+    "editorialStatus": "approved",
     "editorialDecisionSource": "automatic",
     "editorialLabel": "Перспективний розвиток",
     "feedKind": "ai_topic",
     "sourceDescription": "arXiv:2610.42126v2 Announce Type: replace Abstract: Objective: To examine how changes in clinical measurement practices affect the transportability of predictive information from physiological trajectories and observation patterns in longitudinal ICU records. Methods: In-hospital mortality was predicted using measurements from the first 48 hours of ICU admission in MIMIC-III, MIMIC-IV, and eICU. Nested representations captured the latest physiological state (R1), trajectory summaries (R2), and observation timing and frequency (R3). Models trained on 7,762 MetaVision patients were evaluated on 21,682 MIMIC-IV and 43,878 eICU patients from 204 hospitals. Restriction experiments tested measurement timing at matched counts and reduced availability. Results: Physiological trajectories improved prediction beyond latest values across settings, including transfer to eICU (R2-R1 log-loss difference -0.01446, 95% CI -0.01701 to -0.01202). Observation patterns improved prediction following transfer to MIMIC-IV (R3-R2 -0.00564) and in locally developed eICU models (-0.00402, 95% CI -0.00517 to -0.00283), but not clearly following transfer from MetaVision to eICU (+0.00106, 95% CI -0.00087 to +0.00355). At matched observation counts, retaining measurements spread throughout the 48-hour window reduced log loss relative to random retention, more for R3 than R2 (0.04324 versus 0.00721). R3 was also more sensitive to the loss of recent measurements. Retraining under reduced availability restored its advantage over R2. Conclusions: Physiological trajectories transferred consistently, while observation patterns offered less reliable benefits and greater sensitivity to measurement timing and availability. Their transferability may depend on diversity of measurement practices during training. Clinical prediction models should be evaluated across measurement conditions as well as patient populations.",
-    "selectionReason": "напрям: Медицина; ознаки користі: evaluate, improve, reduce",
-    "evidenceLevel": "дослідження або оцінювання потенційного застосування",
+    "selectionReason": "напрям: Медицина; ознаки користі: observation, measurements, evaluate",
+    "evidenceLevel": "практичне застосування або конкретний приклад",
     "category": "Медицина",
     "title": "Physiological Trajectories and Observation Patterns in ICU Mortality Prediction: Transportability Under Changing Measurement Conditions",
     "summary": "arXiv:2610.42126v2 Announce Type: replace Abstract: Objective: To examine how changes in clinical measurement practices affect the transportability of predictive information from physiological trajectories and observation patterns in longitudinal ICU records. Methods: In-hospital mortality was predicted using measurements from the first 48 hours of ICU…",
@@ -420,8 +507,7 @@
       }
     ],
     "feedId": "arxiv-ml",
-    "sourceDomain": "arxiv.org",
-    "editorialReviewReason": "немає чіткого зв'язку зі штучним інтелектом для спеціалізованої AI-стрічки"
+    "sourceDomain": "arxiv.org"
   },
   {
     "id": "rss-2026-11-20-6754f673fe21",
@@ -430,12 +516,12 @@
     "sourceType": "rss",
     "feedName": "arXiv — Машинне навчання",
     "filterVersion": "2.5",
-    "editorialStatus": "needs_review",
+    "editorialStatus": "approved",
     "editorialDecisionSource": "automatic",
     "editorialLabel": "Позитивний вплив",
     "feedKind": "ai_topic",
     "sourceDescription": "arXiv:2603.24427v2 Announce Type: replace-cross Abstract: Understanding how biomarker distributions evolve over time is a central challenge in digital health and chronic disease monitoring. For example, in diabetes, changes in the distribution of glucose measurements can reveal patterns of disease progression and treatment response that conventional summary measures miss. Motivated by a 13-week clinical trial comparing the closed-loop insulin delivery system t:slim X2 with standard therapy in children with type 1 diabetes, we propose a probabilistic framework to model the continuous-time evolution of time-indexed distributions using continuous glucose monitoring (CGM) data collected every five minutes. We represent the glucose distribution as a Gaussian mixture, with time-varying mixture weights governed by a neural ODE. We estimate the model parameters using a distribution-matching criterion based on the maximum mean discrepancy. The resulting framework is interpretable, computationally efficient, and sensitive to subtle temporal distributional changes. In the CGM trial data analyzed here, the method detects treatment-related improvements in glucose dynamics that are difficult to capture with traditional analytical approaches.",
-    "selectionReason": "напрям: Медицина; ознаки користі: clinical trial, improve, improvement",
+    "selectionReason": "напрям: Медицина; ознаки користі: clinical trial, monitoring, monitor",
     "evidenceLevel": "практичне застосування або конкретний приклад",
     "category": "Медицина",
     "title": "Continuous-time learning of probability distributions: a case study in a digital trial of young children with type 1 diabetes",
@@ -451,8 +537,7 @@
       }
     ],
     "feedId": "arxiv-ml",
-    "sourceDomain": "arxiv.org",
-    "editorialReviewReason": "немає чіткого зв'язку зі штучним інтелектом для спеціалізованої AI-стрічки"
+    "sourceDomain": "arxiv.org"
   },
   {
     "id": "rss-2026-11-20-a475ea97c69f",
@@ -461,12 +546,12 @@
     "sourceType": "rss",
     "feedName": "arXiv — Машинне навчання",
     "filterVersion": "2.5",
-    "editorialStatus": "needs_review",
+    "editorialStatus": "approved",
     "editorialDecisionSource": "automatic",
     "editorialLabel": "Перспективний розвиток",
     "feedKind": "ai_topic",
     "sourceDescription": "arXiv:2604.12075v2 Announce Type: replace-cross Abstract: The tumor microenvironment (TME) plays a central role in cancer progression, treatment response, and patient outcomes, yet large-scale, consistent, and quantitative TME characterization from routine hematoxylin and eosin (H&E)-stained histopathology remains scarce. We introduce OpenTME, an open-access dataset of pre-computed TME profiles derived from 5,268 H&E-stained whole-slide images across ten cancer types (bladder, breast, colorectal, head and neck, liver, lung, ovarian, pancreatic, prostate, and stomach cancer) from The Cancer Genome Atlas (TCGA). All outputs were generated using HETA (H&E Tissue Analysis), an AI-powered application built on the Atlas family of pathology foundation models, which performs tissue quality control, tissue segmentation, cell detection and classification, tumor zone and tertiary lymphoid structure (TLS) detection, and spatial neighborhood analysis, yielding over 20,000 quantitative readouts per slide at cell-level resolution, including curated features such as tumor-infiltrating lymphocytes, tumor mitotic index, or mature TLS counts. OpenTME is available for non-commercial academic research on Hugging Face. We will continue to expand OpenTME over time and anticipate it will serve as a resource for biomarker discovery, spatial biology research, and the development of computational methods for TME analysis.",
-    "selectionReason": "напрям: Медицина; ознаки користі: dataset, detect, detection",
+    "selectionReason": "напрям: Медицина; ознаки користі: treatment, dataset, detect",
     "evidenceLevel": "дослідження або оцінювання потенційного застосування",
     "category": "Медицина",
     "title": "OpenTME: An Open Dataset of AI-powered H&E Tumor Microenvironment Profiles from TCGA",
@@ -482,8 +567,7 @@
       }
     ],
     "feedId": "arxiv-ml",
-    "sourceDomain": "arxiv.org",
-    "editorialReviewReason": "немає чіткого зв'язку зі штучним інтелектом для спеціалізованої AI-стрічки"
+    "sourceDomain": "arxiv.org"
   },
   {
     "id": "rss-2026-11-20-2797b14b852c",
@@ -522,7 +606,7 @@
     "sourceType": "rss",
     "feedName": "arXiv — Штучний інтелект",
     "filterVersion": "2.5",
-    "editorialStatus": "needs_review",
+    "editorialStatus": "approved",
     "editorialDecisionSource": "automatic",
     "editorialLabel": "Перспективний розвиток",
     "feedKind": "ai_topic",
@@ -543,8 +627,7 @@
       }
     ],
     "feedId": "arxiv-ai",
-    "sourceDomain": "arxiv.org",
-    "editorialReviewReason": "немає чіткого зв'язку зі штучним інтелектом для спеціалізованої AI-стрічки"
+    "sourceDomain": "arxiv.org"
   },
   {
     "id": "rss-2026-11-20-7e7e80b11565",
@@ -583,13 +666,13 @@
     "sourceType": "rss",
     "feedName": "arXiv — Штучний інтелект",
     "filterVersion": "2.5",
-    "editorialStatus": "needs_review",
+    "editorialStatus": "approved",
     "editorialDecisionSource": "automatic",
     "editorialLabel": "Перспективний розвиток",
     "feedKind": "ai_topic",
     "sourceDescription": "arXiv:2611.09493v2 Announce Type: replace-cross Abstract: Visible-light videos and multivariate diagnostic signals provide complementary observations of tokamak discharges. However, existing fusion pretraining methods primarily learn representations by reconstructing or predicting observations, leaving the correspondence between these modalities underexplored. Representation learning is further challenged by spatially localized plasma regions in video frames and substantial differences in diagnostic sampling rates. We propose FusionCLIP, a multimodal contrastive pretraining framework. A selective video encoder retains informative visual tokens, while a query-based time-series encoder integrates asynchronous diagnostic signals using their observation timestamps. Contrastive learning aligns representations of the two modalities. We construct the EAST Multimodal Diagnostics (EAST-MMD) dataset, comprising 1307 EAST discharges, and evaluate the model through independent fine-tuning on three tasks: disruption prediction, edge-localized mode (ELM) classification, and H98 regression. FusionCLIP achieves a Joint score of 89.07%, with absolute gains of 2.41% and 2.90% over the best competing baseline, and the in-domain contrastive pretraining baseline CLIP-Base, respectively. Ablations and attention visualizations further support the contributions of its key components.",
-    "selectionReason": "напрям: Медицина; ознаки користі: evaluate, dataset, support",
-    "evidenceLevel": "дослідження або оцінювання потенційного застосування",
+    "selectionReason": "напрям: Медицина; ознаки користі: observation, evaluate, dataset",
+    "evidenceLevel": "практичне застосування або конкретний приклад",
     "category": "Медицина",
     "title": "FusionCLIP: Multimodal Contrastive Pretraining for Fusion Plasma Diagnostics",
     "summary": "arXiv:2611.09493v2 Announce Type: replace-cross Abstract: Visible-light videos and multivariate diagnostic signals provide complementary observations of tokamak discharges. However, existing fusion pretraining methods primarily learn representations by reconstructing or predicting observations, leaving the correspondence between these modalities…",
@@ -604,8 +687,7 @@
       }
     ],
     "feedId": "arxiv-ai",
-    "sourceDomain": "arxiv.org",
-    "editorialReviewReason": "немає чіткого зв'язку зі штучним інтелектом для спеціалізованої AI-стрічки"
+    "sourceDomain": "arxiv.org"
   },
   {
     "id": "rss-2026-11-20-c100b733fd0b",
@@ -614,7 +696,7 @@
     "sourceType": "rss",
     "feedName": "arXiv — Штучний інтелект",
     "filterVersion": "2.5",
-    "editorialStatus": "needs_review",
+    "editorialStatus": "approved",
     "editorialDecisionSource": "automatic",
     "editorialLabel": "Перспективний розвиток",
     "feedKind": "ai_topic",
@@ -635,8 +717,7 @@
       }
     ],
     "feedId": "arxiv-ai",
-    "sourceDomain": "arxiv.org",
-    "editorialReviewReason": "немає чіткого зв'язку зі штучним інтелектом для спеціалізованої AI-стрічки"
+    "sourceDomain": "arxiv.org"
   },
   {
     "id": "rss-2026-11-20-18ebe089f234",
@@ -705,12 +786,12 @@
     "sourceType": "rss",
     "feedName": "arXiv — Машинне навчання",
     "filterVersion": "2.5",
-    "editorialStatus": "needs_review",
+    "editorialStatus": "approved",
     "editorialDecisionSource": "automatic",
     "editorialLabel": "Перспективний розвиток",
     "feedKind": "ai_topic",
     "sourceDescription": "arXiv:2611.25065v1 Announce Type: cross Abstract: Collecting high-dimensional data over time for multiple individuals is increasingly common in biomedical research, particularly in studies of disease progression or molecular time-course experiments. Often data are missing or the timepoints are irregularly spaced across individuals. There is a lack of flexible methodology to explore latent patterns of change over time and account for missing data. We propose an empirical variational Bayes (EVB) approach to factorize high-dimensional longitudinal data, in which the underlying factors have temporal correlation over time. The EVB approach is computationally efficient and accommodates flexible covariance structures over time with automatic determination of all hyper-parameters (including the underlying rank, i.e., number of factors). Simulations demonstrate that the approach captures the underlying signal more precisely than other strategies, and performs well with respect to missing data imputation under different scenarios. An application to a gene time-course data for multiple sclerosis treatment provides a factorization with interpretable components over time and improved imputation accuracy for missing data.",
-    "selectionReason": "напрям: Медицина; ознаки користі: improve",
+    "selectionReason": "напрям: Медицина; ознаки користі: treatment, improve",
     "evidenceLevel": "перспективне дослідження; практичний ефект ще потрібно перевірити",
     "category": "Медицина",
     "title": "Empirical Variational Bayes Factorization for Longitudinal Matrix Data",
@@ -726,8 +807,7 @@
       }
     ],
     "feedId": "arxiv-ml",
-    "sourceDomain": "arxiv.org",
-    "editorialReviewReason": "немає чіткого зв'язку зі штучним інтелектом для спеціалізованої AI-стрічки"
+    "sourceDomain": "arxiv.org"
   },
   {
     "id": "rss-2026-11-20-f7a569793683",
@@ -736,7 +816,7 @@
     "sourceType": "rss",
     "feedName": "arXiv — Машинне навчання",
     "filterVersion": "2.5",
-    "editorialStatus": "needs_review",
+    "editorialStatus": "approved",
     "editorialDecisionSource": "automatic",
     "editorialLabel": "Перспективний розвиток",
     "feedKind": "ai_topic",
@@ -757,8 +837,7 @@
       }
     ],
     "feedId": "arxiv-ml",
-    "sourceDomain": "arxiv.org",
-    "editorialReviewReason": "немає чіткого зв'язку зі штучним інтелектом для спеціалізованої AI-стрічки"
+    "sourceDomain": "arxiv.org"
   },
   {
     "id": "rss-2026-11-20-e114ca0ca6b3",
@@ -767,7 +846,7 @@
     "sourceType": "rss",
     "feedName": "arXiv — Машинне навчання",
     "filterVersion": "2.5",
-    "editorialStatus": "needs_review",
+    "editorialStatus": "approved",
     "editorialDecisionSource": "automatic",
     "editorialLabel": "Перспективний розвиток",
     "feedKind": "ai_topic",
@@ -788,8 +867,7 @@
       }
     ],
     "feedId": "arxiv-ml",
-    "sourceDomain": "arxiv.org",
-    "editorialReviewReason": "немає чіткого зв'язку зі штучним інтелектом для спеціалізованої AI-стрічки"
+    "sourceDomain": "arxiv.org"
   },
   {
     "id": "rss-2026-11-20-b5f7c213a872",
@@ -884,7 +962,7 @@
     "sourceType": "rss",
     "feedName": "arXiv — Штучний інтелект",
     "filterVersion": "2.5",
-    "editorialStatus": "needs_review",
+    "editorialStatus": "approved",
     "feedKind": "ai_topic",
     "sourceDescription": "arXiv:2608.28384v2 Announce Type: replace Abstract: We introduce MAP, the first benchmark to evaluate multimodal AI systems as assistants for users with accessibility requirements when planning visits to places in the real world. In our evaluation, systems are presented with requests to verify or recommend a point of interest meeting an accessibility requirement. MAP contains two novel assessments: Claim verification for accessibility planning assesses if information on places and stated accessibility features is supported and identifies places that satisfy requested accessibility features. Visual evidence retrieval for accessibility planning checks if a multimodal AI system can select visual evidence for the requested place and accessibility feature. Our methodology supports comparison of AI systems in a setting where place information and accessibility information can change over time by evaluating systems and refreshing ground truth data at scheduled times. The benchmark is based on automatic rating and human rating for a proportion of responses.",
     "selectionReason": "напрям: Права людини; ознаки користі: comparison, benchmark, evaluation",
@@ -903,8 +981,7 @@
       }
     ],
     "feedId": "arxiv-ai",
-    "sourceDomain": "arxiv.org",
-    "editorialReviewReason": "немає чіткого зв'язку зі штучним інтелектом для спеціалізованої AI-стрічки"
+    "sourceDomain": "arxiv.org"
   },
   {
     "id": "rss-2026-11-20-1911c2798b07",
@@ -913,10 +990,10 @@
     "sourceType": "rss",
     "feedName": "arXiv — Штучний інтелект",
     "filterVersion": "2.5",
-    "editorialStatus": "needs_review",
+    "editorialStatus": "approved",
     "feedKind": "ai_topic",
     "sourceDescription": "arXiv:2609.26105v2 Announce Type: replace Abstract: Prediction of pathological complete response before neoadjuvant chemotherapy may facilitate more tailored therapeutic planning for breast cancer patients. This work proposes a deep-learning model for pretreatment data only, combining apparent diffusion coefficient maps, dynamic contrast-enhanced magnetic resonance imaging, and clinical variables. The study uses the public ACRIN 6698/I-SPY2 multicenter dataset. The architecture employs EfficientNet-B0 pretrained encoders for image feature extraction and late fusion with clinical information. Multiple clinical variables were evaluated, including age, race, histological type, HR/HER2 subtype, SBR grade, and maximum diameter. Only HR/HER2 subtype improved the average area under the receiver operating characteristic curve (AUC) and was retained in the final model. Using stratified five-fold cross-validation, standalone apparent diffusion coefficient maps achieved a mean AUC of 0.79, whereas dynamic contrast-enhanced magnetic resonance imaging achieved 0.74. Adding HR/HER2 subtype improved performance to 0.83 and 0.81, respectively. The final configuration, using both imaging modalities and HR/HER2 subtype, achieved an AUC of 0.86. These results support pretreatment multimodal learning for response prediction, although external validation is required before clinical use.",
-    "selectionReason": "напрям: Медицина; ознаки користі: evaluate, validation, dataset",
+    "selectionReason": "напрям: Медицина; ознаки користі: treatment, evaluate, validation",
     "evidenceLevel": "дослідження або оцінювання потенційного застосування",
     "category": "Медицина",
     "title": "Neoadjuvant chemotherapy response prediction using pretreatment diffusion and contrast-enhanced magnetic resonance imaging with clinical variables",
@@ -932,8 +1009,7 @@
       }
     ],
     "feedId": "arxiv-ai",
-    "sourceDomain": "arxiv.org",
-    "editorialReviewReason": "немає чіткого зв'язку зі штучним інтелектом для спеціалізованої AI-стрічки"
+    "sourceDomain": "arxiv.org"
   },
   {
     "id": "rss-2026-11-20-d7a198189fa8",
@@ -942,10 +1018,10 @@
     "sourceType": "rss",
     "feedName": "arXiv — Штучний інтелект",
     "filterVersion": "2.5",
-    "editorialStatus": "needs_review",
+    "editorialStatus": "approved",
     "feedKind": "ai_topic",
     "sourceDescription": "arXiv:2611.08922v2 Announce Type: replace Abstract: Automated scientific discovery has the potential to advance understanding of disease mechanisms and accelerate identification of early disease markers. Manual data annotation is infeasible at population scale, motivating methods that automatically extract pre-defined phenotypes from multimodal and unstructured clinical data. Such pre-defined feature sets determine and limit which associations these approaches can discover. This limitation extends to agentic AI systems that use these tools to query population-scale data. In contrast, foundation models (FMs) trained on large volumes of clinical data can perform tasks beyond their training objectives. This suggests their latent embeddings may represent novel or unexplored features that could yield insights into disease mechanisms, yet such latent features remain difficult to interpret. To address this challenge, we introduce Glyph, an automated multistage framework that extracts features from multimodal and unstructured clinical data using FMs and sparse autoencoders, interprets them as coded clinical concepts, and evaluates their value for clinical scientific discovery. We applied Glyph to abdominal CT volumes, CT radiology reports and laboratory measurements from 41,628 patients across different institutions. We identified 397 predictive concepts supported by 4,463 Bonferroni-significant associations. Moreover, a majority of discovered associations were automatically reproducible in held-out cohorts across different sites. Glyph concepts provided complementary associations to literature-derived markers, leading to gains in predictive capability. More broadly, these findings suggest that foundation model features revealed through interpretability methods could expand clinical understanding of disease. We release Glyph at https://github.com/StanfordMIMI/Glyph.",
-    "selectionReason": "напрям: Медицина; ознаки користі: evaluate, support, predict",
+    "selectionReason": "напрям: Медицина; ознаки користі: measurements, evaluate, support",
     "evidenceLevel": "дослідження або оцінювання потенційного застосування",
     "category": "Медицина",
     "title": "Glyph: An Interpretability Engine for AI-Driven Scientific Discovery from Clinical Data",
@@ -961,8 +1037,7 @@
       }
     ],
     "feedId": "arxiv-ai",
-    "sourceDomain": "arxiv.org",
-    "editorialReviewReason": "немає чіткого зв'язку зі штучним інтелектом для спеціалізованої AI-стрічки"
+    "sourceDomain": "arxiv.org"
   },
   {
     "id": "rss-2026-11-20-43ae09e5aee3",
@@ -999,7 +1074,7 @@
     "sourceType": "rss",
     "feedName": "arXiv — Штучний інтелект",
     "filterVersion": "2.5",
-    "editorialStatus": "needs_review",
+    "editorialStatus": "approved",
     "feedKind": "ai_topic",
     "sourceDescription": "arXiv:2611.22362v2 Announce Type: replace Abstract: Complex health conversations require answers grounded in individual information and currently valid evidence. We evaluate health context learning: acquiring, integrating, and applying relevant context during inference with fixed model parameters to answer health questions and respond appropriately to changes in facts, evidence, or task goals. To our knowledge, Chinese-language medical benchmarks have yet to systematically combine explicit contextual difficulties, controlled case variations, and member-specific medical criteria for open-ended answers. We introduce HealthCLBench, comprising 328 controlled clusters, 1,103 cases, and 4,931 rubric criteria across medical consultation and everyday health management. Members share backgrounds while evidence, patient states, or task goals change; each has its own medical scoring requirements. A 70-person medical team annotates and reviews the simulated cases and their rubrics. Human review of 700 full-context responses from the original evaluation yields 90.5% pooled agreement with the original automated judgments at the rubric-item level. We report full-context and query-only results for seven general-purpose models and Ant Afu. Across the eight systems, scores with full context are 11.83 to 31.76 case points and 10.87 to 38.97 geometric cluster points higher than those with the current question alone. GPT-6 Astra leads both full-context metrics at 75.03 and 60.42, followed by Claude Opus 5.5 and Ant Afu. Cross-condition differences describe score changes under the reported evaluation settings. Response comparisons reveal failures in checking historical information, expressing uncertainty when warranted, and ensuring recommendations respect required conditions. The resource supports model comparison and targeted follow-up evaluation.",
     "selectionReason": "напрям: Медицина; ознаки користі: comparison, benchmark, benchmarks",
@@ -1018,8 +1093,7 @@
       }
     ],
     "feedId": "arxiv-ai",
-    "sourceDomain": "arxiv.org",
-    "editorialReviewReason": "немає чіткого зв'язку зі штучним інтелектом для спеціалізованої AI-стрічки"
+    "sourceDomain": "arxiv.org"
   },
   {
     "id": "rss-2026-11-20-281731fd1734",
@@ -1084,7 +1158,7 @@
     "sourceType": "rss",
     "feedName": "arXiv — Штучний інтелект",
     "filterVersion": "2.5",
-    "editorialStatus": "needs_review",
+    "editorialStatus": "approved",
     "feedKind": "ai_topic",
     "sourceDescription": "arXiv:2605.14867v5 Announce Type: replace-cross Abstract: Spike activity has been the dominant neural signal for behavior decoding because its high spatiotemporal resolution supports accurate decoding. However, as intracortical brain-computer interfaces (iBCIs) move toward higher channel counts and wireless operation, the high sampling rates required to record spikes create substantial power and bandwidth demands. Local field potentials (LFPs) offer complementary advantages, including greater long-term stability, lower energy consumption, and lower bandwidth requirements. However, LFP-based decoders often achieve lower accuracy and rely on non-causal architectures that cannot be used directly for real-time deployment. We propose REALM, a retrospective knowledge distillation (RKD) framework for causal LFP behavior decoding. Inspired by offline-to-online distillation in speech recognition, REALM transfers non-causal representational knowledge from a pretrained, multi-session bidirectional LFP teacher to a causal student model. We first pretrain a bidirectional Mamba-2 teacher across multiple recording sessions using continuous masked autoencoding (CMAE), and then distill its representation into a compact causal student using a combined objective of representation alignment and autoencoding. REALM achieves the highest mean accuracy among the compared decoders in both label-free and fine-tuned pipelines, with statistically significant improvements over each baseline, including the state-of-the-art CrossModalDistill. It does so using LFPs alone throughout pretraining, distillation, and decoding, with less than half the parameters of CrossModalDistill's published student and one-tenth of its pretraining time. These results show that a causal LFP-only model can achieve decoding accuracy competitive with a non-causal multi-modal model, offering a practical and scalable approach for next-generation wireless and implantable iBCIs.",
     "selectionReason": "напрям: Освіта; ознаки користі: deployment, support, supports",
@@ -1103,8 +1177,7 @@
       }
     ],
     "feedId": "arxiv-ai",
-    "sourceDomain": "arxiv.org",
-    "editorialReviewReason": "немає чіткого зв'язку зі штучним інтелектом для спеціалізованої AI-стрічки"
+    "sourceDomain": "arxiv.org"
   },
   {
     "id": "rss-2026-11-20-ab4b2185aff2",
@@ -1260,10 +1333,9 @@
         "publishedDate": "2026-11-20"
       }
     ],
-    "editorialStatus": "needs_review",
+    "editorialStatus": "approved",
     "feedId": "arxiv-ai",
-    "sourceDomain": "arxiv.org",
-    "editorialReviewReason": "немає чіткого зв'язку зі штучним інтелектом для спеціалізованої AI-стрічки"
+    "sourceDomain": "arxiv.org"
   },
   {
     "id": "rss-2026-11-20-834c7f6f1781",
@@ -1289,10 +1361,9 @@
         "publishedDate": "2026-11-20"
       }
     ],
-    "editorialStatus": "needs_review",
+    "editorialStatus": "approved",
     "feedId": "arxiv-ai",
-    "sourceDomain": "arxiv.org",
-    "editorialReviewReason": "немає чіткого зв'язку зі штучним інтелектом для спеціалізованої AI-стрічки"
+    "sourceDomain": "arxiv.org"
   },
   {
     "id": "rss-2026-11-20-de635db4eaf1",
@@ -1388,7 +1459,7 @@
     "filterVersion": "2.5",
     "feedKind": "ai_topic",
     "sourceDescription": "arXiv:2611.24927v1 Announce Type: cross Abstract: AI systems are built across many organizations that contribute models, data, compute, capital, talent, and other assets. While the layers of the AI stack are relatively well understood, the relationships between actors and components across layers remains sparsely documented. In this work, we focus on the organizations that make up the AI supply chain: the complex network of actors that contribute to the development and deployment of AI. We motivate the examination of the organizational AI supply chain---highlighting concerns about concentration, power, chokepoints, cascading failures, fragmented accountability, and risk---then describe our pipeline for mapping the AI supply chain. Our pipeline yields our main contribution: a multilayered, large-scale dataset of actors and relationships in the AI ecosystem, annotated with dates, descriptions, types, tags, and more. This work takes a step toward systematically mapping and measuring the AI supply chain and its properties, cataloging how models, data, chips, infrastructure, capital, and even talent flow between organizations. This data enable critical examinations of industry relationships and yield insights into the political economy of AI development and concentration. We provide several illustrative analyses, including studying the most central actors, analyzing network concentration, and identifying communities and chokepoints. While our dataset is fairly comprehensive, it is also necessarily incomplete: public documents omit private deals, and coverage is shaped by search design. Together, the approach, data, and findings aim to serve as a resource for studying the AI ecosystem. The dataset is publicly available at https://huggingface.co/datasets/sarahcen/ai-supply-chain and can be explored interactively at https://aisupplychains.org/.",
-    "selectionReason": "напрям: Економіка та добробут; ознаки користі: deployment, dataset, measuring",
+    "selectionReason": "напрям: Економіка та добробут; ознаки користі: mapping, deployment, dataset",
     "evidenceLevel": "практичне застосування або конкретний приклад",
     "category": "Економіка та добробут",
     "title": "Mapping the AI Supply Chain: Dependencies, Vulnerabilities, and Market Concentration in the AI Ecosystem",
@@ -1403,10 +1474,9 @@
         "publishedDate": "2026-11-20"
       }
     ],
-    "editorialStatus": "needs_review",
+    "editorialStatus": "approved",
     "feedId": "arxiv-ai",
-    "sourceDomain": "arxiv.org",
-    "editorialReviewReason": "немає чіткого зв'язку зі штучним інтелектом для спеціалізованої AI-стрічки"
+    "sourceDomain": "arxiv.org"
   },
   {
     "id": "rss-2026-11-20-fcc9e32e6363",
@@ -1432,10 +1502,9 @@
       }
     ],
     "evidenceLevel": "дослідження або оцінювання потенційного застосування",
-    "editorialStatus": "needs_review",
+    "editorialStatus": "approved",
     "feedId": "arxiv-ai",
-    "sourceDomain": "arxiv.org",
-    "editorialReviewReason": "немає чіткого зв'язку зі штучним інтелектом для спеціалізованої AI-стрічки"
+    "sourceDomain": "arxiv.org"
   },
   {
     "id": "rss-2026-11-20-1376f178b58e",
@@ -1461,10 +1530,9 @@
       }
     ],
     "evidenceLevel": "практичне застосування або конкретний приклад",
-    "editorialStatus": "needs_review",
+    "editorialStatus": "approved",
     "feedId": "arxiv-ai",
-    "sourceDomain": "arxiv.org",
-    "editorialReviewReason": "немає чіткого зв'язку зі штучним інтелектом для спеціалізованої AI-стрічки"
+    "sourceDomain": "arxiv.org"
   },
   {
     "id": "rss-2026-11-20-1257c9cf225f",
@@ -1490,10 +1558,9 @@
       }
     ],
     "evidenceLevel": "перспективне дослідження; практичний ефект ще потрібно перевірити",
-    "editorialStatus": "needs_review",
+    "editorialStatus": "approved",
     "feedId": "arxiv-ai",
-    "sourceDomain": "arxiv.org",
-    "editorialReviewReason": "немає чіткого зв'язку зі штучним інтелектом для спеціалізованої AI-стрічки"
+    "sourceDomain": "arxiv.org"
   },
   {
     "id": "rss-2026-11-20-c04ff9c0a0fc",
@@ -1504,7 +1571,7 @@
     "filterVersion": "2.5",
     "feedKind": "ai_topic",
     "sourceDescription": "arXiv:2611.23708v1 Announce Type: cross Abstract: Biomedical knowledge representation should make the passage from observations to conclusions transparent, rigorous, understandable, explainable, and reproducible (TRUER). We introduce Rational Ensemble Logic (QEL) for specifying temporal phenotypes in real-world electrophysiology data (RWED), with a meaning independent of the implementation software. QEL combines three parameterized modal operators (exact displacement, bounded existence, and bounded universality) over rational time with Boolean connectives and first-order quantification. Its Labeled Interval Ensemble (LINE) semantics represents annotated records as finite interval ensembles. We relate the operators to morphological operations and develop endpoint-array algorithms and finite rational evidence sets for model checking. We prove closure and semantic correctness of the interval operations, obtain finite evidence sets by quantifier elimination, and establish polynomial data complexity for fixed formulas. On 54 manually constructed records, a prototype agreed with the assigned outcomes for base and strict post-ictal generalized EEG suppression (PGES) queries. A separate feasibility experiment over 1,976 patients identified 37 qualifying patients and 45 annotation patterns in 16 seconds. The released prototype uses endpoint candidates and numerical tolerances. QEL supports the TRUER principle through explicit phenotype definitions, precise semantics, and provably correct evaluation procedures, with rational witnesses for existential queries. These provide a logical foundation for formal specification and correctness of algorithms that are independent of specific clinical interpretation, data annotation quality, and software implementation.",
-    "selectionReason": "напрям: Медицина; ознаки користі: evaluation, real-world, support",
+    "selectionReason": "напрям: Медицина; ознаки користі: observation, evaluation, real-world",
     "category": "Медицина",
     "title": "Rational Ensemble Logic for Cohort Discovery with Real-World Electrophysiology Data",
     "summary": "arXiv:2611.23708v1 Announce Type: cross Abstract: Biomedical knowledge representation should make the passage from observations to conclusions transparent, rigorous, understandable, explainable, and reproducible (TRUER). We introduce Rational Ensemble Logic (QEL) for specifying temporal phenotypes in real-world…",
@@ -1519,10 +1586,9 @@
       }
     ],
     "evidenceLevel": "практичне застосування або конкретний приклад",
-    "editorialStatus": "needs_review",
+    "editorialStatus": "approved",
     "feedId": "arxiv-ai",
-    "sourceDomain": "arxiv.org",
-    "editorialReviewReason": "немає чіткого зв'язку зі штучним інтелектом для спеціалізованої AI-стрічки"
+    "sourceDomain": "arxiv.org"
   },
   {
     "id": "rss-2026-11-20-34e8c57f8e84",
@@ -1561,7 +1627,7 @@
     "filterVersion": "2.5",
     "feedKind": "ai_topic",
     "sourceDescription": "arXiv:2611.24002v1 Announce Type: cross Abstract: Radiology reports distinguish affirmed findings, explicit negations, and unmentioned concepts, but conventional global image--report contrastive learning often compresses these different evidence states into a single study-level target. We introduce \\model{}, which combines symmetric global image--report alignment with observation-masked finding supervision and a soft relation objective over affirmed report concepts. Text-derived finding prototypes are aligned with local visual tokens, while uncertain and unmentioned concepts are excluded from direct finding labels. We evaluate the framework on three CT benchmarks and five chest-radiograph benchmarks, together with component ablations, paired and clinical retrieval, localization, perturbation robustness, calibration, and per-finding analyses. \\model{} achieves macro-AUROC values of 73.6%, 66.5\\%, and 68.8% on CT-RATE, RAD-ChestCT, and INSPECT, and 80.2%, 91.4%, 78.5%, 86.5%, and 90.8% on ChestXray14, CheXpert, PadChest, RSNA, and SIIM-ACR, respectively. Relative to the matched global-only controls, the findings and relation objectives yield consistent gains across the evaluated datasets. These results demonstrate the practical value of treating observed and unobserved report concepts differently during medical image--text representation learning.",
-    "selectionReason": "напрям: Медицина; ознаки користі: benchmark, benchmarks, evaluate",
+    "selectionReason": "напрям: Медицина; ознаки користі: observation, benchmark, benchmarks",
     "category": "Медицина",
     "title": "ProtoBridge-CLIP: Observation-Masked Finding Prototypes for Medical Image--Report Representation Learning",
     "summary": "arXiv:2611.24002v1 Announce Type: cross Abstract: Radiology reports distinguish affirmed findings, explicit negations, and unmentioned concepts, but conventional global image--report contrastive learning often compresses these different evidence states into a single study-level target. We introduce \\model{}, which combines…",
@@ -1575,11 +1641,10 @@
         "publishedDate": "2026-11-20"
       }
     ],
-    "evidenceLevel": "дослідження або оцінювання потенційного застосування",
-    "editorialStatus": "needs_review",
+    "evidenceLevel": "практичне застосування або конкретний приклад",
+    "editorialStatus": "approved",
     "feedId": "arxiv-ai",
-    "sourceDomain": "arxiv.org",
-    "editorialReviewReason": "немає чіткого зв'язку зі штучним інтелектом для спеціалізованої AI-стрічки"
+    "sourceDomain": "arxiv.org"
   },
   {
     "id": "rss-2026-11-20-c7c86e953df0",
@@ -1605,10 +1670,9 @@
       }
     ],
     "evidenceLevel": "дослідження або оцінювання потенційного застосування",
-    "editorialStatus": "needs_review",
+    "editorialStatus": "approved",
     "feedId": "arxiv-ai",
-    "sourceDomain": "arxiv.org",
-    "editorialReviewReason": "немає чіткого зв'язку зі штучним інтелектом для спеціалізованої AI-стрічки"
+    "sourceDomain": "arxiv.org"
   },
   {
     "id": "rss-2026-11-20-f7a3b0193b2b",
@@ -1675,7 +1739,7 @@
     "filterVersion": "2.5",
     "feedKind": "ai_topic",
     "sourceDescription": "arXiv:2611.23700v1 Announce Type: new Abstract: Clinicians reviewing a diagnostic work-up will ask what was considered at each step and why the assessment changed. Agents powered by free text can reach physician-level diagnostic accuracy, but their written reasoning does not always reflect the factors that went into the decision. Here, we present Decision2Care, a decision agent that works up the acutely ill patient without producing any text. A decision model assigns a probability to each permitted EHR action, and fixed rules carry out the most probable one. We evaluated Decision2Care on the records of 546 emergency admissions across 12 diseases. Decision2Care reached a diagnostic accuracy of 86.5%, compared with 86.1% for the MIRA-v2 agent, and required a median of 2.2 s per work-up, compared with 92-100 s. Each work-up tracked which options Decision2Care was considering at each step. In 10 of the 12 diseases, the differential diagnosis changed most at the test on which the guideline bases the diagnosis. Where Decision2Care was most confident after a single work-up, all but four of its diagnoses were correct (98.5%). We traced each of these four errors back to a single imaging report. Three of them were corrected when that report was removed. The same kind of decision was used to select the treatments, and Decision2Care's drug orders were judged guideline-adherent more often than MIRA-v2's. In emergency patients, its prediction of death was comparable to that of three intensivists on the same cases. In five of the eight intensive care cohorts, it exceeded the best of the three 24-h severity scores within 2-6 h of records. Our results show that decision agents can carry out clinical work-ups while recording the options, probabilities, and execution rules behind each action for audit.",
-    "selectionReason": "напрям: Медицина; ознаки користі: diagnostic accuracy, evaluate, support",
+    "selectionReason": "напрям: Медицина; ознаки користі: diagnostic accuracy, treatment, evaluate",
     "category": "Медицина",
     "title": "Auditable Clinical Support with Decision Agents",
     "summary": "arXiv:2611.23700v1 Announce Type: new Abstract: Clinicians reviewing a diagnostic work-up will ask what was considered at each step and why the assessment changed. Agents powered by free text can reach physician-level diagnostic accuracy, but their written reasoning does not always reflect the factors that went into the…",
@@ -1690,10 +1754,9 @@
       }
     ],
     "evidenceLevel": "практичне застосування або конкретний приклад",
-    "editorialStatus": "needs_review",
+    "editorialStatus": "approved",
     "feedId": "arxiv-ai",
-    "sourceDomain": "arxiv.org",
-    "editorialReviewReason": "немає чіткого зв'язку зі штучним інтелектом для спеціалізованої AI-стрічки"
+    "sourceDomain": "arxiv.org"
   },
   {
     "id": "rss-2026-11-20-192083ef8ccf",
@@ -1720,7 +1783,7 @@
     ],
     "evidenceLevel": "практичне застосування або конкретний приклад",
     "editorialStatus": "needs_review",
-    "editorialReviewReason": "немає чіткого зв'язку зі штучним інтелектом для спеціалізованої AI-стрічки",
+    "editorialReviewReason": "не виявлено достатньо чіткого напряму користі для людей",
     "feedId": "arxiv-ai",
     "sourceDomain": "arxiv.org"
   },
@@ -1748,10 +1811,9 @@
       }
     ],
     "evidenceLevel": "дослідження або оцінювання потенційного застосування",
-    "editorialStatus": "needs_review",
+    "editorialStatus": "approved",
     "feedId": "arxiv-ai",
-    "sourceDomain": "arxiv.org",
-    "editorialReviewReason": "немає чіткого зв'язку зі штучним інтелектом для спеціалізованої AI-стрічки"
+    "sourceDomain": "arxiv.org"
   },
   {
     "id": "rss-2026-11-20-8235444c0a30",

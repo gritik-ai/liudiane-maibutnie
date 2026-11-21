@@ -1,18 +1,18 @@
 {
   "schemaVersion": 1,
   "filterVersion": "2.5",
-  "generatedAt": "2026-11-20T15:45:21.998116+00:00",
+  "generatedAt": "2026-11-21T07:37:32.706970+00:00",
   "totals": {
     "successfulFeeds": 11,
     "totalFeeds": 13,
-    "itemsFetched": 856,
-    "acceptedCandidates": 9,
-    "added": 7,
-    "rejected": 600,
-    "duplicates": 84,
-    "tooOld": 161,
+    "itemsFetched": 300,
+    "acceptedCandidates": 3,
+    "added": 3,
+    "rejected": 103,
+    "duplicates": 30,
+    "tooOld": 162,
     "shortDescriptions": 0,
-    "deferredByDiversityCap": 2
+    "deferredByDiversityCap": 0
   },
   "feedRuns": [
     {
@@ -46,13 +46,13 @@
       "url": "https://news.mit.edu/rss/topic/health-sciences-and-technology",
       "status": "ok",
       "itemsFetched": 27,
-      "acceptedCandidates": 4,
-      "added": 2,
+      "acceptedCandidates": 3,
+      "added": 3,
       "rejected": 13,
-      "duplicates": 5,
+      "duplicates": 6,
       "tooOld": 5,
       "shortDescriptions": 0,
-      "deferredByDiversityCap": 2,
+      "deferredByDiversityCap": 0,
       "rejectionReasons": {
         "не виявлено достатньо чіткого напряму користі для людей": 5,
         "недостатньо чіткий зв'язок із напрямом «Медицина»": 1,
@@ -69,10 +69,10 @@
       "url": "https://news.mit.edu/rss/topic/climate-change-and-sustainability",
       "status": "ok",
       "itemsFetched": 29,
-      "acceptedCandidates": 1,
-      "added": 1,
+      "acceptedCandidates": 0,
+      "added": 0,
       "rejected": 12,
-      "duplicates": 8,
+      "duplicates": 9,
       "tooOld": 8,
       "shortDescriptions": 0,
       "deferredByDiversityCap": 0,
@@ -114,14 +114,14 @@
       "itemsFetched": 40,
       "acceptedCandidates": 0,
       "added": 0,
-      "rejected": 7,
+      "rejected": 6,
       "duplicates": 10,
-      "tooOld": 23,
+      "tooOld": 24,
       "shortDescriptions": 0,
       "deferredByDiversityCap": 0,
       "rejectionReasons": {
         "визначено напрям «Освіта», але немає достатніх ознак застосування, оцінювання або суспільної користі": 3,
-        "не виявлено достатньо чіткого напряму користі для людей": 4
+        "не виявлено достатньо чіткого напряму користі для людей": 3
       },
       "error": ""
     },
@@ -132,32 +132,15 @@
       "domain": "arxiv.org",
       "url": "https://export.arxiv.org/rss/cs.AI",
       "status": "ok",
-      "itemsFetched": 362,
+      "itemsFetched": 0,
       "acceptedCandidates": 0,
       "added": 0,
-      "rejected": 324,
-      "duplicates": 38,
+      "rejected": 0,
+      "duplicates": 0,
       "tooOld": 0,
       "shortDescriptions": 0,
       "deferredByDiversityCap": 0,
-      "rejectionReasons": {
-        "немає чіткого зв'язку зі штучним інтелектом для спеціалізованої AI-стрічки": 161,
-        "не виявлено достатньо чіткого напряму користі для людей": 120,
-        "недостатньо чіткий зв'язок із напрямом «Медицина»": 16,
-        "недостатньо чіткий зв'язок із напрямом «Права людини»": 6,
-        "недостатньо чіткий зв'язок із напрямом «Освіта»": 4,
-        "відсів: військове застосування або озброєння": 2,
-        "недостатньо чіткий зв'язок із напрямом «Надійність ШІ»": 3,
-        "неоднозначна тематика: Медицина / Права людини; потрібна редакційна перевірка": 2,
-        "неоднозначна тематика: Медицина / Надійність ШІ; потрібна редакційна перевірка": 2,
-        "визначено напрям «Освіта», але немає достатніх ознак застосування, оцінювання або суспільної користі": 1,
-        "недостатньо чіткий зв'язок із напрямом «Наука і технології»": 2,
-        "неоднозначна тематика: Права людини / Надійність ШІ; потрібна редакційна перевірка": 1,
-        "визначено напрям «Надійність ШІ», але немає достатніх ознак застосування, оцінювання або суспільної користі": 1,
-        "неоднозначна тематика: Освіта / Надійність ШІ; потрібна редакційна перевірка": 1,
-        "недостатньо чіткий зв'язок із напрямом «Державне управління»": 1,
-        "визначено напрям «Медицина», але немає достатніх ознак застосування, оцінювання або суспільної користі": 1
-      },
+      "rejectionReasons": {},
       "error": ""
     },
     {
@@ -167,26 +150,15 @@
       "domain": "arxiv.org",
       "url": "https://export.arxiv.org/rss/cs.LG",
       "status": "ok",
-      "itemsFetched": 194,
-      "acceptedCandidates": 3,
-      "added": 3,
-      "rejected": 172,
-      "duplicates": 19,
+      "itemsFetched": 0,
+      "acceptedCandidates": 0,
+      "added": 0,
+      "rejected": 0,
+      "duplicates": 0,
       "tooOld": 0,
       "shortDescriptions": 0,
       "deferredByDiversityCap": 0,
-      "rejectionReasons": {
-        "немає чіткого зв'язку зі штучним інтелектом для спеціалізованої AI-стрічки": 104,
-        "не виявлено достатньо чіткого напряму користі для людей": 57,
-        "недостатньо чіткий зв'язок із напрямом «Надійність ШІ»": 2,
-        "неоднозначна тематика: Екологія / Права людини; потрібна редакційна перевірка": 1,
-        "недостатньо чіткий зв'язок із напрямом «Державне управління»": 2,
-        "недостатньо чіткий зв'язок із напрямом «Освіта»": 1,
-        "недостатньо чіткий зв'язок із напрямом «Медицина»": 2,
-        "визначено напрям «Освіта», але немає достатніх ознак застосування, оцінювання або суспільної користі": 1,
-        "відсів: військове застосування або озброєння": 1,
-        "недостатньо чіткий зв'язок із напрямом «Наука і технології»": 1
-      },
+      "rejectionReasons": {},
       "error": ""
     },
     {
@@ -215,10 +187,10 @@
       "url": "https://www.who.int/rss-feeds/news-english.xml",
       "status": "ok",
       "itemsFetched": 83,
-      "acceptedCandidates": 1,
-      "added": 1,
+      "acceptedCandidates": 0,
+      "added": 0,
       "rejected": 0,
-      "duplicates": 0,
+      "duplicates": 1,
       "tooOld": 82,
       "shortDescriptions": 0,
       "deferredByDiversityCap": 0,
@@ -242,8 +214,7 @@
       "deferredByDiversityCap": 0,
       "rejectionReasons": {
         "визначено напрям «Освіта», але немає достатніх ознак застосування, оцінювання або суспільної користі": 2,
-        "не виявлено достатньо чіткого напряму користі для людей": 7,
-        "визначено напрям «Наука і технології», але немає достатніх ознак застосування, оцінювання або суспільної користі": 1
+        "не виявлено достатньо чіткого напряму користі для людей": 8
       },
       "error": ""
     },
@@ -310,14 +281,14 @@
   "libraryByDomain": [
     {
       "domain": "arxiv.org",
-      "count": 25,
+      "count": 53,
       "publishers": [
         "arXiv"
       ]
     },
     {
       "domain": "mit.edu",
-      "count": 3,
+      "count": 6,
       "publishers": [
         "MIT News"
       ]
@@ -332,9 +303,9 @@
   ],
   "libraryDomainCount": 3,
   "library": {
-    "totalRecords": 70,
-    "publicRecords": 29,
-    "needsReview": 41,
+    "totalRecords": 73,
+    "publicRecords": 60,
+    "needsReview": 13,
     "manualRecords": 0
   },
   "methodology": "Кількість доменів обчислюється за першоджерелами схвалених матеріалів. Статистика RSS показує результати останнього запуску, а не доведений суспільний ефект."

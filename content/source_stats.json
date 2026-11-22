@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
   "filterVersion": "2.5",
-  "generatedAt": "2026-11-21T07:37:32.706970+00:00",
+  "generatedAt": "2026-11-22T07:37:27.541045+00:00",
   "totals": {
     "successfulFeeds": 11,
     "totalFeeds": 13,
     "itemsFetched": 300,
-    "acceptedCandidates": 3,
-    "added": 3,
-    "rejected": 103,
-    "duplicates": 30,
-    "tooOld": 162,
+    "acceptedCandidates": 0,
+    "added": 0,
+    "rejected": 101,
+    "duplicates": 33,
+    "tooOld": 164,
     "shortDescriptions": 0,
     "deferredByDiversityCap": 0
   },
@@ -46,18 +46,18 @@
       "url": "https://news.mit.edu/rss/topic/health-sciences-and-technology",
       "status": "ok",
       "itemsFetched": 27,
-      "acceptedCandidates": 3,
-      "added": 3,
-      "rejected": 13,
-      "duplicates": 6,
-      "tooOld": 5,
+      "acceptedCandidates": 0,
+      "added": 0,
+      "rejected": 12,
+      "duplicates": 9,
+      "tooOld": 6,
       "shortDescriptions": 0,
       "deferredByDiversityCap": 0,
       "rejectionReasons": {
         "не виявлено достатньо чіткого напряму користі для людей": 5,
         "недостатньо чіткий зв'язок із напрямом «Медицина»": 1,
         "визначено напрям «Медицина», але немає достатніх ознак застосування, оцінювання або суспільної користі": 4,
-        "визначено напрям «Освіта», але немає достатніх ознак застосування, оцінювання або суспільної користі": 3
+        "визначено напрям «Освіта», але немає достатніх ознак застосування, оцінювання або суспільної користі": 2
       },
       "error": ""
     },
@@ -114,14 +114,14 @@
       "itemsFetched": 40,
       "acceptedCandidates": 0,
       "added": 0,
-      "rejected": 6,
+      "rejected": 5,
       "duplicates": 10,
-      "tooOld": 24,
+      "tooOld": 25,
       "shortDescriptions": 0,
       "deferredByDiversityCap": 0,
       "rejectionReasons": {
         "визначено напрям «Освіта», але немає достатніх ознак застосування, оцінювання або суспільної користі": 3,
-        "не виявлено достатньо чіткого напряму користі для людей": 3
+        "не виявлено достатньо чіткого напряму користі для людей": 2
       },
       "error": ""
     },
@@ -213,8 +213,8 @@
       "shortDescriptions": 0,
       "deferredByDiversityCap": 0,
       "rejectionReasons": {
-        "визначено напрям «Освіта», але немає достатніх ознак застосування, оцінювання або суспільної користі": 2,
-        "не виявлено достатньо чіткого напряму користі для людей": 8
+        "визначено напрям «Освіта», але немає достатніх ознак застосування, оцінювання або суспільної користі": 3,
+        "не виявлено достатньо чіткого напряму користі для людей": 7
       },
       "error": ""
     },

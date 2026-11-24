@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
-"""Offline regression tests for the editorial RSS filter v2.5 and source diversity."""
+"""Offline regression tests for the editorial RSS filter v2.6 and expanded source diversity."""
 import unittest
+from urllib.parse import urlparse
 
 from update_feed import (
     assess_relevance,
@@ -13,13 +14,15 @@ from update_feed import (
     select_diverse_candidates,
     build_source_stats,
     FEEDS,
+    get_entries,
+    FILTER_VERSION,
 )
 
 AI_FEED = {"kind": "ai_topic"}
 DOMAIN_FEED = {"kind": "domain_topic", "requires_ai": True}
 
 
-class EditorialFilterV25Tests(unittest.TestCase):
+class EditorialFilterV26Tests(unittest.TestCase):
     def check(self, title: str, description: str = "", feed=AI_FEED):
         return assess_relevance({"title": title, "description": description}, feed)
 
@@ -272,7 +275,7 @@ class EditorialFilterV25Tests(unittest.TestCase):
         self.assertEqual(restored, 1)
         self.assertEqual(len(kept), 1)
         self.assertIn("sourceDescription", kept[0])
-        self.assertEqual(kept[0]["filterVersion"], "2.5")
+        self.assertEqual(kept[0]["filterVersion"], "2.6")
         self.assertEqual(kept[0]["editorialStatus"], "approved")
         self.assertEqual(review, 0)
         self.assertGreaterEqual(updated, 1)
@@ -439,14 +442,23 @@ class EditorialFilterV25Tests(unittest.TestCase):
 
     def test_feed_registry_covers_multiple_independent_publishers(self):
         domains = {str(feed.get("domain")) for feed in FEEDS}
-        self.assertEqual(len(FEEDS), 13)
-        self.assertTrue({"mit.edu", "arxiv.org", "unesco.org", "who.int", "nasa.gov", "noaa.gov"}.issubset(domains))
+        self.assertEqual(len(FEEDS), 27)
+        self.assertTrue({
+            "mit.edu", "arxiv.org", "unesco.org", "who.int", "nasa.gov", "noaa.gov",
+            "un.org", "ecdc.europa.eu", "cdc.gov", "nih.gov", "copernicus.eu", "europa.eu",
+        }.issubset(domains))
 
     def test_canonical_domains_group_subdomains(self):
         self.assertEqual(canonical_domain("https://export.arxiv.org/abs/1234.5678"), "arxiv.org")
         self.assertEqual(canonical_domain("https://science.nasa.gov/earth/"), "nasa.gov")
         self.assertEqual(canonical_domain("https://oceanservice.noaa.gov/rss/nosnews.xml"), "noaa.gov")
         self.assertEqual(canonical_domain("https://connect.unevoc.unesco.org/unevoc_news.xml"), "unesco.org")
+        self.assertEqual(canonical_domain("https://news.un.org/en/story"), "un.org")
+        self.assertEqual(canonical_domain("https://www.ecdc.europa.eu/en/news"), "ecdc.europa.eu")
+        self.assertEqual(canonical_domain("https://wwwnc.cdc.gov/eid/article"), "cdc.gov")
+        self.assertEqual(canonical_domain("https://www.niehs.nih.gov/news"), "nih.gov")
+        self.assertEqual(canonical_domain("https://dataspace.copernicus.eu/news"), "copernicus.eu")
+        self.assertEqual(canonical_domain("https://ec.europa.eu/eurostat"), "europa.eu")
 
     def test_diverse_selector_limits_each_publisher_domain(self):
         candidates = []
@@ -461,6 +473,54 @@ class EditorialFilterV25Tests(unittest.TestCase):
             counts[domain] = counts.get(domain, 0) + 1
         self.assertTrue(all(value <= 3 for value in counts.values()))
         self.assertEqual(deferred, 10)
+
+    def test_new_feed_registry_has_unique_ids_and_https_urls(self):
+        ids = [str(feed["id"]) for feed in FEEDS]
+        self.assertEqual(len(ids), len(set(ids)))
+        self.assertTrue(all(str(feed["url"]).startswith("https://") for feed in FEEDS))
+        for feed in FEEDS:
+            parsed_host = (urlparse(str(feed["url"])).hostname or "").lower()
+            expected_host = str(feed["host"]).lower()
+            self.assertTrue(
+                parsed_host == expected_host or parsed_host.endswith("." + expected_host),
+                msg=f"Feed host mismatch for {feed['id']}: {parsed_host} vs {expected_host}",
+            )
+
+    def test_filter_version_is_26(self):
+        self.assertEqual(FILTER_VERSION, "2.6")
+
+    def test_university_and_institutional_feeds_do_not_require_ai_keyword(self):
+        new_ids = {
+            "un-health", "un-climate", "un-human-rights", "un-education", "un-humanitarian",
+            "un-peace-security", "ecdc-news", "ecdc-publications", "cdc-eid-ahead",
+            "niehs-news", "copernicus-general", "eurostat-environment-energy",
+            "eurostat-science-tech", "eu-clima-news", "eu-env-news",
+        }
+        by_id = {str(feed["id"]): feed for feed in FEEDS}
+        self.assertTrue(new_ids.issubset(by_id))
+        self.assertTrue(all(by_id[feed_id]["requires_ai"] is False for feed_id in new_ids))
+
+    def test_broken_sources_are_replaced(self):
+        by_id = {str(feed["id"]): feed for feed in FEEDS}
+        self.assertNotIn("nasa-jpl", by_id)
+        self.assertIn("oceanfacts.xml", str(by_id["noaa-ocean"]["url"]))
+        self.assertNotIn("nosnews.xml", str(by_id["noaa-ocean"]["url"]))
+
+    def test_eurostat_atom_feed_entries_are_parsed(self):
+        atom = b'''<?xml version="1.0" encoding="utf-8"?>
+        <feed xmlns="http://www.w3.org/2005/Atom">
+          <entry>
+            <title>Energy and environment indicators</title>
+            <link href="https://ec.europa.eu/eurostat/news/example" rel="alternate" />
+            <updated>2026-11-24T08:00:00Z</updated>
+            <summary>Official statistical update about renewable energy and environmental indicators.</summary>
+          </entry>
+        </feed>'''
+        rows = get_entries(atom)
+        self.assertEqual(len(rows), 1)
+        self.assertEqual(rows[0]["title"], "Energy and environment indicators")
+        self.assertEqual(rows[0]["link"], "https://ec.europa.eu/eurostat/news/example")
+        self.assertIn("renewable energy", rows[0]["description"])
 
     def test_source_stats_count_approved_library_by_canonical_domain(self):
         library = [

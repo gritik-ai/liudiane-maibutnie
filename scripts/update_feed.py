@@ -29,23 +29,62 @@ MAX_NEW_ITEMS_PER_RUN = 10
 MAX_ITEMS_PER_DOMAIN_PER_RUN = 3
 MAX_TOTAL_ITEMS = 200
 MIN_DESCRIPTION_LENGTH = 40
-FILTER_VERSION = "2.5"
+FILTER_VERSION = "2.6"
 SOURCE_STATS_FILE = ROOT / "content" / "source_stats.json"
 
 FEEDS: list[dict[str, object]] = [
+    # MIT News — тематичні новини про науку та суспільно корисні технології.
     {"id": "mit-ai", "name": "MIT News — Штучний інтелект", "url": "https://news.mit.edu/rss/topic/artificial-intelligence2", "publisher": "MIT News", "host": "mit.edu", "domain": "mit.edu", "kind": "ai_topic", "requires_ai": True, "preprint": False},
     {"id": "mit-health", "name": "MIT News — Здоров'я і медицина", "url": "https://news.mit.edu/rss/topic/health-sciences-and-technology", "publisher": "MIT News", "host": "mit.edu", "domain": "mit.edu", "kind": "domain_topic", "requires_ai": False, "preprint": False},
     {"id": "mit-climate", "name": "MIT News — Клімат і сталість", "url": "https://news.mit.edu/rss/topic/climate-change-and-sustainability", "publisher": "MIT News", "host": "mit.edu", "domain": "mit.edu", "kind": "domain_topic", "requires_ai": False, "preprint": False},
     {"id": "mit-food-water", "name": "MIT News — Продовольство і водні ресурси", "url": "https://news.mit.edu/rss/topic/food-and-water-security", "publisher": "MIT News", "host": "mit.edu", "domain": "mit.edu", "kind": "domain_topic", "requires_ai": False, "preprint": False},
     {"id": "mit-education", "name": "MIT News — Освіта і навчання", "url": "https://news.mit.edu/rss/topic/education", "publisher": "MIT News", "host": "mit.edu", "domain": "mit.edu", "kind": "domain_topic", "requires_ai": False, "preprint": False},
+
+    # arXiv — наукові препринти; фільтр позначає їхній статус окремо.
     {"id": "arxiv-ai", "name": "arXiv — Штучний інтелект", "url": "https://export.arxiv.org/rss/cs.AI", "publisher": "arXiv", "host": "arxiv.org", "domain": "arxiv.org", "kind": "ai_topic", "requires_ai": True, "preprint": True},
     {"id": "arxiv-ml", "name": "arXiv — Машинне навчання", "url": "https://export.arxiv.org/rss/cs.LG", "publisher": "arXiv", "host": "arxiv.org", "domain": "arxiv.org", "kind": "ai_topic", "requires_ai": True, "preprint": True},
-    {"id": "unevoc-news", "name": "UNESCO-UNEVOC — Освіта і професійне навчання", "url": "https://connect.unevoc.unesco.org/unevoc_news.xml", "publisher": "UNESCO-UNEVOC", "host": "unesco.org", "domain": "unesco.org", "kind": "institutional", "requires_ai": False, "preprint": False},
+
+    # UNESCO та WHO — освіта, професійний розвиток і здоров'я.
+    {"id": "unevoc-news", "name": "UNESCO-UNEVOC — Освіта і професійне навчання", "url": "https://connect.unevoc.unesco.org/unevoc_news.xml", "publisher": "UNESCO-UNEVOC", "host": "unevoc.unesco.org", "domain": "unesco.org", "kind": "institutional", "requires_ai": False, "preprint": False},
     {"id": "who-news", "name": "WHO — Новини про здоров'я", "url": "https://www.who.int/rss-feeds/news-english.xml", "publisher": "World Health Organization (WHO)", "host": "who.int", "domain": "who.int", "kind": "institutional", "requires_ai": False, "preprint": False},
+
+    # NASA: залишаємо стабільну загальну стрічку. JPL окрему стрічку
+    # тимчасово прибрано після HTTP 403 у журналі GitHub Actions.
     {"id": "nasa-news", "name": "NASA — Наука і технології", "url": "https://www.nasa.gov/feed/", "publisher": "NASA", "host": "nasa.gov", "domain": "nasa.gov", "kind": "institutional", "requires_ai": False, "preprint": False},
-    {"id": "nasa-jpl", "name": "NASA JPL — Наукові новини", "url": "https://www.jpl.nasa.gov/feeds/news/", "publisher": "NASA Jet Propulsion Laboratory", "host": "nasa.gov", "domain": "nasa.gov", "kind": "institutional", "requires_ai": False, "preprint": False},
+
+    # NOAA: замінено некоректний NOS News XML на офіційну Ocean Facts RSS.
     {"id": "noaa-main", "name": "NOAA — Клімат, океани і довкілля", "url": "https://www.noaa.gov/rss.xml", "publisher": "NOAA", "host": "noaa.gov", "domain": "noaa.gov", "kind": "institutional", "requires_ai": False, "preprint": False},
-    {"id": "noaa-ocean", "name": "NOAA National Ocean Service — Новини океану", "url": "https://oceanservice.noaa.gov/rss/nosnews.xml", "publisher": "NOAA National Ocean Service", "host": "noaa.gov", "domain": "noaa.gov", "kind": "institutional", "requires_ai": False, "preprint": False},
+    {"id": "noaa-ocean", "name": "NOAA National Ocean Service — Ocean Facts", "url": "https://oceanservice.noaa.gov/rss/oceanfacts.xml", "publisher": "NOAA National Ocean Service", "host": "oceanservice.noaa.gov", "domain": "noaa.gov", "kind": "institutional", "requires_ai": False, "preprint": False},
+
+    # UN News — окремі тематичні стрічки з питань здоров'я, клімату,
+    # прав людини, освіти, гуманітарної допомоги та миру.
+    {"id": "un-health", "name": "UN News — Здоров'я", "url": "https://news.un.org/feed/subscribe/en/news/topic/health/feed/rss.xml", "publisher": "United Nations News", "host": "news.un.org", "domain": "un.org", "kind": "institutional", "requires_ai": False, "preprint": False},
+    {"id": "un-climate", "name": "UN News — Клімат і довкілля", "url": "https://news.un.org/feed/subscribe/en/news/topic/climate-change/feed/rss.xml", "publisher": "United Nations News", "host": "news.un.org", "domain": "un.org", "kind": "institutional", "requires_ai": False, "preprint": False},
+    {"id": "un-human-rights", "name": "UN News — Права людини", "url": "https://news.un.org/feed/subscribe/en/news/topic/human-rights/feed/rss.xml", "publisher": "United Nations News", "host": "news.un.org", "domain": "un.org", "kind": "institutional", "requires_ai": False, "preprint": False},
+    {"id": "un-education", "name": "UN News — Культура та освіта", "url": "https://news.un.org/feed/subscribe/en/news/topic/culture-and-education/feed/rss.xml", "publisher": "United Nations News", "host": "news.un.org", "domain": "un.org", "kind": "institutional", "requires_ai": False, "preprint": False},
+    {"id": "un-humanitarian", "name": "UN News — Гуманітарна допомога", "url": "https://news.un.org/feed/subscribe/en/news/topic/humanitarian-aid/feed/rss.xml", "publisher": "United Nations News", "host": "news.un.org", "domain": "un.org", "kind": "institutional", "requires_ai": False, "preprint": False},
+    {"id": "un-peace-security", "name": "UN News — Мир і безпека", "url": "https://news.un.org/feed/subscribe/en/news/topic/peace-and-security/feed/rss.xml", "publisher": "United Nations News", "host": "news.un.org", "domain": "un.org", "kind": "institutional", "requires_ai": False, "preprint": False},
+
+    # Європейський центр з профілактики та контролю захворювань.
+    {"id": "ecdc-news", "name": "ECDC — Новини та пресрелізи", "url": "https://www.ecdc.europa.eu/en/taxonomy/term/1307/feed", "publisher": "European Centre for Disease Prevention and Control (ECDC)", "host": "ecdc.europa.eu", "domain": "ecdc.europa.eu", "kind": "institutional", "requires_ai": False, "preprint": False},
+    {"id": "ecdc-publications", "name": "ECDC — Публікації та звіти", "url": "https://www.ecdc.europa.eu/en/taxonomy/term/1244/feed", "publisher": "European Centre for Disease Prevention and Control (ECDC)", "host": "ecdc.europa.eu", "domain": "ecdc.europa.eu", "kind": "institutional", "requires_ai": False, "preprint": False},
+
+    # CDC Emerging Infectious Diseases — наукові статті про інфекційні хвороби.
+    {"id": "cdc-eid-ahead", "name": "CDC — Emerging Infectious Diseases: Ahead of Print", "url": "https://wwwnc.cdc.gov/eid/rss/ahead-of-print.xml", "publisher": "CDC Emerging Infectious Diseases", "host": "wwwnc.cdc.gov", "domain": "cdc.gov", "kind": "institutional", "requires_ai": False, "preprint": False},
+
+    # NIH/NIEHS — новини з екологічного здоров'я та досліджень.
+    {"id": "niehs-news", "name": "NIEHS — Новини про екологічне здоров'я", "url": "https://www.niehs.nih.gov/news/newsroom/rssfeed/rss_news.xml", "publisher": "National Institute of Environmental Health Sciences (NIEHS)", "host": "niehs.nih.gov", "domain": "nih.gov", "kind": "institutional", "requires_ai": False, "preprint": False},
+
+    # Copernicus Data Space — супутникові дані Землі та приклади їх застосування.
+    {"id": "copernicus-general", "name": "Copernicus — Новини та оновлення", "url": "https://dataspace.copernicus.eu/rss.xml", "publisher": "Copernicus Data Space Ecosystem", "host": "dataspace.copernicus.eu", "domain": "copernicus.eu", "kind": "institutional", "requires_ai": False, "preprint": False},
+
+    # Європейська статистика: довкілля, енергетика та наука.
+    {"id": "eurostat-environment-energy", "name": "Eurostat — Довкілля та енергетика", "url": "https://ec.europa.eu/eurostat/en/search?_estatsearchportlet_WAR_estatsearchportlet_collection=CAT_EURNEW&_estatsearchportlet_WAR_estatsearchportlet_theme=PER_ENVENE&p_p_id=estatsearchportlet_WAR_estatsearchportlet&p_p_lifecycle=2&p_p_mode=view&p_p_resource_id=atom&p_p_state=maximized", "publisher": "Eurostat", "host": "ec.europa.eu", "domain": "europa.eu", "kind": "institutional", "requires_ai": False, "preprint": False},
+    {"id": "eurostat-science-tech", "name": "Eurostat — Наука і технології", "url": "https://ec.europa.eu/eurostat/en/search?_estatsearchportlet_WAR_estatsearchportlet_collection=CAT_PREREL&_estatsearchportlet_WAR_estatsearchportlet_theme=PER_RESDEV&p_p_id=estatsearchportlet_WAR_estatsearchportlet&p_p_lifecycle=2&p_p_mode=view&p_p_resource_id=atom&p_p_state=maximized", "publisher": "Eurostat", "host": "ec.europa.eu", "domain": "europa.eu", "kind": "institutional", "requires_ai": False, "preprint": False},
+
+    # Європейська Комісія — кліматична та природоохоронна політика.
+    {"id": "eu-clima-news", "name": "Європейська Комісія — Клімат", "url": "https://ec.europa.eu/newsroom/clima/feed?item_type_id=1536&lang=en&orderby=item_date", "publisher": "European Commission — Climate Action", "host": "ec.europa.eu", "domain": "europa.eu", "kind": "institutional", "requires_ai": False, "preprint": False},
+    {"id": "eu-env-news", "name": "Європейська Комісія — Довкілля", "url": "https://ec.europa.eu/newsroom/env/feed?item_type_id=1041&lang=en&orderby=item_date", "publisher": "European Commission — Environment", "host": "ec.europa.eu", "domain": "europa.eu", "kind": "institutional", "requires_ai": False, "preprint": False},
 ]
 
 # Strong, human-domain signals. Intentionally avoid ambiguous standalone words
@@ -327,7 +366,10 @@ def canonical_domain(raw_url: str) -> str:
         return ""
     if host.endswith(".arxiv.org") or host == "arxiv.org":
         return "arxiv.org"
-    for root in ("mit.edu", "unesco.org", "who.int", "nasa.gov", "noaa.gov"):
+    for root in (
+        "mit.edu", "unesco.org", "who.int", "nasa.gov", "noaa.gov",
+        "un.org", "ecdc.europa.eu", "cdc.gov", "nih.gov", "copernicus.eu", "europa.eu",
+    ):
         if host == root or host.endswith("." + root):
             return root
     if host.startswith("www."):
@@ -480,10 +522,10 @@ def is_relevant(item: dict[str, str], feed: dict[str, object]) -> bool:
 def fetch_feed(feed: dict[str, object]) -> list[dict[str, str]]:
     request = urllib.request.Request(
         str(feed["url"]),
-        headers={"User-Agent": "LiudianeMaibutnie-RSSBot/2.5 (+https://github.com/)",
+        headers={"User-Agent": "LiudianeMaibutnie-RSSBot/2.6 (+https://github.com/)",
                  "Accept": "application/rss+xml, application/atom+xml, application/xml, text/xml"},
     )
-    with urllib.request.urlopen(request, timeout=25) as response:
+    with urllib.request.urlopen(request, timeout=15) as response:
         content = response.read(2_500_000)
     return get_entries(content)
 

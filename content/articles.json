@@ -1,5 +1,65 @@
 [
   {
+    "id": "rss-2026-11-23-0fe151efe7bc",
+    "date": "2026-11-23",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "NASA — Наука і технології",
+    "feedId": "nasa-news",
+    "sourceDomain": "nasa.gov",
+    "filterVersion": "2.5",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Перспективний розвиток",
+    "feedKind": "institutional",
+    "sourceDescription": "This Nov. 19, 2026, image shows gastric microtumors grown within an Encapsulates biochip. The Encapsulate-1 investigation studies patient-derived tumor samples aboard the International Space Station to better understand how cancer cells move and interact in microgravity. The results could help researchers develop further testing to predict a patient’s risk of metastasis and support more personalized […]",
+    "selectionReason": "напрям: Медицина; ознаки користі: support, predict",
+    "evidenceLevel": "перспективне дослідження; практичний ефект ще потрібно перевірити",
+    "category": "Медицина",
+    "title": "Studying Cancer Cells in Microgravity",
+    "summary": "This Nov. 19, 2026, image shows gastric microtumors grown within an Encapsulates biochip. The Encapsulate-1 investigation studies patient-derived tumor samples aboard the International Space Station to better understand how cancer cells move and interact in microgravity. The results could help researchers develop further testing to predict a patient’s risk…",
+    "body": "Матеріал автоматично відібрано зі стрічки NASA. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nThis Nov. 19, 2026, image shows gastric microtumors grown within an Encapsulates biochip. The Encapsulate-1 investigation studies patient-derived tumor samples aboard the International Space Station to better understand how cancer cells move and interact in microgravity. The results could help researchers develop further testing to predict a patient’s risk of metastasis and support more personalized […]\n\nРедакційна класифікація: напрям: Медицина; ознаки користі: support, predict. Рівень свідчень: перспективне дослідження; практичний ефект ще потрібно перевірити. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-23",
+    "sources": [
+      {
+        "title": "Studying Cancer Cells in Microgravity",
+        "publisher": "NASA",
+        "url": "https://www.nasa.gov/image-article/studying-cancer-cells-in-microgravity",
+        "publishedDate": "2026-11-23"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-23-9999323999cb",
+    "date": "2026-11-23",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "MIT News — Здоров'я і медицина",
+    "feedId": "mit-health",
+    "sourceDomain": "mit.edu",
+    "filterVersion": "2.5",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Перспективний розвиток",
+    "feedKind": "domain_topic",
+    "sourceDescription": "The lab will support four state Medicaid agencies in building capacity to use evidence in their decision-making.",
+    "selectionReason": "напрям: Медицина; ознаки користі: support, improve",
+    "evidenceLevel": "перспективне дослідження; практичний ефект ще потрібно перевірити",
+    "category": "Медицина",
+    "title": "J-PAL North America launches Medicaid Learning Lab to help state agencies test, learn, and improve health care delivery",
+    "summary": "The lab will support four state Medicaid agencies in building capacity to use evidence in their decision-making.",
+    "body": "Матеріал автоматично відібрано зі стрічки MIT News. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nThe lab will support four state Medicaid agencies in building capacity to use evidence in their decision-making.\n\nРедакційна класифікація: напрям: Медицина; ознаки користі: support, improve. Рівень свідчень: перспективне дослідження; практичний ефект ще потрібно перевірити. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-23",
+    "sources": [
+      {
+        "title": "J-PAL North America launches Medicaid Learning Lab to help state agencies test, learn, and improve health care delivery",
+        "publisher": "MIT News",
+        "url": "https://news.mit.edu/2026/j-pal-north-america-launches-medicaid-learning-lab-1123",
+        "publishedDate": "2026-11-23"
+      }
+    ]
+  },
+  {
     "id": "rss-2026-11-23-ba63b8571281",
     "date": "2026-11-23",
     "autoPublished": true,

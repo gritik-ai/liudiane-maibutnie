@@ -1,5 +1,185 @@
 [
   {
+    "id": "rss-2026-11-18-4e397e28fbf2",
+    "date": "2026-11-18",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "Європейська Комісія — Довкілля",
+    "feedId": "eu-env-news",
+    "sourceDomain": "europa.eu",
+    "filterVersion": "2.6",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Перспективний розвиток",
+    "feedKind": "institutional",
+    "sourceDescription": "New Commission reports on River Basin and Flood Risk Management Plans now cover eight more Member States and reports on Marine Programmes of Measures cover five more. They confirm that pollution, especially chemical pollution and nutrient pollution from scattered sources, remains one of the biggest obstacles to good water status.",
+    "selectionReason": "напрям: Екологія; ознаки користі: measure",
+    "evidenceLevel": "дослідження або оцінювання потенційного застосування",
+    "category": "Екологія",
+    "title": "State of EU waters: pollution remains a major obstacle",
+    "summary": "New Commission reports on River Basin and Flood Risk Management Plans now cover eight more Member States and reports on Marine Programmes of Measures cover five more. They confirm that pollution, especially chemical pollution and nutrient pollution from scattered sources, remains one of the biggest obstacles to good water status.",
+    "body": "Матеріал автоматично відібрано зі стрічки European Commission — Environment. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nNew Commission reports on River Basin and Flood Risk Management Plans now cover eight more Member States and reports on Marine Programmes of Measures cover five more. They confirm that pollution, especially chemical pollution and nutrient pollution from scattered sources, remains one of the biggest obstacles to good water status.\n\nРедакційна класифікація: напрям: Екологія; ознаки користі: measure. Рівень свідчень: дослідження або оцінювання потенційного застосування. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-18",
+    "sources": [
+      {
+        "title": "State of EU waters: pollution remains a major obstacle",
+        "publisher": "European Commission — Environment",
+        "url": "https://environment.ec.europa.eu/news/eu-source-sea-reports-urge-pollution-resilience-action-2026-10-05_en",
+        "publishedDate": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-11-28046d614082",
+    "date": "2026-11-11",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "UN News — Клімат і довкілля",
+    "feedId": "un-climate",
+    "sourceDomain": "un.org",
+    "filterVersion": "2.6",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Перспективний розвиток",
+    "feedKind": "institutional",
+    "sourceDescription": "Early warning systems are saving lives across the globe, but for millions of people the warning never arrives, UN Secretary-General António Guterres said on Wednesday, urging the world to protect every person on Earth by the end of 2027.",
+    "selectionReason": "напрям: Мир і безпека; ознаки користі: early warning, warning system, protect",
+    "evidenceLevel": "перспективне дослідження; практичний ефект ще потрібно перевірити",
+    "category": "Мир і безпека",
+    "title": "From Japan to Rwanda, early warnings are saving lives – but millions remain unprotected",
+    "summary": "Early warning systems are saving lives across the globe, but for millions of people the warning never arrives, UN Secretary-General António Guterres said on Wednesday, urging the world to protect every person on Earth by the end of 2027.",
+    "body": "Матеріал автоматично відібрано зі стрічки United Nations News. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nEarly warning systems are saving lives across the globe, but for millions of people the warning never arrives, UN Secretary-General António Guterres said on Wednesday, urging the world to protect every person on Earth by the end of 2027.\n\nРедакційна класифікація: напрям: Мир і безпека; ознаки користі: early warning, warning system, protect. Рівень свідчень: перспективне дослідження; практичний ефект ще потрібно перевірити. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-11",
+    "sources": [
+      {
+        "title": "From Japan to Rwanda, early warnings are saving lives – but millions remain unprotected",
+        "publisher": "United Nations News",
+        "url": "https://news.un.org/feed/view/en/story/2026/11/1168787",
+        "publishedDate": "2026-11-11"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-11-59dc55a43db6",
+    "date": "2026-11-11",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "UN News — Гуманітарна допомога",
+    "feedId": "un-humanitarian",
+    "sourceDomain": "un.org",
+    "filterVersion": "2.6",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Перспективний розвиток",
+    "feedKind": "institutional",
+    "sourceDescription": "The UN’s Emergency Relief Coordinator, Tom Fletcher, expressed deep concern about the deteriorating humanitarian situation in Gaza, as UN member states and partners have been repeatedly delaying sending their support to the Strip.",
+    "selectionReason": "напрям: Державне управління; ознаки користі: support",
+    "evidenceLevel": "перспективне дослідження; практичний ефект ще потрібно перевірити",
+    "category": "Державне управління",
+    "title": "Gaza winter aid: ‘No more delay’, Fletcher tells governments stalling on support",
+    "summary": "The UN’s Emergency Relief Coordinator, Tom Fletcher, expressed deep concern about the deteriorating humanitarian situation in Gaza, as UN member states and partners have been repeatedly delaying sending their support to the Strip.",
+    "body": "Матеріал автоматично відібрано зі стрічки United Nations News. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nThe UN’s Emergency Relief Coordinator, Tom Fletcher, expressed deep concern about the deteriorating humanitarian situation in Gaza, as UN member states and partners have been repeatedly delaying sending their support to the Strip.\n\nРедакційна класифікація: напрям: Державне управління; ознаки користі: support. Рівень свідчень: перспективне дослідження; практичний ефект ще потрібно перевірити. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-11",
+    "sources": [
+      {
+        "title": "Gaza winter aid: ‘No more delay’, Fletcher tells governments stalling on support",
+        "publisher": "United Nations News",
+        "url": "https://news.un.org/feed/view/en/story/2026/11/1168788",
+        "publishedDate": "2026-11-11"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-09-901504da9b55",
+    "date": "2026-11-09",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "UN News — Клімат і довкілля",
+    "feedId": "un-climate",
+    "sourceDomain": "un.org",
+    "filterVersion": "2.6",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Перспективний розвиток",
+    "feedKind": "institutional",
+    "sourceDescription": "Nearly 200 countries have arrived on Türkiye's Mediterranean coast for a climate summit with a different ambition: fewer grand declarations and more concrete decisions. With a powerful El Niño threatening to worsen extreme weather, negotiators face difficult questions over climate finance, clean energy and how to protect communities already living with the consequences of climate change.",
+    "selectionReason": "напрям: Екологія; ознаки користі: protect",
+    "evidenceLevel": "перспективне дослідження; практичний ефект ще потрібно перевірити",
+    "category": "Екологія",
+    "title": "COP31 opens in Antalya: Can climate promises finally deliver results?",
+    "summary": "Nearly 200 countries have arrived on Türkiye's Mediterranean coast for a climate summit with a different ambition: fewer grand declarations and more concrete decisions. With a powerful El Niño threatening to worsen extreme weather, negotiators face difficult questions over climate finance, clean energy and how to protect communities already living with the…",
+    "body": "Матеріал автоматично відібрано зі стрічки United Nations News. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nNearly 200 countries have arrived on Türkiye's Mediterranean coast for a climate summit with a different ambition: fewer grand declarations and more concrete decisions. With a powerful El Niño threatening to worsen extreme weather, negotiators face difficult questions over climate finance, clean energy and how to protect communities already living with the consequences of climate change.\n\nРедакційна класифікація: напрям: Екологія; ознаки користі: protect. Рівень свідчень: перспективне дослідження; практичний ефект ще потрібно перевірити. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-09",
+    "sources": [
+      {
+        "title": "COP31 opens in Antalya: Can climate promises finally deliver results?",
+        "publisher": "United Nations News",
+        "url": "https://news.un.org/feed/view/en/story/2026/11/1168763",
+        "publishedDate": "2026-11-09"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-06-d6807c3bb3bd",
+    "date": "2026-11-06",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "Європейська Комісія — Довкілля",
+    "feedId": "eu-env-news",
+    "sourceDomain": "europa.eu",
+    "filterVersion": "2.6",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Перспективний розвиток",
+    "feedKind": "institutional",
+    "sourceDescription": "Missed our recent webinars? Catch up on three sessions exploring how businesses can better measure their impacts on marine biodiversity, translate biodiversity into practical business action, and understand the EU’s priorities ahead of COP17.",
+    "selectionReason": "напрям: Екологія; ознаки користі: measure",
+    "evidenceLevel": "дослідження або оцінювання потенційного застосування",
+    "category": "Екологія",
+    "title": "Catch up on the Platform's latest webinars: from the marine environment to biodiversity basics for companies to the EU's COP priorities.",
+    "summary": "Missed our recent webinars? Catch up on three sessions exploring how businesses can better measure their impacts on marine biodiversity, translate biodiversity into practical business action, and understand the EU’s priorities ahead of COP17.",
+    "body": "Матеріал автоматично відібрано зі стрічки European Commission — Environment. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nMissed our recent webinars? Catch up on three sessions exploring how businesses can better measure their impacts on marine biodiversity, translate biodiversity into practical business action, and understand the EU’s priorities ahead of COP17.\n\nРедакційна класифікація: напрям: Екологія; ознаки користі: measure. Рівень свідчень: дослідження або оцінювання потенційного застосування. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-06",
+    "sources": [
+      {
+        "title": "Catch up on the Platform's latest webinars: from the marine environment to biodiversity basics for companies to the EU's COP priorities.",
+        "publisher": "European Commission — Environment",
+        "url": "https://ec.europa.eu/newsroom/env/redirection/item/964652/en",
+        "publishedDate": "2026-11-06"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-06-2ac8077b648f",
+    "date": "2026-11-06",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "Європейська Комісія — Довкілля",
+    "feedId": "eu-env-news",
+    "sourceDomain": "europa.eu",
+    "filterVersion": "2.6",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Перспективний розвиток",
+    "feedKind": "institutional",
+    "sourceDescription": "How are businesses across Europe being supported to turn biodiversity commitments into action? Discover the new Overview Report of Business and Biodiversity Initiatives in Europe and explore the growing landscape of platforms, networks and coalitions supporting business action for nature.",
+    "selectionReason": "напрям: Екологія; ознаки користі: support",
+    "evidenceLevel": "перспективне дослідження; практичний ефект ще потрібно перевірити",
+    "category": "Екологія",
+    "title": "Launch of the Overview Report of Business and Biodiversity Initiatives in Europe",
+    "summary": "How are businesses across Europe being supported to turn biodiversity commitments into action? Discover the new Overview Report of Business and Biodiversity Initiatives in Europe and explore the growing landscape of platforms, networks and coalitions supporting business action for nature.",
+    "body": "Матеріал автоматично відібрано зі стрічки European Commission — Environment. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nHow are businesses across Europe being supported to turn biodiversity commitments into action? Discover the new Overview Report of Business and Biodiversity Initiatives in Europe and explore the growing landscape of platforms, networks and coalitions supporting business action for nature.\n\nРедакційна класифікація: напрям: Екологія; ознаки користі: support. Рівень свідчень: перспективне дослідження; практичний ефект ще потрібно перевірити. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-06",
+    "sources": [
+      {
+        "title": "Launch of the Overview Report of Business and Biodiversity Initiatives in Europe",
+        "publisher": "European Commission — Environment",
+        "url": "https://ec.europa.eu/newsroom/env/redirection/item/964642/en",
+        "publishedDate": "2026-11-06"
+      }
+    ]
+  },
+  {
     "id": "rss-2026-11-22-180a5dc2f3a5",
     "date": "2026-11-22",
     "autoPublished": true,

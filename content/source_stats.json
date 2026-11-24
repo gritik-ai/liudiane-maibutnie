@@ -1,18 +1,18 @@
 {
   "schemaVersion": 1,
   "filterVersion": "2.6",
-  "generatedAt": "2026-11-24T16:03:02.155754+00:00",
+  "generatedAt": "2026-11-24T16:34:48.473354+00:00",
   "totals": {
     "successfulFeeds": 26,
     "totalFeeds": 27,
     "itemsFetched": 1312,
-    "acceptedCandidates": 25,
-    "added": 10,
+    "acceptedCandidates": 15,
+    "added": 6,
     "rejected": 333,
-    "duplicates": 61,
+    "duplicates": 71,
     "tooOld": 581,
     "shortDescriptions": 49,
-    "deferredByDiversityCap": 15
+    "deferredByDiversityCap": 9
   },
   "feedRuns": [
     {
@@ -289,13 +289,13 @@
       "url": "https://news.un.org/feed/subscribe/en/news/topic/climate-change/feed/rss.xml",
       "status": "ok",
       "itemsFetched": 30,
-      "acceptedCandidates": 5,
-      "added": 3,
+      "acceptedCandidates": 2,
+      "added": 2,
       "rejected": 25,
-      "duplicates": 0,
+      "duplicates": 3,
       "tooOld": 0,
       "shortDescriptions": 0,
-      "deferredByDiversityCap": 2,
+      "deferredByDiversityCap": 0,
       "rejectionReasons": {
         "визначено напрям «Екологія», але немає достатніх ознак застосування, оцінювання або суспільної користі": 15,
         "неоднозначна тематика: Мир і безпека / Екологія; потрібна редакційна перевірка": 1,
@@ -366,12 +366,12 @@
       "status": "ok",
       "itemsFetched": 30,
       "acceptedCandidates": 2,
-      "added": 0,
+      "added": 1,
       "rejected": 23,
       "duplicates": 5,
       "tooOld": 0,
       "shortDescriptions": 0,
-      "deferredByDiversityCap": 2,
+      "deferredByDiversityCap": 1,
       "rejectionReasons": {
         "не виявлено достатньо чіткого напряму користі для людей": 13,
         "недостатньо чіткий зв'язок із напрямом «Державне управління»": 1,
@@ -416,10 +416,10 @@
       "url": "https://www.ecdc.europa.eu/en/taxonomy/term/1307/feed",
       "status": "ok",
       "itemsFetched": 10,
-      "acceptedCandidates": 3,
-      "added": 3,
+      "acceptedCandidates": 0,
+      "added": 0,
       "rejected": 7,
-      "duplicates": 0,
+      "duplicates": 3,
       "tooOld": 0,
       "shortDescriptions": 0,
       "deferredByDiversityCap": 0,
@@ -497,10 +497,10 @@
       "url": "https://dataspace.copernicus.eu/rss.xml",
       "status": "ok",
       "itemsFetched": 50,
-      "acceptedCandidates": 1,
-      "added": 1,
+      "acceptedCandidates": 0,
+      "added": 0,
       "rejected": 46,
-      "duplicates": 0,
+      "duplicates": 1,
       "tooOld": 0,
       "shortDescriptions": 3,
       "deferredByDiversityCap": 0,
@@ -559,10 +559,10 @@
       "url": "https://ec.europa.eu/newsroom/clima/feed?item_type_id=1536&lang=en&orderby=item_date",
       "status": "ok",
       "itemsFetched": 100,
-      "acceptedCandidates": 5,
-      "added": 2,
+      "acceptedCandidates": 3,
+      "added": 0,
       "rejected": 11,
-      "duplicates": 0,
+      "duplicates": 2,
       "tooOld": 0,
       "shortDescriptions": 36,
       "deferredByDiversityCap": 3,
@@ -583,13 +583,13 @@
       "url": "https://ec.europa.eu/newsroom/env/feed?item_type_id=1041&lang=en&orderby=item_date",
       "status": "ok",
       "itemsFetched": 100,
-      "acceptedCandidates": 9,
-      "added": 1,
+      "acceptedCandidates": 8,
+      "added": 3,
       "rejected": 43,
-      "duplicates": 7,
+      "duplicates": 8,
       "tooOld": 4,
       "shortDescriptions": 8,
-      "deferredByDiversityCap": 8,
+      "deferredByDiversityCap": 5,
       "rejectionReasons": {
         "короткий або відсутній опис": 8,
         "визначено напрям «Екологія», але немає достатніх ознак застосування, оцінювання або суспільної користі": 18,
@@ -619,15 +619,8 @@
       ]
     },
     {
-      "domain": "ecdc.europa.eu",
-      "count": 3,
-      "publishers": [
-        "European Centre for Disease Prevention and Control (ECDC)"
-      ]
-    },
-    {
       "domain": "europa.eu",
-      "count": 3,
+      "count": 6,
       "publishers": [
         "European Commission — Climate Action",
         "European Commission — Environment"
@@ -635,9 +628,16 @@
     },
     {
       "domain": "un.org",
-      "count": 3,
+      "count": 6,
       "publishers": [
         "United Nations News"
+      ]
+    },
+    {
+      "domain": "ecdc.europa.eu",
+      "count": 3,
+      "publishers": [
+        "European Centre for Disease Prevention and Control (ECDC)"
       ]
     },
     {
@@ -664,8 +664,8 @@
   ],
   "libraryDomainCount": 8,
   "library": {
-    "totalRecords": 88,
-    "publicRecords": 75,
+    "totalRecords": 94,
+    "publicRecords": 81,
     "needsReview": 13,
     "manualRecords": 0
   },

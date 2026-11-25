@@ -1,5 +1,95 @@
 [
   {
+    "id": "rss-2026-11-03-569ac5e68f43",
+    "date": "2026-11-03",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "Європейська Комісія — Клімат",
+    "feedId": "eu-clima-news",
+    "sourceDomain": "europa.eu",
+    "filterVersion": "2.6",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Перспективний розвиток",
+    "feedKind": "institutional",
+    "sourceDescription": "Against a backdrop of rising energy costs and growing climate risks, hundreds of mayors gathered in Brussels for the annual EU Covenant of Mayors Ceremony for a discussion with European leaders about how to make energy more affordable, strengthen resilience, and protect people's quality of life across Europe.",
+    "selectionReason": "напрям: Екологія; ознаки користі: protect",
+    "evidenceLevel": "перспективне дослідження; практичний ефект ще потрібно перевірити",
+    "category": "Екологія",
+    "title": "Mayors meet with EU leaders in Brussels to advance affordable energy and climate resilience",
+    "summary": "Against a backdrop of rising energy costs and growing climate risks, hundreds of mayors gathered in Brussels for the annual EU Covenant of Mayors Ceremony for a discussion with European leaders about how to make energy more affordable, strengthen resilience, and protect people's quality of life across Europe.",
+    "body": "Матеріал автоматично відібрано зі стрічки European Commission — Climate Action. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nAgainst a backdrop of rising energy costs and growing climate risks, hundreds of mayors gathered in Brussels for the annual EU Covenant of Mayors Ceremony for a discussion with European leaders about how to make energy more affordable, strengthen resilience, and protect people's quality of life across Europe.\n\nРедакційна класифікація: напрям: Екологія; ознаки користі: protect. Рівень свідчень: перспективне дослідження; практичний ефект ще потрібно перевірити. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-03",
+    "sources": [
+      {
+        "title": "Mayors meet with EU leaders in Brussels to advance affordable energy and climate resilience",
+        "publisher": "European Commission — Climate Action",
+        "url": "https://eu-mayors.ec.europa.eu/en/news/mayors-meet-eu-leaders-brussels-advance-affordable-energy-and-climate-resilience",
+        "publishedDate": "2026-11-03"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-03-5a28471070ac",
+    "date": "2026-11-03",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "Європейська Комісія — Клімат",
+    "feedId": "eu-clima-news",
+    "sourceDomain": "europa.eu",
+    "filterVersion": "2.6",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Перспективний розвиток",
+    "feedKind": "institutional",
+    "sourceDescription": "The new EU Framework for Climate Resilience strengthens Europe’s ability to anticipate and manage climate risks, protect people and places, and prevent avoidable damage. It introduces a European Climate Resilience Law backed by practical tools to drive a fundamental shift from reacting to disasters to getting ahead of climate impacts and avoiding damages.",
+    "selectionReason": "напрям: Екологія; ознаки користі: prevent, protect",
+    "evidenceLevel": "перспективне дослідження; практичний ефект ще потрібно перевірити",
+    "category": "Екологія",
+    "title": "Commission presents Climate Resilience Framework for a better prepared and protected Europe",
+    "summary": "The new EU Framework for Climate Resilience strengthens Europe’s ability to anticipate and manage climate risks, protect people and places, and prevent avoidable damage. It introduces a European Climate Resilience Law backed by practical tools to drive a fundamental shift from reacting to disasters to getting ahead of climate impacts and avoiding damages.",
+    "body": "Матеріал автоматично відібрано зі стрічки European Commission — Climate Action. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nThe new EU Framework for Climate Resilience strengthens Europe’s ability to anticipate and manage climate risks, protect people and places, and prevent avoidable damage. It introduces a European Climate Resilience Law backed by practical tools to drive a fundamental shift from reacting to disasters to getting ahead of climate impacts and avoiding damages.\n\nРедакційна класифікація: напрям: Екологія; ознаки користі: prevent, protect. Рівень свідчень: перспективне дослідження; практичний ефект ще потрібно перевірити. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-03",
+    "sources": [
+      {
+        "title": "Commission presents Climate Resilience Framework for a better prepared and protected Europe",
+        "publisher": "European Commission — Climate Action",
+        "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2244",
+        "publishedDate": "2026-11-03"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-10-28-d87b87feaae0",
+    "date": "2026-10-28",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "Європейська Комісія — Довкілля",
+    "feedId": "eu-env-news",
+    "sourceDomain": "europa.eu",
+    "filterVersion": "2.6",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Перспективний розвиток",
+    "feedKind": "institutional",
+    "sourceDescription": "Germany became the first country to conclude structured EU water dialogues, signing a joint statement to upgrade treatment plants, tackle pollution, and boost climate resilience. Click for more.",
+    "selectionReason": "напрям: Екологія; ознаки користі: treatment",
+    "evidenceLevel": "перспективне дослідження; практичний ефект ще потрібно перевірити",
+    "category": "Екологія",
+    "title": "Stronger enforcement: Part 1",
+    "summary": "Germany became the first country to conclude structured EU water dialogues, signing a joint statement to upgrade treatment plants, tackle pollution, and boost climate resilience. Click for more.",
+    "body": "Матеріал автоматично відібрано зі стрічки European Commission — Environment. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nGermany became the first country to conclude structured EU water dialogues, signing a joint statement to upgrade treatment plants, tackle pollution, and boost climate resilience. Click for more.\n\nРедакційна класифікація: напрям: Екологія; ознаки користі: treatment. Рівень свідчень: перспективне дослідження; практичний ефект ще потрібно перевірити. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-10-28",
+    "sources": [
+      {
+        "title": "Stronger enforcement: Part 1",
+        "publisher": "European Commission — Environment",
+        "url": "https://environment.ec.europa.eu/news/roswall-schneider-commit-stronger-eu-water-enforcement-2026-10-05_en",
+        "publishedDate": "2026-10-28"
+      }
+    ]
+  },
+  {
     "id": "rss-2026-11-18-4e397e28fbf2",
     "date": "2026-11-18",
     "autoPublished": true,

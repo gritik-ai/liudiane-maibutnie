@@ -11,6 +11,7 @@ import html
 import json
 import re
 import sys
+import time
 import unicodedata
 import urllib.error
 import urllib.request
@@ -29,8 +30,12 @@ MAX_NEW_ITEMS_PER_RUN = 10
 MAX_ITEMS_PER_DOMAIN_PER_RUN = 3
 MAX_TOTAL_ITEMS = 200
 MIN_DESCRIPTION_LENGTH = 40
-FILTER_VERSION = "2.6"
+FILTER_VERSION = "2.7"
 SOURCE_STATS_FILE = ROOT / "content" / "source_stats.json"
+MAX_FEED_BYTES = 2_500_000
+FEED_RETRIES = 3
+FEED_RETRY_BASE_SECONDS = 2
+RETRYABLE_HTTP_STATUS = {408, 425, 429, 500, 502, 503, 504}
 
 FEEDS: list[dict[str, object]] = [
     # MIT News — тематичні новини про науку та суспільно корисні технології.
@@ -519,15 +524,56 @@ def is_relevant(item: dict[str, str], feed: dict[str, object]) -> bool:
     return bool(assess_relevance(item, feed)["accepted"])
 
 
+def validate_feed_payload(payload: bytes, content_type: str = "") -> None:
+    """Reject empty, oversized or obvious HTML challenge/error pages before XML parsing."""
+    if not payload:
+        raise ValueError("RSS-сервер повернув порожню відповідь.")
+    if len(payload) > MAX_FEED_BYTES:
+        raise ValueError(f"RSS-відповідь перевищує ліміт {MAX_FEED_BYTES} байтів.")
+    prefix = payload.lstrip(b"\xef\xbb\xbf \t\r\n").lower()
+    if content_type.lower().split(";", 1)[0].strip() == "text/html" or prefix.startswith((b"<!doctype html", b"<html")):
+        raise ValueError("RSS-сервер повернув HTML замість RSS/Atom XML.")
+
+
 def fetch_feed(feed: dict[str, object]) -> list[dict[str, str]]:
-    request = urllib.request.Request(
-        str(feed["url"]),
-        headers={"User-Agent": "LiudianeMaibutnie-RSSBot/2.6 (+https://github.com/)",
-                 "Accept": "application/rss+xml, application/atom+xml, application/xml, text/xml"},
-    )
-    with urllib.request.urlopen(request, timeout=15) as response:
-        content = response.read(2_500_000)
-    return get_entries(content)
+    """Fetch an RSS/Atom feed with bounded retries and explicit response validation."""
+    last_error: Exception | None = None
+    for attempt in range(FEED_RETRIES):
+        request = urllib.request.Request(
+            str(feed["url"]),
+            headers={
+                "User-Agent": (
+                    "Mozilla/5.0 (compatible; LiudianeMaibutnieBot/2.7; "
+                    "+https://github.com/gritik-ai/liudiane-maibutnie)"
+                ),
+                "Accept": "application/rss+xml, application/atom+xml, application/xml, text/xml, application/*+xml;q=0.9, */*;q=0.5",
+                "Accept-Encoding": "identity",
+            },
+        )
+        try:
+            with urllib.request.urlopen(request, timeout=20) as response:
+                content_type = response.headers.get_content_type() if response.headers else ""
+                content = response.read(MAX_FEED_BYTES + 1)
+            validate_feed_payload(content, content_type)
+            return get_entries(content)
+        except urllib.error.HTTPError as exc:
+            last_error = exc
+            if exc.code not in RETRYABLE_HTTP_STATUS or attempt + 1 >= FEED_RETRIES:
+                raise
+        except (urllib.error.URLError, TimeoutError, OSError, ET.ParseError, ValueError) as exc:
+            last_error = exc
+            if attempt + 1 >= FEED_RETRIES:
+                raise
+        delay = FEED_RETRY_BASE_SECONDS * (2 ** attempt)
+        print(
+            f"[RETRY] {feed['name']}: спроба {attempt + 1}/{FEED_RETRIES} не вдалася; "
+            f"повтор через {delay} с. Причина: {last_error}",
+            file=sys.stderr,
+        )
+        time.sleep(delay)
+    if last_error:
+        raise last_error
+    raise RuntimeError(f"Не вдалося отримати RSS-стрічку {feed['name']}.")
 
 
 def article_from(item: dict[str, str], feed: dict[str, object], published: datetime, assessment: dict[str, object]) -> dict[str, object]:

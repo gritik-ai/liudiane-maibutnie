@@ -6,6 +6,12 @@ on:
     # 06:23 UTC; not at the start of the hour to reduce queue delays.
     - cron: "23 6 * * *"
   workflow_dispatch:
+    inputs:
+      test_only:
+        description: "Запустити лише автоматичні тести без оновлення RSS-бібліотеки"
+        required: false
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -33,7 +39,7 @@ jobs:
 
   update-feed:
     name: Оновлення RSS-бібліотеки
-    if: github.event_name != 'pull_request'
+    if: github.event_name != 'pull_request' && inputs.test_only != true
     needs: test
     runs-on: ubuntu-latest
     timeout-minutes: 10

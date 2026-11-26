@@ -16,6 +16,7 @@ from update_feed import (
     FEEDS,
     get_entries,
     FILTER_VERSION,
+    validate_feed_payload,
 )
 
 AI_FEED = {"kind": "ai_topic"}
@@ -403,7 +404,7 @@ class EditorialFilterV26Tests(unittest.TestCase):
         self.assertEqual(kept[0]["editorialStatus"], "needs_review")
         self.assertEqual(kept[0]["editorialNote"], "Waiting for full paper.")
 
-    def test_automatic_record_is_marked_as_automatic_decision(self):
+    def test_automatic_record_is_published_without_human_review(self):
         feed = {"name": "arXiv AI", "publisher": "arXiv", "kind": "ai_topic", "preprint": True}
         row = {
             "title": "AI tool helps doctors detect cancer earlier",
@@ -414,6 +415,8 @@ class EditorialFilterV26Tests(unittest.TestCase):
         self.assertTrue(assessment["accepted"])
         from update_feed import article_from
         article = article_from(row, feed, __import__("datetime").datetime(2026, 11, 20, tzinfo=__import__("datetime").timezone.utc), assessment)
+        self.assertTrue(article["autoPublished"])
+        self.assertEqual(article["editorialStatus"], "approved")
         self.assertEqual(article["editorialDecisionSource"], "automatic")
         self.assertIn(article["editorialLabel"], {"Позитивний вплив", "Перспективний розвиток", "Безпека та виклики"})
 
@@ -435,6 +438,18 @@ class EditorialFilterV26Tests(unittest.TestCase):
         self.assertEqual(kept[0]["editorialStatus"], "approved")
         self.assertEqual(kept[1]["editorialStatus"], "duplicate")
         self.assertEqual(duplicate_count, 1)
+
+    def test_feed_payload_rejects_html_challenge_page(self):
+        with self.assertRaisesRegex(ValueError, "HTML замість RSS/Atom XML"):
+            validate_feed_payload(b"<!doctype html><html><body>Blocked</body></html>", "text/html")
+
+    def test_feed_payload_rejects_oversized_response(self):
+        from update_feed import MAX_FEED_BYTES
+        with self.assertRaisesRegex(ValueError, "перевищує ліміт"):
+            validate_feed_payload(b"x" * (MAX_FEED_BYTES + 1), "application/xml")
+
+    def test_feed_payload_accepts_xml_with_utf8_bom(self):
+        validate_feed_payload(b"\\xef\\xbb\\xbf<?xml version='1.0'?><rss/>", "application/rss+xml")
 
     def test_title_key_ignores_punctuation_case(self):
         self.assertEqual(title_key("AI: A Better Future!"), title_key("ai a better future"))
@@ -486,8 +501,8 @@ class EditorialFilterV26Tests(unittest.TestCase):
                 msg=f"Feed host mismatch for {feed['id']}: {parsed_host} vs {expected_host}",
             )
 
-    def test_filter_version_is_26(self):
-        self.assertEqual(FILTER_VERSION, "2.6")
+    def test_filter_version_is_27(self):
+        self.assertEqual(FILTER_VERSION, "2.7")
 
     def test_university_and_institutional_feeds_do_not_require_ai_keyword(self):
         new_ids = {

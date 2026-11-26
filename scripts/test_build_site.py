@@ -117,6 +117,29 @@ class BuildSiteSeoTests(unittest.TestCase):
         self.assertIn("robots.txt", outputs)
         self.assertEqual(len([key for key in outputs if key.startswith("articles/")]), 2)
 
+
+    def test_topic_hubs_are_generated_only_for_categories_with_enough_articles(self):
+        rows = [
+            self.sample(id="one", category="Медицина"),
+            self.sample(id="two", category="Медицина", title="Інша медична стаття"),
+            self.sample(id="three", category="Медицина", title="Третя медична стаття"),
+            self.sample(id="four", category="Медицина", title="Четверта медична стаття"),
+            self.sample(id="thin", category="Права людини"),
+        ]
+        outputs = build_outputs(rows)
+        self.assertIn("topics/medytsyna/index.html", outputs)
+        self.assertNotIn("topics/prava-lyudyny/index.html", outputs)
+        self.assertIn("штучний інтелект у медицині", outputs["topics/medytsyna/index.html"])
+
+    def test_article_page_links_to_topic_hub_and_shows_semantic_terms(self):
+        page = render_article_page(self.sample(category="Медицина"))
+        self.assertIn('/topics/medytsyna/', page)
+        self.assertIn("цифрова медицина", page)
+
+    def test_sitemap_contains_topic_hubs(self):
+        rows = [self.sample(id=str(i), category="Медицина", title=f"Медична стаття {i}") for i in range(4)]
+        self.assertIn(SITE_URL + "/topics/medytsyna/", render_sitemap(rows))
+
     def test_source_url_validation(self):
         self.assertEqual(safe_source_url("https://example.org/path"), "https://example.org/path")
         self.assertEqual(safe_source_url("http://example.org/path"), "")

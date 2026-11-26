@@ -26,7 +26,7 @@
     .top a{color:#d8efb4;text-decoration:none;font-weight:750}main{padding:38px 0 70px}
     .crumbs{font-size:13px;color:var(--muted);margin-bottom:22px}.crumbs a{text-decoration:none}
     article,.related{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:clamp(22px,5vw,42px);box-shadow:0 12px 35px rgba(18,48,38,.06)}
-    .category{display:inline-block;background:var(--mint);color:var(--green);border-radius:99px;padding:5px 11px;font-size:12px;font-weight:800}
+    .category{display:inline-block;background:var(--mint);color:var(--green);border-radius:99px;padding:5px 11px;font-size:12px;font-weight:800}.category a{color:inherit;text-decoration:none}.topic-terms{display:flex;flex-wrap:wrap;gap:7px;margin:0 0 18px}.topic-term{background:#f1f5f1;border:1px solid var(--line);border-radius:99px;padding:4px 9px;font-size:11px;color:#40574a}
     h1{font-size:clamp(30px,5vw,46px);line-height:1.14;letter-spacing:-.04em;margin:17px 0 12px}
     .summary{font-size:19px;line-height:1.5;color:#46584e;margin:0 0 14px}
     .meta{font-size:12px;color:var(--muted);display:flex;gap:12px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid var(--line);margin-bottom:20px}
@@ -42,9 +42,10 @@
   <main class="wrap">
     <nav class="crumbs" aria-label="Навігація"><a href="/">Головна</a> / <a href="/#ideas">Бібліотека матеріалів</a> / FusionCLIP: Multimodal Contrastive Pretraining for Fusion Plasma Diagnostics</nav>
     <article>
-      <span class="category">Медицина</span>
+      <span class="category"><a href="https://liudiane-maibutnie-site.vercel.app/topics/medytsyna/">Медицина</a></span>
       <h1>FusionCLIP: Multimodal Contrastive Pretraining for Fusion Plasma Diagnostics</h1>
       <p class="summary">arXiv:2611.09493v2 Announce Type: replace-cross Abstract: Visible-light videos and multivariate diagnostic signals provide complementary observations of…</p>
+      <div class="topic-terms" aria-label="Тематичні ключові фрази"><span class="topic-term">штучний інтелект у медицині</span><span class="topic-term">цифрова медицина</span><span class="topic-term">медичні дослідження</span><span class="topic-term">медичні технології</span><span class="topic-term">діагностика та підтримка лікарів</span></div>
       <div class="meta"><span>Автоматична тематична добірка</span><span>Опубліковано: <time datetime="2026-11-20">2026-11-20</time></span></div>
       <div class="body"><p>Матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та опис отримані з RSS-каналу видавця.</p>
 <p>Короткий опис від першоджерела:<br>arXiv:2611.09493v2 Announce Type: replace-cross Abstract: Visible-light videos and multivariate diagnostic signals provide complementary observations of tokamak discharges. However, existing fusion pretraining methods primarily learn representations by reconstructing or predicting observations, leaving the correspondence between these modalities underexplored. Representation learning is further challenged by spatially localized plasma regions in video frames and substantial differences in diagnostic sampling rates. We propose FusionCLIP, a multimodal contrastive pretraining framework. A selective video encoder retains informative visual tokens, while a query-based time-series encoder integrates asynchronous diagnostic signals using their observation timestamps. Contrastive learning aligns representations of the two modalities. We construct the EAST Multimodal Diagnostics (EAST-MMD) dataset, comprising 1307 EAST discharges, and evaluate the model through independent fine-tuning on three tasks: disruption prediction, edge-localized mode (ELM) classification, and H98 regression. FusionCLIP achieves a Joint score of 89.07%, with absolute gains of 2.41% and 2.90% over the best competing baseline, and the in-domain contrastive pretraining baseline CLIP-Base, respectively. Ablations and attention visualizations further support the contributions of its key components.</p>

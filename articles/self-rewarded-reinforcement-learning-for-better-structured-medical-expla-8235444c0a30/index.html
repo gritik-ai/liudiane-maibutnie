@@ -26,7 +26,7 @@
     .top a{color:#d8efb4;text-decoration:none;font-weight:750}main{padding:38px 0 70px}
     .crumbs{font-size:13px;color:var(--muted);margin-bottom:22px}.crumbs a{text-decoration:none}
     article,.related{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:clamp(22px,5vw,42px);box-shadow:0 12px 35px rgba(18,48,38,.06)}
-    .category{display:inline-block;background:var(--mint);color:var(--green);border-radius:99px;padding:5px 11px;font-size:12px;font-weight:800}
+    .category{display:inline-block;background:var(--mint);color:var(--green);border-radius:99px;padding:5px 11px;font-size:12px;font-weight:800}.category a{color:inherit;text-decoration:none}.topic-terms{display:flex;flex-wrap:wrap;gap:7px;margin:0 0 18px}.topic-term{background:#f1f5f1;border:1px solid var(--line);border-radius:99px;padding:4px 9px;font-size:11px;color:#40574a}
     h1{font-size:clamp(30px,5vw,46px);line-height:1.14;letter-spacing:-.04em;margin:17px 0 12px}
     .summary{font-size:19px;line-height:1.5;color:#46584e;margin:0 0 14px}
     .meta{font-size:12px;color:var(--muted);display:flex;gap:12px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid var(--line);margin-bottom:20px}
@@ -42,9 +42,10 @@
   <main class="wrap">
     <nav class="crumbs" aria-label="Навігація"><a href="/">Головна</a> / <a href="/#ideas">Бібліотека матеріалів</a> / Self-Rewarded Reinforcement Learning for Better-Structured Medical Explanations in Small Language Models</nav>
     <article>
-      <span class="category">Медицина</span>
+      <span class="category"><a href="https://liudiane-maibutnie-site.vercel.app/topics/medytsyna/">Медицина</a></span>
       <h1>Self-Rewarded Reinforcement Learning for Better-Structured Medical Explanations in Small Language Models</h1>
       <p class="summary">arXiv:2611.24650v2 Announce Type: new Abstract: Small language models (SLMs) can run on commodity hardware and support privacy-preserving, on-premises…</p>
+      <div class="topic-terms" aria-label="Тематичні ключові фрази"><span class="topic-term">штучний інтелект у медицині</span><span class="topic-term">цифрова медицина</span><span class="topic-term">медичні дослідження</span><span class="topic-term">медичні технології</span><span class="topic-term">діагностика та підтримка лікарів</span></div>
       <div class="meta"><span>Автоматична тематична добірка</span><span>Опубліковано: <time datetime="2026-11-20">2026-11-20</time></span></div>
       <div class="body"><p>Цей матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та короткий опис отримані з RSS-каналу видавця.</p>
 <p>Короткий опис від першоджерела:<br>arXiv:2611.24650v2 Announce Type: new Abstract: Small language models (SLMs) can run on commodity hardware and support privacy-preserving, on-premises clinical deployment, but their medical explanations are often short and poorly structured compared with large language models. Recent supervised approaches such as Meerkat transfer chain-of-thought reasoning into 7B-8B backbones, yet their training objective does not directly target the style or organization of the generated rationales. Building on the instruction-tuned Mistral-7B backbone, we investigate whether a lightweight reinforcement learning (RL) step can improve explanation structure without human preference labels. We apply Proximal Policy Optimization (PPO) with LoRA adaptation to 2000 Meerkat-derived medical prompts, guided by a simple self-supervised reward that favors longer, lexically diverse, and well-punctuated responses while penalizing very short ones. Training for about 170 PPO steps on a single NVIDIA A100 GPU yields a stable increase in the average reward. Quantitative and qualitative comparisons show that the RL-tuned model produces longer, more organized, multi-point explanations while preserving the underlying medical content. We discuss the promise and the limitations of self-rewarded RL for shaping the style of medical explanations.</p>

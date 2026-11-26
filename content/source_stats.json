@@ -1,18 +1,18 @@
 {
   "schemaVersion": 1,
   "filterVersion": "2.7",
-  "generatedAt": "2026-11-26T11:24:41.253424+00:00",
+  "generatedAt": "2026-11-26T11:41:17.179622+00:00",
   "totals": {
-    "successfulFeeds": 26,
+    "successfulFeeds": 25,
     "totalFeeds": 27,
-    "itemsFetched": 2056,
-    "acceptedCandidates": 35,
+    "itemsFetched": 2026,
+    "acceptedCandidates": 32,
     "added": 3,
-    "rejected": 1029,
+    "rejected": 1022,
     "duplicates": 96,
-    "tooOld": 591,
+    "tooOld": 571,
     "shortDescriptions": 49,
-    "deferredByDiversityCap": 32
+    "deferredByDiversityCap": 29
   },
   "feedRuns": [
     {
@@ -133,13 +133,13 @@
       "url": "https://export.arxiv.org/rss/cs.AI",
       "status": "ok",
       "itemsFetched": 447,
-      "acceptedCandidates": 25,
+      "acceptedCandidates": 22,
       "added": 3,
       "rejected": 414,
-      "duplicates": 8,
+      "duplicates": 11,
       "tooOld": 0,
       "shortDescriptions": 0,
-      "deferredByDiversityCap": 22,
+      "deferredByDiversityCap": 19,
       "rejectionReasons": {
         "немає чіткого зв'язку зі штучним інтелектом для спеціалізованої AI-стрічки": 217,
         "не виявлено достатньо чіткого напряму користі для людей": 155,
@@ -371,21 +371,17 @@
       "publisher": "United Nations News",
       "domain": "un.org",
       "url": "https://news.un.org/feed/subscribe/en/news/topic/culture-and-education/feed/rss.xml",
-      "status": "ok",
-      "itemsFetched": 30,
+      "status": "error",
+      "itemsFetched": 0,
       "acceptedCandidates": 0,
       "added": 0,
-      "rejected": 8,
-      "duplicates": 2,
-      "tooOld": 20,
+      "rejected": 0,
+      "duplicates": 0,
+      "tooOld": 0,
       "shortDescriptions": 0,
       "deferredByDiversityCap": 0,
-      "rejectionReasons": {
-        "відсів: військове застосування або озброєння": 1,
-        "не виявлено достатньо чіткого напряму користі для людей": 6,
-        "визначено напрям «Освіта», але немає достатніх ознак застосування, оцінювання або суспільної користі": 1
-      },
-      "error": ""
+      "rejectionReasons": {},
+      "error": "not well-formed (invalid token): line 1, column 0"
     },
     {
       "id": "un-humanitarian",
@@ -423,15 +419,15 @@
       "itemsFetched": 30,
       "acceptedCandidates": 0,
       "added": 0,
-      "rejected": 16,
-      "duplicates": 14,
+      "rejected": 17,
+      "duplicates": 13,
       "tooOld": 0,
       "shortDescriptions": 0,
       "deferredByDiversityCap": 0,
       "rejectionReasons": {
         "визначено напрям «Освіта», але немає достатніх ознак застосування, оцінювання або суспільної користі": 2,
         "відсів: військове застосування або озброєння": 2,
-        "не виявлено достатньо чіткого напряму користі для людей": 9,
+        "не виявлено достатньо чіткого напряму користі для людей": 10,
         "визначено напрям «Медицина», але немає достатніх ознак застосування, оцінювання або суспільної користі": 1,
         "недостатньо чіткий зв'язок із напрямом «Мир і безпека»": 1,
         "недостатньо чіткий зв'язок із напрямом «Права людини»": 1
@@ -636,7 +632,7 @@
   "libraryByDomain": [
     {
       "domain": "arxiv.org",
-      "count": 63,
+      "count": 66,
       "publishers": [
         "arXiv"
       ]
@@ -694,8 +690,8 @@
   ],
   "libraryDomainCount": 8,
   "library": {
-    "totalRecords": 119,
-    "publicRecords": 104,
+    "totalRecords": 122,
+    "publicRecords": 107,
     "needsReview": 15,
     "manualRecords": 7
   },

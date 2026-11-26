@@ -26,7 +26,7 @@
     .top a{color:#d8efb4;text-decoration:none;font-weight:750}main{padding:38px 0 70px}
     .crumbs{font-size:13px;color:var(--muted);margin-bottom:22px}.crumbs a{text-decoration:none}
     article,.related{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:clamp(22px,5vw,42px);box-shadow:0 12px 35px rgba(18,48,38,.06)}
-    .category{display:inline-block;background:var(--mint);color:var(--green);border-radius:99px;padding:5px 11px;font-size:12px;font-weight:800}
+    .category{display:inline-block;background:var(--mint);color:var(--green);border-radius:99px;padding:5px 11px;font-size:12px;font-weight:800}.category a{color:inherit;text-decoration:none}.topic-terms{display:flex;flex-wrap:wrap;gap:7px;margin:0 0 18px}.topic-term{background:#f1f5f1;border:1px solid var(--line);border-radius:99px;padding:4px 9px;font-size:11px;color:#40574a}
     h1{font-size:clamp(30px,5vw,46px);line-height:1.14;letter-spacing:-.04em;margin:17px 0 12px}
     .summary{font-size:19px;line-height:1.5;color:#46584e;margin:0 0 14px}
     .meta{font-size:12px;color:var(--muted);display:flex;gap:12px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid var(--line);margin-bottom:20px}
@@ -42,9 +42,10 @@
   <main class="wrap">
     <nav class="crumbs" aria-label="Навігація"><a href="/">Головна</a> / <a href="/#ideas">Бібліотека матеріалів</a> / From real to synthetic: PSG-GAN learns sleep apnea signal dynamics for AI training</nav>
     <article>
-      <span class="category">Медицина</span>
+      <span class="category"><a href="https://liudiane-maibutnie-site.vercel.app/topics/medytsyna/">Медицина</a></span>
       <h1>From real to synthetic: PSG-GAN learns sleep apnea signal dynamics for AI training</h1>
       <p class="summary">arXiv:2611.24436v1 Announce Type: new Abstract: Synthetic polysomnography (PSG) data has great potential in healthcare applications, for example in…</p>
+      <div class="topic-terms" aria-label="Тематичні ключові фрази"><span class="topic-term">штучний інтелект у медицині</span><span class="topic-term">цифрова медицина</span><span class="topic-term">медичні дослідження</span><span class="topic-term">медичні технології</span><span class="topic-term">діагностика та підтримка лікарів</span></div>
       <div class="meta"><span>Автоматична тематична добірка</span><span>Опубліковано: <time datetime="2026-11-20">2026-11-20</time></span></div>
       <div class="body"><p>Цей матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та короткий опис отримані з RSS-каналу видавця.</p>
 <p>Короткий опис від першоджерела:<br>arXiv:2611.24436v1 Announce Type: new Abstract: Synthetic polysomnography (PSG) data has great potential in healthcare applications, for example in substituting real data that is sensitive and challenging to collect. Previous research on synthetic PSG data has been largely focused on short segments of individual signals, overlooking the inter-signal dynamics related to sleep disorders. In this study, we developed a generative adversarial network (PSG-GAN) for co-synthesizing longer segments of multiple PSG signals with diverse and complex characteristics typical of obstructive sleep apnea (OSA). The synthetic signals appeared realistic, and the electroencephalography and electrooculography band powers were similarly distributed across sleep stages. Moreover, the PSG-GAN learned to mirror signal interactions such as changes in photoplethysmography-based heart rate during and after breathing obstructions. An automatic scoring model trained solely with automatically scored synthetic signals reached good performance on sleep staging (\k{appa}=0.71 and 0.63) and respiratory event segmentation (\k{appa}=0.57 and 0.60), on two test sets consisting of healthy volunteers and OSA patients, respectively. This demonstrates the potential of synthetic data in supporting algorithm development for sleep diagnostics. The source code is available at https://github.com/rikuhuttunen/psg-gan.</p>

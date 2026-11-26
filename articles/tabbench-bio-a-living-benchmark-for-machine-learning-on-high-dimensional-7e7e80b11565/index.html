@@ -26,7 +26,7 @@
     .top a{color:#d8efb4;text-decoration:none;font-weight:750}main{padding:38px 0 70px}
     .crumbs{font-size:13px;color:var(--muted);margin-bottom:22px}.crumbs a{text-decoration:none}
     article,.related{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:clamp(22px,5vw,42px);box-shadow:0 12px 35px rgba(18,48,38,.06)}
-    .category{display:inline-block;background:var(--mint);color:var(--green);border-radius:99px;padding:5px 11px;font-size:12px;font-weight:800}
+    .category{display:inline-block;background:var(--mint);color:var(--green);border-radius:99px;padding:5px 11px;font-size:12px;font-weight:800}.category a{color:inherit;text-decoration:none}.topic-terms{display:flex;flex-wrap:wrap;gap:7px;margin:0 0 18px}.topic-term{background:#f1f5f1;border:1px solid var(--line);border-radius:99px;padding:4px 9px;font-size:11px;color:#40574a}
     h1{font-size:clamp(30px,5vw,46px);line-height:1.14;letter-spacing:-.04em;margin:17px 0 12px}
     .summary{font-size:19px;line-height:1.5;color:#46584e;margin:0 0 14px}
     .meta{font-size:12px;color:var(--muted);display:flex;gap:12px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid var(--line);margin-bottom:20px}
@@ -42,9 +42,10 @@
   <main class="wrap">
     <nav class="crumbs" aria-label="Навігація"><a href="/">Головна</a> / <a href="/#ideas">Бібліотека матеріалів</a> / TabBench-Bio: A Living Benchmark for Machine Learning on High-Dimensional Biomedical Tables</nav>
     <article>
-      <span class="category">Медицина</span>
+      <span class="category"><a href="https://liudiane-maibutnie-site.vercel.app/topics/medytsyna/">Медицина</a></span>
       <h1>TabBench-Bio: A Living Benchmark for Machine Learning on High-Dimensional Biomedical Tables</h1>
       <p class="summary">arXiv:2609.07441v3 Announce Type: replace-cross Abstract: Biomedical tables often combine thousands of measured variables with only tens or hundreds of…</p>
+      <div class="topic-terms" aria-label="Тематичні ключові фрази"><span class="topic-term">штучний інтелект у медицині</span><span class="topic-term">цифрова медицина</span><span class="topic-term">медичні дослідження</span><span class="topic-term">медичні технології</span><span class="topic-term">діагностика та підтримка лікарів</span></div>
       <div class="meta"><span>Автоматична тематична добірка</span><span>Опубліковано: <time datetime="2026-11-20">2026-11-20</time></span></div>
       <div class="body"><p>Матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та опис отримані з RSS-каналу видавця.</p>
 <p>Короткий опис від першоджерела:<br>arXiv:2609.07441v3 Announce Type: replace-cross Abstract: Biomedical tables often combine thousands of measured variables with only tens or hundreds of labelled samples, a regime that is poorly represented in general-purpose tabular benchmarks. We introduce TabBench-Bio, a living and interactive benchmark of 43 biomedical datasets spanning multiple domains. Under a shared cross-validation protocol, we compare classical estimators, neural networks, and tabular foundation models across 28 feature-by-sample operating points. At the reference cell of 10,000 features and 100 training samples, RealTabPFN 2.5 has the highest point estimate, closely followed by TabPFN 3 and Logistic Regression. A paired bootstrap over the target pool separates RealTabPFN 2.5 from TabPFN 3 by 87 Elo (95\% interval [43, 129]). Tabular foundation models generally occupy the leading ranks, while the strongest configuration depends on the operating point and biomedical modality. The AutoML framework AutoGluon, using its one-hour &quot;extreme&quot; preset, is configured as a separate resource-intensive reference and reported here at the reference and full cell. Fold-level predictions, run status, and deterministic aggregations make every reported result reproducible and reusable. The benchmark is open to contributions of new biomedical datasets. The interactive leaderboard is available at https://tabbench-bio.eu.</p>

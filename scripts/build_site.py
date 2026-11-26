@@ -158,106 +158,86 @@ def render_related(article: dict[str, Any], related: list[dict[str, Any]]) -> st
 
 
 
-TOPIC_MIN_ARTICLES = 4
+TOPIC_PAGE_MIN_ARTICLES = 1
+ARCHIVE_PAGE_SIZE = 12
 TOPIC_GUIDES: dict[str, dict[str, Any]] = {
-    "Медицина": {
-        "title": "Медицина та цифрові технології",
-        "description": "Дослідження, медичні технології та цифрові інструменти, які можуть підтримувати діагностику, роботу медичних фахівців і якість допомоги пацієнтам. Матеріали супроводжуються посиланнями на першоджерела.",
-        "terms": ["штучний інтелект у медицині", "цифрова медицина", "медичні дослідження", "медичні технології", "діагностика та підтримка лікарів"],
-    },
-    "Освіта": {
-        "title": "Освіта та освітні технології",
-        "description": "Матеріали про сучасні підходи до навчання, освітні дослідження та цифрові інструменти. У фокусі — доступність знань, підтримка учнів і викладачів та відповідальне використання технологій.",
-        "terms": ["штучний інтелект в освіті", "освітні технології", "цифрове навчання", "персоналізоване навчання", "технології для вчителів та учнів"],
-    },
-    "Екологія": {
-        "title": "Екологія, клімат і сталий розвиток",
-        "description": "Дослідження та технологічні рішення у сфері клімату, охорони довкілля, природних ресурсів і сталого розвитку. Добірка допомагає стежити за новими підходами та першоджерелами.",
-        "terms": ["екологічні технології", "кліматичні дослідження", "охорона довкілля", "сталий розвиток", "моніторинг природних ресурсів"],
-    },
-    "Надійність ШІ": {
-        "title": "Надійність, безпека та прозорість штучного інтелекту",
-        "description": "Дослідження безпеки систем штучного інтелекту: оцінювання моделей, пояснюваність, нагляд людини, стійкість до помилок і відповідальне застосування алгоритмів.",
-        "terms": ["безпека штучного інтелекту", "надійність моделей ШІ", "оцінювання моделей", "пояснюваність алгоритмів", "відповідальний штучний інтелект"],
-    },
-    "Державне управління": {
-        "title": "Штучний інтелект і державне управління",
-        "description": "Матеріали про цифрове врядування, державну політику, регулювання технологій та використання даних для якісніших публічних послуг. Остаточні рішення й відповідальність залишаються за людьми та інституціями.",
-        "terms": ["цифрове врядування", "штучний інтелект у державному управлінні", "державна політика", "публічні послуги", "регулювання штучного інтелекту"],
-    },
+    "shi":{"title":"Штучний інтелект і технології","description":"Дослідження штучного інтелекту, надійності алгоритмів, цифрових інструментів і технологічних рішень, які мають посилювати людські можливості.","categories":["Надійність ШІ","Наука і технології"],"icon":"✧","terms":["відповідальний штучний інтелект","надійність і безпека ШІ","пояснюваність алгоритмів","цифрові технології"]},
+    "medytsyna":{"title":"Медицина та здоров’я","description":"Медичні дослідження, цифрова медицина та інструменти, які підтримують фахівців, покращують діагностику й доступність якісної допомоги.","categories":["Медицина"],"icon":"✚","terms":["медичні дослідження","цифрова медицина","діагностика","якість і доступність допомоги"]},
+    "osvita":{"title":"Освіта та розвиток","description":"Сучасні підходи до навчання, освітні дослідження й технології, що розширюють доступ до знань та підтримують учнів і викладачів.","categories":["Освіта"],"icon":"▤","terms":["освітні технології","доступність знань","персоналізоване навчання","розвиток компетентностей"]},
+    "ekolohiya":{"title":"Екологія та клімат","description":"Кліматичні дослідження, охорона довкілля, природні ресурси та практичні рішення для сталого розвитку.","categories":["Екологія"],"icon":"☼","terms":["кліматична стійкість","охорона довкілля","енергоефективність","сталий розвиток"]},
+    "mista-arkhitektura":{"title":"Міста, архітектура та інфраструктура","description":"Містобудування, архітектура, міська мобільність і відбудова. У центрі — безпечне, доступне та комфортне середовище для людей.","categories":["Міський розвиток","Міська мобільність"],"icon":"⌂","terms":["містобудування","архітектура та відбудова","міська мобільність","безбар’єрність","якість міського середовища"]},
+    "suspilstvo-upravlinnya":{"title":"Суспільство та управління","description":"Державне управління, права людини, мир і безпека, економіка та суспільний добробут — теми, від яких залежить якість спільного майбутнього.","categories":["Державне управління","Мир і безпека","Економіка та добробут","Права людини"],"icon":"◎","terms":["державне управління","права людини","мир і безпека","економічний добробут","публічні послуги"]},
 }
+def topic_slug(topic_id: str) -> str:
+    return topic_id
 
-def topic_slug(category: str) -> str:
-    value = plain_text(category).lower().translate(TRANSLITERATION)
-    value = unicodedata.normalize("NFKD", value).encode("ascii", "ignore").decode("ascii")
-    return re.sub(r"[^a-z0-9]+", "-", value).strip("-") or "topic"
+def topic_for_category(category: str) -> str:
+    for topic_id, guide in TOPIC_GUIDES.items():
+        if category in guide["categories"]:
+            return topic_id
+    return ""
 
-def topic_url(category: str) -> str:
-    return f"{SITE_URL}/topics/{topic_slug(category)}/"
+def topic_url(topic_id: str) -> str:
+    return f"{SITE_URL}/topics/{topic_slug(topic_id)}/"
 
-def topic_terms(category: str) -> list[str]:
-    return [plain_text(x) for x in TOPIC_GUIDES.get(category, {}).get("terms", []) if plain_text(x)]
+def topic_terms(topic_id: str) -> list[str]:
+    return [plain_text(x) for x in TOPIC_GUIDES.get(topic_id, {}).get("terms", []) if plain_text(x)]
 
-def render_topic_page(category: str, articles: list[dict[str, Any]]) -> str:
-    guide = TOPIC_GUIDES[category]
-    title, description = str(guide["title"]), str(guide["description"])
-    canonical = topic_url(category)
-    terms = "".join(f"<li>{html.escape(term)}</li>" for term in topic_terms(category))
-    cards = []
+def topic_articles(topic_id: str, articles: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    categories = set(TOPIC_GUIDES[topic_id]["categories"])
+    return [a for a in articles if plain_text(a.get("category")) in categories]
+
+def render_topic_page(topic_id: str, articles: list[dict[str, Any]]) -> str:
+    guide=TOPIC_GUIDES[topic_id]; title=str(guide["title"]); description=str(guide["description"]); canonical=topic_url(topic_id)
+    terms="".join(f"<li>{html.escape(term)}</li>" for term in topic_terms(topic_id)); cards=[]
     for article in articles:
-        article_title = plain_text(article.get("title"))
-        summary = shorten(article.get("summary") or article.get("sourceDescription") or article.get("body"), 190)
-        cards.append(
-            '<li class="item"><h2><a href="' + html.escape(article_url(article), quote=True) + '">'
-            + html.escape(article_title) + '</a></h2><p>' + html.escape(summary) + '</p></li>'
-        )
-    schema = {
-        "@context": "https://schema.org", "@type": "CollectionPage",
-        "name": title, "description": description, "url": canonical,
-        "inLanguage": "uk-UA",
-        "isPartOf": {"@type": "WebSite", "name": SITE_NAME, "url": SITE_URL + "/"},
-        "mainEntity": {"@type": "ItemList", "itemListElement": [
-            {"@type": "ListItem", "position": i + 1, "url": article_url(a), "name": plain_text(a.get("title"))}
-            for i, a in enumerate(articles)
-        ]},
-    }
+        title_text=plain_text(article.get("title")); summary=shorten(article.get("summary") or article.get("sourceDescription") or article.get("body"),190)
+        date=safe_date(article.get("date") or article.get("sourceDate")); category=plain_text(article.get("category"))
+        cards.append('<li class="item"><div class="meta">'+html.escape(category)+((" · "+date) if date else "")+'</div><h2><a href="'+html.escape(article_url(article),quote=True)+'">'+html.escape(title_text)+'</a></h2><p>'+html.escape(summary)+'</p></li>')
+    schema={"@context":"https://schema.org","@type":"CollectionPage","name":title,"description":description,"url":canonical,"inLanguage":"uk-UA","isPartOf":{"@type":"WebSite","name":SITE_NAME,"url":SITE_URL+"/"},"mainEntity":{"@type":"ItemList","itemListElement":[{"@type":"ListItem","position":i+1,"url":article_url(a),"name":plain_text(a.get("title"))} for i,a in enumerate(articles)]}}
     return f"""<!doctype html>
 {GENERATOR_MARKER}
-<html lang="uk"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="index,follow">
-<title>{html.escape(title)} — {SITE_NAME}</title>
-<meta name="description" content="{html.escape(description, quote=True)}">
-<link rel="canonical" href="{html.escape(canonical, quote=True)}">
-<meta property="og:type" content="website"><meta property="og:site_name" content="{SITE_NAME}">
-<meta property="og:locale" content="uk_UA"><meta property="og:title" content="{html.escape(title, quote=True)}">
-<meta property="og:description" content="{html.escape(description, quote=True)}"><meta property="og:url" content="{html.escape(canonical, quote=True)}">
-<meta name="twitter:card" content="summary">
-<script type="application/ld+json">{json_for_script(schema)}</script>
-<style>
-*{{box-sizing:border-box}}body{{margin:0;background:#f3f6f2;color:#172923;font:17px/1.7 system-ui,-apple-system,"Segoe UI",sans-serif}}
-.top{{background:#0d2925;padding:18px 0}}.wrap{{width:min(900px,calc(100% - 32px));margin:auto}}.top a{{color:#d8efb4;text-decoration:none;font-weight:750}}
-main{{padding:36px 0 64px}}.intro,.item,.terms{{background:#fff;border:1px solid #e2e9e3;border-radius:18px;padding:24px;margin-bottom:16px}}
-h1{{font-size:clamp(30px,5vw,44px);line-height:1.15;margin:0 0 14px}}h2{{font-size:20px;line-height:1.35;margin:0 0 8px}}
-p{{margin:0;color:#46584e}}a{{color:#23664f}}.terms ul{{display:flex;flex-wrap:wrap;gap:8px 24px;padding-left:20px}}
-.item p{{font-size:15px}}footer{{padding:20px 0;color:#64736a;font-size:13px}}
-</style></head><body>
-<header class="top"><div class="wrap"><a href="/">{SITE_NAME}</a></div></header>
-<main class="wrap"><p><a href="/">Головна</a> / Теми</p>
-<section class="intro"><h1>{html.escape(title)}</h1><p>{html.escape(description)}</p></section>
-<section class="terms"><h2>Основні теми добірки</h2><ul>{terms}</ul></section>
-<section aria-label="Матеріали за темою"><h2>Матеріали за темою</h2><ol>{"".join(cards)}</ol></section>
-</main><footer><div class="wrap"><a href="/">{SITE_NAME}</a> · Публікації з посиланнями на першоджерела.</div></footer>
-</body></html>
-"""
+<html lang="uk"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="index,follow"><title>{html.escape(title)} — {SITE_NAME}</title><meta name="description" content="{html.escape(description,quote=True)}"><link rel="canonical" href="{html.escape(canonical,quote=True)}"><meta property="og:type" content="website"><meta property="og:site_name" content="{SITE_NAME}"><meta property="og:locale" content="uk_UA"><meta property="og:title" content="{html.escape(title,quote=True)}"><meta property="og:description" content="{html.escape(description,quote=True)}"><meta property="og:url" content="{html.escape(canonical,quote=True)}"><meta name="twitter:card" content="summary"><script type="application/ld+json">{json_for_script(schema)}</script>
+<style>*{{box-sizing:border-box}}body{{margin:0;background:#f3f6f2;color:#172923;font:16px/1.7 system-ui,sans-serif}}.top{{background:#0d2925;padding:18px 0}}.wrap{{width:min(980px,calc(100% - 32px));margin:auto}}.top a{{color:#d8efb4;text-decoration:none;font-weight:750}}main{{padding:34px 0 64px}}.intro,.item,.terms{{background:#fff;border:1px solid #e2e9e3;border-radius:18px;padding:24px;margin-bottom:16px}}h1{{font-size:clamp(30px,5vw,44px);line-height:1.15;margin:0 0 12px}}h2{{font-size:19px;line-height:1.35;margin:5px 0 8px}}p{{margin:0;color:#46584e}}a{{color:#23664f}}.terms ul{{display:flex;flex-wrap:wrap;gap:8px 24px;padding-left:20px}}.item p{{font-size:14px}}.meta{{font-size:12px;color:#718077}}.grid{{padding:0;list-style:none}}.crumbs{{font-size:13px;margin-bottom:18px}}footer{{padding:20px 0;color:#64736a;font-size:13px}}</style></head>
+<body><header class="top"><div class="wrap"><a href="/">{SITE_NAME}</a> · <a href="/topics/">Усі напрямки</a> · <a href="/articles/">Архів статей</a></div></header><main class="wrap"><p class="crumbs"><a href="/">Головна</a> / <a href="/topics/">Напрямки</a> / {html.escape(title)}</p><section class="intro"><h1>{html.escape(title)}</h1><p>{html.escape(description)}</p></section><section class="terms"><h2>Про що цей напрямок</h2><ul>{terms}</ul></section><section aria-label="Матеріали за напрямком"><h2>Матеріали за темою</h2><ol class="grid">{"".join(cards)}</ol></section></main><footer><div class="wrap"><a href="/">{SITE_NAME}</a> · <a href="/articles/">Переглянути всі матеріали</a></div></footer></body></html>"""
+
+def render_topics_index(articles: list[dict[str, Any]]) -> str:
+    cards=[]
+    for topic_id,guide in TOPIC_GUIDES.items():
+        grouped=topic_articles(topic_id,articles)
+        if not grouped: continue
+        cards.append('<article class="topic"><div class="icon">'+html.escape(guide["icon"])+'</div><div><h2><a href="'+html.escape(topic_url(topic_id),quote=True)+'">'+html.escape(guide["title"])+'</a></h2><p>'+html.escape(guide["description"])+'</p><small>'+str(len(grouped))+' матеріалів</small></div></article>')
+    canonical=SITE_URL+"/topics/"; schema={"@context":"https://schema.org","@type":"CollectionPage","name":"Тематичні напрямки — "+SITE_NAME,"url":canonical,"inLanguage":"uk-UA"}
+    return f"""<!doctype html>
+{GENERATOR_MARKER}
+<html lang="uk"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="index,follow"><title>Тематичні напрямки — {SITE_NAME}</title><meta name="description" content="Шість тематичних напрямків: штучний інтелект, медицина, освіта, екологія, міста й архітектура, суспільство та управління."><link rel="canonical" href="{canonical}"><meta property="og:title" content="Тематичні напрямки — {SITE_NAME}"><meta property="og:url" content="{canonical}"><script type="application/ld+json">{json_for_script(schema)}</script>
+<style>*{{box-sizing:border-box}}body{{margin:0;background:#f3f6f2;color:#172923;font:16px/1.65 system-ui,sans-serif}}.top{{background:#0d2925;padding:18px 0}}.wrap{{width:min(1000px,calc(100% - 32px));margin:auto}}.top a{{color:#d8efb4;text-decoration:none;font-weight:700}}main{{padding:38px 0 70px}}h1{{font-size:clamp(30px,5vw,46px);margin:0 0 12px}}.lead{{color:#607168;max-width:720px;margin-bottom:28px}}.grid{{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}}.topic{{display:flex;gap:18px;background:white;border:1px solid #e2e9e3;border-radius:18px;padding:23px}}.icon{{flex:0 0 48px;height:48px;border-radius:15px;background:#e8f2ea;display:grid;place-items:center;font-size:23px}}h2{{font-size:19px;margin:0 0 7px}}p{{margin:0 0 9px;color:#52645a;font-size:14px}}small{{color:#34705a;font-weight:700}}footer{{padding:24px 0;color:#64736a}}@media(max-width:650px){{.grid{{grid-template-columns:1fr}}}}</style></head><body><header class="top"><div class="wrap"><a href="/">{SITE_NAME}</a> · <a href="/articles/">Архів статей</a></div></header><main class="wrap"><h1>Тематичні напрямки</h1><p class="lead">Ми об’єднуємо матеріали за великими темами, щоб було легко знаходити потрібне й простежувати зв’язки між дослідженнями та суспільними рішеннями.</p><div class="grid">{"".join(cards)}</div></main><footer><div class="wrap"><a href="/">На головну</a> · <a href="/articles/">Усі статті</a></div></footer></body></html>"""
+
+def render_archive_page(articles: list[dict[str, Any]], page: int, page_count: int) -> str:
+    subset=articles[(page-1)*ARCHIVE_PAGE_SIZE:page*ARCHIVE_PAGE_SIZE]; canonical=SITE_URL+("/articles/" if page==1 else f"/articles/page/{page}/")
+    categories=sorted({plain_text(a.get("category")) for a in articles if plain_text(a.get("category"))}); cards=[]
+    for article in subset:
+        title=plain_text(article.get("title")); summary=shorten(article.get("summary") or article.get("sourceDescription") or article.get("body"),180); category=plain_text(article.get("category")) or "Матеріал"; date=safe_date(article.get("date") or article.get("sourceDate"))
+        cards.append('<article class="item" data-category="'+html.escape(category,quote=True)+'"><div class="meta">'+html.escape(category)+((" · "+date) if date else "")+'</div><h2><a href="'+html.escape(article_url(article),quote=True)+'">'+html.escape(title)+'</a></h2><p>'+html.escape(summary)+'</p></article>')
+    nav=[]
+    if page>1: nav.append('<a rel="prev" href="'+("/articles/" if page==2 else f"/articles/page/{page-1}/")+'">← Новіші</a>')
+    nav.append(f'<span>Сторінка {page} з {page_count}</span>')
+    if page<page_count: nav.append(f'<a rel="next" href="/articles/page/{page+1}/">Старіші →</a>')
+    return f"""<!doctype html>
+{GENERATOR_MARKER}
+<html lang="uk"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="index,follow"><title>Архів статей — сторінка {page} — {SITE_NAME}</title><meta name="description" content="Усі публікації про ШІ, медицину, освіту, екологію, міста, архітектуру та суспільний розвиток."><link rel="canonical" href="{canonical}"><meta property="og:type" content="website"><meta property="og:title" content="Архів статей — {SITE_NAME}"><meta property="og:url" content="{canonical}">
+<style>*{{box-sizing:border-box}}body{{margin:0;background:#f3f6f2;color:#172923;font:16px/1.65 system-ui,sans-serif}}.top{{background:#0d2925;padding:18px 0}}.wrap{{width:min(1000px,calc(100% - 32px));margin:auto}}.top a{{color:#d8efb4;text-decoration:none;font-weight:700}}main{{padding:34px 0 65px}}h1{{font-size:clamp(30px,5vw,44px);margin:0 0 8px}}.lead{{color:#63736a;margin:0 0 22px}}.toolbar{{display:flex;gap:10px;margin-bottom:18px;flex-wrap:wrap}}input,select{{font:inherit;padding:11px 13px;border:1px solid #d7e1d8;border-radius:11px;background:#fff}}input{{flex:1;min-width:220px}}.list{{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}}.item{{background:#fff;border:1px solid #e2e9e3;border-radius:16px;padding:19px}}h2{{font-size:18px;line-height:1.35;margin:6px 0 8px}}h2 a{{color:#23664f}}p{{font-size:14px;color:#53645a;margin:0}}.meta{{font-size:12px;color:#748279}}.pagination{{display:flex;justify-content:center;align-items:center;gap:22px;margin:28px 0}}.pagination a{{color:#23664f;font-weight:700}}.empty{{padding:22px;background:white;border-radius:14px}}footer{{padding:22px 0;color:#64736a}}@media(max-width:650px){{.list{{grid-template-columns:1fr}}}}</style></head>
+<body><header class="top"><div class="wrap"><a href="/">{SITE_NAME}</a> · <a href="/topics/">Напрямки</a></div></header><main class="wrap"><h1>Архів статей</h1><p class="lead">Усі матеріали бібліотеки — від найновіших до попередніх публікацій.</p><div class="toolbar"><input id="archiveSearch" type="search" placeholder="Пошук на цій сторінці…" aria-label="Пошук на цій сторінці"><select id="archiveCategory" aria-label="Фільтр категорії"><option value="">Усі категорії</option>{"".join('<option>'+html.escape(c)+'</option>' for c in categories)}</select></div><div class="list" id="archiveList">{"".join(cards)}</div><p id="archiveEmpty" class="empty" hidden>На цій сторінці немає матеріалів за обраними умовами.</p><nav class="pagination" aria-label="Сторінки архіву">{"".join(nav)}</nav></main><footer><div class="wrap"><a href="/">Головна</a> · <a href="/topics/">Тематичні напрямки</a></div></footer>
+<script>const q=document.getElementById('archiveSearch'),c=document.getElementById('archiveCategory'),items=[...document.querySelectorAll('.item')];function filter(){const term=q.value.trim().toLocaleLowerCase('uk'),cat=c.value;let shown=0;items.forEach(el=>{const ok=(!cat||el.dataset.category===cat)&&(!term||el.textContent.toLocaleLowerCase('uk').includes(term));el.hidden=!ok;if(ok)shown++});document.getElementById('archiveEmpty').hidden=shown>0}q.addEventListener('input',filter);c.addEventListener('change',filter);</script></body></html>"""
 
 
 def render_article_page(article: dict[str, Any], related: list[dict[str, Any]] | None = None) -> str:
     title = plain_text(article.get("title")) or SITE_NAME
     description = shorten(article.get("summary") or article.get("sourceDescription") or article.get("body"))
     category = plain_text(article.get("category")) or "Матеріал"
-    category_url = topic_url(category) if category in TOPIC_GUIDES else ""
-    topic_labels = topic_terms(category)
+    topic_id = topic_for_category(category)
+    category_url = topic_url(topic_id) if topic_id else ""
+    topic_labels = topic_terms(topic_id)
     topic_labels_html = "".join(f"<span class=\"topic-term\">{html.escape(term)}</span>" for term in topic_labels)
     published = safe_date(article.get("date") or article.get("sourceDate"))
     modified = safe_date(article.get("editorialReviewedAt")) or published
@@ -351,32 +331,27 @@ def render_sitemap(records: list[dict[str, Any]]) -> str:
         (SITE_URL + "/", max((safe_date(a.get("date")) for a in articles), default="")),
         (SITE_URL + "/analytics.html", max((safe_date(a.get("date")) for a in articles), default="")),
         (SITE_URL + "/action-lab.html", ""),
+        (SITE_URL + "/articles/", max((safe_date(a.get("date")) for a in articles), default="")),
+        (SITE_URL + "/topics/", max((safe_date(a.get("date")) for a in articles), default="")),
     ]
-    category_counts = Counter(plain_text(a.get("category")) for a in articles)
-    for category, count in category_counts.items():
-        if category in TOPIC_GUIDES and count >= TOPIC_MIN_ARTICLES:
-            urls.append((topic_url(category), max((safe_date(a.get("date")) for a in articles if a.get("category") == category), default="")))
+    for topic_id in TOPIC_GUIDES:
+        grouped = topic_articles(topic_id, articles)
+        if grouped:
+            urls.append((topic_url(topic_id), max((safe_date(a.get("date")) for a in grouped), default="")))
+    page_count = max(1, (len(articles) + ARCHIVE_PAGE_SIZE - 1) // ARCHIVE_PAGE_SIZE)
+    for page in range(2, page_count + 1):
+        urls.append((SITE_URL + f"/articles/page/{page}/", max((safe_date(a.get("date")) for a in articles), default="")))
     for article in articles:
         modified = safe_date(article.get("editorialReviewedAt")) or safe_date(article.get("date") or article.get("sourceDate"))
         urls.append((article_url(article), modified))
-
     seen: set[str] = set()
     entries = []
     for url, lastmod in urls:
         if url in seen:
             raise ValueError(f"Duplicate canonical URL in sitemap: {url}")
         seen.add(url)
-        entries.append(
-            "  <url>\n"
-            f"    <loc>{xml_escape(url)}</loc>\n"
-            + (f"    <lastmod>{xml_escape(lastmod)}</lastmod>\n" if lastmod else "")
-            + "  </url>"
-        )
-    return (
-        '<?xml version="1.0" encoding="UTF-8"?>\n'
-        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-        + "\n".join(entries) + "\n</urlset>\n"
-    )
+        entries.append("  <url>\n" + f"    <loc>{xml_escape(url)}</loc>\n" + (f"    <lastmod>{xml_escape(lastmod)}</lastmod>\n" if lastmod else "") + "  </url>")
+    return '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "\n".join(entries) + "\n</urlset>\n"
 
 
 def render_robots() -> str:
@@ -405,22 +380,22 @@ def build_outputs(records: list[dict[str, Any]]) -> dict[str, str]:
     articles = public_articles(records)
     seen_slugs: set[str] = set()
     outputs: dict[str, str] = {}
-    category_groups: dict[str, list[dict[str, Any]]] = {}
-    for article in articles:
-        category = plain_text(article.get("category"))
-        if category in TOPIC_GUIDES:
-            category_groups.setdefault(category, []).append(article)
-    for category, grouped in category_groups.items():
-        if len(grouped) >= TOPIC_MIN_ARTICLES:
-            outputs[f"topics/{topic_slug(category)}/index.html"] = render_topic_page(category, grouped)
+    ordered = sorted(articles, key=lambda a: safe_date(a.get("date") or a.get("sourceDate")), reverse=True)
+    outputs["topics/index.html"] = render_topics_index(ordered)
+    for topic_id in TOPIC_GUIDES:
+        grouped = topic_articles(topic_id, ordered)
+        if len(grouped) >= TOPIC_PAGE_MIN_ARTICLES:
+            outputs[f"topics/{topic_slug(topic_id)}/index.html"] = render_topic_page(topic_id, grouped)
+    page_count = max(1, (len(ordered) + ARCHIVE_PAGE_SIZE - 1) // ARCHIVE_PAGE_SIZE)
+    outputs["articles/index.html"] = render_archive_page(ordered, 1, page_count)
+    for page in range(2, page_count + 1):
+        outputs[f"articles/page/{page}/index.html"] = render_archive_page(ordered, page, page_count)
     for article in articles:
         slug = article_slug(article)
         if slug in seen_slugs:
             raise ValueError(f"Duplicate article slug: {slug}")
         seen_slugs.add(slug)
-        outputs[f"articles/{slug}/index.html"] = render_article_page(
-            article, related_for(article, articles)
-        )
+        outputs[f"articles/{slug}/index.html"] = render_article_page(article, related_for(article, articles))
     outputs["sitemap.xml"] = render_sitemap(records)
     outputs["robots.txt"] = render_robots()
     return outputs
@@ -428,23 +403,27 @@ def build_outputs(records: list[dict[str, Any]]) -> dict[str, str]:
 
 def write_outputs(outputs: dict[str, str]) -> None:
     expected = set(outputs)
-    ARTICLE_ROOT.mkdir(parents=True, exist_ok=True)
-    for current in ARTICLE_ROOT.rglob("index.html"):
-        try:
-            content = current.read_text(encoding="utf-8")
-        except OSError:
+    for generated_root in (ROOT / "articles", ROOT / "topics"):
+        if not generated_root.exists():
             continue
-        if GENERATOR_MARKER in content and current.relative_to(ROOT).as_posix() not in expected:
-            current.unlink()
+        for current in generated_root.rglob("index.html"):
+            try:
+                content = current.read_text(encoding="utf-8")
+            except OSError:
+                continue
+            if GENERATOR_MARKER in content and current.relative_to(ROOT).as_posix() not in expected:
+                current.unlink()
     for relative, content in outputs.items():
         target = ROOT / relative
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_text(content, encoding="utf-8", newline="\n")
-    for directory in sorted((p for p in ARTICLE_ROOT.rglob("*") if p.is_dir()), reverse=True):
-        try:
-            directory.rmdir()
-        except OSError:
-            pass
+    for generated_root in (ROOT / "articles", ROOT / "topics"):
+        if generated_root.exists():
+            for directory in sorted((p for p in generated_root.rglob("*") if p.is_dir()), reverse=True):
+                try:
+                    directory.rmdir()
+                except OSError:
+                    pass
 
 
 def check_outputs(outputs: dict[str, str]) -> list[str]:

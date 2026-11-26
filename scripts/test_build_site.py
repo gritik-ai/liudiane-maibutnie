@@ -8,6 +8,7 @@ from build_site import (
     SITE_URL,
     article_slug,
     article_url,
+    article_slug,
     build_outputs,
     is_public_article,
     public_articles,
@@ -15,6 +16,12 @@ from build_site import (
     render_robots,
     render_sitemap,
     safe_source_url,
+    ARCHIVE_PAGE_SIZE,
+    TOPIC_GUIDES,
+    render_archive_page,
+    render_topics_index,
+    topic_articles,
+    topic_for_category,
 )
 
 class BuildSiteSeoTests(unittest.TestCase):
@@ -115,7 +122,9 @@ class BuildSiteSeoTests(unittest.TestCase):
         outputs = build_outputs(rows)
         self.assertIn("sitemap.xml", outputs)
         self.assertIn("robots.txt", outputs)
-        self.assertEqual(len([key for key in outputs if key.startswith("articles/")]), 2)
+        self.assertIn("articles/" + article_slug(rows[0]) + "/index.html", outputs)
+        self.assertIn("articles/" + article_slug(rows[1]) + "/index.html", outputs)
+        self.assertNotIn("articles/" + article_slug(rows[2]) + "/index.html", outputs)
 
 
     def test_topic_hubs_are_generated_only_for_categories_with_enough_articles(self):
@@ -129,7 +138,7 @@ class BuildSiteSeoTests(unittest.TestCase):
         outputs = build_outputs(rows)
         self.assertIn("topics/medytsyna/index.html", outputs)
         self.assertNotIn("topics/prava-lyudyny/index.html", outputs)
-        self.assertIn("штучний інтелект у медицині", outputs["topics/medytsyna/index.html"])
+        self.assertIn("цифрова медицина", outputs["topics/medytsyna/index.html"])
 
     def test_article_page_links_to_topic_hub_and_shows_semantic_terms(self):
         page = render_article_page(self.sample(category="Медицина"))
@@ -144,6 +153,45 @@ class BuildSiteSeoTests(unittest.TestCase):
         self.assertEqual(safe_source_url("https://example.org/path"), "https://example.org/path")
         self.assertEqual(safe_source_url("http://example.org/path"), "")
         self.assertEqual(safe_source_url("javascript:alert(1)"), "")
+
+
+    def test_broad_topics_map_existing_categories_without_renaming_them(self):
+        self.assertEqual(topic_for_category("Міський розвиток"), "mista-arkhitektura")
+        self.assertEqual(topic_for_category("Міська мобільність"), "mista-arkhitektura")
+        self.assertEqual(topic_for_category("Надійність ШІ"), "shi")
+        self.assertEqual(topic_for_category("Медицина"), "medytsyna")
+        self.assertEqual(topic_for_category("Невідома категорія"), "")
+
+    def test_topics_index_and_hub_group_related_categories(self):
+        rows = [
+            self.sample(id="city-a", category="Міський розвиток"),
+            self.sample(id="city-b", category="Міська мобільність", title="Транспорт для людей"),
+            self.sample(id="ai-a", category="Надійність ШІ"),
+        ]
+        grouped = topic_articles("mista-arkhitektura", rows)
+        self.assertEqual({a["id"] for a in grouped}, {"city-a", "city-b"})
+        index = render_topics_index(rows)
+        self.assertIn("/topics/mista-arkhitektura/", index)
+        self.assertIn("2 матеріалів", index)
+
+    def test_archive_pages_are_static_crawlable_and_paginated(self):
+        rows = [self.sample(id=f"article-{i}", title=f"Матеріал {i}") for i in range(ARCHIVE_PAGE_SIZE + 1)]
+        first = render_archive_page(rows, 1, 2)
+        second = render_archive_page(rows, 2, 2)
+        self.assertIn('rel="next" href="/articles/page/2/"', first)
+        self.assertIn('rel="prev" href="/articles/"', second)
+        self.assertIn('href="' + article_url(rows[0]) + '"', first)
+        self.assertIn('href="' + article_url(rows[-1]) + '"', second)
+        self.assertIn('<link rel="canonical" href="' + SITE_URL + '/articles/page/2/">', second)
+
+    def test_build_outputs_generates_topic_overview_and_archive_pages(self):
+        rows = [self.sample(id=f"entry-{i}", title=f"Стаття {i}") for i in range(ARCHIVE_PAGE_SIZE + 2)]
+        outputs = build_outputs(rows)
+        self.assertIn("topics/index.html", outputs)
+        self.assertIn("topics/osvita/index.html", outputs)
+        self.assertIn("articles/index.html", outputs)
+        self.assertIn("articles/page/2/index.html", outputs)
+        self.assertIn(SITE_URL + "/articles/page/2/", outputs["sitemap.xml"])
 
 
 if __name__ == "__main__":

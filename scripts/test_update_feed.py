@@ -276,7 +276,7 @@ class EditorialFilterV27Tests(unittest.TestCase):
         self.assertEqual(restored, 1)
         self.assertEqual(len(kept), 1)
         self.assertIn("sourceDescription", kept[0])
-        self.assertEqual(kept[0]["filterVersion"], "2.6")
+        self.assertEqual(kept[0]["filterVersion"], FILTER_VERSION)
         self.assertEqual(kept[0]["editorialStatus"], "approved")
         self.assertEqual(review, 0)
         self.assertGreaterEqual(updated, 1)

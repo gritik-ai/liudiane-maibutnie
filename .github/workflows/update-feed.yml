@@ -1,33 +1,58 @@
 name: Daily RSS update
 
 on:
+  pull_request:
   schedule:
     # 06:23 UTC; not at the start of the hour to reduce queue delays.
     - cron: "23 6 * * *"
   workflow_dispatch:
+    inputs:
+      test_only:
+        description: "Запустити лише автоматичні тести без оновлення RSS-бібліотеки"
+        required: false
+        type: boolean
+        default: false
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
-  group: daily-rss-update
+  group: rss-${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
-  update-feed:
+  test:
+    name: Перевірка коду та редакційного фільтра
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
       - name: Отримати репозиторій
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Налаштувати Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7.1.0
         with:
           python-version: "3.12"
 
-      - name: Перевірити редакційний фільтр
+      - name: Виконати автоматичні тести
         run: python -m unittest discover -s scripts -p 'test_*.py' -v
+
+  update-feed:
+    name: Оновлення RSS-бібліотеки
+    if: github.event_name != 'pull_request' && inputs.test_only != true
+    needs: test
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - name: Отримати репозиторій
+        uses: actions/checkout@v7
+
+      - name: Налаштувати Python
+        uses: actions/setup-python@v7.1.0
+        with:
+          python-version: "3.12"
 
       - name: Оновити добірку та статистику джерел
         run: python scripts/update_feed.py

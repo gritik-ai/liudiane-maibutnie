@@ -5,6 +5,6 @@
   "type": "module",
   "description": "Human-centred AI, peace and quality of life project website",
   "scripts": {
-    "check": "node --check api/daily-publish.js"
+    "check": "python -m unittest discover -s scripts -p 'test_*.py' -v"
   }
 }

@@ -1,18 +1,18 @@
 {
   "schemaVersion": 1,
   "filterVersion": "2.7",
-  "generatedAt": "2026-11-26T14:06:11.325063+00:00",
+  "generatedAt": "2026-11-26T14:07:30.884826+00:00",
   "totals": {
     "successfulFeeds": 26,
     "totalFeeds": 27,
     "itemsFetched": 2056,
-    "acceptedCandidates": 31,
-    "added": 5,
+    "acceptedCandidates": 26,
+    "added": 3,
     "rejected": 1049,
-    "duplicates": 102,
+    "duplicates": 107,
     "tooOld": 570,
     "shortDescriptions": 48,
-    "deferredByDiversityCap": 26
+    "deferredByDiversityCap": 23
   },
   "feedRuns": [
     {
@@ -133,13 +133,13 @@
       "url": "https://export.arxiv.org/rss/cs.AI",
       "status": "ok",
       "itemsFetched": 447,
-      "acceptedCandidates": 19,
+      "acceptedCandidates": 16,
       "added": 3,
       "rejected": 414,
-      "duplicates": 14,
+      "duplicates": 17,
       "tooOld": 0,
       "shortDescriptions": 0,
-      "deferredByDiversityCap": 16,
+      "deferredByDiversityCap": 13,
       "rejectionReasons": {
         "немає чіткого зв'язку зі штучним інтелектом для спеціалізованої AI-стрічки": 217,
         "не виявлено достатньо чіткого напряму користі для людей": 155,
@@ -300,10 +300,10 @@
       "url": "https://news.un.org/feed/subscribe/en/news/topic/health/feed/rss.xml",
       "status": "ok",
       "itemsFetched": 30,
-      "acceptedCandidates": 2,
-      "added": 2,
+      "acceptedCandidates": 0,
+      "added": 0,
       "rejected": 28,
-      "duplicates": 0,
+      "duplicates": 2,
       "tooOld": 0,
       "shortDescriptions": 0,
       "deferredByDiversityCap": 0,
@@ -637,7 +637,7 @@
   "libraryByDomain": [
     {
       "domain": "arxiv.org",
-      "count": 69,
+      "count": 72,
       "publishers": [
         "arXiv"
       ]
@@ -721,8 +721,8 @@
   ],
   "libraryDomainCount": 11,
   "library": {
-    "totalRecords": 130,
-    "publicRecords": 115,
+    "totalRecords": 133,
+    "publicRecords": 118,
     "needsReview": 15,
     "manualRecords": 10
   },

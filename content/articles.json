@@ -1,6 +1,36 @@
 [
   {
-    "id": "rss-2026-11-26-4c21e5c4bc3c",
+    "id": "rss-2026-11-26-4410e9c20e9c",
+    "date": "2026-11-26",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "arXiv — Штучний інтелект",
+    "feedId": "arxiv-ai",
+    "sourceDomain": "arxiv.org",
+    "filterVersion": "2.7",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Безпека та виклики",
+    "feedKind": "ai_topic",
+    "sourceDescription": "arXiv:2611.32400v1 Announce Type: cross Abstract: Vision-and-Language Navigation (VLN) requires an agent to follow language instructions to reach a target in an unseen 3D environment. However, existing methods still struggle to recover from route deviations at test time. We investigate this limitation through the lens of instruction progress, and trace it to a phenomenon we term progress hallucination: agents misinterpret off-route observations as evidence of task progress, causing their internal instruction progress to advance beyond the actual task stage and hindering recovery based on earlier sub-instructions. To address this failure mode, we propose PHAR (Progress Hallucination-Aware Recovery), a test-time recovery framework following a verify-then-steer paradigm. The verifier examines residual-stream representations of the Vision-Language Model (VLM) to identify mismatch of cross-modal evidence along the trajectories, and uses split conformal calibration to control false alarms. When an alarm is raised, the steering module uses a contextual bandit to adaptively select the rewind extent of instruction progress for online recovery. Through extensive experiments on R2R-CE and RxR-CE, our framework enhances the reliability of multiple state-of-the-art vision-language navigation methods at test time.",
+    "selectionReason": "напрям: Надійність ШІ; ознаки користі: observation, navigation",
+    "evidenceLevel": "практичне застосування або конкретний приклад",
+    "category": "Надійність ШІ",
+    "title": "Verify then Steer: Progress Hallucination-Aware Recovery for Continuous Vision-and-Language Navigation",
+    "summary": "arXiv:2611.32400v1 Announce Type: cross Abstract: Vision-and-Language Navigation (VLN) requires an agent to follow language instructions to reach a target in an unseen 3D environment. However, existing methods still struggle to recover from route deviations at test time. We investigate this limitation through the lens of instruction progress, and trace it…",
+    "body": "Матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.32400v1 Announce Type: cross Abstract: Vision-and-Language Navigation (VLN) requires an agent to follow language instructions to reach a target in an unseen 3D environment. However, existing methods still struggle to recover from route deviations at test time. We investigate this limitation through the lens of instruction progress, and trace it to a phenomenon we term progress hallucination: agents misinterpret off-route observations as evidence of task progress, causing their internal instruction progress to advance beyond the actual task stage and hindering recovery based on earlier sub-instructions. To address this failure mode, we propose PHAR (Progress Hallucination-Aware Recovery), a test-time recovery framework following a verify-then-steer paradigm. The verifier examines residual-stream representations of the Vision-Language Model (VLM) to identify mismatch of cross-modal evidence along the trajectories, and uses split conformal calibration to control false alarms. When an alarm is raised, the steering module uses a contextual bandit to adaptively select the rewind extent of instruction progress for online recovery. Through extensive experiments on R2R-CE and RxR-CE, our framework enhances the reliability of multiple state-of-the-art vision-language navigation methods at test time.\n\nРедакційна класифікація: напрям: Надійність ШІ; ознаки користі: observation, navigation. Рівень свідчень: практичне застосування або конкретний приклад. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте статус публікації в першоджерелі.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-26",
+    "sources": [
+      {
+        "title": "Verify then Steer: Progress Hallucination-Aware Recovery for Continuous Vision-and-Language Navigation",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2611.32400",
+        "publishedDate": "2026-11-26"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-26-8179e84b7edc",
     "date": "2026-11-26",
     "autoPublished": true,
     "sourceType": "rss",
@@ -12,140 +42,50 @@
     "editorialDecisionSource": "automatic",
     "editorialLabel": "Перспективний розвиток",
     "feedKind": "ai_topic",
-    "sourceDescription": "arXiv:2611.31767v1 Announce Type: cross Abstract: Architects have two mature instruments for performance work. Top-Down analysis tells them where a design loses its pipeline slots, and design-space exploration (DSE) tells them which configuration scores best. Neither explains why a search stops improving: why a backend-bound design rejects a prefetcher that the bottleneck label recommends, or why a capacity increase that helped in one configuration hurts in the next. This paper argues that the evidence needed to answer such questions is already produced during exploration and then discarded. Every parent-child edge in an exploration tree is a controlled intervention: one knob changes, the rest of the design is held fixed, and a cycle-level simulator measures the outcome. When the same edit helps under one parent and hurts under another, aligning the two parents localizes the interaction that decides its sign. We present DELTA, a simulator-grounded root-cause analysis tool that builds a Design Memory of such interventions during exploration and lets an architect query it afterwards. Each record stores the full parent configuration, the single applied edit, the measured and predicted IPC, a Top-Down breakdown from StallLens, our gem5 implementation of Top-Down, and its lineage. Unlike evolutionary LLM search, which keeps only high-scoring programs, DELTA keeps failed edges as evidence. The same memory also makes exploration efficient: on four SPEC CPU2017 workloads, the full system raises IPC by 55.5% in 22 simulated designs for $1.56 of model cost, predicts the IPC of its own proposals to within 3.3%, and keeps improving after a bottleneck-guided search stalls. A root-cause query over the recorded history led us to a usefulness-throttled variant of the Best-Offset prefetcher that improves IPC by 1.37% over the original in matched configurations.",
-    "selectionReason": "напрям: Медицина; ознаки користі: improve, improves, predict",
+    "sourceDescription": "arXiv:2611.32463v1 Announce Type: cross Abstract: Vision-language models (VLMs) often recognize fine-grained details more accurately in a relevant crop than in the full image. Multimodal on-policy distillation (OPD) methods exploit this by transferring the advantage of a crop-view teacher to a full-image student. However, their supervision relies on region-specific questions curated through an elaborate synthesis pipeline, which brings three weaknesses: (1) every region needs a question--answer pair written exclusively for it, locking training into costly QA curation that is hard to scale to unlabeled images; (2) all rollouts of a region answer the same question, so the teacher supervises only the details it asks about, leaving other visual elements in the region unsupervised; and (3) every question presupposes that its target exists, so the student becomes prone to answering even when the target is absent. In this paper, we study how to turn unlabeled images into broad visual supervision through multi-aspect self-description and privileged-view distillation, and propose CaptionOPD, which replaces tailored questions with a fixed set of image-agnostic caption prompts, ranging from general descriptions to focused captions of parts, colors, counts, text, and layout. The rollouts of a region receive different prompts, so the teacher supervises various aspects of the region. Moreover, because caption prompts mask the model to describe what is visible instead of querying a specific target, they avoid presupposing what the region contains. Using the model itself as the crop-view teacher, CaptionOPD requires no questions, no answers, and no larger model annotations: only images and region boxes. Experiments show that, trained on the same images and regions, CaptionOPD outperforms prior OPD methods across multiple fine-grained and general perception benchmarks.",
+    "selectionReason": "напрям: Освіта; ознаки користі: benchmark, benchmarks",
     "evidenceLevel": "дослідження або оцінювання потенційного застосування",
-    "category": "Медицина",
-    "title": "DELTA: Diagnosing Exploration Lineages via Twin-path Alignment - What Can Contrasting Design Paths Reveal About Microarchitectural Behavior?",
-    "summary": "arXiv:2611.31767v1 Announce Type: cross Abstract: Architects have two mature instruments for performance work. Top-Down analysis tells them where a design loses its pipeline slots, and design-space exploration (DSE) tells them which configuration scores best. Neither explains why a search stops improving: why a backend-bound design rejects a prefetcher…",
-    "body": "Матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.31767v1 Announce Type: cross Abstract: Architects have two mature instruments for performance work. Top-Down analysis tells them where a design loses its pipeline slots, and design-space exploration (DSE) tells them which configuration scores best. Neither explains why a search stops improving: why a backend-bound design rejects a prefetcher that the bottleneck label recommends, or why a capacity increase that helped in one configuration hurts in the next. This paper argues that the evidence needed to answer such questions is already produced during exploration and then discarded. Every parent-child edge in an exploration tree is a controlled intervention: one knob changes, the rest of the design is held fixed, and a cycle-level simulator measures the outcome. When the same edit helps under one parent and hurts under another, aligning the two parents localizes the interaction that decides its sign. We present DELTA, a simulator-grounded root-cause analysis tool that builds a Design Memory of such interventions during exploration and lets an architect query it afterwards. Each record stores the full parent configuration, the single applied edit, the measured and predicted IPC, a Top-Down breakdown from StallLens, our gem5 implementation of Top-Down, and its lineage. Unlike evolutionary LLM search, which keeps only high-scoring programs, DELTA keeps failed edges as evidence. The same memory also makes exploration efficient: on four SPEC CPU2017 workloads, the full system raises IPC by 55.5% in 22 simulated designs for $1.56 of model cost, predicts the IPC of its own proposals to within 3.3%, and keeps improving after a bottleneck-guided search stalls. A root-cause query over the recorded history led us to a usefulness-throttled variant of the Best-Offset prefetcher that improves IPC by 1.37% over the original in matched configurations.\n\nРедакційна класифікація: напрям: Медицина; ознаки користі: improve, improves, predict. Рівень свідчень: дослідження або оцінювання потенційного застосування. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте статус публікації в першоджерелі.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "category": "Освіта",
+    "title": "Describe, Don't Ask: Caption-Driven On-Policy Distillation for Fine-Grained Visual Perception",
+    "summary": "arXiv:2611.32463v1 Announce Type: cross Abstract: Vision-language models (VLMs) often recognize fine-grained details more accurately in a relevant crop than in the full image. Multimodal on-policy distillation (OPD) methods exploit this by transferring the advantage of a crop-view teacher to a full-image student. However, their supervision relies on…",
+    "body": "Матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.32463v1 Announce Type: cross Abstract: Vision-language models (VLMs) often recognize fine-grained details more accurately in a relevant crop than in the full image. Multimodal on-policy distillation (OPD) methods exploit this by transferring the advantage of a crop-view teacher to a full-image student. However, their supervision relies on region-specific questions curated through an elaborate synthesis pipeline, which brings three weaknesses: (1) every region needs a question--answer pair written exclusively for it, locking training into costly QA curation that is hard to scale to unlabeled images; (2) all rollouts of a region answer the same question, so the teacher supervises only the details it asks about, leaving other visual elements in the region unsupervised; and (3) every question presupposes that its target exists, so the student becomes prone to answering even when the target is absent. In this paper, we study how to turn unlabeled images into broad visual supervision through multi-aspect self-description and privileged-view distillation, and propose CaptionOPD, which replaces tailored questions with a fixed set of image-agnostic caption prompts, ranging from general descriptions to focused captions of parts, colors, counts, text, and layout. The rollouts of a region receive different prompts, so the teacher supervises various aspects of the region. Moreover, because caption prompts mask the model to describe what is visible instead of querying a specific target, they avoid presupposing what the region contains. Using the model itself as the crop-view teacher, CaptionOPD requires no questions, no answers, and no larger model annotations: only images and region boxes. Experiments show that, trained on the same images and regions, CaptionOPD outperforms prior OPD methods across multiple fine-grained and general perception benchmarks.\n\nРедакційна класифікація: напрям: Освіта; ознаки користі: benchmark, benchmarks. Рівень свідчень: дослідження або оцінювання потенційного застосування. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте статус публікації в першоджерелі.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
     "sourceDate": "2026-11-26",
     "sources": [
       {
-        "title": "DELTA: Diagnosing Exploration Lineages via Twin-path Alignment - What Can Contrasting Design Paths Reveal About Microarchitectural Behavior?",
+        "title": "Describe, Don't Ask: Caption-Driven On-Policy Distillation for Fine-Grained Visual Perception",
         "publisher": "arXiv",
-        "url": "https://arxiv.org/abs/2611.31767",
+        "url": "https://arxiv.org/abs/2611.32463",
         "publishedDate": "2026-11-26"
       }
     ]
   },
   {
-    "id": "rss-2026-11-26-2fb15b153ea2",
+    "id": "rss-2026-11-26-2b470493eb7d",
     "date": "2026-11-26",
     "autoPublished": true,
     "sourceType": "rss",
     "feedName": "arXiv — Штучний інтелект",
     "feedId": "arxiv-ai",
     "sourceDomain": "arxiv.org",
-    "filterVersion": "2.7",
-    "editorialStatus": "approved",
-    "editorialDecisionSource": "automatic",
-    "editorialLabel": "Перспективний розвиток",
-    "feedKind": "ai_topic",
-    "sourceDescription": "arXiv:2611.32021v1 Announce Type: cross Abstract: Specialist medical vision-language models (VLMs) are strong within their specialties but hard to unify: their training data are often private, and independently developed specialists cannot be assumed to share an architecture. Deploying these large models separately is costly. We present HuluOPD, an on-policy distillation recipe that unifies heterogeneous specialists into one lightweight VLM using only unlabeled prompts, without requiring reference answers or the specialists' training data. The lightweight model answers each prompt, and the specialist of the prompt's modality supervises its response; a continuation-aligned cross-tokenizer loss makes this possible even when they differ in architecture and tokenizer. We apply HuluOPD to five specialists, for ultrasound, pathology, optical coherence tomography, fundus photography, and dental imaging. To distill and evaluate them, we build HuluOPDCorpus, 914k unlabeled prompts, and HuluOPDBench, 47k held-out test items, from over 90 public datasets, and score all models under one protocol on 132k test items, including third-party benchmarks. A single model with 10% of the five specialists' combined parameters retains 94% of their question-answering performance, and one with 2% retains 89%. To our knowledge, this is the first demonstration of unifying heterogeneous medical specialist VLMs without requiring their training data or a shared architecture.",
-    "selectionReason": "напрям: Медицина; ознаки користі: benchmark, benchmarks, evaluate",
-    "evidenceLevel": "дослідження або оцінювання потенційного застосування",
-    "category": "Медицина",
-    "title": "HuluOPD: Unifying Heterogeneous Medical Specialists into One Lightweight Model with Unlabeled Prompts",
-    "summary": "arXiv:2611.32021v1 Announce Type: cross Abstract: Specialist medical vision-language models (VLMs) are strong within their specialties but hard to unify: their training data are often private, and independently developed specialists cannot be assumed to share an architecture. Deploying these large models separately is costly. We present HuluOPD, an…",
-    "body": "Матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.32021v1 Announce Type: cross Abstract: Specialist medical vision-language models (VLMs) are strong within their specialties but hard to unify: their training data are often private, and independently developed specialists cannot be assumed to share an architecture. Deploying these large models separately is costly. We present HuluOPD, an on-policy distillation recipe that unifies heterogeneous specialists into one lightweight VLM using only unlabeled prompts, without requiring reference answers or the specialists' training data. The lightweight model answers each prompt, and the specialist of the prompt's modality supervises its response; a continuation-aligned cross-tokenizer loss makes this possible even when they differ in architecture and tokenizer. We apply HuluOPD to five specialists, for ultrasound, pathology, optical coherence tomography, fundus photography, and dental imaging. To distill and evaluate them, we build HuluOPDCorpus, 914k unlabeled prompts, and HuluOPDBench, 47k held-out test items, from over 90 public datasets, and score all models under one protocol on 132k test items, including third-party benchmarks. A single model with 10% of the five specialists' combined parameters retains 94% of their question-answering performance, and one with 2% retains 89%. To our knowledge, this is the first demonstration of unifying heterogeneous medical specialist VLMs without requiring their training data or a shared architecture.\n\nРедакційна класифікація: напрям: Медицина; ознаки користі: benchmark, benchmarks, evaluate. Рівень свідчень: дослідження або оцінювання потенційного застосування. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте статус публікації в першоджерелі.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
-    "sourceDate": "2026-11-26",
-    "sources": [
-      {
-        "title": "HuluOPD: Unifying Heterogeneous Medical Specialists into One Lightweight Model with Unlabeled Prompts",
-        "publisher": "arXiv",
-        "url": "https://arxiv.org/abs/2611.32021",
-        "publishedDate": "2026-11-26"
-      }
-    ]
-  },
-  {
-    "id": "rss-2026-11-26-1cb66a9694a4",
-    "date": "2026-11-26",
-    "autoPublished": true,
-    "sourceType": "rss",
-    "feedName": "arXiv — Штучний інтелект",
-    "feedId": "arxiv-ai",
-    "sourceDomain": "arxiv.org",
-    "filterVersion": "2.7",
-    "editorialStatus": "approved",
-    "editorialDecisionSource": "automatic",
-    "editorialLabel": "Перспективний розвиток",
-    "feedKind": "ai_topic",
-    "sourceDescription": "arXiv:2611.32094v1 Announce Type: cross Abstract: Spatial reasoning in hospitals requires tracking look-alike equipment, interpreting patient-relative directions, and judging passage widths, yet existing benchmarks provide limited coverage of these abilities. We introduce Clinical3D-Bench, a simulated benchmark with 3,368 questions of eight types on egocentric walkthroughs of 373 hospital-room layouts. Layouts follow hospital design guidelines, answers are computed from the 3D scenes, and paired scene states test whether models change their answers when relevant evidence changes. Videos are photorealistic, and ten physicians screened the layouts. Among 35 multimodal large language models (MLLMs), the best open and proprietary models reach 45.7% and 53.6% macro accuracy, against 40.8% for an answer prior and 79.0% for physicians on a subset, and 27 of 32 open models score below 40% on two-way patient-relative directions. Fine-tuning on Clinical3D-45K, our 44,750-question training set, lifts two MLLMs 16-20 points above the best proprietary model. 3D maps given to the fine-tuned MLLM as input go largely unused: replacing them with another video's, even when they are ground truth, barely changes its accuracy. The proposed GeoJeV instead lets the MLLM compute with 3D: it reconstructs a scene memory from each video, selects 3D operations and their arguments from the MLLM's question state, and adds their evidence to its option scores. It achieves the highest accuracy of all evaluated models, narrowing the gap to physicians.",
-    "selectionReason": "напрям: Медицина; ознаки користі: benchmark, benchmarks, evaluate",
-    "evidenceLevel": "дослідження або оцінювання потенційного застосування",
-    "category": "Медицина",
-    "title": "Clinical3D-Bench: Evaluating and Improving Spatial Intelligence of Multimodal LLMs in Hospital Environments",
-    "summary": "arXiv:2611.32094v1 Announce Type: cross Abstract: Spatial reasoning in hospitals requires tracking look-alike equipment, interpreting patient-relative directions, and judging passage widths, yet existing benchmarks provide limited coverage of these abilities. We introduce Clinical3D-Bench, a simulated benchmark with 3,368 questions of eight types on…",
-    "body": "Матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.32094v1 Announce Type: cross Abstract: Spatial reasoning in hospitals requires tracking look-alike equipment, interpreting patient-relative directions, and judging passage widths, yet existing benchmarks provide limited coverage of these abilities. We introduce Clinical3D-Bench, a simulated benchmark with 3,368 questions of eight types on egocentric walkthroughs of 373 hospital-room layouts. Layouts follow hospital design guidelines, answers are computed from the 3D scenes, and paired scene states test whether models change their answers when relevant evidence changes. Videos are photorealistic, and ten physicians screened the layouts. Among 35 multimodal large language models (MLLMs), the best open and proprietary models reach 45.7% and 53.6% macro accuracy, against 40.8% for an answer prior and 79.0% for physicians on a subset, and 27 of 32 open models score below 40% on two-way patient-relative directions. Fine-tuning on Clinical3D-45K, our 44,750-question training set, lifts two MLLMs 16-20 points above the best proprietary model. 3D maps given to the fine-tuned MLLM as input go largely unused: replacing them with another video's, even when they are ground truth, barely changes its accuracy. The proposed GeoJeV instead lets the MLLM compute with 3D: it reconstructs a scene memory from each video, selects 3D operations and their arguments from the MLLM's question state, and adds their evidence to its option scores. It achieves the highest accuracy of all evaluated models, narrowing the gap to physicians.\n\nРедакційна класифікація: напрям: Медицина; ознаки користі: benchmark, benchmarks, evaluate. Рівень свідчень: дослідження або оцінювання потенційного застосування. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте статус публікації в першоджерелі.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
-    "sourceDate": "2026-11-26",
-    "sources": [
-      {
-        "title": "Clinical3D-Bench: Evaluating and Improving Spatial Intelligence of Multimodal LLMs in Hospital Environments",
-        "publisher": "arXiv",
-        "url": "https://arxiv.org/abs/2611.32094",
-        "publishedDate": "2026-11-26"
-      }
-    ]
-  },
-  {
-    "id": "rss-2026-11-10-7353459294dc",
-    "date": "2026-11-10",
-    "autoPublished": true,
-    "sourceType": "rss",
-    "feedName": "UN News — Здоров'я",
-    "feedId": "un-health",
-    "sourceDomain": "un.org",
-    "filterVersion": "2.7",
-    "editorialStatus": "approved",
-    "editorialDecisionSource": "automatic",
-    "editorialLabel": "Перспективний розвиток",
-    "feedKind": "institutional",
-    "sourceDescription": "Ending cholera as a public health threat by 2030 is within reach, as every cholera death can be prevented with tools that already exist, the World Health Organization (WHO) said on Tuesday.",
-    "selectionReason": "напрям: Права людини; ознаки користі: prevent",
-    "evidenceLevel": "перспективне дослідження; практичний ефект ще потрібно перевірити",
-    "category": "Права людини",
-    "title": "World News in Brief: Ending cholera by 2030 ‘within reach’, Haiti displacement and hunger, US human rights review rescheduled",
-    "summary": "Ending cholera as a public health threat by 2030 is within reach, as every cholera death can be prevented with tools that already exist, the World Health Organization (WHO) said on Tuesday.",
-    "body": "Матеріал автоматично відібрано зі стрічки United Nations News. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nEnding cholera as a public health threat by 2030 is within reach, as every cholera death can be prevented with tools that already exist, the World Health Organization (WHO) said on Tuesday.\n\nРедакційна класифікація: напрям: Права людини; ознаки користі: prevent. Рівень свідчень: перспективне дослідження; практичний ефект ще потрібно перевірити. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
-    "sourceDate": "2026-11-10",
-    "sources": [
-      {
-        "title": "World News in Brief: Ending cholera by 2030 ‘within reach’, Haiti displacement and hunger, US human rights review rescheduled",
-        "publisher": "United Nations News",
-        "url": "https://news.un.org/feed/view/en/story/2026/11/1168782",
-        "publishedDate": "2026-11-10"
-      }
-    ]
-  },
-  {
-    "id": "rss-2026-11-05-6c13159755ee",
-    "date": "2026-11-05",
-    "autoPublished": true,
-    "sourceType": "rss",
-    "feedName": "UN News — Здоров'я",
-    "feedId": "un-health",
-    "sourceDomain": "un.org",
     "filterVersion": "2.7",
     "editorialStatus": "approved",
     "editorialDecisionSource": "automatic",
     "editorialLabel": "Позитивний вплив",
-    "feedKind": "institutional",
-    "sourceDescription": "Two new Ebola vaccine candidates will be added to a clinical trial in the Democratic Republic of the Congo (DRC) as the country continues to battle a deadly outbreak caused by the Bundibugyo species of the virus.",
-    "selectionReason": "напрям: Медицина; ознаки користі: clinical trial",
+    "feedKind": "ai_topic",
+    "sourceDescription": "arXiv:2611.32734v1 Announce Type: cross Abstract: Large language models (LLMs) excel at medical question answering yet are rarely evaluated on the stepwise diagnostic reasoning that defines real clinical workflows, where impressions are revised as information accumulates. We build Annotated Stepwise Clinical rEasoning for NaturalisTic Diagnosis (ASCENT), a clinician-annotated benchmark and training resource of 3,078 stepwise problems derived from MedQA-USMLE that decomposes each vignette into EMR-aligned steps (Findings, Impression, supporting Rationale), enabling evaluation of intermediate reasoning under incomplete information. Experiments and training with ASCENT revealed insights into how current LLMs handle stepwise diagnostic reasoning. Even strong reasoning models that perform well on MedQA-USMLE leave substantial headroom on ASCENT, and general-purpose frontier models trail further, exposing a persistent gap between fully informed and stepwise diagnosis. Fine-tuning Qwen2.5-7B and 32B on ASCENT yields measurable F1 gains over both pre-trained and HuatuoGPT-o1 CoT-trained baselines, with gains driven primarily by precision. Complementary robustness analyses (counterfactual perturbation, format-vs-content control, judge agreement, and rollout) further show that ASCENT-fine-tuned models rely on the diagnostic content of prior impressions rather than imitating their output format, while error propagation under rollout remains a key challenge for clinical deployment.",
+    "selectionReason": "напрям: Медицина; ознаки користі: benchmark, evaluation, evaluate",
     "evidenceLevel": "практичне застосування або конкретний приклад",
     "category": "Медицина",
-    "title": "Two new Ebola vaccines to join DR Congo clinical trial",
-    "summary": "Two new Ebola vaccine candidates will be added to a clinical trial in the Democratic Republic of the Congo (DRC) as the country continues to battle a deadly outbreak caused by the Bundibugyo species of the virus.",
-    "body": "Матеріал автоматично відібрано зі стрічки United Nations News. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nTwo new Ebola vaccine candidates will be added to a clinical trial in the Democratic Republic of the Congo (DRC) as the country continues to battle a deadly outbreak caused by the Bundibugyo species of the virus.\n\nРедакційна класифікація: напрям: Медицина; ознаки користі: clinical trial. Рівень свідчень: практичне застосування або конкретний приклад. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
-    "sourceDate": "2026-11-05",
+    "title": "ASCENT: A Benchmark for Evaluating and Advancing Stepwise Diagnostic Reasoning in Large Language Models on Common Clinical Scenarios",
+    "summary": "arXiv:2611.32734v1 Announce Type: cross Abstract: Large language models (LLMs) excel at medical question answering yet are rarely evaluated on the stepwise diagnostic reasoning that defines real clinical workflows, where impressions are revised as information accumulates. We build Annotated Stepwise Clinical rEasoning for NaturalisTic Diagnosis (ASCENT), a…",
+    "body": "Матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.32734v1 Announce Type: cross Abstract: Large language models (LLMs) excel at medical question answering yet are rarely evaluated on the stepwise diagnostic reasoning that defines real clinical workflows, where impressions are revised as information accumulates. We build Annotated Stepwise Clinical rEasoning for NaturalisTic Diagnosis (ASCENT), a clinician-annotated benchmark and training resource of 3,078 stepwise problems derived from MedQA-USMLE that decomposes each vignette into EMR-aligned steps (Findings, Impression, supporting Rationale), enabling evaluation of intermediate reasoning under incomplete information. Experiments and training with ASCENT revealed insights into how current LLMs handle stepwise diagnostic reasoning. Even strong reasoning models that perform well on MedQA-USMLE leave substantial headroom on ASCENT, and general-purpose frontier models trail further, exposing a persistent gap between fully informed and stepwise diagnosis. Fine-tuning Qwen2.5-7B and 32B on ASCENT yields measurable F1 gains over both pre-trained and HuatuoGPT-o1 CoT-trained baselines, with gains driven primarily by precision. Complementary robustness analyses (counterfactual perturbation, format-vs-content control, judge agreement, and rollout) further show that ASCENT-fine-tuned models rely on the diagnostic content of prior impressions rather than imitating their output format, while error propagation under rollout remains a key challenge for clinical deployment.\n\nРедакційна класифікація: напрям: Медицина; ознаки користі: benchmark, evaluation, evaluate. Рівень свідчень: практичне застосування або конкретний приклад. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте статус публікації в першоджерелі.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-26",
     "sources": [
       {
-        "title": "Two new Ebola vaccines to join DR Congo clinical trial",
-        "publisher": "United Nations News",
-        "url": "https://news.un.org/feed/view/en/story/2026/11/1168742",
-        "publishedDate": "2026-11-05"
+        "title": "ASCENT: A Benchmark for Evaluating and Advancing Stepwise Diagnostic Reasoning in Large Language Models on Common Clinical Scenarios",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2611.32734",
+        "publishedDate": "2026-11-26"
       }
     ]
   },
@@ -334,6 +274,156 @@
         "title": "2026 Report: Executive Summary",
         "publisher": "International AI Safety Report",
         "url": "https://internationalaisafetyreport.org/publication/2026-report-executive-summary"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-26-4c21e5c4bc3c",
+    "date": "2026-11-26",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "arXiv — Штучний інтелект",
+    "feedId": "arxiv-ai",
+    "sourceDomain": "arxiv.org",
+    "filterVersion": "2.7",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Перспективний розвиток",
+    "feedKind": "ai_topic",
+    "sourceDescription": "arXiv:2611.31767v1 Announce Type: cross Abstract: Architects have two mature instruments for performance work. Top-Down analysis tells them where a design loses its pipeline slots, and design-space exploration (DSE) tells them which configuration scores best. Neither explains why a search stops improving: why a backend-bound design rejects a prefetcher that the bottleneck label recommends, or why a capacity increase that helped in one configuration hurts in the next. This paper argues that the evidence needed to answer such questions is already produced during exploration and then discarded. Every parent-child edge in an exploration tree is a controlled intervention: one knob changes, the rest of the design is held fixed, and a cycle-level simulator measures the outcome. When the same edit helps under one parent and hurts under another, aligning the two parents localizes the interaction that decides its sign. We present DELTA, a simulator-grounded root-cause analysis tool that builds a Design Memory of such interventions during exploration and lets an architect query it afterwards. Each record stores the full parent configuration, the single applied edit, the measured and predicted IPC, a Top-Down breakdown from StallLens, our gem5 implementation of Top-Down, and its lineage. Unlike evolutionary LLM search, which keeps only high-scoring programs, DELTA keeps failed edges as evidence. The same memory also makes exploration efficient: on four SPEC CPU2017 workloads, the full system raises IPC by 55.5% in 22 simulated designs for $1.56 of model cost, predicts the IPC of its own proposals to within 3.3%, and keeps improving after a bottleneck-guided search stalls. A root-cause query over the recorded history led us to a usefulness-throttled variant of the Best-Offset prefetcher that improves IPC by 1.37% over the original in matched configurations.",
+    "selectionReason": "напрям: Медицина; ознаки користі: improve, improves, predict",
+    "evidenceLevel": "дослідження або оцінювання потенційного застосування",
+    "category": "Медицина",
+    "title": "DELTA: Diagnosing Exploration Lineages via Twin-path Alignment - What Can Contrasting Design Paths Reveal About Microarchitectural Behavior?",
+    "summary": "arXiv:2611.31767v1 Announce Type: cross Abstract: Architects have two mature instruments for performance work. Top-Down analysis tells them where a design loses its pipeline slots, and design-space exploration (DSE) tells them which configuration scores best. Neither explains why a search stops improving: why a backend-bound design rejects a prefetcher…",
+    "body": "Матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.31767v1 Announce Type: cross Abstract: Architects have two mature instruments for performance work. Top-Down analysis tells them where a design loses its pipeline slots, and design-space exploration (DSE) tells them which configuration scores best. Neither explains why a search stops improving: why a backend-bound design rejects a prefetcher that the bottleneck label recommends, or why a capacity increase that helped in one configuration hurts in the next. This paper argues that the evidence needed to answer such questions is already produced during exploration and then discarded. Every parent-child edge in an exploration tree is a controlled intervention: one knob changes, the rest of the design is held fixed, and a cycle-level simulator measures the outcome. When the same edit helps under one parent and hurts under another, aligning the two parents localizes the interaction that decides its sign. We present DELTA, a simulator-grounded root-cause analysis tool that builds a Design Memory of such interventions during exploration and lets an architect query it afterwards. Each record stores the full parent configuration, the single applied edit, the measured and predicted IPC, a Top-Down breakdown from StallLens, our gem5 implementation of Top-Down, and its lineage. Unlike evolutionary LLM search, which keeps only high-scoring programs, DELTA keeps failed edges as evidence. The same memory also makes exploration efficient: on four SPEC CPU2017 workloads, the full system raises IPC by 55.5% in 22 simulated designs for $1.56 of model cost, predicts the IPC of its own proposals to within 3.3%, and keeps improving after a bottleneck-guided search stalls. A root-cause query over the recorded history led us to a usefulness-throttled variant of the Best-Offset prefetcher that improves IPC by 1.37% over the original in matched configurations.\n\nРедакційна класифікація: напрям: Медицина; ознаки користі: improve, improves, predict. Рівень свідчень: дослідження або оцінювання потенційного застосування. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте статус публікації в першоджерелі.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-26",
+    "sources": [
+      {
+        "title": "DELTA: Diagnosing Exploration Lineages via Twin-path Alignment - What Can Contrasting Design Paths Reveal About Microarchitectural Behavior?",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2611.31767",
+        "publishedDate": "2026-11-26"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-26-2fb15b153ea2",
+    "date": "2026-11-26",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "arXiv — Штучний інтелект",
+    "feedId": "arxiv-ai",
+    "sourceDomain": "arxiv.org",
+    "filterVersion": "2.7",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Перспективний розвиток",
+    "feedKind": "ai_topic",
+    "sourceDescription": "arXiv:2611.32021v1 Announce Type: cross Abstract: Specialist medical vision-language models (VLMs) are strong within their specialties but hard to unify: their training data are often private, and independently developed specialists cannot be assumed to share an architecture. Deploying these large models separately is costly. We present HuluOPD, an on-policy distillation recipe that unifies heterogeneous specialists into one lightweight VLM using only unlabeled prompts, without requiring reference answers or the specialists' training data. The lightweight model answers each prompt, and the specialist of the prompt's modality supervises its response; a continuation-aligned cross-tokenizer loss makes this possible even when they differ in architecture and tokenizer. We apply HuluOPD to five specialists, for ultrasound, pathology, optical coherence tomography, fundus photography, and dental imaging. To distill and evaluate them, we build HuluOPDCorpus, 914k unlabeled prompts, and HuluOPDBench, 47k held-out test items, from over 90 public datasets, and score all models under one protocol on 132k test items, including third-party benchmarks. A single model with 10% of the five specialists' combined parameters retains 94% of their question-answering performance, and one with 2% retains 89%. To our knowledge, this is the first demonstration of unifying heterogeneous medical specialist VLMs without requiring their training data or a shared architecture.",
+    "selectionReason": "напрям: Медицина; ознаки користі: benchmark, benchmarks, evaluate",
+    "evidenceLevel": "дослідження або оцінювання потенційного застосування",
+    "category": "Медицина",
+    "title": "HuluOPD: Unifying Heterogeneous Medical Specialists into One Lightweight Model with Unlabeled Prompts",
+    "summary": "arXiv:2611.32021v1 Announce Type: cross Abstract: Specialist medical vision-language models (VLMs) are strong within their specialties but hard to unify: their training data are often private, and independently developed specialists cannot be assumed to share an architecture. Deploying these large models separately is costly. We present HuluOPD, an…",
+    "body": "Матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.32021v1 Announce Type: cross Abstract: Specialist medical vision-language models (VLMs) are strong within their specialties but hard to unify: their training data are often private, and independently developed specialists cannot be assumed to share an architecture. Deploying these large models separately is costly. We present HuluOPD, an on-policy distillation recipe that unifies heterogeneous specialists into one lightweight VLM using only unlabeled prompts, without requiring reference answers or the specialists' training data. The lightweight model answers each prompt, and the specialist of the prompt's modality supervises its response; a continuation-aligned cross-tokenizer loss makes this possible even when they differ in architecture and tokenizer. We apply HuluOPD to five specialists, for ultrasound, pathology, optical coherence tomography, fundus photography, and dental imaging. To distill and evaluate them, we build HuluOPDCorpus, 914k unlabeled prompts, and HuluOPDBench, 47k held-out test items, from over 90 public datasets, and score all models under one protocol on 132k test items, including third-party benchmarks. A single model with 10% of the five specialists' combined parameters retains 94% of their question-answering performance, and one with 2% retains 89%. To our knowledge, this is the first demonstration of unifying heterogeneous medical specialist VLMs without requiring their training data or a shared architecture.\n\nРедакційна класифікація: напрям: Медицина; ознаки користі: benchmark, benchmarks, evaluate. Рівень свідчень: дослідження або оцінювання потенційного застосування. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте статус публікації в першоджерелі.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-26",
+    "sources": [
+      {
+        "title": "HuluOPD: Unifying Heterogeneous Medical Specialists into One Lightweight Model with Unlabeled Prompts",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2611.32021",
+        "publishedDate": "2026-11-26"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-26-1cb66a9694a4",
+    "date": "2026-11-26",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "arXiv — Штучний інтелект",
+    "feedId": "arxiv-ai",
+    "sourceDomain": "arxiv.org",
+    "filterVersion": "2.7",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Перспективний розвиток",
+    "feedKind": "ai_topic",
+    "sourceDescription": "arXiv:2611.32094v1 Announce Type: cross Abstract: Spatial reasoning in hospitals requires tracking look-alike equipment, interpreting patient-relative directions, and judging passage widths, yet existing benchmarks provide limited coverage of these abilities. We introduce Clinical3D-Bench, a simulated benchmark with 3,368 questions of eight types on egocentric walkthroughs of 373 hospital-room layouts. Layouts follow hospital design guidelines, answers are computed from the 3D scenes, and paired scene states test whether models change their answers when relevant evidence changes. Videos are photorealistic, and ten physicians screened the layouts. Among 35 multimodal large language models (MLLMs), the best open and proprietary models reach 45.7% and 53.6% macro accuracy, against 40.8% for an answer prior and 79.0% for physicians on a subset, and 27 of 32 open models score below 40% on two-way patient-relative directions. Fine-tuning on Clinical3D-45K, our 44,750-question training set, lifts two MLLMs 16-20 points above the best proprietary model. 3D maps given to the fine-tuned MLLM as input go largely unused: replacing them with another video's, even when they are ground truth, barely changes its accuracy. The proposed GeoJeV instead lets the MLLM compute with 3D: it reconstructs a scene memory from each video, selects 3D operations and their arguments from the MLLM's question state, and adds their evidence to its option scores. It achieves the highest accuracy of all evaluated models, narrowing the gap to physicians.",
+    "selectionReason": "напрям: Медицина; ознаки користі: benchmark, benchmarks, evaluate",
+    "evidenceLevel": "дослідження або оцінювання потенційного застосування",
+    "category": "Медицина",
+    "title": "Clinical3D-Bench: Evaluating and Improving Spatial Intelligence of Multimodal LLMs in Hospital Environments",
+    "summary": "arXiv:2611.32094v1 Announce Type: cross Abstract: Spatial reasoning in hospitals requires tracking look-alike equipment, interpreting patient-relative directions, and judging passage widths, yet existing benchmarks provide limited coverage of these abilities. We introduce Clinical3D-Bench, a simulated benchmark with 3,368 questions of eight types on…",
+    "body": "Матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.32094v1 Announce Type: cross Abstract: Spatial reasoning in hospitals requires tracking look-alike equipment, interpreting patient-relative directions, and judging passage widths, yet existing benchmarks provide limited coverage of these abilities. We introduce Clinical3D-Bench, a simulated benchmark with 3,368 questions of eight types on egocentric walkthroughs of 373 hospital-room layouts. Layouts follow hospital design guidelines, answers are computed from the 3D scenes, and paired scene states test whether models change their answers when relevant evidence changes. Videos are photorealistic, and ten physicians screened the layouts. Among 35 multimodal large language models (MLLMs), the best open and proprietary models reach 45.7% and 53.6% macro accuracy, against 40.8% for an answer prior and 79.0% for physicians on a subset, and 27 of 32 open models score below 40% on two-way patient-relative directions. Fine-tuning on Clinical3D-45K, our 44,750-question training set, lifts two MLLMs 16-20 points above the best proprietary model. 3D maps given to the fine-tuned MLLM as input go largely unused: replacing them with another video's, even when they are ground truth, barely changes its accuracy. The proposed GeoJeV instead lets the MLLM compute with 3D: it reconstructs a scene memory from each video, selects 3D operations and their arguments from the MLLM's question state, and adds their evidence to its option scores. It achieves the highest accuracy of all evaluated models, narrowing the gap to physicians.\n\nРедакційна класифікація: напрям: Медицина; ознаки користі: benchmark, benchmarks, evaluate. Рівень свідчень: дослідження або оцінювання потенційного застосування. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте статус публікації в першоджерелі.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-26",
+    "sources": [
+      {
+        "title": "Clinical3D-Bench: Evaluating and Improving Spatial Intelligence of Multimodal LLMs in Hospital Environments",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2611.32094",
+        "publishedDate": "2026-11-26"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-10-7353459294dc",
+    "date": "2026-11-10",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "UN News — Здоров'я",
+    "feedId": "un-health",
+    "sourceDomain": "un.org",
+    "filterVersion": "2.7",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Перспективний розвиток",
+    "feedKind": "institutional",
+    "sourceDescription": "Ending cholera as a public health threat by 2030 is within reach, as every cholera death can be prevented with tools that already exist, the World Health Organization (WHO) said on Tuesday.",
+    "selectionReason": "напрям: Права людини; ознаки користі: prevent",
+    "evidenceLevel": "перспективне дослідження; практичний ефект ще потрібно перевірити",
+    "category": "Права людини",
+    "title": "World News in Brief: Ending cholera by 2030 ‘within reach’, Haiti displacement and hunger, US human rights review rescheduled",
+    "summary": "Ending cholera as a public health threat by 2030 is within reach, as every cholera death can be prevented with tools that already exist, the World Health Organization (WHO) said on Tuesday.",
+    "body": "Матеріал автоматично відібрано зі стрічки United Nations News. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nEnding cholera as a public health threat by 2030 is within reach, as every cholera death can be prevented with tools that already exist, the World Health Organization (WHO) said on Tuesday.\n\nРедакційна класифікація: напрям: Права людини; ознаки користі: prevent. Рівень свідчень: перспективне дослідження; практичний ефект ще потрібно перевірити. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-10",
+    "sources": [
+      {
+        "title": "World News in Brief: Ending cholera by 2030 ‘within reach’, Haiti displacement and hunger, US human rights review rescheduled",
+        "publisher": "United Nations News",
+        "url": "https://news.un.org/feed/view/en/story/2026/11/1168782",
+        "publishedDate": "2026-11-10"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-05-6c13159755ee",
+    "date": "2026-11-05",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "UN News — Здоров'я",
+    "feedId": "un-health",
+    "sourceDomain": "un.org",
+    "filterVersion": "2.7",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Позитивний вплив",
+    "feedKind": "institutional",
+    "sourceDescription": "Two new Ebola vaccine candidates will be added to a clinical trial in the Democratic Republic of the Congo (DRC) as the country continues to battle a deadly outbreak caused by the Bundibugyo species of the virus.",
+    "selectionReason": "напрям: Медицина; ознаки користі: clinical trial",
+    "evidenceLevel": "практичне застосування або конкретний приклад",
+    "category": "Медицина",
+    "title": "Two new Ebola vaccines to join DR Congo clinical trial",
+    "summary": "Two new Ebola vaccine candidates will be added to a clinical trial in the Democratic Republic of the Congo (DRC) as the country continues to battle a deadly outbreak caused by the Bundibugyo species of the virus.",
+    "body": "Матеріал автоматично відібрано зі стрічки United Nations News. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nTwo new Ebola vaccine candidates will be added to a clinical trial in the Democratic Republic of the Congo (DRC) as the country continues to battle a deadly outbreak caused by the Bundibugyo species of the virus.\n\nРедакційна класифікація: напрям: Медицина; ознаки користі: clinical trial. Рівень свідчень: практичне застосування або конкретний приклад. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-05",
+    "sources": [
+      {
+        "title": "Two new Ebola vaccines to join DR Congo clinical trial",
+        "publisher": "United Nations News",
+        "url": "https://news.un.org/feed/view/en/story/2026/11/1168742",
+        "publishedDate": "2026-11-05"
       }
     ]
   },

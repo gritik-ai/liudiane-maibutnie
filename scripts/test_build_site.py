@@ -194,5 +194,16 @@ class BuildSiteSeoTests(unittest.TestCase):
         self.assertIn(SITE_URL + "/articles/page/2/", outputs["sitemap.xml"])
 
 
+
+    def test_archive_supports_global_search_category_filter_and_sorting(self):
+        rows = [self.sample(id=f"search-{i}", title=f"Пошук матеріал {i}") for i in range(2)]
+        page = render_archive_page(rows, 1, 1)
+        self.assertIn('id="archiveSearch"', page)
+        self.assertIn('id="archiveCategory"', page)
+        self.assertIn('id="archiveSort"', page)
+        self.assertIn("archiveData=data.filter", page)
+        self.assertIn("Найстаріші спочатку", page)
+        self.assertIn("За назвою", page)
+
 if __name__ == "__main__":
     unittest.main()

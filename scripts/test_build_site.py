@@ -54,7 +54,7 @@ class BuildSiteSeoTests(unittest.TestCase):
     def test_slug_is_ascii_readable_and_stable(self):
         article = self.sample()
         slug = article_slug(article)
-        self.assertTrue(slug.startswith("shtuchnyi-intelekt-dopomahaie-osviti-"))
+        self.assertTrue(slug.startswith("shtuchnyi-intelekt-dopomahaye-osviti-"))
         self.assertTrue(slug.endswith("abcdef123456"))
         self.assertRegex(slug, r"^[a-z0-9-]+$")
         self.assertEqual(slug, article_slug(article))

@@ -1,575 +1,5 @@
 [
   {
-    "id": "rss-2026-11-03-569ac5e68f43",
-    "date": "2026-11-03",
-    "autoPublished": true,
-    "sourceType": "rss",
-    "feedName": "Європейська Комісія — Клімат",
-    "feedId": "eu-clima-news",
-    "sourceDomain": "europa.eu",
-    "filterVersion": "2.6",
-    "editorialStatus": "approved",
-    "editorialDecisionSource": "automatic",
-    "editorialLabel": "Перспективний розвиток",
-    "feedKind": "institutional",
-    "sourceDescription": "Against a backdrop of rising energy costs and growing climate risks, hundreds of mayors gathered in Brussels for the annual EU Covenant of Mayors Ceremony for a discussion with European leaders about how to make energy more affordable, strengthen resilience, and protect people's quality of life across Europe.",
-    "selectionReason": "напрям: Екологія; ознаки користі: protect",
-    "evidenceLevel": "перспективне дослідження; практичний ефект ще потрібно перевірити",
-    "category": "Екологія",
-    "title": "Mayors meet with EU leaders in Brussels to advance affordable energy and climate resilience",
-    "summary": "Against a backdrop of rising energy costs and growing climate risks, hundreds of mayors gathered in Brussels for the annual EU Covenant of Mayors Ceremony for a discussion with European leaders about how to make energy more affordable, strengthen resilience, and protect people's quality of life across Europe.",
-    "body": "Матеріал автоматично відібрано зі стрічки European Commission — Climate Action. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nAgainst a backdrop of rising energy costs and growing climate risks, hundreds of mayors gathered in Brussels for the annual EU Covenant of Mayors Ceremony for a discussion with European leaders about how to make energy more affordable, strengthen resilience, and protect people's quality of life across Europe.\n\nРедакційна класифікація: напрям: Екологія; ознаки користі: protect. Рівень свідчень: перспективне дослідження; практичний ефект ще потрібно перевірити. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
-    "sourceDate": "2026-11-03",
-    "sources": [
-      {
-        "title": "Mayors meet with EU leaders in Brussels to advance affordable energy and climate resilience",
-        "publisher": "European Commission — Climate Action",
-        "url": "https://eu-mayors.ec.europa.eu/en/news/mayors-meet-eu-leaders-brussels-advance-affordable-energy-and-climate-resilience",
-        "publishedDate": "2026-11-03"
-      }
-    ]
-  },
-  {
-    "id": "rss-2026-11-03-5a28471070ac",
-    "date": "2026-11-03",
-    "autoPublished": true,
-    "sourceType": "rss",
-    "feedName": "Європейська Комісія — Клімат",
-    "feedId": "eu-clima-news",
-    "sourceDomain": "europa.eu",
-    "filterVersion": "2.6",
-    "editorialStatus": "approved",
-    "editorialDecisionSource": "automatic",
-    "editorialLabel": "Перспективний розвиток",
-    "feedKind": "institutional",
-    "sourceDescription": "The new EU Framework for Climate Resilience strengthens Europe’s ability to anticipate and manage climate risks, protect people and places, and prevent avoidable damage. It introduces a European Climate Resilience Law backed by practical tools to drive a fundamental shift from reacting to disasters to getting ahead of climate impacts and avoiding damages.",
-    "selectionReason": "напрям: Екологія; ознаки користі: prevent, protect",
-    "evidenceLevel": "перспективне дослідження; практичний ефект ще потрібно перевірити",
-    "category": "Екологія",
-    "title": "Commission presents Climate Resilience Framework for a better prepared and protected Europe",
-    "summary": "The new EU Framework for Climate Resilience strengthens Europe’s ability to anticipate and manage climate risks, protect people and places, and prevent avoidable damage. It introduces a European Climate Resilience Law backed by practical tools to drive a fundamental shift from reacting to disasters to getting ahead of climate impacts and avoiding damages.",
-    "body": "Матеріал автоматично відібрано зі стрічки European Commission — Climate Action. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nThe new EU Framework for Climate Resilience strengthens Europe’s ability to anticipate and manage climate risks, protect people and places, and prevent avoidable damage. It introduces a European Climate Resilience Law backed by practical tools to drive a fundamental shift from reacting to disasters to getting ahead of climate impacts and avoiding damages.\n\nРедакційна класифікація: напрям: Екологія; ознаки користі: prevent, protect. Рівень свідчень: перспективне дослідження; практичний ефект ще потрібно перевірити. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
-    "sourceDate": "2026-11-03",
-    "sources": [
-      {
-        "title": "Commission presents Climate Resilience Framework for a better prepared and protected Europe",
-        "publisher": "European Commission — Climate Action",
-        "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2244",
-        "publishedDate": "2026-11-03"
-      }
-    ]
-  },
-  {
-    "id": "rss-2026-10-28-d87b87feaae0",
-    "date": "2026-10-28",
-    "autoPublished": true,
-    "sourceType": "rss",
-    "feedName": "Європейська Комісія — Довкілля",
-    "feedId": "eu-env-news",
-    "sourceDomain": "europa.eu",
-    "filterVersion": "2.6",
-    "editorialStatus": "approved",
-    "editorialDecisionSource": "automatic",
-    "editorialLabel": "Перспективний розвиток",
-    "feedKind": "institutional",
-    "sourceDescription": "Germany became the first country to conclude structured EU water dialogues, signing a joint statement to upgrade treatment plants, tackle pollution, and boost climate resilience. Click for more.",
-    "selectionReason": "напрям: Екологія; ознаки користі: treatment",
-    "evidenceLevel": "перспективне дослідження; практичний ефект ще потрібно перевірити",
-    "category": "Екологія",
-    "title": "Stronger enforcement: Part 1",
-    "summary": "Germany became the first country to conclude structured EU water dialogues, signing a joint statement to upgrade treatment plants, tackle pollution, and boost climate resilience. Click for more.",
-    "body": "Матеріал автоматично відібрано зі стрічки European Commission — Environment. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nGermany became the first country to conclude structured EU water dialogues, signing a joint statement to upgrade treatment plants, tackle pollution, and boost climate resilience. Click for more.\n\nРедакційна класифікація: напрям: Екологія; ознаки користі: treatment. Рівень свідчень: перспективне дослідження; практичний ефект ще потрібно перевірити. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
-    "sourceDate": "2026-10-28",
-    "sources": [
-      {
-        "title": "Stronger enforcement: Part 1",
-        "publisher": "European Commission — Environment",
-        "url": "https://environment.ec.europa.eu/news/roswall-schneider-commit-stronger-eu-water-enforcement-2026-10-05_en",
-        "publishedDate": "2026-10-28"
-      }
-    ]
-  },
-  {
-    "id": "rss-2026-11-18-4e397e28fbf2",
-    "date": "2026-11-18",
-    "autoPublished": true,
-    "sourceType": "rss",
-    "feedName": "Європейська Комісія — Довкілля",
-    "feedId": "eu-env-news",
-    "sourceDomain": "europa.eu",
-    "filterVersion": "2.6",
-    "editorialStatus": "approved",
-    "editorialDecisionSource": "automatic",
-    "editorialLabel": "Перспективний розвиток",
-    "feedKind": "institutional",
-    "sourceDescription": "New Commission reports on River Basin and Flood Risk Management Plans now cover eight more Member States and reports on Marine Programmes of Measures cover five more. They confirm that pollution, especially chemical pollution and nutrient pollution from scattered sources, remains one of the biggest obstacles to good water status.",
-    "selectionReason": "напрям: Екологія; ознаки користі: measure",
-    "evidenceLevel": "дослідження або оцінювання потенційного застосування",
-    "category": "Екологія",
-    "title": "State of EU waters: pollution remains a major obstacle",
-    "summary": "New Commission reports on River Basin and Flood Risk Management Plans now cover eight more Member States and reports on Marine Programmes of Measures cover five more. They confirm that pollution, especially chemical pollution and nutrient pollution from scattered sources, remains one of the biggest obstacles to good water status.",
-    "body": "Матеріал автоматично відібрано зі стрічки European Commission — Environment. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nNew Commission reports on River Basin and Flood Risk Management Plans now cover eight more Member States and reports on Marine Programmes of Measures cover five more. They confirm that pollution, especially chemical pollution and nutrient pollution from scattered sources, remains one of the biggest obstacles to good water status.\n\nРедакційна класифікація: напрям: Екологія; ознаки користі: measure. Рівень свідчень: дослідження або оцінювання потенційного застосування. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
-    "sourceDate": "2026-11-18",
-    "sources": [
-      {
-        "title": "State of EU waters: pollution remains a major obstacle",
-        "publisher": "European Commission — Environment",
-        "url": "https://environment.ec.europa.eu/news/eu-source-sea-reports-urge-pollution-resilience-action-2026-10-05_en",
-        "publishedDate": "2026-11-18"
-      }
-    ]
-  },
-  {
-    "id": "rss-2026-11-11-28046d614082",
-    "date": "2026-11-11",
-    "autoPublished": true,
-    "sourceType": "rss",
-    "feedName": "UN News — Клімат і довкілля",
-    "feedId": "un-climate",
-    "sourceDomain": "un.org",
-    "filterVersion": "2.6",
-    "editorialStatus": "approved",
-    "editorialDecisionSource": "automatic",
-    "editorialLabel": "Перспективний розвиток",
-    "feedKind": "institutional",
-    "sourceDescription": "Early warning systems are saving lives across the globe, but for millions of people the warning never arrives, UN Secretary-General António Guterres said on Wednesday, urging the world to protect every person on Earth by the end of 2027.",
-    "selectionReason": "напрям: Мир і безпека; ознаки користі: early warning, warning system, protect",
-    "evidenceLevel": "перспективне дослідження; практичний ефект ще потрібно перевірити",
-    "category": "Мир і безпека",
-    "title": "From Japan to Rwanda, early warnings are saving lives – but millions remain unprotected",
-    "summary": "Early warning systems are saving lives across the globe, but for millions of people the warning never arrives, UN Secretary-General António Guterres said on Wednesday, urging the world to protect every person on Earth by the end of 2027.",
-    "body": "Матеріал автоматично відібрано зі стрічки United Nations News. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nEarly warning systems are saving lives across the globe, but for millions of people the warning never arrives, UN Secretary-General António Guterres said on Wednesday, urging the world to protect every person on Earth by the end of 2027.\n\nРедакційна класифікація: напрям: Мир і безпека; ознаки користі: early warning, warning system, protect. Рівень свідчень: перспективне дослідження; практичний ефект ще потрібно перевірити. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
-    "sourceDate": "2026-11-11",
-    "sources": [
-      {
-        "title": "From Japan to Rwanda, early warnings are saving lives – but millions remain unprotected",
-        "publisher": "United Nations News",
-        "url": "https://news.un.org/feed/view/en/story/2026/11/1168787",
-        "publishedDate": "2026-11-11"
-      }
-    ]
-  },
-  {
-    "id": "rss-2026-11-11-59dc55a43db6",
-    "date": "2026-11-11",
-    "autoPublished": true,
-    "sourceType": "rss",
-    "feedName": "UN News — Гуманітарна допомога",
-    "feedId": "un-humanitarian",
-    "sourceDomain": "un.org",
-    "filterVersion": "2.6",
-    "editorialStatus": "approved",
-    "editorialDecisionSource": "automatic",
-    "editorialLabel": "Перспективний розвиток",
-    "feedKind": "institutional",
-    "sourceDescription": "The UN’s Emergency Relief Coordinator, Tom Fletcher, expressed deep concern about the deteriorating humanitarian situation in Gaza, as UN member states and partners have been repeatedly delaying sending their support to the Strip.",
-    "selectionReason": "напрям: Державне управління; ознаки користі: support",
-    "evidenceLevel": "перспективне дослідження; практичний ефект ще потрібно перевірити",
-    "category": "Державне управління",
-    "title": "Gaza winter aid: ‘No more delay’, Fletcher tells governments stalling on support",
-    "summary": "The UN’s Emergency Relief Coordinator, Tom Fletcher, expressed deep concern about the deteriorating humanitarian situation in Gaza, as UN member states and partners have been repeatedly delaying sending their support to the Strip.",
-    "body": "Матеріал автоматично відібрано зі стрічки United Nations News. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nThe UN’s Emergency Relief Coordinator, Tom Fletcher, expressed deep concern about the deteriorating humanitarian situation in Gaza, as UN member states and partners have been repeatedly delaying sending their support to the Strip.\n\nРедакційна класифікація: напрям: Державне управління; ознаки користі: support. Рівень свідчень: перспективне дослідження; практичний ефект ще потрібно перевірити. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
-    "sourceDate": "2026-11-11",
-    "sources": [
-      {
-        "title": "Gaza winter aid: ‘No more delay’, Fletcher tells governments stalling on support",
-        "publisher": "United Nations News",
-        "url": "https://news.un.org/feed/view/en/story/2026/11/1168788",
-        "publishedDate": "2026-11-11"
-      }
-    ]
-  },
-  {
-    "id": "rss-2026-11-09-901504da9b55",
-    "date": "2026-11-09",
-    "autoPublished": true,
-    "sourceType": "rss",
-    "feedName": "UN News — Клімат і довкілля",
-    "feedId": "un-climate",
-    "sourceDomain": "un.org",
-    "filterVersion": "2.6",
-    "editorialStatus": "approved",
-    "editorialDecisionSource": "automatic",
-    "editorialLabel": "Перспективний розвиток",
-    "feedKind": "institutional",
-    "sourceDescription": "Nearly 200 countries have arrived on Türkiye's Mediterranean coast for a climate summit with a different ambition: fewer grand declarations and more concrete decisions. With a powerful El Niño threatening to worsen extreme weather, negotiators face difficult questions over climate finance, clean energy and how to protect communities already living with the consequences of climate change.",
-    "selectionReason": "напрям: Екологія; ознаки користі: protect",
-    "evidenceLevel": "перспективне дослідження; практичний ефект ще потрібно перевірити",
-    "category": "Екологія",
-    "title": "COP31 opens in Antalya: Can climate promises finally deliver results?",
-    "summary": "Nearly 200 countries have arrived on Türkiye's Mediterranean coast for a climate summit with a different ambition: fewer grand declarations and more concrete decisions. With a powerful El Niño threatening to worsen extreme weather, negotiators face difficult questions over climate finance, clean energy and how to protect communities already living with the…",
-    "body": "Матеріал автоматично відібрано зі стрічки United Nations News. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nNearly 200 countries have arrived on Türkiye's Mediterranean coast for a climate summit with a different ambition: fewer grand declarations and more concrete decisions. With a powerful El Niño threatening to worsen extreme weather, negotiators face difficult questions over climate finance, clean energy and how to protect communities already living with the consequences of climate change.\n\nРедакційна класифікація: напрям: Екологія; ознаки користі: protect. Рівень свідчень: перспективне дослідження; практичний ефект ще потрібно перевірити. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
-    "sourceDate": "2026-11-09",
-    "sources": [
-      {
-        "title": "COP31 opens in Antalya: Can climate promises finally deliver results?",
-        "publisher": "United Nations News",
-        "url": "https://news.un.org/feed/view/en/story/2026/11/1168763",
-        "publishedDate": "2026-11-09"
-      }
-    ]
-  },
-  {
-    "id": "rss-2026-11-06-d6807c3bb3bd",
-    "date": "2026-11-06",
-    "autoPublished": true,
-    "sourceType": "rss",
-    "feedName": "Європейська Комісія — Довкілля",
-    "feedId": "eu-env-news",
-    "sourceDomain": "europa.eu",
-    "filterVersion": "2.6",
-    "editorialStatus": "approved",
-    "editorialDecisionSource": "automatic",
-    "editorialLabel": "Перспективний розвиток",
-    "feedKind": "institutional",
-    "sourceDescription": "Missed our recent webinars? Catch up on three sessions exploring how businesses can better measure their impacts on marine biodiversity, translate biodiversity into practical business action, and understand the EU’s priorities ahead of COP17.",
-    "selectionReason": "напрям: Екологія; ознаки користі: measure",
-    "evidenceLevel": "дослідження або оцінювання потенційного застосування",
-    "category": "Екологія",
-    "title": "Catch up on the Platform's latest webinars: from the marine environment to biodiversity basics for companies to the EU's COP priorities.",
-    "summary": "Missed our recent webinars? Catch up on three sessions exploring how businesses can better measure their impacts on marine biodiversity, translate biodiversity into practical business action, and understand the EU’s priorities ahead of COP17.",
-    "body": "Матеріал автоматично відібрано зі стрічки European Commission — Environment. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nMissed our recent webinars? Catch up on three sessions exploring how businesses can better measure their impacts on marine biodiversity, translate biodiversity into practical business action, and understand the EU’s priorities ahead of COP17.\n\nРедакційна класифікація: напрям: Екологія; ознаки користі: measure. Рівень свідчень: дослідження або оцінювання потенційного застосування. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
-    "sourceDate": "2026-11-06",
-    "sources": [
-      {
-        "title": "Catch up on the Platform's latest webinars: from the marine environment to biodiversity basics for companies to the EU's COP priorities.",
-        "publisher": "European Commission — Environment",
-        "url": "https://ec.europa.eu/newsroom/env/redirection/item/964652/en",
-        "publishedDate": "2026-11-06"
-      }
-    ]
-  },
-  {
-    "id": "rss-2026-11-06-2ac8077b648f",
-    "date": "2026-11-06",
-    "autoPublished": true,
-    "sourceType": "rss",
-    "feedName": "Європейська Комісія — Довкілля",
-    "feedId": "eu-env-news",
-    "sourceDomain": "europa.eu",
-    "filterVersion": "2.6",
-    "editorialStatus": "approved",
-    "editorialDecisionSource": "automatic",
-    "editorialLabel": "Перспективний розвиток",
-    "feedKind": "institutional",
-    "sourceDescription": "How are businesses across Europe being supported to turn biodiversity commitments into action? Discover the new Overview Report of Business and Biodiversity Initiatives in Europe and explore the growing landscape of platforms, networks and coalitions supporting business action for nature.",
-    "selectionReason": "напрям: Екологія; ознаки користі: support",
-    "evidenceLevel": "перспективне дослідження; практичний ефект ще потрібно перевірити",
-    "category": "Екологія",
-    "title": "Launch of the Overview Report of Business and Biodiversity Initiatives in Europe",
-    "summary": "How are businesses across Europe being supported to turn biodiversity commitments into action? Discover the new Overview Report of Business and Biodiversity Initiatives in Europe and explore the growing landscape of platforms, networks and coalitions supporting business action for nature.",
-    "body": "Матеріал автоматично відібрано зі стрічки European Commission — Environment. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nHow are businesses across Europe being supported to turn biodiversity commitments into action? Discover the new Overview Report of Business and Biodiversity Initiatives in Europe and explore the growing landscape of platforms, networks and coalitions supporting business action for nature.\n\nРедакційна класифікація: напрям: Екологія; ознаки користі: support. Рівень свідчень: перспективне дослідження; практичний ефект ще потрібно перевірити. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
-    "sourceDate": "2026-11-06",
-    "sources": [
-      {
-        "title": "Launch of the Overview Report of Business and Biodiversity Initiatives in Europe",
-        "publisher": "European Commission — Environment",
-        "url": "https://ec.europa.eu/newsroom/env/redirection/item/964642/en",
-        "publishedDate": "2026-11-06"
-      }
-    ]
-  },
-  {
-    "id": "rss-2026-11-22-180a5dc2f3a5",
-    "date": "2026-11-22",
-    "autoPublished": true,
-    "sourceType": "rss",
-    "feedName": "UN News — Клімат і довкілля",
-    "feedId": "un-climate",
-    "sourceDomain": "un.org",
-    "filterVersion": "2.6",
-    "editorialStatus": "approved",
-    "editorialDecisionSource": "automatic",
-    "editorialLabel": "Перспективний розвиток",
-    "feedKind": "institutional",
-    "sourceDescription": "Secretary-General António Guterres on Sunday expressed deep disappointment over the collapse of COP31 climate negotiations, using a visit to Barbados to call for stronger action on fossil fuels, climate finance and support for vulnerable nations.",
-    "selectionReason": "напрям: Екологія; ознаки користі: support",
-    "evidenceLevel": "перспективне дослідження; практичний ефект ще потрібно перевірити",
-    "category": "Екологія",
-    "title": "Guterres laments COP31 outcome, urges climate justice from Barbados",
-    "summary": "Secretary-General António Guterres on Sunday expressed deep disappointment over the collapse of COP31 climate negotiations, using a visit to Barbados to call for stronger action on fossil fuels, climate finance and support for vulnerable nations.",
-    "body": "Матеріал автоматично відібрано зі стрічки United Nations News. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nSecretary-General António Guterres on Sunday expressed deep disappointment over the collapse of COP31 climate negotiations, using a visit to Barbados to call for stronger action on fossil fuels, climate finance and support for vulnerable nations.\n\nРедакційна класифікація: напрям: Екологія; ознаки користі: support. Рівень свідчень: перспективне дослідження; практичний ефект ще потрібно перевірити. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
-    "sourceDate": "2026-11-22",
-    "sources": [
-      {
-        "title": "Guterres laments COP31 outcome, urges climate justice from Barbados",
-        "publisher": "United Nations News",
-        "url": "https://news.un.org/feed/view/en/story/2026/11/1168856",
-        "publishedDate": "2026-11-22"
-      }
-    ]
-  },
-  {
-    "id": "rss-2026-11-18-1cea6c5f99b2",
-    "date": "2026-11-18",
-    "autoPublished": true,
-    "sourceType": "rss",
-    "feedName": "Європейська Комісія — Клімат",
-    "feedId": "eu-clima-news",
-    "sourceDomain": "europa.eu",
-    "filterVersion": "2.6",
-    "editorialStatus": "approved",
-    "editorialDecisionSource": "automatic",
-    "editorialLabel": "Перспективний розвиток",
-    "feedKind": "institutional",
-    "sourceDescription": "Designed to strengthen the capacity of countries in the MENA and Anglophone Africa Transparency Networks to prepare consistent Article 6 information in their BTRs under Article 13, the session links cooperative approaches, corresponding adjustments, and NDC progress tracking, including practical application of the NDC Tracking and Corresponding Adjustment Tool (NDC-CAT).",
-    "selectionReason": "напрям: Екологія; ознаки користі: transparency",
-    "evidenceLevel": "перспективне дослідження; практичний ефект ще потрібно перевірити",
-    "category": "Екологія",
-    "title": "Recording from the Climate Transparency Platform’s webinar on ‘Reporting on Article 6 under Article 13 of the Paris Agreement: From reporting requirements to practical application ",
-    "summary": "Designed to strengthen the capacity of countries in the MENA and Anglophone Africa Transparency Networks to prepare consistent Article 6 information in their BTRs under Article 13, the session links cooperative approaches, corresponding adjustments, and NDC progress tracking, including practical application of the NDC Tracking and Corresponding Adjustment…",
-    "body": "Матеріал автоматично відібрано зі стрічки European Commission — Climate Action. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nDesigned to strengthen the capacity of countries in the MENA and Anglophone Africa Transparency Networks to prepare consistent Article 6 information in their BTRs under Article 13, the session links cooperative approaches, corresponding adjustments, and NDC progress tracking, including practical application of the NDC Tracking and Corresponding Adjustment Tool (NDC-CAT).\n\nРедакційна класифікація: напрям: Екологія; ознаки користі: transparency. Рівень свідчень: перспективне дослідження; практичний ефект ще потрібно перевірити. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
-    "sourceDate": "2026-11-18",
-    "sources": [
-      {
-        "title": "Recording from the Climate Transparency Platform’s webinar on ‘Reporting on Article 6 under Article 13 of the Paris Agreement: From reporting requirements to practical application ",
-        "publisher": "European Commission — Climate Action",
-        "url": "https://ec.europa.eu/newsroom/clima/redirection/item/966633/en",
-        "publishedDate": "2026-11-18"
-      }
-    ]
-  },
-  {
-    "id": "rss-2026-11-18-bd6ecaf6f057",
-    "date": "2026-11-18",
-    "autoPublished": true,
-    "sourceType": "rss",
-    "feedName": "Європейська Комісія — Клімат",
-    "feedId": "eu-clima-news",
-    "sourceDomain": "europa.eu",
-    "filterVersion": "2.6",
-    "editorialStatus": "approved",
-    "editorialDecisionSource": "automatic",
-    "editorialLabel": "Перспективний розвиток",
-    "feedKind": "institutional",
-    "sourceDescription": "The most important transparency reporting milestone this year is the submission of the Second Biennial Transparency Reports (BTR2) under the Paris Agreement Enhanced Transparency Framework (ETF). To support countries preparation for the 31 December, end of year deadline, RE-CONNECT has compiled links to the latest guidance, workshop recordings and technical resources from across the climate transparency community. Explore the resources in this newsletter to catch up on everything you need to know ahead of December’s deadline. The RE-CONNECT newsletter provides regular updates on recent developments in the global climate modelling community and is distributed every other month under the RE-CONNECT project.",
-    "selectionReason": "напрям: Екологія; ознаки користі: support, transparency",
-    "evidenceLevel": "перспективне дослідження; практичний ефект ще потрібно перевірити",
-    "category": "Екологія",
-    "title": "Welcome to the RE-CONNECT Climate Change Modelling Information Newsletter.",
-    "summary": "The most important transparency reporting milestone this year is the submission of the Second Biennial Transparency Reports (BTR2) under the Paris Agreement Enhanced Transparency Framework (ETF). To support countries preparation for the 31 December, end of year deadline, RE-CONNECT has compiled links to the latest guidance, workshop recordings and…",
-    "body": "Матеріал автоматично відібрано зі стрічки European Commission — Climate Action. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nThe most important transparency reporting milestone this year is the submission of the Second Biennial Transparency Reports (BTR2) under the Paris Agreement Enhanced Transparency Framework (ETF). To support countries preparation for the 31 December, end of year deadline, RE-CONNECT has compiled links to the latest guidance, workshop recordings and technical resources from across the climate transparency community. Explore the resources in this newsletter to catch up on everything you need to know ahead of December’s deadline. The RE-CONNECT newsletter provides regular updates on recent developments in the global climate modelling community and is distributed every other month under the RE-CONNECT project.\n\nРедакційна класифікація: напрям: Екологія; ознаки користі: support, transparency. Рівень свідчень: перспективне дослідження; практичний ефект ще потрібно перевірити. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
-    "sourceDate": "2026-11-18",
-    "sources": [
-      {
-        "title": "Welcome to the RE-CONNECT Climate Change Modelling Information Newsletter.",
-        "publisher": "European Commission — Climate Action",
-        "url": "https://ec.europa.eu/newsroom/clima/redirection/item/966629/en",
-        "publishedDate": "2026-11-18"
-      }
-    ]
-  },
-  {
-    "id": "rss-2026-11-18-8b22e0294d4e",
-    "date": "2026-11-18",
-    "autoPublished": true,
-    "sourceType": "rss",
-    "feedName": "Європейська Комісія — Довкілля",
-    "feedId": "eu-env-news",
-    "sourceDomain": "europa.eu",
-    "filterVersion": "2.6",
-    "editorialStatus": "approved",
-    "editorialDecisionSource": "automatic",
-    "editorialLabel": "Перспективний розвиток",
-    "feedKind": "institutional",
-    "sourceDescription": "The Commission's evaluation of the Nitrates Directive, which protects waters from nitrate pollution from agriculture, concludes that the law remains effective. It also finds scope for smarter implementation.",
-    "selectionReason": "напрям: Екологія; ознаки користі: evaluation, protect",
-    "evidenceLevel": "дослідження або оцінювання потенційного застосування",
-    "category": "Екологія",
-    "title": "EU law on nitrates pollution remains effective, with scope for smarter implementation",
-    "summary": "The Commission's evaluation of the Nitrates Directive, which protects waters from nitrate pollution from agriculture, concludes that the law remains effective. It also finds scope for smarter implementation.",
-    "body": "Матеріал автоматично відібрано зі стрічки European Commission — Environment. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nThe Commission's evaluation of the Nitrates Directive, which protects waters from nitrate pollution from agriculture, concludes that the law remains effective. It also finds scope for smarter implementation.\n\nРедакційна класифікація: напрям: Екологія; ознаки користі: evaluation, protect. Рівень свідчень: дослідження або оцінювання потенційного застосування. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
-    "sourceDate": "2026-11-18",
-    "sources": [
-      {
-        "title": "EU law on nitrates pollution remains effective, with scope for smarter implementation",
-        "publisher": "European Commission — Environment",
-        "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1594",
-        "publishedDate": "2026-11-18"
-      }
-    ]
-  },
-  {
-    "id": "rss-2026-11-13-caa6051ad9a7",
-    "date": "2026-11-13",
-    "autoPublished": true,
-    "sourceType": "rss",
-    "feedName": "UN News — Клімат і довкілля",
-    "feedId": "un-climate",
-    "sourceDomain": "un.org",
-    "filterVersion": "2.6",
-    "editorialStatus": "approved",
-    "editorialDecisionSource": "automatic",
-    "editorialLabel": "Перспективний розвиток",
-    "feedKind": "institutional",
-    "sourceDescription": "New guidance has been issued to ensure that people everywhere can obtain credible climate change information from artificial intelligence (AI) and understand how the technology impacts the environment.",
-    "selectionReason": "напрям: Екологія; ознаки користі: reliable",
-    "evidenceLevel": "перспективне дослідження; практичний ефект ще потрібно перевірити",
-    "category": "Екологія",
-    "title": "COP31: New initiative targets AI and reliable climate change information",
-    "summary": "New guidance has been issued to ensure that people everywhere can obtain credible climate change information from artificial intelligence (AI) and understand how the technology impacts the environment.",
-    "body": "Матеріал автоматично відібрано зі стрічки United Nations News. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nNew guidance has been issued to ensure that people everywhere can obtain credible climate change information from artificial intelligence (AI) and understand how the technology impacts the environment.\n\nРедакційна класифікація: напрям: Екологія; ознаки користі: reliable. Рівень свідчень: перспективне дослідження; практичний ефект ще потрібно перевірити. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
-    "sourceDate": "2026-11-13",
-    "sources": [
-      {
-        "title": "COP31: New initiative targets AI and reliable climate change information",
-        "publisher": "United Nations News",
-        "url": "https://news.un.org/feed/view/en/story/2026/11/1168798",
-        "publishedDate": "2026-11-13"
-      }
-    ]
-  },
-  {
-    "id": "rss-2026-11-12-4d5f93737abb",
-    "date": "2026-11-12",
-    "autoPublished": true,
-    "sourceType": "rss",
-    "feedName": "UN News — Клімат і довкілля",
-    "feedId": "un-climate",
-    "sourceDomain": "un.org",
-    "filterVersion": "2.6",
-    "editorialStatus": "approved",
-    "editorialDecisionSource": "automatic",
-    "editorialLabel": "Перспективний розвиток",
-    "feedKind": "institutional",
-    "sourceDescription": "From flooded homes to melting Himalayan glaciers, the human cost of climate change took centre stage at COP31 on Thursday, as world leaders turned their attention to protecting cities and vulnerable communities, while activists challenged governments to do more.",
-    "selectionReason": "напрям: Екологія; ознаки користі: protect",
-    "evidenceLevel": "перспективне дослідження; практичний ефект ще потрібно перевірити",
-    "category": "Екологія",
-    "title": "COP31: Cities rise up the climate agenda as leaders face demands for action",
-    "summary": "From flooded homes to melting Himalayan glaciers, the human cost of climate change took centre stage at COP31 on Thursday, as world leaders turned their attention to protecting cities and vulnerable communities, while activists challenged governments to do more.",
-    "body": "Матеріал автоматично відібрано зі стрічки United Nations News. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nFrom flooded homes to melting Himalayan glaciers, the human cost of climate change took centre stage at COP31 on Thursday, as world leaders turned their attention to protecting cities and vulnerable communities, while activists challenged governments to do more.\n\nРедакційна класифікація: напрям: Екологія; ознаки користі: protect. Рівень свідчень: перспективне дослідження; практичний ефект ще потрібно перевірити. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
-    "sourceDate": "2026-11-12",
-    "sources": [
-      {
-        "title": "COP31: Cities rise up the climate agenda as leaders face demands for action",
-        "publisher": "United Nations News",
-        "url": "https://news.un.org/feed/view/en/story/2026/11/1168792",
-        "publishedDate": "2026-11-12"
-      }
-    ]
-  },
-  {
-    "id": "rss-2026-11-11-141fabfb5397",
-    "date": "2026-11-11",
-    "autoPublished": true,
-    "sourceType": "rss",
-    "feedName": "ECDC — Новини та пресрелізи",
-    "feedId": "ecdc-news",
-    "sourceDomain": "ecdc.europa.eu",
-    "filterVersion": "2.6",
-    "editorialStatus": "approved",
-    "editorialDecisionSource": "automatic",
-    "editorialLabel": "Перспективний розвиток",
-    "feedKind": "institutional",
-    "sourceDescription": "Next year’s rollout of Epi+, a multilingual event-based surveillance platform designed to help countries detect and assess emerging public health threats, is coming closer as ECDC and Italy’s Istituto Superiore di Sanità (ISS) hold training this week for 40 national epidemiologists and technical experts in Rome.",
-    "selectionReason": "напрям: Медицина; ознаки користі: detect",
-    "evidenceLevel": "перспективне дослідження; практичний ефект ще потрібно перевірити",
-    "category": "Медицина",
-    "title": "Preparations continue for rollout of new public health surveillance platform in nine pilot countries",
-    "summary": "Next year’s rollout of Epi+, a multilingual event-based surveillance platform designed to help countries detect and assess emerging public health threats, is coming closer as ECDC and Italy’s Istituto Superiore di Sanità (ISS) hold training this week for 40 national epidemiologists and technical experts in Rome.",
-    "body": "Матеріал автоматично відібрано зі стрічки European Centre for Disease Prevention and Control (ECDC). Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nNext year’s rollout of Epi+, a multilingual event-based surveillance platform designed to help countries detect and assess emerging public health threats, is coming closer as ECDC and Italy’s Istituto Superiore di Sanità (ISS) hold training this week for 40 national epidemiologists and technical experts in Rome.\n\nРедакційна класифікація: напрям: Медицина; ознаки користі: detect. Рівень свідчень: перспективне дослідження; практичний ефект ще потрібно перевірити. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
-    "sourceDate": "2026-11-11",
-    "sources": [
-      {
-        "title": "Preparations continue for rollout of new public health surveillance platform in nine pilot countries",
-        "publisher": "European Centre for Disease Prevention and Control (ECDC)",
-        "url": "https://www.ecdc.europa.eu/en/news-events/preparations-continue-rollout-new-public-health-surveillance-platform-nine-pilot",
-        "publishedDate": "2026-11-11"
-      }
-    ]
-  },
-  {
-    "id": "rss-2026-10-29-f67054236da2",
-    "date": "2026-10-29",
-    "autoPublished": true,
-    "sourceType": "rss",
-    "feedName": "ECDC — Новини та пресрелізи",
-    "feedId": "ecdc-news",
-    "sourceDomain": "ecdc.europa.eu",
-    "filterVersion": "2.6",
-    "editorialStatus": "approved",
-    "editorialDecisionSource": "automatic",
-    "editorialLabel": "Перспективний розвиток",
-    "feedKind": "institutional",
-    "sourceDescription": "The first cycle of Public Health Emergency Preparedness Assessments (PHEPAs) coordinated by the European Centre for Disease Prevention and Control (ECDC) has shown a strong commitment to emergency preparedness across Europe, with a number of common challenges remaining.",
-    "selectionReason": "напрям: Медицина; ознаки користі: prevention, prevent",
-    "evidenceLevel": "дослідження або оцінювання потенційного застосування",
-    "category": "Медицина",
-    "title": "First public health emergency preparedness assessments across Europe show both commitment and recurring challenges",
-    "summary": "The first cycle of Public Health Emergency Preparedness Assessments (PHEPAs) coordinated by the European Centre for Disease Prevention and Control (ECDC) has shown a strong commitment to emergency preparedness across Europe, with a number of common challenges remaining.",
-    "body": "Матеріал автоматично відібрано зі стрічки European Centre for Disease Prevention and Control (ECDC). Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nThe first cycle of Public Health Emergency Preparedness Assessments (PHEPAs) coordinated by the European Centre for Disease Prevention and Control (ECDC) has shown a strong commitment to emergency preparedness across Europe, with a number of common challenges remaining.\n\nРедакційна класифікація: напрям: Медицина; ознаки користі: prevention, prevent. Рівень свідчень: дослідження або оцінювання потенційного застосування. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
-    "sourceDate": "2026-10-29",
-    "sources": [
-      {
-        "title": "First public health emergency preparedness assessments across Europe show both commitment and recurring challenges",
-        "publisher": "European Centre for Disease Prevention and Control (ECDC)",
-        "url": "https://www.ecdc.europa.eu/en/news-events/first-public-health-emergency-preparedness-assessments-across-europe-show-both",
-        "publishedDate": "2026-10-29"
-      }
-    ]
-  },
-  {
-    "id": "rss-2026-10-28-bfdd8633fe17",
-    "date": "2026-10-28",
-    "autoPublished": true,
-    "sourceType": "rss",
-    "feedName": "ECDC — Новини та пресрелізи",
-    "feedId": "ecdc-news",
-    "sourceDomain": "ecdc.europa.eu",
-    "filterVersion": "2.6",
-    "editorialStatus": "approved",
-    "editorialDecisionSource": "automatic",
-    "editorialLabel": "Перспективний розвиток",
-    "feedKind": "institutional",
-    "sourceDescription": "As the season for respiratory syncytial virus (RSV) and other respiratory diseases approaches, a new report from the European Centre for Disease Prevention and Control (ECDC) indicates that universal immunisation of newborns against RSV could substantially reduce hospitalisations among infants linked to the disease during the winter season.",
-    "selectionReason": "напрям: Медицина; ознаки користі: prevention, reduce, prevent",
-    "evidenceLevel": "перспективне дослідження; практичний ефект ще потрібно перевірити",
-    "category": "Медицина",
-    "title": "As the cold season nears, universal immunisation of newborns against RSV could significantly reduce infant hospitalisations across Europe",
-    "summary": "As the season for respiratory syncytial virus (RSV) and other respiratory diseases approaches, a new report from the European Centre for Disease Prevention and Control (ECDC) indicates that universal immunisation of newborns against RSV could substantially reduce hospitalisations among infants linked to the disease during the winter season.",
-    "body": "Матеріал автоматично відібрано зі стрічки European Centre for Disease Prevention and Control (ECDC). Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nAs the season for respiratory syncytial virus (RSV) and other respiratory diseases approaches, a new report from the European Centre for Disease Prevention and Control (ECDC) indicates that universal immunisation of newborns against RSV could substantially reduce hospitalisations among infants linked to the disease during the winter season.\n\nРедакційна класифікація: напрям: Медицина; ознаки користі: prevention, reduce, prevent. Рівень свідчень: перспективне дослідження; практичний ефект ще потрібно перевірити. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
-    "sourceDate": "2026-10-28",
-    "sources": [
-      {
-        "title": "As the cold season nears, universal immunisation of newborns against RSV could significantly reduce infant hospitalisations across Europe",
-        "publisher": "European Centre for Disease Prevention and Control (ECDC)",
-        "url": "https://www.ecdc.europa.eu/en/news-events/cold-season-nears-universal-immunisation-newborns-against-rsv-could-significantly",
-        "publishedDate": "2026-10-28"
-      }
-    ]
-  },
-  {
-    "id": "rss-2026-10-05-a6ddd16dc683",
-    "date": "2026-10-05",
-    "autoPublished": true,
-    "sourceType": "rss",
-    "feedName": "Copernicus — Новини та оновлення",
-    "feedId": "copernicus-general",
-    "sourceDomain": "copernicus.eu",
-    "filterVersion": "2.6",
-    "editorialStatus": "approved",
-    "editorialDecisionSource": "automatic",
-    "editorialLabel": "Позитивний вплив",
-    "feedKind": "institutional",
-    "sourceDescription": "The openEO Agent: Questions turn to Earth Observation Workflow",
-    "selectionReason": "напрям: Наука і технології; ознаки користі: observation, earth observation, workflow",
-    "evidenceLevel": "практичне застосування або конкретний приклад",
-    "category": "Наука і технології",
-    "title": "The openEO Agent: Questions turn to Earth Observation Workflow",
-    "summary": "The openEO Agent: Questions turn to Earth Observation Workflow",
-    "body": "Матеріал автоматично відібрано зі стрічки Copernicus Data Space Ecosystem. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nThe openEO Agent: Questions turn to Earth Observation Workflow\n\nРедакційна класифікація: напрям: Наука і технології; ознаки користі: observation, earth observation, workflow. Рівень свідчень: практичне застосування або конкретний приклад. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
-    "sourceDate": "2026-10-05",
-    "sources": [
-      {
-        "title": "The openEO Agent: Questions turn to Earth Observation Workflow",
-        "publisher": "Copernicus Data Space Ecosystem",
-        "url": "https://dataspace.copernicus.eu/news/2026-10-5-openeo-agent-questions-turn-earth-observation-workflow",
-        "publishedDate": "2026-10-05"
-      }
-    ]
-  },
-  {
     "id": "rss-2026-11-23-0fe151efe7bc",
     "date": "2026-11-23",
     "autoPublished": true,
@@ -720,92 +150,32 @@
     ]
   },
   {
-    "id": "rss-2026-10-19-820876c7f3cb",
-    "date": "2026-10-19",
+    "id": "rss-2026-11-22-180a5dc2f3a5",
+    "date": "2026-11-22",
     "autoPublished": true,
     "sourceType": "rss",
-    "feedName": "MIT News — Здоров'я і медицина",
-    "feedId": "mit-health",
-    "sourceDomain": "mit.edu",
+    "feedName": "UN News — Клімат і довкілля",
+    "feedId": "un-climate",
+    "sourceDomain": "un.org",
     "filterVersion": "2.6",
     "editorialStatus": "approved",
     "editorialDecisionSource": "automatic",
     "editorialLabel": "Перспективний розвиток",
-    "feedKind": "domain_topic",
-    "sourceDescription": "A model developed by researchers at MIT and Boston Children's Hospital adjusts scans on the fly to track fetal movement, potentially sparing families repeat hospital visits.",
-    "selectionReason": "напрям: Медицина; ознаки користі: reliable",
+    "feedKind": "institutional",
+    "sourceDescription": "Secretary-General António Guterres on Sunday expressed deep disappointment over the collapse of COP31 climate negotiations, using a visit to Barbados to call for stronger action on fossil fuels, climate finance and support for vulnerable nations.",
+    "selectionReason": "напрям: Екологія; ознаки користі: support",
     "evidenceLevel": "перспективне дослідження; практичний ефект ще потрібно перевірити",
-    "category": "Медицина",
-    "title": "Why teaching AI about symmetry could make prenatal diagnosis more reliable",
-    "summary": "A model developed by researchers at MIT and Boston Children's Hospital adjusts scans on the fly to track fetal movement, potentially sparing families repeat hospital visits.",
-    "body": "Матеріал автоматично відібрано зі стрічки MIT News. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nA model developed by researchers at MIT and Boston Children's Hospital adjusts scans on the fly to track fetal movement, potentially sparing families repeat hospital visits.\n\nРедакційна класифікація: напрям: Медицина; ознаки користі: reliable. Рівень свідчень: перспективне дослідження; практичний ефект ще потрібно перевірити. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
-    "sourceDate": "2026-10-19",
+    "category": "Екологія",
+    "title": "Guterres laments COP31 outcome, urges climate justice from Barbados",
+    "summary": "Secretary-General António Guterres on Sunday expressed deep disappointment over the collapse of COP31 climate negotiations, using a visit to Barbados to call for stronger action on fossil fuels, climate finance and support for vulnerable nations.",
+    "body": "Матеріал автоматично відібрано зі стрічки United Nations News. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nSecretary-General António Guterres on Sunday expressed deep disappointment over the collapse of COP31 climate negotiations, using a visit to Barbados to call for stronger action on fossil fuels, climate finance and support for vulnerable nations.\n\nРедакційна класифікація: напрям: Екологія; ознаки користі: support. Рівень свідчень: перспективне дослідження; практичний ефект ще потрібно перевірити. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-22",
     "sources": [
       {
-        "title": "Why teaching AI about symmetry could make prenatal diagnosis more reliable",
-        "publisher": "MIT News",
-        "url": "https://news.mit.edu/2026/teaching-ai-about-symmetry-could-make-prenatal-diagnosis-more-reliable-1019",
-        "publishedDate": "2026-10-19"
-      }
-    ]
-  },
-  {
-    "id": "rss-2026-09-24-f9a71742cd94",
-    "date": "2026-09-24",
-    "autoPublished": true,
-    "sourceType": "rss",
-    "feedName": "MIT News — Здоров'я і медицина",
-    "feedId": "mit-health",
-    "sourceDomain": "mit.edu",
-    "filterVersion": "2.6",
-    "editorialStatus": "approved",
-    "editorialDecisionSource": "automatic",
-    "editorialLabel": "Перспективний розвиток",
-    "feedKind": "domain_topic",
-    "sourceDescription": "They also found that obesity may put patients at higher risk for activation of the pathway. Drugs that block the pathway may help prevent metastasis.",
-    "selectionReason": "напрям: Медицина; ознаки користі: prevent",
-    "evidenceLevel": "перспективне дослідження; практичний ефект ще потрібно перевірити",
-    "category": "Медицина",
-    "title": "Biologists identify a cellular pathway that allows colorectal cancer to metastasize",
-    "summary": "They also found that obesity may put patients at higher risk for activation of the pathway. Drugs that block the pathway may help prevent metastasis.",
-    "body": "Матеріал автоматично відібрано зі стрічки MIT News. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nThey also found that obesity may put patients at higher risk for activation of the pathway. Drugs that block the pathway may help prevent metastasis.\n\nРедакційна класифікація: напрям: Медицина; ознаки користі: prevent. Рівень свідчень: перспективне дослідження; практичний ефект ще потрібно перевірити. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
-    "sourceDate": "2026-09-24",
-    "sources": [
-      {
-        "title": "Biologists identify a cellular pathway that allows colorectal cancer to metastasize",
-        "publisher": "MIT News",
-        "url": "https://news.mit.edu/2026/biologists-identify-cellular-pathway-allows-colorectal-cancer-metastasize-0924",
-        "publishedDate": "2026-09-24"
-      }
-    ]
-  },
-  {
-    "id": "rss-2026-09-24-cf83d9bbc592",
-    "date": "2026-09-24",
-    "autoPublished": true,
-    "sourceType": "rss",
-    "feedName": "MIT News — Здоров'я і медицина",
-    "feedId": "mit-health",
-    "sourceDomain": "mit.edu",
-    "filterVersion": "2.6",
-    "editorialStatus": "approved",
-    "editorialDecisionSource": "automatic",
-    "editorialLabel": "Перспективний розвиток",
-    "feedKind": "domain_topic",
-    "sourceDescription": "MIT researchers developed a handheld system that gently collects living cells from patient samples to aid cancer testing and development of personalized medicines.",
-    "selectionReason": "напрям: Медицина; ознаки користі: improve, detect, detection",
-    "evidenceLevel": "перспективне дослідження; практичний ефект ще потрібно перевірити",
-    "category": "Медицина",
-    "title": "New cell-collection device could improve early cancer detection",
-    "summary": "MIT researchers developed a handheld system that gently collects living cells from patient samples to aid cancer testing and development of personalized medicines.",
-    "body": "Матеріал автоматично відібрано зі стрічки MIT News. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nMIT researchers developed a handheld system that gently collects living cells from patient samples to aid cancer testing and development of personalized medicines.\n\nРедакційна класифікація: напрям: Медицина; ознаки користі: improve, detect, detection. Рівень свідчень: перспективне дослідження; практичний ефект ще потрібно перевірити. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
-    "sourceDate": "2026-09-24",
-    "sources": [
-      {
-        "title": "New cell-collection device could improve early cancer detection",
-        "publisher": "MIT News",
-        "url": "https://news.mit.edu/2026/new-cell-collection-device-could-improve-early-cancer-detection-0924",
-        "publishedDate": "2026-09-24"
+        "title": "Guterres laments COP31 outcome, urges climate justice from Barbados",
+        "publisher": "United Nations News",
+        "url": "https://news.un.org/feed/view/en/story/2026/11/1168856",
+        "publishedDate": "2026-11-22"
       }
     ]
   },
@@ -896,126 +266,6 @@
         "publisher": "arXiv",
         "url": "https://arxiv.org/abs/2609.19513",
         "publishedDate": "2026-11-20"
-      }
-    ]
-  },
-  {
-    "id": "rss-2026-11-04-0533f5d4876d",
-    "date": "2026-11-04",
-    "autoPublished": true,
-    "sourceType": "rss",
-    "feedName": "MIT News — Здоров'я і медицина",
-    "feedId": "mit-health",
-    "sourceDomain": "mit.edu",
-    "filterVersion": "2.6",
-    "editorialStatus": "approved",
-    "editorialDecisionSource": "automatic",
-    "editorialLabel": "Перспективний розвиток",
-    "feedKind": "domain_topic",
-    "sourceDescription": "Awarded up to $38 million from ARPA-H, the team aims to create a low-power, noninvasive sensor patch that measures heart failure and sepsis biomarkers in real-time.",
-    "selectionReason": "напрям: Медицина; ознаки користі: monitor, detect, detection",
-    "evidenceLevel": "дослідження або оцінювання потенційного застосування",
-    "category": "Медицина",
-    "title": "MIT-led team receives funding to develop a wearable monitor for early disease detection",
-    "summary": "Awarded up to $38 million from ARPA-H, the team aims to create a low-power, noninvasive sensor patch that measures heart failure and sepsis biomarkers in real-time.",
-    "body": "Матеріал автоматично відібрано зі стрічки MIT News. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nAwarded up to $38 million from ARPA-H, the team aims to create a low-power, noninvasive sensor patch that measures heart failure and sepsis biomarkers in real-time.\n\nРедакційна класифікація: напрям: Медицина; ознаки користі: monitor, detect, detection. Рівень свідчень: дослідження або оцінювання потенційного застосування. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
-    "sourceDate": "2026-11-04",
-    "sources": [
-      {
-        "title": "MIT-led team receives funding to develop a wearable monitor for early disease detection",
-        "publisher": "MIT News",
-        "url": "https://news.mit.edu/2026/mit-led-team-receives-funding-for-early-disease-detection-wearable-monitor-1104",
-        "publishedDate": "2026-11-04"
-      }
-    ]
-  },
-  {
-    "id": "rss-2026-10-10-3f409a5d27f5",
-    "date": "2026-10-10",
-    "autoPublished": true,
-    "sourceType": "rss",
-    "feedName": "WHO — Новини про здоров'я",
-    "feedId": "who-news",
-    "sourceDomain": "who.int",
-    "filterVersion": "2.6",
-    "editorialStatus": "approved",
-    "editorialDecisionSource": "automatic",
-    "editorialLabel": "Позитивний вплив",
-    "feedKind": "institutional",
-    "sourceDescription": "Today, as part of its commitment to strengthening health information systems and improving health[1], especially in the context of the COVID-19 pandemic, WHO announced a new approach to improving access to life-saving data: the SCORE for Health Data Technical Package. The COVID-19 pandemic has highlighted the urgent need for timely and reliable data to drive strategic health action. Too many countries still lack both the infrastructure to routinely gather health data and the analytical capacity to use these data for effective health actions and emergency response. “Countries must be able to measure progress to make progress,” said WHO Director-General Dr Tedros Adhanom Ghebreyesus. “Particularly during COVID-19, reliable data is the best way to coordinate response efforts and improve health in all areas.” Accurate health data are necessary to understand specific country needs in order to improve health and save lives. Data also helps direct scarce resources to where they are needed most. The SCORE (Survey, Count, Optimize, Review, Enable) Technical Package aims to improve the availability of timely, reliable, validated, and comparable health data. For the first time in a single, harmonized package, it represents all the key elements for optimized health information system performance. Simply put, SCORE will help governments around the globe set benchmarks and improve standards in healthcare. In response to the challenges of data availability highlighted in the WHO World Health Statistics 2020 report, SCORE includes more than 90 universally-accepted tools and standards for health information systems strengthening. “Using data to inform public health priorities and strategies has never been more important,” said Dr Kelly Henning, Director of Public Health Programs at Bloomberg Philanthropies[2]. “The SCORE Technical Package provides country governments around the world with high-quality, essential technical guidance so that countries can strengthen their own data systems.” WHO is proud to partner with the Bloomberg Philanthropies Data for Health Initiative to deliver this timely resource to countries. Below are some examples of how SCORE can improve individual lives and communities: The birth of a child is registered so they can access essential health services, attend school, and apply for a passport; A death is registered with cause-of-death accurately captured so that policy-makers have a better understanding of all-cause and COVID-specific mortality and associated risk factors and implement programs and policies to save lives; Health data are disaggregated by age, sex and cause of death to illustrate the root causes of health disparities and help direct resources to the most vulnerable groups such as those who do not speak the local language or face stigma and discrimination in their community; Health facilities have the capacity to regularly measure the quality of their services, workforce and patient data and can make a compelling case for increased funding to national and international stakeholders; Health data are integrated with other sectors so that social determinants of health such as pollution, sanitation and nutrition are addressed to reduce the overall burden of disease. The package's initial release includes two documents: SCORE Essential Interventions – including an overview of health information systems, underlying elements, and indicators to assess progress with sample actions; and SCORE Tools and Standards -- including resources to address critical health data gaps and strengthen country health data. “We must keep score to save lives. WHO is committed to working with countries and partners to rapidly scale up capacity for data collection and use in order to improve policy and performance,” added Dr Samira Asma, Assistant Director-General for Data, Analytics and Delivery for Impact at WHO. “We must act now to invest in statistical systems in countries, respond to this pandemic and meet the SDGs and the Triple ",
-    "selectionReason": "напрям: Медицина; ознаки користі: health services, benchmark, benchmarks",
-    "evidenceLevel": "практичне застосування або конкретний приклад",
-    "category": "Медицина",
-    "title": "New WHO technical package to help countries improve health data for COVID-19 response and beyond",
-    "summary": "Today, as part of its commitment to strengthening health information systems and improving health[1], especially in the context of the COVID-19 pandemic, WHO announced a new approach to improving access to life-saving data: the SCORE for Health Data Technical Package. The COVID-19 pandemic has highlighted the urgent need for timely and reliable data to…",
-    "body": "Матеріал автоматично відібрано зі стрічки World Health Organization (WHO). Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nToday, as part of its commitment to strengthening health information systems and improving health[1], especially in the context of the COVID-19 pandemic, WHO announced a new approach to improving access to life-saving data: the SCORE for Health Data Technical Package. The COVID-19 pandemic has highlighted the urgent need for timely and reliable data to drive strategic health action. Too many countries still lack both the infrastructure to routinely gather health data and the analytical capacity to use these data for effective health actions and emergency response. “Countries must be able to measure progress to make progress,” said WHO Director-General Dr Tedros Adhanom Ghebreyesus. “Particularly during COVID-19, reliable data is the best way to coordinate response efforts and improve health in all areas.” Accurate health data are necessary to understand specific country needs in order to improve health and save lives. Data also helps direct scarce resources to where they are needed most. The SCORE (Survey, Count, Optimize, Review, Enable) Technical Package aims to improve the availability of timely, reliable, validated, and comparable health data. For the first time in a single, harmonized package, it represents all the key elements for optimized health information system performance. Simply put, SCORE will help governments around the globe set benchmarks and improve standards in healthcare. In response to the challenges of data availability highlighted in the WHO World Health Statistics 2020 report, SCORE includes more than 90 universally-accepted tools and standards for health information systems strengthening. “Using data to inform public health priorities and strategies has never been more important,” said Dr Kelly Henning, Director of Public Health Programs at Bloomberg Philanthropies[2]. “The SCORE Technical Package provides country governments around the world with high-quality, essential technical guidance so that countries can strengthen their own data systems.” WHO is proud to partner with the Bloomberg Philanthropies Data for Health Initiative to deliver this timely resource to countries. Below are some examples of how SCORE can improve individual lives and communities: The birth of a child is registered so they can access essential health services, attend school, and apply for a passport; A death is registered with cause-of-death accurately captured so that policy-makers have a better understanding of all-cause and COVID-specific mortality and associated risk factors and implement programs and policies to save lives; Health data are disaggregated by age, sex and cause of death to illustrate the root causes of health disparities and help direct resources to the most vulnerable groups such as those who do not speak the local language or face stigma and discrimination in their community; Health facilities have the capacity to regularly measure the quality of their services, workforce and patient data and can make a compelling case for increased funding to national and international stakeholders; Health data are integrated with other sectors so that social determinants of health such as pollution, sanitation and nutrition are addressed to reduce the overall burden of disease. The package's initial release includes two documents: SCORE Essential Interventions – including an overview of health information systems, underlying elements, and indicators to assess progress with sample actions; and SCORE Tools and Standards -- including resources to address critical health data gaps and strengthen country health data. “We must keep score to save lives. WHO is committed to working with countries and partners to rapidly scale up capacity for data collection and use in order to improve policy and performance,” added Dr Samira Asma, Assistant Director-General for Data, Analytics and Delivery for Impact at WHO. “We must act now to invest in statistical systems in countries, respond to this pandemic and meet the SDGs and the Triple \n\nРедакційна класифікація: напрям: Медицина; ознаки користі: monitor, health services, benchmark. Рівень свідчень: практичне застосування або конкретний приклад. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
-    "sourceDate": "2026-10-10",
-    "sources": [
-      {
-        "title": "New WHO technical package to help countries improve health data for COVID-19 response and beyond",
-        "publisher": "World Health Organization (WHO)",
-        "url": "https://www.who.int/news/item/27-08-2020-new-who-technical-package-health-data-for-covid-19-response",
-        "publishedDate": "2026-10-10"
-      }
-    ]
-  },
-  {
-    "id": "rss-2026-10-08-02872369bca5",
-    "date": "2026-10-08",
-    "autoPublished": true,
-    "sourceType": "rss",
-    "feedName": "MIT News — Здоров'я і медицина",
-    "feedId": "mit-health",
-    "sourceDomain": "mit.edu",
-    "filterVersion": "2.6",
-    "editorialStatus": "approved",
-    "editorialDecisionSource": "automatic",
-    "editorialLabel": "Перспективний розвиток",
-    "feedKind": "domain_topic",
-    "sourceDescription": "In the MIT class 6.C31 (Hack Yourself) students apply computer science strategies to personal growth goals.",
-    "selectionReason": "напрям: Освіта; ознаки користі: support",
-    "evidenceLevel": "перспективне дослідження; практичний ефект ще потрібно перевірити",
-    "category": "Освіта",
-    "title": "Supporting systems of success",
-    "summary": "In the MIT class 6.C31 (Hack Yourself) students apply computer science strategies to personal growth goals.",
-    "body": "Матеріал автоматично відібрано зі стрічки MIT News. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nIn the MIT class 6.C31 (Hack Yourself) students apply computer science strategies to personal growth goals.\n\nРедакційна класифікація: напрям: Освіта; ознаки користі: support. Рівень свідчень: перспективне дослідження; практичний ефект ще потрібно перевірити. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
-    "sourceDate": "2026-10-08",
-    "sources": [
-      {
-        "title": "Supporting systems of success",
-        "publisher": "MIT News",
-        "url": "https://news.mit.edu/2026/supporting-systems-success-1008",
-        "publishedDate": "2026-10-08"
-      }
-    ]
-  },
-  {
-    "id": "rss-2026-09-29-a23de2ab1881",
-    "date": "2026-09-29",
-    "autoPublished": true,
-    "sourceType": "rss",
-    "feedName": "MIT News — Клімат і сталість",
-    "feedId": "mit-climate",
-    "sourceDomain": "mit.edu",
-    "filterVersion": "2.6",
-    "editorialStatus": "approved",
-    "editorialDecisionSource": "automatic",
-    "editorialLabel": "Перспективний розвиток",
-    "feedKind": "domain_topic",
-    "sourceDescription": "J-PAL North America’s Learning Lab supported a second cohort of U.S. government and nonprofit organizations in building and using rigorous evidence to advance effective decarbonization and adaptation strategies.",
-    "selectionReason": "напрям: Екологія; ознаки користі: support",
-    "evidenceLevel": "перспективне дослідження; практичний ефект ще потрібно перевірити",
-    "category": "Екологія",
-    "title": "Climate Action Learning Lab bridges research and policy for effective climate solutions",
-    "summary": "J-PAL North America’s Learning Lab supported a second cohort of U.S. government and nonprofit organizations in building and using rigorous evidence to advance effective decarbonization and adaptation strategies.",
-    "body": "Матеріал автоматично відібрано зі стрічки MIT News. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nJ-PAL North America’s Learning Lab supported a second cohort of U.S. government and nonprofit organizations in building and using rigorous evidence to advance effective decarbonization and adaptation strategies.\n\nРедакційна класифікація: напрям: Екологія; ознаки користі: support. Рівень свідчень: перспективне дослідження; практичний ефект ще потрібно перевірити. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
-    "sourceDate": "2026-09-29",
-    "sources": [
-      {
-        "title": "Climate Action Learning Lab bridges research and policy for effective climate solutions",
-        "publisher": "MIT News",
-        "url": "https://news.mit.edu/2026/climate-action-learning-lab-bridges-research-policy-for-effective-climate-solutions-0929",
-        "publishedDate": "2026-09-29"
       }
     ]
   },
@@ -2806,5 +2056,846 @@
     ],
     "editorialStatus": "needs_review",
     "editorialReviewReason": "немає достатнього опису першоджерела для надійної перевірки"
+  },
+  {
+    "id": "editorial-seed-a1",
+    "date": "2026-11-19",
+    "autoPublished": false,
+    "sourceType": "editorial",
+    "editorialStatus": "manual",
+    "editorialDecisionSource": "manual-content",
+    "category": "Державне управління",
+    "title": "ШІ як радник: державна політика на основі доказів",
+    "summary": "Алгоритми можуть допомагати аналізувати наслідки рішень, порівнювати сценарії та знаходити невраховані потреби громадян.",
+    "body": "Уявімо, що перед ухваленням нової державної програми фахівці можуть швидко зіставити статистику, оцінки витрат, регіональні відмінності та можливі наслідки для різних груп населення. ШІ здатний підготувати кілька сценаріїв, показати припущення й окреслити невизначеність.\n\nЦе не означає, що алгоритм має ухвалювати політичне рішення. Його роль — допомогти людям побачити більше фактів і наслідків. Остаточне рішення повинні приймати відповідальні інституції, а громадяни мають мати можливість перевірити його обґрунтування.",
+    "sources": []
+  },
+  {
+    "id": "editorial-seed-a2",
+    "date": "2026-11-19",
+    "autoPublished": false,
+    "sourceType": "editorial",
+    "editorialStatus": "manual",
+    "editorialDecisionSource": "manual-content",
+    "category": "Медицина",
+    "title": "Більше часу для пацієнта: ШІ як помічник медиків",
+    "summary": "Підтримка аналізу медичних зображень, документації та планування допомоги може звільнити фахівцям час для спілкування з людьми.",
+    "body": "ШІ може допомагати медичним командам упорядковувати інформацію, знаходити закономірності в зображеннях і документах, нагадувати про клінічні протоколи та прогнозувати потребу в ресурсах. Такі інструменти мають проходити перевірку, захищати конфіденційність і залишати клінічні рішення за кваліфікованими медичними працівниками.\n\nОрієнтиром є підхід Всесвітньої організації охорони здоров’я: користь для здоров’я має поєднуватися з безпекою, етичністю, рівним доступом і відповідальністю.",
+    "sources": []
+  },
+  {
+    "id": "editorial-seed-a3",
+    "date": "2026-11-19",
+    "autoPublished": false,
+    "sourceType": "editorial",
+    "editorialStatus": "manual",
+    "editorialDecisionSource": "manual-content",
+    "category": "Освіта",
+    "title": "Освіта, що враховує темп і здібності кожної людини",
+    "summary": "Персональні навчальні помічники можуть пояснювати складні теми різними способами та підтримувати вчителів.",
+    "body": "Навчальний ШІ може підлаштовувати пояснення під рівень знань, пропонувати вправи, допомагати з мовами та робити навчальні матеріали доступнішими для людей з різними потребами. Учитель при цьому залишається наставником, який розуміє контекст, підтримує мотивацію та формує критичне мислення.\n\nВажливо забезпечити доступність інструментів для всіх шкіл, захист дитячих даних і навчати дітей перевіряти відповіді ШІ, а не сприймати їх як безпомилкову істину.",
+    "sources": []
+  },
+  {
+    "id": "editorial-seed-a4",
+    "date": "2026-11-19",
+    "autoPublished": false,
+    "sourceType": "editorial",
+    "editorialStatus": "manual",
+    "editorialDecisionSource": "manual-content",
+    "category": "Мир і безпека",
+    "title": "Раннє попередження про кризи та природні катастрофи",
+    "summary": "Аналітичні системи можуть допомагати завчасно помічати ризики й координувати цивільний захист.",
+    "body": "Моделі прогнозування можуть аналізувати погодні дані, стан інфраструктури, повідомлення служб і супутникові спостереження. Це може допомогти швидше помічати загрози повеней, пожеж, перебоїв у постачанні чи перевантаження лікарень.\n\nПрогнози мають містити рівень невизначеності, проходити перевірку фахівців і не замінювати відповідальні служби. Мета — краще підготуватися, захистити життя та зменшити шкоду.",
+    "sources": []
+  },
+  {
+    "id": "editorial-seed-a5",
+    "date": "2026-11-19",
+    "autoPublished": false,
+    "sourceType": "editorial",
+    "editorialStatus": "manual",
+    "editorialDecisionSource": "manual-content",
+    "category": "Екологія",
+    "title": "Розумне використання енергії заради чистішої планети",
+    "summary": "ШІ може прогнозувати попит на електроенергію, допомагати зменшувати втрати та ефективніше інтегрувати відновлювані джерела.",
+    "body": "Енергосистеми мають балансувати виробництво та споживання. Прогнози погоди й попиту можуть допомагати операторам планувати навантаження, вчасно виявляти несправності та зменшувати втрати. Подібні підходи можуть бути корисними й для опалення будівель, водопостачання та міського транспорту.\n\nЕфективність слід оцінювати за реальними показниками: надійністю, доступністю послуг, витратами та впливом на довкілля.",
+    "sources": []
+  },
+  {
+    "id": "editorial-seed-a6",
+    "date": "2026-11-19",
+    "autoPublished": false,
+    "sourceType": "editorial",
+    "editorialStatus": "manual",
+    "editorialDecisionSource": "manual-content",
+    "category": "Права людини",
+    "title": "Прозорий алгоритм — право людини на пояснення",
+    "summary": "Коли ШІ впливає на державну послугу чи рішення щодо людини, мають існувати пояснення, перевірка та можливість оскарження.",
+    "body": "Справедлива цифрова держава не повинна перетворювати алгоритм на невидимого суддю. Людина має знати, коли ШІ вплинув на рішення, які дані використано та куди звернутися для виправлення помилки.\n\nПотрібні незалежний аудит, перевірка на дискримінацію, захист персональних даних і доступний людський перегляд. Такий підхід відповідає міжнародним етичним орієнтирам UNESCO.",
+    "sources": []
+  },
+  {
+    "id": "editorial-seed-a7",
+    "date": "2026-11-19",
+    "autoPublished": false,
+    "sourceType": "editorial",
+    "editorialStatus": "manual",
+    "editorialDecisionSource": "manual-content",
+    "category": "Економіка та добробут",
+    "title": "Вимірювати успіх держави якістю життя людей",
+    "summary": "Економічні показники важливі, але вони мають доповнюватися доступом до медицини, освіти, житла, безпеки й чистого довкілля.",
+    "body": "ШІ може допомагати аналізувати не лише макроекономічні показники, а й те, як люди реально відчувають зміни: чи доступні медичні послуги, скільки часу займає дорога до роботи, чи є безбар’єрний простір, наскільки чисте повітря, чи мають діти рівний доступ до освіти.\n\nТакі дані не повинні зводити людське щастя до одного числа. Вони мають допомагати суспільству бачити нерівність, визначати пріоритети й перевіряти, чи поліпшується життя різних громад.",
+    "sources": []
+  },
+  {
+    "id": "rss-2026-11-18-4e397e28fbf2",
+    "date": "2026-11-18",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "Європейська Комісія — Довкілля",
+    "feedId": "eu-env-news",
+    "sourceDomain": "europa.eu",
+    "filterVersion": "2.6",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Перспективний розвиток",
+    "feedKind": "institutional",
+    "sourceDescription": "New Commission reports on River Basin and Flood Risk Management Plans now cover eight more Member States and reports on Marine Programmes of Measures cover five more. They confirm that pollution, especially chemical pollution and nutrient pollution from scattered sources, remains one of the biggest obstacles to good water status.",
+    "selectionReason": "напрям: Екологія; ознаки користі: measure",
+    "evidenceLevel": "дослідження або оцінювання потенційного застосування",
+    "category": "Екологія",
+    "title": "State of EU waters: pollution remains a major obstacle",
+    "summary": "New Commission reports on River Basin and Flood Risk Management Plans now cover eight more Member States and reports on Marine Programmes of Measures cover five more. They confirm that pollution, especially chemical pollution and nutrient pollution from scattered sources, remains one of the biggest obstacles to good water status.",
+    "body": "Матеріал автоматично відібрано зі стрічки European Commission — Environment. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nNew Commission reports on River Basin and Flood Risk Management Plans now cover eight more Member States and reports on Marine Programmes of Measures cover five more. They confirm that pollution, especially chemical pollution and nutrient pollution from scattered sources, remains one of the biggest obstacles to good water status.\n\nРедакційна класифікація: напрям: Екологія; ознаки користі: measure. Рівень свідчень: дослідження або оцінювання потенційного застосування. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-18",
+    "sources": [
+      {
+        "title": "State of EU waters: pollution remains a major obstacle",
+        "publisher": "European Commission — Environment",
+        "url": "https://environment.ec.europa.eu/news/eu-source-sea-reports-urge-pollution-resilience-action-2026-10-05_en",
+        "publishedDate": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-18-1cea6c5f99b2",
+    "date": "2026-11-18",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "Європейська Комісія — Клімат",
+    "feedId": "eu-clima-news",
+    "sourceDomain": "europa.eu",
+    "filterVersion": "2.6",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Перспективний розвиток",
+    "feedKind": "institutional",
+    "sourceDescription": "Designed to strengthen the capacity of countries in the MENA and Anglophone Africa Transparency Networks to prepare consistent Article 6 information in their BTRs under Article 13, the session links cooperative approaches, corresponding adjustments, and NDC progress tracking, including practical application of the NDC Tracking and Corresponding Adjustment Tool (NDC-CAT).",
+    "selectionReason": "напрям: Екологія; ознаки користі: transparency",
+    "evidenceLevel": "перспективне дослідження; практичний ефект ще потрібно перевірити",
+    "category": "Екологія",
+    "title": "Recording from the Climate Transparency Platform’s webinar on ‘Reporting on Article 6 under Article 13 of the Paris Agreement: From reporting requirements to practical application ",
+    "summary": "Designed to strengthen the capacity of countries in the MENA and Anglophone Africa Transparency Networks to prepare consistent Article 6 information in their BTRs under Article 13, the session links cooperative approaches, corresponding adjustments, and NDC progress tracking, including practical application of the NDC Tracking and Corresponding Adjustment…",
+    "body": "Матеріал автоматично відібрано зі стрічки European Commission — Climate Action. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nDesigned to strengthen the capacity of countries in the MENA and Anglophone Africa Transparency Networks to prepare consistent Article 6 information in their BTRs under Article 13, the session links cooperative approaches, corresponding adjustments, and NDC progress tracking, including practical application of the NDC Tracking and Corresponding Adjustment Tool (NDC-CAT).\n\nРедакційна класифікація: напрям: Екологія; ознаки користі: transparency. Рівень свідчень: перспективне дослідження; практичний ефект ще потрібно перевірити. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-18",
+    "sources": [
+      {
+        "title": "Recording from the Climate Transparency Platform’s webinar on ‘Reporting on Article 6 under Article 13 of the Paris Agreement: From reporting requirements to practical application ",
+        "publisher": "European Commission — Climate Action",
+        "url": "https://ec.europa.eu/newsroom/clima/redirection/item/966633/en",
+        "publishedDate": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-18-bd6ecaf6f057",
+    "date": "2026-11-18",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "Європейська Комісія — Клімат",
+    "feedId": "eu-clima-news",
+    "sourceDomain": "europa.eu",
+    "filterVersion": "2.6",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Перспективний розвиток",
+    "feedKind": "institutional",
+    "sourceDescription": "The most important transparency reporting milestone this year is the submission of the Second Biennial Transparency Reports (BTR2) under the Paris Agreement Enhanced Transparency Framework (ETF). To support countries preparation for the 31 December, end of year deadline, RE-CONNECT has compiled links to the latest guidance, workshop recordings and technical resources from across the climate transparency community. Explore the resources in this newsletter to catch up on everything you need to know ahead of December’s deadline. The RE-CONNECT newsletter provides regular updates on recent developments in the global climate modelling community and is distributed every other month under the RE-CONNECT project.",
+    "selectionReason": "напрям: Екологія; ознаки користі: support, transparency",
+    "evidenceLevel": "перспективне дослідження; практичний ефект ще потрібно перевірити",
+    "category": "Екологія",
+    "title": "Welcome to the RE-CONNECT Climate Change Modelling Information Newsletter.",
+    "summary": "The most important transparency reporting milestone this year is the submission of the Second Biennial Transparency Reports (BTR2) under the Paris Agreement Enhanced Transparency Framework (ETF). To support countries preparation for the 31 December, end of year deadline, RE-CONNECT has compiled links to the latest guidance, workshop recordings and…",
+    "body": "Матеріал автоматично відібрано зі стрічки European Commission — Climate Action. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nThe most important transparency reporting milestone this year is the submission of the Second Biennial Transparency Reports (BTR2) under the Paris Agreement Enhanced Transparency Framework (ETF). To support countries preparation for the 31 December, end of year deadline, RE-CONNECT has compiled links to the latest guidance, workshop recordings and technical resources from across the climate transparency community. Explore the resources in this newsletter to catch up on everything you need to know ahead of December’s deadline. The RE-CONNECT newsletter provides regular updates on recent developments in the global climate modelling community and is distributed every other month under the RE-CONNECT project.\n\nРедакційна класифікація: напрям: Екологія; ознаки користі: support, transparency. Рівень свідчень: перспективне дослідження; практичний ефект ще потрібно перевірити. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-18",
+    "sources": [
+      {
+        "title": "Welcome to the RE-CONNECT Climate Change Modelling Information Newsletter.",
+        "publisher": "European Commission — Climate Action",
+        "url": "https://ec.europa.eu/newsroom/clima/redirection/item/966629/en",
+        "publishedDate": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-18-8b22e0294d4e",
+    "date": "2026-11-18",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "Європейська Комісія — Довкілля",
+    "feedId": "eu-env-news",
+    "sourceDomain": "europa.eu",
+    "filterVersion": "2.6",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Перспективний розвиток",
+    "feedKind": "institutional",
+    "sourceDescription": "The Commission's evaluation of the Nitrates Directive, which protects waters from nitrate pollution from agriculture, concludes that the law remains effective. It also finds scope for smarter implementation.",
+    "selectionReason": "напрям: Екологія; ознаки користі: evaluation, protect",
+    "evidenceLevel": "дослідження або оцінювання потенційного застосування",
+    "category": "Екологія",
+    "title": "EU law on nitrates pollution remains effective, with scope for smarter implementation",
+    "summary": "The Commission's evaluation of the Nitrates Directive, which protects waters from nitrate pollution from agriculture, concludes that the law remains effective. It also finds scope for smarter implementation.",
+    "body": "Матеріал автоматично відібрано зі стрічки European Commission — Environment. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nThe Commission's evaluation of the Nitrates Directive, which protects waters from nitrate pollution from agriculture, concludes that the law remains effective. It also finds scope for smarter implementation.\n\nРедакційна класифікація: напрям: Екологія; ознаки користі: evaluation, protect. Рівень свідчень: дослідження або оцінювання потенційного застосування. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-18",
+    "sources": [
+      {
+        "title": "EU law on nitrates pollution remains effective, with scope for smarter implementation",
+        "publisher": "European Commission — Environment",
+        "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1594",
+        "publishedDate": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-13-caa6051ad9a7",
+    "date": "2026-11-13",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "UN News — Клімат і довкілля",
+    "feedId": "un-climate",
+    "sourceDomain": "un.org",
+    "filterVersion": "2.6",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Перспективний розвиток",
+    "feedKind": "institutional",
+    "sourceDescription": "New guidance has been issued to ensure that people everywhere can obtain credible climate change information from artificial intelligence (AI) and understand how the technology impacts the environment.",
+    "selectionReason": "напрям: Екологія; ознаки користі: reliable",
+    "evidenceLevel": "перспективне дослідження; практичний ефект ще потрібно перевірити",
+    "category": "Екологія",
+    "title": "COP31: New initiative targets AI and reliable climate change information",
+    "summary": "New guidance has been issued to ensure that people everywhere can obtain credible climate change information from artificial intelligence (AI) and understand how the technology impacts the environment.",
+    "body": "Матеріал автоматично відібрано зі стрічки United Nations News. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nNew guidance has been issued to ensure that people everywhere can obtain credible climate change information from artificial intelligence (AI) and understand how the technology impacts the environment.\n\nРедакційна класифікація: напрям: Екологія; ознаки користі: reliable. Рівень свідчень: перспективне дослідження; практичний ефект ще потрібно перевірити. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-13",
+    "sources": [
+      {
+        "title": "COP31: New initiative targets AI and reliable climate change information",
+        "publisher": "United Nations News",
+        "url": "https://news.un.org/feed/view/en/story/2026/11/1168798",
+        "publishedDate": "2026-11-13"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-12-4d5f93737abb",
+    "date": "2026-11-12",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "UN News — Клімат і довкілля",
+    "feedId": "un-climate",
+    "sourceDomain": "un.org",
+    "filterVersion": "2.6",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Перспективний розвиток",
+    "feedKind": "institutional",
+    "sourceDescription": "From flooded homes to melting Himalayan glaciers, the human cost of climate change took centre stage at COP31 on Thursday, as world leaders turned their attention to protecting cities and vulnerable communities, while activists challenged governments to do more.",
+    "selectionReason": "напрям: Екологія; ознаки користі: protect",
+    "evidenceLevel": "перспективне дослідження; практичний ефект ще потрібно перевірити",
+    "category": "Екологія",
+    "title": "COP31: Cities rise up the climate agenda as leaders face demands for action",
+    "summary": "From flooded homes to melting Himalayan glaciers, the human cost of climate change took centre stage at COP31 on Thursday, as world leaders turned their attention to protecting cities and vulnerable communities, while activists challenged governments to do more.",
+    "body": "Матеріал автоматично відібрано зі стрічки United Nations News. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nFrom flooded homes to melting Himalayan glaciers, the human cost of climate change took centre stage at COP31 on Thursday, as world leaders turned their attention to protecting cities and vulnerable communities, while activists challenged governments to do more.\n\nРедакційна класифікація: напрям: Екологія; ознаки користі: protect. Рівень свідчень: перспективне дослідження; практичний ефект ще потрібно перевірити. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-12",
+    "sources": [
+      {
+        "title": "COP31: Cities rise up the climate agenda as leaders face demands for action",
+        "publisher": "United Nations News",
+        "url": "https://news.un.org/feed/view/en/story/2026/11/1168792",
+        "publishedDate": "2026-11-12"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-11-28046d614082",
+    "date": "2026-11-11",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "UN News — Клімат і довкілля",
+    "feedId": "un-climate",
+    "sourceDomain": "un.org",
+    "filterVersion": "2.6",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Перспективний розвиток",
+    "feedKind": "institutional",
+    "sourceDescription": "Early warning systems are saving lives across the globe, but for millions of people the warning never arrives, UN Secretary-General António Guterres said on Wednesday, urging the world to protect every person on Earth by the end of 2027.",
+    "selectionReason": "напрям: Мир і безпека; ознаки користі: early warning, warning system, protect",
+    "evidenceLevel": "перспективне дослідження; практичний ефект ще потрібно перевірити",
+    "category": "Мир і безпека",
+    "title": "From Japan to Rwanda, early warnings are saving lives – but millions remain unprotected",
+    "summary": "Early warning systems are saving lives across the globe, but for millions of people the warning never arrives, UN Secretary-General António Guterres said on Wednesday, urging the world to protect every person on Earth by the end of 2027.",
+    "body": "Матеріал автоматично відібрано зі стрічки United Nations News. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nEarly warning systems are saving lives across the globe, but for millions of people the warning never arrives, UN Secretary-General António Guterres said on Wednesday, urging the world to protect every person on Earth by the end of 2027.\n\nРедакційна класифікація: напрям: Мир і безпека; ознаки користі: early warning, warning system, protect. Рівень свідчень: перспективне дослідження; практичний ефект ще потрібно перевірити. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-11",
+    "sources": [
+      {
+        "title": "From Japan to Rwanda, early warnings are saving lives – but millions remain unprotected",
+        "publisher": "United Nations News",
+        "url": "https://news.un.org/feed/view/en/story/2026/11/1168787",
+        "publishedDate": "2026-11-11"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-11-59dc55a43db6",
+    "date": "2026-11-11",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "UN News — Гуманітарна допомога",
+    "feedId": "un-humanitarian",
+    "sourceDomain": "un.org",
+    "filterVersion": "2.6",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Перспективний розвиток",
+    "feedKind": "institutional",
+    "sourceDescription": "The UN’s Emergency Relief Coordinator, Tom Fletcher, expressed deep concern about the deteriorating humanitarian situation in Gaza, as UN member states and partners have been repeatedly delaying sending their support to the Strip.",
+    "selectionReason": "напрям: Державне управління; ознаки користі: support",
+    "evidenceLevel": "перспективне дослідження; практичний ефект ще потрібно перевірити",
+    "category": "Державне управління",
+    "title": "Gaza winter aid: ‘No more delay’, Fletcher tells governments stalling on support",
+    "summary": "The UN’s Emergency Relief Coordinator, Tom Fletcher, expressed deep concern about the deteriorating humanitarian situation in Gaza, as UN member states and partners have been repeatedly delaying sending their support to the Strip.",
+    "body": "Матеріал автоматично відібрано зі стрічки United Nations News. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nThe UN’s Emergency Relief Coordinator, Tom Fletcher, expressed deep concern about the deteriorating humanitarian situation in Gaza, as UN member states and partners have been repeatedly delaying sending their support to the Strip.\n\nРедакційна класифікація: напрям: Державне управління; ознаки користі: support. Рівень свідчень: перспективне дослідження; практичний ефект ще потрібно перевірити. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-11",
+    "sources": [
+      {
+        "title": "Gaza winter aid: ‘No more delay’, Fletcher tells governments stalling on support",
+        "publisher": "United Nations News",
+        "url": "https://news.un.org/feed/view/en/story/2026/11/1168788",
+        "publishedDate": "2026-11-11"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-11-141fabfb5397",
+    "date": "2026-11-11",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "ECDC — Новини та пресрелізи",
+    "feedId": "ecdc-news",
+    "sourceDomain": "ecdc.europa.eu",
+    "filterVersion": "2.6",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Перспективний розвиток",
+    "feedKind": "institutional",
+    "sourceDescription": "Next year’s rollout of Epi+, a multilingual event-based surveillance platform designed to help countries detect and assess emerging public health threats, is coming closer as ECDC and Italy’s Istituto Superiore di Sanità (ISS) hold training this week for 40 national epidemiologists and technical experts in Rome.",
+    "selectionReason": "напрям: Медицина; ознаки користі: detect",
+    "evidenceLevel": "перспективне дослідження; практичний ефект ще потрібно перевірити",
+    "category": "Медицина",
+    "title": "Preparations continue for rollout of new public health surveillance platform in nine pilot countries",
+    "summary": "Next year’s rollout of Epi+, a multilingual event-based surveillance platform designed to help countries detect and assess emerging public health threats, is coming closer as ECDC and Italy’s Istituto Superiore di Sanità (ISS) hold training this week for 40 national epidemiologists and technical experts in Rome.",
+    "body": "Матеріал автоматично відібрано зі стрічки European Centre for Disease Prevention and Control (ECDC). Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nNext year’s rollout of Epi+, a multilingual event-based surveillance platform designed to help countries detect and assess emerging public health threats, is coming closer as ECDC and Italy’s Istituto Superiore di Sanità (ISS) hold training this week for 40 national epidemiologists and technical experts in Rome.\n\nРедакційна класифікація: напрям: Медицина; ознаки користі: detect. Рівень свідчень: перспективне дослідження; практичний ефект ще потрібно перевірити. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-11",
+    "sources": [
+      {
+        "title": "Preparations continue for rollout of new public health surveillance platform in nine pilot countries",
+        "publisher": "European Centre for Disease Prevention and Control (ECDC)",
+        "url": "https://www.ecdc.europa.eu/en/news-events/preparations-continue-rollout-new-public-health-surveillance-platform-nine-pilot",
+        "publishedDate": "2026-11-11"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-09-901504da9b55",
+    "date": "2026-11-09",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "UN News — Клімат і довкілля",
+    "feedId": "un-climate",
+    "sourceDomain": "un.org",
+    "filterVersion": "2.6",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Перспективний розвиток",
+    "feedKind": "institutional",
+    "sourceDescription": "Nearly 200 countries have arrived on Türkiye's Mediterranean coast for a climate summit with a different ambition: fewer grand declarations and more concrete decisions. With a powerful El Niño threatening to worsen extreme weather, negotiators face difficult questions over climate finance, clean energy and how to protect communities already living with the consequences of climate change.",
+    "selectionReason": "напрям: Екологія; ознаки користі: protect",
+    "evidenceLevel": "перспективне дослідження; практичний ефект ще потрібно перевірити",
+    "category": "Екологія",
+    "title": "COP31 opens in Antalya: Can climate promises finally deliver results?",
+    "summary": "Nearly 200 countries have arrived on Türkiye's Mediterranean coast for a climate summit with a different ambition: fewer grand declarations and more concrete decisions. With a powerful El Niño threatening to worsen extreme weather, negotiators face difficult questions over climate finance, clean energy and how to protect communities already living with the…",
+    "body": "Матеріал автоматично відібрано зі стрічки United Nations News. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nNearly 200 countries have arrived on Türkiye's Mediterranean coast for a climate summit with a different ambition: fewer grand declarations and more concrete decisions. With a powerful El Niño threatening to worsen extreme weather, negotiators face difficult questions over climate finance, clean energy and how to protect communities already living with the consequences of climate change.\n\nРедакційна класифікація: напрям: Екологія; ознаки користі: protect. Рівень свідчень: перспективне дослідження; практичний ефект ще потрібно перевірити. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-09",
+    "sources": [
+      {
+        "title": "COP31 opens in Antalya: Can climate promises finally deliver results?",
+        "publisher": "United Nations News",
+        "url": "https://news.un.org/feed/view/en/story/2026/11/1168763",
+        "publishedDate": "2026-11-09"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-06-d6807c3bb3bd",
+    "date": "2026-11-06",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "Європейська Комісія — Довкілля",
+    "feedId": "eu-env-news",
+    "sourceDomain": "europa.eu",
+    "filterVersion": "2.6",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Перспективний розвиток",
+    "feedKind": "institutional",
+    "sourceDescription": "Missed our recent webinars? Catch up on three sessions exploring how businesses can better measure their impacts on marine biodiversity, translate biodiversity into practical business action, and understand the EU’s priorities ahead of COP17.",
+    "selectionReason": "напрям: Екологія; ознаки користі: measure",
+    "evidenceLevel": "дослідження або оцінювання потенційного застосування",
+    "category": "Екологія",
+    "title": "Catch up on the Platform's latest webinars: from the marine environment to biodiversity basics for companies to the EU's COP priorities.",
+    "summary": "Missed our recent webinars? Catch up on three sessions exploring how businesses can better measure their impacts on marine biodiversity, translate biodiversity into practical business action, and understand the EU’s priorities ahead of COP17.",
+    "body": "Матеріал автоматично відібрано зі стрічки European Commission — Environment. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nMissed our recent webinars? Catch up on three sessions exploring how businesses can better measure their impacts on marine biodiversity, translate biodiversity into practical business action, and understand the EU’s priorities ahead of COP17.\n\nРедакційна класифікація: напрям: Екологія; ознаки користі: measure. Рівень свідчень: дослідження або оцінювання потенційного застосування. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-06",
+    "sources": [
+      {
+        "title": "Catch up on the Platform's latest webinars: from the marine environment to biodiversity basics for companies to the EU's COP priorities.",
+        "publisher": "European Commission — Environment",
+        "url": "https://ec.europa.eu/newsroom/env/redirection/item/964652/en",
+        "publishedDate": "2026-11-06"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-06-2ac8077b648f",
+    "date": "2026-11-06",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "Європейська Комісія — Довкілля",
+    "feedId": "eu-env-news",
+    "sourceDomain": "europa.eu",
+    "filterVersion": "2.6",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Перспективний розвиток",
+    "feedKind": "institutional",
+    "sourceDescription": "How are businesses across Europe being supported to turn biodiversity commitments into action? Discover the new Overview Report of Business and Biodiversity Initiatives in Europe and explore the growing landscape of platforms, networks and coalitions supporting business action for nature.",
+    "selectionReason": "напрям: Екологія; ознаки користі: support",
+    "evidenceLevel": "перспективне дослідження; практичний ефект ще потрібно перевірити",
+    "category": "Екологія",
+    "title": "Launch of the Overview Report of Business and Biodiversity Initiatives in Europe",
+    "summary": "How are businesses across Europe being supported to turn biodiversity commitments into action? Discover the new Overview Report of Business and Biodiversity Initiatives in Europe and explore the growing landscape of platforms, networks and coalitions supporting business action for nature.",
+    "body": "Матеріал автоматично відібрано зі стрічки European Commission — Environment. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nHow are businesses across Europe being supported to turn biodiversity commitments into action? Discover the new Overview Report of Business and Biodiversity Initiatives in Europe and explore the growing landscape of platforms, networks and coalitions supporting business action for nature.\n\nРедакційна класифікація: напрям: Екологія; ознаки користі: support. Рівень свідчень: перспективне дослідження; практичний ефект ще потрібно перевірити. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-06",
+    "sources": [
+      {
+        "title": "Launch of the Overview Report of Business and Biodiversity Initiatives in Europe",
+        "publisher": "European Commission — Environment",
+        "url": "https://ec.europa.eu/newsroom/env/redirection/item/964642/en",
+        "publishedDate": "2026-11-06"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-04-0533f5d4876d",
+    "date": "2026-11-04",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "MIT News — Здоров'я і медицина",
+    "feedId": "mit-health",
+    "sourceDomain": "mit.edu",
+    "filterVersion": "2.6",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Перспективний розвиток",
+    "feedKind": "domain_topic",
+    "sourceDescription": "Awarded up to $38 million from ARPA-H, the team aims to create a low-power, noninvasive sensor patch that measures heart failure and sepsis biomarkers in real-time.",
+    "selectionReason": "напрям: Медицина; ознаки користі: monitor, detect, detection",
+    "evidenceLevel": "дослідження або оцінювання потенційного застосування",
+    "category": "Медицина",
+    "title": "MIT-led team receives funding to develop a wearable monitor for early disease detection",
+    "summary": "Awarded up to $38 million from ARPA-H, the team aims to create a low-power, noninvasive sensor patch that measures heart failure and sepsis biomarkers in real-time.",
+    "body": "Матеріал автоматично відібрано зі стрічки MIT News. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nAwarded up to $38 million from ARPA-H, the team aims to create a low-power, noninvasive sensor patch that measures heart failure and sepsis biomarkers in real-time.\n\nРедакційна класифікація: напрям: Медицина; ознаки користі: monitor, detect, detection. Рівень свідчень: дослідження або оцінювання потенційного застосування. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-04",
+    "sources": [
+      {
+        "title": "MIT-led team receives funding to develop a wearable monitor for early disease detection",
+        "publisher": "MIT News",
+        "url": "https://news.mit.edu/2026/mit-led-team-receives-funding-for-early-disease-detection-wearable-monitor-1104",
+        "publishedDate": "2026-11-04"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-03-569ac5e68f43",
+    "date": "2026-11-03",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "Європейська Комісія — Клімат",
+    "feedId": "eu-clima-news",
+    "sourceDomain": "europa.eu",
+    "filterVersion": "2.6",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Перспективний розвиток",
+    "feedKind": "institutional",
+    "sourceDescription": "Against a backdrop of rising energy costs and growing climate risks, hundreds of mayors gathered in Brussels for the annual EU Covenant of Mayors Ceremony for a discussion with European leaders about how to make energy more affordable, strengthen resilience, and protect people's quality of life across Europe.",
+    "selectionReason": "напрям: Екологія; ознаки користі: protect",
+    "evidenceLevel": "перспективне дослідження; практичний ефект ще потрібно перевірити",
+    "category": "Екологія",
+    "title": "Mayors meet with EU leaders in Brussels to advance affordable energy and climate resilience",
+    "summary": "Against a backdrop of rising energy costs and growing climate risks, hundreds of mayors gathered in Brussels for the annual EU Covenant of Mayors Ceremony for a discussion with European leaders about how to make energy more affordable, strengthen resilience, and protect people's quality of life across Europe.",
+    "body": "Матеріал автоматично відібрано зі стрічки European Commission — Climate Action. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nAgainst a backdrop of rising energy costs and growing climate risks, hundreds of mayors gathered in Brussels for the annual EU Covenant of Mayors Ceremony for a discussion with European leaders about how to make energy more affordable, strengthen resilience, and protect people's quality of life across Europe.\n\nРедакційна класифікація: напрям: Екологія; ознаки користі: protect. Рівень свідчень: перспективне дослідження; практичний ефект ще потрібно перевірити. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-03",
+    "sources": [
+      {
+        "title": "Mayors meet with EU leaders in Brussels to advance affordable energy and climate resilience",
+        "publisher": "European Commission — Climate Action",
+        "url": "https://eu-mayors.ec.europa.eu/en/news/mayors-meet-eu-leaders-brussels-advance-affordable-energy-and-climate-resilience",
+        "publishedDate": "2026-11-03"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-03-5a28471070ac",
+    "date": "2026-11-03",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "Європейська Комісія — Клімат",
+    "feedId": "eu-clima-news",
+    "sourceDomain": "europa.eu",
+    "filterVersion": "2.6",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Перспективний розвиток",
+    "feedKind": "institutional",
+    "sourceDescription": "The new EU Framework for Climate Resilience strengthens Europe’s ability to anticipate and manage climate risks, protect people and places, and prevent avoidable damage. It introduces a European Climate Resilience Law backed by practical tools to drive a fundamental shift from reacting to disasters to getting ahead of climate impacts and avoiding damages.",
+    "selectionReason": "напрям: Екологія; ознаки користі: prevent, protect",
+    "evidenceLevel": "перспективне дослідження; практичний ефект ще потрібно перевірити",
+    "category": "Екологія",
+    "title": "Commission presents Climate Resilience Framework for a better prepared and protected Europe",
+    "summary": "The new EU Framework for Climate Resilience strengthens Europe’s ability to anticipate and manage climate risks, protect people and places, and prevent avoidable damage. It introduces a European Climate Resilience Law backed by practical tools to drive a fundamental shift from reacting to disasters to getting ahead of climate impacts and avoiding damages.",
+    "body": "Матеріал автоматично відібрано зі стрічки European Commission — Climate Action. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nThe new EU Framework for Climate Resilience strengthens Europe’s ability to anticipate and manage climate risks, protect people and places, and prevent avoidable damage. It introduces a European Climate Resilience Law backed by practical tools to drive a fundamental shift from reacting to disasters to getting ahead of climate impacts and avoiding damages.\n\nРедакційна класифікація: напрям: Екологія; ознаки користі: prevent, protect. Рівень свідчень: перспективне дослідження; практичний ефект ще потрібно перевірити. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-03",
+    "sources": [
+      {
+        "title": "Commission presents Climate Resilience Framework for a better prepared and protected Europe",
+        "publisher": "European Commission — Climate Action",
+        "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2244",
+        "publishedDate": "2026-11-03"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-10-29-f67054236da2",
+    "date": "2026-10-29",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "ECDC — Новини та пресрелізи",
+    "feedId": "ecdc-news",
+    "sourceDomain": "ecdc.europa.eu",
+    "filterVersion": "2.6",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Перспективний розвиток",
+    "feedKind": "institutional",
+    "sourceDescription": "The first cycle of Public Health Emergency Preparedness Assessments (PHEPAs) coordinated by the European Centre for Disease Prevention and Control (ECDC) has shown a strong commitment to emergency preparedness across Europe, with a number of common challenges remaining.",
+    "selectionReason": "напрям: Медицина; ознаки користі: prevention, prevent",
+    "evidenceLevel": "дослідження або оцінювання потенційного застосування",
+    "category": "Медицина",
+    "title": "First public health emergency preparedness assessments across Europe show both commitment and recurring challenges",
+    "summary": "The first cycle of Public Health Emergency Preparedness Assessments (PHEPAs) coordinated by the European Centre for Disease Prevention and Control (ECDC) has shown a strong commitment to emergency preparedness across Europe, with a number of common challenges remaining.",
+    "body": "Матеріал автоматично відібрано зі стрічки European Centre for Disease Prevention and Control (ECDC). Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nThe first cycle of Public Health Emergency Preparedness Assessments (PHEPAs) coordinated by the European Centre for Disease Prevention and Control (ECDC) has shown a strong commitment to emergency preparedness across Europe, with a number of common challenges remaining.\n\nРедакційна класифікація: напрям: Медицина; ознаки користі: prevention, prevent. Рівень свідчень: дослідження або оцінювання потенційного застосування. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-10-29",
+    "sources": [
+      {
+        "title": "First public health emergency preparedness assessments across Europe show both commitment and recurring challenges",
+        "publisher": "European Centre for Disease Prevention and Control (ECDC)",
+        "url": "https://www.ecdc.europa.eu/en/news-events/first-public-health-emergency-preparedness-assessments-across-europe-show-both",
+        "publishedDate": "2026-10-29"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-10-28-d87b87feaae0",
+    "date": "2026-10-28",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "Європейська Комісія — Довкілля",
+    "feedId": "eu-env-news",
+    "sourceDomain": "europa.eu",
+    "filterVersion": "2.6",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Перспективний розвиток",
+    "feedKind": "institutional",
+    "sourceDescription": "Germany became the first country to conclude structured EU water dialogues, signing a joint statement to upgrade treatment plants, tackle pollution, and boost climate resilience. Click for more.",
+    "selectionReason": "напрям: Екологія; ознаки користі: treatment",
+    "evidenceLevel": "перспективне дослідження; практичний ефект ще потрібно перевірити",
+    "category": "Екологія",
+    "title": "Stronger enforcement: Part 1",
+    "summary": "Germany became the first country to conclude structured EU water dialogues, signing a joint statement to upgrade treatment plants, tackle pollution, and boost climate resilience. Click for more.",
+    "body": "Матеріал автоматично відібрано зі стрічки European Commission — Environment. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nGermany became the first country to conclude structured EU water dialogues, signing a joint statement to upgrade treatment plants, tackle pollution, and boost climate resilience. Click for more.\n\nРедакційна класифікація: напрям: Екологія; ознаки користі: treatment. Рівень свідчень: перспективне дослідження; практичний ефект ще потрібно перевірити. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-10-28",
+    "sources": [
+      {
+        "title": "Stronger enforcement: Part 1",
+        "publisher": "European Commission — Environment",
+        "url": "https://environment.ec.europa.eu/news/roswall-schneider-commit-stronger-eu-water-enforcement-2026-10-05_en",
+        "publishedDate": "2026-10-28"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-10-28-bfdd8633fe17",
+    "date": "2026-10-28",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "ECDC — Новини та пресрелізи",
+    "feedId": "ecdc-news",
+    "sourceDomain": "ecdc.europa.eu",
+    "filterVersion": "2.6",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Перспективний розвиток",
+    "feedKind": "institutional",
+    "sourceDescription": "As the season for respiratory syncytial virus (RSV) and other respiratory diseases approaches, a new report from the European Centre for Disease Prevention and Control (ECDC) indicates that universal immunisation of newborns against RSV could substantially reduce hospitalisations among infants linked to the disease during the winter season.",
+    "selectionReason": "напрям: Медицина; ознаки користі: prevention, reduce, prevent",
+    "evidenceLevel": "перспективне дослідження; практичний ефект ще потрібно перевірити",
+    "category": "Медицина",
+    "title": "As the cold season nears, universal immunisation of newborns against RSV could significantly reduce infant hospitalisations across Europe",
+    "summary": "As the season for respiratory syncytial virus (RSV) and other respiratory diseases approaches, a new report from the European Centre for Disease Prevention and Control (ECDC) indicates that universal immunisation of newborns against RSV could substantially reduce hospitalisations among infants linked to the disease during the winter season.",
+    "body": "Матеріал автоматично відібрано зі стрічки European Centre for Disease Prevention and Control (ECDC). Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nAs the season for respiratory syncytial virus (RSV) and other respiratory diseases approaches, a new report from the European Centre for Disease Prevention and Control (ECDC) indicates that universal immunisation of newborns against RSV could substantially reduce hospitalisations among infants linked to the disease during the winter season.\n\nРедакційна класифікація: напрям: Медицина; ознаки користі: prevention, reduce, prevent. Рівень свідчень: перспективне дослідження; практичний ефект ще потрібно перевірити. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-10-28",
+    "sources": [
+      {
+        "title": "As the cold season nears, universal immunisation of newborns against RSV could significantly reduce infant hospitalisations across Europe",
+        "publisher": "European Centre for Disease Prevention and Control (ECDC)",
+        "url": "https://www.ecdc.europa.eu/en/news-events/cold-season-nears-universal-immunisation-newborns-against-rsv-could-significantly",
+        "publishedDate": "2026-10-28"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-10-19-820876c7f3cb",
+    "date": "2026-10-19",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "MIT News — Здоров'я і медицина",
+    "feedId": "mit-health",
+    "sourceDomain": "mit.edu",
+    "filterVersion": "2.6",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Перспективний розвиток",
+    "feedKind": "domain_topic",
+    "sourceDescription": "A model developed by researchers at MIT and Boston Children's Hospital adjusts scans on the fly to track fetal movement, potentially sparing families repeat hospital visits.",
+    "selectionReason": "напрям: Медицина; ознаки користі: reliable",
+    "evidenceLevel": "перспективне дослідження; практичний ефект ще потрібно перевірити",
+    "category": "Медицина",
+    "title": "Why teaching AI about symmetry could make prenatal diagnosis more reliable",
+    "summary": "A model developed by researchers at MIT and Boston Children's Hospital adjusts scans on the fly to track fetal movement, potentially sparing families repeat hospital visits.",
+    "body": "Матеріал автоматично відібрано зі стрічки MIT News. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nA model developed by researchers at MIT and Boston Children's Hospital adjusts scans on the fly to track fetal movement, potentially sparing families repeat hospital visits.\n\nРедакційна класифікація: напрям: Медицина; ознаки користі: reliable. Рівень свідчень: перспективне дослідження; практичний ефект ще потрібно перевірити. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-10-19",
+    "sources": [
+      {
+        "title": "Why teaching AI about symmetry could make prenatal diagnosis more reliable",
+        "publisher": "MIT News",
+        "url": "https://news.mit.edu/2026/teaching-ai-about-symmetry-could-make-prenatal-diagnosis-more-reliable-1019",
+        "publishedDate": "2026-10-19"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-10-10-3f409a5d27f5",
+    "date": "2026-10-10",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "WHO — Новини про здоров'я",
+    "feedId": "who-news",
+    "sourceDomain": "who.int",
+    "filterVersion": "2.6",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Позитивний вплив",
+    "feedKind": "institutional",
+    "sourceDescription": "Today, as part of its commitment to strengthening health information systems and improving health[1], especially in the context of the COVID-19 pandemic, WHO announced a new approach to improving access to life-saving data: the SCORE for Health Data Technical Package. The COVID-19 pandemic has highlighted the urgent need for timely and reliable data to drive strategic health action. Too many countries still lack both the infrastructure to routinely gather health data and the analytical capacity to use these data for effective health actions and emergency response. “Countries must be able to measure progress to make progress,” said WHO Director-General Dr Tedros Adhanom Ghebreyesus. “Particularly during COVID-19, reliable data is the best way to coordinate response efforts and improve health in all areas.” Accurate health data are necessary to understand specific country needs in order to improve health and save lives. Data also helps direct scarce resources to where they are needed most. The SCORE (Survey, Count, Optimize, Review, Enable) Technical Package aims to improve the availability of timely, reliable, validated, and comparable health data. For the first time in a single, harmonized package, it represents all the key elements for optimized health information system performance. Simply put, SCORE will help governments around the globe set benchmarks and improve standards in healthcare. In response to the challenges of data availability highlighted in the WHO World Health Statistics 2020 report, SCORE includes more than 90 universally-accepted tools and standards for health information systems strengthening. “Using data to inform public health priorities and strategies has never been more important,” said Dr Kelly Henning, Director of Public Health Programs at Bloomberg Philanthropies[2]. “The SCORE Technical Package provides country governments around the world with high-quality, essential technical guidance so that countries can strengthen their own data systems.” WHO is proud to partner with the Bloomberg Philanthropies Data for Health Initiative to deliver this timely resource to countries. Below are some examples of how SCORE can improve individual lives and communities: The birth of a child is registered so they can access essential health services, attend school, and apply for a passport; A death is registered with cause-of-death accurately captured so that policy-makers have a better understanding of all-cause and COVID-specific mortality and associated risk factors and implement programs and policies to save lives; Health data are disaggregated by age, sex and cause of death to illustrate the root causes of health disparities and help direct resources to the most vulnerable groups such as those who do not speak the local language or face stigma and discrimination in their community; Health facilities have the capacity to regularly measure the quality of their services, workforce and patient data and can make a compelling case for increased funding to national and international stakeholders; Health data are integrated with other sectors so that social determinants of health such as pollution, sanitation and nutrition are addressed to reduce the overall burden of disease. The package's initial release includes two documents: SCORE Essential Interventions – including an overview of health information systems, underlying elements, and indicators to assess progress with sample actions; and SCORE Tools and Standards -- including resources to address critical health data gaps and strengthen country health data. “We must keep score to save lives. WHO is committed to working with countries and partners to rapidly scale up capacity for data collection and use in order to improve policy and performance,” added Dr Samira Asma, Assistant Director-General for Data, Analytics and Delivery for Impact at WHO. “We must act now to invest in statistical systems in countries, respond to this pandemic and meet the SDGs and the Triple ",
+    "selectionReason": "напрям: Медицина; ознаки користі: health services, benchmark, benchmarks",
+    "evidenceLevel": "практичне застосування або конкретний приклад",
+    "category": "Медицина",
+    "title": "New WHO technical package to help countries improve health data for COVID-19 response and beyond",
+    "summary": "Today, as part of its commitment to strengthening health information systems and improving health[1], especially in the context of the COVID-19 pandemic, WHO announced a new approach to improving access to life-saving data: the SCORE for Health Data Technical Package. The COVID-19 pandemic has highlighted the urgent need for timely and reliable data to…",
+    "body": "Матеріал автоматично відібрано зі стрічки World Health Organization (WHO). Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nToday, as part of its commitment to strengthening health information systems and improving health[1], especially in the context of the COVID-19 pandemic, WHO announced a new approach to improving access to life-saving data: the SCORE for Health Data Technical Package. The COVID-19 pandemic has highlighted the urgent need for timely and reliable data to drive strategic health action. Too many countries still lack both the infrastructure to routinely gather health data and the analytical capacity to use these data for effective health actions and emergency response. “Countries must be able to measure progress to make progress,” said WHO Director-General Dr Tedros Adhanom Ghebreyesus. “Particularly during COVID-19, reliable data is the best way to coordinate response efforts and improve health in all areas.” Accurate health data are necessary to understand specific country needs in order to improve health and save lives. Data also helps direct scarce resources to where they are needed most. The SCORE (Survey, Count, Optimize, Review, Enable) Technical Package aims to improve the availability of timely, reliable, validated, and comparable health data. For the first time in a single, harmonized package, it represents all the key elements for optimized health information system performance. Simply put, SCORE will help governments around the globe set benchmarks and improve standards in healthcare. In response to the challenges of data availability highlighted in the WHO World Health Statistics 2020 report, SCORE includes more than 90 universally-accepted tools and standards for health information systems strengthening. “Using data to inform public health priorities and strategies has never been more important,” said Dr Kelly Henning, Director of Public Health Programs at Bloomberg Philanthropies[2]. “The SCORE Technical Package provides country governments around the world with high-quality, essential technical guidance so that countries can strengthen their own data systems.” WHO is proud to partner with the Bloomberg Philanthropies Data for Health Initiative to deliver this timely resource to countries. Below are some examples of how SCORE can improve individual lives and communities: The birth of a child is registered so they can access essential health services, attend school, and apply for a passport; A death is registered with cause-of-death accurately captured so that policy-makers have a better understanding of all-cause and COVID-specific mortality and associated risk factors and implement programs and policies to save lives; Health data are disaggregated by age, sex and cause of death to illustrate the root causes of health disparities and help direct resources to the most vulnerable groups such as those who do not speak the local language or face stigma and discrimination in their community; Health facilities have the capacity to regularly measure the quality of their services, workforce and patient data and can make a compelling case for increased funding to national and international stakeholders; Health data are integrated with other sectors so that social determinants of health such as pollution, sanitation and nutrition are addressed to reduce the overall burden of disease. The package's initial release includes two documents: SCORE Essential Interventions – including an overview of health information systems, underlying elements, and indicators to assess progress with sample actions; and SCORE Tools and Standards -- including resources to address critical health data gaps and strengthen country health data. “We must keep score to save lives. WHO is committed to working with countries and partners to rapidly scale up capacity for data collection and use in order to improve policy and performance,” added Dr Samira Asma, Assistant Director-General for Data, Analytics and Delivery for Impact at WHO. “We must act now to invest in statistical systems in countries, respond to this pandemic and meet the SDGs and the Triple \n\nРедакційна класифікація: напрям: Медицина; ознаки користі: monitor, health services, benchmark. Рівень свідчень: практичне застосування або конкретний приклад. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-10-10",
+    "sources": [
+      {
+        "title": "New WHO technical package to help countries improve health data for COVID-19 response and beyond",
+        "publisher": "World Health Organization (WHO)",
+        "url": "https://www.who.int/news/item/27-08-2020-new-who-technical-package-health-data-for-covid-19-response",
+        "publishedDate": "2026-10-10"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-10-08-02872369bca5",
+    "date": "2026-10-08",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "MIT News — Здоров'я і медицина",
+    "feedId": "mit-health",
+    "sourceDomain": "mit.edu",
+    "filterVersion": "2.6",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Перспективний розвиток",
+    "feedKind": "domain_topic",
+    "sourceDescription": "In the MIT class 6.C31 (Hack Yourself) students apply computer science strategies to personal growth goals.",
+    "selectionReason": "напрям: Освіта; ознаки користі: support",
+    "evidenceLevel": "перспективне дослідження; практичний ефект ще потрібно перевірити",
+    "category": "Освіта",
+    "title": "Supporting systems of success",
+    "summary": "In the MIT class 6.C31 (Hack Yourself) students apply computer science strategies to personal growth goals.",
+    "body": "Матеріал автоматично відібрано зі стрічки MIT News. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nIn the MIT class 6.C31 (Hack Yourself) students apply computer science strategies to personal growth goals.\n\nРедакційна класифікація: напрям: Освіта; ознаки користі: support. Рівень свідчень: перспективне дослідження; практичний ефект ще потрібно перевірити. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-10-08",
+    "sources": [
+      {
+        "title": "Supporting systems of success",
+        "publisher": "MIT News",
+        "url": "https://news.mit.edu/2026/supporting-systems-success-1008",
+        "publishedDate": "2026-10-08"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-10-05-a6ddd16dc683",
+    "date": "2026-10-05",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "Copernicus — Новини та оновлення",
+    "feedId": "copernicus-general",
+    "sourceDomain": "copernicus.eu",
+    "filterVersion": "2.6",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Позитивний вплив",
+    "feedKind": "institutional",
+    "sourceDescription": "The openEO Agent: Questions turn to Earth Observation Workflow",
+    "selectionReason": "напрям: Наука і технології; ознаки користі: observation, earth observation, workflow",
+    "evidenceLevel": "практичне застосування або конкретний приклад",
+    "category": "Наука і технології",
+    "title": "The openEO Agent: Questions turn to Earth Observation Workflow",
+    "summary": "The openEO Agent: Questions turn to Earth Observation Workflow",
+    "body": "Матеріал автоматично відібрано зі стрічки Copernicus Data Space Ecosystem. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nThe openEO Agent: Questions turn to Earth Observation Workflow\n\nРедакційна класифікація: напрям: Наука і технології; ознаки користі: observation, earth observation, workflow. Рівень свідчень: практичне застосування або конкретний приклад. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-10-05",
+    "sources": [
+      {
+        "title": "The openEO Agent: Questions turn to Earth Observation Workflow",
+        "publisher": "Copernicus Data Space Ecosystem",
+        "url": "https://dataspace.copernicus.eu/news/2026-10-5-openeo-agent-questions-turn-earth-observation-workflow",
+        "publishedDate": "2026-10-05"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-09-29-a23de2ab1881",
+    "date": "2026-09-29",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "MIT News — Клімат і сталість",
+    "feedId": "mit-climate",
+    "sourceDomain": "mit.edu",
+    "filterVersion": "2.6",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Перспективний розвиток",
+    "feedKind": "domain_topic",
+    "sourceDescription": "J-PAL North America’s Learning Lab supported a second cohort of U.S. government and nonprofit organizations in building and using rigorous evidence to advance effective decarbonization and adaptation strategies.",
+    "selectionReason": "напрям: Екологія; ознаки користі: support",
+    "evidenceLevel": "перспективне дослідження; практичний ефект ще потрібно перевірити",
+    "category": "Екологія",
+    "title": "Climate Action Learning Lab bridges research and policy for effective climate solutions",
+    "summary": "J-PAL North America’s Learning Lab supported a second cohort of U.S. government and nonprofit organizations in building and using rigorous evidence to advance effective decarbonization and adaptation strategies.",
+    "body": "Матеріал автоматично відібрано зі стрічки MIT News. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nJ-PAL North America’s Learning Lab supported a second cohort of U.S. government and nonprofit organizations in building and using rigorous evidence to advance effective decarbonization and adaptation strategies.\n\nРедакційна класифікація: напрям: Екологія; ознаки користі: support. Рівень свідчень: перспективне дослідження; практичний ефект ще потрібно перевірити. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-09-29",
+    "sources": [
+      {
+        "title": "Climate Action Learning Lab bridges research and policy for effective climate solutions",
+        "publisher": "MIT News",
+        "url": "https://news.mit.edu/2026/climate-action-learning-lab-bridges-research-policy-for-effective-climate-solutions-0929",
+        "publishedDate": "2026-09-29"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-09-24-f9a71742cd94",
+    "date": "2026-09-24",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "MIT News — Здоров'я і медицина",
+    "feedId": "mit-health",
+    "sourceDomain": "mit.edu",
+    "filterVersion": "2.6",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Перспективний розвиток",
+    "feedKind": "domain_topic",
+    "sourceDescription": "They also found that obesity may put patients at higher risk for activation of the pathway. Drugs that block the pathway may help prevent metastasis.",
+    "selectionReason": "напрям: Медицина; ознаки користі: prevent",
+    "evidenceLevel": "перспективне дослідження; практичний ефект ще потрібно перевірити",
+    "category": "Медицина",
+    "title": "Biologists identify a cellular pathway that allows colorectal cancer to metastasize",
+    "summary": "They also found that obesity may put patients at higher risk for activation of the pathway. Drugs that block the pathway may help prevent metastasis.",
+    "body": "Матеріал автоматично відібрано зі стрічки MIT News. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nThey also found that obesity may put patients at higher risk for activation of the pathway. Drugs that block the pathway may help prevent metastasis.\n\nРедакційна класифікація: напрям: Медицина; ознаки користі: prevent. Рівень свідчень: перспективне дослідження; практичний ефект ще потрібно перевірити. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-09-24",
+    "sources": [
+      {
+        "title": "Biologists identify a cellular pathway that allows colorectal cancer to metastasize",
+        "publisher": "MIT News",
+        "url": "https://news.mit.edu/2026/biologists-identify-cellular-pathway-allows-colorectal-cancer-metastasize-0924",
+        "publishedDate": "2026-09-24"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-09-24-cf83d9bbc592",
+    "date": "2026-09-24",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "MIT News — Здоров'я і медицина",
+    "feedId": "mit-health",
+    "sourceDomain": "mit.edu",
+    "filterVersion": "2.6",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Перспективний розвиток",
+    "feedKind": "domain_topic",
+    "sourceDescription": "MIT researchers developed a handheld system that gently collects living cells from patient samples to aid cancer testing and development of personalized medicines.",
+    "selectionReason": "напрям: Медицина; ознаки користі: improve, detect, detection",
+    "evidenceLevel": "перспективне дослідження; практичний ефект ще потрібно перевірити",
+    "category": "Медицина",
+    "title": "New cell-collection device could improve early cancer detection",
+    "summary": "MIT researchers developed a handheld system that gently collects living cells from patient samples to aid cancer testing and development of personalized medicines.",
+    "body": "Матеріал автоматично відібрано зі стрічки MIT News. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nMIT researchers developed a handheld system that gently collects living cells from patient samples to aid cancer testing and development of personalized medicines.\n\nРедакційна класифікація: напрям: Медицина; ознаки користі: improve, detect, detection. Рівень свідчень: перспективне дослідження; практичний ефект ще потрібно перевірити. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-09-24",
+    "sources": [
+      {
+        "title": "New cell-collection device could improve early cancer detection",
+        "publisher": "MIT News",
+        "url": "https://news.mit.edu/2026/new-cell-collection-device-could-improve-early-cancer-detection-0924",
+        "publishedDate": "2026-09-24"
+      }
+    ]
   }
 ]

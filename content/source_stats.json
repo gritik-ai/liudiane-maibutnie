@@ -1,18 +1,18 @@
 {
   "schemaVersion": 1,
   "filterVersion": "2.7",
-  "generatedAt": "2026-11-26T11:41:17.179622+00:00",
+  "generatedAt": "2026-11-26T14:06:11.325063+00:00",
   "totals": {
-    "successfulFeeds": 25,
+    "successfulFeeds": 26,
     "totalFeeds": 27,
-    "itemsFetched": 2026,
-    "acceptedCandidates": 32,
-    "added": 3,
-    "rejected": 1022,
-    "duplicates": 96,
-    "tooOld": 571,
-    "shortDescriptions": 49,
-    "deferredByDiversityCap": 29
+    "itemsFetched": 2056,
+    "acceptedCandidates": 31,
+    "added": 5,
+    "rejected": 1049,
+    "duplicates": 102,
+    "tooOld": 570,
+    "shortDescriptions": 48,
+    "deferredByDiversityCap": 26
   },
   "feedRuns": [
     {
@@ -133,13 +133,13 @@
       "url": "https://export.arxiv.org/rss/cs.AI",
       "status": "ok",
       "itemsFetched": 447,
-      "acceptedCandidates": 22,
+      "acceptedCandidates": 19,
       "added": 3,
       "rejected": 414,
-      "duplicates": 11,
+      "duplicates": 14,
       "tooOld": 0,
       "shortDescriptions": 0,
-      "deferredByDiversityCap": 19,
+      "deferredByDiversityCap": 16,
       "rejectionReasons": {
         "немає чіткого зв'язку зі штучним інтелектом для спеціалізованої AI-стрічки": 217,
         "не виявлено достатньо чіткого напряму користі для людей": 155,
@@ -298,17 +298,24 @@
       "publisher": "United Nations News",
       "domain": "un.org",
       "url": "https://news.un.org/feed/subscribe/en/news/topic/health/feed/rss.xml",
-      "status": "error",
-      "itemsFetched": 0,
-      "acceptedCandidates": 0,
-      "added": 0,
-      "rejected": 0,
+      "status": "ok",
+      "itemsFetched": 30,
+      "acceptedCandidates": 2,
+      "added": 2,
+      "rejected": 28,
       "duplicates": 0,
       "tooOld": 0,
       "shortDescriptions": 0,
       "deferredByDiversityCap": 0,
-      "rejectionReasons": {},
-      "error": "not well-formed (invalid token): line 1, column 0"
+      "rejectionReasons": {
+        "неоднозначна тематика: Медицина / Права людини; потрібна редакційна перевірка": 1,
+        "визначено напрям «Медицина», але немає достатніх ознак застосування, оцінювання або суспільної користі": 11,
+        "не виявлено достатньо чіткого напряму користі для людей": 12,
+        "недостатньо чіткий зв'язок із напрямом «Медицина»": 2,
+        "визначено напрям «Мир і безпека», але немає достатніх ознак застосування, оцінювання або суспільної користі": 1,
+        "визначено напрям «Економіка та добробут», але немає достатніх ознак застосування, оцінювання або суспільної користі": 1
+      },
+      "error": ""
     },
     {
       "id": "un-climate",
@@ -344,8 +351,8 @@
       "itemsFetched": 30,
       "acceptedCandidates": 0,
       "added": 0,
-      "rejected": 30,
-      "duplicates": 0,
+      "rejected": 28,
+      "duplicates": 2,
       "tooOld": 0,
       "shortDescriptions": 0,
       "deferredByDiversityCap": 0,
@@ -360,8 +367,7 @@
         "визначено напрям «Освіта», але немає достатніх ознак застосування, оцінювання або суспільної користі": 1,
         "визначено напрям «Мир і безпека», але немає достатніх ознак застосування, оцінювання або суспільної користі": 2,
         "відсів: військове застосування або озброєння": 1,
-        "визначено напрям «Медицина», але немає достатніх ознак застосування, оцінювання або суспільної користі": 2,
-        "визначено напрям «Економіка та добробут», але немає достатніх ознак застосування, оцінювання або суспільної користі": 1
+        "визначено напрям «Медицина», але немає достатніх ознак застосування, оцінювання або суспільної користі": 1
       },
       "error": ""
     },
@@ -393,14 +399,14 @@
       "itemsFetched": 30,
       "acceptedCandidates": 0,
       "added": 0,
-      "rejected": 22,
-      "duplicates": 8,
+      "rejected": 21,
+      "duplicates": 9,
       "tooOld": 0,
       "shortDescriptions": 0,
       "deferredByDiversityCap": 0,
       "rejectionReasons": {
         "визначено напрям «Мир і безпека», але немає достатніх ознак застосування, оцінювання або суспільної користі": 4,
-        "не виявлено достатньо чіткого напряму користі для людей": 11,
+        "не виявлено достатньо чіткого напряму користі для людей": 10,
         "недостатньо чіткий зв'язок із напрямом «Державне управління»": 1,
         "визначено напрям «Екологія», але немає достатніх ознак застосування, оцінювання або суспільної користі": 1,
         "недостатньо чіткий зв'язок із напрямом «Мир і безпека»": 2,
@@ -425,10 +431,9 @@
       "shortDescriptions": 0,
       "deferredByDiversityCap": 0,
       "rejectionReasons": {
+        "не виявлено достатньо чіткого напряму користі для людей": 11,
         "визначено напрям «Освіта», але немає достатніх ознак застосування, оцінювання або суспільної користі": 2,
         "відсів: військове застосування або озброєння": 2,
-        "не виявлено достатньо чіткого напряму користі для людей": 10,
-        "визначено напрям «Медицина», але немає достатніх ознак застосування, оцінювання або суспільної користі": 1,
         "недостатньо чіткий зв'язок із напрямом «Мир і безпека»": 1,
         "недостатньо чіткий зв'язок із напрямом «Права людини»": 1
       },
@@ -587,14 +592,14 @@
       "itemsFetched": 100,
       "acceptedCandidates": 0,
       "added": 0,
-      "rejected": 11,
+      "rejected": 12,
       "duplicates": 5,
       "tooOld": 0,
-      "shortDescriptions": 36,
+      "shortDescriptions": 35,
       "deferredByDiversityCap": 0,
       "rejectionReasons": {
-        "короткий або відсутній опис": 36,
-        "не виявлено достатньо чіткого напряму користі для людей": 4,
+        "короткий або відсутній опис": 35,
+        "не виявлено достатньо чіткого напряму користі для людей": 5,
         "визначено напрям «Екологія», але немає достатніх ознак застосування, оцінювання або суспільної користі": 5,
         "неоднозначна тематика: Екологія / Державне управління; потрібна редакційна перевірка": 1,
         "недостатньо чіткий зв'язок із напрямом «Екологія»": 1
@@ -611,15 +616,15 @@
       "itemsFetched": 100,
       "acceptedCandidates": 0,
       "added": 0,
-      "rejected": 41,
+      "rejected": 42,
       "duplicates": 13,
-      "tooOld": 16,
+      "tooOld": 15,
       "shortDescriptions": 8,
       "deferredByDiversityCap": 0,
       "rejectionReasons": {
+        "визначено напрям «Екологія», але немає достатніх ознак застосування, оцінювання або суспільної користі": 18,
         "не виявлено достатньо чіткого напряму користі для людей": 18,
         "короткий або відсутній опис": 8,
-        "визначено напрям «Екологія», але немає достатніх ознак застосування, оцінювання або суспільної користі": 17,
         "недостатньо чіткий зв'язок із напрямом «Екологія»": 2,
         "визначено напрям «Державне управління», але немає достатніх ознак застосування, оцінювання або суспільної користі": 1,
         "неоднозначна тематика: Екологія / Державне управління; потрібна редакційна перевірка": 1,
@@ -632,7 +637,7 @@
   "libraryByDomain": [
     {
       "domain": "arxiv.org",
-      "count": 66,
+      "count": 69,
       "publishers": [
         "arXiv"
       ]
@@ -646,17 +651,17 @@
       ]
     },
     {
+      "domain": "un.org",
+      "count": 9,
+      "publishers": [
+        "United Nations News"
+      ]
+    },
+    {
       "domain": "mit.edu",
       "count": 7,
       "publishers": [
         "MIT News"
-      ]
-    },
-    {
-      "domain": "un.org",
-      "count": 7,
-      "publishers": [
-        "United Nations News"
       ]
     },
     {
@@ -674,6 +679,32 @@
       ]
     },
     {
+      "domain": "internationalaisafetyreport.org",
+      "count": 1,
+      "publishers": [
+        "International AI Safety Report"
+      ]
+    },
+    {
+      "domain": "itf-oecd.org",
+      "count": 1,
+      "publishers": [
+        "International Transport Forum / OECD",
+        "OECD",
+        "UN-Habitat"
+      ]
+    },
+    {
+      "domain": "kmu.gov.ua",
+      "count": 1,
+      "publishers": [
+        "Єдина державна електронна система у сфері будівництва",
+        "Міністерство розвитку громад та територій України",
+        "ООН в Україні",
+        "Уряд України / Міністерство розвитку громад та територій"
+      ]
+    },
+    {
       "domain": "nasa.gov",
       "count": 1,
       "publishers": [
@@ -688,12 +719,12 @@
       ]
     }
   ],
-  "libraryDomainCount": 8,
+  "libraryDomainCount": 11,
   "library": {
-    "totalRecords": 122,
-    "publicRecords": 107,
+    "totalRecords": 130,
+    "publicRecords": 115,
     "needsReview": 15,
-    "manualRecords": 7
+    "manualRecords": 10
   },
   "methodology": "Кількість доменів обчислюється за першоджерелами схвалених матеріалів. Статистика RSS показує результати останнього запуску, а не доведений суспільний ефект."
 }

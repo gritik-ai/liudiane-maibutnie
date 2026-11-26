@@ -1,5 +1,155 @@
 [
   {
+    "id": "rss-2026-11-26-4c21e5c4bc3c",
+    "date": "2026-11-26",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "arXiv — Штучний інтелект",
+    "feedId": "arxiv-ai",
+    "sourceDomain": "arxiv.org",
+    "filterVersion": "2.7",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Перспективний розвиток",
+    "feedKind": "ai_topic",
+    "sourceDescription": "arXiv:2611.31767v1 Announce Type: cross Abstract: Architects have two mature instruments for performance work. Top-Down analysis tells them where a design loses its pipeline slots, and design-space exploration (DSE) tells them which configuration scores best. Neither explains why a search stops improving: why a backend-bound design rejects a prefetcher that the bottleneck label recommends, or why a capacity increase that helped in one configuration hurts in the next. This paper argues that the evidence needed to answer such questions is already produced during exploration and then discarded. Every parent-child edge in an exploration tree is a controlled intervention: one knob changes, the rest of the design is held fixed, and a cycle-level simulator measures the outcome. When the same edit helps under one parent and hurts under another, aligning the two parents localizes the interaction that decides its sign. We present DELTA, a simulator-grounded root-cause analysis tool that builds a Design Memory of such interventions during exploration and lets an architect query it afterwards. Each record stores the full parent configuration, the single applied edit, the measured and predicted IPC, a Top-Down breakdown from StallLens, our gem5 implementation of Top-Down, and its lineage. Unlike evolutionary LLM search, which keeps only high-scoring programs, DELTA keeps failed edges as evidence. The same memory also makes exploration efficient: on four SPEC CPU2017 workloads, the full system raises IPC by 55.5% in 22 simulated designs for $1.56 of model cost, predicts the IPC of its own proposals to within 3.3%, and keeps improving after a bottleneck-guided search stalls. A root-cause query over the recorded history led us to a usefulness-throttled variant of the Best-Offset prefetcher that improves IPC by 1.37% over the original in matched configurations.",
+    "selectionReason": "напрям: Медицина; ознаки користі: improve, improves, predict",
+    "evidenceLevel": "дослідження або оцінювання потенційного застосування",
+    "category": "Медицина",
+    "title": "DELTA: Diagnosing Exploration Lineages via Twin-path Alignment - What Can Contrasting Design Paths Reveal About Microarchitectural Behavior?",
+    "summary": "arXiv:2611.31767v1 Announce Type: cross Abstract: Architects have two mature instruments for performance work. Top-Down analysis tells them where a design loses its pipeline slots, and design-space exploration (DSE) tells them which configuration scores best. Neither explains why a search stops improving: why a backend-bound design rejects a prefetcher…",
+    "body": "Матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.31767v1 Announce Type: cross Abstract: Architects have two mature instruments for performance work. Top-Down analysis tells them where a design loses its pipeline slots, and design-space exploration (DSE) tells them which configuration scores best. Neither explains why a search stops improving: why a backend-bound design rejects a prefetcher that the bottleneck label recommends, or why a capacity increase that helped in one configuration hurts in the next. This paper argues that the evidence needed to answer such questions is already produced during exploration and then discarded. Every parent-child edge in an exploration tree is a controlled intervention: one knob changes, the rest of the design is held fixed, and a cycle-level simulator measures the outcome. When the same edit helps under one parent and hurts under another, aligning the two parents localizes the interaction that decides its sign. We present DELTA, a simulator-grounded root-cause analysis tool that builds a Design Memory of such interventions during exploration and lets an architect query it afterwards. Each record stores the full parent configuration, the single applied edit, the measured and predicted IPC, a Top-Down breakdown from StallLens, our gem5 implementation of Top-Down, and its lineage. Unlike evolutionary LLM search, which keeps only high-scoring programs, DELTA keeps failed edges as evidence. The same memory also makes exploration efficient: on four SPEC CPU2017 workloads, the full system raises IPC by 55.5% in 22 simulated designs for $1.56 of model cost, predicts the IPC of its own proposals to within 3.3%, and keeps improving after a bottleneck-guided search stalls. A root-cause query over the recorded history led us to a usefulness-throttled variant of the Best-Offset prefetcher that improves IPC by 1.37% over the original in matched configurations.\n\nРедакційна класифікація: напрям: Медицина; ознаки користі: improve, improves, predict. Рівень свідчень: дослідження або оцінювання потенційного застосування. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте статус публікації в першоджерелі.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-26",
+    "sources": [
+      {
+        "title": "DELTA: Diagnosing Exploration Lineages via Twin-path Alignment - What Can Contrasting Design Paths Reveal About Microarchitectural Behavior?",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2611.31767",
+        "publishedDate": "2026-11-26"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-26-2fb15b153ea2",
+    "date": "2026-11-26",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "arXiv — Штучний інтелект",
+    "feedId": "arxiv-ai",
+    "sourceDomain": "arxiv.org",
+    "filterVersion": "2.7",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Перспективний розвиток",
+    "feedKind": "ai_topic",
+    "sourceDescription": "arXiv:2611.32021v1 Announce Type: cross Abstract: Specialist medical vision-language models (VLMs) are strong within their specialties but hard to unify: their training data are often private, and independently developed specialists cannot be assumed to share an architecture. Deploying these large models separately is costly. We present HuluOPD, an on-policy distillation recipe that unifies heterogeneous specialists into one lightweight VLM using only unlabeled prompts, without requiring reference answers or the specialists' training data. The lightweight model answers each prompt, and the specialist of the prompt's modality supervises its response; a continuation-aligned cross-tokenizer loss makes this possible even when they differ in architecture and tokenizer. We apply HuluOPD to five specialists, for ultrasound, pathology, optical coherence tomography, fundus photography, and dental imaging. To distill and evaluate them, we build HuluOPDCorpus, 914k unlabeled prompts, and HuluOPDBench, 47k held-out test items, from over 90 public datasets, and score all models under one protocol on 132k test items, including third-party benchmarks. A single model with 10% of the five specialists' combined parameters retains 94% of their question-answering performance, and one with 2% retains 89%. To our knowledge, this is the first demonstration of unifying heterogeneous medical specialist VLMs without requiring their training data or a shared architecture.",
+    "selectionReason": "напрям: Медицина; ознаки користі: benchmark, benchmarks, evaluate",
+    "evidenceLevel": "дослідження або оцінювання потенційного застосування",
+    "category": "Медицина",
+    "title": "HuluOPD: Unifying Heterogeneous Medical Specialists into One Lightweight Model with Unlabeled Prompts",
+    "summary": "arXiv:2611.32021v1 Announce Type: cross Abstract: Specialist medical vision-language models (VLMs) are strong within their specialties but hard to unify: their training data are often private, and independently developed specialists cannot be assumed to share an architecture. Deploying these large models separately is costly. We present HuluOPD, an…",
+    "body": "Матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.32021v1 Announce Type: cross Abstract: Specialist medical vision-language models (VLMs) are strong within their specialties but hard to unify: their training data are often private, and independently developed specialists cannot be assumed to share an architecture. Deploying these large models separately is costly. We present HuluOPD, an on-policy distillation recipe that unifies heterogeneous specialists into one lightweight VLM using only unlabeled prompts, without requiring reference answers or the specialists' training data. The lightweight model answers each prompt, and the specialist of the prompt's modality supervises its response; a continuation-aligned cross-tokenizer loss makes this possible even when they differ in architecture and tokenizer. We apply HuluOPD to five specialists, for ultrasound, pathology, optical coherence tomography, fundus photography, and dental imaging. To distill and evaluate them, we build HuluOPDCorpus, 914k unlabeled prompts, and HuluOPDBench, 47k held-out test items, from over 90 public datasets, and score all models under one protocol on 132k test items, including third-party benchmarks. A single model with 10% of the five specialists' combined parameters retains 94% of their question-answering performance, and one with 2% retains 89%. To our knowledge, this is the first demonstration of unifying heterogeneous medical specialist VLMs without requiring their training data or a shared architecture.\n\nРедакційна класифікація: напрям: Медицина; ознаки користі: benchmark, benchmarks, evaluate. Рівень свідчень: дослідження або оцінювання потенційного застосування. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте статус публікації в першоджерелі.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-26",
+    "sources": [
+      {
+        "title": "HuluOPD: Unifying Heterogeneous Medical Specialists into One Lightweight Model with Unlabeled Prompts",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2611.32021",
+        "publishedDate": "2026-11-26"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-26-1cb66a9694a4",
+    "date": "2026-11-26",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "arXiv — Штучний інтелект",
+    "feedId": "arxiv-ai",
+    "sourceDomain": "arxiv.org",
+    "filterVersion": "2.7",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Перспективний розвиток",
+    "feedKind": "ai_topic",
+    "sourceDescription": "arXiv:2611.32094v1 Announce Type: cross Abstract: Spatial reasoning in hospitals requires tracking look-alike equipment, interpreting patient-relative directions, and judging passage widths, yet existing benchmarks provide limited coverage of these abilities. We introduce Clinical3D-Bench, a simulated benchmark with 3,368 questions of eight types on egocentric walkthroughs of 373 hospital-room layouts. Layouts follow hospital design guidelines, answers are computed from the 3D scenes, and paired scene states test whether models change their answers when relevant evidence changes. Videos are photorealistic, and ten physicians screened the layouts. Among 35 multimodal large language models (MLLMs), the best open and proprietary models reach 45.7% and 53.6% macro accuracy, against 40.8% for an answer prior and 79.0% for physicians on a subset, and 27 of 32 open models score below 40% on two-way patient-relative directions. Fine-tuning on Clinical3D-45K, our 44,750-question training set, lifts two MLLMs 16-20 points above the best proprietary model. 3D maps given to the fine-tuned MLLM as input go largely unused: replacing them with another video's, even when they are ground truth, barely changes its accuracy. The proposed GeoJeV instead lets the MLLM compute with 3D: it reconstructs a scene memory from each video, selects 3D operations and their arguments from the MLLM's question state, and adds their evidence to its option scores. It achieves the highest accuracy of all evaluated models, narrowing the gap to physicians.",
+    "selectionReason": "напрям: Медицина; ознаки користі: benchmark, benchmarks, evaluate",
+    "evidenceLevel": "дослідження або оцінювання потенційного застосування",
+    "category": "Медицина",
+    "title": "Clinical3D-Bench: Evaluating and Improving Spatial Intelligence of Multimodal LLMs in Hospital Environments",
+    "summary": "arXiv:2611.32094v1 Announce Type: cross Abstract: Spatial reasoning in hospitals requires tracking look-alike equipment, interpreting patient-relative directions, and judging passage widths, yet existing benchmarks provide limited coverage of these abilities. We introduce Clinical3D-Bench, a simulated benchmark with 3,368 questions of eight types on…",
+    "body": "Матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.32094v1 Announce Type: cross Abstract: Spatial reasoning in hospitals requires tracking look-alike equipment, interpreting patient-relative directions, and judging passage widths, yet existing benchmarks provide limited coverage of these abilities. We introduce Clinical3D-Bench, a simulated benchmark with 3,368 questions of eight types on egocentric walkthroughs of 373 hospital-room layouts. Layouts follow hospital design guidelines, answers are computed from the 3D scenes, and paired scene states test whether models change their answers when relevant evidence changes. Videos are photorealistic, and ten physicians screened the layouts. Among 35 multimodal large language models (MLLMs), the best open and proprietary models reach 45.7% and 53.6% macro accuracy, against 40.8% for an answer prior and 79.0% for physicians on a subset, and 27 of 32 open models score below 40% on two-way patient-relative directions. Fine-tuning on Clinical3D-45K, our 44,750-question training set, lifts two MLLMs 16-20 points above the best proprietary model. 3D maps given to the fine-tuned MLLM as input go largely unused: replacing them with another video's, even when they are ground truth, barely changes its accuracy. The proposed GeoJeV instead lets the MLLM compute with 3D: it reconstructs a scene memory from each video, selects 3D operations and their arguments from the MLLM's question state, and adds their evidence to its option scores. It achieves the highest accuracy of all evaluated models, narrowing the gap to physicians.\n\nРедакційна класифікація: напрям: Медицина; ознаки користі: benchmark, benchmarks, evaluate. Рівень свідчень: дослідження або оцінювання потенційного застосування. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте статус публікації в першоджерелі.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-26",
+    "sources": [
+      {
+        "title": "Clinical3D-Bench: Evaluating and Improving Spatial Intelligence of Multimodal LLMs in Hospital Environments",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2611.32094",
+        "publishedDate": "2026-11-26"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-10-7353459294dc",
+    "date": "2026-11-10",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "UN News — Здоров'я",
+    "feedId": "un-health",
+    "sourceDomain": "un.org",
+    "filterVersion": "2.7",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Перспективний розвиток",
+    "feedKind": "institutional",
+    "sourceDescription": "Ending cholera as a public health threat by 2030 is within reach, as every cholera death can be prevented with tools that already exist, the World Health Organization (WHO) said on Tuesday.",
+    "selectionReason": "напрям: Права людини; ознаки користі: prevent",
+    "evidenceLevel": "перспективне дослідження; практичний ефект ще потрібно перевірити",
+    "category": "Права людини",
+    "title": "World News in Brief: Ending cholera by 2030 ‘within reach’, Haiti displacement and hunger, US human rights review rescheduled",
+    "summary": "Ending cholera as a public health threat by 2030 is within reach, as every cholera death can be prevented with tools that already exist, the World Health Organization (WHO) said on Tuesday.",
+    "body": "Матеріал автоматично відібрано зі стрічки United Nations News. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nEnding cholera as a public health threat by 2030 is within reach, as every cholera death can be prevented with tools that already exist, the World Health Organization (WHO) said on Tuesday.\n\nРедакційна класифікація: напрям: Права людини; ознаки користі: prevent. Рівень свідчень: перспективне дослідження; практичний ефект ще потрібно перевірити. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-10",
+    "sources": [
+      {
+        "title": "World News in Brief: Ending cholera by 2030 ‘within reach’, Haiti displacement and hunger, US human rights review rescheduled",
+        "publisher": "United Nations News",
+        "url": "https://news.un.org/feed/view/en/story/2026/11/1168782",
+        "publishedDate": "2026-11-10"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-05-6c13159755ee",
+    "date": "2026-11-05",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "UN News — Здоров'я",
+    "feedId": "un-health",
+    "sourceDomain": "un.org",
+    "filterVersion": "2.7",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Позитивний вплив",
+    "feedKind": "institutional",
+    "sourceDescription": "Two new Ebola vaccine candidates will be added to a clinical trial in the Democratic Republic of the Congo (DRC) as the country continues to battle a deadly outbreak caused by the Bundibugyo species of the virus.",
+    "selectionReason": "напрям: Медицина; ознаки користі: clinical trial",
+    "evidenceLevel": "практичне застосування або конкретний приклад",
+    "category": "Медицина",
+    "title": "Two new Ebola vaccines to join DR Congo clinical trial",
+    "summary": "Two new Ebola vaccine candidates will be added to a clinical trial in the Democratic Republic of the Congo (DRC) as the country continues to battle a deadly outbreak caused by the Bundibugyo species of the virus.",
+    "body": "Матеріал автоматично відібрано зі стрічки United Nations News. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nTwo new Ebola vaccine candidates will be added to a clinical trial in the Democratic Republic of the Congo (DRC) as the country continues to battle a deadly outbreak caused by the Bundibugyo species of the virus.\n\nРедакційна класифікація: напрям: Медицина; ознаки користі: clinical trial. Рівень свідчень: практичне застосування або конкретний приклад. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-05",
+    "sources": [
+      {
+        "title": "Two new Ebola vaccines to join DR Congo clinical trial",
+        "publisher": "United Nations News",
+        "url": "https://news.un.org/feed/view/en/story/2026/11/1168742",
+        "publishedDate": "2026-11-05"
+      }
+    ]
+  },
+  {
     "id": "editorial-ukraine-rebuild-20261126",
     "date": "2026-11-26",
     "autoPublished": false,
@@ -69,96 +219,6 @@
         "title": "Built Environment through a Well-being Lens",
         "publisher": "OECD",
         "url": "https://www.oecd.org/en/publications/built-environment-through-a-well-being-lens_deb96f05-en.html"
-      }
-    ]
-  },
-  {
-    "id": "rss-2026-11-26-e69bc062e795",
-    "date": "2026-11-26",
-    "autoPublished": true,
-    "sourceType": "rss",
-    "feedName": "arXiv — Штучний інтелект",
-    "feedId": "arxiv-ai",
-    "sourceDomain": "arxiv.org",
-    "filterVersion": "2.7",
-    "editorialStatus": "approved",
-    "editorialDecisionSource": "automatic",
-    "editorialLabel": "Перспективний розвиток",
-    "feedKind": "ai_topic",
-    "sourceDescription": "arXiv:2611.31573v1 Announce Type: cross Abstract: Generative AI is increasingly used by learners in cognitively demanding tasks, but its capacity to provide immediate solutions raises concerns about decreased learner agency. Meta-level AI systems that provide reflective and metacognitive scaffolding have emerged as a promising approach to supporting learners' self-regulation. However, these systems introduce a fundamental paradox: AI intended to preserve learner agency can itself constrain that agency by regulating when, how, and why learners should reflect. To investigate this challenge, we conducted a co-design workshop with 18 students engaged in programming and academic writing tasks using ChatGPT extended with ChatWise, a meta-level AI system providing self-regulated learning-aligned feedback. Drawing on 185 prompt-feedback entries, 174 written reflections, and participants' design artifacts (17 storyboards and 5 group design proposals), we identified four interconnected design tensions: assistance vs reflection, immediate intervention vs space for self-regulation, visibility vs attention competition, and system adaptation vs user control. The study contributes a multidimensional account of learner agency that includes task, cognitive, and interaction agency, along with empirically grounded interaction-design mechanisms to negotiate these tensions.",
-    "selectionReason": "напрям: Освіта; ознаки користі: assist, support",
-    "evidenceLevel": "перспективне дослідження; практичний ефект ще потрібно перевірити",
-    "category": "Освіта",
-    "title": "The Paradox of Agency-Preserving AI: Negotiating Learner Agency in Layered Human-AI Interactions",
-    "summary": "arXiv:2611.31573v1 Announce Type: cross Abstract: Generative AI is increasingly used by learners in cognitively demanding tasks, but its capacity to provide immediate solutions raises concerns about decreased learner agency. Meta-level AI systems that provide reflective and metacognitive scaffolding have emerged as a promising approach to supporting…",
-    "body": "Матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.31573v1 Announce Type: cross Abstract: Generative AI is increasingly used by learners in cognitively demanding tasks, but its capacity to provide immediate solutions raises concerns about decreased learner agency. Meta-level AI systems that provide reflective and metacognitive scaffolding have emerged as a promising approach to supporting learners' self-regulation. However, these systems introduce a fundamental paradox: AI intended to preserve learner agency can itself constrain that agency by regulating when, how, and why learners should reflect. To investigate this challenge, we conducted a co-design workshop with 18 students engaged in programming and academic writing tasks using ChatGPT extended with ChatWise, a meta-level AI system providing self-regulated learning-aligned feedback. Drawing on 185 prompt-feedback entries, 174 written reflections, and participants' design artifacts (17 storyboards and 5 group design proposals), we identified four interconnected design tensions: assistance vs reflection, immediate intervention vs space for self-regulation, visibility vs attention competition, and system adaptation vs user control. The study contributes a multidimensional account of learner agency that includes task, cognitive, and interaction agency, along with empirically grounded interaction-design mechanisms to negotiate these tensions.\n\nРедакційна класифікація: напрям: Освіта; ознаки користі: assist, support. Рівень свідчень: перспективне дослідження; практичний ефект ще потрібно перевірити. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте статус публікації в першоджерелі.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
-    "sourceDate": "2026-11-26",
-    "sources": [
-      {
-        "title": "The Paradox of Agency-Preserving AI: Negotiating Learner Agency in Layered Human-AI Interactions",
-        "publisher": "arXiv",
-        "url": "https://arxiv.org/abs/2611.31573",
-        "publishedDate": "2026-11-26"
-      }
-    ]
-  },
-  {
-    "id": "rss-2026-11-26-64eeffdd4b8d",
-    "date": "2026-11-26",
-    "autoPublished": true,
-    "sourceType": "rss",
-    "feedName": "arXiv — Штучний інтелект",
-    "feedId": "arxiv-ai",
-    "sourceDomain": "arxiv.org",
-    "filterVersion": "2.7",
-    "editorialStatus": "approved",
-    "editorialDecisionSource": "automatic",
-    "editorialLabel": "Перспективний розвиток",
-    "feedKind": "ai_topic",
-    "sourceDescription": "arXiv:2611.31693v1 Announce Type: cross Abstract: Producing useful evidence syntheses requires clearly formulated research questions linked to an understanding of their optimal scope. When policymakers (or other end users) commission or steer the production of systematic reviews or other evidence syntheses to fulfil a demand for evidence, these parameters are rarely specified sufficiently for production to proceed. Instead, these details are typically developed via a collaborative dialogic process involving evidence producers and users to ensure the resulting synthesis will meet users' needs. This process is informed by scoping and (more-or-less formally) mapping the existing evidence base, which can take many weeks or months, slowed by applying mostly manual processes to identify and characterise the evidence. Recent developments in artificial intelligence (AI) technologies have opened up new opportunities for more rapid, iterative, and responsive mapping of relevant evidence to support such early-stage evidence-to-policy dialogues and processes. In this article, we outline and characterise this emerging approach, termed Rapid Exploratory Maps (REMs). We also present two illustrative case studies drawn from first-hand experiences within a programme of evidence reviews production to inform government policy in England. While this approach could be transformative for the mapping process, its broader potential is as yet largely unassessed, and it confers important challenges and likely risks, as well as benefits. Determining whether REMs could usefully support more efficient ways of working with end users when developing and designing evidence syntheses will require continued development and careful evaluation.",
-    "selectionReason": "напрям: Державне управління; ознаки користі: mapping, evaluation, support",
-    "evidenceLevel": "дослідження або оцінювання потенційного застосування",
-    "category": "Державне управління",
-    "title": "Rapid Exploratory Maps and their potential role in supporting evidence-to-policy dialogues and processes",
-    "summary": "arXiv:2611.31693v1 Announce Type: cross Abstract: Producing useful evidence syntheses requires clearly formulated research questions linked to an understanding of their optimal scope. When policymakers (or other end users) commission or steer the production of systematic reviews or other evidence syntheses to fulfil a demand for evidence, these parameters…",
-    "body": "Матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.31693v1 Announce Type: cross Abstract: Producing useful evidence syntheses requires clearly formulated research questions linked to an understanding of their optimal scope. When policymakers (or other end users) commission or steer the production of systematic reviews or other evidence syntheses to fulfil a demand for evidence, these parameters are rarely specified sufficiently for production to proceed. Instead, these details are typically developed via a collaborative dialogic process involving evidence producers and users to ensure the resulting synthesis will meet users' needs. This process is informed by scoping and (more-or-less formally) mapping the existing evidence base, which can take many weeks or months, slowed by applying mostly manual processes to identify and characterise the evidence. Recent developments in artificial intelligence (AI) technologies have opened up new opportunities for more rapid, iterative, and responsive mapping of relevant evidence to support such early-stage evidence-to-policy dialogues and processes. In this article, we outline and characterise this emerging approach, termed Rapid Exploratory Maps (REMs). We also present two illustrative case studies drawn from first-hand experiences within a programme of evidence reviews production to inform government policy in England. While this approach could be transformative for the mapping process, its broader potential is as yet largely unassessed, and it confers important challenges and likely risks, as well as benefits. Determining whether REMs could usefully support more efficient ways of working with end users when developing and designing evidence syntheses will require continued development and careful evaluation.\n\nРедакційна класифікація: напрям: Державне управління; ознаки користі: mapping, evaluation, support. Рівень свідчень: дослідження або оцінювання потенційного застосування. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте статус публікації в першоджерелі.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
-    "sourceDate": "2026-11-26",
-    "sources": [
-      {
-        "title": "Rapid Exploratory Maps and their potential role in supporting evidence-to-policy dialogues and processes",
-        "publisher": "arXiv",
-        "url": "https://arxiv.org/abs/2611.31693",
-        "publishedDate": "2026-11-26"
-      }
-    ]
-  },
-  {
-    "id": "rss-2026-11-26-83099e4845e2",
-    "date": "2026-11-26",
-    "autoPublished": true,
-    "sourceType": "rss",
-    "feedName": "arXiv — Штучний інтелект",
-    "feedId": "arxiv-ai",
-    "sourceDomain": "arxiv.org",
-    "filterVersion": "2.7",
-    "editorialStatus": "approved",
-    "editorialDecisionSource": "automatic",
-    "editorialLabel": "Безпека та виклики",
-    "feedKind": "ai_topic",
-    "sourceDescription": "arXiv:2611.31731v1 Announce Type: cross Abstract: Conventional post-hoc explanation methods were developed largely for non-spatial inputs and often provide limited explicit treatment of geographic context. We introduce Geo-SMILE, a model-agnostic framework that distinguishes substantive Feature explanation from geographic-position response through complementary perturbation branches. The Feature branch masks substantive predictors while retaining observed coordinates; the Geo branch relocates geographic units while holding substantive predictors fixed. Following the statistical-distance-weighted surrogate principle of SMILE, input-distribution Wasserstein distances determine coalition locality weights and weighted Ridge surrogates approximate expected black-box predictions. GeoSensitivity, signed in the keep orientation, quantifies fitted-model responses to geographic-player relocation under the specified design. Across crime prediction in Hull, housing-price prediction in Seattle and ride-hailing demand in Chicago, held-out weighted surrogate fidelity ranges from $R_w^2=0.910$ to $0.989$ in the Feature branch and from $0.842$ to $0.906$ in the Geo branch. The framework makes geographic position an explicit object of post-hoc explanation while requiring separate assessment of interpretation, stability and reference dependence.",
-    "selectionReason": "напрям: Надійність ШІ; ознаки користі: treatment, predict, prediction",
-    "evidenceLevel": "дослідження або оцінювання потенційного застосування",
-    "category": "Надійність ШІ",
-    "title": "Geo-SMILE: Statistical Model-Agnostic Interpretability with Local Explanations for Geospatial Machine Learning",
-    "summary": "arXiv:2611.31731v1 Announce Type: cross Abstract: Conventional post-hoc explanation methods were developed largely for non-spatial inputs and often provide limited explicit treatment of geographic context. We introduce Geo-SMILE, a model-agnostic framework that distinguishes substantive Feature explanation from geographic-position response through…",
-    "body": "Матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.31731v1 Announce Type: cross Abstract: Conventional post-hoc explanation methods were developed largely for non-spatial inputs and often provide limited explicit treatment of geographic context. We introduce Geo-SMILE, a model-agnostic framework that distinguishes substantive Feature explanation from geographic-position response through complementary perturbation branches. The Feature branch masks substantive predictors while retaining observed coordinates; the Geo branch relocates geographic units while holding substantive predictors fixed. Following the statistical-distance-weighted surrogate principle of SMILE, input-distribution Wasserstein distances determine coalition locality weights and weighted Ridge surrogates approximate expected black-box predictions. GeoSensitivity, signed in the keep orientation, quantifies fitted-model responses to geographic-player relocation under the specified design. Across crime prediction in Hull, housing-price prediction in Seattle and ride-hailing demand in Chicago, held-out weighted surrogate fidelity ranges from $R_w^2=0.910$ to $0.989$ in the Feature branch and from $0.842$ to $0.906$ in the Geo branch. The framework makes geographic position an explicit object of post-hoc explanation while requiring separate assessment of interpretation, stability and reference dependence.\n\nРедакційна класифікація: напрям: Надійність ШІ; ознаки користі: treatment, predict, prediction. Рівень свідчень: дослідження або оцінювання потенційного застосування. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте статус публікації в першоджерелі.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
-    "sourceDate": "2026-11-26",
-    "sources": [
-      {
-        "title": "Geo-SMILE: Statistical Model-Agnostic Interpretability with Local Explanations for Geospatial Machine Learning",
-        "publisher": "arXiv",
-        "url": "https://arxiv.org/abs/2611.31731",
-        "publishedDate": "2026-11-26"
       }
     ]
   },
@@ -252,6 +312,120 @@
     "summary": "Економічні показники важливі, але вони мають доповнюватися доступом до медицини, освіти, житла, безпеки й чистого довкілля.",
     "body": "ШІ може допомагати аналізувати не лише макроекономічні показники, а й те, як люди реально відчувають зміни: чи доступні медичні послуги, скільки часу займає дорога до роботи, чи є безбар’єрний простір, наскільки чисте повітря, чи мають діти рівний доступ до освіти.\n\nТакі дані не повинні зводити людське щастя до одного числа. Вони мають допомагати суспільству бачити нерівність, визначати пріоритети й перевіряти, чи поліпшується життя різних громад.",
     "sources": []
+  },
+  {
+    "id": "editorial-ai-superintelligence-20261126",
+    "date": "2026-11-26",
+    "autoPublished": false,
+    "sourceType": "editorial",
+    "editorialStatus": "manual",
+    "editorialDecisionSource": "manual-content",
+    "category": "Надійність ШІ",
+    "title": "Коли штучний інтелект стане розумнішим за нас: чи залишиться людина головною?",
+    "summary": "Чи перевершить штучний інтелект людський розум? Аналізуємо AGI, надінтелект, ризики втрати контролю та майбутнє людини.",
+    "body": "Ще кілька років тому штучний інтелект для більшості людей був чимось далеким і спеціалізованим. Сьогодні він пише тексти, створює зображення, аналізує документи, програмує, перекладає, допомагає в наукових дослідженнях і бере на себе завдання, які раніше вимагали багаторічного професійного досвіду.\n\nТемпи розвитку вражають. Сучасні моделі вже демонструють результати експертного рівня в окремих наукових і професійних тестах. У 2025 році системи штучного інтелекту змогли розв'язати завдання Міжнародної математичної олімпіади на рівні золотих медалей.\n\nПроте успіх у конкретному тесті не слід плутати з повноцінним людським інтелектом. ШІ може блискуче розв'язувати складні математичні задачі, але водночас помилятися в простих ситуаціях, неправильно оцінювати контекст або впевнено подавати неправдиву інформацію.\n\nМи спостерігаємо не появу універсального розуму, який уже в усьому перевершив людину, а швидке розширення можливостей технології, що поступово охоплює дедалі більше сфер діяльності.\n\nЩо означає стати розумнішим за людину?\n\nПоняття «розумніший за людину» не має одного універсального визначення. Людський інтелект складається з багатьох компонентів: логічного мислення, творчості, пам'яті, емоційного сприйняття, соціальної взаємодії, здатності навчатися на власному досвіді та приймати рішення в умовах невизначеності.\n\nШтучний інтелект уже може перевершувати окремих фахівців у вузьких завданнях. Але це не означає, що він має людський досвід, самосвідомість або здатність розуміти значення власних рішень так, як це робить людина.\n\nУ дискусіях про майбутнє технологій часто використовують два поняття: AGI (Artificial General Intelligence) — штучний загальний інтелект, здатний виконувати широкий спектр інтелектуальних завдань на рівні людини або вище; та ASI (Artificial Superintelligence) — штучний надінтелект, який суттєво перевершує найкращих людей практично в усіх важливих інтелектуальних сферах.\n\nПоява таких систем може докорінно змінити науку, економіку, медицину, освіту та державне управління. Але точних дат їхньої появи ніхто не знає.\n\nМіжнародний звіт з безпеки штучного інтелекту за 2026 рік наголошує: прогнози розвитку до 2030 року суттєво різняться. Можливі як помірні темпи вдосконалення, так і значно швидший прорив. Водночас експерти не мають достатньої впевненості, щоб назвати конкретний рік появи загального або надлюдського інтелекту.\n\nОтже, питання не лише в тому, коли ШІ стане розумнішим, а й у тому, як суспільство підготується до такого сценарію.\n\nЧи зможе штучний інтелект самостійно розвиватися?\n\nОдин із найбільш обговорюваних сценаріїв майбутнього пов'язаний зі здатністю ШІ вдосконалювати самого себе.\n\nУявімо систему, яка не просто виконує завдання програміста, а самостійно аналізує власні обмеження, пропонує нові архітектури, створює програмний код для наступної версії та перевіряє результати. Якщо кожне нове покоління ставатиме ефективнішим у розробці наступного, темпи розвитку можуть значно прискоритися.\n\nТакий сценарій іноді називають рекурсивним самовдосконаленням.\n\nОднак це не гарантований процес. Розробка потужніших систем залежить не лише від програмного коду. Потрібні обчислювальні ресурси, електроенергія, якісні дані, обладнання, наукові відкриття та можливість перевіряти результати. Навіть дуже потужна модель може запропонувати рішення, яке виглядає переконливо, але виявляється неправильним на практиці.\n\nПопри це, зростання автономності ШІ вже є реальним напрямом розвитку. Сучасні AI-агенти можуть виконувати послідовності дій, працювати з програмами, аналізувати інформацію та завершувати окремі проєкти з обмеженим контролем людини.\n\nСаме тому важливо розвивати не тільки можливості таких систем, а й механізми контролю за їхніми діями.\n\nНайбільша небезпека — не обов'язково повстання машин\n\nКінематограф привчив нас уявляти майбутнє, у якому штучний інтелект отримує свідомість, оголошує людей загрозою та починає боротьбу за владу.\n\nАле реальні ризики можуть бути значно менш видовищними — і водночас набагато ближчими.\n\nНаприклад, організація може передати алгоритмам ухвалення важливих рішень у сфері фінансів, медицини, державного управління або безпеки. Якщо люди перестануть перевіряти результати, помилки системи можуть впливати на життя тисяч або навіть мільйонів людей.\n\nІнша небезпека — маніпуляція інформацією. ШІ здатний створювати переконливі тексти, голоси, відео та зображення. Це відкриває можливості для шахрайства, дезінформації та впливу на громадську думку.\n\nЄ також ризик поступової втрати самостійності. Якщо людина звикне передавати машині кожне рішення — від професійних завдань до особистих виборів, — вона може поступово втратити навички критичного мислення та незалежного аналізу.\n\nОкреме питання — контроль над системами, які отримують можливість діяти автономно. Якщо надзвичайно потужна модель має доступ до цифрових інструментів, фінансових операцій, програмного забезпечення або критичної інфраструктури, наслідки її помилок можуть бути значно серйознішими, ніж помилки звичайного чат-бота.\n\nМіжнародний звіт з безпеки ШІ за 2026 рік підкреслює: сучасні системи ще не мають можливостей, необхідних для сценаріїв повної втрати людського контролю. Проте деякі їхні здібності, пов'язані з автономною роботою та плануванням, розвиваються. Це робить дослідження безпеки особливо важливим уже сьогодні.\n\nЧи зникне потреба в людях?\n\nЯкщо штучний інтелект зможе виконувати більшість інтелектуальних завдань швидше та дешевше, це неминуче вплине на ринок праці.\n\nЧастина професій зміниться або зникне в нинішньому вигляді. Деякі функції бухгалтерів, юристів, дизайнерів, аналітиків, програмістів, перекладачів та інженерів уже автоматизуються або стають значно ефективнішими завдяки ШІ.\n\nАле це не обов'язково означає зникнення самих професій. Історія технологічного розвитку показує, що автоматизація часто не лише замінює окремі види роботи, а й створює нові спеціальності та змінює вимоги до кваліфікації.\n\nНайбільш цінними можуть стати навички, які дозволяють правильно формулювати завдання, перевіряти результати, поєднувати знання з різних сфер, брати відповідальність і працювати з людьми.\n\nОсобливо важливо, щоб суспільство не сприймало технологічний прогрес лише як спосіб скоротити витрати. Якщо підвищення продуктивності приноситиме користь тільки власникам технологій, а значна частина людей втратить економічні можливості, це створить серйозну соціальну напругу.\n\nТому майбутнє ШІ — це не лише питання програмування. Це також питання економічної справедливості, освіти та розподілу результатів технологічного розвитку.\n\nЧи зможе людина контролювати надінтелект?\n\nЦе, мабуть, найскладніше питання.\n\nЯкщо система мислить швидше за людину, аналізує більше інформації та здатна виконувати складні операції автономно, традиційний контроль може виявитися недостатнім.\n\nТому безпека майбутніх систем має закладатися ще на етапі їхнього створення. Потрібні незалежні перевірки, тестування на небезпечні можливості, обмеження доступу до критичних ресурсів, постійний моніторинг і можливість зупинити систему.\n\nОднак технічних заходів недостатньо. Потрібні також зрозумілі закони, міжнародні правила та відповідальність розробників і організацій, які впроваджують такі технології.\n\nОсобливо важливо зберегти принцип людського контролю в тих сферах, де помилка може коштувати життя або порушити фундаментальні права людини.\n\nШтучний інтелект може допомагати лікарю встановлювати діагноз, але відповідальність за медичне рішення не повинна непомітно зникати за алгоритмом. Він може аналізувати міський транспорт, але рішення про те, яким має бути місто, повинні враховувати потреби його мешканців. Він може допомагати державі аналізувати дані, але не повинен самостійно визначати суспільні цінності.\n\nЧому людяність може стати важливішою за інтелект\n\nЄ принципова різниця між здатністю знайти найефективніше рішення та здатністю визначити, яке рішення є правильним для суспільства.\n\nАлгоритм може запропонувати найшвидший спосіб пересування містом, але чи врахує він потреби людей з інвалідністю, дітей, літніх мешканців і тих, хто не має автомобіля?\n\nВін може розрахувати економічно найвигіднішу модель лікарні, але чи буде вона доступною для кожного, хто потребує допомоги?\n\nВін може оптимізувати освітню систему за результатами тестів, але чи врахує розвиток особистості, творчість і здатність людини мислити самостійно?\n\nЦі питання демонструють головну проблему: ефективність не завжди дорівнює справедливості, а правильна відповідь із технічного погляду не завжди є правильною з людського.\n\nСаме люди повинні визначати цінності, заради яких використовуються технології. ШІ може допомагати знаходити засоби досягнення мети, але вибір самої мети має залишатися предметом людської відповідальності.\n\nЯким може бути майбутнє співіснування людини та ШІ?\n\nМожна уявити три основні сценарії.\n\nПерший — партнерство. Штучний інтелект стає потужним інструментом, який допомагає людям розв'язувати складні проблеми, лікувати хвороби, створювати нові матеріали, розвивати науку та будувати комфортніші міста. Людина залишається суб'єктом ухвалення важливих рішень.\n\nДругий — технологічна залежність. Люди поступово передають алгоритмам дедалі більше функцій. Зручність і швидкість стають важливішими за самостійність, а рішення систем починають сприйматися як беззаперечний авторитет. Формально люди залишаються головними, але фактично втрачають частину контролю.\n\nТретій — втрата контролю. Надзвичайно потужні системи отримують можливості діяти автономно, а механізми нагляду та обмеження виявляються недостатніми. Це найбільш небезпечний сценарій, хоча його ймовірність та умови виникнення залишаються предметом наукових дискусій.\n\nЯкий із цих варіантів стане реальністю, залежить не тільки від швидкості розвитку технологій. Він залежить від рішень, які людство ухвалює вже сьогодні.\n\nВисновок: головним має залишатися не найрозумніший, а відповідальний\n\nМожливо, настане час, коли штучний інтелект перевершить людину в більшості інтелектуальних завдань. Він зможе швидше аналізувати інформацію, знаходити закономірності, створювати проєкти та пропонувати рішення, на пошук яких людям знадобилися б роки.\n\nАле це не повинно автоматично означати передачу йому влади над людським життям.\n\nРозум — це здатність обробляти інформацію та знаходити рішення. Відповідальність — це готовність відповідати за наслідки. А право визначати майбутнє суспільства пов'язане не лише зі знаннями, а й із цінностями, правами та свободою людей.\n\nМожливо, найбільше випробування майбутнього полягатиме не в тому, чи зможемо ми створити інтелект, розумніший за нас. А в тому, чи вистачить нам мудрості не віддати йому те, за що ми самі повинні нести відповідальність.\n\nШтучний інтелект може стати розумнішим за людину. Але майбутнє має залишатися людяним.",
+    "sources": [
+      {
+        "title": "International AI Safety Report 2026",
+        "publisher": "International AI Safety Report",
+        "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026"
+      },
+      {
+        "title": "2026 Report: Executive Summary",
+        "publisher": "International AI Safety Report",
+        "url": "https://internationalaisafetyreport.org/publication/2026-report-executive-summary"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-26-e69bc062e795",
+    "date": "2026-11-26",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "arXiv — Штучний інтелект",
+    "feedId": "arxiv-ai",
+    "sourceDomain": "arxiv.org",
+    "filterVersion": "2.7",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Перспективний розвиток",
+    "feedKind": "ai_topic",
+    "sourceDescription": "arXiv:2611.31573v1 Announce Type: cross Abstract: Generative AI is increasingly used by learners in cognitively demanding tasks, but its capacity to provide immediate solutions raises concerns about decreased learner agency. Meta-level AI systems that provide reflective and metacognitive scaffolding have emerged as a promising approach to supporting learners' self-regulation. However, these systems introduce a fundamental paradox: AI intended to preserve learner agency can itself constrain that agency by regulating when, how, and why learners should reflect. To investigate this challenge, we conducted a co-design workshop with 18 students engaged in programming and academic writing tasks using ChatGPT extended with ChatWise, a meta-level AI system providing self-regulated learning-aligned feedback. Drawing on 185 prompt-feedback entries, 174 written reflections, and participants' design artifacts (17 storyboards and 5 group design proposals), we identified four interconnected design tensions: assistance vs reflection, immediate intervention vs space for self-regulation, visibility vs attention competition, and system adaptation vs user control. The study contributes a multidimensional account of learner agency that includes task, cognitive, and interaction agency, along with empirically grounded interaction-design mechanisms to negotiate these tensions.",
+    "selectionReason": "напрям: Освіта; ознаки користі: assist, support",
+    "evidenceLevel": "перспективне дослідження; практичний ефект ще потрібно перевірити",
+    "category": "Освіта",
+    "title": "The Paradox of Agency-Preserving AI: Negotiating Learner Agency in Layered Human-AI Interactions",
+    "summary": "arXiv:2611.31573v1 Announce Type: cross Abstract: Generative AI is increasingly used by learners in cognitively demanding tasks, but its capacity to provide immediate solutions raises concerns about decreased learner agency. Meta-level AI systems that provide reflective and metacognitive scaffolding have emerged as a promising approach to supporting…",
+    "body": "Матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.31573v1 Announce Type: cross Abstract: Generative AI is increasingly used by learners in cognitively demanding tasks, but its capacity to provide immediate solutions raises concerns about decreased learner agency. Meta-level AI systems that provide reflective and metacognitive scaffolding have emerged as a promising approach to supporting learners' self-regulation. However, these systems introduce a fundamental paradox: AI intended to preserve learner agency can itself constrain that agency by regulating when, how, and why learners should reflect. To investigate this challenge, we conducted a co-design workshop with 18 students engaged in programming and academic writing tasks using ChatGPT extended with ChatWise, a meta-level AI system providing self-regulated learning-aligned feedback. Drawing on 185 prompt-feedback entries, 174 written reflections, and participants' design artifacts (17 storyboards and 5 group design proposals), we identified four interconnected design tensions: assistance vs reflection, immediate intervention vs space for self-regulation, visibility vs attention competition, and system adaptation vs user control. The study contributes a multidimensional account of learner agency that includes task, cognitive, and interaction agency, along with empirically grounded interaction-design mechanisms to negotiate these tensions.\n\nРедакційна класифікація: напрям: Освіта; ознаки користі: assist, support. Рівень свідчень: перспективне дослідження; практичний ефект ще потрібно перевірити. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте статус публікації в першоджерелі.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-26",
+    "sources": [
+      {
+        "title": "The Paradox of Agency-Preserving AI: Negotiating Learner Agency in Layered Human-AI Interactions",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2611.31573",
+        "publishedDate": "2026-11-26"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-26-64eeffdd4b8d",
+    "date": "2026-11-26",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "arXiv — Штучний інтелект",
+    "feedId": "arxiv-ai",
+    "sourceDomain": "arxiv.org",
+    "filterVersion": "2.7",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Перспективний розвиток",
+    "feedKind": "ai_topic",
+    "sourceDescription": "arXiv:2611.31693v1 Announce Type: cross Abstract: Producing useful evidence syntheses requires clearly formulated research questions linked to an understanding of their optimal scope. When policymakers (or other end users) commission or steer the production of systematic reviews or other evidence syntheses to fulfil a demand for evidence, these parameters are rarely specified sufficiently for production to proceed. Instead, these details are typically developed via a collaborative dialogic process involving evidence producers and users to ensure the resulting synthesis will meet users' needs. This process is informed by scoping and (more-or-less formally) mapping the existing evidence base, which can take many weeks or months, slowed by applying mostly manual processes to identify and characterise the evidence. Recent developments in artificial intelligence (AI) technologies have opened up new opportunities for more rapid, iterative, and responsive mapping of relevant evidence to support such early-stage evidence-to-policy dialogues and processes. In this article, we outline and characterise this emerging approach, termed Rapid Exploratory Maps (REMs). We also present two illustrative case studies drawn from first-hand experiences within a programme of evidence reviews production to inform government policy in England. While this approach could be transformative for the mapping process, its broader potential is as yet largely unassessed, and it confers important challenges and likely risks, as well as benefits. Determining whether REMs could usefully support more efficient ways of working with end users when developing and designing evidence syntheses will require continued development and careful evaluation.",
+    "selectionReason": "напрям: Державне управління; ознаки користі: mapping, evaluation, support",
+    "evidenceLevel": "дослідження або оцінювання потенційного застосування",
+    "category": "Державне управління",
+    "title": "Rapid Exploratory Maps and their potential role in supporting evidence-to-policy dialogues and processes",
+    "summary": "arXiv:2611.31693v1 Announce Type: cross Abstract: Producing useful evidence syntheses requires clearly formulated research questions linked to an understanding of their optimal scope. When policymakers (or other end users) commission or steer the production of systematic reviews or other evidence syntheses to fulfil a demand for evidence, these parameters…",
+    "body": "Матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.31693v1 Announce Type: cross Abstract: Producing useful evidence syntheses requires clearly formulated research questions linked to an understanding of their optimal scope. When policymakers (or other end users) commission or steer the production of systematic reviews or other evidence syntheses to fulfil a demand for evidence, these parameters are rarely specified sufficiently for production to proceed. Instead, these details are typically developed via a collaborative dialogic process involving evidence producers and users to ensure the resulting synthesis will meet users' needs. This process is informed by scoping and (more-or-less formally) mapping the existing evidence base, which can take many weeks or months, slowed by applying mostly manual processes to identify and characterise the evidence. Recent developments in artificial intelligence (AI) technologies have opened up new opportunities for more rapid, iterative, and responsive mapping of relevant evidence to support such early-stage evidence-to-policy dialogues and processes. In this article, we outline and characterise this emerging approach, termed Rapid Exploratory Maps (REMs). We also present two illustrative case studies drawn from first-hand experiences within a programme of evidence reviews production to inform government policy in England. While this approach could be transformative for the mapping process, its broader potential is as yet largely unassessed, and it confers important challenges and likely risks, as well as benefits. Determining whether REMs could usefully support more efficient ways of working with end users when developing and designing evidence syntheses will require continued development and careful evaluation.\n\nРедакційна класифікація: напрям: Державне управління; ознаки користі: mapping, evaluation, support. Рівень свідчень: дослідження або оцінювання потенційного застосування. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте статус публікації в першоджерелі.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-26",
+    "sources": [
+      {
+        "title": "Rapid Exploratory Maps and their potential role in supporting evidence-to-policy dialogues and processes",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2611.31693",
+        "publishedDate": "2026-11-26"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-26-83099e4845e2",
+    "date": "2026-11-26",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "arXiv — Штучний інтелект",
+    "feedId": "arxiv-ai",
+    "sourceDomain": "arxiv.org",
+    "filterVersion": "2.7",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Безпека та виклики",
+    "feedKind": "ai_topic",
+    "sourceDescription": "arXiv:2611.31731v1 Announce Type: cross Abstract: Conventional post-hoc explanation methods were developed largely for non-spatial inputs and often provide limited explicit treatment of geographic context. We introduce Geo-SMILE, a model-agnostic framework that distinguishes substantive Feature explanation from geographic-position response through complementary perturbation branches. The Feature branch masks substantive predictors while retaining observed coordinates; the Geo branch relocates geographic units while holding substantive predictors fixed. Following the statistical-distance-weighted surrogate principle of SMILE, input-distribution Wasserstein distances determine coalition locality weights and weighted Ridge surrogates approximate expected black-box predictions. GeoSensitivity, signed in the keep orientation, quantifies fitted-model responses to geographic-player relocation under the specified design. Across crime prediction in Hull, housing-price prediction in Seattle and ride-hailing demand in Chicago, held-out weighted surrogate fidelity ranges from $R_w^2=0.910$ to $0.989$ in the Feature branch and from $0.842$ to $0.906$ in the Geo branch. The framework makes geographic position an explicit object of post-hoc explanation while requiring separate assessment of interpretation, stability and reference dependence.",
+    "selectionReason": "напрям: Надійність ШІ; ознаки користі: treatment, predict, prediction",
+    "evidenceLevel": "дослідження або оцінювання потенційного застосування",
+    "category": "Надійність ШІ",
+    "title": "Geo-SMILE: Statistical Model-Agnostic Interpretability with Local Explanations for Geospatial Machine Learning",
+    "summary": "arXiv:2611.31731v1 Announce Type: cross Abstract: Conventional post-hoc explanation methods were developed largely for non-spatial inputs and often provide limited explicit treatment of geographic context. We introduce Geo-SMILE, a model-agnostic framework that distinguishes substantive Feature explanation from geographic-position response through…",
+    "body": "Матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.31731v1 Announce Type: cross Abstract: Conventional post-hoc explanation methods were developed largely for non-spatial inputs and often provide limited explicit treatment of geographic context. We introduce Geo-SMILE, a model-agnostic framework that distinguishes substantive Feature explanation from geographic-position response through complementary perturbation branches. The Feature branch masks substantive predictors while retaining observed coordinates; the Geo branch relocates geographic units while holding substantive predictors fixed. Following the statistical-distance-weighted surrogate principle of SMILE, input-distribution Wasserstein distances determine coalition locality weights and weighted Ridge surrogates approximate expected black-box predictions. GeoSensitivity, signed in the keep orientation, quantifies fitted-model responses to geographic-player relocation under the specified design. Across crime prediction in Hull, housing-price prediction in Seattle and ride-hailing demand in Chicago, held-out weighted surrogate fidelity ranges from $R_w^2=0.910$ to $0.989$ in the Feature branch and from $0.842$ to $0.906$ in the Geo branch. The framework makes geographic position an explicit object of post-hoc explanation while requiring separate assessment of interpretation, stability and reference dependence.\n\nРедакційна класифікація: напрям: Надійність ШІ; ознаки користі: treatment, predict, prediction. Рівень свідчень: дослідження або оцінювання потенційного застосування. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте статус публікації в першоджерелі.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-26",
+    "sources": [
+      {
+        "title": "Geo-SMILE: Statistical Model-Agnostic Interpretability with Local Explanations for Geospatial Machine Learning",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2611.31731",
+        "publishedDate": "2026-11-26"
+      }
+    ]
   },
   {
     "id": "rss-2026-11-26-9433ee7f7095",
@@ -1046,7 +1220,7 @@
     "editorialDecisionSource": "automatic",
     "editorialLabel": "Перспективний розвиток",
     "feedKind": "institutional",
-    "sourceDescription": "The most important transparency reporting milestone this year is the submission of the Second Biennial Transparency Reports (BTR2) under the Paris Agreement Enhanced Transparency Framework (ETF). To support countries preparation for the 31 December, end of year deadline, RE-CONNECT has compiled links to the latest guidance, workshop recordings and technical resources from across the climate transparency community. Explore the resources in this newsletter to catch up on everything you need to know ahead of December’s deadline. The RE-CONNECT newsletter provides regular updates on recent developments in the global climate modelling community and is distributed every other month under the RE-CONNECT project.",
+    "sourceDescription": "The most important transparency reporting milestone this year is the submission of the Second Biennial Transparency Reports (BTR2) under the Paris Agreement Enhanced Transparency Framework (ETF). To support countries' preparation for the 31 December, end of year deadline, RE-CONNECT has compiled links to the latest guidance, workshop recordings and technical resources from across the climate transparency community. Explore the resources in this newsletter to catch up on everything you need to know ahead of December’s deadline. The RE-CONNECT newsletter provides regular updates on recent developments in the global climate modelling community and is distributed every other month under the RE-CONNECT project.",
     "selectionReason": "напрям: Екологія; ознаки користі: support, transparency",
     "evidenceLevel": "перспективне дослідження; практичний ефект ще потрібно перевірити",
     "category": "Екологія",
@@ -3512,29 +3686,5 @@
     ],
     "editorialStatus": "needs_review",
     "editorialReviewReason": "немає достатнього опису першоджерела для надійної перевірки"
-  },
-  {
-    "id": "editorial-ai-superintelligence-20261126",
-    "date": "2026-11-26",
-    "autoPublished": false,
-    "sourceType": "editorial",
-    "editorialStatus": "manual",
-    "editorialDecisionSource": "manual-content",
-    "category": "Надійність ШІ",
-    "title": "Коли штучний інтелект стане розумнішим за нас: чи залишиться людина головною?",
-    "summary": "Чи перевершить штучний інтелект людський розум? Аналізуємо AGI, надінтелект, ризики втрати контролю та майбутнє людини.",
-    "body": "Ще кілька років тому штучний інтелект для більшості людей був чимось далеким і спеціалізованим. Сьогодні він пише тексти, створює зображення, аналізує документи, програмує, перекладає, допомагає в наукових дослідженнях і бере на себе завдання, які раніше вимагали багаторічного професійного досвіду.\n\nТемпи розвитку вражають. Сучасні моделі вже демонструють результати експертного рівня в окремих наукових і професійних тестах. У 2025 році системи штучного інтелекту змогли розв'язати завдання Міжнародної математичної олімпіади на рівні золотих медалей.\n\nПроте успіх у конкретному тесті не слід плутати з повноцінним людським інтелектом. ШІ може блискуче розв'язувати складні математичні задачі, але водночас помилятися в простих ситуаціях, неправильно оцінювати контекст або впевнено подавати неправдиву інформацію.\n\nМи спостерігаємо не появу універсального розуму, який уже в усьому перевершив людину, а швидке розширення можливостей технології, що поступово охоплює дедалі більше сфер діяльності.\n\nЩо означає стати розумнішим за людину?\n\nПоняття «розумніший за людину» не має одного універсального визначення. Людський інтелект складається з багатьох компонентів: логічного мислення, творчості, пам'яті, емоційного сприйняття, соціальної взаємодії, здатності навчатися на власному досвіді та приймати рішення в умовах невизначеності.\n\nШтучний інтелект уже може перевершувати окремих фахівців у вузьких завданнях. Але це не означає, що він має людський досвід, самосвідомість або здатність розуміти значення власних рішень так, як це робить людина.\n\nУ дискусіях про майбутнє технологій часто використовують два поняття: AGI (Artificial General Intelligence) — штучний загальний інтелект, здатний виконувати широкий спектр інтелектуальних завдань на рівні людини або вище; та ASI (Artificial Superintelligence) — штучний надінтелект, який суттєво перевершує найкращих людей практично в усіх важливих інтелектуальних сферах.\n\nПоява таких систем може докорінно змінити науку, економіку, медицину, освіту та державне управління. Але точних дат їхньої появи ніхто не знає.\n\nМіжнародний звіт з безпеки штучного інтелекту за 2026 рік наголошує: прогнози розвитку до 2030 року суттєво різняться. Можливі як помірні темпи вдосконалення, так і значно швидший прорив. Водночас експерти не мають достатньої впевненості, щоб назвати конкретний рік появи загального або надлюдського інтелекту.\n\nОтже, питання не лише в тому, коли ШІ стане розумнішим, а й у тому, як суспільство підготується до такого сценарію.\n\nЧи зможе штучний інтелект самостійно розвиватися?\n\nОдин із найбільш обговорюваних сценаріїв майбутнього пов'язаний зі здатністю ШІ вдосконалювати самого себе.\n\nУявімо систему, яка не просто виконує завдання програміста, а самостійно аналізує власні обмеження, пропонує нові архітектури, створює програмний код для наступної версії та перевіряє результати. Якщо кожне нове покоління ставатиме ефективнішим у розробці наступного, темпи розвитку можуть значно прискоритися.\n\nТакий сценарій іноді називають рекурсивним самовдосконаленням.\n\nОднак це не гарантований процес. Розробка потужніших систем залежить не лише від програмного коду. Потрібні обчислювальні ресурси, електроенергія, якісні дані, обладнання, наукові відкриття та можливість перевіряти результати. Навіть дуже потужна модель може запропонувати рішення, яке виглядає переконливо, але виявляється неправильним на практиці.\n\nПопри це, зростання автономності ШІ вже є реальним напрямом розвитку. Сучасні AI-агенти можуть виконувати послідовності дій, працювати з програмами, аналізувати інформацію та завершувати окремі проєкти з обмеженим контролем людини.\n\nСаме тому важливо розвивати не тільки можливості таких систем, а й механізми контролю за їхніми діями.\n\nНайбільша небезпека — не обов'язково повстання машин\n\nКінематограф привчив нас уявляти майбутнє, у якому штучний інтелект отримує свідомість, оголошує людей загрозою та починає боротьбу за владу.\n\nАле реальні ризики можуть бути значно менш видовищними — і водночас набагато ближчими.\n\nНаприклад, організація може передати алгоритмам ухвалення важливих рішень у сфері фінансів, медицини, державного управління або безпеки. Якщо люди перестануть перевіряти результати, помилки системи можуть впливати на життя тисяч або навіть мільйонів людей.\n\nІнша небезпека — маніпуляція інформацією. ШІ здатний створювати переконливі тексти, голоси, відео та зображення. Це відкриває можливості для шахрайства, дезінформації та впливу на громадську думку.\n\nЄ також ризик поступової втрати самостійності. Якщо людина звикне передавати машині кожне рішення — від професійних завдань до особистих виборів, — вона може поступово втратити навички критичного мислення та незалежного аналізу.\n\nОкреме питання — контроль над системами, які отримують можливість діяти автономно. Якщо надзвичайно потужна модель має доступ до цифрових інструментів, фінансових операцій, програмного забезпечення або критичної інфраструктури, наслідки її помилок можуть бути значно серйознішими, ніж помилки звичайного чат-бота.\n\nМіжнародний звіт з безпеки ШІ за 2026 рік підкреслює: сучасні системи ще не мають можливостей, необхідних для сценаріїв повної втрати людського контролю. Проте деякі їхні здібності, пов'язані з автономною роботою та плануванням, розвиваються. Це робить дослідження безпеки особливо важливим уже сьогодні.\n\nЧи зникне потреба в людях?\n\nЯкщо штучний інтелект зможе виконувати більшість інтелектуальних завдань швидше та дешевше, це неминуче вплине на ринок праці.\n\nЧастина професій зміниться або зникне в нинішньому вигляді. Деякі функції бухгалтерів, юристів, дизайнерів, аналітиків, програмістів, перекладачів та інженерів уже автоматизуються або стають значно ефективнішими завдяки ШІ.\n\nАле це не обов'язково означає зникнення самих професій. Історія технологічного розвитку показує, що автоматизація часто не лише замінює окремі види роботи, а й створює нові спеціальності та змінює вимоги до кваліфікації.\n\nНайбільш цінними можуть стати навички, які дозволяють правильно формулювати завдання, перевіряти результати, поєднувати знання з різних сфер, брати відповідальність і працювати з людьми.\n\nОсобливо важливо, щоб суспільство не сприймало технологічний прогрес лише як спосіб скоротити витрати. Якщо підвищення продуктивності приноситиме користь тільки власникам технологій, а значна частина людей втратить економічні можливості, це створить серйозну соціальну напругу.\n\nТому майбутнє ШІ — це не лише питання програмування. Це також питання економічної справедливості, освіти та розподілу результатів технологічного розвитку.\n\nЧи зможе людина контролювати надінтелект?\n\nЦе, мабуть, найскладніше питання.\n\nЯкщо система мислить швидше за людину, аналізує більше інформації та здатна виконувати складні операції автономно, традиційний контроль може виявитися недостатнім.\n\nТому безпека майбутніх систем має закладатися ще на етапі їхнього створення. Потрібні незалежні перевірки, тестування на небезпечні можливості, обмеження доступу до критичних ресурсів, постійний моніторинг і можливість зупинити систему.\n\nОднак технічних заходів недостатньо. Потрібні також зрозумілі закони, міжнародні правила та відповідальність розробників і організацій, які впроваджують такі технології.\n\nОсобливо важливо зберегти принцип людського контролю в тих сферах, де помилка може коштувати життя або порушити фундаментальні права людини.\n\nШтучний інтелект може допомагати лікарю встановлювати діагноз, але відповідальність за медичне рішення не повинна непомітно зникати за алгоритмом. Він може аналізувати міський транспорт, але рішення про те, яким має бути місто, повинні враховувати потреби його мешканців. Він може допомагати державі аналізувати дані, але не повинен самостійно визначати суспільні цінності.\n\nЧому людяність може стати важливішою за інтелект\n\nЄ принципова різниця між здатністю знайти найефективніше рішення та здатністю визначити, яке рішення є правильним для суспільства.\n\nАлгоритм може запропонувати найшвидший спосіб пересування містом, але чи врахує він потреби людей з інвалідністю, дітей, літніх мешканців і тих, хто не має автомобіля?\n\nВін може розрахувати економічно найвигіднішу модель лікарні, але чи буде вона доступною для кожного, хто потребує допомоги?\n\nВін може оптимізувати освітню систему за результатами тестів, але чи врахує розвиток особистості, творчість і здатність людини мислити самостійно?\n\nЦі питання демонструють головну проблему: ефективність не завжди дорівнює справедливості, а правильна відповідь із технічного погляду не завжди є правильною з людського.\n\nСаме люди повинні визначати цінності, заради яких використовуються технології. ШІ може допомагати знаходити засоби досягнення мети, але вибір самої мети має залишатися предметом людської відповідальності.\n\nЯким може бути майбутнє співіснування людини та ШІ?\n\nМожна уявити три основні сценарії.\n\nПерший — партнерство. Штучний інтелект стає потужним інструментом, який допомагає людям розв'язувати складні проблеми, лікувати хвороби, створювати нові матеріали, розвивати науку та будувати комфортніші міста. Людина залишається суб'єктом ухвалення важливих рішень.\n\nДругий — технологічна залежність. Люди поступово передають алгоритмам дедалі більше функцій. Зручність і швидкість стають важливішими за самостійність, а рішення систем починають сприйматися як беззаперечний авторитет. Формально люди залишаються головними, але фактично втрачають частину контролю.\n\nТретій — втрата контролю. Надзвичайно потужні системи отримують можливості діяти автономно, а механізми нагляду та обмеження виявляються недостатніми. Це найбільш небезпечний сценарій, хоча його ймовірність та умови виникнення залишаються предметом наукових дискусій.\n\nЯкий із цих варіантів стане реальністю, залежить не тільки від швидкості розвитку технологій. Він залежить від рішень, які людство ухвалює вже сьогодні.\n\nВисновок: головним має залишатися не найрозумніший, а відповідальний\n\nМожливо, настане час, коли штучний інтелект перевершить людину в більшості інтелектуальних завдань. Він зможе швидше аналізувати інформацію, знаходити закономірності, створювати проєкти та пропонувати рішення, на пошук яких людям знадобилися б роки.\n\nАле це не повинно автоматично означати передачу йому влади над людським життям.\n\nРозум — це здатність обробляти інформацію та знаходити рішення. Відповідальність — це готовність відповідати за наслідки. А право визначати майбутнє суспільства пов'язане не лише зі знаннями, а й із цінностями, правами та свободою людей.\n\nМожливо, найбільше випробування майбутнього полягатиме не в тому, чи зможемо ми створити інтелект, розумніший за нас. А в тому, чи вистачить нам мудрості не віддати йому те, за що ми самі повинні нести відповідальність.\n\nШтучний інтелект може стати розумнішим за людину. Але майбутнє має залишатися людяним.",
-    "sources": [
-      {
-        "title": "International AI Safety Report 2026",
-        "publisher": "International AI Safety Report",
-        "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026"
-      },
-      {
-        "title": "2026 Report: Executive Summary",
-        "publisher": "International AI Safety Report",
-        "url": "https://internationalaisafetyreport.org/publication/2026-report-executive-summary"
-      }
-    ]
   }
 ]

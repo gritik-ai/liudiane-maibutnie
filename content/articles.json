@@ -1,66 +1,6 @@
 [
   {
-    "id": "rss-2026-11-26-4410e9c20e9c",
-    "date": "2026-11-26",
-    "autoPublished": true,
-    "sourceType": "rss",
-    "feedName": "arXiv — Штучний інтелект",
-    "feedId": "arxiv-ai",
-    "sourceDomain": "arxiv.org",
-    "filterVersion": "2.7",
-    "editorialStatus": "approved",
-    "editorialDecisionSource": "automatic",
-    "editorialLabel": "Безпека та виклики",
-    "feedKind": "ai_topic",
-    "sourceDescription": "arXiv:2611.32400v1 Announce Type: cross Abstract: Vision-and-Language Navigation (VLN) requires an agent to follow language instructions to reach a target in an unseen 3D environment. However, existing methods still struggle to recover from route deviations at test time. We investigate this limitation through the lens of instruction progress, and trace it to a phenomenon we term progress hallucination: agents misinterpret off-route observations as evidence of task progress, causing their internal instruction progress to advance beyond the actual task stage and hindering recovery based on earlier sub-instructions. To address this failure mode, we propose PHAR (Progress Hallucination-Aware Recovery), a test-time recovery framework following a verify-then-steer paradigm. The verifier examines residual-stream representations of the Vision-Language Model (VLM) to identify mismatch of cross-modal evidence along the trajectories, and uses split conformal calibration to control false alarms. When an alarm is raised, the steering module uses a contextual bandit to adaptively select the rewind extent of instruction progress for online recovery. Through extensive experiments on R2R-CE and RxR-CE, our framework enhances the reliability of multiple state-of-the-art vision-language navigation methods at test time.",
-    "selectionReason": "напрям: Надійність ШІ; ознаки користі: observation, navigation",
-    "evidenceLevel": "практичне застосування або конкретний приклад",
-    "category": "Надійність ШІ",
-    "title": "Verify then Steer: Progress Hallucination-Aware Recovery for Continuous Vision-and-Language Navigation",
-    "summary": "arXiv:2611.32400v1 Announce Type: cross Abstract: Vision-and-Language Navigation (VLN) requires an agent to follow language instructions to reach a target in an unseen 3D environment. However, existing methods still struggle to recover from route deviations at test time. We investigate this limitation through the lens of instruction progress, and trace it…",
-    "body": "Матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.32400v1 Announce Type: cross Abstract: Vision-and-Language Navigation (VLN) requires an agent to follow language instructions to reach a target in an unseen 3D environment. However, existing methods still struggle to recover from route deviations at test time. We investigate this limitation through the lens of instruction progress, and trace it to a phenomenon we term progress hallucination: agents misinterpret off-route observations as evidence of task progress, causing their internal instruction progress to advance beyond the actual task stage and hindering recovery based on earlier sub-instructions. To address this failure mode, we propose PHAR (Progress Hallucination-Aware Recovery), a test-time recovery framework following a verify-then-steer paradigm. The verifier examines residual-stream representations of the Vision-Language Model (VLM) to identify mismatch of cross-modal evidence along the trajectories, and uses split conformal calibration to control false alarms. When an alarm is raised, the steering module uses a contextual bandit to adaptively select the rewind extent of instruction progress for online recovery. Through extensive experiments on R2R-CE and RxR-CE, our framework enhances the reliability of multiple state-of-the-art vision-language navigation methods at test time.\n\nРедакційна класифікація: напрям: Надійність ШІ; ознаки користі: observation, navigation. Рівень свідчень: практичне застосування або конкретний приклад. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте статус публікації в першоджерелі.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
-    "sourceDate": "2026-11-26",
-    "sources": [
-      {
-        "title": "Verify then Steer: Progress Hallucination-Aware Recovery for Continuous Vision-and-Language Navigation",
-        "publisher": "arXiv",
-        "url": "https://arxiv.org/abs/2611.32400",
-        "publishedDate": "2026-11-26"
-      }
-    ]
-  },
-  {
-    "id": "rss-2026-11-26-8179e84b7edc",
-    "date": "2026-11-26",
-    "autoPublished": true,
-    "sourceType": "rss",
-    "feedName": "arXiv — Штучний інтелект",
-    "feedId": "arxiv-ai",
-    "sourceDomain": "arxiv.org",
-    "filterVersion": "2.7",
-    "editorialStatus": "approved",
-    "editorialDecisionSource": "automatic",
-    "editorialLabel": "Перспективний розвиток",
-    "feedKind": "ai_topic",
-    "sourceDescription": "arXiv:2611.32463v1 Announce Type: cross Abstract: Vision-language models (VLMs) often recognize fine-grained details more accurately in a relevant crop than in the full image. Multimodal on-policy distillation (OPD) methods exploit this by transferring the advantage of a crop-view teacher to a full-image student. However, their supervision relies on region-specific questions curated through an elaborate synthesis pipeline, which brings three weaknesses: (1) every region needs a question--answer pair written exclusively for it, locking training into costly QA curation that is hard to scale to unlabeled images; (2) all rollouts of a region answer the same question, so the teacher supervises only the details it asks about, leaving other visual elements in the region unsupervised; and (3) every question presupposes that its target exists, so the student becomes prone to answering even when the target is absent. In this paper, we study how to turn unlabeled images into broad visual supervision through multi-aspect self-description and privileged-view distillation, and propose CaptionOPD, which replaces tailored questions with a fixed set of image-agnostic caption prompts, ranging from general descriptions to focused captions of parts, colors, counts, text, and layout. The rollouts of a region receive different prompts, so the teacher supervises various aspects of the region. Moreover, because caption prompts mask the model to describe what is visible instead of querying a specific target, they avoid presupposing what the region contains. Using the model itself as the crop-view teacher, CaptionOPD requires no questions, no answers, and no larger model annotations: only images and region boxes. Experiments show that, trained on the same images and regions, CaptionOPD outperforms prior OPD methods across multiple fine-grained and general perception benchmarks.",
-    "selectionReason": "напрям: Освіта; ознаки користі: benchmark, benchmarks",
-    "evidenceLevel": "дослідження або оцінювання потенційного застосування",
-    "category": "Освіта",
-    "title": "Describe, Don't Ask: Caption-Driven On-Policy Distillation for Fine-Grained Visual Perception",
-    "summary": "arXiv:2611.32463v1 Announce Type: cross Abstract: Vision-language models (VLMs) often recognize fine-grained details more accurately in a relevant crop than in the full image. Multimodal on-policy distillation (OPD) methods exploit this by transferring the advantage of a crop-view teacher to a full-image student. However, their supervision relies on…",
-    "body": "Матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.32463v1 Announce Type: cross Abstract: Vision-language models (VLMs) often recognize fine-grained details more accurately in a relevant crop than in the full image. Multimodal on-policy distillation (OPD) methods exploit this by transferring the advantage of a crop-view teacher to a full-image student. However, their supervision relies on region-specific questions curated through an elaborate synthesis pipeline, which brings three weaknesses: (1) every region needs a question--answer pair written exclusively for it, locking training into costly QA curation that is hard to scale to unlabeled images; (2) all rollouts of a region answer the same question, so the teacher supervises only the details it asks about, leaving other visual elements in the region unsupervised; and (3) every question presupposes that its target exists, so the student becomes prone to answering even when the target is absent. In this paper, we study how to turn unlabeled images into broad visual supervision through multi-aspect self-description and privileged-view distillation, and propose CaptionOPD, which replaces tailored questions with a fixed set of image-agnostic caption prompts, ranging from general descriptions to focused captions of parts, colors, counts, text, and layout. The rollouts of a region receive different prompts, so the teacher supervises various aspects of the region. Moreover, because caption prompts mask the model to describe what is visible instead of querying a specific target, they avoid presupposing what the region contains. Using the model itself as the crop-view teacher, CaptionOPD requires no questions, no answers, and no larger model annotations: only images and region boxes. Experiments show that, trained on the same images and regions, CaptionOPD outperforms prior OPD methods across multiple fine-grained and general perception benchmarks.\n\nРедакційна класифікація: напрям: Освіта; ознаки користі: benchmark, benchmarks. Рівень свідчень: дослідження або оцінювання потенційного застосування. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте статус публікації в першоджерелі.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
-    "sourceDate": "2026-11-26",
-    "sources": [
-      {
-        "title": "Describe, Don't Ask: Caption-Driven On-Policy Distillation for Fine-Grained Visual Perception",
-        "publisher": "arXiv",
-        "url": "https://arxiv.org/abs/2611.32463",
-        "publishedDate": "2026-11-26"
-      }
-    ]
-  },
-  {
-    "id": "rss-2026-11-26-2b470493eb7d",
+    "id": "rss-2026-11-26-fc5a75d4cab8",
     "date": "2026-11-26",
     "autoPublished": true,
     "sourceType": "rss",
@@ -72,19 +12,79 @@
     "editorialDecisionSource": "automatic",
     "editorialLabel": "Позитивний вплив",
     "feedKind": "ai_topic",
-    "sourceDescription": "arXiv:2611.32734v1 Announce Type: cross Abstract: Large language models (LLMs) excel at medical question answering yet are rarely evaluated on the stepwise diagnostic reasoning that defines real clinical workflows, where impressions are revised as information accumulates. We build Annotated Stepwise Clinical rEasoning for NaturalisTic Diagnosis (ASCENT), a clinician-annotated benchmark and training resource of 3,078 stepwise problems derived from MedQA-USMLE that decomposes each vignette into EMR-aligned steps (Findings, Impression, supporting Rationale), enabling evaluation of intermediate reasoning under incomplete information. Experiments and training with ASCENT revealed insights into how current LLMs handle stepwise diagnostic reasoning. Even strong reasoning models that perform well on MedQA-USMLE leave substantial headroom on ASCENT, and general-purpose frontier models trail further, exposing a persistent gap between fully informed and stepwise diagnosis. Fine-tuning Qwen2.5-7B and 32B on ASCENT yields measurable F1 gains over both pre-trained and HuatuoGPT-o1 CoT-trained baselines, with gains driven primarily by precision. Complementary robustness analyses (counterfactual perturbation, format-vs-content control, judge agreement, and rollout) further show that ASCENT-fine-tuned models rely on the diagnostic content of prior impressions rather than imitating their output format, while error propagation under rollout remains a key challenge for clinical deployment.",
-    "selectionReason": "напрям: Медицина; ознаки користі: benchmark, evaluation, evaluate",
+    "sourceDescription": "arXiv:2509.11078v3 Announce Type: replace Abstract: Synthetic data generation with Large Language Models (LLMs) has emerged as a promising solution in the medical domain to mitigate data scarcity and privacy constraints. However, existing approaches remain constrained by their derivative nature, relying on real-world records, which pose privacy risks and distribution biases. Furthermore, current patient agents face the Stability-Plasticity Dilemma, struggling to maintain clinical consistency during dynamic inquiries. To address these challenges, we introduce Patient-Zero, a novel framework for ab initio patient simulation that requires no real medical records. Our Medically-Aligned Hierarchical Synthesis framework generates comprehensive and diverse patient records from medical knowledge via stratified attribute permutation. To support rigorous clinical interaction, we design a Dual-Track Cognitive Memory System to enable agents dynamically update memory while preserving logical consistency and persona adherence. Extensive evaluations show that Patient-Zero outperforms baselines in both data quality and interaction fidelity. In physician evaluations, our records obtain the highest mean diversity, consistency, and completeness ratings. Downstream medical reasoning model trained on our synthetic dataset shows substantial performance gains (MedQA +24.0%; MMLU +14.5%), demonstrating the practical utility of our framework.",
+    "selectionReason": "напрям: Медицина; ознаки користі: evaluation, real-world, dataset",
     "evidenceLevel": "практичне застосування або конкретний приклад",
     "category": "Медицина",
-    "title": "ASCENT: A Benchmark for Evaluating and Advancing Stepwise Diagnostic Reasoning in Large Language Models on Common Clinical Scenarios",
-    "summary": "arXiv:2611.32734v1 Announce Type: cross Abstract: Large language models (LLMs) excel at medical question answering yet are rarely evaluated on the stepwise diagnostic reasoning that defines real clinical workflows, where impressions are revised as information accumulates. We build Annotated Stepwise Clinical rEasoning for NaturalisTic Diagnosis (ASCENT), a…",
-    "body": "Матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.32734v1 Announce Type: cross Abstract: Large language models (LLMs) excel at medical question answering yet are rarely evaluated on the stepwise diagnostic reasoning that defines real clinical workflows, where impressions are revised as information accumulates. We build Annotated Stepwise Clinical rEasoning for NaturalisTic Diagnosis (ASCENT), a clinician-annotated benchmark and training resource of 3,078 stepwise problems derived from MedQA-USMLE that decomposes each vignette into EMR-aligned steps (Findings, Impression, supporting Rationale), enabling evaluation of intermediate reasoning under incomplete information. Experiments and training with ASCENT revealed insights into how current LLMs handle stepwise diagnostic reasoning. Even strong reasoning models that perform well on MedQA-USMLE leave substantial headroom on ASCENT, and general-purpose frontier models trail further, exposing a persistent gap between fully informed and stepwise diagnosis. Fine-tuning Qwen2.5-7B and 32B on ASCENT yields measurable F1 gains over both pre-trained and HuatuoGPT-o1 CoT-trained baselines, with gains driven primarily by precision. Complementary robustness analyses (counterfactual perturbation, format-vs-content control, judge agreement, and rollout) further show that ASCENT-fine-tuned models rely on the diagnostic content of prior impressions rather than imitating their output format, while error propagation under rollout remains a key challenge for clinical deployment.\n\nРедакційна класифікація: напрям: Медицина; ознаки користі: benchmark, evaluation, evaluate. Рівень свідчень: практичне застосування або конкретний приклад. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте статус публікації в першоджерелі.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "title": "Patient-Zero: Scaling Synthetic Patient Agents to Real-World Distributions without Real Patient Data",
+    "summary": "arXiv:2509.11078v3 Announce Type: replace Abstract: Synthetic data generation with Large Language Models (LLMs) has emerged as a promising solution in the medical domain to mitigate data scarcity and privacy constraints. However, existing approaches remain constrained by their derivative nature, relying on real-world records, which pose privacy risks and…",
+    "body": "Матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2509.11078v3 Announce Type: replace Abstract: Synthetic data generation with Large Language Models (LLMs) has emerged as a promising solution in the medical domain to mitigate data scarcity and privacy constraints. However, existing approaches remain constrained by their derivative nature, relying on real-world records, which pose privacy risks and distribution biases. Furthermore, current patient agents face the Stability-Plasticity Dilemma, struggling to maintain clinical consistency during dynamic inquiries. To address these challenges, we introduce Patient-Zero, a novel framework for ab initio patient simulation that requires no real medical records. Our Medically-Aligned Hierarchical Synthesis framework generates comprehensive and diverse patient records from medical knowledge via stratified attribute permutation. To support rigorous clinical interaction, we design a Dual-Track Cognitive Memory System to enable agents dynamically update memory while preserving logical consistency and persona adherence. Extensive evaluations show that Patient-Zero outperforms baselines in both data quality and interaction fidelity. In physician evaluations, our records obtain the highest mean diversity, consistency, and completeness ratings. Downstream medical reasoning model trained on our synthetic dataset shows substantial performance gains (MedQA +24.0%; MMLU +14.5%), demonstrating the practical utility of our framework.\n\nРедакційна класифікація: напрям: Медицина; ознаки користі: evaluation, real-world, dataset. Рівень свідчень: практичне застосування або конкретний приклад. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте статус публікації в першоджерелі.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
     "sourceDate": "2026-11-26",
     "sources": [
       {
-        "title": "ASCENT: A Benchmark for Evaluating and Advancing Stepwise Diagnostic Reasoning in Large Language Models on Common Clinical Scenarios",
+        "title": "Patient-Zero: Scaling Synthetic Patient Agents to Real-World Distributions without Real Patient Data",
         "publisher": "arXiv",
-        "url": "https://arxiv.org/abs/2611.32734",
+        "url": "https://arxiv.org/abs/2509.11078",
+        "publishedDate": "2026-11-26"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-26-af93a898ccc4",
+    "date": "2026-11-26",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "arXiv — Штучний інтелект",
+    "feedId": "arxiv-ai",
+    "sourceDomain": "arxiv.org",
+    "filterVersion": "2.7",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Перспективний розвиток",
+    "feedKind": "ai_topic",
+    "sourceDescription": "arXiv:2510.05197v2 Announce Type: replace Abstract: Assessing the capabilities and risks of frontier AI systems is a critical area of research; recent work has shown that repeated sampling can dramatically increase both. For instance, repeated sampling allows models to solve difficult math and coding problems, but it may also increase their risk of being jailbroken. Such results raise a crucial question: how can one accurately predict a model's behavior when scaled to a massive number of attempts, given a vastly smaller sampling budget? This question is directly relevant to model providers, who serve hundreds of millions of users daily, and to governmental regulators, who seek to prevent harms. To answer this question, we make three contributions. First, we find that standard methods for fitting these laws suffer from statistical shortcomings that hinder predictions, especially in data-limited scenarios. Second, we remedy these shortcomings by introducing a robust estimation framework, which uses a beta-binomial distribution to generate more accurate predictions from limited data. Third, we propose a dynamic sampling strategy that allocates a greater budget to harder problems. Combined, these innovations enable more reliable prediction of rare risks and capabilities at a fraction of the computational cost.",
+    "selectionReason": "напрям: Державне управління; ознаки користі: prevent, predict, prediction",
+    "evidenceLevel": "перспективне дослідження; практичний ефект ще потрібно перевірити",
+    "category": "Державне управління",
+    "title": "Efficient Prediction of pass@k Scaling in Large Language Models",
+    "summary": "arXiv:2510.05197v2 Announce Type: replace Abstract: Assessing the capabilities and risks of frontier AI systems is a critical area of research; recent work has shown that repeated sampling can dramatically increase both. For instance, repeated sampling allows models to solve difficult math and coding problems, but it may also increase their risk of being…",
+    "body": "Матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2510.05197v2 Announce Type: replace Abstract: Assessing the capabilities and risks of frontier AI systems is a critical area of research; recent work has shown that repeated sampling can dramatically increase both. For instance, repeated sampling allows models to solve difficult math and coding problems, but it may also increase their risk of being jailbroken. Such results raise a crucial question: how can one accurately predict a model's behavior when scaled to a massive number of attempts, given a vastly smaller sampling budget? This question is directly relevant to model providers, who serve hundreds of millions of users daily, and to governmental regulators, who seek to prevent harms. To answer this question, we make three contributions. First, we find that standard methods for fitting these laws suffer from statistical shortcomings that hinder predictions, especially in data-limited scenarios. Second, we remedy these shortcomings by introducing a robust estimation framework, which uses a beta-binomial distribution to generate more accurate predictions from limited data. Third, we propose a dynamic sampling strategy that allocates a greater budget to harder problems. Combined, these innovations enable more reliable prediction of rare risks and capabilities at a fraction of the computational cost.\n\nРедакційна класифікація: напрям: Державне управління; ознаки користі: prevent, predict, prediction. Рівень свідчень: перспективне дослідження; практичний ефект ще потрібно перевірити. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте статус публікації в першоджерелі.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-26",
+    "sources": [
+      {
+        "title": "Efficient Prediction of pass@k Scaling in Large Language Models",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2510.05197",
+        "publishedDate": "2026-11-26"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-26-7a4560e6cab8",
+    "date": "2026-11-26",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "arXiv — Штучний інтелект",
+    "feedId": "arxiv-ai",
+    "sourceDomain": "arxiv.org",
+    "filterVersion": "2.7",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Безпека та виклики",
+    "feedKind": "ai_topic",
+    "sourceDescription": "arXiv:2511.21460v2 Announce Type: replace Abstract: Large Language Models (LLMs) exhibit impressive reasoning capabilities but often suffer from \"Embodied Semantic Hallucinations\" - generating plans that are semantically fluent but physically unsafe due to a lack of grounded common sense. Existing safety alignment methods, such as RLHF or naive safety prompting, typically fall into a \"Safety-Utility Trade-off,\" resulting in severe over-rejection of benign household instructions. To address this, we propose MADRA (Multi-Agent Debate for Risk Awareness), a training-free cognitive architecture that mimics System-2 deliberation. MADRA introduces a meta-cognitive Critical Agent that evaluates peer debates using a structured argumentation framework derived from the Toulmin Model, effectively mitigating the \"herd mentality\" in multi-agent systems. We also introduce SafeAware-VH, a benchmark featuring adversarial safe instructions designed to probe agents' sensitivity to physical risks. Extensive experiments demonstrate that MADRA breaks the Pareto frontier, achieving over 90% rejection of unsafe tasks while maintaining high utility, significantly outperforming standard Chain-of-Thought and single-agent reflection baselines.",
+    "selectionReason": "напрям: Надійність ШІ; ознаки користі: benchmark, evaluate",
+    "evidenceLevel": "дослідження або оцінювання потенційного застосування",
+    "category": "Надійність ШІ",
+    "title": "MADRA: Multi-Agent Debate for Risk-Aware Embodied Planning",
+    "summary": "arXiv:2511.21460v2 Announce Type: replace Abstract: Large Language Models (LLMs) exhibit impressive reasoning capabilities but often suffer from \"Embodied Semantic Hallucinations\" - generating plans that are semantically fluent but physically unsafe due to a lack of grounded common sense. Existing safety alignment methods, such as RLHF or naive safety…",
+    "body": "Матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2511.21460v2 Announce Type: replace Abstract: Large Language Models (LLMs) exhibit impressive reasoning capabilities but often suffer from \"Embodied Semantic Hallucinations\" - generating plans that are semantically fluent but physically unsafe due to a lack of grounded common sense. Existing safety alignment methods, such as RLHF or naive safety prompting, typically fall into a \"Safety-Utility Trade-off,\" resulting in severe over-rejection of benign household instructions. To address this, we propose MADRA (Multi-Agent Debate for Risk Awareness), a training-free cognitive architecture that mimics System-2 deliberation. MADRA introduces a meta-cognitive Critical Agent that evaluates peer debates using a structured argumentation framework derived from the Toulmin Model, effectively mitigating the \"herd mentality\" in multi-agent systems. We also introduce SafeAware-VH, a benchmark featuring adversarial safe instructions designed to probe agents' sensitivity to physical risks. Extensive experiments demonstrate that MADRA breaks the Pareto frontier, achieving over 90% rejection of unsafe tasks while maintaining high utility, significantly outperforming standard Chain-of-Thought and single-agent reflection baselines.\n\nРедакційна класифікація: напрям: Надійність ШІ; ознаки користі: benchmark, evaluate. Рівень свідчень: дослідження або оцінювання потенційного застосування. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте статус публікації в першоджерелі.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-26",
+    "sources": [
+      {
+        "title": "MADRA: Multi-Agent Debate for Risk-Aware Embodied Planning",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2511.21460",
         "publishedDate": "2026-11-26"
       }
     ]
@@ -274,6 +274,96 @@
         "title": "2026 Report: Executive Summary",
         "publisher": "International AI Safety Report",
         "url": "https://internationalaisafetyreport.org/publication/2026-report-executive-summary"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-26-4410e9c20e9c",
+    "date": "2026-11-26",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "arXiv — Штучний інтелект",
+    "feedId": "arxiv-ai",
+    "sourceDomain": "arxiv.org",
+    "filterVersion": "2.7",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Безпека та виклики",
+    "feedKind": "ai_topic",
+    "sourceDescription": "arXiv:2611.32400v1 Announce Type: cross Abstract: Vision-and-Language Navigation (VLN) requires an agent to follow language instructions to reach a target in an unseen 3D environment. However, existing methods still struggle to recover from route deviations at test time. We investigate this limitation through the lens of instruction progress, and trace it to a phenomenon we term progress hallucination: agents misinterpret off-route observations as evidence of task progress, causing their internal instruction progress to advance beyond the actual task stage and hindering recovery based on earlier sub-instructions. To address this failure mode, we propose PHAR (Progress Hallucination-Aware Recovery), a test-time recovery framework following a verify-then-steer paradigm. The verifier examines residual-stream representations of the Vision-Language Model (VLM) to identify mismatch of cross-modal evidence along the trajectories, and uses split conformal calibration to control false alarms. When an alarm is raised, the steering module uses a contextual bandit to adaptively select the rewind extent of instruction progress for online recovery. Through extensive experiments on R2R-CE and RxR-CE, our framework enhances the reliability of multiple state-of-the-art vision-language navigation methods at test time.",
+    "selectionReason": "напрям: Надійність ШІ; ознаки користі: observation, navigation",
+    "evidenceLevel": "практичне застосування або конкретний приклад",
+    "category": "Надійність ШІ",
+    "title": "Verify then Steer: Progress Hallucination-Aware Recovery for Continuous Vision-and-Language Navigation",
+    "summary": "arXiv:2611.32400v1 Announce Type: cross Abstract: Vision-and-Language Navigation (VLN) requires an agent to follow language instructions to reach a target in an unseen 3D environment. However, existing methods still struggle to recover from route deviations at test time. We investigate this limitation through the lens of instruction progress, and trace it…",
+    "body": "Матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.32400v1 Announce Type: cross Abstract: Vision-and-Language Navigation (VLN) requires an agent to follow language instructions to reach a target in an unseen 3D environment. However, existing methods still struggle to recover from route deviations at test time. We investigate this limitation through the lens of instruction progress, and trace it to a phenomenon we term progress hallucination: agents misinterpret off-route observations as evidence of task progress, causing their internal instruction progress to advance beyond the actual task stage and hindering recovery based on earlier sub-instructions. To address this failure mode, we propose PHAR (Progress Hallucination-Aware Recovery), a test-time recovery framework following a verify-then-steer paradigm. The verifier examines residual-stream representations of the Vision-Language Model (VLM) to identify mismatch of cross-modal evidence along the trajectories, and uses split conformal calibration to control false alarms. When an alarm is raised, the steering module uses a contextual bandit to adaptively select the rewind extent of instruction progress for online recovery. Through extensive experiments on R2R-CE and RxR-CE, our framework enhances the reliability of multiple state-of-the-art vision-language navigation methods at test time.\n\nРедакційна класифікація: напрям: Надійність ШІ; ознаки користі: observation, navigation. Рівень свідчень: практичне застосування або конкретний приклад. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте статус публікації в першоджерелі.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-26",
+    "sources": [
+      {
+        "title": "Verify then Steer: Progress Hallucination-Aware Recovery for Continuous Vision-and-Language Navigation",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2611.32400",
+        "publishedDate": "2026-11-26"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-26-8179e84b7edc",
+    "date": "2026-11-26",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "arXiv — Штучний інтелект",
+    "feedId": "arxiv-ai",
+    "sourceDomain": "arxiv.org",
+    "filterVersion": "2.7",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Перспективний розвиток",
+    "feedKind": "ai_topic",
+    "sourceDescription": "arXiv:2611.32463v1 Announce Type: cross Abstract: Vision-language models (VLMs) often recognize fine-grained details more accurately in a relevant crop than in the full image. Multimodal on-policy distillation (OPD) methods exploit this by transferring the advantage of a crop-view teacher to a full-image student. However, their supervision relies on region-specific questions curated through an elaborate synthesis pipeline, which brings three weaknesses: (1) every region needs a question--answer pair written exclusively for it, locking training into costly QA curation that is hard to scale to unlabeled images; (2) all rollouts of a region answer the same question, so the teacher supervises only the details it asks about, leaving other visual elements in the region unsupervised; and (3) every question presupposes that its target exists, so the student becomes prone to answering even when the target is absent. In this paper, we study how to turn unlabeled images into broad visual supervision through multi-aspect self-description and privileged-view distillation, and propose CaptionOPD, which replaces tailored questions with a fixed set of image-agnostic caption prompts, ranging from general descriptions to focused captions of parts, colors, counts, text, and layout. The rollouts of a region receive different prompts, so the teacher supervises various aspects of the region. Moreover, because caption prompts mask the model to describe what is visible instead of querying a specific target, they avoid presupposing what the region contains. Using the model itself as the crop-view teacher, CaptionOPD requires no questions, no answers, and no larger model annotations: only images and region boxes. Experiments show that, trained on the same images and regions, CaptionOPD outperforms prior OPD methods across multiple fine-grained and general perception benchmarks.",
+    "selectionReason": "напрям: Освіта; ознаки користі: benchmark, benchmarks",
+    "evidenceLevel": "дослідження або оцінювання потенційного застосування",
+    "category": "Освіта",
+    "title": "Describe, Don't Ask: Caption-Driven On-Policy Distillation for Fine-Grained Visual Perception",
+    "summary": "arXiv:2611.32463v1 Announce Type: cross Abstract: Vision-language models (VLMs) often recognize fine-grained details more accurately in a relevant crop than in the full image. Multimodal on-policy distillation (OPD) methods exploit this by transferring the advantage of a crop-view teacher to a full-image student. However, their supervision relies on…",
+    "body": "Матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.32463v1 Announce Type: cross Abstract: Vision-language models (VLMs) often recognize fine-grained details more accurately in a relevant crop than in the full image. Multimodal on-policy distillation (OPD) methods exploit this by transferring the advantage of a crop-view teacher to a full-image student. However, their supervision relies on region-specific questions curated through an elaborate synthesis pipeline, which brings three weaknesses: (1) every region needs a question--answer pair written exclusively for it, locking training into costly QA curation that is hard to scale to unlabeled images; (2) all rollouts of a region answer the same question, so the teacher supervises only the details it asks about, leaving other visual elements in the region unsupervised; and (3) every question presupposes that its target exists, so the student becomes prone to answering even when the target is absent. In this paper, we study how to turn unlabeled images into broad visual supervision through multi-aspect self-description and privileged-view distillation, and propose CaptionOPD, which replaces tailored questions with a fixed set of image-agnostic caption prompts, ranging from general descriptions to focused captions of parts, colors, counts, text, and layout. The rollouts of a region receive different prompts, so the teacher supervises various aspects of the region. Moreover, because caption prompts mask the model to describe what is visible instead of querying a specific target, they avoid presupposing what the region contains. Using the model itself as the crop-view teacher, CaptionOPD requires no questions, no answers, and no larger model annotations: only images and region boxes. Experiments show that, trained on the same images and regions, CaptionOPD outperforms prior OPD methods across multiple fine-grained and general perception benchmarks.\n\nРедакційна класифікація: напрям: Освіта; ознаки користі: benchmark, benchmarks. Рівень свідчень: дослідження або оцінювання потенційного застосування. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте статус публікації в першоджерелі.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-26",
+    "sources": [
+      {
+        "title": "Describe, Don't Ask: Caption-Driven On-Policy Distillation for Fine-Grained Visual Perception",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2611.32463",
+        "publishedDate": "2026-11-26"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-26-2b470493eb7d",
+    "date": "2026-11-26",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "arXiv — Штучний інтелект",
+    "feedId": "arxiv-ai",
+    "sourceDomain": "arxiv.org",
+    "filterVersion": "2.7",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Позитивний вплив",
+    "feedKind": "ai_topic",
+    "sourceDescription": "arXiv:2611.32734v1 Announce Type: cross Abstract: Large language models (LLMs) excel at medical question answering yet are rarely evaluated on the stepwise diagnostic reasoning that defines real clinical workflows, where impressions are revised as information accumulates. We build Annotated Stepwise Clinical rEasoning for NaturalisTic Diagnosis (ASCENT), a clinician-annotated benchmark and training resource of 3,078 stepwise problems derived from MedQA-USMLE that decomposes each vignette into EMR-aligned steps (Findings, Impression, supporting Rationale), enabling evaluation of intermediate reasoning under incomplete information. Experiments and training with ASCENT revealed insights into how current LLMs handle stepwise diagnostic reasoning. Even strong reasoning models that perform well on MedQA-USMLE leave substantial headroom on ASCENT, and general-purpose frontier models trail further, exposing a persistent gap between fully informed and stepwise diagnosis. Fine-tuning Qwen2.5-7B and 32B on ASCENT yields measurable F1 gains over both pre-trained and HuatuoGPT-o1 CoT-trained baselines, with gains driven primarily by precision. Complementary robustness analyses (counterfactual perturbation, format-vs-content control, judge agreement, and rollout) further show that ASCENT-fine-tuned models rely on the diagnostic content of prior impressions rather than imitating their output format, while error propagation under rollout remains a key challenge for clinical deployment.",
+    "selectionReason": "напрям: Медицина; ознаки користі: benchmark, evaluation, evaluate",
+    "evidenceLevel": "практичне застосування або конкретний приклад",
+    "category": "Медицина",
+    "title": "ASCENT: A Benchmark for Evaluating and Advancing Stepwise Diagnostic Reasoning in Large Language Models on Common Clinical Scenarios",
+    "summary": "arXiv:2611.32734v1 Announce Type: cross Abstract: Large language models (LLMs) excel at medical question answering yet are rarely evaluated on the stepwise diagnostic reasoning that defines real clinical workflows, where impressions are revised as information accumulates. We build Annotated Stepwise Clinical rEasoning for NaturalisTic Diagnosis (ASCENT), a…",
+    "body": "Матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.32734v1 Announce Type: cross Abstract: Large language models (LLMs) excel at medical question answering yet are rarely evaluated on the stepwise diagnostic reasoning that defines real clinical workflows, where impressions are revised as information accumulates. We build Annotated Stepwise Clinical rEasoning for NaturalisTic Diagnosis (ASCENT), a clinician-annotated benchmark and training resource of 3,078 stepwise problems derived from MedQA-USMLE that decomposes each vignette into EMR-aligned steps (Findings, Impression, supporting Rationale), enabling evaluation of intermediate reasoning under incomplete information. Experiments and training with ASCENT revealed insights into how current LLMs handle stepwise diagnostic reasoning. Even strong reasoning models that perform well on MedQA-USMLE leave substantial headroom on ASCENT, and general-purpose frontier models trail further, exposing a persistent gap between fully informed and stepwise diagnosis. Fine-tuning Qwen2.5-7B and 32B on ASCENT yields measurable F1 gains over both pre-trained and HuatuoGPT-o1 CoT-trained baselines, with gains driven primarily by precision. Complementary robustness analyses (counterfactual perturbation, format-vs-content control, judge agreement, and rollout) further show that ASCENT-fine-tuned models rely on the diagnostic content of prior impressions rather than imitating their output format, while error propagation under rollout remains a key challenge for clinical deployment.\n\nРедакційна класифікація: напрям: Медицина; ознаки користі: benchmark, evaluation, evaluate. Рівень свідчень: практичне застосування або конкретний приклад. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте статус публікації в першоджерелі.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-26",
+    "sources": [
+      {
+        "title": "ASCENT: A Benchmark for Evaluating and Advancing Stepwise Diagnostic Reasoning in Large Language Models on Common Clinical Scenarios",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2611.32734",
+        "publishedDate": "2026-11-26"
       }
     ]
   },

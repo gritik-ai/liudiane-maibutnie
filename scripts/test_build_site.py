@@ -8,6 +8,7 @@ from build_site import (
     SITE_URL,
     article_slug,
     article_url,
+    article_slug,
     build_outputs,
     is_public_article,
     public_articles,
@@ -121,7 +122,9 @@ class BuildSiteSeoTests(unittest.TestCase):
         outputs = build_outputs(rows)
         self.assertIn("sitemap.xml", outputs)
         self.assertIn("robots.txt", outputs)
-        self.assertEqual(len([key for key in outputs if key.startswith("articles/")]), 2)
+        self.assertIn("articles/" + article_slug(rows[0]) + "/index.html", outputs)
+        self.assertIn("articles/" + article_slug(rows[1]) + "/index.html", outputs)
+        self.assertNotIn("articles/" + article_slug(rows[2]) + "/index.html", outputs)
 
 
     def test_topic_hubs_are_generated_only_for_categories_with_enough_articles(self):
@@ -135,7 +138,7 @@ class BuildSiteSeoTests(unittest.TestCase):
         outputs = build_outputs(rows)
         self.assertIn("topics/medytsyna/index.html", outputs)
         self.assertNotIn("topics/prava-lyudyny/index.html", outputs)
-        self.assertIn("штучний інтелект у медицині", outputs["topics/medytsyna/index.html"])
+        self.assertIn("цифрова медицина", outputs["topics/medytsyna/index.html"])
 
     def test_article_page_links_to_topic_hub_and_shows_semantic_terms(self):
         page = render_article_page(self.sample(category="Медицина"))

@@ -102,6 +102,30 @@
 - «Не вдалося отримати жодну RSS-стрічку» — повтори запуск пізніше та перевір
   доступність джерел.
 
+SEO ТА ПОШУКОВА ІНДЕКСАЦІЯ
+--------------------------
+Публічний домен: https://liudiane-maibutnie-site.vercel.app/
+
+- robots.txt: https://liudiane-maibutnie-site.vercel.app/robots.txt
+- sitemap.xml: https://liudiane-maibutnie-site.vercel.app/sitemap.xml
+- Публічні статті генеруються як окремі статичні сторінки у папці articles/.
+- scripts/build_site.py створює сторінки статей, canonical URL, Open Graph,
+  структуровані дані Article, sitemap.xml та robots.txt.
+- Публічні статті, що пройшли автоматичний фільтр, потрапляють у sitemap.
+  Матеріали зі статусом needs_review або rejected до нього не включаються.
+- GitHub Actions оновлює статичні сторінки та sitemap після кожного RSS-запуску.
+- Редакторський кабінет має meta robots noindex,nofollow і не додається до sitemap.
+
+Локальні команди:
+  python scripts/build_site.py --write
+  python scripts/build_site.py --check
+
+Після розгортання додай адресу сайту до Google Search Console як URL-prefix
+property та надішли sitemap.xml у розділі Sitemaps. Так само можна додати сайт
+до Bing Webmaster Tools і подати той самий sitemap. Сам факт подання sitemap
+не гарантує індексацію: пошукові системи самостійно вирішують, які сторінки
+сканувати, індексувати та показувати в результатах.
+
 РЕДАКЦІЙНІ ПРИНЦИПИ
 ------------------
 1. Публікувати лише матеріали з визначених джерел і з перевірюваними URL.

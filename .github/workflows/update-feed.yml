@@ -79,7 +79,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add content/articles.json content/source_stats.json articles/ sitemap.xml robots.txt
+          git add content/articles.json content/source_stats.json articles/ topics/ sitemap.xml robots.txt
           if git diff --cached --quiet; then
             echo "Бібліотека та статистика джерел без змін. Коміт не потрібен."
           else

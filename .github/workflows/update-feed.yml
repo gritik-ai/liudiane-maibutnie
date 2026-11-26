@@ -2,6 +2,15 @@ name: Daily RSS update
 
 on:
   pull_request:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - "articles/**"
+      - "content/articles.json"
+      - "content/source_stats.json"
+      - "sitemap.xml"
+      - "robots.txt"
   schedule:
     # 06:23 UTC; not at the start of the hour to reduce queue delays.
     - cron: "23 6 * * *"
@@ -36,6 +45,9 @@ jobs:
 
       - name: Виконати автоматичні тести
         run: python -m unittest discover -s scripts -p 'test_*.py' -v
+
+      - name: Згенерувати SEO-сторінки та sitemap у робочій копії
+        run: python scripts/build_site.py --write
 
       - name: Перевірити SEO-сторінки та sitemap
         run: python scripts/build_site.py --check

@@ -36,7 +36,7 @@
     <div class="wrap nav">
       <a class="brand" href="#top" aria-label="Людяне майбутнє — на головну"><span class="brandmark">✧</span><span>Людяне майбутнє<small>ШІ для добробуту кожного</small></span></a>
       <nav class="navlinks" id="navlinks"><a href="#principles">Принципи</a><a href="#opportunities">Можливості</a><a href="#ideas">Бібліотека ідей</a><a href="/action-lab.html">Компас дій</a><a href="/analytics.html">Аналітика</a><a href="#manifesto">Маніфест</a><a href="#sources">Джерела</a></nav>
-      <div class="navactions"><span class="auto-indicator">✦ Автоматично опубліковано</span><button class="menu-btn" id="menuBtn" aria-label="Відкрити меню">☰</button></div>
+      <div class="navactions"><span class="auto-indicator">✦ RSS оновлюється автоматично</span><button class="menu-btn" id="menuBtn" aria-label="Відкрити меню">☰</button></div>
     </div>
   </header>
   <main id="top">
@@ -152,7 +152,7 @@
       const rejectedAuto=allRemoteRecords.filter(a=>a.autoPublished===true&&a.editorialStatus==='rejected').length;
       const duplicateAuto=allRemoteRecords.filter(a=>a.autoPublished===true&&a.editorialStatus==='duplicate').length;
       const latest=approvedAuto.slice().sort((a,b)=>(b.date||'').localeCompare(a.date||''))[0];
-      status.textContent=`Автоматично опубліковано · остання публікація: ${latest?formatDate(latest.date):'ще немає'} · опубліковано: ${approvedAuto.length} · на перевірці: ${heldAuto} · відхилено: ${rejectedAuto} · дублікатів: ${duplicateAuto}`;
+      status.textContent=`Автоматична публікація RSS · остання публікація: ${latest?formatDate(latest.date):'ще немає'} · опубліковано: ${approvedAuto.length} · на перевірці: ${heldAuto} · відхилено: ${rejectedAuto} · дублікатів: ${duplicateAuto}`;
     }catch(error){
       status.textContent='RSS-бібліотека буде оновлюватися після підключення репозиторію та GitHub Actions.';
     }

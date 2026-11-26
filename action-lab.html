@@ -4,8 +4,29 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#103b31">
-  <meta name="description" content="Інтерактивний компас добрих змін: практичні кроки для людей, громад і організацій заради кращого майбутнього.">
+  <meta name="description" content="Інтерактивний компас добрих змін із практичними кроками для людей, громад і організацій у сферах освіти, медицини, екології та відповідального ШІ.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://liudiane-maibutnie-site.vercel.app/action-lab.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Людяне майбутнє">
+  <meta property="og:locale" content="uk_UA">
+  <meta property="og:title" content="Компас добрих змін — Людяне майбутнє">
+  <meta property="og:description" content="Практичні кроки для людей, громад і організацій заради кращого майбутнього.">
+  <meta property="og:url" content="https://liudiane-maibutnie-site.vercel.app/action-lab.html">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Компас добрих змін — Людяне майбутнє">
+  <meta name="twitter:description" content="Практичні кроки для людей, громад і організацій.">
   <title>Компас добрих змін — Людяне майбутнє</title>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebPage",
+    "name":"Компас добрих змін — Людяне майбутнє",
+    "url":"https://liudiane-maibutnie-site.vercel.app/action-lab.html",
+    "inLanguage":"uk-UA",
+    "isPartOf":{"@type":"WebSite","name":"Людяне майбутнє","url":"https://liudiane-maibutnie-site.vercel.app/"}
+  }
+  </script>
   <style>
     :root{--bg:#f3f7f3;--paper:#fff;--ink:#183229;--muted:#65766d;--green:#174d40;--green2:#28715c;--mint:#e2f2e8;--lime:#dff0ae;--line:#dfe9e1;--blue:#397cad;--gold:#c38a39;--shadow:0 16px 44px rgba(20,55,42,.09);--radius:22px}
     *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.55}
@@ -134,11 +155,18 @@
     const planText=`Компас добрих змін — ${area}\nРоль: ${roleNames[role]}\n\n1. Сьогодні: ${p.immediate[role==='citizen'?0:role==='teacher'?1:role==='researcher'?2:role==='community'?1:role==='business'?2:2]}\n\n2. Разом: ${p.community[role==='citizen'?0:role==='teacher'?1:role==='researcher'?2:role==='community'?1:role==='business'?2:2]}\n\n3. На перспективу: ${p.future[role==='citizen'?0:role==='teacher'?1:role==='researcher'?2:role==='community'?1:role==='business'?2:2]}\n\nПринципи: доказовість, людяність, доступність, підзвітність.`;
     currentPlan=planText;$('results').classList.add('show');renderArticles(area);$('results').scrollIntoView({behavior:'smooth',block:'start'});
   }
+  const slugTranslit={'а':'a','б':'b','в':'v','г':'h','ґ':'g','д':'d','е':'e','є':'ye','ж':'zh','з':'z','и':'y','і':'i','ї':'yi','й':'y','к':'k','л':'l','м':'m','н':'n','о':'o','п':'p','р':'r','с':'s','т':'t','у':'u','ф':'f','х':'kh','ц':'ts','ч':'ch','ш':'sh','щ':'shch','ь':'','ю':'yu','я':'ya','ё':'yo','ы':'y','ъ':'','э':'e'};
+  function articlePath(article){
+    const title=String(article.title||'').toLocaleLowerCase('uk').replace(/[а-яіїєґёыъэ]/g,ch=>slugTranslit[ch]??ch).normalize('NFKD').replace(/[\\u0300-\\u036f]/g,'');
+    const base=title.replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'').slice(0,72).replace(/-+$/,'')||'material';
+    const suffix=String(article.id||'item').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'').slice(-12)||'item';
+    return '/articles/'+base+'-'+suffix+'/';
+  }
   function renderArticles(area){
     const items=publicArticles.filter(a=>categoryOf(a)===area).sort((a,b)=>String(b.date||'').localeCompare(String(a.date||''))).slice(0,6);
     const grid=$('articleGrid');
-    if(!items.length){grid.innerHTML='<div class="empty">Поки немає схвалених матеріалів у цій категорії. Це не означає, що напрям неважливий: добірка з’явиться, коли редакція схвалить відповідні публікації.</div>';return;}
-    grid.innerHTML=items.map(a=>{const src=Array.isArray(a.sources)?a.sources.find(s=>s&&typeof s.url==='string'&&/^https:\/\//i.test(s.url)):null;const summary=a.summary||String(a.body||'').slice(0,180);return `<article class="article"><div class="meta">${esc(categoryOf(a))} · ${esc(dateLabel(a.date))}</div><h3>${esc(a.title)}</h3><p>${esc(summary)}</p>${src?`<a href="${esc(src.url)}" target="_blank" rel="noopener noreferrer">Першоджерело ↗</a>`:'<span class="source-foot">Посилання на джерело не додано</span>'}</article>`;}).join('');
+    if(!items.length){grid.innerHTML='<div class="empty">Поки немає матеріалів у цій категорії. Нові публікації з’являтимуться після проходження автоматичного тематичного фільтра.</div>';return;}
+    grid.innerHTML=items.map(a=>{const src=Array.isArray(a.sources)?a.sources.find(s=>s&&typeof s.url==='string'&&/^https:\/\//i.test(s.url)):null;const summary=a.summary||String(a.body||'').slice(0,180);return `<article class="article"><div class="meta">${esc(categoryOf(a))} · ${esc(dateLabel(a.date))}</div><h3><a href="${articlePath(a)}">${esc(a.title)}</a></h3><p>${esc(summary)}</p><a href="${articlePath(a)}">Читати матеріал →</a>${src?`<a href="${esc(src.url)}" target="_blank" rel="noopener noreferrer">Першоджерело ↗</a>`:'<span class="source-foot">Посилання на джерело не додано</span>'}</article>`;}).join('');
   }
   async function loadArticles(){
     try{const r=await fetch(DATA_URL+'?ts='+Date.now(),{cache:'no-store'});if(!r.ok)throw new Error('HTTP '+r.status);const data=await r.json();if(!Array.isArray(data))throw new Error('Невірний формат бібліотеки');publicArticles=data.filter(isPublic);$('dataStatus').textContent=`Завантажено ${publicArticles.length} публічних матеріалів із бібліотеки. На перевірці та відхилені матеріали не відображаються.`;

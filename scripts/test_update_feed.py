@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Offline regression tests for the editorial RSS filter v2.6 and expanded source diversity."""
+"""Offline regression tests for the editorial RSS filter v2.7 and expanded source diversity."""
 import unittest
 from urllib.parse import urlparse
 
@@ -23,7 +23,7 @@ AI_FEED = {"kind": "ai_topic"}
 DOMAIN_FEED = {"kind": "domain_topic", "requires_ai": True}
 
 
-class EditorialFilterV26Tests(unittest.TestCase):
+class EditorialFilterV27Tests(unittest.TestCase):
     def check(self, title: str, description: str = "", feed=AI_FEED):
         return assess_relevance({"title": title, "description": description}, feed)
 
@@ -449,7 +449,7 @@ class EditorialFilterV26Tests(unittest.TestCase):
             validate_feed_payload(b"x" * (MAX_FEED_BYTES + 1), "application/xml")
 
     def test_feed_payload_accepts_xml_with_utf8_bom(self):
-        validate_feed_payload(b"\\xef\\xbb\\xbf<?xml version='1.0'?><rss/>", "application/rss+xml")
+        validate_feed_payload(b"\xef\xbb\xbf<?xml version='1.0'?><rss/>", "application/rss+xml")
 
     def test_title_key_ignores_punctuation_case(self):
         self.assertEqual(title_key("AI: A Better Future!"), title_key("ai a better future"))

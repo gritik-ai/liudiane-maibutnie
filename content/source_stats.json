@@ -1,18 +1,18 @@
 {
   "schemaVersion": 1,
   "filterVersion": "2.7",
-  "generatedAt": "2026-11-26T07:49:40.248555+00:00",
+  "generatedAt": "2026-11-26T10:37:35.855028+00:00",
   "totals": {
     "successfulFeeds": 25,
     "totalFeeds": 27,
     "itemsFetched": 2026,
-    "acceptedCandidates": 47,
-    "added": 7,
-    "rejected": 1008,
-    "duplicates": 75,
+    "acceptedCandidates": 40,
+    "added": 5,
+    "rejected": 1016,
+    "duplicates": 74,
     "tooOld": 591,
     "shortDescriptions": 49,
-    "deferredByDiversityCap": 40
+    "deferredByDiversityCap": 35
   },
   "feedRuns": [
     {
@@ -133,13 +133,13 @@
       "url": "https://export.arxiv.org/rss/cs.AI",
       "status": "ok",
       "itemsFetched": 447,
-      "acceptedCandidates": 31,
+      "acceptedCandidates": 28,
       "added": 3,
       "rejected": 414,
-      "duplicates": 2,
+      "duplicates": 5,
       "tooOld": 0,
       "shortDescriptions": 0,
-      "deferredByDiversityCap": 28,
+      "deferredByDiversityCap": 25,
       "rejectionReasons": {
         "немає чіткого зв'язку зі штучним інтелектом для спеціалізованої AI-стрічки": 217,
         "не виявлено достатньо чіткого напряму користі для людей": 155,
@@ -316,17 +316,23 @@
       "publisher": "United Nations News",
       "domain": "un.org",
       "url": "https://news.un.org/feed/subscribe/en/news/topic/climate-change/feed/rss.xml",
-      "status": "error",
-      "itemsFetched": 0,
+      "status": "ok",
+      "itemsFetched": 30,
       "acceptedCandidates": 0,
       "added": 0,
-      "rejected": 0,
-      "duplicates": 0,
+      "rejected": 25,
+      "duplicates": 5,
       "tooOld": 0,
       "shortDescriptions": 0,
       "deferredByDiversityCap": 0,
-      "rejectionReasons": {},
-      "error": "not well-formed (invalid token): line 1, column 0"
+      "rejectionReasons": {
+        "визначено напрям «Екологія», але немає достатніх ознак застосування, оцінювання або суспільної користі": 15,
+        "неоднозначна тематика: Мир і безпека / Екологія; потрібна редакційна перевірка": 1,
+        "недостатньо чіткий зв'язок із напрямом «Екологія»": 1,
+        "не виявлено достатньо чіткого напряму користі для людей": 6,
+        "неоднозначна тематика: Екологія / Економіка та добробут; потрібна редакційна перевірка": 2
+      },
+      "error": ""
     },
     {
       "id": "un-human-rights",
@@ -387,26 +393,17 @@
       "publisher": "United Nations News",
       "domain": "un.org",
       "url": "https://news.un.org/feed/subscribe/en/news/topic/humanitarian-aid/feed/rss.xml",
-      "status": "ok",
-      "itemsFetched": 30,
-      "acceptedCandidates": 1,
-      "added": 1,
-      "rejected": 25,
-      "duplicates": 4,
+      "status": "error",
+      "itemsFetched": 0,
+      "acceptedCandidates": 0,
+      "added": 0,
+      "rejected": 0,
+      "duplicates": 0,
       "tooOld": 0,
       "shortDescriptions": 0,
       "deferredByDiversityCap": 0,
-      "rejectionReasons": {
-        "визначено напрям «Мир і безпека», але немає достатніх ознак застосування, оцінювання або суспільної користі": 4,
-        "не виявлено достатньо чіткого напряму користі для людей": 13,
-        "недостатньо чіткий зв'язок із напрямом «Державне управління»": 1,
-        "визначено напрям «Екологія», але немає достатніх ознак застосування, оцінювання або суспільної користі": 1,
-        "недостатньо чіткий зв'язок із напрямом «Мир і безпека»": 2,
-        "визначено напрям «Медицина», але немає достатніх ознак застосування, оцінювання або суспільної користі": 2,
-        "недостатньо чіткий зв'язок із напрямом «Екологія»": 1,
-        "визначено напрям «Освіта», але немає достатніх ознак застосування, оцінювання або суспільної користі": 1
-      },
-      "error": ""
+      "rejectionReasons": {},
+      "error": "not well-formed (invalid token): line 1, column 0"
     },
     {
       "id": "un-peace-security",
@@ -418,19 +415,21 @@
       "itemsFetched": 30,
       "acceptedCandidates": 0,
       "added": 0,
-      "rejected": 17,
-      "duplicates": 13,
+      "rejected": 25,
+      "duplicates": 5,
       "tooOld": 0,
       "shortDescriptions": 0,
       "deferredByDiversityCap": 0,
       "rejectionReasons": {
         "визначено напрям «Освіта», але немає достатніх ознак застосування, оцінювання або суспільної користі": 2,
+        "визначено напрям «Мир і безпека», але немає достатніх ознак застосування, оцінювання або суспільної користі": 1,
         "відсів: військове застосування або озброєння": 2,
-        "не виявлено достатньо чіткого напряму користі для людей": 9,
-        "визначено напрям «Медицина», але немає достатніх ознак застосування, оцінювання або суспільної користі": 1,
-        "визначено напрям «Екологія», але немає достатніх ознак застосування, оцінювання або суспільної користі": 1,
-        "недостатньо чіткий зв'язок із напрямом «Мир і безпека»": 1,
-        "недостатньо чіткий зв'язок із напрямом «Права людини»": 1
+        "не виявлено достатньо чіткого напряму користі для людей": 13,
+        "визначено напрям «Медицина», але немає достатніх ознак застосування, оцінювання або суспільної користі": 2,
+        "недостатньо чіткий зв'язок із напрямом «Мир і безпека»": 2,
+        "недостатньо чіткий зв'язок із напрямом «Державне управління»": 1,
+        "недостатньо чіткий зв'язок із напрямом «Права людини»": 1,
+        "визначено напрям «Екологія», але немає достатніх ознак застосування, оцінювання або суспільної користі": 1
       },
       "error": ""
     },
@@ -472,8 +471,8 @@
       "shortDescriptions": 0,
       "deferredByDiversityCap": 0,
       "rejectionReasons": {
-        "не виявлено достатньо чіткого напряму користі для людей": 6,
-        "визначено напрям «Медицина», але немає достатніх ознак застосування, оцінювання або суспільної користі": 4
+        "визначено напрям «Медицина», але немає достатніх ознак застосування, оцінювання або суспільної користі": 4,
+        "не виявлено достатньо чіткого напряму користі для людей": 6
       },
       "error": ""
     },
@@ -585,10 +584,10 @@
       "url": "https://ec.europa.eu/newsroom/clima/feed?item_type_id=1536&lang=en&orderby=item_date",
       "status": "ok",
       "itemsFetched": 100,
-      "acceptedCandidates": 1,
-      "added": 1,
+      "acceptedCandidates": 0,
+      "added": 0,
       "rejected": 11,
-      "duplicates": 4,
+      "duplicates": 5,
       "tooOld": 0,
       "shortDescriptions": 36,
       "deferredByDiversityCap": 0,
@@ -609,13 +608,13 @@
       "url": "https://ec.europa.eu/newsroom/env/feed?item_type_id=1041&lang=en&orderby=item_date",
       "status": "ok",
       "itemsFetched": 100,
-      "acceptedCandidates": 4,
+      "acceptedCandidates": 2,
       "added": 2,
       "rejected": 41,
-      "duplicates": 9,
+      "duplicates": 11,
       "tooOld": 16,
       "shortDescriptions": 8,
-      "deferredByDiversityCap": 2,
+      "deferredByDiversityCap": 0,
       "rejectionReasons": {
         "не виявлено достатньо чіткого напряму користі для людей": 18,
         "короткий або відсутній опис": 8,
@@ -632,14 +631,14 @@
   "libraryByDomain": [
     {
       "domain": "arxiv.org",
-      "count": 57,
+      "count": 60,
       "publishers": [
         "arXiv"
       ]
     },
     {
       "domain": "europa.eu",
-      "count": 12,
+      "count": 14,
       "publishers": [
         "European Commission — Climate Action",
         "European Commission — Environment"
@@ -690,8 +689,8 @@
   ],
   "libraryDomainCount": 8,
   "library": {
-    "totalRecords": 111,
-    "publicRecords": 96,
+    "totalRecords": 116,
+    "publicRecords": 101,
     "needsReview": 15,
     "manualRecords": 7
   },

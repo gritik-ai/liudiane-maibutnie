@@ -1,18 +1,18 @@
 {
   "schemaVersion": 1,
   "filterVersion": "2.7",
-  "generatedAt": "2026-11-26T10:37:35.855028+00:00",
+  "generatedAt": "2026-11-26T11:24:41.253424+00:00",
   "totals": {
-    "successfulFeeds": 25,
+    "successfulFeeds": 26,
     "totalFeeds": 27,
-    "itemsFetched": 2026,
-    "acceptedCandidates": 40,
-    "added": 5,
-    "rejected": 1016,
-    "duplicates": 74,
+    "itemsFetched": 2056,
+    "acceptedCandidates": 35,
+    "added": 3,
+    "rejected": 1029,
+    "duplicates": 96,
     "tooOld": 591,
     "shortDescriptions": 49,
-    "deferredByDiversityCap": 35
+    "deferredByDiversityCap": 32
   },
   "feedRuns": [
     {
@@ -133,13 +133,13 @@
       "url": "https://export.arxiv.org/rss/cs.AI",
       "status": "ok",
       "itemsFetched": 447,
-      "acceptedCandidates": 28,
+      "acceptedCandidates": 25,
       "added": 3,
       "rejected": 414,
-      "duplicates": 5,
+      "duplicates": 8,
       "tooOld": 0,
       "shortDescriptions": 0,
-      "deferredByDiversityCap": 25,
+      "deferredByDiversityCap": 22,
       "rejectionReasons": {
         "немає чіткого зв'язку зі штучним інтелектом для спеціалізованої AI-стрічки": 217,
         "не виявлено достатньо чіткого напряму користі для людей": 155,
@@ -393,17 +393,25 @@
       "publisher": "United Nations News",
       "domain": "un.org",
       "url": "https://news.un.org/feed/subscribe/en/news/topic/humanitarian-aid/feed/rss.xml",
-      "status": "error",
-      "itemsFetched": 0,
+      "status": "ok",
+      "itemsFetched": 30,
       "acceptedCandidates": 0,
       "added": 0,
-      "rejected": 0,
-      "duplicates": 0,
+      "rejected": 22,
+      "duplicates": 8,
       "tooOld": 0,
       "shortDescriptions": 0,
       "deferredByDiversityCap": 0,
-      "rejectionReasons": {},
-      "error": "not well-formed (invalid token): line 1, column 0"
+      "rejectionReasons": {
+        "визначено напрям «Мир і безпека», але немає достатніх ознак застосування, оцінювання або суспільної користі": 4,
+        "не виявлено достатньо чіткого напряму користі для людей": 11,
+        "недостатньо чіткий зв'язок із напрямом «Державне управління»": 1,
+        "визначено напрям «Екологія», але немає достатніх ознак застосування, оцінювання або суспільної користі": 1,
+        "недостатньо чіткий зв'язок із напрямом «Мир і безпека»": 2,
+        "визначено напрям «Медицина», але немає достатніх ознак застосування, оцінювання або суспільної користі": 2,
+        "визначено напрям «Освіта», але немає достатніх ознак застосування, оцінювання або суспільної користі": 1
+      },
+      "error": ""
     },
     {
       "id": "un-peace-security",
@@ -415,21 +423,18 @@
       "itemsFetched": 30,
       "acceptedCandidates": 0,
       "added": 0,
-      "rejected": 25,
-      "duplicates": 5,
+      "rejected": 16,
+      "duplicates": 14,
       "tooOld": 0,
       "shortDescriptions": 0,
       "deferredByDiversityCap": 0,
       "rejectionReasons": {
         "визначено напрям «Освіта», але немає достатніх ознак застосування, оцінювання або суспільної користі": 2,
-        "визначено напрям «Мир і безпека», але немає достатніх ознак застосування, оцінювання або суспільної користі": 1,
         "відсів: військове застосування або озброєння": 2,
-        "не виявлено достатньо чіткого напряму користі для людей": 13,
-        "визначено напрям «Медицина», але немає достатніх ознак застосування, оцінювання або суспільної користі": 2,
-        "недостатньо чіткий зв'язок із напрямом «Мир і безпека»": 2,
-        "недостатньо чіткий зв'язок із напрямом «Державне управління»": 1,
-        "недостатньо чіткий зв'язок із напрямом «Права людини»": 1,
-        "визначено напрям «Екологія», але немає достатніх ознак застосування, оцінювання або суспільної користі": 1
+        "не виявлено достатньо чіткого напряму користі для людей": 9,
+        "визначено напрям «Медицина», але немає достатніх ознак застосування, оцінювання або суспільної користі": 1,
+        "недостатньо чіткий зв'язок із напрямом «Мир і безпека»": 1,
+        "недостатньо чіткий зв'язок із напрямом «Права людини»": 1
       },
       "error": ""
     },
@@ -608,10 +613,10 @@
       "url": "https://ec.europa.eu/newsroom/env/feed?item_type_id=1041&lang=en&orderby=item_date",
       "status": "ok",
       "itemsFetched": 100,
-      "acceptedCandidates": 2,
-      "added": 2,
+      "acceptedCandidates": 0,
+      "added": 0,
       "rejected": 41,
-      "duplicates": 11,
+      "duplicates": 13,
       "tooOld": 16,
       "shortDescriptions": 8,
       "deferredByDiversityCap": 0,
@@ -631,7 +636,7 @@
   "libraryByDomain": [
     {
       "domain": "arxiv.org",
-      "count": 60,
+      "count": 63,
       "publishers": [
         "arXiv"
       ]
@@ -689,8 +694,8 @@
   ],
   "libraryDomainCount": 8,
   "library": {
-    "totalRecords": 116,
-    "publicRecords": 101,
+    "totalRecords": 119,
+    "publicRecords": 104,
     "needsReview": 15,
     "manualRecords": 7
   },

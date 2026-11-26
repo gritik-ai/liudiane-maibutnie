@@ -4,8 +4,29 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0d2925">
-  <meta name="description" content="Публічна аналітика матеріалів про відповідальний штучний інтелект, науку та якість життя. Дані формуються з перевіреної публічної бібліотеки проєкту Людяне майбутнє.">
-  <title>Аналітика користі для людства — Людяне майбутнє</title>
+  <meta name="description" content="Відкрита аналітика бібліотеки Людяного майбутнього: теми публікацій, джерела, динаміка та автоматичний редакційний відбір матеріалів.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://liudiane-maibutnie-site.vercel.app/analytics.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Людяне майбутнє">
+  <meta property="og:locale" content="uk_UA">
+  <meta property="og:title" content="Аналітика публікацій — Людяне майбутнє">
+  <meta property="og:description" content="Статистика тем, джерел і динаміки відкритої бібліотеки матеріалів.">
+  <meta property="og:url" content="https://liudiane-maibutnie-site.vercel.app/analytics.html">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Аналітика публікацій — Людяне майбутнє">
+  <meta name="twitter:description" content="Статистика відкритої бібліотеки матеріалів.">
+  <title>Аналітика публікацій — Людяне майбутнє</title>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebPage",
+    "name":"Аналітика публікацій — Людяне майбутнє",
+    "url":"https://liudiane-maibutnie-site.vercel.app/analytics.html",
+    "inLanguage":"uk-UA",
+    "isPartOf":{"@type":"WebSite","name":"Людяне майбутнє","url":"https://liudiane-maibutnie-site.vercel.app/"}
+  }
+  </script>
   <style>
     :root{--bg:#f3f6f2;--paper:#fff;--ink:#172923;--muted:#66756e;--green:#174d40;--green2:#246b58;--mint:#dcefe5;--lime:#d6ef9b;--line:#e2e9e3;--shadow:0 14px 38px rgba(18,48,38,.08);--blue:#3186d9;--purple:#8754bd;--orange:#dc963c;--teal:#2b9a86;--red:#bd6862}
     *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}a{color:inherit}button,select,input{font:inherit}.wrap{width:min(1240px,calc(100% - 36px));margin:auto}
@@ -138,10 +159,17 @@
     $('sourceStatsVersion').textContent=sourceStats&&sourceStats.filterVersion?`Фільтр ${sourceStats.filterVersion}`:'За бібліотекою';
     if(sourceStats&&sourceStats.generatedAt){$('sourceMethod').textContent=`Останній звіт RSS: ${fmtDate(sourceStats.generatedAt)}. ${safeText(sourceStats.methodology||'Показники описують потік матеріалів, а не доведений суспільний ефект.')}`;}
   }
+  const slugTranslit={'а':'a','б':'b','в':'v','г':'h','ґ':'g','д':'d','е':'e','є':'ye','ж':'zh','з':'z','и':'y','і':'i','ї':'yi','й':'i','к':'k','л':'l','м':'m','н':'n','о':'o','п':'p','р':'r','с':'s','т':'t','у':'u','ф':'f','х':'kh','ц':'ts','ч':'ch','ш':'sh','щ':'shch','ь':'','ю':'yu','я':'ya','ё':'yo','ы':'y','ъ':'','э':'e'};
+  function articlePath(article){
+    const title=String(article.title||'').toLocaleLowerCase('uk').replace(/[а-яіїєґёыъэ]/g,ch=>slugTranslit[ch]??ch).normalize('NFKD').replace(/[\u0300-\u036f]/g,'');
+    const base=title.replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'').slice(0,72).replace(/-+$/,'')||'material';
+    const suffix=String(article.id||'item').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'').slice(-12)||'item';
+    return '/articles/'+base+'-'+suffix+'/';
+  }
   function renderRecent(){
     const root=$('recentList');root.replaceChildren();const rows=published.slice().sort((a,b)=>String(b.date||b.sourceDate||'').localeCompare(String(a.date||a.sourceDate||''))).slice(0,8);
     if(!rows.length){root.innerHTML='<div class="no-data">Поки немає схвалених матеріалів.</div>';return;}
-    rows.forEach(a=>{const card=document.createElement('article');card.className='recent-item';const meta=document.createElement('div');meta.className='recent-meta';const cat=document.createElement('span');cat.className='pill';cat.textContent=categoryOf(a);const date=document.createElement('span');date.textContent=fmtDate(a.date||a.sourceDate);meta.append(cat,date);const title=document.createElement('div');const link=document.createElement('a');link.textContent=safeText(a.title);const source=sourcesOf(a)[0];const host=source?hostOf(source.url):'';if(host){link.href=source.url;link.target='_blank';link.rel='noopener noreferrer';const src=document.createElement('span');src.className='recent-source';src.textContent='Першоджерело: '+(source.publisher||host);title.append(link);card.append(meta,title,src);}else{link.href='/#ideas';link.setAttribute('aria-label','Знайти матеріал у бібліотеці: '+safeText(a.title));title.append(link);card.append(meta,title);}root.append(card);});
+    rows.forEach(a=>{const card=document.createElement('article');card.className='recent-item';const meta=document.createElement('div');meta.className='recent-meta';const cat=document.createElement('span');cat.className='pill';cat.textContent=categoryOf(a);const date=document.createElement('span');date.textContent=fmtDate(a.date||a.sourceDate);meta.append(cat,date);const title=document.createElement('div');const link=document.createElement('a');link.textContent=safeText(a.title);link.href=articlePath(a);const source=sourcesOf(a)[0];const host=source?hostOf(source.url):'';title.append(link);if(host){const src=document.createElement('a');src.className='recent-source';src.textContent='Першоджерело: '+(source.publisher||host)+' ↗';src.href=source.url;src.target='_blank';src.rel='noopener noreferrer';card.append(meta,title,src);}else{card.append(meta,title);}root.append(card);});
   }
   function render(){renderStats();renderTrend();renderCategories();renderLabels();renderSources();renderRecent();}
   async function loadData(){

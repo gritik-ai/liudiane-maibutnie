@@ -15,7 +15,7 @@
 <body>
 <div class="top"><div class="wrap"><div class="brand">✧ Людяне майбутнє<small>Редакційний кабінет</small></div><a href="/">← Повернутися на сайт</a></div></div>
 <main class="wrap">
-<section class="hero"><h1>Редакційний кабінет</h1><p>Перевіряйте першоджерела, ухвалюйте рішення щодо автоматичних матеріалів і ведіть історію редакційних змін. Система не видаляє статті: відхилені матеріали залишаються в бібліотеці, але не показуються на головній сторінці.</p></section>
+<section class="hero"><h1>Редакційний кабінет</h1><p>Матеріали, що проходять автоматичний фільтр, одразу публікуються. Тут можна перевірити першоджерело, підтвердити редакторську перевірку, залишити публікацію на перевірці або відхилити її. Зняті з публікації матеріали залишаються в бібліотеці.</p></section>
 <section class="card">
   <h2 style="margin:0 0 13px;font-size:19px">Підключення бібліотеки GitHub</h2>
   <div class="connect-grid">
@@ -77,7 +77,13 @@
     rss.forEach(a=>{const s=statusOf(a); if(Object.prototype.hasOwnProperty.call(c,s))c[s]++;}); return c;
   }
   function renderStats() { const c=counts(); $('stats').replaceChildren(); [['Усього записів',c.total],['Опубліковано',c.approved],['На перевірці',c.needs_review],['Відхилено',c.rejected],['Дублікати',c.duplicate]].forEach(([label,value])=>{const d=document.createElement('div');d.className='stat';const b=document.createElement('strong');b.textContent=value;const s=document.createElement('span');s.textContent=label;d.append(b,s);$('stats').append(d);}); }
-  function labelFor(status) { return ({approved:'Опубліковано',needs_review:'На перевірці',rejected:'Відхилено',duplicate:'Дублікат',manual:'Ручний матеріал'})[status]||status; }
+  function labelFor(status, article=null) {
+    if(status==='approved' && isAuto(article)) {
+      return article.editorialDecisionSource==='human' ? 'Перевірено редактором' : 'Автоматично опубліковано';
+    }
+    if(status==='approved' && article && article.editorialDecisionSource==='human') return 'Перевірено редактором';
+    return ({approved:'Опубліковано',needs_review:'На перевірці',rejected:'Відхилено',duplicate:'Дублікат',manual:'Ручний матеріал'})[status]||status;
+  }
   function addHistory(article, action, previousStatus, nextStatus, reviewer, note) {
     const history=Array.isArray(article.editorialHistory)?article.editorialHistory.slice():[];
     history.push({at:nowIso(),actor:reviewer,action,from:previousStatus,to:nextStatus,category:article.category||'',label:article.editorialLabel||'',note:note||''});
@@ -113,7 +119,7 @@
     const head=document.createElement('div');head.className='article-head';
     const titleBox=document.createElement('div');
     const meta=document.createElement('div');meta.className='meta';
-    const badge=document.createElement('span');badge.className='badge '+statusOf(article);badge.textContent=labelFor(statusOf(article));
+    const badge=document.createElement('span');badge.className='badge '+statusOf(article);badge.textContent=labelFor(statusOf(article),article);
     const date=document.createElement('span');date.textContent=article.date||'Дата невідома';
     const feed=document.createElement('span');feed.textContent=article.feedName||'Джерело не зазначено';meta.append(badge,date,feed);
     const h=document.createElement('h2');h.textContent=article.title||'Без назви';titleBox.append(meta,h);head.append(titleBox);
@@ -131,7 +137,10 @@
       const noteField=document.createElement('div');noteField.className='field';noteField.style.marginTop='10px';const noteLabel=document.createElement('label');noteLabel.textContent='Коментар редактора / причина рішення';const note=document.createElement('textarea');note.rows=2;note.placeholder='Наприклад: перевірено першоджерело; дослідження має потенційну користь для доступності медичної допомоги.';note.value=article.editorialNote||'';noteField.append(noteLabel,note);
       const check=document.createElement('label');check.className='check';const verify=document.createElement('input');verify.type='checkbox';const checkText=document.createElement('span');checkText.textContent='Я відкрив(ла) першоджерело, перевірив(ла) контекст і переконався(лася), що заголовок та опис не перебільшують результати.';check.append(verify,checkText);
       const actions=document.createElement('div');actions.className='actions';
-      const approve=document.createElement('button');approve.className='btn btn-primary';approve.textContent='Схвалити й опублікувати';approve.disabled=statusOf(article)==='approved';
+      const approve=document.createElement('button');approve.className='btn btn-primary';
+      const isHumanApproved=statusOf(article)==='approved'&&article.editorialDecisionSource==='human';
+      approve.textContent=isHumanApproved?'Перевірено редактором':statusOf(article)==='approved'?'Підтвердити редакторську перевірку':'Схвалити й опублікувати';
+      approve.disabled=isHumanApproved;
       const hold=document.createElement('button');hold.className='btn btn-secondary';hold.textContent='Залишити на перевірці';
       const reject=document.createElement('button');reject.className='btn btn-danger';reject.textContent='Відхилити';reject.disabled=statusOf(article)==='rejected';
       const reset=document.createElement('button');reset.className='btn btn-quiet';reset.textContent='Повернути до автоматичної перевірки';

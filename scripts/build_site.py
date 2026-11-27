@@ -294,7 +294,7 @@ def render_editorial_gallery(article: dict[str, Any]) -> str:
         crop_class = f"pencil-crop-r{row}-c{col}"
         items.append(
             '<figure><div class="illustration-frame"><img class="' + crop_class
-            + '" src="/assets/editorial/pencil-gallery.jpg" alt="' + html.escape(alt, quote=True)
+            + '" src="/assets/editorial/pencil-gallery.avif" alt="' + html.escape(alt, quote=True)
             + '" loading="lazy" decoding="async"></div><figcaption>' + html.escape(alt)
             + "</figcaption></figure>"
         )

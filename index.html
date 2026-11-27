@@ -64,16 +64,29 @@
     @media(max-width:900px){.hero-grid{gap:25px}.principle-grid{grid-template-columns:repeat(2,1fr)}.areas-grid,.article-grid,.sources,.topic-preview-grid{grid-template-columns:repeat(2,1fr)}.manifesto-grid{gap:35px}}
     @media(max-width:680px){.wrap{width:min(100% - 28px,1160px)}.topline .wrap{justify-content:center;text-align:center}.topline span:last-child{display:none}.nav{min-height:65px}.navlinks{display:none;position:absolute;top:65px;left:0;right:0;background:#10352d;padding:18px 22px 22px;flex-direction:column;align-items:flex-start;border-top:1px solid #ffffff16}.navlinks.open{display:flex}.navactions .btn-outline{display:none}.menu-btn{display:block}.hero-grid{grid-template-columns:1fr;padding:60px 0 70px}.hero h1{font-size:47px}.hero p{font-size:16px}.globe-wrap{min-height:285px}.globe{width:245px}.orbit{width:300px;height:115px}.globe-label{right:0;bottom:0}.stats{margin-top:-18px}.stat-row{grid-template-columns:1fr;padding:12px 20px}.stat{border-right:0;border-bottom:1px solid var(--line);padding:12px 3px}.stat:last-child{border:0}.section-head{display:block}.section-head p{margin-top:12px}section{padding:62px 0}.principle-grid,.areas-grid,.article-grid,.sources,.topic-preview-grid{grid-template-columns:1fr}.home-archive-link{align-items:flex-start;flex-direction:column}.principle{min-height:unset}.manifesto-grid{grid-template-columns:1fr}.pledges{grid-template-columns:1fr}.footer-row{display:block}.footer-note{margin-top:12px}.filter{flex:1}.modal-inner{padding:22px}}
   </style>
+  <link rel="stylesheet" href="/assets/site-header.css">
+  <script defer src="/assets/site-header.js"></script>
 </head>
 <body>
-  <div class="topline"><div class="wrap"><span>ІДЕЇ ДЛЯ ЛЮДЯНОГО МАЙБУТНЬОГО</span><span>Технології мають служити людям — кожній людині</span></div></div>
-  <header>
-    <div class="wrap nav">
-      <a class="brand" href="#top" aria-label="Людяне майбутнє — на головну"><span class="brandmark">✧</span><span>Людяне майбутнє<small>ШІ для добробуту кожного</small></span></a>
-      <nav class="navlinks" id="navlinks"><a href="#principles">Принципи</a><a href="#opportunities">Можливості</a><a href="/topics/">Напрямки</a><a href="/articles/">Усі статті</a><a href="#ideas">Останні матеріали</a><a href="/action-lab.html">Компас дій</a><a href="/analytics.html">Аналітика</a><a href="#manifesto">Маніфест</a><a href="#sources">Джерела</a></nav>
-      <div class="navactions"><span class="auto-indicator">✦ RSS оновлюється автоматично</span><button class="menu-btn" id="menuBtn" aria-label="Відкрити меню">☰</button></div>
-    </div>
-  </header>
+  <div class="site-topline"><div class="site-shell"><span>ІДЕЇ ДЛЯ ЛЮДЯНОГО МАЙБУТНЬОГО</span><span>Технології мають служити людям — кожній людині</span></div></div>
+<header class="site-header">
+  <div class="site-shell site-nav">
+    <a class="site-brand" href="/" aria-label="Людяне майбутнє — на головну"><span class="site-brandmark">✧</span><span>Людяне майбутнє<small>ШІ для добробуту кожного</small></span></a>
+    <button class="site-menu-toggle" id="siteMenuToggle" type="button" aria-label="Відкрити меню" aria-expanded="false" aria-controls="siteNavLinks">☰</button>
+    <nav class="site-navlinks" id="siteNavLinks" aria-label="Основна навігація">
+      <a href="/#principles">Принципи</a>
+      <a href="/#opportunities">Можливості</a>
+      <a href="/topics/">Напрямки</a>
+      <a href="/articles/">Усі статті</a>
+      <a href="/#ideas">Останні матеріали</a>
+      <a href="/action-lab.html">Компас дій</a>
+      <a href="/analytics.html">Аналітика</a>
+      <a href="/#manifesto">Маніфест</a>
+      <a href="/#sources">Джерела</a>
+    </nav>
+    <div class="site-nav-actions"><span class="site-rss-badge">✦ RSS оновлюється автоматично</span></div>
+  </div>
+</header>
   <main id="top">
     <section class="hero">
       <div class="wrap hero-grid">
@@ -192,8 +205,7 @@
   document.getElementById('closeArticle').addEventListener('click',()=>document.getElementById('articleDialog').close());
   document.getElementById('searchInput').addEventListener('input',renderArticles);
   document.getElementById('categoryFilter').addEventListener('change',renderArticles);
-  document.getElementById('menuBtn').addEventListener('click',()=>document.getElementById('navlinks').classList.toggle('open'));
-  document.querySelectorAll('.navlinks a').forEach(a=>a.addEventListener('click',()=>document.getElementById('navlinks').classList.remove('open')));
+
   async function loadPublishedArticles(){
     const status=document.getElementById('feedStatus');
     try{

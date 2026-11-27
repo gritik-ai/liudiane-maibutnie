@@ -39,16 +39,29 @@
     @media(max-width:850px){.hero-grid{grid-template-columns:1fr}.hero-side{max-width:560px}.steps{grid-template-columns:1fr}.principles{grid-template-columns:repeat(2,1fr)}.article-grid{grid-template-columns:repeat(2,1fr)}}
     @media(max-width:600px){.wrap{width:min(100% - 26px,1120px)}.topline .wrap{justify-content:center;text-align:center}.topline .wrap span:last-child{display:none}.nav{min-height:63px}.navlinks{gap:10px}.navlinks a{font-size:11px}.navbutton{display:none}.hero{padding:48px 0}.hero h1{font-size:43px}.hero p{font-size:15px}.form-grid{grid-template-columns:1fr}.panel{padding:18px}.section-head{display:block}.result-title{display:block}.result-badge{display:inline-block;margin-top:9px}.article-grid{grid-template-columns:1fr}.principles{grid-template-columns:1fr 1fr}.footer-row{display:block}.footer-row div+div{margin-top:8px}}
   </style>
+  <link rel="stylesheet" href="/assets/site-header.css">
+  <script defer src="/assets/site-header.js"></script>
 </head>
 <body>
-  <div class="topline"><div class="wrap"><span>ІНСТРУМЕНТ ДЛЯ ДОБРИХ ЗМІН</span><span>Великі зміни починаються з обґрунтованих кроків</span></div></div>
-  <header>
-    <div class="wrap nav">
-      <a class="brand" href="/" aria-label="Людяне майбутнє — на головну"><span class="brandmark">✧</span><span>Людяне майбутнє<small>ШІ для добробуту кожного</small></span></a>
-      <nav class="navlinks" aria-label="Основна навігація"><a href="/">Головна</a><a href="/analytics.html">Аналітика</a><a href="/#ideas">Бібліотека</a></nav>
-      <a class="navbutton" href="/analytics.html">Переглянути дані →</a>
-    </div>
-  </header>
+  <div class="site-topline"><div class="site-shell"><span>ІДЕЇ ДЛЯ ЛЮДЯНОГО МАЙБУТНЬОГО</span><span>Технології мають служити людям — кожній людині</span></div></div>
+<header class="site-header">
+  <div class="site-shell site-nav">
+    <a class="site-brand" href="/" aria-label="Людяне майбутнє — на головну"><span class="site-brandmark">✧</span><span>Людяне майбутнє<small>ШІ для добробуту кожного</small></span></a>
+    <button class="site-menu-toggle" id="siteMenuToggle" type="button" aria-label="Відкрити меню" aria-expanded="false" aria-controls="siteNavLinks">☰</button>
+    <nav class="site-navlinks" id="siteNavLinks" aria-label="Основна навігація">
+      <a href="/#principles">Принципи</a>
+      <a href="/#opportunities">Можливості</a>
+      <a href="/topics/">Напрямки</a>
+      <a href="/articles/">Усі статті</a>
+      <a href="/#ideas">Останні матеріали</a>
+      <a href="/action-lab.html">Компас дій</a>
+      <a href="/analytics.html">Аналітика</a>
+      <a href="/#manifesto">Маніфест</a>
+      <a href="/#sources">Джерела</a>
+    </nav>
+    <div class="site-nav-actions"><span class="site-rss-badge">✦ RSS оновлюється автоматично</span></div>
+  </div>
+</header>
   <section class="hero">
     <div class="wrap hero-grid">
       <div>

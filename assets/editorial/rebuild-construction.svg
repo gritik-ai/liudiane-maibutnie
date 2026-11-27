@@ -1,1 +1,54 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" role="img" aria-labelledby="title desc"><title id="title">Відбудова сучасного міста</title><desc id="desc">Будівельний кран і нові будинки символізують відновлення українських міст.</desc><defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e8efe9"/><stop offset="1" stop-color="#f7f5e9"/></linearGradient><pattern id="dots" width="34" height="34" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="1.5" fill="#386f5a" opacity=".15"/></pattern></defs><rect width="960" height="560" fill="url(#bg)"/><rect width="960" height="560" fill="url(#dots)"/><circle cx="820" cy="95" r="48" fill="#e6ad54" opacity=".45"/><path d="M0 390 Q210 340 400 385 T960 360" fill="none" stroke="#fff" stroke-width="4" opacity=".7"/><path d="M0 420 H960 V560 H0Z" fill="#b9d0c3"/><g fill="#fff"><rect x="100" y="230" width="170" height="190"/><rect x="320" y="170" width="210" height="250"/><rect x="580" y="215" width="180" height="205"/></g><g fill="#386f5a"><rect x="125" y="255" width="32" height="32"/><rect x="175" y="255" width="32" height="32"/><rect x="350" y="200" width="35" height="35"/><rect x="405" y="200" width="35" height="35"/><rect x="610" y="245" width="32" height="32"/></g><g stroke="#244d45" stroke-width="12" fill="none"><path d="M420 165 V55 H850 M700 55 V135 M670 55 L640 20 M700 55 L730 20"/><path d="M810 55 L810 245"/></g><g fill="#e6ad54"><rect x="805" y="245" width="18" height="65"/></g><path d="M760 320 L900 320" stroke="#244d45" stroke-width="8"/><text x="42" y="510" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#244d45" opacity=".8">ЛЮДЯНЕ МАЙБУТНЄ</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" role="img" aria-labelledby="title desc">
+<title id="title">Відбудова міської забудови</title><desc id="desc">Архітектори та будівельники працюють на майданчику відновлення міської будівлі.</desc>
+<defs>
+  <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#dceaf0"/><stop offset="1" stop-color="#f5ead3"/></linearGradient>
+  <linearGradient id="paper" x2="0" y2="1"><stop stop-color="#fcf8ed"/><stop offset="1" stop-color="#f1e7d5"/></linearGradient>
+  <pattern id="papergrain" width="48" height="48" patternUnits="userSpaceOnUse">
+    <circle cx="4" cy="8" r="1" fill="#8e785c" opacity=".17"/><circle cx="29" cy="22" r=".8" fill="#8e785c" opacity=".16"/><circle cx="41" cy="5" r=".7" fill="#8e785c" opacity=".13"/><path d="M9 36l5-1m17 8l4-1m5-28l3 1" stroke="#a18a6b" stroke-width=".7" opacity=".16"/>
+  </pattern>
+  <pattern id="hatch" width="12" height="12" patternUnits="userSpaceOnUse"><path d="M-2 12L12-2M4 16L16 4" stroke="#765d48" stroke-width="1" opacity=".32"/></pattern>
+  <pattern id="bluehatch" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M0 10L10 0" stroke="#477b93" stroke-width="1" opacity=".27"/></pattern>
+  <pattern id="greenhatch" width="11" height="11" patternUnits="userSpaceOnUse"><path d="M0 11L11 0" stroke="#52764f" stroke-width="1" opacity=".3"/></pattern>
+  <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".62" numOctaves="2" seed="7"/><feColorMatrix values="0 0 0 0 .38 0 0 0 0 .31 0 0 0 0 .22 0 0 0 .12 0"/></filter>
+</defs>
+<rect width="960" height="560" fill="url(#paper)"/>
+<rect width="960" height="560" fill="url(#papergrain)"/>
+<path d="M0 0H960V350Q700 320 500 352T0 340Z" fill="url(#sky)"/>
+<path d="M0 40Q160 12 315 38T640 31T960 42" fill="none" stroke="#77a0b2" stroke-width="2" opacity=".35"/>
+<path d="M0 53l190-17m-110 31l210-28m-42 34l185-25m-80 43l220-31m-45 32l210-28m-80 43l270-38" fill="none" stroke="#6995ab" stroke-width="1.3" opacity=".28"/>
+
+<path d="M0 380H960V560H0Z" fill="#c8b89e" stroke="#776550" stroke-width="3"/>
+<path d="M0 420l170-22 170 32 170-28 200 20 250-28" stroke="#8d785e" stroke-width="4" fill="none"/>
+<rect x="150" y="155" width="430" height="240" rx="0" fill="#cbb89a" stroke="#65584b" stroke-width="4"/>
+<path d="M150 155l70-54 430 0-70 54" fill="#dfc9a5" stroke="#65584b" stroke-width="4"/>
+<path d="M180 180l80 28-15 70-65-15m175-70l50 20-7 65-53-17m140-70l50 20-10 60-45-12" stroke="#a47a58" stroke-width="12" fill="none" opacity=".7"/>
+<path d="M165 154v245m55-245v245m55-245v245m55-245v245m55-245v245m55-245v245m55-245v245m55-245v245" stroke="#8b6d50" stroke-width="5" opacity=".85"/>
+<path d="M130 175h490M130 245h490M130 315h490M130 385h490" stroke="#8b6d50" stroke-width="5" fill="none"/>
+<path d="M125 130l510 270m-510 0l510-270m-510 70l390 205m-390-205l390-205" stroke="#a17c5c" stroke-width="2.5" fill="none" opacity=".85"/>
+<path d="M770 365V55m0 0h145m-145 0l-65 48m65-48l28-22" stroke="#6d5945" stroke-width="7" fill="none"/>
+<path d="M910 55l-28 20m-10-20l35 25m-70-25l35 25" stroke="#b17b4f" stroke-width="4" fill="none"/>
+<g transform="translate(680 395) scale(0.95)">
+<circle cx="0" cy="-43" r="13" fill="#d5a37c" stroke="#57483d" stroke-width="2.5"/>
+<path d="M-12-52q12-17 25 0" fill="#594639" stroke="#594639" stroke-width="3"/>
+<path d="M-17-26Q0-38 17-25L22 20H-22Z" fill="#e5a83f" stroke="#57483d" stroke-width="3"/>
+<path d="M-12 18L-18 60M12 18L19 60M-15-17L-34 8M15-16L33 4" fill="none" stroke="#57483d" stroke-width="5" stroke-linecap="round"/>
+<path d="M-28 61h15m25 0h15" stroke="#57483d" stroke-width="4" stroke-linecap="round"/>
+</g><g transform="translate(775 405) scale(0.86)">
+<circle cx="0" cy="-43" r="13" fill="#d5a37c" stroke="#57483d" stroke-width="2.5"/>
+<path d="M-12-52q12-17 25 0" fill="#594639" stroke="#594639" stroke-width="3"/>
+<path d="M-17-26Q0-38 17-25L22 20H-22Z" fill="#d2a24c" stroke="#57483d" stroke-width="3"/>
+<path d="M-12 18L-18 60M12 18L19 60M-15-17L-34 8M15-16L33 4" fill="none" stroke="#57483d" stroke-width="5" stroke-linecap="round"/>
+<path d="M-28 61h15m25 0h15" stroke="#57483d" stroke-width="4" stroke-linecap="round"/>
+</g><g transform="translate(430 430) scale(0.8)">
+<circle cx="0" cy="-43" r="13" fill="#d5a37c" stroke="#57483d" stroke-width="2.5"/>
+<path d="M-12-52q12-17 25 0" fill="#594639" stroke="#594639" stroke-width="3"/>
+<path d="M-17-26Q0-38 17-25L22 20H-22Z" fill="#6b8790" stroke="#57483d" stroke-width="3"/>
+<path d="M-12 18L-18 60M12 18L19 60M-15-17L-34 8M15-16L33 4" fill="none" stroke="#57483d" stroke-width="5" stroke-linecap="round"/>
+<path d="M-28 61h15m25 0h15" stroke="#57483d" stroke-width="4" stroke-linecap="round"/>
+</g>
+<path d="M655 367q30-35 60 0m35 5q30-30 60 0" stroke="#bd8445" stroke-width="3" fill="none"/>
+<path d="M50 490l70-24 40 13-22 33-73 6m580-15l70-12 40 12-18 26-72 3" stroke="#9a7a5b" stroke-width="3" fill="none"/>
+
+<rect width="960" height="560" filter="url(#grain)" opacity=".11" pointer-events="none"/>
+<path d="M15 18Q470 5 944 17M18 542Q450 554 943 541" fill="none" stroke="#927d61" stroke-width="1" opacity=".22"/>
+</svg>

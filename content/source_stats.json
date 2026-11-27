@@ -1,18 +1,18 @@
 {
   "schemaVersion": 1,
   "filterVersion": "2.7",
-  "generatedAt": "2026-11-27T07:54:08.170976+00:00",
+  "generatedAt": "2026-11-27T16:50:51.605793+00:00",
   "totals": {
     "successfulFeeds": 25,
     "totalFeeds": 27,
-    "itemsFetched": 1680,
-    "acceptedCandidates": 21,
-    "added": 3,
-    "rejected": 705,
-    "duplicates": 69,
-    "tooOld": 579,
-    "shortDescriptions": 50,
-    "deferredByDiversityCap": 18
+    "itemsFetched": 1679,
+    "acceptedCandidates": 22,
+    "added": 7,
+    "rejected": 710,
+    "duplicates": 73,
+    "tooOld": 574,
+    "shortDescriptions": 40,
+    "deferredByDiversityCap": 15
   },
   "feedRuns": [
     {
@@ -45,16 +45,16 @@
       "domain": "mit.edu",
       "url": "https://news.mit.edu/rss/topic/health-sciences-and-technology",
       "status": "ok",
-      "itemsFetched": 28,
+      "itemsFetched": 27,
       "acceptedCandidates": 0,
       "added": 0,
-      "rejected": 13,
+      "rejected": 14,
       "duplicates": 9,
-      "tooOld": 6,
+      "tooOld": 4,
       "shortDescriptions": 0,
       "deferredByDiversityCap": 0,
       "rejectionReasons": {
-        "не виявлено достатньо чіткого напряму користі для людей": 7,
+        "не виявлено достатньо чіткого напряму користі для людей": 8,
         "недостатньо чіткий зв'язок із напрямом «Медицина»": 1,
         "визначено напрям «Медицина», але немає достатніх ознак застосування, оцінювання або суспільної користі": 4,
         "визначено напрям «Освіта», але немає достатніх ознак застосування, оцінювання або суспільної користі": 1
@@ -71,14 +71,14 @@
       "itemsFetched": 29,
       "acceptedCandidates": 0,
       "added": 0,
-      "rejected": 16,
+      "rejected": 15,
       "duplicates": 9,
-      "tooOld": 4,
+      "tooOld": 5,
       "shortDescriptions": 0,
       "deferredByDiversityCap": 0,
       "rejectionReasons": {
         "визначено напрям «Екологія», але немає достатніх ознак застосування, оцінювання або суспільної користі": 4,
-        "не виявлено достатньо чіткого напряму користі для людей": 11,
+        "не виявлено достатньо чіткого напряму користі для людей": 10,
         "визначено напрям «Економіка та добробут», але немає достатніх ознак застосування, оцінювання або суспільної користі": 1
       },
       "error": ""
@@ -133,13 +133,13 @@
       "url": "https://export.arxiv.org/rss/cs.AI",
       "status": "ok",
       "itemsFetched": 398,
-      "acceptedCandidates": 21,
+      "acceptedCandidates": 18,
       "added": 3,
       "rejected": 372,
-      "duplicates": 5,
+      "duplicates": 8,
       "tooOld": 0,
       "shortDescriptions": 0,
-      "deferredByDiversityCap": 18,
+      "deferredByDiversityCap": 15,
       "rejectionReasons": {
         "немає чіткого зв'язку зі штучним інтелектом для спеціалізованої AI-стрічки": 188,
         "не виявлено достатньо чіткого напряму користі для людей": 146,
@@ -227,8 +227,8 @@
       "shortDescriptions": 0,
       "deferredByDiversityCap": 0,
       "rejectionReasons": {
-        "визначено напрям «Освіта», але немає достатніх ознак застосування, оцінювання або суспільної користі": 3,
-        "не виявлено достатньо чіткого напряму користі для людей": 7
+        "не виявлено достатньо чіткого напряму користі для людей": 8,
+        "визначено напрям «Освіта», але немає достатніх ознак застосування, оцінювання або суспільної користі": 2
       },
       "error": ""
     },
@@ -306,23 +306,17 @@
       "publisher": "United Nations News",
       "domain": "un.org",
       "url": "https://news.un.org/feed/subscribe/en/news/topic/climate-change/feed/rss.xml",
-      "status": "ok",
-      "itemsFetched": 30,
+      "status": "error",
+      "itemsFetched": 0,
       "acceptedCandidates": 0,
       "added": 0,
-      "rejected": 25,
-      "duplicates": 5,
+      "rejected": 0,
+      "duplicates": 0,
       "tooOld": 0,
       "shortDescriptions": 0,
       "deferredByDiversityCap": 0,
-      "rejectionReasons": {
-        "визначено напрям «Екологія», але немає достатніх ознак застосування, оцінювання або суспільної користі": 15,
-        "неоднозначна тематика: Мир і безпека / Екологія; потрібна редакційна перевірка": 1,
-        "недостатньо чіткий зв'язок із напрямом «Екологія»": 1,
-        "не виявлено достатньо чіткого напряму користі для людей": 6,
-        "неоднозначна тематика: Екологія / Економіка та добробут; потрібна редакційна перевірка": 2
-      },
-      "error": ""
+      "rejectionReasons": {},
+      "error": "not well-formed (invalid token): line 1, column 0"
     },
     {
       "id": "un-human-rights",
@@ -330,29 +324,17 @@
       "publisher": "United Nations News",
       "domain": "un.org",
       "url": "https://news.un.org/feed/subscribe/en/news/topic/human-rights/feed/rss.xml",
-      "status": "ok",
-      "itemsFetched": 30,
+      "status": "error",
+      "itemsFetched": 0,
       "acceptedCandidates": 0,
       "added": 0,
-      "rejected": 28,
-      "duplicates": 2,
+      "rejected": 0,
+      "duplicates": 0,
       "tooOld": 0,
       "shortDescriptions": 0,
       "deferredByDiversityCap": 0,
-      "rejectionReasons": {
-        "не виявлено достатньо чіткого напряму користі для людей": 9,
-        "визначено напрям «Права людини», але немає достатніх ознак застосування, оцінювання або суспільної користі": 8,
-        "недостатньо чіткий зв'язок із напрямом «Медицина»": 1,
-        "визначено напрям «Державне управління», але немає достатніх ознак застосування, оцінювання або суспільної користі": 1,
-        "недостатньо чіткий зв'язок із напрямом «Права людини»": 2,
-        "неоднозначна тематика: Права людини / Державне управління; потрібна редакційна перевірка": 1,
-        "визначено напрям «Екологія», але немає достатніх ознак застосування, оцінювання або суспільної користі": 1,
-        "визначено напрям «Освіта», але немає достатніх ознак застосування, оцінювання або суспільної користі": 1,
-        "визначено напрям «Мир і безпека», але немає достатніх ознак застосування, оцінювання або суспільної користі": 2,
-        "відсів: військове застосування або озброєння": 1,
-        "визначено напрям «Медицина», але немає достатніх ознак застосування, оцінювання або суспільної користі": 1
-      },
-      "error": ""
+      "rejectionReasons": {},
+      "error": "not well-formed (invalid token): line 1, column 0"
     },
     {
       "id": "un-education",
@@ -364,15 +346,15 @@
       "itemsFetched": 30,
       "acceptedCandidates": 0,
       "added": 0,
-      "rejected": 8,
-      "duplicates": 2,
+      "rejected": 10,
+      "duplicates": 0,
       "tooOld": 20,
       "shortDescriptions": 0,
       "deferredByDiversityCap": 0,
       "rejectionReasons": {
-        "відсів: військове застосування або озброєння": 1,
+        "відсів: військове застосування або озброєння": 2,
         "не виявлено достатньо чіткого напряму користі для людей": 6,
-        "визначено напрям «Освіта», але немає достатніх ознак застосування, оцінювання або суспільної користі": 1
+        "визначено напрям «Освіта», але немає достатніх ознак застосування, оцінювання або суспільної користі": 2
       },
       "error": ""
     },
@@ -382,17 +364,27 @@
       "publisher": "United Nations News",
       "domain": "un.org",
       "url": "https://news.un.org/feed/subscribe/en/news/topic/humanitarian-aid/feed/rss.xml",
-      "status": "error",
-      "itemsFetched": 0,
+      "status": "ok",
+      "itemsFetched": 30,
       "acceptedCandidates": 0,
       "added": 0,
-      "rejected": 0,
-      "duplicates": 0,
+      "rejected": 27,
+      "duplicates": 3,
       "tooOld": 0,
       "shortDescriptions": 0,
       "deferredByDiversityCap": 0,
-      "rejectionReasons": {},
-      "error": "not well-formed (invalid token): line 1, column 0"
+      "rejectionReasons": {
+        "недостатньо чіткий зв'язок із напрямом «Медицина»": 1,
+        "визначено напрям «Мир і безпека», але немає достатніх ознак застосування, оцінювання або суспільної користі": 5,
+        "не виявлено достатньо чіткого напряму користі для людей": 12,
+        "недостатньо чіткий зв'язок із напрямом «Державне управління»": 1,
+        "визначено напрям «Екологія», але немає достатніх ознак застосування, оцінювання або суспільної користі": 2,
+        "недостатньо чіткий зв'язок із напрямом «Мир і безпека»": 2,
+        "визначено напрям «Медицина», але немає достатніх ознак застосування, оцінювання або суспільної користі": 2,
+        "недостатньо чіткий зв'язок із напрямом «Екологія»": 1,
+        "визначено напрям «Освіта», але немає достатніх ознак застосування, оцінювання або суспільної користі": 1
+      },
+      "error": ""
     },
     {
       "id": "un-peace-security",
@@ -400,17 +392,25 @@
       "publisher": "United Nations News",
       "domain": "un.org",
       "url": "https://news.un.org/feed/subscribe/en/news/topic/peace-and-security/feed/rss.xml",
-      "status": "error",
-      "itemsFetched": 0,
+      "status": "ok",
+      "itemsFetched": 30,
       "acceptedCandidates": 0,
       "added": 0,
-      "rejected": 0,
-      "duplicates": 0,
+      "rejected": 20,
+      "duplicates": 10,
       "tooOld": 0,
       "shortDescriptions": 0,
       "deferredByDiversityCap": 0,
-      "rejectionReasons": {},
-      "error": "not well-formed (invalid token): line 1, column 0"
+      "rejectionReasons": {
+        "не виявлено достатньо чіткого напряму користі для людей": 11,
+        "визначено напрям «Права людини», але немає достатніх ознак застосування, оцінювання або суспільної користі": 1,
+        "визначено напрям «Освіта», але немає достатніх ознак застосування, оцінювання або суспільної користі": 2,
+        "відсів: військове застосування або озброєння": 2,
+        "визначено напрям «Екологія», але немає достатніх ознак застосування, оцінювання або суспільної користі": 1,
+        "недостатньо чіткий зв'язок із напрямом «Мир і безпека»": 1,
+        "недостатньо чіткий зв'язок із напрямом «Права людини»": 2
+      },
+      "error": ""
     },
     {
       "id": "ecdc-news",
@@ -442,16 +442,16 @@
       "url": "https://www.ecdc.europa.eu/en/taxonomy/term/1244/feed",
       "status": "ok",
       "itemsFetched": 10,
-      "acceptedCandidates": 0,
-      "added": 0,
-      "rejected": 10,
+      "acceptedCandidates": 1,
+      "added": 1,
+      "rejected": 9,
       "duplicates": 0,
       "tooOld": 0,
       "shortDescriptions": 0,
       "deferredByDiversityCap": 0,
       "rejectionReasons": {
         "визначено напрям «Медицина», але немає достатніх ознак застосування, оцінювання або суспільної користі": 4,
-        "не виявлено достатньо чіткого напряму користі для людей": 6
+        "не виявлено достатньо чіткого напряму користі для людей": 5
       },
       "error": ""
     },
@@ -501,10 +501,10 @@
       "url": "https://dataspace.copernicus.eu/rss.xml",
       "status": "ok",
       "itemsFetched": 50,
-      "acceptedCandidates": 0,
-      "added": 0,
+      "acceptedCandidates": 1,
+      "added": 1,
       "rejected": 46,
-      "duplicates": 1,
+      "duplicates": 0,
       "tooOld": 0,
       "shortDescriptions": 3,
       "deferredByDiversityCap": 0,
@@ -563,18 +563,19 @@
       "url": "https://ec.europa.eu/newsroom/clima/feed?item_type_id=1536&lang=en&orderby=item_date",
       "status": "ok",
       "itemsFetched": 100,
-      "acceptedCandidates": 0,
-      "added": 0,
-      "rejected": 14,
-      "duplicates": 4,
+      "acceptedCandidates": 2,
+      "added": 2,
+      "rejected": 24,
+      "duplicates": 3,
       "tooOld": 0,
-      "shortDescriptions": 34,
+      "shortDescriptions": 19,
       "deferredByDiversityCap": 0,
       "rejectionReasons": {
-        "не виявлено достатньо чіткого напряму користі для людей": 7,
-        "недостатньо чіткий зв'язок із напрямом «Екологія»": 1,
-        "короткий або відсутній опис": 34,
-        "визначено напрям «Екологія», але немає достатніх ознак застосування, оцінювання або суспільної користі": 5,
+        "не виявлено достатньо чіткого напряму користі для людей": 8,
+        "визначено напрям «Екологія», але немає достатніх ознак застосування, оцінювання або суспільної користі": 12,
+        "недостатньо чіткий зв'язок із напрямом «Екологія»": 2,
+        "короткий або відсутній опис": 19,
+        "недостатньо чіткий зв'язок із напрямом «Державне управління»": 1,
         "неоднозначна тематика: Екологія / Державне управління; потрібна редакційна перевірка": 1
       },
       "error": ""
@@ -590,12 +591,12 @@
       "acceptedCandidates": 0,
       "added": 0,
       "rejected": 50,
-      "duplicates": 13,
-      "tooOld": 4,
-      "shortDescriptions": 11,
+      "duplicates": 12,
+      "tooOld": 0,
+      "shortDescriptions": 16,
       "deferredByDiversityCap": 0,
       "rejectionReasons": {
-        "короткий або відсутній опис": 11,
+        "короткий або відсутній опис": 16,
         "не виявлено достатньо чіткого напряму користі для людей": 25,
         "недостатньо чіткий зв'язок із напрямом «Екологія»": 3,
         "визначено напрям «Екологія», але немає достатніх ознак застосування, оцінювання або суспільної користі": 18,
@@ -610,14 +611,14 @@
   "libraryByDomain": [
     {
       "domain": "arxiv.org",
-      "count": 81,
+      "count": 84,
       "publishers": [
         "arXiv"
       ]
     },
     {
       "domain": "europa.eu",
-      "count": 14,
+      "count": 16,
       "publishers": [
         "European Commission — Climate Action",
         "European Commission — Environment"
@@ -639,14 +640,14 @@
     },
     {
       "domain": "ecdc.europa.eu",
-      "count": 3,
+      "count": 4,
       "publishers": [
         "European Centre for Disease Prevention and Control (ECDC)"
       ]
     },
     {
       "domain": "copernicus.eu",
-      "count": 1,
+      "count": 2,
       "publishers": [
         "Copernicus Data Space Ecosystem"
       ]
@@ -694,8 +695,8 @@
   ],
   "libraryDomainCount": 11,
   "library": {
-    "totalRecords": 142,
-    "publicRecords": 127,
+    "totalRecords": 149,
+    "publicRecords": 134,
     "needsReview": 15,
     "manualRecords": 10
   },

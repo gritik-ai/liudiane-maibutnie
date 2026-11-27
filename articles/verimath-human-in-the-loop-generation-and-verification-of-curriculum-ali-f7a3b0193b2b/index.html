@@ -30,11 +30,12 @@
     h1{font-size:clamp(30px,5vw,46px);line-height:1.14;letter-spacing:-.04em;margin:17px 0 12px}
     .summary{font-size:19px;line-height:1.5;color:#46584e;margin:0 0 14px}
     .meta{font-size:12px;color:var(--muted);display:flex;gap:12px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid var(--line);margin-bottom:20px}
+    .editorial-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:24px 0 30px}.editorial-gallery figure{margin:0;min-width:0;overflow:hidden;border-radius:14px;background:#eaf3ec;border:1px solid var(--line)}.editorial-gallery img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover}.editorial-gallery figcaption{padding:9px 11px;font-size:12px;line-height:1.4;color:var(--muted)}
     .body p{margin:0 0 18px}.sources{border-top:1px solid var(--line);margin-top:28px;padding-top:18px}
     .sources h2,.related h2{font-size:20px;margin:0 0 12px}.sources li,.related li{margin:9px 0}
     .source-type{display:inline-block;font-size:11px;background:#f2f5f2;border-radius:99px;padding:4px 9px}
     .related{margin-top:20px}footer{padding:24px 0;color:var(--muted);font-size:12px}footer a{text-decoration:none}
-    @media(max-width:600px){body{font-size:16px}main{padding:24px 0 48px}.summary{font-size:17px}}
+    @media(max-width:600px){body{font-size:16px}main{padding:24px 0 48px}.summary{font-size:17px}.editorial-gallery{grid-template-columns:1fr;gap:14px}.editorial-gallery img{aspect-ratio:16/9}}
   </style>
   <link rel="stylesheet" href="/assets/site-header.css">
   <script defer src="/assets/site-header.js"></script>
@@ -67,6 +68,7 @@
       <p class="summary">arXiv:2611.23456v1 Announce Type: new Abstract: Automatic generation of mathematics assessment items is a growing area in educational artificial intelligence…</p>
       <div class="topic-terms" aria-label="Тематичні ключові фрази"><span class="topic-term">освітні технології</span><span class="topic-term">доступність знань</span><span class="topic-term">персоналізоване навчання</span><span class="topic-term">розвиток компетентностей</span></div>
       <div class="meta"><span>Автоматична тематична добірка</span><span>Опубліковано: <time datetime="2026-11-20">2026-11-20</time></span></div>
+      
       <div class="body"><p>Цей матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та короткий опис отримані з RSS-каналу видавця.</p>
 <p>Короткий опис від першоджерела:<br>arXiv:2611.23456v1 Announce Type: new Abstract: Automatic generation of mathematics assessment items is a growing area in educational artificial intelligence, yet classroom deployment remains challenging. Generated questions must satisfy multiple constraints: mathematical correctness, curriculum alignment, appropriate cognitive difficulty, and educator reviewability. While prior work has advanced text generation, reliable assessment authoring requires granular control over localized examination formats and expert educational judgment. To address this challenge, we present VeriMath, a generalized, human-in-the-loop framework for generating rigorous, curriculum-constrained mathematics assessment drafts. Using annotated reference items, the framework anchors generation to the requested examination section and cognitive reasoning level, then applies sequential automated verification and guided repair before submitting drafts for expert review. We evaluate VeriMath through a national curriculum case study using 4,555 mathematics items from the Vietnamese Grade 12 curriculum and 50 distinct generation requirements covering multiple-choice, true/false, and short-answer formats. Across two model backbones, the framework produces verifier-accepted drafts for 94% (47/50) of requirements per run. Blind expert evaluations confirm high mathematical accuracy and curriculum alignment, with st</p>
 <p>Чому матеріал потрапив до добірки: напрям: Освіта; прикладні сигнали: evaluate, evaluation, assess. Це автоматичний тематичний відбір за ключовими словами, а не підтвердження ефективності чи незалежна експертна оцінка. Перед висновками прочитайте оригінальну публікацію.</p>

@@ -33,7 +33,7 @@
   </url>
   <url>
     <loc>https://liudiane-maibutnie-site.vercel.app/topics/ekolohiya/</loc>
-    <lastmod>2026-11-22</lastmod>
+    <lastmod>2026-11-27</lastmod>
   </url>
   <url>
     <loc>https://liudiane-maibutnie-site.vercel.app/topics/mista-arkhitektura/</loc>
@@ -84,16 +84,36 @@
     <lastmod>2026-11-27</lastmod>
   </url>
   <url>
-    <loc>https://liudiane-maibutnie-site.vercel.app/articles/eats-scaling-tool-use-experience-for-medical-reasoning-agents-db3ce4d2ec2d/</loc>
+    <loc>https://liudiane-maibutnie-site.vercel.app/articles/page/12/</loc>
     <lastmod>2026-11-27</lastmod>
   </url>
   <url>
-    <loc>https://liudiane-maibutnie-site.vercel.app/articles/did-the-model-forecast-it-or-already-know-it-evaluating-large-language-m-2b6059a95219/</loc>
+    <loc>https://liudiane-maibutnie-site.vercel.app/articles/european-climate-resilience-and-risk-management-integrated-framework-af5b923a1408/</loc>
     <lastmod>2026-11-27</lastmod>
   </url>
   <url>
-    <loc>https://liudiane-maibutnie-site.vercel.app/articles/medskill-e-2-evaluating-and-evolving-skills-for-medical-agents-878f9176e2b8/</loc>
+    <loc>https://liudiane-maibutnie-site.vercel.app/articles/country-report-ecdc-public-health-emergency-preparedness-assessment-for-7df40376a5bf/</loc>
     <lastmod>2026-11-27</lastmod>
+  </url>
+  <url>
+    <loc>https://liudiane-maibutnie-site.vercel.app/articles/on-utilization-of-edge-ai-for-condition-monitoring-towards-predictive-ma-4a2d4028739f/</loc>
+    <lastmod>2026-11-27</lastmod>
+  </url>
+  <url>
+    <loc>https://liudiane-maibutnie-site.vercel.app/articles/introducing-the-next-generation-of-the-low-emissions-analysis-platform-l-96b017cc4101/</loc>
+    <lastmod>2026-11-27</lastmod>
+  </url>
+  <url>
+    <loc>https://liudiane-maibutnie-site.vercel.app/articles/task-memory-beyond-text-only-memory-with-activation-steering-and-knowled-fb2e5b052c9c/</loc>
+    <lastmod>2026-11-27</lastmod>
+  </url>
+  <url>
+    <loc>https://liudiane-maibutnie-site.vercel.app/articles/diagnostically-meaningful-privacy-aware-synthetic-chest-ct-via-class-con-dae606d1c69e/</loc>
+    <lastmod>2026-11-27</lastmod>
+  </url>
+  <url>
+    <loc>https://liudiane-maibutnie-site.vercel.app/articles/towards-more-sustainable-earth-observation-data-use-key-takeaways-from-t-99eaeb8f323c/</loc>
+    <lastmod>2026-11-17</lastmod>
   </url>
   <url>
     <loc>https://liudiane-maibutnie-site.vercel.app/articles/vidbudova-ukrayiny-yakymy-mayut-buty-mista-u-yakykh-zakhochetsya-zhyty-ild-20261126/</loc>
@@ -134,6 +154,18 @@
   <url>
     <loc>https://liudiane-maibutnie-site.vercel.app/articles/koly-shtuchnyi-intelekt-stane-rozumnishym-za-nas-chy-zalyshytsya-lyudyna-nce-20261126/</loc>
     <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://liudiane-maibutnie-site.vercel.app/articles/eats-scaling-tool-use-experience-for-medical-reasoning-agents-db3ce4d2ec2d/</loc>
+    <lastmod>2026-11-27</lastmod>
+  </url>
+  <url>
+    <loc>https://liudiane-maibutnie-site.vercel.app/articles/did-the-model-forecast-it-or-already-know-it-evaluating-large-language-m-2b6059a95219/</loc>
+    <lastmod>2026-11-27</lastmod>
+  </url>
+  <url>
+    <loc>https://liudiane-maibutnie-site.vercel.app/articles/medskill-e-2-evaluating-and-evolving-skills-for-medical-agents-878f9176e2b8/</loc>
+    <lastmod>2026-11-27</lastmod>
   </url>
   <url>
     <loc>https://liudiane-maibutnie-site.vercel.app/articles/eva-evidence-seeking-visual-agent-for-hallucination-resistant-multimodal-557aca624a23/</loc>

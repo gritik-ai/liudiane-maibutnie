@@ -1,6 +1,156 @@
 [
   {
-    "id": "rss-2026-11-27-db3ce4d2ec2d",
+    "id": "rss-2026-11-27-af5b923a1408",
+    "date": "2026-11-27",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "Європейська Комісія — Клімат",
+    "feedId": "eu-clima-news",
+    "sourceDomain": "europa.eu",
+    "filterVersion": "2.7",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Перспективний розвиток",
+    "feedKind": "institutional",
+    "sourceDescription": "European societies, economies, lives and livelihoods are increasingly vulnerable and exposed to climate risks. While the risks increase, current policies fail to keep pace. This initiative will set out an integrated framework to support EU countries in ensuring that the action taken measures up to the scale of the challenges ahead.",
+    "selectionReason": "напрям: Екологія; ознаки користі: support, measure",
+    "evidenceLevel": "дослідження або оцінювання потенційного застосування",
+    "category": "Екологія",
+    "title": "European climate resilience and risk management – integrated framework",
+    "summary": "European societies, economies, lives and livelihoods are increasingly vulnerable and exposed to climate risks. While the risks increase, current policies fail to keep pace. This initiative will set out an integrated framework to support EU countries in ensuring that the action taken measures up to the scale of the challenges ahead.",
+    "body": "Матеріал автоматично відібрано зі стрічки European Commission — Climate Action. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nEuropean societies, economies, lives and livelihoods are increasingly vulnerable and exposed to climate risks. While the risks increase, current policies fail to keep pace. This initiative will set out an integrated framework to support EU countries in ensuring that the action taken measures up to the scale of the challenges ahead.\n\nРедакційна класифікація: напрям: Екологія; ознаки користі: support, measure. Рівень свідчень: дослідження або оцінювання потенційного застосування. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-27",
+    "sources": [
+      {
+        "title": "European climate resilience and risk management – integrated framework",
+        "publisher": "European Commission — Climate Action",
+        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14770-European-climate-resilience-and-risk-management-integrated-framework_en",
+        "publishedDate": "2026-11-27"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-27-7df40376a5bf",
+    "date": "2026-11-27",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "ECDC — Публікації та звіти",
+    "feedId": "ecdc-publications",
+    "sourceDomain": "ecdc.europa.eu",
+    "filterVersion": "2.7",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Перспективний розвиток",
+    "feedKind": "institutional",
+    "sourceDescription": "The aim of the Public Health Emergency Preparedness Assessment is to improve prevention, preparedness and response planning in EU/EEA countries through the implementation of recommendations following individual country assessments.",
+    "selectionReason": "напрям: Медицина; ознаки користі: prevention, improve, prevent",
+    "evidenceLevel": "дослідження або оцінювання потенційного застосування",
+    "category": "Медицина",
+    "title": "Country report: ECDC Public Health Emergency Preparedness Assessment for Romania, 2026 - Under Article 8 of the Regulation (EU) 2022/2371",
+    "summary": "The aim of the Public Health Emergency Preparedness Assessment is to improve prevention, preparedness and response planning in EU/EEA countries through the implementation of recommendations following individual country assessments.",
+    "body": "Матеріал автоматично відібрано зі стрічки European Centre for Disease Prevention and Control (ECDC). Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nThe aim of the Public Health Emergency Preparedness Assessment is to improve prevention, preparedness and response planning in EU/EEA countries through the implementation of recommendations following individual country assessments.\n\nРедакційна класифікація: напрям: Медицина; ознаки користі: prevention, improve, prevent. Рівень свідчень: дослідження або оцінювання потенційного застосування. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-27",
+    "sources": [
+      {
+        "title": "Country report: ECDC Public Health Emergency Preparedness Assessment for Romania, 2026 - Under Article 8 of the Regulation (EU) 2022/2371",
+        "publisher": "European Centre for Disease Prevention and Control (ECDC)",
+        "url": "https://www.ecdc.europa.eu/en/publications-data/country-report-ecdc-public-health-emergency-preparedness-assessment-romania-2026",
+        "publishedDate": "2026-11-27"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-27-4a2d4028739f",
+    "date": "2026-11-27",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "arXiv — Штучний інтелект",
+    "feedId": "arxiv-ai",
+    "sourceDomain": "arxiv.org",
+    "filterVersion": "2.7",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Безпека та виклики",
+    "feedKind": "ai_topic",
+    "sourceDescription": "arXiv:2611.34563v1 Announce Type: new Abstract: The Industrial Internet of Things (IIoT) and Artificial Intelligence (AI) are driving Industry 4.0, enhancing productivity, automation, and efficiency in manufacturing systems. This study develops an Edge-AI-based condition monitoring framework, as a step towards predictive maintenance, for a rotary valve in a dairy processing pilot plant, using vibration data collected via a low-power IIoT sensor node and processed on an edge device.",
+    "selectionReason": "напрям: Надійність ШІ; ознаки користі: monitoring, monitor, predict",
+    "evidenceLevel": "практичне застосування або конкретний приклад",
+    "category": "Надійність ШІ",
+    "title": "On Utilization of Edge-AI for condition monitoring towards predictive maintenance: A use case in dairy processing using explainable AI",
+    "summary": "arXiv:2611.34563v1 Announce Type: new Abstract: The Industrial Internet of Things (IIoT) and Artificial Intelligence (AI) are driving Industry 4.0, enhancing productivity, automation, and efficiency in manufacturing systems. This study develops an Edge-AI-based condition monitoring framework, as a step towards predictive maintenance, for a rotary valve in…",
+    "body": "Матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.34563v1 Announce Type: new Abstract: The Industrial Internet of Things (IIoT) and Artificial Intelligence (AI) are driving Industry 4.0, enhancing productivity, automation, and efficiency in manufacturing systems. This study develops an Edge-AI-based condition monitoring framework, as a step towards predictive maintenance, for a rotary valve in a dairy processing pilot plant, using vibration data collected via a low-power IIoT sensor node and processed on an edge device.\n\nРедакційна класифікація: напрям: Надійність ШІ; ознаки користі: monitoring, monitor, predict. Рівень свідчень: практичне застосування або конкретний приклад. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте статус публікації в першоджерелі.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-27",
+    "sources": [
+      {
+        "title": "On Utilization of Edge-AI for condition monitoring towards predictive maintenance: A use case in dairy processing using explainable AI",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2611.34563",
+        "publishedDate": "2026-11-27"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-27-96b017cc4101",
+    "date": "2026-11-27",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "Європейська Комісія — Клімат",
+    "feedId": "eu-clima-news",
+    "sourceDomain": "europa.eu",
+    "filterVersion": "2.7",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Перспективний розвиток",
+    "feedKind": "institutional",
+    "sourceDescription": "Tuesday 15 / Wednesday 16 December SEI are introducing the next generation of the Low Emissions Analysis Platform (LEAP 2027) with major new capabilities including much faster parallel calculations, uncertainty analysis (stochastic modeling), integration with popular AI chatbots, new air pollution-related morbidity indicators, and many other improvements making it easier to use and more powerful for energy, climate mitigation, and air pollution planning.",
+    "selectionReason": "напрям: Екологія; ознаки користі: improve, improvement",
+    "evidenceLevel": "перспективне дослідження; практичний ефект ще потрібно перевірити",
+    "category": "Екологія",
+    "title": "Introducing the Next Generation of the Low Emissions Analysis Platform (LEAP 2027)",
+    "summary": "Tuesday 15 / Wednesday 16 December SEI are introducing the next generation of the Low Emissions Analysis Platform (LEAP 2027) with major new capabilities including much faster parallel calculations, uncertainty analysis (stochastic modeling), integration with popular AI chatbots, new air pollution-related morbidity indicators, and many other improvements…",
+    "body": "Матеріал автоматично відібрано зі стрічки European Commission — Climate Action. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nTuesday 15 / Wednesday 16 December SEI are introducing the next generation of the Low Emissions Analysis Platform (LEAP 2027) with major new capabilities including much faster parallel calculations, uncertainty analysis (stochastic modeling), integration with popular AI chatbots, new air pollution-related morbidity indicators, and many other improvements making it easier to use and more powerful for energy, climate mitigation, and air pollution planning.\n\nРедакційна класифікація: напрям: Екологія; ознаки користі: improve, improvement. Рівень свідчень: перспективне дослідження; практичний ефект ще потрібно перевірити. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-27",
+    "sources": [
+      {
+        "title": "Introducing the Next Generation of the Low Emissions Analysis Platform (LEAP 2027)",
+        "publisher": "European Commission — Climate Action",
+        "url": "https://ec.europa.eu/newsroom/clima/redirection/item/968402/en",
+        "publishedDate": "2026-11-27"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-27-fb2e5b052c9c",
+    "date": "2026-11-27",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "arXiv — Штучний інтелект",
+    "feedId": "arxiv-ai",
+    "sourceDomain": "arxiv.org",
+    "filterVersion": "2.7",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Безпека та виклики",
+    "feedKind": "ai_topic",
+    "sourceDescription": "arXiv:2611.34762v1 Announce Type: new Abstract: LLM agents increasingly rely on external memory, yet they still hallucinate about what they remember. Often the correct memory is retrieved and placed in the prompt, but the answer contradicts it or the memory is applied to the wrong question. We call these use-time memory hallucinations. Across five open models, we find that they arise from the conflict between parametric knowledge and external memory and take three forms: memory-ignoring, where the model returns to a stale fact in its weights (up to 46% of queries); memory-misapplying, where it attributes the memory to unrelated entities (up to 24%, and 49% when retrieval is combined with weight editing); and version confusion, where 53% of answers about revised facts assert the superseded value when both versions remain stored. We propose TASK memory, which goes beyond text-only memory by combining a Text note with Activation Steering and Knowledge editing that share one in-model address. The text holds the content. A removable knowledge edit supplies the address through its subject key and supports multi-hop composition. A pair of steering vectors decides, query by query, whether the model adopts the memory or keeps its own answer; the vectors store no content and control how the text memory is used. On frozen models under a pre-registered, test-once protocol, TASK reduces memory-ignoring hallucinations to at most 1.5% in all ten model-dataset cells and cuts neighbour misuse from 39.2% to 7.5% (+10.8 pp composite on CounterFact). It improves a 300-memory library over BM25 RAG by 16.4 pp, an advantage that holds at 3,000 memories, resolves fact revisions without fact IDs, and adds 7.5 pp of multi-hop accuracy on MQuAKE. 21 of 23 cross-model comparisons (8B-27B, four families) are significant, and TASK beats three recent context-steering methods in 9 of 10 model-dataset cells.",
+    "selectionReason": "напрям: Надійність ШІ; ознаки користі: comparison, dataset, support",
+    "evidenceLevel": "дослідження або оцінювання потенційного застосування",
+    "category": "Надійність ШІ",
+    "title": "TASK Memory: Beyond Text-Only Memory with Activation Steering and Knowledge Editing against Memory Hallucination",
+    "summary": "arXiv:2611.34762v1 Announce Type: new Abstract: LLM agents increasingly rely on external memory, yet they still hallucinate about what they remember. Often the correct memory is retrieved and placed in the prompt, but the answer contradicts it or the memory is applied to the wrong question. We call these use-time memory hallucinations. Across five open…",
+    "body": "Матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.34762v1 Announce Type: new Abstract: LLM agents increasingly rely on external memory, yet they still hallucinate about what they remember. Often the correct memory is retrieved and placed in the prompt, but the answer contradicts it or the memory is applied to the wrong question. We call these use-time memory hallucinations. Across five open models, we find that they arise from the conflict between parametric knowledge and external memory and take three forms: memory-ignoring, where the model returns to a stale fact in its weights (up to 46% of queries); memory-misapplying, where it attributes the memory to unrelated entities (up to 24%, and 49% when retrieval is combined with weight editing); and version confusion, where 53% of answers about revised facts assert the superseded value when both versions remain stored. We propose TASK memory, which goes beyond text-only memory by combining a Text note with Activation Steering and Knowledge editing that share one in-model address. The text holds the content. A removable knowledge edit supplies the address through its subject key and supports multi-hop composition. A pair of steering vectors decides, query by query, whether the model adopts the memory or keeps its own answer; the vectors store no content and control how the text memory is used. On frozen models under a pre-registered, test-once protocol, TASK reduces memory-ignoring hallucinations to at most 1.5% in all ten model-dataset cells and cuts neighbour misuse from 39.2% to 7.5% (+10.8 pp composite on CounterFact). It improves a 300-memory library over BM25 RAG by 16.4 pp, an advantage that holds at 3,000 memories, resolves fact revisions without fact IDs, and adds 7.5 pp of multi-hop accuracy on MQuAKE. 21 of 23 cross-model comparisons (8B-27B, four families) are significant, and TASK beats three recent context-steering methods in 9 of 10 model-dataset cells.\n\nРедакційна класифікація: напрям: Надійність ШІ; ознаки користі: comparison, dataset, support. Рівень свідчень: дослідження або оцінювання потенційного застосування. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте статус публікації в першоджерелі.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-27",
+    "sources": [
+      {
+        "title": "TASK Memory: Beyond Text-Only Memory with Activation Steering and Knowledge Editing against Memory Hallucination",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2611.34762",
+        "publishedDate": "2026-11-27"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-27-dae606d1c69e",
     "date": "2026-11-27",
     "autoPublished": true,
     "sourceType": "rss",
@@ -12,80 +162,50 @@
     "editorialDecisionSource": "automatic",
     "editorialLabel": "Перспективний розвиток",
     "feedKind": "ai_topic",
-    "sourceDescription": "arXiv:2611.33897v1 Announce Type: new Abstract: Medical reasoning agents combine large language model (LLM) reasoning with clinical workflows and specialized neural tools. However, general-purpose LLMs receive limited training exposure to domain-specific medical tools, and the uncertainty and distributional shifts of neural tool outputs make selecting tools from simple descriptions significantly more challenging than in deterministic settings such as calculators or dictionary lookups. In this paper, we propose EATS, an experience-augmented tool selection strategy that leverages accumulated tool-use trajectories to improve tool selection in medical reasoning agents. EATS constructs a memory of past interactions, including queries, tool choices, arguments, and self-evaluated feedback, and retrieves relevant experiences to guide tool selection for new queries. As memory construction does not require ground-truth supervision, EATS scales naturally with test-time experience. We evaluate EATS on tool-augmented medical reasoning tasks, including closed-ended visual question answering and free-form report generation. Experiments on four public datasets, ChestAgentBench, CheXbench, MIMIC-CXR, and SLAKE-VQA, across three multimodal LLMs, Qwen3-VL 2B, Qwen3-VL 32B, and GPT-5.5, show consistent gains in tool selection behavior and downstream medical reasoning performance. Code is available at https://github.com/Limingyuan001/EATS.",
-    "selectionReason": "напрям: Медицина; ознаки користі: evaluate, workflow, dataset",
+    "sourceDescription": "arXiv:2611.33234v1 Announce Type: cross Abstract: Large, well-annotated datasets are essential for developing medical artificial intelligence models, yet data sharing is often restricted by privacy regulations. Synthetic images may help address this limitation if they preserve diagnostic information while reducing the risk of reproducing patient data. We developed a diffusion autoencoder-based framework for class-conditional synthetic chest CT generation that incorporates latent-space distance filtering to reduce the likelihood of regenerating training samples. A diffusion autoencoder was trained on the public RSNA 2020 Pulmonary Embolism (PE) dataset. PE-positive and PE-negative images were synthesized by sampling latent representations from class-specific kernel density estimates. Samples with a nearest-neighbor latent-space distance below a predefined threshold were rejected. To assess diagnostic utility, ResNet-50 classifiers were trained across 10 independent runs using real, synthetic, or mixed real-synthetic datasets. Performance was evaluated on a held-out real test set using the area under the receiver operating characteristic curve (AUC), with DeLong 95% confidence intervals (CIs). Models trained on synthetic data achieved an AUC of 0.862 (95% CI, 0.851-0.874), only slightly lower than models trained on real data (AUC = 0.872, 95% CI, 0.861-0.883) and mixed real-synthetic data (AUC = 0.865, 95% CI, 0.855-0.876). These differences were statistically significant (p < 0.05) but small in absolute terms. A nearest-neighbor copy-detection analysis of 38,000 synthetic slices found no direct copies of real training images. These findings indicate that the synthetic CT images preserve diagnostically meaningful information for image-level PE classification while incorporating measures intended to enhance privacy awareness and reduce similarity to real patient data.",
+    "selectionReason": "напрям: Медицина; ознаки користі: evaluate, dataset, reduce",
     "evidenceLevel": "дослідження або оцінювання потенційного застосування",
     "category": "Медицина",
-    "title": "EATS: Scaling Tool-Use Experience for Medical Reasoning Agents",
-    "summary": "arXiv:2611.33897v1 Announce Type: new Abstract: Medical reasoning agents combine large language model (LLM) reasoning with clinical workflows and specialized neural tools. However, general-purpose LLMs receive limited training exposure to domain-specific medical tools, and the uncertainty and distributional shifts of neural tool outputs make selecting…",
-    "body": "Матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.33897v1 Announce Type: new Abstract: Medical reasoning agents combine large language model (LLM) reasoning with clinical workflows and specialized neural tools. However, general-purpose LLMs receive limited training exposure to domain-specific medical tools, and the uncertainty and distributional shifts of neural tool outputs make selecting tools from simple descriptions significantly more challenging than in deterministic settings such as calculators or dictionary lookups. In this paper, we propose EATS, an experience-augmented tool selection strategy that leverages accumulated tool-use trajectories to improve tool selection in medical reasoning agents. EATS constructs a memory of past interactions, including queries, tool choices, arguments, and self-evaluated feedback, and retrieves relevant experiences to guide tool selection for new queries. As memory construction does not require ground-truth supervision, EATS scales naturally with test-time experience. We evaluate EATS on tool-augmented medical reasoning tasks, including closed-ended visual question answering and free-form report generation. Experiments on four public datasets, ChestAgentBench, CheXbench, MIMIC-CXR, and SLAKE-VQA, across three multimodal LLMs, Qwen3-VL 2B, Qwen3-VL 32B, and GPT-5.5, show consistent gains in tool selection behavior and downstream medical reasoning performance. Code is available at https://github.com/Limingyuan001/EATS.\n\nРедакційна класифікація: напрям: Медицина; ознаки користі: evaluate, workflow, dataset. Рівень свідчень: дослідження або оцінювання потенційного застосування. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте статус публікації в першоджерелі.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "title": "Diagnostically Meaningful, Privacy-aware Synthetic Chest CT via Class-Conditional Latent Sampling in Diffusion Autoencoders",
+    "summary": "arXiv:2611.33234v1 Announce Type: cross Abstract: Large, well-annotated datasets are essential for developing medical artificial intelligence models, yet data sharing is often restricted by privacy regulations. Synthetic images may help address this limitation if they preserve diagnostic information while reducing the risk of reproducing patient data. We…",
+    "body": "Матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.33234v1 Announce Type: cross Abstract: Large, well-annotated datasets are essential for developing medical artificial intelligence models, yet data sharing is often restricted by privacy regulations. Synthetic images may help address this limitation if they preserve diagnostic information while reducing the risk of reproducing patient data. We developed a diffusion autoencoder-based framework for class-conditional synthetic chest CT generation that incorporates latent-space distance filtering to reduce the likelihood of regenerating training samples. A diffusion autoencoder was trained on the public RSNA 2020 Pulmonary Embolism (PE) dataset. PE-positive and PE-negative images were synthesized by sampling latent representations from class-specific kernel density estimates. Samples with a nearest-neighbor latent-space distance below a predefined threshold were rejected. To assess diagnostic utility, ResNet-50 classifiers were trained across 10 independent runs using real, synthetic, or mixed real-synthetic datasets. Performance was evaluated on a held-out real test set using the area under the receiver operating characteristic curve (AUC), with DeLong 95% confidence intervals (CIs). Models trained on synthetic data achieved an AUC of 0.862 (95% CI, 0.851-0.874), only slightly lower than models trained on real data (AUC = 0.872, 95% CI, 0.861-0.883) and mixed real-synthetic data (AUC = 0.865, 95% CI, 0.855-0.876). These differences were statistically significant (p < 0.05) but small in absolute terms. A nearest-neighbor copy-detection analysis of 38,000 synthetic slices found no direct copies of real training images. These findings indicate that the synthetic CT images preserve diagnostically meaningful information for image-level PE classification while incorporating measures intended to enhance privacy awareness and reduce similarity to real patient data.\n\nРедакційна класифікація: напрям: Медицина; ознаки користі: evaluate, dataset, reduce. Рівень свідчень: дослідження або оцінювання потенційного застосування. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте статус публікації в першоджерелі.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
     "sourceDate": "2026-11-27",
     "sources": [
       {
-        "title": "EATS: Scaling Tool-Use Experience for Medical Reasoning Agents",
+        "title": "Diagnostically Meaningful, Privacy-aware Synthetic Chest CT via Class-Conditional Latent Sampling in Diffusion Autoencoders",
         "publisher": "arXiv",
-        "url": "https://arxiv.org/abs/2611.33897",
+        "url": "https://arxiv.org/abs/2611.33234",
         "publishedDate": "2026-11-27"
       }
     ]
   },
   {
-    "id": "rss-2026-11-27-2b6059a95219",
-    "date": "2026-11-27",
+    "id": "rss-2026-11-17-99eaeb8f323c",
+    "date": "2026-11-17",
     "autoPublished": true,
     "sourceType": "rss",
-    "feedName": "arXiv — Штучний інтелект",
-    "feedId": "arxiv-ai",
-    "sourceDomain": "arxiv.org",
+    "feedName": "Copernicus — Новини та оновлення",
+    "feedId": "copernicus-general",
+    "sourceDomain": "copernicus.eu",
     "filterVersion": "2.7",
     "editorialStatus": "approved",
     "editorialDecisionSource": "automatic",
     "editorialLabel": "Позитивний вплив",
-    "feedKind": "ai_topic",
-    "sourceDescription": "arXiv:2611.34247v1 Announce Type: new Abstract: AI systems increasingly help decide which drug targets enter costly clinical trials. We recast each target-disease hypothesis as a dated event, the pair's first clinical trial. This lets us test whether a language model can forecast such events after its training cutoff, rather than recall events before it. We rebuild a dated biomedical knowledge graph as it stood at the end of each year from 2020 up to its newest version. We then ask six open language models, with and without this graph, which targets will enter a first trial for a disease the next year. Without retrieval, the models rank about as well as trial history, a count of each target's past trials in the same therapeutic area, also after their training cutoffs. Evidence dated before the decision adds at most a small gain, before or after the models' training cutoffs. The newest graph raises five of six models clearly above that baseline, but its paths usually include the answer: the pair's own trial, dated after the decision. Evaluations of target prioritisation should date both features and labels, with evidence from before the decision and outcomes after it.",
-    "selectionReason": "напрям: Медицина; ознаки користі: clinical trial, forecast, evaluation",
+    "feedKind": "institutional",
+    "sourceDescription": "How can we make the most of Copernicus data while using digital resources more efficiently?",
+    "selectionReason": "напрям: Наука і технології; ознаки користі: observation, earth observation",
     "evidenceLevel": "практичне застосування або конкретний приклад",
-    "category": "Медицина",
-    "title": "Did the Model Forecast It, or Already Know It? Evaluating Large Language Models for Novel Drug-Target Prioritisation with a Temporal Knowledge-Graph Oracle",
-    "summary": "arXiv:2611.34247v1 Announce Type: new Abstract: AI systems increasingly help decide which drug targets enter costly clinical trials. We recast each target-disease hypothesis as a dated event, the pair's first clinical trial. This lets us test whether a language model can forecast such events after its training cutoff, rather than recall events before it.…",
-    "body": "Матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.34247v1 Announce Type: new Abstract: AI systems increasingly help decide which drug targets enter costly clinical trials. We recast each target-disease hypothesis as a dated event, the pair's first clinical trial. This lets us test whether a language model can forecast such events after its training cutoff, rather than recall events before it. We rebuild a dated biomedical knowledge graph as it stood at the end of each year from 2020 up to its newest version. We then ask six open language models, with and without this graph, which targets will enter a first trial for a disease the next year. Without retrieval, the models rank about as well as trial history, a count of each target's past trials in the same therapeutic area, also after their training cutoffs. Evidence dated before the decision adds at most a small gain, before or after the models' training cutoffs. The newest graph raises five of six models clearly above that baseline, but its paths usually include the answer: the pair's own trial, dated after the decision. Evaluations of target prioritisation should date both features and labels, with evidence from before the decision and outcomes after it.\n\nРедакційна класифікація: напрям: Медицина; ознаки користі: clinical trial, forecast, evaluation. Рівень свідчень: практичне застосування або конкретний приклад. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте статус публікації в першоджерелі.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
-    "sourceDate": "2026-11-27",
+    "category": "Наука і технології",
+    "title": "Towards more sustainable Earth Observation data use: key takeaways from the CDSE webinar",
+    "summary": "How can we make the most of Copernicus data while using digital resources more efficiently?",
+    "body": "Матеріал автоматично відібрано зі стрічки Copernicus Data Space Ecosystem. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\nHow can we make the most of Copernicus data while using digital resources more efficiently?\n\nРедакційна класифікація: напрям: Наука і технології; ознаки користі: observation, earth observation. Рівень свідчень: практичне застосування або конкретний приклад. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-17",
     "sources": [
       {
-        "title": "Did the Model Forecast It, or Already Know It? Evaluating Large Language Models for Novel Drug-Target Prioritisation with a Temporal Knowledge-Graph Oracle",
-        "publisher": "arXiv",
-        "url": "https://arxiv.org/abs/2611.34247",
-        "publishedDate": "2026-11-27"
-      }
-    ]
-  },
-  {
-    "id": "rss-2026-11-27-878f9176e2b8",
-    "date": "2026-11-27",
-    "autoPublished": true,
-    "sourceType": "rss",
-    "feedName": "arXiv — Штучний інтелект",
-    "feedId": "arxiv-ai",
-    "sourceDomain": "arxiv.org",
-    "filterVersion": "2.7",
-    "editorialStatus": "approved",
-    "editorialDecisionSource": "automatic",
-    "editorialLabel": "Позитивний вплив",
-    "feedKind": "ai_topic",
-    "sourceDescription": "arXiv:2611.34250v1 Announce Type: new Abstract: Large language model (LLM) agents increasingly use skills to access domain knowledge and complete real-world tasks. We observe that even when a skill specifies the rules and procedures needed for a task, agents may fail to apply them effectively during autonomous execution, a phenomenon we call skill Enable But Underuse (EBU). This issue is particularly consequential in medical tasks, where overlooking a single critical constraint can yield a plausible but incorrect result. To evaluate and address EBU, we introduce MedSkill-E$^{2}$, a framework for evaluating and evolving skills for medical agents. We construct EBU-Bench, a challenging benchmark covering 12 medically relevant task groups and associated skills, to evaluate agents' ability to use available skills autonomously. We quantify the EBU gap as the difference in skill-use accuracy between autonomous use and explicitly guided reading and application of the same skill. On EBU-Bench, all evaluated model-harness combinations exhibit EBU, with a mean gap of 43.94 percentage points (pp). For the same model, skill-use accuracy under autonomous use differs by up to 38.96 pp across harnesses. Motivated by these observations, we propose EBU-Evolve, which uses execution feedback from autonomous and explicitly guided skill use to distill effective guidance into reusable skill instructions. Relative to their pre-evolution versions, the revised skills improve skill-use accuracy during autonomous execution by 33.33 to 55.17 pp and continue to yield improvements when transferred across multiple models and harnesses. Our results show that autonomous skill-use accuracy varies across harnesses with the model and skill held fixed, and model rankings can change. EBU can persist even after a skill is opened. EBU-Evolve improves autonomous skill-use accuracy on unseen tasks within the same skill, with gains transferring across models and harnesses.",
-    "selectionReason": "напрям: Медицина; ознаки користі: observation, benchmark, evaluate",
-    "evidenceLevel": "практичне застосування або конкретний приклад",
-    "category": "Медицина",
-    "title": "MedSkill-E$^{2}$: Evaluating and Evolving Skills for Medical Agents",
-    "summary": "arXiv:2611.34250v1 Announce Type: new Abstract: Large language model (LLM) agents increasingly use skills to access domain knowledge and complete real-world tasks. We observe that even when a skill specifies the rules and procedures needed for a task, agents may fail to apply them effectively during autonomous execution, a phenomenon we call skill Enable…",
-    "body": "Матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.34250v1 Announce Type: new Abstract: Large language model (LLM) agents increasingly use skills to access domain knowledge and complete real-world tasks. We observe that even when a skill specifies the rules and procedures needed for a task, agents may fail to apply them effectively during autonomous execution, a phenomenon we call skill Enable But Underuse (EBU). This issue is particularly consequential in medical tasks, where overlooking a single critical constraint can yield a plausible but incorrect result. To evaluate and address EBU, we introduce MedSkill-E$^{2}$, a framework for evaluating and evolving skills for medical agents. We construct EBU-Bench, a challenging benchmark covering 12 medically relevant task groups and associated skills, to evaluate agents' ability to use available skills autonomously. We quantify the EBU gap as the difference in skill-use accuracy between autonomous use and explicitly guided reading and application of the same skill. On EBU-Bench, all evaluated model-harness combinations exhibit EBU, with a mean gap of 43.94 percentage points (pp). For the same model, skill-use accuracy under autonomous use differs by up to 38.96 pp across harnesses. Motivated by these observations, we propose EBU-Evolve, which uses execution feedback from autonomous and explicitly guided skill use to distill effective guidance into reusable skill instructions. Relative to their pre-evolution versions, the revised skills improve skill-use accuracy during autonomous execution by 33.33 to 55.17 pp and continue to yield improvements when transferred across multiple models and harnesses. Our results show that autonomous skill-use accuracy varies across harnesses with the model and skill held fixed, and model rankings can change. EBU can persist even after a skill is opened. EBU-Evolve improves autonomous skill-use accuracy on unseen tasks within the same skill, with gains transferring across models and harnesses.\n\nРедакційна класифікація: напрям: Медицина; ознаки користі: observation, benchmark, evaluate. Рівень свідчень: практичне застосування або конкретний приклад. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте статус публікації в першоджерелі.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
-    "sourceDate": "2026-11-27",
-    "sources": [
-      {
-        "title": "MedSkill-E$^{2}$: Evaluating and Evolving Skills for Medical Agents",
-        "publisher": "arXiv",
-        "url": "https://arxiv.org/abs/2611.34250",
-        "publishedDate": "2026-11-27"
+        "title": "Towards more sustainable Earth Observation data use: key takeaways from the CDSE webinar",
+        "publisher": "Copernicus Data Space Ecosystem",
+        "url": "https://dataspace.copernicus.eu/news/2026-11-17-towards-more-sustainable-earth-observation-data-use-key-takeaways-cdse-webinar",
+        "publishedDate": "2026-11-17"
       }
     ]
   },
@@ -274,6 +394,96 @@
         "title": "2026 Report: Executive Summary",
         "publisher": "International AI Safety Report",
         "url": "https://internationalaisafetyreport.org/publication/2026-report-executive-summary"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-27-db3ce4d2ec2d",
+    "date": "2026-11-27",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "arXiv — Штучний інтелект",
+    "feedId": "arxiv-ai",
+    "sourceDomain": "arxiv.org",
+    "filterVersion": "2.7",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Перспективний розвиток",
+    "feedKind": "ai_topic",
+    "sourceDescription": "arXiv:2611.33897v1 Announce Type: new Abstract: Medical reasoning agents combine large language model (LLM) reasoning with clinical workflows and specialized neural tools. However, general-purpose LLMs receive limited training exposure to domain-specific medical tools, and the uncertainty and distributional shifts of neural tool outputs make selecting tools from simple descriptions significantly more challenging than in deterministic settings such as calculators or dictionary lookups. In this paper, we propose EATS, an experience-augmented tool selection strategy that leverages accumulated tool-use trajectories to improve tool selection in medical reasoning agents. EATS constructs a memory of past interactions, including queries, tool choices, arguments, and self-evaluated feedback, and retrieves relevant experiences to guide tool selection for new queries. As memory construction does not require ground-truth supervision, EATS scales naturally with test-time experience. We evaluate EATS on tool-augmented medical reasoning tasks, including closed-ended visual question answering and free-form report generation. Experiments on four public datasets, ChestAgentBench, CheXbench, MIMIC-CXR, and SLAKE-VQA, across three multimodal LLMs, Qwen3-VL 2B, Qwen3-VL 32B, and GPT-5.5, show consistent gains in tool selection behavior and downstream medical reasoning performance. Code is available at https://github.com/Limingyuan001/EATS.",
+    "selectionReason": "напрям: Медицина; ознаки користі: evaluate, workflow, dataset",
+    "evidenceLevel": "дослідження або оцінювання потенційного застосування",
+    "category": "Медицина",
+    "title": "EATS: Scaling Tool-Use Experience for Medical Reasoning Agents",
+    "summary": "arXiv:2611.33897v1 Announce Type: new Abstract: Medical reasoning agents combine large language model (LLM) reasoning with clinical workflows and specialized neural tools. However, general-purpose LLMs receive limited training exposure to domain-specific medical tools, and the uncertainty and distributional shifts of neural tool outputs make selecting…",
+    "body": "Матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.33897v1 Announce Type: new Abstract: Medical reasoning agents combine large language model (LLM) reasoning with clinical workflows and specialized neural tools. However, general-purpose LLMs receive limited training exposure to domain-specific medical tools, and the uncertainty and distributional shifts of neural tool outputs make selecting tools from simple descriptions significantly more challenging than in deterministic settings such as calculators or dictionary lookups. In this paper, we propose EATS, an experience-augmented tool selection strategy that leverages accumulated tool-use trajectories to improve tool selection in medical reasoning agents. EATS constructs a memory of past interactions, including queries, tool choices, arguments, and self-evaluated feedback, and retrieves relevant experiences to guide tool selection for new queries. As memory construction does not require ground-truth supervision, EATS scales naturally with test-time experience. We evaluate EATS on tool-augmented medical reasoning tasks, including closed-ended visual question answering and free-form report generation. Experiments on four public datasets, ChestAgentBench, CheXbench, MIMIC-CXR, and SLAKE-VQA, across three multimodal LLMs, Qwen3-VL 2B, Qwen3-VL 32B, and GPT-5.5, show consistent gains in tool selection behavior and downstream medical reasoning performance. Code is available at https://github.com/Limingyuan001/EATS.\n\nРедакційна класифікація: напрям: Медицина; ознаки користі: evaluate, workflow, dataset. Рівень свідчень: дослідження або оцінювання потенційного застосування. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте статус публікації в першоджерелі.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-27",
+    "sources": [
+      {
+        "title": "EATS: Scaling Tool-Use Experience for Medical Reasoning Agents",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2611.33897",
+        "publishedDate": "2026-11-27"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-27-2b6059a95219",
+    "date": "2026-11-27",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "arXiv — Штучний інтелект",
+    "feedId": "arxiv-ai",
+    "sourceDomain": "arxiv.org",
+    "filterVersion": "2.7",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Позитивний вплив",
+    "feedKind": "ai_topic",
+    "sourceDescription": "arXiv:2611.34247v1 Announce Type: new Abstract: AI systems increasingly help decide which drug targets enter costly clinical trials. We recast each target-disease hypothesis as a dated event, the pair's first clinical trial. This lets us test whether a language model can forecast such events after its training cutoff, rather than recall events before it. We rebuild a dated biomedical knowledge graph as it stood at the end of each year from 2020 up to its newest version. We then ask six open language models, with and without this graph, which targets will enter a first trial for a disease the next year. Without retrieval, the models rank about as well as trial history, a count of each target's past trials in the same therapeutic area, also after their training cutoffs. Evidence dated before the decision adds at most a small gain, before or after the models' training cutoffs. The newest graph raises five of six models clearly above that baseline, but its paths usually include the answer: the pair's own trial, dated after the decision. Evaluations of target prioritisation should date both features and labels, with evidence from before the decision and outcomes after it.",
+    "selectionReason": "напрям: Медицина; ознаки користі: clinical trial, forecast, evaluation",
+    "evidenceLevel": "практичне застосування або конкретний приклад",
+    "category": "Медицина",
+    "title": "Did the Model Forecast It, or Already Know It? Evaluating Large Language Models for Novel Drug-Target Prioritisation with a Temporal Knowledge-Graph Oracle",
+    "summary": "arXiv:2611.34247v1 Announce Type: new Abstract: AI systems increasingly help decide which drug targets enter costly clinical trials. We recast each target-disease hypothesis as a dated event, the pair's first clinical trial. This lets us test whether a language model can forecast such events after its training cutoff, rather than recall events before it.…",
+    "body": "Матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.34247v1 Announce Type: new Abstract: AI systems increasingly help decide which drug targets enter costly clinical trials. We recast each target-disease hypothesis as a dated event, the pair's first clinical trial. This lets us test whether a language model can forecast such events after its training cutoff, rather than recall events before it. We rebuild a dated biomedical knowledge graph as it stood at the end of each year from 2020 up to its newest version. We then ask six open language models, with and without this graph, which targets will enter a first trial for a disease the next year. Without retrieval, the models rank about as well as trial history, a count of each target's past trials in the same therapeutic area, also after their training cutoffs. Evidence dated before the decision adds at most a small gain, before or after the models' training cutoffs. The newest graph raises five of six models clearly above that baseline, but its paths usually include the answer: the pair's own trial, dated after the decision. Evaluations of target prioritisation should date both features and labels, with evidence from before the decision and outcomes after it.\n\nРедакційна класифікація: напрям: Медицина; ознаки користі: clinical trial, forecast, evaluation. Рівень свідчень: практичне застосування або конкретний приклад. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте статус публікації в першоджерелі.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-27",
+    "sources": [
+      {
+        "title": "Did the Model Forecast It, or Already Know It? Evaluating Large Language Models for Novel Drug-Target Prioritisation with a Temporal Knowledge-Graph Oracle",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2611.34247",
+        "publishedDate": "2026-11-27"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-27-878f9176e2b8",
+    "date": "2026-11-27",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "arXiv — Штучний інтелект",
+    "feedId": "arxiv-ai",
+    "sourceDomain": "arxiv.org",
+    "filterVersion": "2.7",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Позитивний вплив",
+    "feedKind": "ai_topic",
+    "sourceDescription": "arXiv:2611.34250v1 Announce Type: new Abstract: Large language model (LLM) agents increasingly use skills to access domain knowledge and complete real-world tasks. We observe that even when a skill specifies the rules and procedures needed for a task, agents may fail to apply them effectively during autonomous execution, a phenomenon we call skill Enable But Underuse (EBU). This issue is particularly consequential in medical tasks, where overlooking a single critical constraint can yield a plausible but incorrect result. To evaluate and address EBU, we introduce MedSkill-E$^{2}$, a framework for evaluating and evolving skills for medical agents. We construct EBU-Bench, a challenging benchmark covering 12 medically relevant task groups and associated skills, to evaluate agents' ability to use available skills autonomously. We quantify the EBU gap as the difference in skill-use accuracy between autonomous use and explicitly guided reading and application of the same skill. On EBU-Bench, all evaluated model-harness combinations exhibit EBU, with a mean gap of 43.94 percentage points (pp). For the same model, skill-use accuracy under autonomous use differs by up to 38.96 pp across harnesses. Motivated by these observations, we propose EBU-Evolve, which uses execution feedback from autonomous and explicitly guided skill use to distill effective guidance into reusable skill instructions. Relative to their pre-evolution versions, the revised skills improve skill-use accuracy during autonomous execution by 33.33 to 55.17 pp and continue to yield improvements when transferred across multiple models and harnesses. Our results show that autonomous skill-use accuracy varies across harnesses with the model and skill held fixed, and model rankings can change. EBU can persist even after a skill is opened. EBU-Evolve improves autonomous skill-use accuracy on unseen tasks within the same skill, with gains transferring across models and harnesses.",
+    "selectionReason": "напрям: Медицина; ознаки користі: observation, benchmark, evaluate",
+    "evidenceLevel": "практичне застосування або конкретний приклад",
+    "category": "Медицина",
+    "title": "MedSkill-E$^{2}$: Evaluating and Evolving Skills for Medical Agents",
+    "summary": "arXiv:2611.34250v1 Announce Type: new Abstract: Large language model (LLM) agents increasingly use skills to access domain knowledge and complete real-world tasks. We observe that even when a skill specifies the rules and procedures needed for a task, agents may fail to apply them effectively during autonomous execution, a phenomenon we call skill Enable…",
+    "body": "Матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.34250v1 Announce Type: new Abstract: Large language model (LLM) agents increasingly use skills to access domain knowledge and complete real-world tasks. We observe that even when a skill specifies the rules and procedures needed for a task, agents may fail to apply them effectively during autonomous execution, a phenomenon we call skill Enable But Underuse (EBU). This issue is particularly consequential in medical tasks, where overlooking a single critical constraint can yield a plausible but incorrect result. To evaluate and address EBU, we introduce MedSkill-E$^{2}$, a framework for evaluating and evolving skills for medical agents. We construct EBU-Bench, a challenging benchmark covering 12 medically relevant task groups and associated skills, to evaluate agents' ability to use available skills autonomously. We quantify the EBU gap as the difference in skill-use accuracy between autonomous use and explicitly guided reading and application of the same skill. On EBU-Bench, all evaluated model-harness combinations exhibit EBU, with a mean gap of 43.94 percentage points (pp). For the same model, skill-use accuracy under autonomous use differs by up to 38.96 pp across harnesses. Motivated by these observations, we propose EBU-Evolve, which uses execution feedback from autonomous and explicitly guided skill use to distill effective guidance into reusable skill instructions. Relative to their pre-evolution versions, the revised skills improve skill-use accuracy during autonomous execution by 33.33 to 55.17 pp and continue to yield improvements when transferred across multiple models and harnesses. Our results show that autonomous skill-use accuracy varies across harnesses with the model and skill held fixed, and model rankings can change. EBU can persist even after a skill is opened. EBU-Evolve improves autonomous skill-use accuracy on unseen tasks within the same skill, with gains transferring across models and harnesses.\n\nРедакційна класифікація: напрям: Медицина; ознаки користі: observation, benchmark, evaluate. Рівень свідчень: практичне застосування або конкретний приклад. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте статус публікації в першоджерелі.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-27",
+    "sources": [
+      {
+        "title": "MedSkill-E$^{2}$: Evaluating and Evolving Skills for Medical Agents",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2611.34250",
+        "publishedDate": "2026-11-27"
       }
     ]
   },

@@ -266,21 +266,21 @@ fetch('/content/articles.json?ts='+Date.now(),{{cache:'no-store'}}).then(respons
 
 
 
-EDITORIAL_GALLERIES: dict[str, list[tuple[str, str]]] = {
+EDITORIAL_GALLERIES: dict[str, list[tuple[int, int, str]]] = {
     "editorial-city-future-20261126": [
-        ("/assets/editorial/city-transit.svg", "Громадський транспорт у зеленому місті"),
-        ("/assets/editorial/city-cycling.svg", "Вулиці для пішоходів і велосипедистів"),
-        ("/assets/editorial/city-neighborhood.svg", "Компактний зелений міський квартал"),
+        (0, 0, "Трамвай серед історичної забудови та зелених вулиць"),
+        (0, 1, "Безпечний веломаршрут у міському парку"),
+        (0, 2, "Зелений квартал із затишним громадським подвір’ям"),
     ],
     "editorial-ukraine-rebuild-20261126": [
-        ("/assets/editorial/rebuild-construction.svg", "Відбудова сучасного міста"),
-        ("/assets/editorial/rebuild-accessibility.svg", "Безбар’єрний громадський простір"),
-        ("/assets/editorial/rebuild-energy.svg", "Енергоефективне житло та відновлювана енергія"),
+        (1, 0, "Команда фахівців відновлює пошкоджену міську забудову"),
+        (1, 1, "Безбар’єрний вхід до громадської будівлі"),
+        (1, 2, "Енергоефективна будівля із сонячними панелями"),
     ],
     "editorial-ai-superintelligence-20261126": [
-        ("/assets/editorial/ai-humanity.svg", "Людина та штучний інтелект"),
-        ("/assets/editorial/ai-network.svg", "Мережа взаємопов’язаних інтелектуальних систем"),
-        ("/assets/editorial/ai-human-centered.svg", "Людина в центрі технологічного майбутнього"),
+        (2, 0, "Людина досліджує можливості штучного інтелекту"),
+        (2, 1, "Нейронна мережа як образ складного штучного інтелекту"),
+        (2, 2, "Дослідниця аналізує роботу інтелектуальної системи"),
     ],
 }
 
@@ -289,12 +289,16 @@ def render_editorial_gallery(article: dict[str, Any]) -> str:
     images = EDITORIAL_GALLERIES.get(plain_text(article.get("id")), [])
     if not images:
         return ""
-    items = "".join(
-        '<figure><img src="' + html.escape(src, quote=True) + '" alt="' + html.escape(alt, quote=True)
-        + '" loading="lazy" decoding="async"><figcaption>' + html.escape(alt) + "</figcaption></figure>"
-        for src, alt in images
-    )
-    return '<section class="editorial-gallery" aria-label="Тематичні ілюстрації">' + items + "</section>"
+    items = []
+    for row, col, alt in images:
+        crop_class = f"pencil-crop-r{row}-c{col}"
+        items.append(
+            '<figure><div class="illustration-frame"><img class="' + crop_class
+            + '" src="/assets/editorial/pencil-gallery.avif" alt="' + html.escape(alt, quote=True)
+            + '" loading="lazy" decoding="async"></div><figcaption>' + html.escape(alt)
+            + "</figcaption></figure>"
+        )
+    return '<section class="editorial-gallery" aria-label="Тематичні ілюстрації">' + "".join(items) + "</section>"
 
 
 def render_article_page(article: dict[str, Any], related: list[dict[str, Any]] | None = None) -> str:
@@ -363,12 +367,12 @@ def render_article_page(article: dict[str, Any], related: list[dict[str, Any]] |
     h1{{font-size:clamp(30px,5vw,46px);line-height:1.14;letter-spacing:-.04em;margin:17px 0 12px}}
     .summary{{font-size:19px;line-height:1.5;color:#46584e;margin:0 0 14px}}
     .meta{{font-size:12px;color:var(--muted);display:flex;gap:12px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid var(--line);margin-bottom:20px}}
-    .editorial-gallery{{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:24px 0 30px}}.editorial-gallery figure{{margin:0;min-width:0;overflow:hidden;border-radius:14px;background:#eaf3ec;border:1px solid var(--line)}}.editorial-gallery img{{display:block;width:100%;aspect-ratio:16/10;object-fit:cover}}.editorial-gallery figcaption{{padding:9px 11px;font-size:12px;line-height:1.4;color:var(--muted)}}
+    .editorial-gallery{{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:24px 0 30px}}.editorial-gallery figure{{margin:0;min-width:0;overflow:hidden;border-radius:14px;background:#eaf3ec;border:1px solid var(--line)}}.illustration-frame{{position:relative;overflow:hidden;aspect-ratio:3/2;background:#f3eee3}}.editorial-gallery .illustration-frame img{{position:absolute;display:block;width:300%;height:300%;max-width:none;max-height:none;aspect-ratio:auto;object-fit:fill}}.pencil-crop-r0-c0{{left:0;top:0}}.pencil-crop-r0-c1{{left:-100%;top:0}}.pencil-crop-r0-c2{{left:-200%;top:0}}.pencil-crop-r1-c0{{left:0;top:-100%}}.pencil-crop-r1-c1{{left:-100%;top:-100%}}.pencil-crop-r1-c2{{left:-200%;top:-100%}}.pencil-crop-r2-c0{{left:0;top:-200%}}.pencil-crop-r2-c1{{left:-100%;top:-200%}}.pencil-crop-r2-c2{{left:-200%;top:-200%}}.editorial-gallery figcaption{{padding:9px 11px;font-size:12px;line-height:1.4;color:var(--muted)}}
     .body p{{margin:0 0 18px}}.sources{{border-top:1px solid var(--line);margin-top:28px;padding-top:18px}}
     .sources h2,.related h2{{font-size:20px;margin:0 0 12px}}.sources li,.related li{{margin:9px 0}}
     .source-type{{display:inline-block;font-size:11px;background:#f2f5f2;border-radius:99px;padding:4px 9px}}
     .related{{margin-top:20px}}footer{{padding:24px 0;color:var(--muted);font-size:12px}}footer a{{text-decoration:none}}
-    @media(max-width:600px){{body{{font-size:16px}}main{{padding:24px 0 48px}}.summary{{font-size:17px}}.editorial-gallery{{grid-template-columns:1fr;gap:14px}}.editorial-gallery img{{aspect-ratio:16/9}}}}
+    @media(max-width:600px){{body{{font-size:16px}}main{{padding:24px 0 48px}}.summary{{font-size:17px}}.editorial-gallery{{grid-template-columns:1fr;gap:14px}}}}
   </style>
   <link rel="stylesheet" href="/assets/site-header.css">
   <script defer src="/assets/site-header.js"></script>

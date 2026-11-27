@@ -1,18 +1,18 @@
 {
   "schemaVersion": 1,
   "filterVersion": "2.7",
-  "generatedAt": "2026-11-27T20:18:17.964412+00:00",
+  "generatedAt": "2026-11-27T20:33:58.167194+00:00",
   "totals": {
-    "successfulFeeds": 25,
+    "successfulFeeds": 24,
     "totalFeeds": 27,
-    "itemsFetched": 1679,
-    "acceptedCandidates": 15,
+    "itemsFetched": 1649,
+    "acceptedCandidates": 12,
     "added": 3,
-    "rejected": 724,
-    "duplicates": 86,
+    "rejected": 707,
+    "duplicates": 76,
     "tooOld": 554,
     "shortDescriptions": 40,
-    "deferredByDiversityCap": 12
+    "deferredByDiversityCap": 9
   },
   "feedRuns": [
     {
@@ -133,13 +133,13 @@
       "url": "https://export.arxiv.org/rss/cs.AI",
       "status": "ok",
       "itemsFetched": 398,
-      "acceptedCandidates": 15,
+      "acceptedCandidates": 12,
       "added": 3,
       "rejected": 372,
-      "duplicates": 11,
+      "duplicates": 14,
       "tooOld": 0,
       "shortDescriptions": 0,
-      "deferredByDiversityCap": 12,
+      "deferredByDiversityCap": 9,
       "rejectionReasons": {
         "немає чіткого зв'язку зі штучним інтелектом для спеціалізованої AI-стрічки": 188,
         "не виявлено достатньо чіткого напряму користі для людей": 146,
@@ -372,26 +372,17 @@
       "publisher": "United Nations News",
       "domain": "un.org",
       "url": "https://news.un.org/feed/subscribe/en/news/topic/humanitarian-aid/feed/rss.xml",
-      "status": "ok",
-      "itemsFetched": 30,
+      "status": "error",
+      "itemsFetched": 0,
       "acceptedCandidates": 0,
       "added": 0,
-      "rejected": 24,
-      "duplicates": 6,
+      "rejected": 0,
+      "duplicates": 0,
       "tooOld": 0,
       "shortDescriptions": 0,
       "deferredByDiversityCap": 0,
-      "rejectionReasons": {
-        "визначено напрям «Мир і безпека», але немає достатніх ознак застосування, оцінювання або суспільної користі": 4,
-        "не виявлено достатньо чіткого напряму користі для людей": 12,
-        "недостатньо чіткий зв'язок із напрямом «Державне управління»": 1,
-        "визначено напрям «Екологія», але немає достатніх ознак застосування, оцінювання або суспільної користі": 1,
-        "недостатньо чіткий зв'язок із напрямом «Мир і безпека»": 2,
-        "визначено напрям «Медицина», але немає достатніх ознак застосування, оцінювання або суспільної користі": 2,
-        "недостатньо чіткий зв'язок із напрямом «Екологія»": 1,
-        "визначено напрям «Освіта», але немає достатніх ознак застосування, оцінювання або суспільної користі": 1
-      },
-      "error": ""
+      "rejectionReasons": {},
+      "error": "not well-formed (invalid token): line 1, column 0"
     },
     {
       "id": "un-peace-security",
@@ -403,17 +394,19 @@
       "itemsFetched": 30,
       "acceptedCandidates": 0,
       "added": 0,
-      "rejected": 18,
-      "duplicates": 12,
+      "rejected": 25,
+      "duplicates": 5,
       "tooOld": 0,
       "shortDescriptions": 0,
       "deferredByDiversityCap": 0,
       "rejectionReasons": {
-        "не виявлено достатньо чіткого напряму користі для людей": 11,
+        "не виявлено достатньо чіткого напряму користі для людей": 14,
         "визначено напрям «Освіта», але немає достатніх ознак застосування, оцінювання або суспільної користі": 2,
+        "визначено напрям «Мир і безпека», але немає достатніх ознак застосування, оцінювання або суспільної користі": 1,
         "відсів: військове застосування або озброєння": 2,
-        "визначено напрям «Екологія», але немає достатніх ознак застосування, оцінювання або суспільної користі": 1,
-        "недостатньо чіткий зв'язок із напрямом «Мир і безпека»": 1,
+        "визначено напрям «Екологія», але немає достатніх ознак застосування, оцінювання або суспільної користі": 2,
+        "недостатньо чіткий зв'язок із напрямом «Мир і безпека»": 2,
+        "недостатньо чіткий зв'язок із напрямом «Державне управління»": 1,
         "недостатньо чіткий зв'язок із напрямом «Права людини»": 1
       },
       "error": ""
@@ -617,7 +610,7 @@
   "libraryByDomain": [
     {
       "domain": "arxiv.org",
-      "count": 87,
+      "count": 90,
       "publishers": [
         "arXiv"
       ]
@@ -701,8 +694,8 @@
   ],
   "libraryDomainCount": 11,
   "library": {
-    "totalRecords": 152,
-    "publicRecords": 137,
+    "totalRecords": 155,
+    "publicRecords": 140,
     "needsReview": 15,
     "manualRecords": 10
   },

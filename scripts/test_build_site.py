@@ -19,6 +19,7 @@ from build_site import (
     ARCHIVE_PAGE_SIZE,
     TOPIC_GUIDES,
     render_archive_page,
+    render_site_header,
     render_topics_index,
     topic_articles,
     topic_for_category,
@@ -204,6 +205,28 @@ class BuildSiteSeoTests(unittest.TestCase):
         self.assertIn("archiveData=data.filter", page)
         self.assertIn("Найстаріші спочатку", page)
         self.assertIn("За назвою", page)
+
+
+    def test_all_generated_pages_use_the_shared_site_header(self):
+        rows = [self.sample(id=f"header-{i}", title=f"Матеріал {i}") for i in range(4)]
+        outputs = build_outputs(rows)
+        pages = [content for path, content in outputs.items() if path.endswith("index.html")]
+        self.assertGreaterEqual(len(pages), 5)
+        for page in pages:
+            self.assertIn('class="site-header"', page)
+            self.assertIn('id="siteNavLinks"', page)
+            self.assertIn('href="/topics/"', page)
+            self.assertIn('href="/analytics.html"', page)
+            self.assertIn('/assets/site-header.css', page)
+
+    def test_shared_site_header_has_homepage_navigation_targets(self):
+        header = render_site_header()
+        for target in (
+            '/#principles', '/#opportunities', '/topics/', '/articles/',
+            '/#ideas', '/action-lab.html', '/analytics.html',
+            '/#manifesto', '/#sources',
+        ):
+            self.assertIn(f'href="{target}"', header)
 
 if __name__ == "__main__":
     unittest.main()

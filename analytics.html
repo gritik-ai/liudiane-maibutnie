@@ -41,13 +41,29 @@
     @media(max-width:900px){.grid-two,.grid-bottom,.source-grid{grid-template-columns:1fr}.distribution{grid-template-columns:170px 1fr}.donut{width:158px;height:158px}}
     @media(max-width:650px){.wrap{width:min(100% - 24px,1240px)}.nav{min-height:62px}.navlinks{gap:12px}.navlinks a{font-size:11px}.brand{font-size:13px}.brandmark{width:34px;height:34px}.backlink{display:none}.hero{padding:35px 0 38px}.hero-grid{grid-template-columns:1fr}.hero-actions{justify-content:flex-start}.stats{grid-template-columns:repeat(2,1fr);gap:9px}.stat{padding:13px;min-height:100px}.stat strong{font-size:24px}.panel{padding:14px}.panel-head{display:block}.periods{margin-top:10px;width:max-content}.distribution{grid-template-columns:1fr}.donut{width:170px;height:170px}.legend{grid-template-columns:1fr 1fr}.recent-list{grid-template-columns:1fr}.cat-row{grid-template-columns:110px 1fr 25px;font-size:11px}.bar-label{font-size:8px}.status{align-items:flex-start}.status button{margin-left:auto}}
   </style>
+  <link rel="stylesheet" href="/assets/site-header.css">
+  <script defer src="/assets/site-header.js"></script>
 </head>
 <body>
-<header><div class="wrap nav">
-  <a class="brand" href="/" aria-label="Людяне майбутнє — на головну"><span class="brandmark">✧</span><span>Людяне майбутнє<small>ШІ для добробуту кожного</small></span></a>
-  <nav class="navlinks" aria-label="Головна навігація"><a href="/">Головна</a><a href="/#ideas">Бібліотека</a><a href="/analytics.html" aria-current="page">Аналітика</a></nav>
-  <a class="backlink" href="/#manifesto">Наші принципи</a>
-</div></header>
+<div class="site-topline"><div class="site-shell"><span>ІДЕЇ ДЛЯ ЛЮДЯНОГО МАЙБУТНЬОГО</span><span>Технології мають служити людям — кожній людині</span></div></div>
+<header class="site-header">
+  <div class="site-shell site-nav">
+    <a class="site-brand" href="/" aria-label="Людяне майбутнє — на головну"><span class="site-brandmark">✧</span><span>Людяне майбутнє<small>ШІ для добробуту кожного</small></span></a>
+    <button class="site-menu-toggle" id="siteMenuToggle" type="button" aria-label="Відкрити меню" aria-expanded="false" aria-controls="siteNavLinks">☰</button>
+    <nav class="site-navlinks" id="siteNavLinks" aria-label="Основна навігація">
+      <a href="/#principles">Принципи</a>
+      <a href="/#opportunities">Можливості</a>
+      <a href="/topics/">Напрямки</a>
+      <a href="/articles/">Усі статті</a>
+      <a href="/#ideas">Останні матеріали</a>
+      <a href="/action-lab.html">Компас дій</a>
+      <a href="/analytics.html">Аналітика</a>
+      <a href="/#manifesto">Маніфест</a>
+      <a href="/#sources">Джерела</a>
+    </nav>
+    <div class="site-nav-actions"><span class="site-rss-badge">✦ RSS оновлюється автоматично</span></div>
+  </div>
+</header>
 <section class="hero"><div class="wrap hero-grid">
   <div><div class="kicker">Відкриті дані · опубліковані матеріали</div><h1>Аналітика користі<br>для людства</h1><p>Показуємо, які теми досліджують автори й організації та як розподіляються схвалені матеріали про відповідальний ШІ, науку й суспільний добробут.</p><div class="stamp" id="updatedAt">Дані ще не завантажено</div></div>
   <div class="hero-actions"><button class="btn btn-light" id="refreshBtn" type="button">↻ Оновити дані</button><a class="btn btn-ghost" href="/#ideas">Перейти до бібліотеки →</a></div>

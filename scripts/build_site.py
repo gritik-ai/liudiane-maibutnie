@@ -265,6 +265,38 @@ fetch('/content/articles.json?ts='+Date.now(),{{cache:'no-store'}}).then(respons
 </script></body></html>"""
 
 
+
+EDITORIAL_GALLERIES: dict[str, list[tuple[str, str]]] = {
+    "editorial-city-future-20261126": [
+        ("/assets/editorial/city-transit.svg", "Громадський транспорт у зеленому місті"),
+        ("/assets/editorial/city-cycling.svg", "Вулиці для пішоходів і велосипедистів"),
+        ("/assets/editorial/city-neighborhood.svg", "Компактний зелений міський квартал"),
+    ],
+    "editorial-ukraine-rebuild-20261126": [
+        ("/assets/editorial/rebuild-construction.svg", "Відбудова сучасного міста"),
+        ("/assets/editorial/rebuild-accessibility.svg", "Безбар’єрний громадський простір"),
+        ("/assets/editorial/rebuild-energy.svg", "Енергоефективне житло та відновлювана енергія"),
+    ],
+    "editorial-ai-superintelligence-20261126": [
+        ("/assets/editorial/ai-humanity.svg", "Людина та штучний інтелект"),
+        ("/assets/editorial/ai-network.svg", "Мережа взаємопов’язаних інтелектуальних систем"),
+        ("/assets/editorial/ai-human-centered.svg", "Людина в центрі технологічного майбутнього"),
+    ],
+}
+
+
+def render_editorial_gallery(article: dict[str, Any]) -> str:
+    images = EDITORIAL_GALLERIES.get(plain_text(article.get("id")), [])
+    if not images:
+        return ""
+    items = "".join(
+        '<figure><img src="' + html.escape(src, quote=True) + '" alt="' + html.escape(alt, quote=True)
+        + '" loading="lazy" decoding="async"><figcaption>' + html.escape(alt) + "</figcaption></figure>"
+        for src, alt in images
+    )
+    return '<section class="editorial-gallery" aria-label="Тематичні ілюстрації">' + items + "</section>"
+
+
 def render_article_page(article: dict[str, Any], related: list[dict[str, Any]] | None = None) -> str:
     title = plain_text(article.get("title")) or SITE_NAME
     description = shorten(article.get("summary") or article.get("sourceDescription") or article.get("body"))
@@ -331,11 +363,12 @@ def render_article_page(article: dict[str, Any], related: list[dict[str, Any]] |
     h1{{font-size:clamp(30px,5vw,46px);line-height:1.14;letter-spacing:-.04em;margin:17px 0 12px}}
     .summary{{font-size:19px;line-height:1.5;color:#46584e;margin:0 0 14px}}
     .meta{{font-size:12px;color:var(--muted);display:flex;gap:12px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid var(--line);margin-bottom:20px}}
+    .editorial-gallery{{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:24px 0 30px}}.editorial-gallery figure{{margin:0;min-width:0;overflow:hidden;border-radius:14px;background:#eaf3ec;border:1px solid var(--line)}}.editorial-gallery img{{display:block;width:100%;aspect-ratio:16/10;object-fit:cover}}.editorial-gallery figcaption{{padding:9px 11px;font-size:12px;line-height:1.4;color:var(--muted)}}
     .body p{{margin:0 0 18px}}.sources{{border-top:1px solid var(--line);margin-top:28px;padding-top:18px}}
     .sources h2,.related h2{{font-size:20px;margin:0 0 12px}}.sources li,.related li{{margin:9px 0}}
     .source-type{{display:inline-block;font-size:11px;background:#f2f5f2;border-radius:99px;padding:4px 9px}}
     .related{{margin-top:20px}}footer{{padding:24px 0;color:var(--muted);font-size:12px}}footer a{{text-decoration:none}}
-    @media(max-width:600px){{body{{font-size:16px}}main{{padding:24px 0 48px}}.summary{{font-size:17px}}}}
+    @media(max-width:600px){{body{{font-size:16px}}main{{padding:24px 0 48px}}.summary{{font-size:17px}}.editorial-gallery{{grid-template-columns:1fr;gap:14px}}.editorial-gallery img{{aspect-ratio:16/9}}}}
   </style>
   <link rel="stylesheet" href="/assets/site-header.css">
   <script defer src="/assets/site-header.js"></script>
@@ -350,6 +383,7 @@ def render_article_page(article: dict[str, Any], related: list[dict[str, Any]] |
       <p class="summary">{html.escape(description)}</p>
       {f"<div class=\"topic-terms\" aria-label=\"Тематичні ключові фрази\">{topic_labels_html}</div>" if topic_labels_html else ""}
       <div class="meta"><span>{html.escape(source_type)}</span>{f'<span>Опубліковано: {lastmod_text}</span>' if published else ''}</div>
+      {render_editorial_gallery(article)}
       <div class="body">{body_html}</div>
       {sources_html}
     </article>

@@ -1,1 +1,34 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" role="img" aria-labelledby="title desc"><title id="title">Мережа інтелектуальних систем</title><desc id="desc">Взаємопов’язані вузли утворюють мережу цифрового інтелекту.</desc><defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#dcebf0"/><stop offset="1" stop-color="#f7f5e9"/></linearGradient><pattern id="dots" width="34" height="34" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="1.5" fill="#286f7a" opacity=".15"/></pattern></defs><rect width="960" height="560" fill="url(#bg)"/><rect width="960" height="560" fill="url(#dots)"/><circle cx="820" cy="95" r="48" fill="#e9c66b" opacity=".45"/><path d="M0 390 Q210 340 400 385 T960 360" fill="none" stroke="#fff" stroke-width="4" opacity=".7"/><circle cx="480" cy="280" r="205" fill="#173e55"/><circle cx="480" cy="280" r="165" fill="#286f7a"/><g stroke="#d8eef0" stroke-width="5" opacity=".85"><path d="M340 190 L480 120 L620 190 L650 340 L480 425 L310 340Z"/><path d="M340 190 L480 280 L620 190 M310 340 L480 280 L650 340 M480 120 V425"/></g><g fill="#e9c66b"><circle cx="340" cy="190" r="15"/><circle cx="480" cy="120" r="15"/><circle cx="620" cy="190" r="15"/><circle cx="650" cy="340" r="15"/><circle cx="480" cy="425" r="15"/><circle cx="310" cy="340" r="15"/></g><circle cx="480" cy="280" r="56" fill="#fff"/><path d="M450 280 Q480 245 510 280 Q480 315 450 280Z" fill="#173e55"/><text x="42" y="510" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#173e55" opacity=".8">ЛЮДЯНЕ МАЙБУТНЄ</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" role="img" aria-labelledby="title desc">
+<title id="title">Нейронна мережа штучного інтелекту</title><desc id="desc">Складна мережа вузлів і зв’язків утворює світловий образ мозку на темному тлі.</desc>
+<defs>
+  <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#dceaf0"/><stop offset="1" stop-color="#f5ead3"/></linearGradient>
+  <linearGradient id="paper" x2="0" y2="1"><stop stop-color="#fcf8ed"/><stop offset="1" stop-color="#f1e7d5"/></linearGradient>
+  <pattern id="papergrain" width="48" height="48" patternUnits="userSpaceOnUse">
+    <circle cx="4" cy="8" r="1" fill="#8e785c" opacity=".17"/><circle cx="29" cy="22" r=".8" fill="#8e785c" opacity=".16"/><circle cx="41" cy="5" r=".7" fill="#8e785c" opacity=".13"/><path d="M9 36l5-1m17 8l4-1m5-28l3 1" stroke="#a18a6b" stroke-width=".7" opacity=".16"/>
+  </pattern>
+  <pattern id="hatch" width="12" height="12" patternUnits="userSpaceOnUse"><path d="M-2 12L12-2M4 16L16 4" stroke="#765d48" stroke-width="1" opacity=".32"/></pattern>
+  <pattern id="bluehatch" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M0 10L10 0" stroke="#477b93" stroke-width="1" opacity=".27"/></pattern>
+  <pattern id="greenhatch" width="11" height="11" patternUnits="userSpaceOnUse"><path d="M0 11L11 0" stroke="#52764f" stroke-width="1" opacity=".3"/></pattern>
+  <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".62" numOctaves="2" seed="7"/><feColorMatrix values="0 0 0 0 .38 0 0 0 0 .31 0 0 0 0 .22 0 0 0 .12 0"/></filter>
+</defs>
+<rect width="960" height="560" fill="url(#paper)"/>
+<rect width="960" height="560" fill="url(#papergrain)"/>
+<path d="M0 0H960V350Q700 320 500 352T0 340Z" fill="url(#sky)"/>
+<path d="M0 40Q160 12 315 38T640 31T960 42" fill="none" stroke="#77a0b2" stroke-width="2" opacity=".35"/>
+<path d="M0 53l190-17m-110 31l210-28m-42 34l185-25m-80 43l220-31m-45 32l210-28m-80 43l270-38" fill="none" stroke="#6995ab" stroke-width="1.3" opacity=".28"/>
+
+<rect x="80" y="65" width="800" height="405" rx="28" fill="#263d50" stroke="#3d5969" stroke-width="5"/>
+<path d="M140 410Q240 80 480 110Q710 65 835 405" fill="none" stroke="#7ca7b7" stroke-width="3" opacity=".5"/>
+<path d="M170 365Q290 95 480 140Q675 90 790 360" fill="none" stroke="#d4a967" stroke-width="2" opacity=".5"/>
+<g stroke="#8ab4c0" stroke-width="2.2" fill="none" opacity=".88">
+<path d="M210 190L300 130 385 195 465 115 550 190 640 125 742 195M210 190L255 290 340 330 385 195 465 290 550 190 640 300 742 195M255 290L210 390 340 330 465 400 465 290 590 365 640 300 760 390M300 130L465 290 640 125M385 195L340 330 550 190 590 365M465 115L465 290L465 400M550 190L742 195L760 390"/>
+</g>
+<g fill="#f0c56f" stroke="#f8e3a9" stroke-width="2">
+<circle cx="210" cy="190" r="9"/><circle cx="300" cy="130" r="8"/><circle cx="385" cy="195" r="10"/><circle cx="465" cy="115" r="11"/><circle cx="550" cy="190" r="9"/><circle cx="640" cy="125" r="9"/><circle cx="742" cy="195" r="11"/><circle cx="255" cy="290" r="8"/><circle cx="340" cy="330" r="10"/><circle cx="465" cy="290" r="13"/><circle cx="640" cy="300" r="9"/><circle cx="760" cy="390" r="9"/><circle cx="210" cy="390" r="7"/><circle cx="465" cy="400" r="10"/><circle cx="590" cy="365" r="8"/>
+</g>
+<g fill="none" stroke="#d28d54" stroke-width="2" opacity=".8"><circle cx="465" cy="265" r="120"/><circle cx="465" cy="265" r="150" stroke-dasharray="5 11"/><path d="M465 70v370M150 265h630"/></g>
+<path d="M115 100l100-20m520 15l100 15M130 435l130 20m420-25l140-10" stroke="#e1bd7b" stroke-width="2" opacity=".6"/>
+
+<rect width="960" height="560" filter="url(#grain)" opacity=".11" pointer-events="none"/>
+<path d="M15 18Q470 5 944 17M18 542Q450 554 943 541" fill="none" stroke="#927d61" stroke-width="1" opacity=".22"/>
+</svg>

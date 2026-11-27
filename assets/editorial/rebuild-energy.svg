@@ -1,1 +1,48 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" role="img" aria-labelledby="title desc"><title id="title">Енергоефективне житло</title><desc id="desc">Сучасні будинки, сонячні панелі та інженерна інфраструктура.</desc><defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e8efe9"/><stop offset="1" stop-color="#f7f5e9"/></linearGradient><pattern id="dots" width="34" height="34" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="1.5" fill="#386f5a" opacity=".15"/></pattern></defs><rect width="960" height="560" fill="url(#bg)"/><rect width="960" height="560" fill="url(#dots)"/><circle cx="820" cy="95" r="48" fill="#e6ad54" opacity=".45"/><path d="M0 390 Q210 340 400 385 T960 360" fill="none" stroke="#fff" stroke-width="4" opacity=".7"/><path d="M0 410 Q240 370 480 410 T960 400 V560 H0Z" fill="#b9d0c3"/><g fill="#fff"><rect x="90" y="180" width="210" height="235" rx="12"/><rect x="340" y="135" width="220" height="280" rx="12"/><rect x="600" y="195" width="270" height="220" rx="12"/></g><g fill="#386f5a"><path d="M70 180 L195 95 L320 180Z"/><path d="M320 135 L450 45 L580 135Z"/><path d="M580 195 L735 110 L890 195Z"/></g><g fill="#b7d9e5"><rect x="125" y="220" width="55" height="55"/><rect x="205" y="220" width="55" height="55"/><rect x="385" y="180" width="55" height="55"/><rect x="465" y="180" width="55" height="55"/></g><g fill="#e6ad54"><rect x="635" y="220" width="55" height="14" transform="rotate(-15 635 220)"/><rect x="700" y="205" width="55" height="14" transform="rotate(-15 700 205)"/><rect x="765" y="190" width="55" height="14" transform="rotate(-15 765 190)"/></g><g stroke="#244d45" stroke-width="7" fill="none"><path d="M650 300 L845 300 M680 280 L680 340 M745 280 L745 340 M810 280 L810 340"/></g><text x="42" y="510" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#244d45" opacity=".8">ЛЮДЯНЕ МАЙБУТНЄ</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" role="img" aria-labelledby="title desc">
+<title id="title">Енергоефективна будівля</title><desc id="desc">Сучасна громадська будівля із сонячними панелями, зеленим дахом і доглянутим ландшафтом.</desc>
+<defs>
+  <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#dceaf0"/><stop offset="1" stop-color="#f5ead3"/></linearGradient>
+  <linearGradient id="paper" x2="0" y2="1"><stop stop-color="#fcf8ed"/><stop offset="1" stop-color="#f1e7d5"/></linearGradient>
+  <pattern id="papergrain" width="48" height="48" patternUnits="userSpaceOnUse">
+    <circle cx="4" cy="8" r="1" fill="#8e785c" opacity=".17"/><circle cx="29" cy="22" r=".8" fill="#8e785c" opacity=".16"/><circle cx="41" cy="5" r=".7" fill="#8e785c" opacity=".13"/><path d="M9 36l5-1m17 8l4-1m5-28l3 1" stroke="#a18a6b" stroke-width=".7" opacity=".16"/>
+  </pattern>
+  <pattern id="hatch" width="12" height="12" patternUnits="userSpaceOnUse"><path d="M-2 12L12-2M4 16L16 4" stroke="#765d48" stroke-width="1" opacity=".32"/></pattern>
+  <pattern id="bluehatch" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M0 10L10 0" stroke="#477b93" stroke-width="1" opacity=".27"/></pattern>
+  <pattern id="greenhatch" width="11" height="11" patternUnits="userSpaceOnUse"><path d="M0 11L11 0" stroke="#52764f" stroke-width="1" opacity=".3"/></pattern>
+  <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".62" numOctaves="2" seed="7"/><feColorMatrix values="0 0 0 0 .38 0 0 0 0 .31 0 0 0 0 .22 0 0 0 .12 0"/></filter>
+</defs>
+<rect width="960" height="560" fill="url(#paper)"/>
+<rect width="960" height="560" fill="url(#papergrain)"/>
+<path d="M0 0H960V350Q700 320 500 352T0 340Z" fill="url(#sky)"/>
+<path d="M0 40Q160 12 315 38T640 31T960 42" fill="none" stroke="#77a0b2" stroke-width="2" opacity=".35"/>
+<path d="M0 53l190-17m-110 31l210-28m-42 34l185-25m-80 43l220-31m-45 32l210-28m-80 43l270-38" fill="none" stroke="#6995ab" stroke-width="1.3" opacity=".28"/>
+
+<path d="M0 365Q240 340 480 367T960 360V560H0Z" fill="#aebe91" stroke="#617650" stroke-width="3"/>
+<path d="M170 260L465 105 790 250" fill="#d4b994" stroke="#5e554b" stroke-width="5"/>
+<path d="M205 252L465 125 755 250" fill="#6e8f97" stroke="#42565a" stroke-width="4"/>
+<path d="M245 235l225-104m-195 118l230-110m-173 128l238-116m-140 145l248-121" stroke="#d4e3d8" stroke-width="3" fill="none" opacity=".8"/>
+<g fill="#d0e2e7" stroke="#465b60" stroke-width="3">
+<path d="M260 220l88-42v45l-88 43z"/><path d="M355 176l88-42v45l-88 43z"/><path d="M450 132l88-42v45l-88 43z"/><path d="M545 163l88 42v45l-88-42z"/><path d="M640 207l88 42v45l-88-42z"/>
+</g>
+<rect x="215" y="260" width="530" height="180" rx="0" fill="#ead9b7" stroke="#5c5247" stroke-width="4"/>
+<path d="M250 280h460v12H250z" fill="#6e8d7d"/>
+<g fill="#91b8c1" stroke="#5a574f" stroke-width="3"><rect x="260" y="312" width="100" height="100"/><rect x="390" y="312" width="100" height="100"/><rect x="520" y="312" width="100" height="100"/><rect x="650" y="312" width="70" height="100"/></g>
+<path d="M310 312v100m130-100v100m130-100v100m115-100v100" stroke="#f4ecd9" stroke-width="4"/>
+<g transform="translate(100 320) scale(0.85)">
+<path d="M0 4L-4 92M0 30L-26 4M-1 41L26 13" stroke="#76533a" stroke-width="9" fill="none" stroke-linecap="round"/>
+<path d="M-38 12Q-55-18-32-39Q-12-68 11-43Q38-52 48-22Q68 7 38 23Q20 47-7 31Q-31 39-38 12Z" fill="#7da46c" stroke="#526f4c" stroke-width="3"/>
+<path d="M-33 5Q-24-23-6-32M-8 23Q6-4 30-29M-21-4Q-9-20 4-22" fill="none" stroke="#d6d89a" stroke-width="3" opacity=".9"/>
+<path d="M-28 13l20-22m17 35l21-26m-43-14l15-16" stroke="#4f7651" stroke-width="2" opacity=".65"/>
+</g><g transform="translate(845 330) scale(0.78)">
+<path d="M0 4L-4 92M0 30L-26 4M-1 41L26 13" stroke="#76533a" stroke-width="9" fill="none" stroke-linecap="round"/>
+<path d="M-38 12Q-55-18-32-39Q-12-68 11-43Q38-52 48-22Q68 7 38 23Q20 47-7 31Q-31 39-38 12Z" fill="#7da46c" stroke="#526f4c" stroke-width="3"/>
+<path d="M-33 5Q-24-23-6-32M-8 23Q6-4 30-29M-21-4Q-9-20 4-22" fill="none" stroke="#d6d89a" stroke-width="3" opacity=".9"/>
+<path d="M-28 13l20-22m17 35l21-26m-43-14l15-16" stroke="#4f7651" stroke-width="2" opacity=".65"/>
+</g>
+<circle cx="825" cy="105" r="48" fill="#e9bc63" opacity=".85" stroke="#9f7748" stroke-width="3"/>
+<path d="M825 30v-18m0 166v-18m74-55h18m-166 0h18m128-53l14-14m-119 119l14-14m91 0l14 14m-119-119l14 14" stroke="#b68d50" stroke-width="4"/>
+<path d="M200 470q80-30 160 0m330-5q65-25 130 0" stroke="#577d51" stroke-width="4" fill="none"/>
+
+<rect width="960" height="560" filter="url(#grain)" opacity=".11" pointer-events="none"/>
+<path d="M15 18Q470 5 944 17M18 542Q450 554 943 541" fill="none" stroke="#927d61" stroke-width="1" opacity=".22"/>
+</svg>

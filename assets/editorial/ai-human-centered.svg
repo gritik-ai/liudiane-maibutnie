@@ -1,1 +1,44 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" role="img" aria-labelledby="title desc"><title id="title">Людина в центрі технологічного майбутнього</title><desc id="desc">Технології мають бути підзвітними, безпечними й орієнтованими на людину.</desc><defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#dcebf0"/><stop offset="1" stop-color="#f7f5e9"/></linearGradient><pattern id="dots" width="34" height="34" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="1.5" fill="#286f7a" opacity=".15"/></pattern></defs><rect width="960" height="560" fill="url(#bg)"/><rect width="960" height="560" fill="url(#dots)"/><circle cx="820" cy="95" r="48" fill="#e9c66b" opacity=".45"/><path d="M0 390 Q210 340 400 385 T960 360" fill="none" stroke="#fff" stroke-width="4" opacity=".7"/><path d="M0 430 Q220 350 480 420 T960 400 V560 H0Z" fill="#a9d0d9"/><circle cx="480" cy="245" r="125" fill="#173e55"/><circle cx="480" cy="205" r="42" fill="#fff"/><path d="M390 350 Q405 255 480 255 Q555 255 570 350Z" fill="#fff"/><g stroke="#286f7a" stroke-width="7" fill="none"><path d="M480 90 L480 40 M350 130 L300 90 M610 130 L660 90 M330 300 L270 330 M630 300 L690 330"/></g><g fill="#e9c66b"><circle cx="480" cy="40" r="13"/><circle cx="300" cy="90" r="13"/><circle cx="660" cy="90" r="13"/><circle cx="270" cy="330" r="13"/><circle cx="690" cy="330" r="13"/></g><path d="M730 165 L785 185 L780 265 Q760 315 730 330 Q700 315 680 265 L675 185Z" fill="#286f7a" opacity=".9"/><path d="M705 245 L725 265 L760 220" stroke="#fff" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round"/><text x="42" y="510" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#173e55" opacity=".8">ЛЮДЯНЕ МАЙБУТНЄ</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" role="img" aria-labelledby="title desc">
+<title id="title">Людина в центрі технологічного майбутнього</title><desc id="desc">Дослідниця працює з інтелектуальною системою, уважно аналізуючи дані на великому екрані.</desc>
+<defs>
+  <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#dceaf0"/><stop offset="1" stop-color="#f5ead3"/></linearGradient>
+  <linearGradient id="paper" x2="0" y2="1"><stop stop-color="#fcf8ed"/><stop offset="1" stop-color="#f1e7d5"/></linearGradient>
+  <pattern id="papergrain" width="48" height="48" patternUnits="userSpaceOnUse">
+    <circle cx="4" cy="8" r="1" fill="#8e785c" opacity=".17"/><circle cx="29" cy="22" r=".8" fill="#8e785c" opacity=".16"/><circle cx="41" cy="5" r=".7" fill="#8e785c" opacity=".13"/><path d="M9 36l5-1m17 8l4-1m5-28l3 1" stroke="#a18a6b" stroke-width=".7" opacity=".16"/>
+  </pattern>
+  <pattern id="hatch" width="12" height="12" patternUnits="userSpaceOnUse"><path d="M-2 12L12-2M4 16L16 4" stroke="#765d48" stroke-width="1" opacity=".32"/></pattern>
+  <pattern id="bluehatch" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M0 10L10 0" stroke="#477b93" stroke-width="1" opacity=".27"/></pattern>
+  <pattern id="greenhatch" width="11" height="11" patternUnits="userSpaceOnUse"><path d="M0 11L11 0" stroke="#52764f" stroke-width="1" opacity=".3"/></pattern>
+  <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".62" numOctaves="2" seed="7"/><feColorMatrix values="0 0 0 0 .38 0 0 0 0 .31 0 0 0 0 .22 0 0 0 .12 0"/></filter>
+</defs>
+<rect width="960" height="560" fill="url(#paper)"/>
+<rect width="960" height="560" fill="url(#papergrain)"/>
+<path d="M0 0H960V350Q700 320 500 352T0 340Z" fill="url(#sky)"/>
+<path d="M0 40Q160 12 315 38T640 31T960 42" fill="none" stroke="#77a0b2" stroke-width="2" opacity=".35"/>
+<path d="M0 53l190-17m-110 31l210-28m-42 34l185-25m-80 43l220-31m-45 32l210-28m-80 43l270-38" fill="none" stroke="#6995ab" stroke-width="1.3" opacity=".28"/>
+
+<rect x="570" y="80" width="315" height="245" rx="10" fill="#425e70" stroke="#544b42" stroke-width="5"/>
+<rect x="589" y="99" width="277" height="208" fill="#b8d2d3" stroke="#e6e2cb" stroke-width="3"/>
+<g fill="none" stroke="#547f91" stroke-width="4"><path d="M650 205Q670 130 730 145Q786 155 798 205Q800 265 742 270Q680 268 650 205Z"/><path d="M690 148l-10-25m65 22l18-30m-74 118l-25 14m108-13l20 19m-60-114v-20m-7 70q18-30 37 0"/></g>
+<g fill="#d69e5e" stroke="#547280" stroke-width="2"><circle cx="681" cy="180" r="6"/><circle cx="745" cy="145" r="6"/><circle cx="798" cy="205" r="6"/><circle cx="742" cy="270" r="6"/><circle cx="650" cy="205" r="6"/></g>
+<path d="M695 326v48m80-48v48m-125 0h170" stroke="#554b42" stroke-width="7" fill="none"/>
+<path d="M80 420h800v115H80Z" fill="#b88d64" stroke="#5b4d40" stroke-width="4"/>
+<g transform="translate(250 390)">
+<circle cx="70" cy="-140" r="36" fill="#d9aa84" stroke="#51473e" stroke-width="4"/>
+<path d="M35-155q15-50 75-26l25 44-20-7-16-27-40 16Z" fill="#473e38" stroke="#473e38" stroke-width="4"/>
+<path d="M35-102q40-40 88-6l30 150H-10l6-95Z" fill="#5d8374" stroke="#51473e" stroke-width="4"/>
+<path d="M100-90l105 52 150-2" stroke="#d9aa84" stroke-width="22" fill="none" stroke-linecap="round"/>
+<path d="M205-38l45-17 35 12" stroke="#51473e" stroke-width="5" fill="none"/>
+<path d="M20 36l-12 82m82-82l17 82" stroke="#51473e" stroke-width="7" fill="none"/>
+</g>
+<g transform="translate(70 310) scale(0.63)">
+<path d="M0 4L-4 92M0 30L-26 4M-1 41L26 13" stroke="#76533a" stroke-width="9" fill="none" stroke-linecap="round"/>
+<path d="M-38 12Q-55-18-32-39Q-12-68 11-43Q38-52 48-22Q68 7 38 23Q20 47-7 31Q-31 39-38 12Z" fill="#7da46c" stroke="#526f4c" stroke-width="3"/>
+<path d="M-33 5Q-24-23-6-32M-8 23Q6-4 30-29M-21-4Q-9-20 4-22" fill="none" stroke="#d6d89a" stroke-width="3" opacity=".9"/>
+<path d="M-28 13l20-22m17 35l21-26m-43-14l15-16" stroke="#4f7651" stroke-width="2" opacity=".65"/>
+</g>
+<path d="M440 65q22-18 44 0m-22-22v44" stroke="#c89b62" stroke-width="3" fill="none"/>
+
+<rect width="960" height="560" filter="url(#grain)" opacity=".11" pointer-events="none"/>
+<path d="M15 18Q470 5 944 17M18 542Q450 554 943 541" fill="none" stroke="#927d61" stroke-width="1" opacity=".22"/>
+</svg>

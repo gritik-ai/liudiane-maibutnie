@@ -1,1 +1,42 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" role="img" aria-labelledby="title desc"><title id="title">Людина та штучний інтелект</title><desc id="desc">Людські цінності залишаються центром технологічного розвитку.</desc><defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#dcebf0"/><stop offset="1" stop-color="#f7f5e9"/></linearGradient><pattern id="dots" width="34" height="34" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="1.5" fill="#286f7a" opacity=".15"/></pattern></defs><rect width="960" height="560" fill="url(#bg)"/><rect width="960" height="560" fill="url(#dots)"/><circle cx="820" cy="95" r="48" fill="#e9c66b" opacity=".45"/><path d="M0 390 Q210 340 400 385 T960 360" fill="none" stroke="#fff" stroke-width="4" opacity=".7"/><g stroke="#286f7a" stroke-width="5" opacity=".65"><path d="M480 280 L250 160 M480 280 L710 155 M480 280 L270 430 M480 280 L710 430 M480 280 L480 80"/></g><g fill="#a9d0d9" opacity=".9"><circle cx="250" cy="160" r="85"/><circle cx="710" cy="155" r="85"/><circle cx="270" cy="430" r="85"/><circle cx="710" cy="430" r="85"/></g><circle cx="480" cy="280" r="125" fill="#173e55"/><circle cx="480" cy="280" r="95" fill="#286f7a"/><path d="M420 300 Q480 215 540 300 Q480 375 420 300Z" fill="#fff"/><circle cx="480" cy="280" r="24" fill="#e9c66b"/><path d="M480 175 V110 M420 210 L340 170 M540 210 L620 170" stroke="#fff" stroke-width="8" stroke-linecap="round"/><text x="42" y="510" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#173e55" opacity=".8">ЛЮДЯНЕ МАЙБУТНЄ</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" role="img" aria-labelledby="title desc">
+<title id="title">Людина досліджує штучний інтелект</title><desc id="desc">Дослідник працює за ноутбуком, розглядаючи образ нейронної мережі як інструмент людського пізнання.</desc>
+<defs>
+  <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#dceaf0"/><stop offset="1" stop-color="#f5ead3"/></linearGradient>
+  <linearGradient id="paper" x2="0" y2="1"><stop stop-color="#fcf8ed"/><stop offset="1" stop-color="#f1e7d5"/></linearGradient>
+  <pattern id="papergrain" width="48" height="48" patternUnits="userSpaceOnUse">
+    <circle cx="4" cy="8" r="1" fill="#8e785c" opacity=".17"/><circle cx="29" cy="22" r=".8" fill="#8e785c" opacity=".16"/><circle cx="41" cy="5" r=".7" fill="#8e785c" opacity=".13"/><path d="M9 36l5-1m17 8l4-1m5-28l3 1" stroke="#a18a6b" stroke-width=".7" opacity=".16"/>
+  </pattern>
+  <pattern id="hatch" width="12" height="12" patternUnits="userSpaceOnUse"><path d="M-2 12L12-2M4 16L16 4" stroke="#765d48" stroke-width="1" opacity=".32"/></pattern>
+  <pattern id="bluehatch" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M0 10L10 0" stroke="#477b93" stroke-width="1" opacity=".27"/></pattern>
+  <pattern id="greenhatch" width="11" height="11" patternUnits="userSpaceOnUse"><path d="M0 11L11 0" stroke="#52764f" stroke-width="1" opacity=".3"/></pattern>
+  <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".62" numOctaves="2" seed="7"/><feColorMatrix values="0 0 0 0 .38 0 0 0 0 .31 0 0 0 0 .22 0 0 0 .12 0"/></filter>
+</defs>
+<rect width="960" height="560" fill="url(#paper)"/>
+<rect width="960" height="560" fill="url(#papergrain)"/>
+<path d="M0 0H960V350Q700 320 500 352T0 340Z" fill="url(#sky)"/>
+<path d="M0 40Q160 12 315 38T640 31T960 42" fill="none" stroke="#77a0b2" stroke-width="2" opacity=".35"/>
+<path d="M0 53l190-17m-110 31l210-28m-42 34l185-25m-80 43l220-31m-45 32l210-28m-80 43l270-38" fill="none" stroke="#6995ab" stroke-width="1.3" opacity=".28"/>
+
+<path d="M0 395Q220 375 480 395T960 380V560H0Z" fill="#d8c8ad" stroke="#8c765c" stroke-width="3"/>
+<path d="M540 105Q640 40 775 100Q865 170 805 270Q725 350 600 285Q510 220 540 105Z" fill="#bdd4dc" opacity=".72" stroke="#5a8091" stroke-width="3"/>
+<g stroke="#5d8ca4" stroke-width="3" fill="none" opacity=".9">
+<path d="M590 155L650 100 715 150 770 108 810 178 750 250 680 235 620 280 590 155M650 100L680 235M715 150L620 280M770 108L750 250M590 155L715 150L810 178M620 280L750 250"/>
+</g>
+<g fill="#f2c46f" stroke="#597b8a" stroke-width="2"><circle cx="590" cy="155" r="9"/><circle cx="650" cy="100" r="9"/><circle cx="715" cy="150" r="10"/><circle cx="770" cy="108" r="9"/><circle cx="810" cy="178" r="9"/><circle cx="750" cy="250" r="9"/><circle cx="680" cy="235" r="9"/><circle cx="620" cy="280" r="9"/></g>
+<path d="M90 420h630l40 90H55Z" fill="#a77c58" stroke="#5e4f43" stroke-width="4"/>
+<path d="M250 420V310h185v110" fill="#637f87" stroke="#514b44" stroke-width="5"/>
+<rect x="266" y="326" width="153" height="78" fill="#a9c4c3" stroke="#554c42" stroke-width="3"/>
+<path d="M285 385l27-25 28 13 33-34 28 25" stroke="#587c91" stroke-width="4" fill="none"/>
+<path d="M335 405l-35 35h110l-30-35" fill="#b8b4a2" stroke="#554c42" stroke-width="3"/>
+<g transform="translate(135 400)">
+<circle cx="45" cy="-75" r="28" fill="#d6a27d" stroke="#54483e" stroke-width="4"/>
+<path d="M20-91q10-40 55-18l10 26-14-8-12-17-22 18Z" fill="#554337" stroke="#554337" stroke-width="3"/>
+<path d="M22-45q40-22 70 13l35 105H-12l5-72Z" fill="#58796f" stroke="#54483e" stroke-width="4"/>
+<path d="M65-32l70 45 100 10" stroke="#d6a27d" stroke-width="18" fill="none" stroke-linecap="round"/>
+<path d="M5 72h116" stroke="#54483e" stroke-width="6"/>
+</g>
+<path d="M80 505h70m100-5h60" stroke="#6e5947" stroke-width="3"/>
+
+<rect width="960" height="560" filter="url(#grain)" opacity=".11" pointer-events="none"/>
+<path d="M15 18Q470 5 944 17M18 542Q450 554 943 541" fill="none" stroke="#927d61" stroke-width="1" opacity=".22"/>
+</svg>

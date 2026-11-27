@@ -36,9 +36,29 @@
     .related{margin-top:20px}footer{padding:24px 0;color:var(--muted);font-size:12px}footer a{text-decoration:none}
     @media(max-width:600px){body{font-size:16px}main{padding:24px 0 48px}.summary{font-size:17px}}
   </style>
+  <link rel="stylesheet" href="/assets/site-header.css">
+  <script defer src="/assets/site-header.js"></script>
 </head>
 <body>
-  <header class="top"><div class="wrap"><a href="/">Людяне майбутнє</a></div></header>
+  <div class="site-topline"><div class="site-shell"><span>ІДЕЇ ДЛЯ ЛЮДЯНОГО МАЙБУТНЬОГО</span><span>Технології мають служити людям — кожній людині</span></div></div>
+<header class="site-header">
+  <div class="site-shell site-nav">
+    <a class="site-brand" href="/" aria-label="Людяне майбутнє — на головну"><span class="site-brandmark">✧</span><span>Людяне майбутнє<small>ШІ для добробуту кожного</small></span></a>
+    <button class="site-menu-toggle" id="siteMenuToggle" type="button" aria-label="Відкрити меню" aria-expanded="false" aria-controls="siteNavLinks">☰</button>
+    <nav class="site-navlinks" id="siteNavLinks" aria-label="Основна навігація">
+      <a href="/#principles">Принципи</a>
+      <a href="/#opportunities">Можливості</a>
+      <a href="/topics/">Напрямки</a>
+      <a href="/articles/">Усі статті</a>
+      <a href="/#ideas">Останні матеріали</a>
+      <a href="/action-lab.html">Компас дій</a>
+      <a href="/analytics.html">Аналітика</a>
+      <a href="/#manifesto">Маніфест</a>
+      <a href="/#sources">Джерела</a>
+    </nav>
+    <div class="site-nav-actions"><span class="site-rss-badge">✦ RSS оновлюється автоматично</span></div>
+  </div>
+</header>
   <main class="wrap">
     <nav class="crumbs" aria-label="Навігація"><a href="/">Головна</a> / <a href="/#ideas">Бібліотека матеріалів</a> / LLM Genetic Feature Engineering</nav>
     <article>

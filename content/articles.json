@@ -1,95 +1,5 @@
 [
   {
-    "id": "rss-2026-11-27-4da47b53c4a9",
-    "date": "2026-11-27",
-    "autoPublished": true,
-    "sourceType": "rss",
-    "feedName": "arXiv — Штучний інтелект",
-    "feedId": "arxiv-ai",
-    "sourceDomain": "arxiv.org",
-    "filterVersion": "2.7",
-    "editorialStatus": "approved",
-    "editorialDecisionSource": "automatic",
-    "editorialLabel": "Перспективний розвиток",
-    "feedKind": "ai_topic",
-    "sourceDescription": "arXiv:2611.34539v1 Announce Type: cross Abstract: Objectives: Patient portal messages provide invaluable information about communication dynamics between patients and healthcare providers, but extracting it manually is labor-intensive. We developed and evaluated EPPC-CARE, an automated framework for identifying communication behaviors together with the supporting text for each classification. Materials and Methods: From 867 messages, we obtained 5,516 reference standard annotations. Each annotation is a triplet of communication-related text (span), a broader communication category (Code), and a specific subcategory (Sub-code). We evaluated EPPC-CARE's identified triplets across six open-weight large language models (LLMs) against supervised fine-tuning and communication-based models such as EPPC-OASIS. We also compared EPPC-CARE with human expert annotations on 100 messages. Results: EPPC-CARE improved performance over EPPC-OASIS across all six models. EPPC-CARE's Triplet F1 improved by 2.90 percentage points on average, with a best score of 64.4%. On the human expert evaluation subset, EPPC-CARE and the human expert showed comparable agreement with the reference standard, with differences favoring EPPC-CARE. Discussion: These findings suggest that identifying triplet components (span, code, subcode) sequentially can improve performance across model families while preserving the supporting text behind each identification. EPPC-CARE links the communication code and subcode with the source text (span), supporting human verification of automated annotations in clinical informatics. EPPC-CARE may therefore make larger-scale studies of patient-provider communication more feasible and provide a foundation for human-in-the-loop annotation workflows. Conclusion: EPPC-CARE offers a more reliable and reviewable approach for automated characterization of communication behaviors in secure patient-provider messaging.",
-    "selectionReason": "напрям: Медицина; ознаки користі: evaluation, evaluate, workflow",
-    "evidenceLevel": "дослідження або оцінювання потенційного застосування",
-    "category": "Медицина",
-    "title": "EPPC-CARE: Staged Hierarchical Annotation of Communication Behaviors in Secure Patient-Provider Messages",
-    "summary": "arXiv:2611.34539v1 Announce Type: cross Abstract: Objectives: Patient portal messages provide invaluable information about communication dynamics between patients and healthcare providers, but extracting it manually is labor-intensive. We developed and evaluated EPPC-CARE, an automated framework for identifying communication behaviors together with the…",
-    "body": "Матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.34539v1 Announce Type: cross Abstract: Objectives: Patient portal messages provide invaluable information about communication dynamics between patients and healthcare providers, but extracting it manually is labor-intensive. We developed and evaluated EPPC-CARE, an automated framework for identifying communication behaviors together with the supporting text for each classification. Materials and Methods: From 867 messages, we obtained 5,516 reference standard annotations. Each annotation is a triplet of communication-related text (span), a broader communication category (Code), and a specific subcategory (Sub-code). We evaluated EPPC-CARE's identified triplets across six open-weight large language models (LLMs) against supervised fine-tuning and communication-based models such as EPPC-OASIS. We also compared EPPC-CARE with human expert annotations on 100 messages. Results: EPPC-CARE improved performance over EPPC-OASIS across all six models. EPPC-CARE's Triplet F1 improved by 2.90 percentage points on average, with a best score of 64.4%. On the human expert evaluation subset, EPPC-CARE and the human expert showed comparable agreement with the reference standard, with differences favoring EPPC-CARE. Discussion: These findings suggest that identifying triplet components (span, code, subcode) sequentially can improve performance across model families while preserving the supporting text behind each identification. EPPC-CARE links the communication code and subcode with the source text (span), supporting human verification of automated annotations in clinical informatics. EPPC-CARE may therefore make larger-scale studies of patient-provider communication more feasible and provide a foundation for human-in-the-loop annotation workflows. Conclusion: EPPC-CARE offers a more reliable and reviewable approach for automated characterization of communication behaviors in secure patient-provider messaging.\n\nРедакційна класифікація: напрям: Медицина; ознаки користі: evaluation, evaluate, workflow. Рівень свідчень: дослідження або оцінювання потенційного застосування. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте статус публікації в першоджерелі.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
-    "sourceDate": "2026-11-27",
-    "sources": [
-      {
-        "title": "EPPC-CARE: Staged Hierarchical Annotation of Communication Behaviors in Secure Patient-Provider Messages",
-        "publisher": "arXiv",
-        "url": "https://arxiv.org/abs/2611.34539",
-        "publishedDate": "2026-11-27"
-      }
-    ]
-  },
-  {
-    "id": "rss-2026-11-27-68dec01f1ef3",
-    "date": "2026-11-27",
-    "autoPublished": true,
-    "sourceType": "rss",
-    "feedName": "arXiv — Штучний інтелект",
-    "feedId": "arxiv-ai",
-    "sourceDomain": "arxiv.org",
-    "filterVersion": "2.7",
-    "editorialStatus": "approved",
-    "editorialDecisionSource": "automatic",
-    "editorialLabel": "Перспективний розвиток",
-    "feedKind": "ai_topic",
-    "sourceDescription": "arXiv:2611.34575v1 Announce Type: cross Abstract: Establishing effective scaling laws for medical multimodal large language models (MLLMs) remains a persistent and fundamental challenge. Our systematic evaluation shows that existing medical MLLMs tend to underperform frontier general-purpose MLLMs across a range of medical tasks, while scaling model size primarily improves text capabilities rather than multimodal perception, and enabling reasoning modes fails to close this visual gap. To investigate how medical multimodal intelligence scales in practice, we introduce Sage-Med-Preview, a 35B-parameter medical multimodal model with 3B activated parameters, built by combining stage-specific curation over 322.7 million candidate records with a progressive training curriculum spanning medical pretraining, staged supervised fine-tuning, and adaptive reinforcement learning. Across this curriculum, progressive supervised refinement and adaptive reinforcement learning yield consistent stage-wise gains, substantially advancing both specialized visual understanding and medical language capabilities. Evaluated against 77 competing models across 238 clinical tasks spanning 61 public and 13 private multi-center benchmarks in more than 40 modalities, Sage-Med-Preview achieves an average score of 58.26% on the 31 public multimodal benchmarks. It outperforms the state-of-the-art open-source medical model Hulu-Med-235B-A22B at 50.99% and the general scientific model Intern-S2-Preview at 52.24%, and approaches the advanced proprietary model GPT-6.2-Sol across multiple tasks such as comprehensive multimodal understanding, report generation, and visual grounding. Although substantial challenges remain in complex medical reasoning and multi-step clinical workflows, this report provides empirical evidence, actionable data and training recipes, and a rigorous benchmark toward scalable clinical multimodal intelligence.",
-    "selectionReason": "напрям: Медицина; ознаки користі: benchmark, benchmarks, evaluation",
-    "evidenceLevel": "дослідження або оцінювання потенційного застосування",
-    "category": "Медицина",
-    "title": "Sage-Med: Scaling Medical Multimodal Intelligence",
-    "summary": "arXiv:2611.34575v1 Announce Type: cross Abstract: Establishing effective scaling laws for medical multimodal large language models (MLLMs) remains a persistent and fundamental challenge. Our systematic evaluation shows that existing medical MLLMs tend to underperform frontier general-purpose MLLMs across a range of medical tasks, while scaling model size…",
-    "body": "Матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.34575v1 Announce Type: cross Abstract: Establishing effective scaling laws for medical multimodal large language models (MLLMs) remains a persistent and fundamental challenge. Our systematic evaluation shows that existing medical MLLMs tend to underperform frontier general-purpose MLLMs across a range of medical tasks, while scaling model size primarily improves text capabilities rather than multimodal perception, and enabling reasoning modes fails to close this visual gap. To investigate how medical multimodal intelligence scales in practice, we introduce Sage-Med-Preview, a 35B-parameter medical multimodal model with 3B activated parameters, built by combining stage-specific curation over 322.7 million candidate records with a progressive training curriculum spanning medical pretraining, staged supervised fine-tuning, and adaptive reinforcement learning. Across this curriculum, progressive supervised refinement and adaptive reinforcement learning yield consistent stage-wise gains, substantially advancing both specialized visual understanding and medical language capabilities. Evaluated against 77 competing models across 238 clinical tasks spanning 61 public and 13 private multi-center benchmarks in more than 40 modalities, Sage-Med-Preview achieves an average score of 58.26% on the 31 public multimodal benchmarks. It outperforms the state-of-the-art open-source medical model Hulu-Med-235B-A22B at 50.99% and the general scientific model Intern-S2-Preview at 52.24%, and approaches the advanced proprietary model GPT-6.2-Sol across multiple tasks such as comprehensive multimodal understanding, report generation, and visual grounding. Although substantial challenges remain in complex medical reasoning and multi-step clinical workflows, this report provides empirical evidence, actionable data and training recipes, and a rigorous benchmark toward scalable clinical multimodal intelligence.\n\nРедакційна класифікація: напрям: Медицина; ознаки користі: benchmark, benchmarks, evaluation. Рівень свідчень: дослідження або оцінювання потенційного застосування. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте статус публікації в першоджерелі.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
-    "sourceDate": "2026-11-27",
-    "sources": [
-      {
-        "title": "Sage-Med: Scaling Medical Multimodal Intelligence",
-        "publisher": "arXiv",
-        "url": "https://arxiv.org/abs/2611.34575",
-        "publishedDate": "2026-11-27"
-      }
-    ]
-  },
-  {
-    "id": "rss-2026-11-27-531a165974fb",
-    "date": "2026-11-27",
-    "autoPublished": true,
-    "sourceType": "rss",
-    "feedName": "arXiv — Штучний інтелект",
-    "feedId": "arxiv-ai",
-    "sourceDomain": "arxiv.org",
-    "filterVersion": "2.7",
-    "editorialStatus": "approved",
-    "editorialDecisionSource": "automatic",
-    "editorialLabel": "Позитивний вплив",
-    "feedKind": "ai_topic",
-    "sourceDescription": "arXiv:2611.34831v1 Announce Type: cross Abstract: Knowledge distillation enables the deployment of large language models through smaller student models, but the compression process can introduce regressions in trustworthiness even when downstream performance is preserved. Repairing such failures is challenging because the original distillation corpus is often unavailable, while direct preference optimization may alter capabilities inherited from the teacher. We propose a targeted repair framework based on the proximal Bregman response function (PBRF) that addresses both limitations. We estimate the curvature required for PBRF using a surrogate proxy dataset, removing dependence on the original transfer corpus, and extend the framework to preference-based supervision through an odds-ratio objective. This enables the use of preferred and dispreferred response pairs while constraining changes to the distilled model. Our results show that the proposed approach improves targeted trustworthiness behaviors for both pre-training and post-training models while largely preserving downstream performance, providing a practical alternative to re-distillation or unconstrained preference optimization. Our experiment results show that across different distilled models, the trustworthy regression can be improved by up to 8% with less than 1% decrement in perplexity.",
-    "selectionReason": "напрям: Освіта; ознаки користі: deployment, dataset, improve",
-    "evidenceLevel": "практичне застосування або конкретний приклад",
-    "category": "Освіта",
-    "title": "Repairing the Trustworthiness of Distilled Language Models",
-    "summary": "arXiv:2611.34831v1 Announce Type: cross Abstract: Knowledge distillation enables the deployment of large language models through smaller student models, but the compression process can introduce regressions in trustworthiness even when downstream performance is preserved. Repairing such failures is challenging because the original distillation corpus is…",
-    "body": "Матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.34831v1 Announce Type: cross Abstract: Knowledge distillation enables the deployment of large language models through smaller student models, but the compression process can introduce regressions in trustworthiness even when downstream performance is preserved. Repairing such failures is challenging because the original distillation corpus is often unavailable, while direct preference optimization may alter capabilities inherited from the teacher. We propose a targeted repair framework based on the proximal Bregman response function (PBRF) that addresses both limitations. We estimate the curvature required for PBRF using a surrogate proxy dataset, removing dependence on the original transfer corpus, and extend the framework to preference-based supervision through an odds-ratio objective. This enables the use of preferred and dispreferred response pairs while constraining changes to the distilled model. Our results show that the proposed approach improves targeted trustworthiness behaviors for both pre-training and post-training models while largely preserving downstream performance, providing a practical alternative to re-distillation or unconstrained preference optimization. Our experiment results show that across different distilled models, the trustworthy regression can be improved by up to 8% with less than 1% decrement in perplexity.\n\nРедакційна класифікація: напрям: Освіта; ознаки користі: deployment, dataset, improve. Рівень свідчень: практичне застосування або конкретний приклад. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте статус публікації в першоджерелі.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
-    "sourceDate": "2026-11-27",
-    "sources": [
-      {
-        "title": "Repairing the Trustworthiness of Distilled Language Models",
-        "publisher": "arXiv",
-        "url": "https://arxiv.org/abs/2611.34831",
-        "publishedDate": "2026-11-27"
-      }
-    ]
-  },
-  {
     "id": "editorial-ukraine-rebuild-20261126",
     "date": "2026-11-26",
     "autoPublished": false,
@@ -274,6 +184,96 @@
         "title": "2026 Report: Executive Summary",
         "publisher": "International AI Safety Report",
         "url": "https://internationalaisafetyreport.org/publication/2026-report-executive-summary"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-27-4da47b53c4a9",
+    "date": "2026-11-27",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "arXiv — Штучний інтелект",
+    "feedId": "arxiv-ai",
+    "sourceDomain": "arxiv.org",
+    "filterVersion": "2.7",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Перспективний розвиток",
+    "feedKind": "ai_topic",
+    "sourceDescription": "arXiv:2611.34539v1 Announce Type: cross Abstract: Objectives: Patient portal messages provide invaluable information about communication dynamics between patients and healthcare providers, but extracting it manually is labor-intensive. We developed and evaluated EPPC-CARE, an automated framework for identifying communication behaviors together with the supporting text for each classification. Materials and Methods: From 867 messages, we obtained 5,516 reference standard annotations. Each annotation is a triplet of communication-related text (span), a broader communication category (Code), and a specific subcategory (Sub-code). We evaluated EPPC-CARE's identified triplets across six open-weight large language models (LLMs) against supervised fine-tuning and communication-based models such as EPPC-OASIS. We also compared EPPC-CARE with human expert annotations on 100 messages. Results: EPPC-CARE improved performance over EPPC-OASIS across all six models. EPPC-CARE's Triplet F1 improved by 2.90 percentage points on average, with a best score of 64.4%. On the human expert evaluation subset, EPPC-CARE and the human expert showed comparable agreement with the reference standard, with differences favoring EPPC-CARE. Discussion: These findings suggest that identifying triplet components (span, code, subcode) sequentially can improve performance across model families while preserving the supporting text behind each identification. EPPC-CARE links the communication code and subcode with the source text (span), supporting human verification of automated annotations in clinical informatics. EPPC-CARE may therefore make larger-scale studies of patient-provider communication more feasible and provide a foundation for human-in-the-loop annotation workflows. Conclusion: EPPC-CARE offers a more reliable and reviewable approach for automated characterization of communication behaviors in secure patient-provider messaging.",
+    "selectionReason": "напрям: Медицина; ознаки користі: evaluation, evaluate, workflow",
+    "evidenceLevel": "дослідження або оцінювання потенційного застосування",
+    "category": "Медицина",
+    "title": "EPPC-CARE: Staged Hierarchical Annotation of Communication Behaviors in Secure Patient-Provider Messages",
+    "summary": "arXiv:2611.34539v1 Announce Type: cross Abstract: Objectives: Patient portal messages provide invaluable information about communication dynamics between patients and healthcare providers, but extracting it manually is labor-intensive. We developed and evaluated EPPC-CARE, an automated framework for identifying communication behaviors together with the…",
+    "body": "Матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.34539v1 Announce Type: cross Abstract: Objectives: Patient portal messages provide invaluable information about communication dynamics between patients and healthcare providers, but extracting it manually is labor-intensive. We developed and evaluated EPPC-CARE, an automated framework for identifying communication behaviors together with the supporting text for each classification. Materials and Methods: From 867 messages, we obtained 5,516 reference standard annotations. Each annotation is a triplet of communication-related text (span), a broader communication category (Code), and a specific subcategory (Sub-code). We evaluated EPPC-CARE's identified triplets across six open-weight large language models (LLMs) against supervised fine-tuning and communication-based models such as EPPC-OASIS. We also compared EPPC-CARE with human expert annotations on 100 messages. Results: EPPC-CARE improved performance over EPPC-OASIS across all six models. EPPC-CARE's Triplet F1 improved by 2.90 percentage points on average, with a best score of 64.4%. On the human expert evaluation subset, EPPC-CARE and the human expert showed comparable agreement with the reference standard, with differences favoring EPPC-CARE. Discussion: These findings suggest that identifying triplet components (span, code, subcode) sequentially can improve performance across model families while preserving the supporting text behind each identification. EPPC-CARE links the communication code and subcode with the source text (span), supporting human verification of automated annotations in clinical informatics. EPPC-CARE may therefore make larger-scale studies of patient-provider communication more feasible and provide a foundation for human-in-the-loop annotation workflows. Conclusion: EPPC-CARE offers a more reliable and reviewable approach for automated characterization of communication behaviors in secure patient-provider messaging.\n\nРедакційна класифікація: напрям: Медицина; ознаки користі: evaluation, evaluate, workflow. Рівень свідчень: дослідження або оцінювання потенційного застосування. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте статус публікації в першоджерелі.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-27",
+    "sources": [
+      {
+        "title": "EPPC-CARE: Staged Hierarchical Annotation of Communication Behaviors in Secure Patient-Provider Messages",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2611.34539",
+        "publishedDate": "2026-11-27"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-27-68dec01f1ef3",
+    "date": "2026-11-27",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "arXiv — Штучний інтелект",
+    "feedId": "arxiv-ai",
+    "sourceDomain": "arxiv.org",
+    "filterVersion": "2.7",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Перспективний розвиток",
+    "feedKind": "ai_topic",
+    "sourceDescription": "arXiv:2611.34575v1 Announce Type: cross Abstract: Establishing effective scaling laws for medical multimodal large language models (MLLMs) remains a persistent and fundamental challenge. Our systematic evaluation shows that existing medical MLLMs tend to underperform frontier general-purpose MLLMs across a range of medical tasks, while scaling model size primarily improves text capabilities rather than multimodal perception, and enabling reasoning modes fails to close this visual gap. To investigate how medical multimodal intelligence scales in practice, we introduce Sage-Med-Preview, a 35B-parameter medical multimodal model with 3B activated parameters, built by combining stage-specific curation over 322.7 million candidate records with a progressive training curriculum spanning medical pretraining, staged supervised fine-tuning, and adaptive reinforcement learning. Across this curriculum, progressive supervised refinement and adaptive reinforcement learning yield consistent stage-wise gains, substantially advancing both specialized visual understanding and medical language capabilities. Evaluated against 77 competing models across 238 clinical tasks spanning 61 public and 13 private multi-center benchmarks in more than 40 modalities, Sage-Med-Preview achieves an average score of 58.26% on the 31 public multimodal benchmarks. It outperforms the state-of-the-art open-source medical model Hulu-Med-235B-A22B at 50.99% and the general scientific model Intern-S2-Preview at 52.24%, and approaches the advanced proprietary model GPT-6.2-Sol across multiple tasks such as comprehensive multimodal understanding, report generation, and visual grounding. Although substantial challenges remain in complex medical reasoning and multi-step clinical workflows, this report provides empirical evidence, actionable data and training recipes, and a rigorous benchmark toward scalable clinical multimodal intelligence.",
+    "selectionReason": "напрям: Медицина; ознаки користі: benchmark, benchmarks, evaluation",
+    "evidenceLevel": "дослідження або оцінювання потенційного застосування",
+    "category": "Медицина",
+    "title": "Sage-Med: Scaling Medical Multimodal Intelligence",
+    "summary": "arXiv:2611.34575v1 Announce Type: cross Abstract: Establishing effective scaling laws for medical multimodal large language models (MLLMs) remains a persistent and fundamental challenge. Our systematic evaluation shows that existing medical MLLMs tend to underperform frontier general-purpose MLLMs across a range of medical tasks, while scaling model size…",
+    "body": "Матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.34575v1 Announce Type: cross Abstract: Establishing effective scaling laws for medical multimodal large language models (MLLMs) remains a persistent and fundamental challenge. Our systematic evaluation shows that existing medical MLLMs tend to underperform frontier general-purpose MLLMs across a range of medical tasks, while scaling model size primarily improves text capabilities rather than multimodal perception, and enabling reasoning modes fails to close this visual gap. To investigate how medical multimodal intelligence scales in practice, we introduce Sage-Med-Preview, a 35B-parameter medical multimodal model with 3B activated parameters, built by combining stage-specific curation over 322.7 million candidate records with a progressive training curriculum spanning medical pretraining, staged supervised fine-tuning, and adaptive reinforcement learning. Across this curriculum, progressive supervised refinement and adaptive reinforcement learning yield consistent stage-wise gains, substantially advancing both specialized visual understanding and medical language capabilities. Evaluated against 77 competing models across 238 clinical tasks spanning 61 public and 13 private multi-center benchmarks in more than 40 modalities, Sage-Med-Preview achieves an average score of 58.26% on the 31 public multimodal benchmarks. It outperforms the state-of-the-art open-source medical model Hulu-Med-235B-A22B at 50.99% and the general scientific model Intern-S2-Preview at 52.24%, and approaches the advanced proprietary model GPT-6.2-Sol across multiple tasks such as comprehensive multimodal understanding, report generation, and visual grounding. Although substantial challenges remain in complex medical reasoning and multi-step clinical workflows, this report provides empirical evidence, actionable data and training recipes, and a rigorous benchmark toward scalable clinical multimodal intelligence.\n\nРедакційна класифікація: напрям: Медицина; ознаки користі: benchmark, benchmarks, evaluation. Рівень свідчень: дослідження або оцінювання потенційного застосування. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте статус публікації в першоджерелі.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-27",
+    "sources": [
+      {
+        "title": "Sage-Med: Scaling Medical Multimodal Intelligence",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2611.34575",
+        "publishedDate": "2026-11-27"
+      }
+    ]
+  },
+  {
+    "id": "rss-2026-11-27-531a165974fb",
+    "date": "2026-11-27",
+    "autoPublished": true,
+    "sourceType": "rss",
+    "feedName": "arXiv — Штучний інтелект",
+    "feedId": "arxiv-ai",
+    "sourceDomain": "arxiv.org",
+    "filterVersion": "2.7",
+    "editorialStatus": "approved",
+    "editorialDecisionSource": "automatic",
+    "editorialLabel": "Позитивний вплив",
+    "feedKind": "ai_topic",
+    "sourceDescription": "arXiv:2611.34831v1 Announce Type: cross Abstract: Knowledge distillation enables the deployment of large language models through smaller student models, but the compression process can introduce regressions in trustworthiness even when downstream performance is preserved. Repairing such failures is challenging because the original distillation corpus is often unavailable, while direct preference optimization may alter capabilities inherited from the teacher. We propose a targeted repair framework based on the proximal Bregman response function (PBRF) that addresses both limitations. We estimate the curvature required for PBRF using a surrogate proxy dataset, removing dependence on the original transfer corpus, and extend the framework to preference-based supervision through an odds-ratio objective. This enables the use of preferred and dispreferred response pairs while constraining changes to the distilled model. Our results show that the proposed approach improves targeted trustworthiness behaviors for both pre-training and post-training models while largely preserving downstream performance, providing a practical alternative to re-distillation or unconstrained preference optimization. Our experiment results show that across different distilled models, the trustworthy regression can be improved by up to 8% with less than 1% decrement in perplexity.",
+    "selectionReason": "напрям: Освіта; ознаки користі: deployment, dataset, improve",
+    "evidenceLevel": "практичне застосування або конкретний приклад",
+    "category": "Освіта",
+    "title": "Repairing the Trustworthiness of Distilled Language Models",
+    "summary": "arXiv:2611.34831v1 Announce Type: cross Abstract: Knowledge distillation enables the deployment of large language models through smaller student models, but the compression process can introduce regressions in trustworthiness even when downstream performance is preserved. Repairing such failures is challenging because the original distillation corpus is…",
+    "body": "Матеріал автоматично відібрано зі стрічки arXiv. Заголовок, дата та опис отримані з RSS-каналу видавця.\n\nКороткий опис від першоджерела:\narXiv:2611.34831v1 Announce Type: cross Abstract: Knowledge distillation enables the deployment of large language models through smaller student models, but the compression process can introduce regressions in trustworthiness even when downstream performance is preserved. Repairing such failures is challenging because the original distillation corpus is often unavailable, while direct preference optimization may alter capabilities inherited from the teacher. We propose a targeted repair framework based on the proximal Bregman response function (PBRF) that addresses both limitations. We estimate the curvature required for PBRF using a surrogate proxy dataset, removing dependence on the original transfer corpus, and extend the framework to preference-based supervision through an odds-ratio objective. This enables the use of preferred and dispreferred response pairs while constraining changes to the distilled model. Our results show that the proposed approach improves targeted trustworthiness behaviors for both pre-training and post-training models while largely preserving downstream performance, providing a practical alternative to re-distillation or unconstrained preference optimization. Our experiment results show that across different distilled models, the trustworthy regression can be improved by up to 8% with less than 1% decrement in perplexity.\n\nРедакційна класифікація: напрям: Освіта; ознаки користі: deployment, dataset, improve. Рівень свідчень: практичне застосування або конкретний приклад. Це автоматичний тематичний відбір за правилами, а не підтвердження ефективності чи незалежна експертна оцінка. Прочитайте оригінальну публікацію перед висновками.\n\nНауковий статус: arXiv є репозитарієм препринтів. Розміщення роботи там саме по собі не означає, що вона пройшла незалежне рецензування. Перевіряйте статус публікації в першоджерелі.\n\nРедакційне застереження: система перевіряє RSS-метадані, дату, домен посилання та тематичні сигнали. Вона не підтверджує методологію дослідження й не замінює людську редакційну перевірку.",
+    "sourceDate": "2026-11-27",
+    "sources": [
+      {
+        "title": "Repairing the Trustworthiness of Distilled Language Models",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2611.34831",
+        "publishedDate": "2026-11-27"
       }
     ]
   },
@@ -3709,10 +3709,9 @@
         "publishedDate": "2026-11-20"
       }
     ],
-    "editorialStatus": "needs_review",
+    "editorialStatus": "approved",
     "feedId": "arxiv-ai",
-    "sourceDomain": "arxiv.org",
-    "editorialReviewReason": "немає чіткого зв'язку зі штучним інтелектом для спеціалізованої AI-стрічки"
+    "sourceDomain": "arxiv.org"
   },
   {
     "id": "rss-2026-11-20-de635db4eaf1",
@@ -4088,7 +4087,7 @@
     "filterVersion": "2.7",
     "feedKind": "ai_topic",
     "sourceDescription": "arXiv:2611.23700v3 Announce Type: replace Abstract: Emergency care requires auditable decisions, but a language-model agent just outputs text. We introduce Decision2Care, a decision agent that generates a probability for every option at each step. It diagnosed 546 emergency admissions across 12 diseases with 86.5% accuracy in a median of 2.2 s; language-model agents reached 86.1 to 91.7% but took more than 90 s. Its drug orders were judged guideline-adherent more often than documented first-day care and with about half as many records, it predicted death as well as three ICU clinicians. In the four cases where it was confident but wrong, we traced each decision to one imaging report. Our study suggests that an agent's work-up can be reviewed like a clinician's, motivating prospective trials.",
-    "selectionReason": "напрям: Медицина; ознаки користі: diagnostic accuracy, treatment, evaluate",
+    "selectionReason": "напрям: Медицина; ознаки користі: support, predict, audit",
     "category": "Медицина",
     "title": "Auditable Clinical Support with Decision Agents",
     "summary": "arXiv:2611.23700v1 Announce Type: new Abstract: Clinicians reviewing a diagnostic work-up will ask what was considered at each step and why the assessment changed. Agents powered by free text can reach physician-level diagnostic accuracy, but their written reasoning does not always reflect the factors that went into the…",
@@ -4103,10 +4102,9 @@
       }
     ],
     "evidenceLevel": "практичне застосування або конкретний приклад",
-    "editorialStatus": "needs_review",
+    "editorialStatus": "approved",
     "feedId": "arxiv-ai",
-    "sourceDomain": "arxiv.org",
-    "editorialReviewReason": "немає чіткого зв'язку зі штучним інтелектом для спеціалізованої AI-стрічки"
+    "sourceDomain": "arxiv.org"
   },
   {
     "id": "rss-2026-11-20-192083ef8ccf",

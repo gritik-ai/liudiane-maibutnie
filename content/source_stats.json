@@ -1,18 +1,18 @@
 {
   "schemaVersion": 1,
   "filterVersion": "2.7",
-  "generatedAt": "2026-11-27T20:33:58.167194+00:00",
+  "generatedAt": "2026-11-28T07:40:35.214589+00:00",
   "totals": {
-    "successfulFeeds": 24,
+    "successfulFeeds": 23,
     "totalFeeds": 27,
-    "itemsFetched": 1649,
-    "acceptedCandidates": 12,
-    "added": 3,
-    "rejected": 707,
-    "duplicates": 76,
-    "tooOld": 554,
+    "itemsFetched": 1221,
+    "acceptedCandidates": 0,
+    "added": 0,
+    "rejected": 306,
+    "duplicates": 59,
+    "tooOld": 556,
     "shortDescriptions": 40,
-    "deferredByDiversityCap": 9
+    "deferredByDiversityCap": 0
   },
   "feedRuns": [
     {
@@ -25,13 +25,13 @@
       "itemsFetched": 50,
       "acceptedCandidates": 0,
       "added": 0,
-      "rejected": 50,
+      "rejected": 48,
       "duplicates": 0,
-      "tooOld": 0,
+      "tooOld": 2,
       "shortDescriptions": 0,
       "deferredByDiversityCap": 0,
       "rejectionReasons": {
-        "немає чіткого зв'язку зі штучним інтелектом для спеціалізованої AI-стрічки": 46,
+        "немає чіткого зв'язку зі штучним інтелектом для спеціалізованої AI-стрічки": 44,
         "не виявлено достатньо чіткого напряму користі для людей": 2,
         "визначено напрям «Медицина», але немає достатніх ознак застосування, оцінювання або суспільної користі": 1,
         "відсів: військове застосування або озброєння": 1
@@ -132,29 +132,15 @@
       "domain": "arxiv.org",
       "url": "https://export.arxiv.org/rss/cs.AI",
       "status": "ok",
-      "itemsFetched": 398,
-      "acceptedCandidates": 12,
-      "added": 3,
-      "rejected": 372,
-      "duplicates": 14,
+      "itemsFetched": 0,
+      "acceptedCandidates": 0,
+      "added": 0,
+      "rejected": 0,
+      "duplicates": 0,
       "tooOld": 0,
       "shortDescriptions": 0,
-      "deferredByDiversityCap": 9,
-      "rejectionReasons": {
-        "немає чіткого зв'язку зі штучним інтелектом для спеціалізованої AI-стрічки": 188,
-        "не виявлено достатньо чіткого напряму користі для людей": 146,
-        "недостатньо чіткий зв'язок із напрямом «Медицина»": 17,
-        "недостатньо чіткий зв'язок із напрямом «Надійність ШІ»": 8,
-        "недостатньо чіткий зв'язок із напрямом «Державне управління»": 1,
-        "відсів: військове застосування або озброєння": 3,
-        "неоднозначна тематика: Медицина / Права людини; потрібна редакційна перевірка": 2,
-        "недостатньо чіткий зв'язок із напрямом «Освіта»": 2,
-        "відсів: відомі військові набори розпізнавання цілей": 1,
-        "неоднозначна тематика: Права людини / Надійність ШІ; потрібна редакційна перевірка": 1,
-        "визначено напрям «Економіка та добробут», але немає достатніх ознак застосування, оцінювання або суспільної користі": 1,
-        "неоднозначна тематика: Медицина / Надійність ШІ; потрібна редакційна перевірка": 1,
-        "недостатньо чіткий зв'язок із напрямом «Мир і безпека»": 1
-      },
+      "deferredByDiversityCap": 0,
+      "rejectionReasons": {},
       "error": ""
     },
     {
@@ -227,8 +213,8 @@
       "shortDescriptions": 0,
       "deferredByDiversityCap": 0,
       "rejectionReasons": {
-        "не виявлено достатньо чіткого напряму користі для людей": 8,
-        "визначено напрям «Освіта», але немає достатніх ознак застосування, оцінювання або суспільної користі": 2
+        "визначено напрям «Освіта», але немає достатніх ознак застосування, оцінювання або суспільної користі": 3,
+        "не виявлено достатньо чіткого напряму користі для людей": 7
       },
       "error": ""
     },
@@ -281,31 +267,6 @@
       "publisher": "United Nations News",
       "domain": "un.org",
       "url": "https://news.un.org/feed/subscribe/en/news/topic/health/feed/rss.xml",
-      "status": "ok",
-      "itemsFetched": 30,
-      "acceptedCandidates": 0,
-      "added": 0,
-      "rejected": 28,
-      "duplicates": 2,
-      "tooOld": 0,
-      "shortDescriptions": 0,
-      "deferredByDiversityCap": 0,
-      "rejectionReasons": {
-        "неоднозначна тематика: Медицина / Права людини; потрібна редакційна перевірка": 1,
-        "визначено напрям «Медицина», але немає достатніх ознак застосування, оцінювання або суспільної користі": 11,
-        "не виявлено достатньо чіткого напряму користі для людей": 12,
-        "недостатньо чіткий зв'язок із напрямом «Медицина»": 2,
-        "визначено напрям «Мир і безпека», але немає достатніх ознак застосування, оцінювання або суспільної користі": 1,
-        "визначено напрям «Економіка та добробут», але немає достатніх ознак застосування, оцінювання або суспільної користі": 1
-      },
-      "error": ""
-    },
-    {
-      "id": "un-climate",
-      "name": "UN News — Клімат і довкілля",
-      "publisher": "United Nations News",
-      "domain": "un.org",
-      "url": "https://news.un.org/feed/subscribe/en/news/topic/climate-change/feed/rss.xml",
       "status": "error",
       "itemsFetched": 0,
       "acceptedCandidates": 0,
@@ -319,6 +280,30 @@
       "error": "not well-formed (invalid token): line 1, column 0"
     },
     {
+      "id": "un-climate",
+      "name": "UN News — Клімат і довкілля",
+      "publisher": "United Nations News",
+      "domain": "un.org",
+      "url": "https://news.un.org/feed/subscribe/en/news/topic/climate-change/feed/rss.xml",
+      "status": "ok",
+      "itemsFetched": 30,
+      "acceptedCandidates": 0,
+      "added": 0,
+      "rejected": 25,
+      "duplicates": 5,
+      "tooOld": 0,
+      "shortDescriptions": 0,
+      "deferredByDiversityCap": 0,
+      "rejectionReasons": {
+        "визначено напрям «Екологія», але немає достатніх ознак застосування, оцінювання або суспільної користі": 15,
+        "неоднозначна тематика: Мир і безпека / Екологія; потрібна редакційна перевірка": 1,
+        "недостатньо чіткий зв'язок із напрямом «Екологія»": 1,
+        "не виявлено достатньо чіткого напряму користі для людей": 6,
+        "неоднозначна тематика: Екологія / Економіка та добробут; потрібна редакційна перевірка": 2
+      },
+      "error": ""
+    },
+    {
       "id": "un-human-rights",
       "name": "UN News — Права людини",
       "publisher": "United Nations News",
@@ -328,8 +313,8 @@
       "itemsFetched": 30,
       "acceptedCandidates": 0,
       "added": 0,
-      "rejected": 29,
-      "duplicates": 1,
+      "rejected": 30,
+      "duplicates": 0,
       "tooOld": 0,
       "shortDescriptions": 0,
       "deferredByDiversityCap": 0,
@@ -344,7 +329,8 @@
         "визначено напрям «Освіта», але немає достатніх ознак застосування, оцінювання або суспільної користі": 1,
         "визначено напрям «Мир і безпека», але немає достатніх ознак застосування, оцінювання або суспільної користі": 2,
         "відсів: військове застосування або озброєння": 1,
-        "визначено напрям «Медицина», але немає достатніх ознак застосування, оцінювання або суспільної користі": 1
+        "визначено напрям «Медицина», але немає достатніх ознак застосування, оцінювання або суспільної користі": 1,
+        "визначено напрям «Економіка та добробут», але немає достатніх ознак застосування, оцінювання або суспільної користі": 1
       },
       "error": ""
     },
@@ -390,26 +376,17 @@
       "publisher": "United Nations News",
       "domain": "un.org",
       "url": "https://news.un.org/feed/subscribe/en/news/topic/peace-and-security/feed/rss.xml",
-      "status": "ok",
-      "itemsFetched": 30,
+      "status": "error",
+      "itemsFetched": 0,
       "acceptedCandidates": 0,
       "added": 0,
-      "rejected": 25,
-      "duplicates": 5,
+      "rejected": 0,
+      "duplicates": 0,
       "tooOld": 0,
       "shortDescriptions": 0,
       "deferredByDiversityCap": 0,
-      "rejectionReasons": {
-        "не виявлено достатньо чіткого напряму користі для людей": 14,
-        "визначено напрям «Освіта», але немає достатніх ознак застосування, оцінювання або суспільної користі": 2,
-        "визначено напрям «Мир і безпека», але немає достатніх ознак застосування, оцінювання або суспільної користі": 1,
-        "відсів: військове застосування або озброєння": 2,
-        "визначено напрям «Екологія», але немає достатніх ознак застосування, оцінювання або суспільної користі": 2,
-        "недостатньо чіткий зв'язок із напрямом «Мир і безпека»": 2,
-        "недостатньо чіткий зв'язок із напрямом «Державне управління»": 1,
-        "недостатньо чіткий зв'язок із напрямом «Права людини»": 1
-      },
-      "error": ""
+      "rejectionReasons": {},
+      "error": "not well-formed (invalid token): line 1, column 0"
     },
     {
       "id": "ecdc-news",
@@ -610,7 +587,7 @@
   "libraryByDomain": [
     {
       "domain": "arxiv.org",
-      "count": 90,
+      "count": 92,
       "publishers": [
         "arXiv"
       ]
@@ -695,8 +672,8 @@
   "libraryDomainCount": 11,
   "library": {
     "totalRecords": 155,
-    "publicRecords": 140,
-    "needsReview": 15,
+    "publicRecords": 142,
+    "needsReview": 13,
     "manualRecords": 10
   },
   "methodology": "Кількість доменів обчислюється за першоджерелами схвалених матеріалів. Статистика RSS показує результати останнього запуску, а не доведений суспільний ефект."
